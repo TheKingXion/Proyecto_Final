@@ -31,44 +31,43 @@
             </div>
         </header>
         <main>
-            <h1>FORMA DE UTILIZAR EL DICCIONARIO</h1>
-            <p class="instructions">Instrucciones de como ocupar el diccionario de una forma optima y eficiente</p>
             <div class="content">
-                <div class="alphabet-list">
-                    <ul>
-                        <li><a href="#A">A</a></li>
-                        <li><a href="#B">B</a></li>
-                        <li><a href="#C">C</a></li>
-                        <li><a href="#D">D</a></li>
-                        <li><a href="#E">E</a></li>
-                        <li><a href="#F">F</a></li>
-                        <li><a href="#G">G</a></li>
-                        <li><a href="#H">H</a></li>
-                        <li><a href="#I">I</a></li>
-                        <li><a href="#J">J</a></li>
-                        <li><a href="#K">K</a></li>
-                        <li><a href="#L">L</a></li>
-                        <li><a href="#M">M</a></li>
-                        <li><a href="#N">N</a></li>
-                        <li><a href="#O">O</a></li>
-                        <li><a href="#P">P</a></li>
-                        <li><a href="#Q">Q</a></li>
-                        <li><a href="#R">R</a></li>
-                        <li><a href="#S">S</a></li>
-                        <li><a href="#T">T</a></li>
-                        <li><a href="#U">U</a></li>
-                        <li><a href="#V">V</a></li>
-                        <li><a href="#W">W</a></li>
-                        <li><a href="#X">X</a></li>
-                        <li><a href="#Y">Y</a></li>
-                        <li><a href="#Z">Z</a></li>
+                <div class="alphabet-menu">
+                    <ul id="alphabet-list">
+                        <li onclick="selectLetter('A', this)">A</li>
+                        <li onclick="selectLetter('B', this)">B</li>
+                        <li onclick="selectLetter('C', this)">C</li>
+                        <li onclick="selectLetter('D', this)">D</li>
+                        <li onclick="selectLetter('E', this)">E</li>
+                        <li onclick="selectLetter('F', this)">F</li>
+                        <li onclick="selectLetter('G', this)">G</li>
+                        <li onclick="selectLetter('H', this)">H</li>
+                        <li onclick="selectLetter('I', this)">I</li>
+                        <li onclick="selectLetter('J', this)">J</li>
+                        <li onclick="selectLetter('K', this)">K</li>
+                        <li onclick="selectLetter('L', this)">L</li>
+                        <li onclick="selectLetter('M', this)">M</li>
+                        <li onclick="selectLetter('N', this)">N</li>
+                        <li onclick="selectLetter('Ñ', this)">Ñ</li>
+                        <li onclick="selectLetter('O', this)">O</li>
+                        <li onclick="selectLetter('P', this)">P</li>
+                        <li onclick="selectLetter('Q', this)">Q</li>
+                        <li onclick="selectLetter('R', this)">R</li>
+                        <li onclick="selectLetter('S', this)">S</li>
+                        <li onclick="selectLetter('T', this)">T</li>
+                        <li onclick="selectLetter('U', this)">U</li>
+                        <li onclick="selectLetter('V', this)">V</li>
+                        <li onclick="selectLetter('W', this)">W</li>
+                        <li onclick="selectLetter('X', this)">X</li>
+                        <li onclick="selectLetter('Y', this)">Y</li>
+                        <li onclick="selectLetter('Z', this)">Z</li>
                     </ul>
                 </div>
-                <div class="dictionary-content">
-                    <!-- Dictionary content will go here -->
-                </div>
+                <div id="selected-letter" class="selected-letter">A</div>
             </div>
         </main>
     </div>
+
+    <script src="{{ url_for('static', filename='js/dictionary_usage.js') }}"></script>
 </body>
 </html>

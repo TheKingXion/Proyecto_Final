@@ -1,0 +1,64 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f4f4f4;
+}
+
+.menu-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.alphabet-menu {
+    background-color: #00bcd4;
+    border-radius: 10px 25px 10px 25px;
+    padding: 5px;
+    width: 80px;  /* Ancho */
+    height: 600px; /* Altura fija de 100px */
+    text-align: center;
+    overflow-y: scroll; /* Habilita el scroll si hay más contenido */
+}
+
+.alphabet-menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.alphabet-menu ul li {
+    font-size: 18px;
+    padding: 5px 0;
+    color: #000;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* Estilo por defecto sin hover */
+.alphabet-menu ul li.active {
+    background-color: #0097a7;
+    color: white;
+    border-radius: 15px;
+    padding: 5px 15px;
+
+    /* Efecto de sobresalir */
+    transform: translateX(20px); /* Desplaza la letra hacia afuera del menú */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añadir sombra para efecto 3D */
+}
+
+/* Estilo del contenedor para la letra seleccionada */
+.selected-letter {
+    font-size: 100px;
+    background-color: #00bcd4;
+    color: white;
+    border-radius: 50%;
+    width: 150px;
+    height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
