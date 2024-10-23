@@ -54,6 +54,11 @@ h2 {
     padding: 5px 10px;
     font-size: 0.9rem;
     align-self: flex-start;
+    color: rgb(39, 39, 39);
+    text-decoration: none;
+    border-radius: 20px 1px 20px 1px;
+    border: none;
+    cursor: pointer;
 }
 
 @media (max-width: 768px) {
