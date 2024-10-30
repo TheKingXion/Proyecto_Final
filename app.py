@@ -19,4 +19,4 @@ def dictionary_usage():
     return render_template('dictionary_usage.html')
 
 if __name__ == '__main__':
-    app.run(debug=True)
+    app.run(debug=True, host='0.0.0.0', port=5000)
