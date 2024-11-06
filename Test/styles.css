@@ -10,16 +10,17 @@ body {
 
 .menu-container {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row; /* Alinea elementos horizontalmente */
+    align-items: center; /* Centra el contenido verticalmente */
+    gap: 20px; /* Espacio entre la lista y la letra seleccionada */
 }
 
 .alphabet-menu {
     background-color: #00bcd4;
     border-radius: 10px 25px 10px 25px;
     padding: 5px;
-    width: 80px;  /* Ancho */
-    height: 600px; /* Altura fija de 100px */
+    width: 80px; /* Ancho de la lista */
+    height: 600px; /* Altura de la lista */
     text-align: center;
     overflow-y: scroll; /* Habilita el scroll si hay más contenido */
 }
@@ -38,19 +39,15 @@ body {
     transition: background-color 0.3s;
 }
 
-/* Estilo por defecto sin hover */
 .alphabet-menu ul li.active {
     background-color: #0097a7;
     color: white;
     border-radius: 15px;
     padding: 5px 15px;
-
-    /* Efecto de sobresalir */
-    transform: translateX(20px); /* Desplaza la letra hacia afuera del menú */
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3); /* Añadir sombra para efecto 3D */
+    transform: translateX(20px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
 }
 
-/* Estilo del contenedor para la letra seleccionada */
 .selected-letter {
     font-size: 100px;
     background-color: #00bcd4;
