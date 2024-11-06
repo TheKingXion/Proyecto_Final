@@ -47,8 +47,8 @@ diccionario_por = {
             "uso": "Usado para contar elementos em uma sequência.",
             "ejemplo": '''texto = "Olá, Mundo"
             comprimento = len(texto)
-            print(f"O comprimento da string é: {comprimento}")'''
-}
+        print(f"O comprimento da string é: {comprimento}")'''
+        },
 
     },
     "m": {
