@@ -4,7 +4,15 @@ diccionario_es = {
         # Aquí puedes agregar funciones que comiencen con la letra A
     },
     "b": {
-        # Aquí puedes agregar funciones que comiencen con la letra B
+       "break": {
+            "significado":" Termina un bucle de forma anticipada.",
+            "uso": "Para salir de un bucle antes de que termine de iterar todos los elementos.",
+            "ejemplo":'''while True:
+            numero = int(input("Introduce un número (ingresa 0 para salir): "))
+            if numero == 0:
+            break  # Salir del bucle si el número es 0
+            print(f"El número ingresado es {numero}")'''
+        },
     },
     "c": {
         # Aquí puedes agregar funciones que comiencen con la letra C
@@ -26,15 +34,24 @@ diccionario_es = {
     },
     "i": {
         "if": {
-            "significado": "Condição que é avaliada como verdadeira ou falsa.",
-            "uso": "Usado para tomar decisões no fluxo de um programa.",
-            "ejemplo": "if x > 10: print('Maior que 10')"
+            "significado": "Condición que se evalúa como verdadera o falsa.",
+            "uso": "Usado para tomar decisiones en el flujo de un programa.",
+            "ejemplo": "si x > 10: print('Mayor que 10')"
         },
         "input": {
-            "significado": "Lê dados inseridos pelo usuário no console",
-            "uso": "Serve para interagir com o usuário e obter informações.",
-            "ejemplo": "input('insira um número')"
+            "significado":"Lee los datos ingresados por el usuario en la consola",
+            "uso": "Sirve para interactuar con el usuario y obtener información.",
+            "ejemplo": "input('ingrese un número')"
         },
+        "_init_": {
+            "significado": "Es un método especial en las clases de Python que se llama cuando se crea una nueva instancia de la clase.",
+            "uso": " Para inicializar los atributos del objeto.",
+            "ejemplo": '''class Persona:
+            def __init__(self, nombre, edad):
+            self.nombre = nombre
+            self.edad = edad'''
+        },
+
     },
     "j": {
         # Aquí puedes agregar funciones que comiencen con la letra J
@@ -44,12 +61,12 @@ diccionario_es = {
     },
     "l": {
         "len()": {
-            "significado": "Retorna o comprimento de um objeto (como uma lista ou string).",
-            "uso": "Usado para contar elementos em uma sequência.",
-            "ejemplo": '''texto = "Olá, Mundo"
-            comprimento = len(texto)
-            print(f"O comprimento da string é: {comprimento}")'''
-}
+            "significado": "Devuelve la longitud de un objeto (como una lista o cadena).",
+            "usage": "Usado para contar elementos en una secuencia.",
+            "ejemplo": '''text = "Hola mundo"
+            longitud = longitud (texto)
+            print(f"La longitud de la cadena es: {longitud}")'''
+        },
 
     },
     "m": {
@@ -78,13 +95,19 @@ diccionario_es = {
     "s": {
        "str": {
         "significado": " Convierte un valor en una cadena de texto.",
-        "uso": " Sirve Para asegurarse de que un valor sea tratado como texto.",
+        "uso": " Sirve para separar una cadena usando un delimitador.",
         "ejemplo":''' # Número entero
         numero = 123
         numero_como_str = str(numero)
         print(type(numero_como_str))  # Salida: <class 'str'>
         print(numero_como_str)        # Salida: '123'''
-
+        },
+     "split": {
+        "significado":"Divide una cadena en una lista de subcadenas..",
+        "uso": " Es el primer parámetro de cualquier método de instancia de una clase.",
+        "ejemplo": '''texto = "Hola Mundo Python"
+        palabras = texto.split()
+        print(palabras)'''
     },
     },
     "t": {
@@ -106,6 +129,6 @@ diccionario_es = {
         # Aquí puedes agregar funciones que comiencen con la letra Y
     },
     "z": {
-        # Aquí puedes agregar funciones que comiencen con la letra Z
-    },
+        # Aquí puedes agregar funciones que comiencen con la letra Z    }
+    }, 
 }
