@@ -1,526 +1,111 @@
 #pablo
 diccionario_es = {
-    "if": {
-        "significado": "Condición que se evalúa como verdadera o falsa.",
-        "uso": "Se usa para tomar decisiones en el flujo de un programa.",
-        "ejemplo": "if x > 10: print('Mayor que 10')"
+    "a": {
+        # Aquí puedes agregar funciones que comiencen con la letra A
+    },
+    "b": {
+        # Aquí puedes agregar funciones que comiencen con la letra B
+    },
+    "c": {
+        # Aquí puedes agregar funciones que comiencen con la letra C
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "d": {
+        # Aquí puedes agregar funciones que comiencen con la letra D
     },
-    "len()": {
-        "significado": "Devuelve la longitud de un objeto (como una lista o cadena).",
-        "uso": " Se usa para contar elementos en una secuencia.",
-        "ejemplo": '''texto = "Hola, Mundo"
-        longitud = len(texto)
-        print(f"La longitud de la cadena es: {longitud}")"'''
+    "e": {
+        # Aquí puedes agregar funciones que comiencen con la letra E
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "f": {
+        # Aquí puedes agregar funciones que comiencen con la letra F
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "g": {
+        # Aquí puedes agregar funciones que comiencen con la letra G
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "h": {
+        # Aquí puedes agregar funciones que comiencen con la letra H
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "i": {
+        "if": {
+            "significado": "Condição que é avaliada como verdadeira ou falsa.",
+            "uso": "Usado para tomar decisões no fluxo de um programa.",
+            "ejemplo": "if x > 10: print('Maior que 10')"
+        },
+        "input": {
+            "significado": "Lê dados inseridos pelo usuário no console",
+            "uso": "Serve para interagir com o usuário e obter informações.",
+            "ejemplo": "input('insira um número')"
+        },
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "j": {
+        # Aquí puedes agregar funciones que comiencen con la letra J
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "k": {
+        # Aquí puedes agregar funciones que comiencen con la letra K
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "l": {
+        "len()": {
+            "significado": "Retorna o comprimento de um objeto (como uma lista ou string).",
+            "uso": "Usado para contar elementos em uma sequência.",
+            "ejemplo": '''texto = "Olá, Mundo"
+            comprimento = len(texto)
+            print(f"O comprimento da string é: {comprimento}")'''
+}
+
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "m": {
+        # Aquí puedes agregar funciones que comiencen con la letra M
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "n": {
+        # Aquí puedes agregar funciones que comiencen con la letra N
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "o": {
+        # Aquí puedes agregar funciones que comiencen con la letra O
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "p": {
+        # Aquí puedes agregar funciones que comiencen con la letra P
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "q": {
+        # Aquí puedes agregar funciones que comiencen con la letra Q
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "r": {
+        "range": {
+        "significado": "Devuelve una secuencia de números, generalmente usada en bucles.",
+        "uso": " Sirve Para crear un rango de números que se puede iterar",
+        "ejemplo": '''for i in range(5):
+                        print(i)'''
+        },
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "s": {
+       "str": {
+        "significado": " Convierte un valor en una cadena de texto.",
+        "uso": " Sirve Para asegurarse de que un valor sea tratado como texto.",
+        "ejemplo":''' # Número entero
+        numero = 123
+        numero_como_str = str(numero)
+        print(type(numero_como_str))  # Salida: <class 'str'>
+        print(numero_como_str)        # Salida: '123'''
+
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "t": {
+        # Aquí puedes agregar funciones que comiencen con la letra T
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "u": {
+        # Aquí puedes agregar funciones que comiencen con la letra U
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "v": {
+        # Aquí puedes agregar funciones que comiencen con la letra V
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "w": {
+        # Aquí puedes agregar funciones que comiencen con la letra W
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "x": {
+        # Aquí puedes agregar funciones que comiencen con la letra X
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "y": {
+        # Aquí puedes agregar funciones que comiencen con la letra Y
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
+    "z": {
+        # Aquí puedes agregar funciones que comiencen con la letra Z
     },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-     "input": {
-        "significado": "Lee datos ingresados por el usuario desde la consola",
-        "uso": " Sirve para interactuar con el usuario y obtener información.",
-        "ejemplo": "input('ingrese un numero')"
-    },
-    
 }
