@@ -33,7 +33,25 @@ diccionario_eng = {
         # Aquí puedes agregar funciones que comiencen con la letra H
     },
     "i": {
-        # Aqui puedes agregar funciones que comiencen con la letra I
+        "if": {
+            "significado": "Condition that is assessed as true or false",
+            "uso": "Used to make decisions in the flow of a program",
+            "ejemplo": "if x > 10: print('greater than 10')"
+        },
+        "input": {
+            "significado":"Reads user-written data",
+            "uso": "It is used to interact with the user and obtain information",
+            "ejemplo": "input('write a number')"
+        },
+        "_init_": {
+            "significado": "It's a special method in Python classes that's called when you create a new instance of the",
+            "uso": " To initialize object attributes.",
+            "ejemplo": '''class Person:
+            def __init__(self, name, age):
+            self.name = name
+            self.age = age'''
+        },
+
     },
     "j": {
         # Aquí puedes agregar funciones que comiencen con la letra J
@@ -42,7 +60,13 @@ diccionario_eng = {
         # Aquí puedes agregar funciones que comiencen con la letra K
     },
     "l": {
-        # Aqui puedes agregar funciones que comiencen con la letra L
+         "len()": {
+            "significado": "Returns the length of an object (such as a list or string)",
+            "uso": "To count elements in a sequence",
+            "ejemplo": '''text = "Hello word"
+            longitude = longitude (text)
+            print(f"the longitude of the chain is: {longitude}")'''
+        },
     },
     "m": {
         # Aquí puedes agregar funciones que comiencen con la letra M
@@ -77,6 +101,13 @@ diccionario_eng = {
         print(type(number_like_str))  # exit: <class 'str'>
         print(number_like_str)        # exit: '123'''
         },
+        "split": {
+        "significado":"Divides a string into a list of substrings.",
+        "uso": " It is the first parameter of any instance method of a class",
+        "ejemplo": '''text = "Hello word Python"
+        words = text.split()
+        print(words)'''
+    },
     },
     
     "t": {
