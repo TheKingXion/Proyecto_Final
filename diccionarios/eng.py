@@ -4,7 +4,14 @@ diccionario_eng = {
         # Aquí puedes agregar funciones que comiencen con la letra A
     },
     "b": {
-        # Aquí puedes agregar funciones que comiencen con la letra B
+       "break": {
+            "significado":"End a loop early",
+            "uso": "to manually exit a loop",
+            "ejemplo":'''while True:
+            number = int(input("enter a number (enter a 0 for exit): "))
+            if number == 0:
+            break  # exit from the bucle if the user write 0
+            print(f"the number entered is {number}")'''
     },
     "c": {
         # Aquí puedes agregar funciones que comiencen con la letra C
