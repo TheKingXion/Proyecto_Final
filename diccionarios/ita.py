@@ -27,7 +27,7 @@ switch(day) {
         break;
     default:
         printf("Otro día");
-}"""
+        }"""
     },
     "for": {
     "significado": "Un ciclo che esegue un'iterazione su un determinato intervallo di valori o su una raccolta di elementi.",
@@ -58,16 +58,17 @@ switch(day) {
     },"float / double": {
         "significado": "Tipi di dati per rappresentare numeri con decimali (float).",
         "uso": "Vengono utilizzati per memorizzare valori numerici con precisione decimale.",
-        "ejemplo": """x = 10.5  # float
-y = 10.123456789012345  # double (en lenguajes como C o Jav"""
+        "ejemplo": """x = 10.5  # floaty = 10.123456789012345  # double (en lenguajes como C o Jav"""
+
     },"char": {
         "significado": "Un tipo di dati che rappresenta un singolo carattere.",
         "uso": "Utilizzato per memorizzare un singolo carattere (lettere, numeri o simboli).",
         "ejemplo": """char letter = 'A';"""
-    },"string": {
-        "significado": " Tipo de dato que representa una secuencia de caracteres.",
+
+    },"string": {.
+        "significado": " Tipo de dato que representa una secuencia de caracteres",
         "uso": "Se usa para tomar decisiones en el flujo de un programa.",
-        "ejemplo": "if x > 10: print('Mayor que 10')"
+        "ejemplo":name = """John")"""
     },"if": {
         "significado": "Condición que se evalúa como verdadera o falsa.",
         "uso": "Se usa para tomar decisiones en el flujo de un programa.",
@@ -96,4 +97,5 @@ y = 10.123456789012345  # double (en lenguajes como C o Jav"""
         "significado": "Condición que se evalúa como verdadera o falsa.",
         "uso": "Se usa para tomar decisiones en el flujo de un programa.",
         "ejemplo": "if x > 10: print('Mayor que 10')"
-    },}
+    },
+    }
