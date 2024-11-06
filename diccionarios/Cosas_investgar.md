@@ -1,0 +1,1 @@
+funciones, metodos, palbras clave
