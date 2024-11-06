@@ -116,6 +116,7 @@ h1 {
 }
 
 @media (max-width: 768px) {
+    
     .language-selection {
         flex-direction: column;
         align-items: center;
