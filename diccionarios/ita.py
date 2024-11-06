@@ -36,33 +36,36 @@ switch(day) {
     print(i)"""
     },
 "break": {
-        "significado": ": Termina un bucle o una estructura de control de inmediato.",
-        "uso": " Se utiliza para salir de un bucle o switch cuando se cumple cierta condición.
-",
+        "significado": ":Termina immediatamente un loop o una struttura di controllo.",
+        "uso": "Viene utilizzato per uscire da un ciclo o cambiare quando viene soddisfatta una determinata condizione.",
         "ejemplo": """for i in range(10):
     if i == 5:
         break
     print(i)"""
     },
-"if": {
-        "significado": "Condición que se evalúa como verdadera o falsa.",
-        "uso": "Se usa para tomar decisiones en el flujo de un programa.",
-        "ejemplo": "if x > 10: print('Mayor que 10')"
+"continue": {
+        "significado": "Passa all'iterazione successiva del ciclo, senza eseguire le istruzioni rimanenti nell'iterazione corrente.",
+        "uso": ": Utilizzato quando si desidera saltare il resto del ciclo senza uscire dal ciclo.",
+        "ejemplo": """for i in range(5):
+    if i == 2:
+        continue
+    print(i)"""
     },
-    "if": {
-        "significado": "Condición que se evalúa como verdadera o falsa.",
-        "uso": "Se usa para tomar decisiones en el flujo de un programa.",
-        "ejemplo": "if x > 10: print('Mayor que 10')"
-    },"if": {
-        "significado": "Condición que se evalúa como verdadera o falsa.",
-        "uso": "Se usa para tomar decisiones en el flujo de un programa.",
-        "ejemplo": "if x > 10: print('Mayor que 10')"
-    },"if": {
-        "significado": "Condición que se evalúa como verdadera o falsa.",
-        "uso": "Se usa para tomar decisiones en el flujo de un programa.",
-        "ejemplo": "if x > 10: print('Mayor que 10')"
-    },"if": {
-        "significado": "Condición que se evalúa como verdadera o falsa.",
+    "int": {
+        "significado": "Un tipo di dati che rappresenta numeri interi.",
+        "uso": "Viene utilizzato per memorizzare valori interi senza decimali.",
+        """ejemplo": x = 10')"""
+    },"float / double": {
+        "significado": "Tipi di dati per rappresentare numeri con decimali (float).",
+        "uso": "Vengono utilizzati per memorizzare valori numerici con precisione decimale.",
+        "ejemplo": """x = 10.5  # float
+y = 10.123456789012345  # double (en lenguajes como C o Jav"""
+    },"char": {
+        "significado": "Un tipo di dati che rappresenta un singolo carattere.",
+        "uso": "Utilizzato per memorizzare un singolo carattere (lettere, numeri o simboli).",
+        "ejemplo": """char letter = 'A';"""
+    },"string": {
+        "significado": " Tipo de dato que representa una secuencia de caracteres.",
         "uso": "Se usa para tomar decisiones en el flujo de un programa.",
         "ejemplo": "if x > 10: print('Mayor que 10')"
     },"if": {
