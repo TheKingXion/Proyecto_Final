@@ -1,5 +1,4 @@
-#cona
-diccionario_ita ={
+diccionario_ = {
     "a": {
         # Aquí puedes agregar funciones que comiencen con la letra A
     },
