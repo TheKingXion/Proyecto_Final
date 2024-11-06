@@ -1,5 +1,5 @@
-#vicho
-diccionario_eng = {
+#pablo
+diccionario_es = {
     "if": {
         "significado": "Condición que se evalúa como verdadera o falsa.",
         "uso": "Se usa para tomar decisiones en el flujo de un programa.",
