@@ -52,11 +52,25 @@ diccionario_eng = {
         # Aquí puedes agregar funciones que comiencen con la letra Q
     },
     "r": {
-        # Aquí puedes agregar funciones que comiencen con la letra R
+        "range": {
+        "significado": "Returns a sequence of numbers, ussualy in loops.",
+        "uso": "To create a range of numbers that can be iterated",
+        "ejemplo": '''for i in range(5):
+            print(i)'''
+        },
     },
     "s": {
-        # Aquí puedes agregar funciones que comiencen con la letra S
+        "str": {
+        "significado": "make a value into a text chain",
+        "uso": " to make a value like a text",
+        "ejemplo":''' # number
+        number = 123
+        number_like_str = str(number)
+        print(type(number_like_str))  # exit: <class 'str'>
+        print(number_like_str)        # exit: '123'''
+        },
     },
+    
     "t": {
         # Aquí puedes agregar funciones que comiencen con la letra T
     },
