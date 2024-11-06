@@ -5,8 +5,8 @@ diccionario_ita ={
     },
     "b": {
        "break": {
-            "significado":" Termina un bucle de forma anticipada.",
-            "uso": "Para salir de un bucle antes de que termine de iterar todos los elementos.",
+            "significado":" Termina un ciclo in anticipo.",
+            "uso": "Per uscire da un ciclo prima che termini l'iterazione di tutti gli elementi.",
             "ejemplo":'''while True:
             numero = int(input("Introduce un número (ingresa 0 para salir): "))
             if numero == 0:
@@ -34,18 +34,18 @@ diccionario_ita ={
     },
     "i": {
         "if": {
-            "significado": "Condición que se evalúa como verdadera o falsa.",
-            "uso": "Usado para tomar decisiones en el flujo de un programa.",
+            "significado": "Condizione che restituisce vero o falso.",
+            "uso": "Utilizzato per prendere decisioni nel flusso di un programma.",
             "ejemplo": "si x > 10: print('Mayor que 10')"
         },
         "input": {
-            "significado":"Lee los datos ingresados por el usuario en la consola",
-            "uso": "Sirve para interactuar con el usuario y obtener información.",
+            "significado":"Leggere i dati inseriti dall'utente nella console",
+            "uso": "Viene utilizzato per interagire con l'utente e ottenere informazioni.",
             "ejemplo": "input('ingrese un número')"
         },
         "_init_": {
-            "significado": "Es un método especial en las clases de Python que se llama cuando se crea una nueva instancia de la clase.",
-            "uso": " Para inicializar los atributos del objeto.",
+            "significado": "È un metodo speciale nelle classi Python che viene chiamato quando viene creata una nuova istanza della classe.",
+            "uso": " Per inizializzare gli attributi dell'oggetto.",
             "ejemplo": '''class Persona:
             def __init__(self, nombre, edad):
             self.nombre = nombre
@@ -61,8 +61,8 @@ diccionario_ita ={
     },
     "l": {
         "len()": {
-            "significado": "Devuelve la longitud de un objeto (como una lista o cadena).",
-            "usage": "Usado para contar elementos en una secuencia.",
+            "significado": "Restituisce la lunghezza di un oggetto (come una lista o una stringa).",
+            "uso": "Utilizzato per contare gli elementi in una sequenza.",
             "ejemplo": '''text = "Hola mundo"
             longitud = longitud (texto)
             print(f"La longitud de la cadena es: {longitud}")'''
@@ -86,16 +86,16 @@ diccionario_ita ={
     },
     "r": {
         "range": {
-        "significado": "Devuelve una secuencia de números, generalmente usada en bucles.",
-        "uso": " Sirve Para crear un rango de números que se puede iterar",
+        "significado": "Restituisce una sequenza di numeri, solitamente utilizzata nei cicli.",
+        "uso": " Utilizzato per creare un intervallo di numeri che può essere ripetuto",
         "ejemplo": '''for i in range(5):
                         print(i)'''
         },
     },
     "s": {
        "str": {
-        "significado": " Convierte un valor en una cadena de texto.",
-        "uso": " Sirve para separar una cadena usando un delimitador.",
+        "significado": " Converte un valore in una stringa di testo.",
+        "uso": " Viene utilizzato per separare una stringa utilizzando un delimitatore.",
         "ejemplo":''' # Número entero
         numero = 123
         numero_como_str = str(numero)
