@@ -1,7 +1,13 @@
 #pablo
 diccionario_es = {
     "a": {
-        # Aquí puedes agregar funciones que comiencen con la letra A
+        "all": {
+            "significado": "Devuelve True si todos los elementos de un iterable son verdaderos.",
+            "uso": "Borrar un objeto, variable o elemento de una colección.",
+            "ejemplo": '''lista = [1, 2, 3]
+            del lista[0]
+            print(lista)  # [2, 3]'''
+        },
     },
     "b": {
        "break": {
@@ -15,10 +21,26 @@ diccionario_es = {
         },
     },
     "c": {
-        # Aquí puedes agregar funciones que comiencen con la letra C
+        "constains": {
+            "significado": " Define cómo se verifica si un objeto contiene otro (para el operador in).",
+            "uso": " Personalizar el comportamiento del operador in cuando se usa con un objeto de una clase definida por el usuario.",
+            "ejemplo": '''class Caja:
+            def __init__(self, elementos):
+            self.elementos = elementos
+            def __contains__(self, item):
+            return item in self.elementos
+            caja = Caja([1, 2, 3])
+            print(2 in caja)  # True'''
+        },
     },
     "d": {
-        # Aquí puedes agregar funciones que comiencen con la letra D
+        "del": {
+            "significado": "Elimina un objeto o variable.",
+            "uso": "Borrar un objeto, variable o elemento de una colección.",
+            "ejemplo": '''lista = [1, 2, 3]
+            del lista[0]
+            print(lista)  # [2, 3]'''
+        },
     },
     "e": {
         # Aquí puedes agregar funciones que comiencen con la letra E
@@ -75,11 +97,18 @@ diccionario_es = {
     "n": {
         # Aquí puedes agregar funciones que comiencen con la letra N
     },
-    "o": {
+    "o": { 
         # Aquí puedes agregar funciones que comiencen con la letra O
     },
     "p": {
-        # Aquí puedes agregar funciones que comiencen con la letra P
+        "input": {
+            "significado":"Elimina y devuelve un elemento de una lista en un índice específico.",
+            "uso": "Sirve Para quitar un valor específico de una lista.",
+            "ejemplo": '''frutas = ["manzana", "banana", "naranja", "pera"]
+            ultima_fruta = frutas.pop()
+            print("Última fruta eliminada:", ultima_fruta)  # Salida: pera
+            print("Lista después del pop:", frutas)  # Salida: ['manzana', 'banana', 'naranja']'''
+        },
     },
     "q": {
         # Aquí puedes agregar funciones que comiencen con la letra Q
