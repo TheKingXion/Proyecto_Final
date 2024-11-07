@@ -103,8 +103,8 @@ diccionario_ita ={
         print(numero_como_str)        # Salida: '123'''
         },
      "split": {
-        "significado":"Divide una cadena en una lista de subcadenas..",
-        "uso": " Es el primer parámetro de cualquier método de instancia de una clase.",
+        "significado":"Divide una stringa in un elenco di sottostringhe..",
+        "uso": " È il primo parametro di qualsiasi metodo di istanza di una classe.",
         "ejemplo": '''texto = "Hola Mundo Python"
         palabras = texto.split()
         print(palabras)'''
