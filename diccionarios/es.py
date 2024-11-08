@@ -13,6 +13,11 @@ diccionario_es = {
             "ejemplo": '''valores = [1, 2, 3]
             print(all(valores))  # True'''
         },
+         "abs": {
+            "significado":" Devuelve el valor absoluto de un número.",
+            "uso": " sirve para obtener el valor absoluto de un número.",
+            "ejemplo": '''abs(-5)  # 5'''
+    },
     },
     "b": {
        "break": {
@@ -61,7 +66,12 @@ diccionario_es = {
         },
     },
     "e": {
-        # Aquí puedes agregar funciones que comiencen con la letra E
+        "enumerate": {
+            "significado":" Devuelve un objeto enumerado, es decir, un índice y su valor.",
+            "uso": " sirve para obtener tanto el índice como el valor de un iterable en un bucle.",
+            "ejemplo": '''for idx, val in enumerate(["a", "b", "c"]):
+            print(idx, val)'''
+    },
     },
     "f": {
          "format": {
@@ -72,6 +82,11 @@ diccionario_es = {
             mensaje = "Hola, mi nombre es {} y tengo {} años.".format(nombre, edad)
             print(mensaje)  # "Hola, mi nombre es Juan y tengo 30 años."'''
         },
+        "float": {
+            "significado":"  Convierte una cadena a un número de punto flotante.",
+            "uso": " sirve para convertir cadenas numéricas en valores de tipo float.",
+            "ejemplo": '''float("10.5")  # 10.5'''
+    },
     },
     "g": {
         # Aquí puedes agregar funciones que comiencen con la letra G
@@ -104,6 +119,11 @@ diccionario_es = {
             " ejemplo": '''lista = [10, 20, 30, 40]
             print(lista.index(30))  # 2'''
         },
+        "int": {
+            "significado":" Convierte una cadena a un entero.",
+            "uso": " sirve para convertir cadenas numéricas en valores enteros.",
+            "ejemplo": '''int("10")  # 10'''
+    },
     },
     "j": {
         "join": {
@@ -127,7 +147,16 @@ diccionario_es = {
 
     },
     "m": {
-        # Aquí puedes agregar funciones que comiencen con la letra M
+        "max": {
+            "significado": "Devuelve el valor más grande de un iterable.",
+            "usage": "Encontrar el valor máximo.",
+            "ejemplo": '''max([1, 2, 3])  # 3'''
+        },
+        "map": {
+            "significado":"  Aplica una función a cada elemento de un iterable.",
+            "uso": "  sirve para  aplicar una operación a todos los elementos de un iterable..",
+            "ejemplo": '''map(lambda x: x * 2, [1, 2, 3])  # [2, 4, 6]'''
+    },
     },
     "n": {
         # Aquí puedes agregar funciones que comiencen con la letra N
@@ -144,6 +173,11 @@ diccionario_es = {
             print("Última fruta eliminada:", ultima_fruta)  # Salida: pera
             print("Lista después del pop:", frutas)  # Salida: ['manzana', 'banana', 'naranja']'''
         },
+         "parseInt": {
+            "significado":"  C Convierte una cadena en un número entero.",
+            "uso": " Usado para convertir cadenas de texto que representan números en valores enteros.",
+            "ejemplo": '''parseInt("10");  // 10'''
+    },
     },
     "q": {
         # Aquí puedes agregar funciones que comiencen con la letra Q
@@ -154,6 +188,11 @@ diccionario_es = {
             "uso": " Sirve Para crear un rango de números que se puede iterar",
             "ejemplo": '''for i in range(5):
             print(i)'''
+        },
+        "reversed": {
+            "significado": "Devuelve el iterable invertido.",
+            "uso": " Sirve Para invertir el orden de los elementos de un iterable.",
+            "ejemplo": '''reversed([1, 2, 3])  # [3, 2, 1]'''
         },
     },
     "s": {
@@ -179,9 +218,19 @@ diccionario_es = {
             "ejemplo": '''lista = [4, 1, 3, 2]
             print(sorted(lista))  # [1, 2, 3, 4]'''
     },
+     "sum ": {
+            "significado":" Devuelve la suma de los elementos de un iterable.",
+            "uso": " Sumar los elementos de una lista o tupla.",
+            "ejemplo": '''sum([1, 2, 3])  # 6'''
+    },
     },
     "t": {
-        # Aquí puedes agregar funciones que comiencen con la letra T
+         
+     "type": {
+            "significado":" Devuelve el tipo de un objeto.",
+            "uso": "  sirve para verificar el tipo de una variable.",
+            "ejemplo": '''type(10)  # <class 'int'>'''
+    },
     },
     "u": {
         # Aquí puedes agregar funciones que comiencen con la letra U
@@ -199,6 +248,10 @@ diccionario_es = {
         # Aquí puedes agregar funciones que comiencen con la letra Y
     },
     "z": {
-        # Aquí puedes agregar funciones que comiencen con la letra Z    }
+         "zip": {
+            "significado":" Une varios iterables en una sola secuencia de tuplas.   ",
+            "uso": " Combina listas o tuplas de manera que sus elementos estén emparejados.",
+            "ejemplo": '''zip([1, 2], ["a", "b"])  # [(1, "a"), (2, "b")]'''
+        },
     }, 
 }
