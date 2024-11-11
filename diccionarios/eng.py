@@ -108,7 +108,7 @@ diccionario_eng = {
             "significado":"Turn a string into a whole number",
             "uso": "It is used to convert numerical strings into integer values",
             "ejemplo": '''int("10")  # 10'''
-    },
+        },
     },
     "j": {
         # Aquí puedes agregar funciones que comiencen con la letra J
@@ -164,7 +164,7 @@ diccionario_eng = {
         "ejemplo": '''text = "Hello word Python"
         words = text.split()
         print(words)'''
-    },
+        },
     },
     
     "t": {

@@ -17,7 +17,7 @@ diccionario_es = {
             "significado":" Devuelve el valor absoluto de un número.",
             "uso": " sirve para obtener el valor absoluto de un número.",
             "ejemplo": '''abs(-5)  # 5'''
-    },
+        },
     },
     "b": {
        "break": {
@@ -71,7 +71,7 @@ diccionario_es = {
             "uso": " sirve para obtener tanto el índice como el valor de un iterable en un bucle.",
             "ejemplo": '''for idx, val in enumerate(["a", "b", "c"]):
             print(idx, val)'''
-    },
+        },
     },
     "f": {
          "format": {
@@ -86,7 +86,7 @@ diccionario_es = {
             "significado":"  Convierte una cadena a un número de punto flotante.",
             "uso": " sirve para convertir cadenas numéricas en valores de tipo float.",
             "ejemplo": '''float("10.5")  # 10.5'''
-    },
+        },
     },
     "g": {
         # Aquí puedes agregar funciones que comiencen con la letra G
@@ -123,7 +123,7 @@ diccionario_es = {
             "significado":" Convierte una cadena a un entero.",
             "uso": " sirve para convertir cadenas numéricas en valores enteros.",
             "ejemplo": '''int("10")  # 10'''
-    },
+        },
     },
     "j": {
         "join": {
@@ -156,7 +156,7 @@ diccionario_es = {
             "significado":"  Aplica una función a cada elemento de un iterable.",
             "uso": "  sirve para  aplicar una operación a todos los elementos de un iterable..",
             "ejemplo": '''map(lambda x: x * 2, [1, 2, 3])  # [2, 4, 6]'''
-    },
+        },
     },
     "n": {
         # Aquí puedes agregar funciones que comiencen con la letra N
@@ -177,7 +177,7 @@ diccionario_es = {
             "significado":"  C Convierte una cadena en un número entero.",
             "uso": " Usado para convertir cadenas de texto que representan números en valores enteros.",
             "ejemplo": '''parseInt("10");  // 10'''
-    },
+        },
     },
     "q": {
         # Aquí puedes agregar funciones que comiencen con la letra Q
@@ -211,18 +211,18 @@ diccionario_es = {
             "ejemplo": '''texto = "Hola Mundo Python"
             palabras = texto.split()
             print(palabras)'''
-    },
-    "sorted": {
+        },
+        "sorted": {
             "significado":"Devuelve una lista nueva con los elementos de un iterable ordenados.",
             "uso": "  Ordenar una lista o tupla de manera ascendente o descendente.",
             "ejemplo": '''lista = [4, 1, 3, 2]
             print(sorted(lista))  # [1, 2, 3, 4]'''
-    },
-     "sum ": {
+        },
+        "sum ": {
             "significado":" Devuelve la suma de los elementos de un iterable.",
             "uso": " Sumar los elementos de una lista o tupla.",
             "ejemplo": '''sum([1, 2, 3])  # 6'''
-    },
+        },
     },
     "t": {
          
@@ -230,7 +230,7 @@ diccionario_es = {
             "significado":" Devuelve el tipo de un objeto.",
             "uso": "  sirve para verificar el tipo de una variable.",
             "ejemplo": '''type(10)  # <class 'int'>'''
-    },
+        },
     },
     "u": {
         # Aquí puedes agregar funciones que comiencen con la letra U

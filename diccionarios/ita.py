@@ -108,7 +108,7 @@ diccionario_ita ={
         "ejemplo": '''texto = "Hola Mundo Python"
         palabras = texto.split()
         print(palabras)'''
-    },
+        },
     },
     "t": {
         # Aquí puedes agregar funciones que comiencen con la letra T
