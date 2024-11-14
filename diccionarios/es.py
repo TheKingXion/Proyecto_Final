@@ -64,6 +64,15 @@ diccionario_es = {
             del lista[0]
             print(lista)  # [2, 3]'''
         },
+        "datetime": {
+            "significado":" El módulo datetime permite trabajar con fechas y horas.",
+            "uso": "Se usa para manipular, comparar y formatear fechas y horas.",
+            "ejemplo": '''import datetime
+            ahora = datetime.datetime.now()
+            print(ahora)  # 2024-11-14 12:30:45.123456
+            fecha_formateada = ahora.strftime("%d/%m/%Y %H:%M")
+            print(fecha_formateada)  # 14/11/2024 12:30'''
+    },
     },
     "e": {
         "enumerate": {
@@ -83,9 +92,19 @@ diccionario_es = {
             print(mensaje)  # "Hola, mi nombre es Juan y tengo 30 años."'''
         },
         "float": {
-            "significado":"  Convierte una cadena a un número de punto flotante.",
+            "significado":"  Convierte una cadena a un número real .",
             "uso": " sirve para convertir cadenas numéricas en valores de tipo float.",
             "ejemplo": '''float("10.5")  # 10.5'''
+    },
+        "filter": {
+            "significado":"  filter() permite filtrar elementos de un iterable utilizando una función que retorna True o False.",
+            "uso": " Se utiliza para obtener elementos de una lista o secuencia que cumplan con una condición específica.",
+            "ejemplo": '''# Función para verificar si un número es par
+            def es_par(num):
+            return num % 2 == 0
+            numeros = [1, 2, 3, 4, 5, 6]
+            pares = filter(es_par, numeros)
+            print(list(pares))  # [2, 4, 6]'''
     },
     },
     "g": {
@@ -157,12 +176,30 @@ diccionario_es = {
             "uso": "  sirve para  aplicar una operación a todos los elementos de un iterable..",
             "ejemplo": '''map(lambda x: x * 2, [1, 2, 3])  # [2, 4, 6]'''
     },
+        "namedtuple": {
+            "significado":"   namedtuple es una clase de collections que permite crear tuplas con nombres de campos, mejorando la legibilidad del código.",
+            "uso": " Se utiliza para almacenar datos que pueden ser tratados como una tupla pero con un acceso más legible a sus elementos por nombre.",
+            "ejemplo": '''from collections import namedtuple
+            Punto = namedtuple('Punto', ['x', 'y'])
+            p = Punto(x=10, y=20)
+            print(p.x, p.y)  # 10 20'''
+    },
     },
     "n": {
         # Aquí puedes agregar funciones que comiencen con la letra N
     },
     "o": { 
-        # Aquí puedes agregar funciones que comiencen con la letra O
+         "os": {
+            "significado":"   El módulo os permite interactuar con el sistema operativo, como manipular archivos, directorios, obtener información sobre el sistema, etc.",
+            "uso": "Es útil para realizar operaciones de bajo nivel en el sistema, como navegar por directorios o eliminar archivos.",
+            "ejemplo": '''import os
+            directorio_actual = os.getcwd()
+            print(f"Directorio actual: {directorio_actual}")
+            os.mkdir("nuevo_directorio")
+            archivos = os.listdir(directorio_actual)
+            print(f"Archivos en el directorio: {archivos}")
+            os.rmdir("nuevo_directorio")'''
+        }, 
     },
     "p": {
         "pop": {
@@ -174,9 +211,22 @@ diccionario_es = {
             print("Lista después del pop:", frutas)  # Salida: ['manzana', 'banana', 'naranja']'''
         },
          "parseInt": {
-            "significado":"  C Convierte una cadena en un número entero.",
+            "significado":"   Convierte una cadena en un número entero.",
             "uso": " Usado para convertir cadenas de texto que representan números en valores enteros.",
             "ejemplo": '''parseInt("10");  // 10'''
+        }, 
+         "pathlib": {
+            "significado":" pathlib es un módulo que facilita el manejo de rutas de archivos y directorios de manera más legible y moderna.",
+            "uso": "  Se utiliza para manejar las rutas de manera más sencilla y para realizar operaciones de archivo de forma eficiente.",
+            "ejemplo": '''from pathlib import Path
+            ruta = Path("mi_directorio/mi_archivo.txt")
+            if ruta.exists():
+            print(f"El archivo {ruta} existe.")
+            else:
+            print(f"El archivo {ruta} no existe.")
+            Path("nuevo_directorio").mkdir(parents=True, exist_ok=True)
+            contenido = ruta.read_text()
+            print(contenido)'''
     },
     },
     "q": {
@@ -194,9 +244,21 @@ diccionario_es = {
             "uso": " Sirve Para invertir el orden de los elementos de un iterable.",
             "ejemplo": '''reversed([1, 2, 3])  # [3, 2, 1]'''
         },
+        "ramdon": {
+            "significado": "El módulo random permite generar números aleatorios o elegir elementos aleatorios de una secuencia.",
+            "uso": " Es útil para simulaciones, juegos, y cuando necesitas valores aleatorios.",
+            "ejemplo": '''import random
+            numero = random.randint(1, 10)
+            print(f"Número aleatorio: {numero}")
+            colores = ["rojo", "azul", "verde", "amarillo"]
+            color_elegido = random.choice(colores)
+            print(f"Color elegido: {color_elegido}")
+            random.shuffle(colores)
+            print(f"Colores barajados: {colores}")'''
+         },
     },
     "s": {
-       "str": {
+         "str": {
             "significado": " Convierte un valor en una cadena de texto.",
             "uso": " Sirve para separar una cadena usando un delimitador.",
             "ejemplo":''' # Número entero
@@ -205,31 +267,48 @@ diccionario_es = {
             print(type(numero_como_str))  # Salida: <class 'str'>
             print(numero_como_str)        # Salida: '123'''
         },
-     "split": {
+        "split": {
             "significado":"Divide una cadena en una lista de subcadenas..",
             "uso": " Es el primer parámetro de cualquier método de instancia de una clase.",
             "ejemplo": '''texto = "Hola Mundo Python"
             palabras = texto.split()
             print(palabras)'''
     },
-    "sorted": {
+        "sorted": {
             "significado":"Devuelve una lista nueva con los elementos de un iterable ordenados.",
             "uso": "  Ordenar una lista o tupla de manera ascendente o descendente.",
             "ejemplo": '''lista = [4, 1, 3, 2]
             print(sorted(lista))  # [1, 2, 3, 4]'''
     },
-     "sum ": {
+        "sum ": {
             "significado":" Devuelve la suma de los elementos de un iterable.",
             "uso": " Sumar los elementos de una lista o tupla.",
             "ejemplo": '''sum([1, 2, 3])  # 6'''
     },
+      " shutil": {
+            "significado":"   shutil es un módulo que proporciona una manera de copiar, mover o eliminar archivos y directorios.",
+            "uso": "Se utiliza para operaciones de alto nivel con archivos y directorios, como copiar un archivo o mover un directorio completo.",
+            "ejemplo": '''pimport shutil
+            shutil.copy("origen.txt", "destino.txt")
+            shutil.move("origen.txt", "nuevo_directorio/origen.txt")
+            shutil.remove("destino.txt")'''
+        },
     },
     "t": {
          
-     "type": {
+        "type": {
             "significado":" Devuelve el tipo de un objeto.",
             "uso": "  sirve para verificar el tipo de una variable.",
             "ejemplo": '''type(10)  # <class 'int'>'''
+    },
+        "time": {
+            "significado":" El módulo time permite trabajar con el tiempo y medir el tiempo de ejecución de bloques de código.",
+            "uso": "  Se utiliza para realizar mediciones de rendimiento o simplemente para trabajar con tiempos.",
+            "ejemplo": '''import time
+            inicio = time.time()
+            suma = sum(range(1, 1000000))
+            fin = time.time()
+            print(f"Tiempo de ejecución: {fin - inicio} segundos.")'''
     },
     },
     "u": {
