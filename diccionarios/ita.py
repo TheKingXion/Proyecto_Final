@@ -3,6 +3,18 @@ diccionario_ita ={
     "a": {
         # Aquí puedes agregar funciones que comiencen con la letra A
     },
+      "any": {
+            "significado": ":Restituisce True se almeno uno degli elementi in un iterabile è vero",
+            "uso": "Verifica se una condizione è un vero iterabile",
+            "ejemplo": '''values = [0, False, 2]
+            print(any(values))  # True'''
+        },
+        "all": {
+            "significado": "Restituisce True se tutti gli elementi sono true iterabili",
+            "uso": "Verifi è che tutte le condizioni sono vere iterabili",
+            "ejemplo": '''values = [1, 2, 3]
+            print(all(values))  # True'''
+        },
     "b": {
        "break": {
             "significado":" Termina un ciclo in anticipo.",
