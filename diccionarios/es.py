@@ -17,7 +17,7 @@ diccionario_es = {
             "significado":" Devuelve el valor absoluto de un número.",
             "uso": " sirve para obtener el valor absoluto de un número.",
             "ejemplo": '''abs(-5)  # 5'''
-    },
+        },
     },
     "b": {
        "break": {
@@ -64,15 +64,6 @@ diccionario_es = {
             del lista[0]
             print(lista)  # [2, 3]'''
         },
-        "datetime": {
-            "significado":" El módulo datetime permite trabajar con fechas y horas.",
-            "uso": "Se usa para manipular, comparar y formatear fechas y horas.",
-            "ejemplo": '''import datetime
-            ahora = datetime.datetime.now()
-            print(ahora)  # 2024-11-14 12:30:45.123456
-            fecha_formateada = ahora.strftime("%d/%m/%Y %H:%M")
-            print(fecha_formateada)  # 14/11/2024 12:30'''
-    },
     },
     "e": {
         "enumerate": {
@@ -80,7 +71,7 @@ diccionario_es = {
             "uso": " sirve para obtener tanto el índice como el valor de un iterable en un bucle.",
             "ejemplo": '''for idx, val in enumerate(["a", "b", "c"]):
             print(idx, val)'''
-    },
+        },
     },
     "f": {
          "format": {
@@ -95,17 +86,7 @@ diccionario_es = {
             "significado":"  Convierte una cadena a un número real .",
             "uso": " sirve para convertir cadenas numéricas en valores de tipo float.",
             "ejemplo": '''float("10.5")  # 10.5'''
-    },
-        "filter": {
-            "significado":"  filter() permite filtrar elementos de un iterable utilizando una función que retorna True o False.",
-            "uso": " Se utiliza para obtener elementos de una lista o secuencia que cumplan con una condición específica.",
-            "ejemplo": '''# Función para verificar si un número es par
-            def es_par(num):
-            return num % 2 == 0
-            numeros = [1, 2, 3, 4, 5, 6]
-            pares = filter(es_par, numeros)
-            print(list(pares))  # [2, 4, 6]'''
-    },
+        },
     },
     "g": {
         # Aquí puedes agregar funciones que comiencen con la letra G
@@ -142,7 +123,7 @@ diccionario_es = {
             "significado":" Convierte una cadena a un entero.",
             "uso": " sirve para convertir cadenas numéricas en valores enteros.",
             "ejemplo": '''int("10")  # 10'''
-    },
+        },
     },
     "j": {
         "join": {
@@ -175,15 +156,7 @@ diccionario_es = {
             "significado":"  Aplica una función a cada elemento de un iterable.",
             "uso": "  sirve para  aplicar una operación a todos los elementos de un iterable..",
             "ejemplo": '''map(lambda x: x * 2, [1, 2, 3])  # [2, 4, 6]'''
-    },
-        "namedtuple": {
-            "significado":"   namedtuple es una clase de collections que permite crear tuplas con nombres de campos, mejorando la legibilidad del código.",
-            "uso": " Se utiliza para almacenar datos que pueden ser tratados como una tupla pero con un acceso más legible a sus elementos por nombre.",
-            "ejemplo": '''from collections import namedtuple
-            Punto = namedtuple('Punto', ['x', 'y'])
-            p = Punto(x=10, y=20)
-            print(p.x, p.y)  # 10 20'''
-    },
+        },
     },
     "n": {
         # Aquí puedes agregar funciones que comiencen con la letra N
@@ -227,7 +200,7 @@ diccionario_es = {
             Path("nuevo_directorio").mkdir(parents=True, exist_ok=True)
             contenido = ruta.read_text()
             print(contenido)'''
-    },
+        },
     },
     "q": {
         # Aquí puedes agregar funciones que comiencen con la letra Q
@@ -244,18 +217,6 @@ diccionario_es = {
             "uso": " Sirve Para invertir el orden de los elementos de un iterable.",
             "ejemplo": '''reversed([1, 2, 3])  # [3, 2, 1]'''
         },
-        "ramdon": {
-            "significado": "El módulo random permite generar números aleatorios o elegir elementos aleatorios de una secuencia.",
-            "uso": " Es útil para simulaciones, juegos, y cuando necesitas valores aleatorios.",
-            "ejemplo": '''import random
-            numero = random.randint(1, 10)
-            print(f"Número aleatorio: {numero}")
-            colores = ["rojo", "azul", "verde", "amarillo"]
-            color_elegido = random.choice(colores)
-            print(f"Color elegido: {color_elegido}")
-            random.shuffle(colores)
-            print(f"Colores barajados: {colores}")'''
-         },
     },
     "s": {
          "str": {
@@ -273,18 +234,18 @@ diccionario_es = {
             "ejemplo": '''texto = "Hola Mundo Python"
             palabras = texto.split()
             print(palabras)'''
-    },
+        },
         "sorted": {
             "significado":"Devuelve una lista nueva con los elementos de un iterable ordenados.",
             "uso": "  Ordenar una lista o tupla de manera ascendente o descendente.",
             "ejemplo": '''lista = [4, 1, 3, 2]
             print(sorted(lista))  # [1, 2, 3, 4]'''
-    },
+        },
         "sum ": {
             "significado":" Devuelve la suma de los elementos de un iterable.",
             "uso": " Sumar los elementos de una lista o tupla.",
             "ejemplo": '''sum([1, 2, 3])  # 6'''
-    },
+        },
       " shutil": {
             "significado":"   shutil es un módulo que proporciona una manera de copiar, mover o eliminar archivos y directorios.",
             "uso": "Se utiliza para operaciones de alto nivel con archivos y directorios, como copiar un archivo o mover un directorio completo.",
@@ -300,16 +261,7 @@ diccionario_es = {
             "significado":" Devuelve el tipo de un objeto.",
             "uso": "  sirve para verificar el tipo de una variable.",
             "ejemplo": '''type(10)  # <class 'int'>'''
-    },
-        "time": {
-            "significado":" El módulo time permite trabajar con el tiempo y medir el tiempo de ejecución de bloques de código.",
-            "uso": "  Se utiliza para realizar mediciones de rendimiento o simplemente para trabajar con tiempos.",
-            "ejemplo": '''import time
-            inicio = time.time()
-            suma = sum(range(1, 1000000))
-            fin = time.time()
-            print(f"Tiempo de ejecución: {fin - inicio} segundos.")'''
-    },
+        },
     },
     "u": {
         # Aquí puedes agregar funciones que comiencen con la letra U

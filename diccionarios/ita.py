@@ -3,6 +3,19 @@ diccionario_ita ={
     "a": {
         # Aquí puedes agregar funciones que comiencen con la letra A
     },
+      "any": {
+            "significado": ":Restituisce True se almeno uno degli elementi in un iterabile è vero",
+            "uso": "Verifica se una condizione è un vero iterabile",
+            "ejemplo": '''values = [0, False, 2]
+            print(any(values))  # True'''
+        },
+        "all": {
+            "significado": "Restituisce True se tutti gli elementi sono true iterabili",
+            "uso": "Verifi è che tutte le condizioni sono vere iterabili",
+            "ejemplo": '''values = [1, 2, 3]
+            print(all(values))  # True'''
+        },
+        # Aquí puedes agregar funciones que comiencen con la letra b
     "b": {
        "break": {
             "significado":" Termina un ciclo in anticipo.",
@@ -14,9 +27,33 @@ diccionario_ita ={
             print(f"El número ingresado es {numero}")'''
         },
     },
-    "c": {
+   
         # Aquí puedes agregar funciones que comiencen con la letra C
     },
+        "_constains_": {
+            "significado":"Definire come verificare se un oggetto contiene altro (per l'operatore in).",
+            "uso": " Personalizzare il comportamento dell'operatore quando viene utilizzato con un oggetto di una classe definita dall'utente.",
+            "ejemplo": '''class Caja:
+            def __init__(self, elementos):
+            self.elementos = elementos
+            def __contains__(self, item):
+            return item in self.elementos
+            caja = Caja([1, 2, 3])
+            print(2 in caja)  # True'''
+        },
+        "count": {
+            "significado":" Personalizzare il comportamento dell'operatore quando viene utilizzato con un oggetto di una classe definita dall'utente.",
+            "uso": " Conta le apparizioni di un valore in una collezione.",
+            "ejemplo": '''lista = [1, 2, 2, 3, 2, 4]
+            print(lista.count(2))  # 3'''
+        },
+     },
+        "clear": {
+            "significado":" Elimina tutti gli elementi da un elenco o da un dizionario.",
+            "uso": "Scegliere il contenuto di una raccolta.",
+            "ejemplo": '''lista = [1, 2, 3]
+            lista.clear()
+            print(lista)  # []'''
     "d": {
         # Aquí puedes agregar funciones que comiencen con la letra D
     },
@@ -108,7 +145,7 @@ diccionario_ita ={
         "ejemplo": '''texto = "Hola Mundo Python"
         palabras = texto.split()
         print(palabras)'''
-    },
+        },
     },
     "t": {
         # Aquí puedes agregar funciones que comiencen con la letra T
