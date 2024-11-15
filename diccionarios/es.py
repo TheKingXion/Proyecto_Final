@@ -217,6 +217,14 @@ diccionario_es = {
             "uso": " Sirve Para invertir el orden de los elementos de un iterable.",
             "ejemplo": '''reversed([1, 2, 3])  # [3, 2, 1]'''
         },
+        "reduce()": {
+            "significado":" La función reduce() aplica una función acumulativa a los elementos de un iterable, reduciéndolo a un solo valor.",
+            "uso": " Se usa para realizar operaciones acumulativas, como sumar o multiplicar todos los elementos de una lista.",
+            "ejemplo": '''from functools import reduce
+            numeros = [1, 2, 3, 4]
+            resultado = reduce(lambda x, y: x + y, numeros)
+            print(resultado)  # 10'''
+        }
     },
     "s": {
          "str": {
@@ -254,6 +262,18 @@ diccionario_es = {
             shutil.move("origen.txt", "nuevo_directorio/origen.txt")
             shutil.remove("destino.txt")'''
         },
+        "super() ": {
+            "significado":" El uso de super() permite llamar a un método de la clase base desde una clase derivada..",
+            "uso": " Se usa cuando una clase hija necesita extender o modificar el comportamiento de un método de la clase base.",
+            "ejemplo": '''class Animal:
+            def hablar(self):
+            return "El animal hace un sonido."
+            class Perro(Animal):
+            def hablar(self):
+            return super().hablar() + " y el perro ladra."
+            mi_perro = Perro()
+            print(mi_perro.hablar())  # El animal hace un sonido. y el perro ladra.'''
+        },
     },
     "t": {
          
@@ -270,7 +290,16 @@ diccionario_es = {
         # Aquí puedes agregar funciones que comiencen con la letra V
     },
     "w": {
-        # Aquí puedes agregar funciones que comiencen con la letra W
+       "with": {
+            "significado":"Usado para manejar recursos como archivos, bases de datos, conexiones de red, etc., de manera eficiente.",
+            "uso": "  Se asegura de que los recursos sean cerrados correctamente, incluso si ocurre una excepción.",
+            "ejemplo": '''try:
+            with open("archivo.txt", "r") as archivo:
+            contenido = archivo.read()
+            print(contenido)
+            except FileNotFoundError:
+            print("El archivo no existe")'''
+        },
     },
     "x": {
         # Aquí puedes agregar funciones que comiencen con la letra X
