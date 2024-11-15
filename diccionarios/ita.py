@@ -1,9 +1,7 @@
 #cona
 diccionario_ita ={
     "a": {
-        # Aquí puedes agregar funciones que comiencen con la letra A
-    },
-      "any": {
+        "any": {
             "significado": ":Restituisce True se almeno uno degli elementi in un iterabile è vero",
             "uso": "Verifica se una condizione è un vero iterabile",
             "ejemplo": '''values = [0, False, 2]
@@ -15,7 +13,7 @@ diccionario_ita ={
             "ejemplo": '''values = [1, 2, 3]
             print(all(values))  # True'''
         },
-        # Aquí puedes agregar funciones que comiencen con la letra b
+    },
     "b": {
        "break": {
             "significado":" Termina un ciclo in anticipo.",
@@ -27,9 +25,10 @@ diccionario_ita ={
             print(f"El número ingresado es {numero}")'''
         },
     },
-   
-        # Aquí puedes agregar funciones que comiencen con la letra C
+    "d": {
+        # Aquí puedes agregar funciones que comiencen con la letra D
     },
+    "d": {
         "_constains_": {
             "significado":"Definire come verificare se un oggetto contiene altro (per l'operatore in).",
             "uso": " Personalizzare il comportamento dell'operatore quando viene utilizzato con un oggetto di una classe definita dall'utente.",
@@ -47,13 +46,14 @@ diccionario_ita ={
             "ejemplo": '''lista = [1, 2, 2, 3, 2, 4]
             print(lista.count(2))  # 3'''
         },
-     },
         "clear": {
             "significado":" Elimina tutti gli elementi da un elenco o da un dizionario.",
             "uso": "Scegliere il contenuto di una raccolta.",
             "ejemplo": '''lista = [1, 2, 3]
             lista.clear()
             print(lista)  # []'''
+        },
+    },     
     "d": {
         # Aquí puedes agregar funciones que comiencen con la letra D
     },
