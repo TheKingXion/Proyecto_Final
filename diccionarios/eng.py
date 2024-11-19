@@ -7,6 +7,12 @@ diccionario_eng = {
             "ejemplo": '''values = [0, False, 2]
             print(any(values))  # True'''
         },
+        "abs": {
+            "significado": ": Returns True if at least one of the elements in an iterable is true",
+            "uso": "Verify if a condition is a true iterable",
+            "ejemplo": '''values = [0, False, 2]
+            print(any(values))  # True'''
+        },
         "all": {
             "significado": "Return True if all elements are true iterable",
             "uso": "Verifi is all contitions are true iterable",
