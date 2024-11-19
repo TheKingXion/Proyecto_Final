@@ -73,7 +73,3 @@ El diseño se desarrolló desde cero utilizando Canva, con dos versiones adaptad
 3. Instalar dependencias :   
    ```bash
    pip install -r requirements.txt
-
-
-
-
