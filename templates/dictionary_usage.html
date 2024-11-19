@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ idioma }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,11 +12,12 @@
                 <div class="language-selection">
                     <div class="language-option">
                         <label for="input-language">Idioma</label>
-                        <select id="input-language" class="language-select-box">
-                            <option value="">Seleccionar idioma</option>
-                            <option value="es">Español</option>
-                            <option value="en">Inglés</option>
-                            <option value="fr">Francés</option>
+                        <select id="input-language" class="language-select-box" onchange="changeLanguage()">
+                            <option value="es" {% if idioma == 'es' %}selected{% endif %}>Español</option>
+                            <option value="en" {% if idioma == 'en' %}selected{% endif %}>Inglés</option>
+                            <option value="it" {% if idioma == 'it' %}selected{% endif %}>Italiano</option>
+                            <option value="pt" {% if idioma == 'pt' %}selected{% endif %}>Portugues</option>
+                        <!--<option value="fr" {% if idioma == 'fr' %}selected{% endif %}>Francés</option> -->
                         </select>
                     </div>
                 </div>
@@ -42,11 +43,16 @@
         element.classList.add('active');
         document.getElementById('selected-letter').textContent = letter;
         
-        fetch(`/terms/${letter}?idioma=en`)
+        fetch(`/terms/${letter}?idioma={{ idioma }}`)
             .then(response => response.text())
             .then(html => {
                 document.getElementById('terms-container').innerHTML = html;
         });
+    }
+
+    function changeLanguage() {
+        var selectedLanguage = document.getElementById('input-language').value;
+        window.location.href = '/dictionary-usage?idioma=' + selectedLanguage;
     }
     </script>
 </body>

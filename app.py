@@ -6,7 +6,7 @@ app = Flask(__name__)
 diccionarios = {
     "es": ES.diccionario_es,
     "en": ENG.diccionario_eng,
-    #"fr": FR.diccionario_fr,
+    #"fr": FR.diccionario_fr,  # Asegúrate de descomentar esto si quieres incluir francés
     "it": ITA.diccionario_ita,
     "pt": POR.diccionario_por,
 }
@@ -21,14 +21,14 @@ def developers():
 
 @app.route('/dictionary-usage', methods=['GET'])
 def dictionary_usage():
-    idioma = request.args.get('idioma', 'en')  # Cambiado a 'en' por defecto para usar el diccionario en inglés
-    diccionario = diccionarios.get(idioma, diccionarios["en"])  # Usa el diccionario en inglés por defecto
+    idioma = request.args.get('idioma', 'es')  # Cambiado a 'es' por defecto para usar el diccionario en español
+    diccionario = diccionarios.get(idioma, diccionarios["es"])  # Usa el diccionario en español por defecto
     return render_template('dictionary_usage.html', datos=diccionario, idioma=idioma)
 
 @app.route('/terms/<letter>')
 def terms(letter):
-    idioma = request.args.get('idioma', 'en')  # Obtén el idioma de la URL (o usa 'en' por defecto)
-    diccionario = diccionarios.get(idioma, diccionarios["en"])  # Obtén el diccionario correspondiente
+    idioma = request.args.get('idioma', 'es')  # Obtén el idioma de la URL (o usa 'es' por defecto)
+    diccionario = diccionarios.get(idioma, diccionarios["es"])  # Obtén el diccionario correspondiente
     letter = letter.lower()
     terms = diccionario.get(letter, {})
     return render_template('terms.html', terms=terms, letter=letter.upper())

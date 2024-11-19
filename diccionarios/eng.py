@@ -48,14 +48,14 @@ diccionario_eng = {
             "ejemplo": '''list = [1, 2, 2, 3, 2, 4]
             print(list.count(2))  # 3'''
         },
-     },
-     "clear": {
+        "clear": {
             "significado":" Delete all from a list or dictionary",
             "uso": "Empty the contents of a collection",
             "ejemplo": '''list = [1, 2, 3]
             list.clear()
             print(list)  # []'''
-    },
+        },
+     },
     "d": {
         "del": {
             "significado": "Remove a object or variable",
