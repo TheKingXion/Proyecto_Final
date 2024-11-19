@@ -1,6 +1,5 @@
-from flask import Flask, render_template
+from flask import Flask, render_template, request
 from diccionarios import ES, ENG, FR, ITA, POR
-import requests
 
 app = Flask(__name__)
 
@@ -20,16 +19,19 @@ def index():
 def developers():
     return render_template('developers.html')
 
-@app.route('/select-language')
-def select_language():
-    return render_template('select_language.html')
-
 @app.route('/dictionary-usage', methods=['GET'])
 def dictionary_usage():
-    idioma = request.args.get('idioma', 'es')  # Obtén el idioma de la URL (o usa 'es' por defecto)
-    diccionario = diccionarios.get(idioma, diccionarios["es"])  # Obtén el diccionario correspondiente
-    return render_template('dictionary_usage.html', datos=diccionario, idioma=idioma)  # Pasa los datos al HTML
+    idioma = request.args.get('idioma', 'en')  # Cambiado a 'en' por defecto para usar el diccionario en inglés
+    diccionario = diccionarios.get(idioma, diccionarios["en"])  # Usa el diccionario en inglés por defecto
+    return render_template('dictionary_usage.html', datos=diccionario, idioma=idioma)
 
+@app.route('/terms/<letter>')
+def terms(letter):
+    idioma = request.args.get('idioma', 'en')  # Obtén el idioma de la URL (o usa 'en' por defecto)
+    diccionario = diccionarios.get(idioma, diccionarios["en"])  # Obtén el diccionario correspondiente
+    letter = letter.lower()
+    terms = diccionario.get(letter, {})
+    return render_template('terms.html', terms=terms, letter=letter.upper())
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

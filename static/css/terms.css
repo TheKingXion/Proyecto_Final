@@ -1,0 +1,12 @@
+.term {
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    padding: 10px;
+    border-radius: 5px;
+}
+.term h3 {
+    margin-top: 0;
+}
+.term p {
+    margin: 5px 0;
+}

@@ -6,68 +6,48 @@
     <title>Forma de Utilizar el Diccionario - Diccionario del 3MF</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/dictionary_usage.css') }}">
 </head>
-<body>
-    <div class="container">
-        <header>
-            <div class="language-selection">
-                <div class="language-option">
-                    <label for="input-language">ENTRADA</label>
-                    <select id="input-language" class="language-select-box">
-                        <option value="">Seleccionar idioma</option>
-                        <option value="es">Español</option>
-                        <option value="en">Inglés</option>
-                        <option value="fr">Francés</option>
-                    </select>
+    <body>
+        <div class="container">
+            <header>
+                <div class="language-selection">
+                    <div class="language-option">
+                        <label for="input-language">Idioma</label>
+                        <select id="input-language" class="language-select-box">
+                            <option value="">Seleccionar idioma</option>
+                            <option value="es">Español</option>
+                            <option value="en">Inglés</option>
+                            <option value="fr">Francés</option>
+                        </select>
+                    </div>
                 </div>
-                <div class="language-option">
-                    <label for="output-language">SALIDA</label>
-                    <select id="output-language" class="language-select-box">
-                        <option value="">Seleccionar idioma</option>
-                        <option value="es">Español</option>
-                        <option value="en">Inglés</option>
-                        <option value="fr">Francés</option>
-                    </select>
+            </header>
+            <main>
+                <div class="content">
+                    <div class="alphabet-menu">
+                        <ul id="alphabet-list">
+                            {% for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' %}
+                                <li onclick="selectLetter('{{ letter }}', this)">{{ letter }}</li>
+                            {% endfor %}
+                        </ul>
+                    </div>
+                    <div id="selected-letter" class="selected-letter">A</div>
+                    <div id="terms-container"></div>
                 </div>
-            </div>
-        </header>
-        <main>
-            <div class="content">
-                <div class="alphabet-menu">
-                    <ul id="alphabet-list">
-                        <li onclick="selectLetter('A', this)">A</li>
-                        <li onclick="selectLetter('B', this)">B</li>
-                        <li onclick="selectLetter('C', this)">C</li>
-                        <li onclick="selectLetter('D', this)">D</li>
-                        <li onclick="selectLetter('E', this)">E</li>
-                        <li onclick="selectLetter('F', this)">F</li>
-                        <li onclick="selectLetter('G', this)">G</li>
-                        <li onclick="selectLetter('H', this)">H</li>
-                        <li onclick="selectLetter('I', this)">I</li>
-                        <li onclick="selectLetter('J', this)">J</li>
-                        <li onclick="selectLetter('K', this)">K</li>
-                        <li onclick="selectLetter('L', this)">L</li>
-                        <li onclick="selectLetter('M', this)">M</li>
-                        <li onclick="selectLetter('N', this)">N</li>
-                        <li onclick="selectLetter('Ñ', this)">Ñ</li>
-                        <li onclick="selectLetter('O', this)">O</li>
-                        <li onclick="selectLetter('P', this)">P</li>
-                        <li onclick="selectLetter('Q', this)">Q</li>
-                        <li onclick="selectLetter('R', this)">R</li>
-                        <li onclick="selectLetter('S', this)">S</li>
-                        <li onclick="selectLetter('T', this)">T</li>
-                        <li onclick="selectLetter('U', this)">U</li>
-                        <li onclick="selectLetter('V', this)">V</li>
-                        <li onclick="selectLetter('W', this)">W</li>
-                        <li onclick="selectLetter('X', this)">X</li>
-                        <li onclick="selectLetter('Y', this)">Y</li>
-                        <li onclick="selectLetter('Z', this)">Z</li>
-                    </ul>
-                </div>
-                <div id="selected-letter" class="selected-letter">A</div>
-            </div>
-        </main>
-    </div>
-
-    <script src="{{ url_for('static', filename='js/dictionary_usage.js') }}"></script>
+            </main>
+        </div>
+    
+    <script>
+    function selectLetter(letter, element) {
+        document.querySelectorAll('#alphabet-list li').forEach(li => li.classList.remove('active'));
+        element.classList.add('active');
+        document.getElementById('selected-letter').textContent = letter;
+        
+        fetch(`/terms/${letter}?idioma=en`)
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('terms-container').innerHTML = html;
+        });
+    }
+    </script>
 </body>
 </html>
