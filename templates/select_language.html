@@ -14,18 +14,20 @@
                 <label for="input-language" class="language-label">ENTRADA</label>
                 <select id="input-language" class="language-select-box">
                     <option value="">Seleccionar idioma</option>
-                    <option value="es">Español</option>
-                    <option value="en">Inglés</option>
-                    <option value="fr">Francés</option>
+                    <option value="ES" {% if idioma == 'ES' %}selected{% endif %}>Español </option>
+                    <option value="ENG" {% if idioma == 'ENG' %}selected{% endif %}>Inglés </option>
+                    <option value="FR" {% if idioma == 'FR' %}selected{% endif %}>Francés </option>
+                    <option value="POR" {% if idioma == 'POR' %}selected{% endif %}>Portugues </option>
                 </select>
             </div>
             <div class="language-option">
                 <label for="output-language" class="language-label">SALIDA</label>
                 <select id="output-language" class="language-select-box">
                     <option value="">Seleccionar idioma</option>
-                    <option value="es">Español</option>
-                    <option value="en">Inglés</option>
-                    <option value="fr">Francés</option>
+                    <option value="ES" {% if idioma == 'ES' %}selected{% endif %}>Español </option>
+                    <option value="ENG" {% if idioma == 'ENG' %}selected{% endif %}>Inglés </option>
+                    <option value="FR" {% if idioma == 'FR' %}selected{% endif %}>Francés </option>
+                    <option value="POR" {% if idioma == 'POR' %}selected{% endif %}>Portugues </option>
                 </select>
             </div>
         </div>
