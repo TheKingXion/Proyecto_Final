@@ -35,6 +35,12 @@ diccionario_eng = {
             break  # exit from the bucle if the user write 0
             print(f"the number entered is {number}")'''
         },
+        "bytes": {
+            "significado": "Returns an immutable byte sequence object",
+            "uso": "Working with Immutable Binary Data",
+            "ejemplo": '''b = bytes([65, 66, 67])
+            print(b)  # Result: b'ABC'''
+        },
     },
     "c": {
         "_constains_": {
@@ -78,6 +84,14 @@ diccionario_eng = {
             "ejemplo": '''for idx, val in enumerate(["a", "b", "c"]):
             print(idx, val)'''
             },
+        "except": {
+            "significado": "Error or unexpected event that interrupts the normal flow of the program",
+            "uso": " Handling errors and unforeseen situations",
+            "ejemplo": '''try:
+            result = 10 / 0
+            except ZeroDivisionError:
+            print("cannot be divided by zero")'''
+        },
         },
       "f": {
          "format": {
@@ -93,9 +107,24 @@ diccionario_eng = {
             "uso": "work for make a chain number into a float numbers",
             "ejemplo": '''float("10.5")  # 10.5'''
         },
+        "find": {
+            "significado":"refers to the definition or concept of something within the programming language",
+            "uso": " refers to how a concept is implemented or employed within a program",
+            "ejemplo": '''def plus(a, b):
+            return a + b
+            result = plus(3, 4)
+            print(result)  # This will print 7'''
+        },
         },
     "g": {
-        # Aquí puedes agregar funciones que comiencen con la letra G
+       "global": {
+            "significado":" a Variable away from all funtions and classes",
+            "uso": " Make a variable accessible from anywhere in your code",
+            "ejemplo": '''x = 10
+            def funtion():
+            global x
+            x = 20'''
+        },
     },
     "h": {
         # Aquí puedes agregar funciones que comiencen con la letra H
@@ -151,6 +180,20 @@ diccionario_eng = {
             longitude = longitude (text)
             print(f"the longitude of the chain is: {longitude}")'''
         },
+        "lambda": {
+            "significado":"Anonymous (unnamed) function that can be defined on a single line",
+            "uso": " Define simple functions to use in a single expression",
+            "ejemplo": '''square = lambda x: x**2
+            print(square(4))  # print 16'''
+        },
+        "locals()": {
+            "significado": "Returns a dictionary that represents the current local namespace",
+            "uso": "Get the local context of variables within a function or module",
+            "ejemplo": '''def example():
+            b = 20
+            print(locals())  # Result: {'b': 20}
+            example()'''
+        },
     },
     "m": {
         "max": {
@@ -178,7 +221,19 @@ diccionario_eng = {
             files = os.listdir(Current_Directory)
             print(f"files in the directory: {files}")
             os.rmdir("new_directory")'''
-        }, 
+        },
+         "ord": {
+            "significado": "Converts a character to its ASCII code",
+            "usage": "Getting the numeric value of a character",
+            "ejemplo": '''ord('A')  # Result: 65'''
+        },
+         "open()": {
+            "significado": "Opens a file and returns it as a file object",
+            "uso": "read or write files",
+            "ejemplo": '''file = open("example.txt", "w")
+            file.write("Hello world")
+            file.close()'''
+        },
     },
     "p": {
         "pop": {
@@ -230,7 +285,14 @@ diccionario_eng = {
             numbers = [1, 2, 3, 4]
             results = reduce(lambda x, y: x + y, numbers)
             print(resuls)  # 10'''
-        }
+        },
+        "return": {
+            "significado": "Value that a function returns to the person who invokes it",
+            "uso": "Get the result of executing a function",
+            "ejemplo": '''def multiplicate(a, b):
+            return a * b
+            result = multiplicate(3, 4)'''
+        },
     },
     "s": {
         "str": {
