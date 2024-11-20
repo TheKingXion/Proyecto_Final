@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="{{ idioma }}">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -9,23 +9,20 @@
 <body>
     <div class="container">
         <header>
+            <div class="search-container">
+                <button class="search-button" onclick="toggleSearch()">
+                    <img src="{{ url_for('static', filename='images/search_ico.png') }}" alt="Buscar" class="search-icon">
+                </button>
+                <input type="text" id="searchInput" class="search-input" placeholder="Buscar término...">
+            </div>
             <div class="language-selection">
                 <div class="language-option">
-                    <label for="input-language">ENTRADA</label>
-                    <select id="input-language" class="language-select-box">
-                        <option value="">Seleccionar idioma</option>
-                        <option value="es">Español</option>
-                        <option value="en">Inglés</option>
-                        <option value="fr">Francés</option>
-                    </select>
-                </div>
-                <div class="language-option">
-                    <label for="output-language">SALIDA</label>
-                    <select id="output-language" class="language-select-box">
-                        <option value="">Seleccionar idioma</option>
-                        <option value="es">Español</option>
-                        <option value="en">Inglés</option>
-                        <option value="fr">Francés</option>
+                    <label for="input-language">Idioma</label>
+                    <select id="input-language" class="language-select-box" onchange="changeLanguage()">
+                        <option value="es" {% if idioma == 'es' %}selected{% endif %}>Español</option>
+                        <option value="en" {% if idioma == 'en' %}selected{% endif %}>Inglés</option>
+                        <option value="it" {% if idioma == 'it' %}selected{% endif %}>Italiano</option>
+                        <option value="pt" {% if idioma == 'pt' %}selected{% endif %}>Portugues</option>
                     </select>
                 </div>
             </div>
@@ -34,40 +31,62 @@
             <div class="content">
                 <div class="alphabet-menu">
                     <ul id="alphabet-list">
-                        <li onclick="selectLetter('A', this)">A</li>
-                        <li onclick="selectLetter('B', this)">B</li>
-                        <li onclick="selectLetter('C', this)">C</li>
-                        <li onclick="selectLetter('D', this)">D</li>
-                        <li onclick="selectLetter('E', this)">E</li>
-                        <li onclick="selectLetter('F', this)">F</li>
-                        <li onclick="selectLetter('G', this)">G</li>
-                        <li onclick="selectLetter('H', this)">H</li>
-                        <li onclick="selectLetter('I', this)">I</li>
-                        <li onclick="selectLetter('J', this)">J</li>
-                        <li onclick="selectLetter('K', this)">K</li>
-                        <li onclick="selectLetter('L', this)">L</li>
-                        <li onclick="selectLetter('M', this)">M</li>
-                        <li onclick="selectLetter('N', this)">N</li>
-                        <li onclick="selectLetter('Ñ', this)">Ñ</li>
-                        <li onclick="selectLetter('O', this)">O</li>
-                        <li onclick="selectLetter('P', this)">P</li>
-                        <li onclick="selectLetter('Q', this)">Q</li>
-                        <li onclick="selectLetter('R', this)">R</li>
-                        <li onclick="selectLetter('S', this)">S</li>
-                        <li onclick="selectLetter('T', this)">T</li>
-                        <li onclick="selectLetter('U', this)">U</li>
-                        <li onclick="selectLetter('V', this)">V</li>
-                        <li onclick="selectLetter('W', this)">W</li>
-                        <li onclick="selectLetter('X', this)">X</li>
-                        <li onclick="selectLetter('Y', this)">Y</li>
-                        <li onclick="selectLetter('Z', this)">Z</li>
+                        {% for letter in 'ABCDEFGHIJKLMNOPQRSTUVWXYZ' %}
+                            <li onclick="selectLetter('{{ letter }}', this)">{{ letter }}</li>
+                        {% endfor %}
                     </ul>
                 </div>
                 <div id="selected-letter" class="selected-letter">A</div>
+                <div id="terms-container">
+                    <h1>¿Como se usa el Diccionario?</h1>
+                    <h2>Tan simple como dar click en la letra de la cual quieres ver los terminos y te dejara ver los terminos traducidos</h2>
+                    <h1>¿Como se usa el "Buscar"?</h1>
+                    <h2>Vas a la letra y cuando estes en la letra que tiene el termino, preciona el boton de buscar y busca ejemplo "If" y das ENTER</h2>
+                </div>
             </div>
         </main>
     </div>
+    
+    <script>
+    function selectLetter(letter, element) {
+        document.querySelectorAll('#alphabet-list li').forEach(li => li.classList.remove('active'));
+        element.classList.add('active');
+        document.getElementById('selected-letter').textContent = letter;
+        
+        fetch(`/terms/${letter}?idioma={{ idioma }}`)
+            .then(response => response.text())
+            .then(html => {
+                document.getElementById('terms-container').innerHTML = html;
+            });
+    }
 
-    <script src="{{ url_for('static', filename='js/dictionary_usage.js') }}"></script>
+    function changeLanguage() {
+        var selectedLanguage = document.getElementById('input-language').value;
+        window.location.href = '/dictionary-usage?idioma=' + selectedLanguage;
+    }
+
+    function toggleSearch() {
+        var searchInput = document.getElementById('searchInput');
+        searchInput.classList.toggle('active');
+        if (searchInput.classList.contains('active')) {
+            searchInput.focus();
+        }
+    }
+
+    document.getElementById('searchInput').addEventListener('keyup', function(event) {
+        if (event.key === 'Enter') {
+            var searchTerm = this.value.toLowerCase();
+            var terms = document.querySelectorAll('.term');
+            terms.forEach(function(term) {
+                var termName = term.querySelector('h3').textContent.toLowerCase();
+                if (termName.includes(searchTerm)) {
+                    term.style.display = 'block';
+                } else {
+                    term.style.display = 'none';
+                }
+            });
+        }
+    });
+    </script>
 </body>
 </html>

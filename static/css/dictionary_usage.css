@@ -7,6 +7,7 @@ body, html {
 
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -15,11 +16,15 @@ body, html {
 header {
     background-color: #f0f0f0;
     padding: 10px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
 }
 
 .language-selection {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra el cuadro de selección de idioma */
+    width: 100%; /* Permite que ocupe el ancho total */
     gap: 20px;
 }
 
@@ -64,19 +69,19 @@ h1 {
 
 .content {
     display: flex;
-    flex-direction: row; /* Alinea elementos horizontalmente */
+    flex-direction: row; 
     align-items: flex-start; /* Centra el contenido verticalmente */
     gap: 20px; /* Espacio entre la lista y la letra seleccionada */
 }
 
 .alphabet-menu {
     background-color: #00bcd4;
-    border-radius: 10px 25px 10px 25px;
+    border-radius: 10px 25px 10px 25px; /* Bordes del menu de letras */
     padding: 5px;
-    width: 80px;
-    height: 600px;
+    width: 80px; 
+    height: auto; 
     text-align: center;
-    overflow-y: scroll;
+ /* overflow-y: scroll;*/
 }
 
 .alphabet-menu ul {
@@ -103,16 +108,59 @@ h1 {
 }
 
 .selected-letter {
-    font-size: 100px;
+    font-size: 58pt;
     background-color: #00bcd4;
     color: white;
     border-radius: 50%;
-    width: 150px;
-    height: 150px;
+    width: 75pt;
+    height: 75pt;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-left: 20px;
+    margin-left: 15px;
+    margin-top: 22px;
+}
+
+.search-container {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    flex-direction: row-reverse;
+}
+
+.search-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
+.search-button {
+    background: transparent;
+    /*background-color: #4CAF50;*/
+    border: none;
+    color: white;
+    padding: 1px 10px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 5px 11px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+.search-input {
+    background-color: #bef1ec;
+    padding: 10px;
+    font-size: 16px;
+    border: 2px solid #00fff7;
+    border-radius: 4px;
+    width: 0;
+    transition: width 0.4s ease-in-out;
+}
+.search-input.active {
+    width: 240px;
 }
 
 @media (max-width: 768px) {
@@ -143,7 +191,7 @@ h1 {
     }
 
     .selected-letter {
-        margin-left: 0;
+        margin-left: 20px;
         margin-top: 20px;
     }
 }

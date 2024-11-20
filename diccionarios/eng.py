@@ -7,6 +7,12 @@ diccionario_eng = {
             "ejemplo": '''values = [0, False, 2]
             print(any(values))  # True'''
         },
+        "abs": {
+            "significado": ": Returns True if at least one of the elements in an iterable is true",
+            "uso": "Verify if a condition is a true iterable",
+            "ejemplo": '''values = [0, False, 2]
+            print(any(values))  # True'''
+        },
         "all": {
             "significado": "Return True if all elements are true iterable",
             "uso": "Verifi is all contitions are true iterable",
@@ -48,14 +54,14 @@ diccionario_eng = {
             "ejemplo": '''list = [1, 2, 2, 3, 2, 4]
             print(list.count(2))  # 3'''
         },
-     },
-     "clear": {
+        "clear": {
             "significado":" Delete all from a list or dictionary",
             "uso": "Empty the contents of a collection",
             "ejemplo": '''list = [1, 2, 3]
             list.clear()
             print(list)  # []'''
-    },
+        },
+     },
     "d": {
         "del": {
             "significado": "Remove a object or variable",

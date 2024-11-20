@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Terms for {{ letter }}</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/terms.css') }}">
+</head>
+<body>
+    <h2>Terms starting with {{ letter }}</h2>
+    {% for term, details in terms.items() %}
+        <div class="term">
+            <h3>{{ term }}</h3>
+            <p><strong>Significado:</strong> {{ details.significado }}</p>
+            <p><strong>Uso:</strong> {{ details.uso }}</p>
+            <p><strong>Ejemplo:</strong></p>
+            <pre><code>{{ details.ejemplo }}</code></pre>
+        </div>
+    {% endfor %}
+</body>
+</html>
