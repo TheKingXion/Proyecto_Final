@@ -1,396 +1,419 @@
 diccionario_por = {
     "a": {
         "abs": {
-            "significado": "Devuelve el valor absoluto de un número.",
-            "uso": "Se utiliza para obtener la magnitud de un número sin considerar su signo.",
-            "ejemplo": """
+            "significado": "Retorna o valor absoluto de um número.",
+            "uso": "É usado para obter a magnitude de um número sem considerar o seu sinal.",
+            "ejemplo": '''
                 numero1 = -10
-                print(abs(numero1))  # Salida: 10
-                """
+                print(abs(numero1))  # Saída: 10
+                '''
         },
         "all": {
-            "significado": "Devuelve True si todos los elementos de un iterable son verdaderos (o si el iterable está vacío).",
-            "uso": "Se utiliza para verificar que todos los valores de un iterable cumplan una condición.",
-            "ejemplo": """
+            "significado": "Retorna True se todos os elementos de um iterável forem verdadeiros (ou se o iterável estiver vazio).",
+            "uso": "É usado para verificar se todos os valores de um iterável atendem a uma condição.",
+            "ejemplo": '''
                 lista = [True, True, True]
-                print(all(lista))  # Salida: True
-
+                print(all(lista))  # Saída: True
+                
                 numeros = [1, 2, 0]
-                print(all(numeros))  # Salida: False (0 es evaluado como False)
-                """
+                print(all(numeros))  # Saída: False (0 é avaliado como False)
+                '''
         },
         "any": {
-            "significado": "Devuelve True si al menos un elemento de un iterable es verdadero (o si el iterable está vacío).",
-            "uso": "Se utiliza para verificar si al menos un valor de un iterable cumple una condición.",
-            "ejemplo": """
+            "significado": "Retorna True se pelo menos um elemento de um iterável for verdadeiro (ou se o iterável estiver vazio).",
+            "uso": "É usado para verificar se pelo menos um valor de um iterável atende a uma condição.",
+            "ejemplo": '''
                 lista = [False, False, True]
-                print(any(lista))  # Salida: True
+                print(any(lista))  # Saída: True
 
                 numeros = [0, 0, 0]
-                print(any(numeros))  # Salida: False
-                """
+                print(any(numeros))  # Saída: False
+            '''
         },
         "ascii": {
-            "significado": "Devuelve una representación legible de un objeto utilizando caracteres ASCII.",
-            "uso": "Se utiliza para representar cadenas o caracteres en un formato seguro en ASCII, reemplazando caracteres no ASCII con secuencias de escape.",
-            "ejemplo": """
-                texto = "Hola, ¿cómo estás?"
-                print(ascii(texto))  # Salida: 'Hola, \\xbfcomo est\\xe1s?'
-                """
+            "significado": "Retorna uma representação legível de um objeto usando caracteres ASCII.",
+            "uso": "É usado para representar strings ou caracteres em um formato seguro em ASCII, substituindo caracteres não ASCII por sequências de escape.",
+            "ejemplo": '''
+                texto = "Olá, como você está?"
+                print(ascii(texto))  # Saída: 'Ol\\xe1, como voc\\xea est\\xe1?'
+            '''
         },
         "append": {
-            "significado": "Agrega un elemento al final de una lista.",
-            "uso": "Se utiliza para añadir nuevos elementos a una lista existente.",
-            "ejemplo": """
+            "significado": "Adiciona um elemento ao final de uma lista.",
+            "uso": "É usado para adicionar novos elementos a uma lista existente.",
+            "ejemplo": '''
                 lista = [1, 2, 3]
                 lista.append(4)
-                print(lista)  # Salida: [1, 2, 3, 4]
-                """
+                print(lista)  # Saída: [1, 2, 3, 4]
+            '''
         },
         "argmax": {
-            "significado": "Devuelve el índice del valor máximo en un array o iterable.",
-            "uso": "Se utiliza en bibliotecas como NumPy para localizar el índice del mayor valor en estructuras de datos.",
-            "ejemplo": """
+            "significado": "Retorna o índice do valor máximo em um array ou iterável.",
+            "uso": "É usado em bibliotecas como NumPy para localizar o índice do maior valor em estruturas de dados.",
+            "ejemplo": '''
                 import numpy as np
 
                 numeros = [1, 5, 2, 9, 3]
-                print(np.argmax(numeros))  # Salida: 3 (índice del valor 9)
-                """
+                print(np.argmax(numeros))  # Saída: 3 (índice do valor 9)
+            '''
         },
         "argmin": {
-            "significado": "Devuelve el índice del valor mínimo en un array o iterable.",
-            "uso": "Se utiliza en bibliotecas como NumPy para localizar el índice del menor valor en estructuras de datos.",
-            "ejemplo": """
+            "significado": "Retorna o índice do valor mínimo em um array ou iterável.",
+            "uso": "É usado em bibliotecas como NumPy para localizar o índice do menor valor em estruturas de dados.",
+            "ejemplo": '''
                 import numpy as np
 
                 numeros = [1, 5, 2, 9, 3]
-                print(np.argmin(numeros))  # Salida: 0 (índice del valor 1)
-                """
+                print(np.argmin(numeros))  # Saída: 0 (índice do valor 1)
+            '''
         },
         "array": {
-            "significado": "Es una estructura de datos que contiene múltiples elementos del mismo tipo, comúnmente utilizada en bibliotecas como NumPy.",
-            "uso": "Se utiliza para almacenar y operar eficientemente con grandes cantidades de datos homogéneos.",
-            "ejemplo": """
+            "significado": "É uma estrutura de dados que contém múltiplos elementos do mesmo tipo, comumente utilizada em bibliotecas como NumPy.",
+            "uso": "É usada para armazenar e operar eficientemente com grandes quantidades de dados homogêneos.",
+            "ejemplo": '''
                 import numpy as np
 
                 numeros = np.array([1, 2, 3, 4])
-                print(numeros)  # Salida: [1 2 3 4]
-                """
+                print(numeros)  # Saída: [1 2 3 4]
+            '''
         },
         "as": {
-            "significado": "Palabra clave utilizada para asignar un alias a módulos o en declaraciones `with`.",
-            "uso": "Facilita la referenciación de nombres largos o específicos en el código.",
-            "ejemplo": """
+            "significado": "Palavra-chave usada para atribuir um alias a módulos ou em declarações `with`.",
+            "uso": "Facilita a referência de nomes longos ou específicos no código.",
+            "ejemplo": '''
                 import numpy as np
 
-                with open('archivo.txt', 'r') as archivo:
-                contenido = archivo.read()
-                """
+                with open('arquivo.txt', 'r') as arquivo:
+                    conteudo = arquivo.read()
+                '''
         },
         "assert": {
-            "significado": "Evalúa una expresión y genera una excepción `AssertionError` si la expresión es falsa.",
-            "uso": "Se utiliza para verificar condiciones que deben cumplirse durante la ejecución del programa.",
-            "ejemplo": """
+            "significado": "Avalia uma expressão e gera uma exceção `AssertionError` se a expressão for falsa.",
+            "uso": "É usado para verificar condições que devem ser atendidas durante a execução do programa.",
+            "ejemplo": '''
                 x = 5
-                assert x > 0, 'x debe ser mayor que 0'  # No genera error
-                assert x < 0, 'x debe ser menor que 0'  # Genera AssertionError
-                """
+                assert x > 0, 'x deve ser maior que 0'  # Não gera erro
+                assert x < 0, 'x deve ser menor que 0'  # Gera AssertionError
+                '''
         },
         "async": {
-            "significado": "Define una función asíncrona que puede ser utilizada con `await`.",
-            "uso": "Se utiliza para implementar programación asíncrona en Python.",
-            "ejemplo": """
+            "significado": "Define uma função assíncrona que pode ser usada com `await`.",
+            "uso": "É usado para implementar programação assíncrona em Python.",
+            "ejemplo": '''
                 import asyncio
 
-                async def saludo():
-                    print('Hola')
+                async def saudacao():
+                    print('Olá')
                     await asyncio.sleep(1)
-                    print('Adiós')
+                    print('Adeus')
 
-                asyncio.run(saludo())
-                """
+                asyncio.run(saudacao())
+                '''
         },
         "await": {
-            "significado": "Se utiliza para esperar el resultado de una función asíncrona.",
-            "uso": "Se utiliza dentro de funciones definidas con `async` para pausar su ejecución hasta que una tarea asíncrona se complete.",
-            "ejemplo": """
+            "significado": "É usado para aguardar o resultado de uma função assíncrona.",
+            "uso": "É utilizado dentro de funções definidas com `async` para pausar sua execução até que uma tarefa assíncrona seja concluída.",
+            "ejemplo": '''
                 import asyncio
 
-                async def tarea():
+                async def tarefa():
                     await asyncio.sleep(1)
-                    return 'Tarea completada'
+                    return 'Tarefa concluída'
 
                 async def main():
-                    resultado = await tarea()
+                    resultado = await tarefa()
                     print(resultado)
 
                 asyncio.run(main())
-                """
+                '''
         },
         "attribute": {
-            "significado": "Se refiere a una propiedad o característica asociada a un objeto en Python.",
-            "uso": "Se utiliza para acceder o modificar propiedades de objetos creados a partir de clases.",
-            "ejemplo": """
-                class Persona:
-                    def __init__(self, nombre, edad):
-                        self.nombre = nombre
-                        self.edad = edad
+            "significado": "Refere-se a uma propriedade ou característica associada a um objeto em Python.",
+            "uso": "É usado para acessar ou modificar propriedades de objetos criados a partir de classes.",
+            "ejemplo": '''
+                class Pessoa:
+                    def __init__(self, nome, idade):
+                        self.nome = nome
+                        self.idade = idade
 
-                p = Persona('Juan', 30)
-                print(p.nombre)  # Salida: Juan
-                p.edad = 31
-                print(p.edad)  # Salida: 31
-                """
+                p = Pessoa('João', 30)
+                print(p.nome)  # Saída: João
+                p.idade = 31
+                print(p.idade)  # Saída: 31
+                '''
         },
         "at": {
-            "significado": "Método utilizado para acceder a elementos específicos en estructuras como DataFrames o arrays (usualmente en pandas).",
-            "uso": "Se utiliza para acceder rápidamente a un valor individual en una posición específica.",
-            "ejemplo": """
+            "significado": "Método usado para acessar elementos específicos em estruturas como DataFrames ou arrays (geralmente no pandas).",
+            "uso": "É usado para acessar rapidamente um valor individual em uma posição específica.",
+            "ejemplo": '''
                 import pandas as pd
 
-                datos = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
-                print(datos.at[0, 'A'])  # Salida: 1
-                """
+                dados = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
+                print(dados.at[0, 'A'])  # Saída: 1
+                '''
         },
         "args": {
-        "significado": "Es un parámetro que permite recibir un número variable de argumentos posicionales en una función.",
-        "uso": "Se utiliza para manejar múltiples argumentos en una función sin especificar cada uno individualmente.",
-        "ejemplo": """
-            def suma(*args):
-                return sum(args)
+            "significado": "É um parâmetro que permite receber um número variável de argumentos posicionais em uma função.",
+            "uso": "É usado para lidar com múltiplos argumentos em uma função sem especificar cada um individualmente.",
+            "ejemplo": '''
+                def soma(*args):
+                    return sum(args)
 
-            print(suma(1, 2, 3))  # Salida: 6
-            """
+                print(soma(1, 2, 3))  # Saída: 6
+                '''
         },
         "apply": {
-            "significado": "Método utilizado en pandas para aplicar una función a filas o columnas de un DataFrame.",
-            "uso": "Se utiliza para realizar operaciones personalizadas en filas o columnas.",
-            "ejemplo": """
+            "significado": "Método usado no pandas para aplicar uma função a linhas ou colunas de um DataFrame.",
+            "uso": "É usado para realizar operações personalizadas em linhas ou colunas.",
+            "ejemplo": '''
                 import pandas as pd
 
-                datos = pd.DataFrame({'A': [1, 2, 3]})
-                datos['B'] = datos['A'].apply(lambda x: x * 2)
-                print(datos)
-                # Salida:
+                dados = pd.DataFrame({'A': [1, 2, 3]})
+                dados['B'] = dados['A'].apply(lambda x: x * 2)
+                print(dados)
+                # Saída:
                 #    A  B
                 # 0  1  2
                 # 1  2  4
                 # 2  3  6
-                """
+                '''
         },
         "assertEqual": {
-            "significado": "Comprueba si dos valores son iguales en una prueba unitaria.",
-            "uso": "Se utiliza en pruebas unitarias para validar la igualdad de valores esperados y reales.",
-            "ejemplo": """
+            "significado": "Verifica se dois valores são iguais em um teste unitário.",
+            "uso": "É usado em testes unitários para validar a igualdade de valores esperados e reais.",
+            "ejemplo": '''
                 import unittest
 
-                class Prueba(unittest.TestCase):
-                    def test_suma(self):
-                        self.assertEqual(1 + 1, 2)  # La prueba pasa
-                """
+                class Teste(unittest.TestCase):
+                    def test_soma(self):
+                        self.assertEqual(1 + 1, 2)  # O teste passa
+                '''
         },
         "assertIsNone": {
-            "significado": "Comprueba si un valor es None en una prueba unitaria.",
-            "uso": "Se utiliza en pruebas unitarias para validar que un valor sea None.",
-            "ejemplo": """
+            "significado": "Verifica se um valor é None em um teste unitário.",
+            "uso": "É usado em testes unitários para validar que um valor seja None.",
+            "ejemplo": '''
                 import unittest
 
-                class Prueba(unittest.TestCase):
+                class Teste(unittest.TestCase):
                     def test_valor_none(self):
-                        self.assertIsNone(None)  # La prueba pasa
-                """
+                        self.assertIsNone(None)  # O teste passa
+                '''
         },
         "attributeError": {
-            "significado": "Es una excepción que ocurre cuando se intenta acceder o asignar un atributo que no existe.",
-            "uso": "Se utiliza para capturar y manejar errores relacionados con atributos no válidos.",
-            "ejemplo": """
+            "significado": "É uma exceção que ocorre quando se tenta acessar ou atribuir um atributo que não existe.",
+            "uso": "É usado para capturar e tratar erros relacionados a atributos inválidos.",
+            "ejemplo": '''
                 try:
                     objeto = 5
                     objeto.atributo = 10
                 except AttributeError as e:
-                    print('Error:', e)
-                # Salida: Error: 'int' object has no attribute 'atributo'
-                """
+                    print('Erro:', e)
+                # Saída: Erro: 'int' object has no attribute 'atributo'
+                '''
         },
         "add": {
-            "significado": "Método utilizado para añadir un elemento a un conjunto o realizar una suma entre matrices (dependiendo del contexto).",
-            "uso": "Se utiliza en conjuntos para agregar elementos o en NumPy para realizar operaciones matemáticas.",
-            "ejemplo": """
+            "significado": "Método usado para adicionar um elemento a um conjunto ou realizar uma soma entre matrizes (dependendo do contexto).",
+            "uso": "É usado em conjuntos para adicionar elementos ou no NumPy para realizar operações matemáticas.",
+            "ejemplo": '''
                 # Conjuntos
                 conjunto = {1, 2, 3}
                 conjunto.add(4)
-                print(conjunto)  # Salida: {1, 2, 3, 4}
+                print(conjunto)  # Saída: {1, 2, 3, 4}
 
                 # NumPy
                 import numpy as np
                 resultado = np.add(2, 3)
-                print(resultado)  # Salida: 5
-                """
+                print(resultado)  # Saída: 5
+                '''
         },
         "allclose": {
-            "significado": "Comprueba si todos los elementos de dos arrays son aproximadamente iguales.",
-            "uso": "Se utiliza en NumPy para verificar la igualdad de elementos con tolerancia a pequeñas diferencias.",
-            "ejemplo": """
+            "significado": "Verifica se todos os elementos de dois arrays são aproximadamente iguais.",
+            "uso": "É usado no NumPy para verificar a igualdade de elementos com tolerância a pequenas diferenças.",
+            "ejemplo": '''
                 import numpy as np
 
                 a = [1.0, 2.001]
                 b = [1.0, 2.0009]
-                print(np.allclose(a, b, atol=0.01))  # Salida: True
-                """
+                print(np.allclose(a, b, atol=0.01))  # Saída: True
+                '''
         },
         "average": {
-            "significado": "Calcula el promedio de los elementos de un array o lista.",
-            "uso": "Se utiliza en NumPy para calcular promedios, con posibilidad de ponderar valores.",
-            "ejemplo": """
+            "significado": "Calcula a média dos elementos de um array ou lista.",
+            "uso": "É usado no NumPy para calcular médias, com possibilidade de ponderar valores.",
+            "ejemplo": '''
                 import numpy as np
 
                 valores = [1, 2, 3, 4]
-                print(np.average(valores))  # Salida: 2.5
-                """
+                print(np.average(valores))  # Saída: 2.5
+                '''
         },
-            "assertAlmostEqual": {
-        "significado": "Comprueba si dos valores son aproximadamente iguales hasta un número específico de decimales en una prueba unitaria.",
-        "uso": "Se utiliza en pruebas unitarias para validar valores con tolerancia a diferencias menores.",
-        "ejemplo": """
-            import unittest
+        "assertAlmostEqual": {
+            "significado": "Verifica se dois valores são aproximadamente iguais até um número específico de casas decimais em um teste unitário.",
+            "uso": "É usado em testes unitários para validar valores com tolerância a diferenças pequenas.",
+            "ejemplo": '''
+                import unittest
 
-            class Prueba(unittest.TestCase):
-                def test_aproximacion(self):
-                    self.assertAlmostEqual(3.14159, 3.14, places=2)  # La prueba pasa
-            """
+                class Teste(unittest.TestCase):
+                    def test_aproximacao(self):
+                        self.assertAlmostEqual(3.14159, 3.14, places=2)  # O teste passa
+                '''
         },
         "absolute_import": {
-            "significado": "Directiva utilizada para habilitar las importaciones absolutas en Python 2.x y posterior.",
-            "uso": "Se utiliza para evitar conflictos entre módulos locales y globales.",
-            "ejemplo": """
+            "significado": "Diretiva usada para habilitar importações absolutas no Python 2.x e versões posteriores.",
+            "uso": "É usado para evitar conflitos entre módulos locais e globais.",
+            "ejemplo": '''
                 from __future__ import absolute_import
 
-                # Importa siempre el módulo global, no uno local con el mismo nombre
+                # Sempre importa o módulo global, não um local com o mesmo nome
                 import math
-                """
+                '''
         },
         "allexcept": {
-            "significado": "No es un término nativo de Python. Podría referirse a un enfoque lógico que aplica operaciones a todos los elementos excepto algunos específicos.",
-            "uso": "Generalmente implementado manualmente.",
-            "ejemplo": """
+            "significado": "Não é um termo nativo do Python. Pode se referir a uma abordagem lógica que aplica operações a todos os elementos, exceto alguns específicos.",
+            "uso": "Geralmente implementado manualmente.",
+            "ejemplo": '''
                 lista = [1, 2, 3, 4]
-                resultado = [x for x in lista if x != 2]  # Filtra todos menos el 2
-                print(resultado)  # Salida: [1, 3, 4]
-                """
+                resultado = [x for x in lista if x != 2]  # Filtra todos, exceto o 2
+                print(resultado)  # Saída: [1, 3, 4]
+                '''
         },
         "as_tuple": {
-            "significado": "Método que convierte un objeto en una tupla (común en bibliotecas como SymPy).",
-            "uso": "Se utiliza para transformar objetos en representaciones de tuplas.",
-            "ejemplo": """
+            "significado": "Método que converte um objeto em uma tupla (comum em bibliotecas como o SymPy).",
+            "uso": "É usado para transformar objetos em representações de tuplas.",
+            "ejemplo": '''
                 from sympy import Point
 
                 p = Point(2, 3)
-                print(p.as_tuple())  # Salida: (2, 3)
-                """
+                print(p.as_tuple())  # Saída: (2, 3)
+                '''
         },
         "atleast_1d": {
-            "significado": "Convierte entradas en arrays con al menos una dimensión.",
-            "uso": "Se utiliza en NumPy para asegurar que los datos tengan una dimensión mínima.",
-            "ejemplo": """
+            "significado": "Converte entradas em arrays com pelo menos uma dimensão.",
+            "uso": "É usado no NumPy para garantir que os dados tenham uma dimensão mínima.",
+            "ejemplo": '''
                 import numpy as np
 
                 resultado = np.atleast_1d(5)
-                print(resultado)  # Salida: [5]
-                """
+                print(resultado)  # Saída: [5]
+                '''
         },
         "atleast_2d": {
-            "significado": "Convierte entradas en arrays con al menos dos dimensiones.",
-            "uso": "Se utiliza en NumPy para trabajar con datos en formato de matriz.",
-            "ejemplo": """
+            "significado": "Converte entradas em arrays com pelo menos duas dimensões.",
+            "uso": "É usado no NumPy para trabalhar com dados no formato de matriz.",
+            "ejemplo": '''
                 import numpy as np
 
                 resultado = np.atleast_2d([1, 2, 3])
                 print(resultado)
-                # Salida:
+                # Saída:
                 # [[1 2 3]]
-                """
+                '''
         },
         "arange": {
-            "significado": "Genera un array con valores espaciados uniformemente dentro de un intervalo.",
-            "uso": "Se utiliza en NumPy para crear secuencias numéricas.",
-            "ejemplo": """
+            "significado": "Gera um array com valores igualmente espaçados dentro de um intervalo.",
+            "uso": "É usado no NumPy para criar sequências numéricas.",
+            "ejemplo": '''
                 import numpy as np
 
                 resultado = np.arange(0, 10, 2)
-                print(resultado)  # Salida: [0 2 4 6 8]
-                """
+                print(resultado)  # Saída: [0 2 4 6 8]
+                '''
         },
         "arccos": {
-            "significado": "Devuelve el arco coseno (en radianes) de un valor.",
-            "uso": "Se utiliza en cálculos trigonométricos con NumPy.",
-            "ejemplo": """
+            "significado": "Retorna o arco cosseno (em radianos) de um valor.",
+            "uso": "É usado em cálculos trigonométricos com o NumPy.",
+            "ejemplo": '''
                 import numpy as np
 
                 resultado = np.arccos(0.5)
-                print(resultado)  # Salida: 1.0471975511965976 (equivalente a π/3)
-                """
+                print(resultado)  # Saída: 1.0471975511965976 (equivalente a π/3)
+                '''
         },
         "arcsin": {
-            "significado": "Devuelve el arco seno (en radianes) de un valor.",
-            "uso": "Se utiliza en cálculos trigonométricos con NumPy.",
-            "ejemplo": """
+            "significado": "Retorna o arco seno (em radianos) de um valor.",
+            "uso": "É usado em cálculos trigonométricos com o NumPy.",
+            "ejemplo": '''
                 import numpy as np
 
                 resultado = np.arcsin(0.5)
-                print(resultado)  # Salida: 0.5235987755982988 (equivalente a π/6)
-                """
+                print(resultado)  # Saída: 0.5235987755982988 (equivalente a π/6)
+                '''
         },
         "arctan": {
-            "significado": "Devuelve el arco tangente (en radianes) de un valor.",
-            "uso": "Se utiliza en cálculos trigonométricos con NumPy.",
-            "ejemplo": """
+            "significado": "Retorna o arco tangente (em radianos) de um valor.",
+            "uso": "É usado em cálculos trigonométricos com o NumPy.",
+            "ejemplo": '''
                 import numpy as np
 
                 resultado = np.arctan(1)
-                print(resultado)  # Salida: 0.7853981633974483 (equivalente a π/4)
-                """
+                print(resultado)  # Saída: 0.7853981633974483 (equivalente a π/4)
+                '''
+        },
+        "argparse": {
+            "significado": "Módulo do Python usado para gerenciar argumentos e opções de linha de comando.",
+            "uso": "É usado para criar interfaces de linha de comando fáceis de usar.",
+            "ejemplo": '''
+                import argparse
+
+                parser = argparse.ArgumentParser(description='ejemplo de argparse')
+                parser.add_argument('--nome', type=str, help='Seu nome')
+                args = parser.parse_args()
+                print(f'Olá, {args.nome}')
+                '''
+        },
+        "array_like": {
+            "significado": "Refere-se a qualquer objeto que possa ser tratado como um array, como listas, tuplas ou arrays do NumPy.",
+            "uso": "É usado como entrada em funções do NumPy ou similares para operações com dados.",
+            "ejemplo": '''
+                import numpy as np
+
+                lista = [1, 2, 3]
+                array = np.array(lista)  # lista é array_like
+                print(array)  # Saída: [1 2 3]
+                '''
         },
     },
     "b": {
         "": {
             "significado": "",
             "uso": "",
-            "ejemplo": """"""
+            "ejemplo": ''''''
         },
     },
     "c": {
         "": {
             "significado": "",
             "uso": "",
-            "ejemplo": """"""
+            "ejemplo": ''''''
         },
     },
     "d": {
         "": {
             "significado": "",
             "uso": "",
-            "ejemplo": """"""
+            "ejemplo": ''''''
         },
     },
     "e": {
         "": {
             "significado": "",
             "uso": "",
-            "ejemplo": """"""
+            "ejemplo": ''''''
         },
     },
     "f": {
         "": {
             "significado": "",
             "uso": "",
-            "ejemplo": """"""
+            "ejemplo": ''''''
         },
     },
     "g": {
         "": {
             "significado": "",
             "uso": "",
-            "ejemplo": """"""
+            "ejemplo": ''''''
         },
     },
     "h": {
@@ -415,7 +438,7 @@ diccionario_por = {
         "kwargs": {
             "significado": "Es un parámetro que permite recibir un número variable de argumentos con nombre en una función.",
             "uso": "Se utiliza para manejar argumentos nombrados dinámicos en una función.",
-            "ejemplo": """
+            "ejemplo": '''
                 def mostrar_informacion(**kwargs):
                     for clave, valor in kwargs.items():
                         print(f'{clave}: {valor}')
@@ -424,7 +447,7 @@ diccionario_por = {
                 # Salida:
                 # nombre: Juan
                 # edad: 30
-                """
+                '''
         },
     },
     "l": {
