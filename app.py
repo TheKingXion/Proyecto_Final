@@ -4,11 +4,11 @@ from diccionarios import ES, ENG, FR, ITA, POR
 app = Flask(__name__)
 
 diccionarios = {
-    "es": ES.diccionario_es,
-    "en": ENG.diccionario_eng,
+    "es": es.diccionario_es,
+    "en": eng.diccionario_eng,
     #"fr": FR.diccionario_fr,  # Asegúrate de descomentar esto si quieres incluir francés
-    "it": ITA.diccionario_ita,
-    "pt": POR.diccionario_por,
+    "it": ita.diccionario_ita,
+    "pt": por.diccionario_por,
 }
 
 @app.route('/')
