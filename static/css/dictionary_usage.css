@@ -14,7 +14,7 @@ body, html {
 }
 
 header {
-    background-color: #f0f0f0;
+    background-color: #0D0259;
     padding: 10px;
     display: flex;
     justify-content: space-between;
@@ -36,7 +36,7 @@ header {
 
 .language-option label {
     font-size: 0.8rem;
-    color: #ffd700;
+    color: #FFFFFF;
     margin-bottom: 5px;
 }
 
@@ -49,6 +49,10 @@ header {
     cursor: pointer;
 }
 
+.language-select-box:hover {
+    background-color: #F2B705;
+}
+
 main {
     flex-grow: 1;
     display: flex;
@@ -56,9 +60,15 @@ main {
 
 h1 {
     font-size: 2.5rem;
-    color: #ffd700;
+    color: #D92534;
     text-align: center;
     margin-bottom: 10px;
+}
+h2 {
+    font-size: 1.2rem;
+    color: #1B1259;
+    text-align: center;
+    margin-bottom: 30px;
 }
 
 .instructions {
@@ -75,13 +85,12 @@ h1 {
 }
 
 .alphabet-menu {
-    background-color: #00bcd4;
-    border-radius: 10px 30px 30px 10px; /* Bordes del menu de letras */
-    padding: 5px;
-    width: 80px; 
-    height: auto; 
+    background-color: #1B1259;
+    border-radius: 10px;
+    padding: 15px;
+    width: 80px;
+    height: auto;
     text-align: center;
- /* overflow-y: scroll;*/
 }
 
 .alphabet-menu ul {
@@ -92,24 +101,29 @@ h1 {
 
 .alphabet-menu ul li {
     font-size: 18px;
-    padding: 5px 0;
-    color: #000;
+    padding: 10px 0;
+    color: #F2F2F2;
     cursor: pointer;
-    transition: background-color 0.3s;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.alphabet-menu ul li:hover {
+    background-color: #0D0259;
+    transform: scale(1.1);
 }
 
 .alphabet-menu ul li.active {
-    background-color: #0097a7;
-    color: white;
-    border-radius: 15px;
-    padding: 5px 15px;
-    transform: translateX(20px);
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+    background-color: #F2B705;
+    color: #0D0259;
+    border-radius: 5px;
+    font-weight: bold;
+    transform: scale(1.1);
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
 }
 
 .selected-letter {
     font-size: 58pt;
-    background-color: #00bcd4;
+    background-color: #D92534;
     color: white;
     border-radius: 50%;
     width: 75pt;
@@ -131,36 +145,45 @@ h1 {
 }
 
 .search-icon {
-    width: 50px;
-    height: 50px;
+    width: 35px;
+    height: 35px;
     display: block;
 }
 
 .search-button {
     background: transparent;
-    /*background-color: #4CAF50;*/
+    background-color: #F2B705;
     border: none;
-    color: white;
-    padding: 1px 10px;
+    color: #0D0259;
+    padding: 10px 15px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 5px 11px;
+    margin-right: 10px;
     cursor: pointer;
-    border-radius: 4px;
+    border-radius: 20px;
+    transition: background-color 0.3s ease;
 }
+.search-button:hover {
+    background-color: #D92534;
+    color: #F2F2F2;
+}
+
 .search-input {
-    background-color: #bef1ec;
-    padding: 10px;
+    background-color: #F2F2F2;
+    padding: 10px 15px;
     font-size: 16px;
-    border: 2px solid #00fff7;
-    border-radius: 4px;
-    width: 0;
-    transition: width 0.4s ease-in-out;
+    border: 2px solid #1B1259;
+    border-radius: 20px;
+    width: 200px;
+    transition: width 0.4s ease-in-out, box-shadow 0.3s ease;
 }
-.search-input.active {
-    width: 240px;
+
+.search-input:focus {
+    width: 300px;
+    outline: none;
+    box-shadow: 0 0 5px rgba(27, 18, 89, 0.5);
 }
 
 @media (max-width: 768px) {
