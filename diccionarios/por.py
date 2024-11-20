@@ -346,7 +346,7 @@ diccionario_por = {
                 # [[1 2 3]]
                 '''
         },
-        "average": {
+                "average": {
             "significado": "Calcula a média dos elementos de um array ou lista.",
             "uso": "É usado no NumPy para calcular médias, com possibilidade de ponderar valores.",
             "ejemplo": '''
