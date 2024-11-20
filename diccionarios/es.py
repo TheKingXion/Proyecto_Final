@@ -29,6 +29,12 @@ diccionario_es = {
             break  # Salir del bucle si el número es 0
             print(f"El número ingresado es {numero}")'''
         },
+        "bytes": {
+            "significado": "Devuelve un objeto bytes inmutable de secuencia de bytes.",
+            "uso": " Trabajar con datos binarios inmutables.",
+            "ejemplo": '''b = bytes([65, 66, 67])
+            print(b)  # Resultado: b'ABC'''
+        },
     },
     "c": {
         "_constains_": {
@@ -72,6 +78,14 @@ diccionario_es = {
             "ejemplo": '''for idx, val in enumerate(["a", "b", "c"]):
             print(idx, val)'''
         },
+        "except": {
+            "significado": "Error o evento inesperado que interrumpe el flujo normal del programa.",
+            "uso": " Manejar errores y situaciones imprevistas.",
+            "ejemplo": '''try:
+            resultado = 10 / 0
+            except ZeroDivisionError:
+            print("No se puede dividir por cero")'''
+        },
     },
     "f": {
          "format": {
@@ -87,9 +101,24 @@ diccionario_es = {
             "uso": " sirve para convertir cadenas numéricas en valores de tipo float.",
             "ejemplo": '''float("10.5")  # 10.5'''
         },
+        "find": {
+            "significado":"  se refiere a la definición o concepto de algo dentro del lenguaje de programación .",
+            "uso": " se refiere a cómo se implementa o emplea un concepto dentro de un programa.",
+            "ejemplo": '''def sumar(a, b):
+            return a + b
+            resultado = sumar(3, 4)
+            print(resultado)  # Esto imprimirá 7'''
+        },
     },
     "g": {
-        # Aquí puedes agregar funciones que comiencen con la letra G
+       "global": {
+            "significado":" Variable que se define fuera de todas las funciones y clases.",
+            "uso": " Hacer que una variable sea accesible desde cualquier parte del código.",
+            "ejemplo": '''x = 10
+            def funcion():
+            global x
+            x = 20'''
+        },
     },
     "h": {
         # Aquí puedes agregar funciones que comiencen con la letra H
@@ -144,6 +173,20 @@ diccionario_es = {
             "ejemplo": '''lista = [1, 2, 3, 4]
             print(len(lista))  # 4'''
         },
+        "lambda": {
+            "significado":"Función anónima (sin nombre) que se puede definir en una sola línea.",
+            "uso": "  Definir funciones simples para usar en una sola expresión.",
+            "ejemplo": '''cuadrado = lambda x: x**2
+            print(cuadrado(4))  # Imprime 16'''
+        },
+        "locals()": {
+            "significado": "Devuelve un diccionario que representa el espacio de nombres local actual.",
+            "uso": "  Obtener el contexto local de las variables dentro de una función o módulo.",
+            "ejemplo": '''def ejemplo():
+            b = 20
+            print(locals())  # Resultado: {'b': 20}
+            ejemplo()'''
+        },
 
     },
     "m": {
@@ -172,7 +215,19 @@ diccionario_es = {
             archivos = os.listdir(directorio_actual)
             print(f"Archivos en el directorio: {archivos}")
             os.rmdir("nuevo_directorio")'''
-        }, 
+        },
+        "ord": {
+            "significado": " Convierte un carácter a su código ASCII.",
+            "usage": "Obtener el valor numérico de un carácter.",
+            "ejemplo": '''ord('A')  # Resultado: 65'''
+        },
+         "open()": {
+            "significado": "Abre un archivo y lo devuelve como un objeto de archivo.",
+            "uso": " Leer o escribir archivos.",
+            "ejemplo": '''archivo = open("ejemplo.txt", "w")
+            archivo.write("Hola Mundo")
+            archivo.close()'''
+        },
     },
     "p": {
         "pop": {
@@ -224,7 +279,14 @@ diccionario_es = {
             numeros = [1, 2, 3, 4]
             resultado = reduce(lambda x, y: x + y, numeros)
             print(resultado)  # 10'''
-        }
+        },
+        "return": {
+            "significado": "Valor que una función devuelve a quien la invoca.",
+            "uso": " Obtener el resultado de la ejecución de una función.",
+            "ejemplo": '''def multiplicar(a, b):
+            return a * b
+            resultado = multiplicar(3, 4)'''
+        },
     },
     "s": {
          "str": {
