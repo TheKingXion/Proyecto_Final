@@ -88,13 +88,13 @@ diccionario_por = {
                 """
         },
         "assert": {
-        "significado": "Evalúa una expresión y genera una excepción `AssertionError` si la expresión es falsa.",
-        "uso": "Se utiliza para verificar condiciones que deben cumplirse durante la ejecución del programa.",
-        "ejemplo": """
-            x = 5
-            assert x > 0, 'x debe ser mayor que 0'  # No genera error
-            assert x < 0, 'x debe ser menor que 0'  # Genera AssertionError
-            """
+            "significado": "Evalúa una expresión y genera una excepción `AssertionError` si la expresión es falsa.",
+            "uso": "Se utiliza para verificar condiciones que deben cumplirse durante la ejecución del programa.",
+            "ejemplo": """
+                x = 5
+                assert x > 0, 'x debe ser mayor que 0'  # No genera error
+                assert x < 0, 'x debe ser menor que 0'  # Genera AssertionError
+                """
         },
         "async": {
             "significado": "Define una función asíncrona que puede ser utilizada con `await`.",
@@ -236,6 +236,118 @@ diccionario_por = {
                 a = [1.0, 2.001]
                 b = [1.0, 2.0009]
                 print(np.allclose(a, b, atol=0.01))  # Salida: True
+                """
+        },
+        "average": {
+            "significado": "Calcula el promedio de los elementos de un array o lista.",
+            "uso": "Se utiliza en NumPy para calcular promedios, con posibilidad de ponderar valores.",
+            "ejemplo": """
+                import numpy as np
+
+                valores = [1, 2, 3, 4]
+                print(np.average(valores))  # Salida: 2.5
+                """
+        },
+            "assertAlmostEqual": {
+        "significado": "Comprueba si dos valores son aproximadamente iguales hasta un número específico de decimales en una prueba unitaria.",
+        "uso": "Se utiliza en pruebas unitarias para validar valores con tolerancia a diferencias menores.",
+        "ejemplo": """
+            import unittest
+
+            class Prueba(unittest.TestCase):
+                def test_aproximacion(self):
+                    self.assertAlmostEqual(3.14159, 3.14, places=2)  # La prueba pasa
+            """
+        },
+        "absolute_import": {
+            "significado": "Directiva utilizada para habilitar las importaciones absolutas en Python 2.x y posterior.",
+            "uso": "Se utiliza para evitar conflictos entre módulos locales y globales.",
+            "ejemplo": """
+                from __future__ import absolute_import
+
+                # Importa siempre el módulo global, no uno local con el mismo nombre
+                import math
+                """
+        },
+        "allexcept": {
+            "significado": "No es un término nativo de Python. Podría referirse a un enfoque lógico que aplica operaciones a todos los elementos excepto algunos específicos.",
+            "uso": "Generalmente implementado manualmente.",
+            "ejemplo": """
+                lista = [1, 2, 3, 4]
+                resultado = [x for x in lista if x != 2]  # Filtra todos menos el 2
+                print(resultado)  # Salida: [1, 3, 4]
+                """
+        },
+        "as_tuple": {
+            "significado": "Método que convierte un objeto en una tupla (común en bibliotecas como SymPy).",
+            "uso": "Se utiliza para transformar objetos en representaciones de tuplas.",
+            "ejemplo": """
+                from sympy import Point
+
+                p = Point(2, 3)
+                print(p.as_tuple())  # Salida: (2, 3)
+                """
+        },
+        "atleast_1d": {
+            "significado": "Convierte entradas en arrays con al menos una dimensión.",
+            "uso": "Se utiliza en NumPy para asegurar que los datos tengan una dimensión mínima.",
+            "ejemplo": """
+                import numpy as np
+
+                resultado = np.atleast_1d(5)
+                print(resultado)  # Salida: [5]
+                """
+        },
+        "atleast_2d": {
+            "significado": "Convierte entradas en arrays con al menos dos dimensiones.",
+            "uso": "Se utiliza en NumPy para trabajar con datos en formato de matriz.",
+            "ejemplo": """
+                import numpy as np
+
+                resultado = np.atleast_2d([1, 2, 3])
+                print(resultado)
+                # Salida:
+                # [[1 2 3]]
+                """
+        },
+        "arange": {
+            "significado": "Genera un array con valores espaciados uniformemente dentro de un intervalo.",
+            "uso": "Se utiliza en NumPy para crear secuencias numéricas.",
+            "ejemplo": """
+                import numpy as np
+
+                resultado = np.arange(0, 10, 2)
+                print(resultado)  # Salida: [0 2 4 6 8]
+                """
+        },
+        "arccos": {
+            "significado": "Devuelve el arco coseno (en radianes) de un valor.",
+            "uso": "Se utiliza en cálculos trigonométricos con NumPy.",
+            "ejemplo": """
+                import numpy as np
+
+                resultado = np.arccos(0.5)
+                print(resultado)  # Salida: 1.0471975511965976 (equivalente a π/3)
+                """
+        },
+        "arcsin": {
+            "significado": "Devuelve el arco seno (en radianes) de un valor.",
+            "uso": "Se utiliza en cálculos trigonométricos con NumPy.",
+            "ejemplo": """
+                import numpy as np
+
+                resultado = np.arcsin(0.5)
+                print(resultado)  # Salida: 0.5235987755982988 (equivalente a π/6)
+                """
+        },
+        "arctan": {
+            "significado": "Devuelve el arco tangente (en radianes) de un valor.",
+            "uso": "Se utiliza en cálculos trigonométricos con NumPy.",
+            "ejemplo": """
+                import numpy as np
+
+                resultado = np.arctan(1)
+                print(resultado)  # Salida: 0.7853981633974483 (equivalente a π/4)
                 """
         },
     },
