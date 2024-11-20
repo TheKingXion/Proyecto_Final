@@ -86,6 +86,13 @@ diccionario_es = {
             except ZeroDivisionError:
             print("No se puede dividir por cero")'''
         },
+        "extend": {
+            "significado": " Agrega los elementos de un iterable al final de una lista.",
+            "uso": "  Ampliar una lista con los elementos de otra lista o iterable.",
+            "ejemplo": '''lista = [1, 2]
+            lista.extend([3, 4])
+            print(lista)  # Resultado: [1, 2, 3, 4]'''
+        },
     },
     "f": {
          "format": {
@@ -109,6 +116,38 @@ diccionario_es = {
             resultado = sumar(3, 4)
             print(resultado)  # Esto imprimirá 7'''
         },
+        "formatting": {
+            "significado":"  Proceso de dar formato a la salida de texto. .",
+            "uso": " se utiliza principalmente para insertar variables o valores en cadenas de texto con un formato específico.",
+            "ejemplo": '''nombre = "Juan"
+            edad = 30
+            print("Mi nombre es %s y tengo %d años." % (nombre, edad))
+            # Resultado: Mi nombre es Juan y tengo 30 años.'''
+        },
+        "flush_output": {
+            "significado":"  Forza la escritura de datos en la salida estándar.",
+            "uso": "El uso de flush() es común cuando se trabaja con archivos, terminales o cualquier tipo de flujo de salida",
+            "ejemplo": '''with open("mi_archivo.txt", "w") as archivo:
+            archivo.write("Este es un mensaje importante.")
+            archivo.flush()  # Asegura que se escriba de inmediato'''
+        },
+        "function_definition": {
+            "significado":"  La forma en que se define una función en Python.",
+            "uso": " implica declarar un bloque de código que realiza una tarea específica. ",
+            "ejemplo": '''def sumar(a, b):
+            return a + b
+            # Llamada a la función
+            resultado = sumar(3, 5)
+            print(resultado)  # Resultado: 8'''
+        },
+        "filepath": {
+            "significado":"Ruta que especifica la ubicación de un archivo en el sistema de archivos. ",
+            "uso": "  es la dirección o localización de un archivo en el sistema de archivos.",
+            "ejemplo": '''archivo = open("archivo.txt", "r")
+            contenido = archivo.read()
+            print(contenido)
+            archivo.close()'''
+        },
     },
     "g": {
        "global": {
@@ -118,6 +157,64 @@ diccionario_es = {
             def funcion():
             global x
             x = 20'''
+        },
+         "get": {
+            "significado":" Devuelve el valor de una clave en un diccionario, o un valor predeterminado si la clave no existe.",
+            "uso": " utilizado como un método o función que se utiliza para obtener el valor de un objeto,",
+            "ejemplo": '''import requests
+            # Realizar una solicitud GET a una API
+            response = requests.get("https://jsonplaceholder.typicode.com/posts")
+
+            # Verificar el código de estado de la respuesta
+            if response.status_code == 200:
+            # Convertir la respuesta en formato JSON
+            data = response.json()
+            print(data)  # Muestra los datos obtenidos de la API
+            else:
+            print("Error al hacer la solicitud.")'''
+        },
+         "generator": {
+            "significado":" Función que devuelve un iterador que genera valores uno a uno usando yield..",
+            "uso": "  es una función especial que permite crear un iterador de manera más eficiente. ",
+            "ejemplo": '''def contar():
+            yield 1
+            yield 2
+            yield 3
+            # Crear un generador
+            gen = contar()
+            # Obtener valores del generador usando next()
+            print(next(gen))  # Resultado: 1
+            print(next(gen))  # Resultado: 2
+            print(next(gen))  # Resultado: 3'''
+        },
+         "git": {
+            "significado":"  Sistema de control de versiones utilizado para el seguimiento de cambios en el código.",
+            "uso": " es un sistema de control de versiones distribuido que permite a los desarrolladores realizar un seguimiento de los cambios en el código fuente a lo largo del tiempo.",
+            "ejemplo": '''git init
+            git add .
+            git commit -m "Primer commit"
+            git push origin main'''
+        },
+         "gui": {
+            "significado":"  Interfaz gráfica de usuario.",
+            "uso": "se refiere a una forma de interacción con el software mediante elementos visuales como ventanas, botones, iconos, menús y otros controles gráficos,",
+            "ejemplo": '''import tkinter as tk
+            def saludar():
+            label.config(text="¡Hola, Mundo!")
+            ventana = tk.Tk()
+            boton = tk.Button(ventana, text="Haz clic aquí", command=saludar)
+            boton.pack()
+            label = tk.Label(ventana, text="")
+            label.pack()
+            ventana.mainloop()'''
+        },
+         "guess_language": {
+            "significado":" Intenta determinar el idioma de un texto.",
+            "uso": " se refiere a una función o herramienta utilizada para adivinar o detectar el idioma de un texto o una cadena de caracteres.",
+            "ejemplo": '''from langdetect import detect
+            texto = "Hola, ¿cómo estás?"
+            idioma = detect(texto)
+            print(f"El idioma detectado es: {idioma}")  # Resultado: es'''
         },
     },
     "h": {
@@ -152,6 +249,15 @@ diccionario_es = {
             "significado":" Convierte una cadena a un entero.",
             "uso": " sirve para convertir cadenas numéricas en valores enteros.",
             "ejemplo": '''int("10")  # 10'''
+        },
+        "issubclass": {
+            "significado":" Verifica si una clase es una subclase de otra clase.",
+            "uso": " Comprobar la relación de herencia entre clases.",
+            "ejemplo": '''class Animal:
+            pass
+            class Perro(Animal):
+            pass
+            print(issubclass(Perro, Animal))  # Resultado: True'''
         },
     },
     "j": {
@@ -336,6 +442,7 @@ diccionario_es = {
             mi_perro = Perro()
             print(mi_perro.hablar())  # El animal hace un sonido. y el perro ladra.'''
         },
+        
     },
     "t": {
          
