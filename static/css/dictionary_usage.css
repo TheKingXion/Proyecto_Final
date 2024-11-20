@@ -76,7 +76,7 @@ h1 {
 
 .alphabet-menu {
     background-color: #00bcd4;
-    border-radius: 10px 25px 10px 25px; /* Bordes del menu de letras */
+    border-radius: 10px 30px 30px 10px; /* Bordes del menu de letras */
     padding: 5px;
     width: 80px; 
     height: auto; 
