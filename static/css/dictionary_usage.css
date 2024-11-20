@@ -7,6 +7,7 @@ body, html {
 
 
 .container {
+    position: relative;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -15,11 +16,15 @@ body, html {
 header {
     background-color: #f0f0f0;
     padding: 10px;
+    display: flex;
+    justify-content: space-between; /* Para alinear los elementos en los extremos */
+    align-items: center;
 }
 
 .language-selection {
     display: flex;
-    justify-content: center;
+    justify-content: center; /* Centra el cuadro de selección de idioma */
+    width: 100%; /* Permite que ocupe el ancho total */
     gap: 20px;
 }
 
@@ -113,12 +118,15 @@ h1 {
     justify-content: center;
     align-items: center;
     margin-left: 15px;
+    margin-top: 22px;
 }
 
 .search-container {
     display: flex;
     align-items: center;
-    margin-bottom: 20px;
+    position: absolute; /* Para posicionar el cuadro de búsqueda */
+    top: 10px; /* Ajusta según sea necesario */
+    right: 10px; /* Ajusta según sea necesario */
 }
 .search-button {
     background-color: #4CAF50;
@@ -173,7 +181,7 @@ h1 {
     }
 
     .selected-letter {
-        margin-left: 0;
+        margin-left: 20px;
         margin-top: 20px;
     }
 }
