@@ -1,5 +1,5 @@
 from flask import Flask, render_template, request
-from diccionarios import ES, ENG, FR, ITA, POR
+from diccionarios import es, eng, fr, ita, por
 
 app = Flask(__name__)
 
