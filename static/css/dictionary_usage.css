@@ -49,10 +49,6 @@ header {
     cursor: pointer;
 }
 
-.language-select-box:hover {
-    background-color: #F2B705;
-}
-
 main {
     flex-grow: 1;
     display: flex;
