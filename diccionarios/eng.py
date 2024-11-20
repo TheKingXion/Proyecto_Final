@@ -162,7 +162,17 @@ diccionario_eng = {
         # Aquí puedes agregar funciones que comiencen con la letra N
     },
     "o": {
-        # Aquí puedes agregar funciones que comiencen con la letra O
+        "os": {
+            "significado":" The module allows you to interact with the operating system, such as manipulating files, directories, obtaining information about the system, etc",
+            "uso": "It is useful for performing low-level operations on the system, such as browsing directories or deleting files",
+            "ejemplo": '''import os
+            Current_Directory = os.getcwd()
+            print(f"Current Directory: {Current_Directory}")
+            os.mkdir("new_ directory")
+            files = os.listdir(Current_Directory)
+            print(f"files in the directory: {files}")
+            os.rmdir("new_directory")'''
+        }, 
     },
     "p": {
         "pop": {
@@ -177,6 +187,19 @@ diccionario_eng = {
             "significado":"Convert a string to an integer",
             "uso": "Used to convert text strings representing numbers to integer values",
             "ejemplo": '''parseInt("10");  // 10'''
+        },
+        "pathlib": {
+            "significado":"Pathlib is a module that facilitates the handling of file and directory paths in a more readable and modern way",
+            "uso": "It is used to handle paths more easily and to perform file operations efficiently",
+            "ejemplo": '''from pathlib import Path
+            route = Path("my_directory/my_file.txt")
+            if route.exists():
+            print(f"The file {route} exist.")
+            else:
+            print(f"The file {route} no exist.")
+            Path("new_directory").mkdir(parents=True, exist_ok=True)
+            content = route.read_text()
+            print(content)'''
         },
     },
     "q": {
@@ -194,6 +217,14 @@ diccionario_eng = {
             "uso": "Serves to reverse the order of the elements of an iterable",
             "ejemplo": '''reversed([1, 2, 3])  # [3, 2, 1]'''
         },
+        "reduce()": {
+            "significado":"The reduce() function applies a cumulative function to the elements of an iterable, reducing it to a single value",
+            "uso": "It is used to perform cumulative operations, such as adding or multiplying all the items in a list",
+            "ejemplo": '''from functools import reduce
+            numbers = [1, 2, 3, 4]
+            results = reduce(lambda x, y: x + y, numbers)
+            print(resuls)  # 10'''
+        }
     },
     "s": {
         "str": {
@@ -223,6 +254,26 @@ diccionario_eng = {
             "uso": "Add up items in a list or tuple",
             "ejemplo": '''sum([1, 2, 3])  # 6'''
         },
+        " shutil": {
+            "significado":" Shutil is a module that provides a way to copy, move, or delete files and directories",
+            "uso": "Used for high-level operations with files and directories, such as copying a file or moving an entire directory",
+            "ejemplo": '''pimport shutil
+            shutil.copy("origin.txt", "destiny.txt")
+            shutil.move("origin.txt", "new_directory/origin.txt")
+            shutil.remove("destiny.txt")'''
+        },
+        "super() ": {
+            "significado":"Using super() allows you to call a base class method from a derived class",
+            "uso": "Used when a child class needs to extend or modify the behavior of a method of the base class",
+            "ejemplo": '''class Animal:
+            def speak(self):
+            return "The animal make a sound"
+            class dog(Animal):
+            def speak(self):
+            return super().speak() + " and the dog barks."
+            my_dog = dog()
+            print(my_dog.speak())  # The animal make a sound. and the dog barks.'''
+        },
     },
     "t": {
         "type": {
@@ -238,7 +289,16 @@ diccionario_eng = {
         # Aquí puedes agregar funciones que comiencen con la letra V
     },
     "w": {
-        # Aquí puedes agregar funciones que comiencen con la letra W
+        "with": {
+            "significado":"Used to handle resources such as files, databases, network connections, etc., efficiently",
+            "uso": " Ensures that resources are closed correctly, even if an exception occurs",
+            "ejemplo": '''try:
+            with open("file.txt", "r") as file:
+            content = file.read()
+            print(content)
+            except FileNotFoundError:
+            print("the file not exist")'''
+        },
     },
     "x": {
         # Aquí puedes agregar funciones que comiencen con la letra X

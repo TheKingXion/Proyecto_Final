@@ -251,7 +251,7 @@ diccionario_es = {
         },
         "sum ": {
             "significado":" Devuelve la suma de los elementos de un iterable.",
-            "uso": " Sumar los elementos de una lista o tupla.",
+            "uso": " Sumar los elementos de una lista o tupla.", 
             "ejemplo": '''sum([1, 2, 3])  # 6'''
         },
       " shutil": {
