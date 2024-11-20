@@ -6,7 +6,7 @@ app = Flask(__name__)
 diccionarios = {
     "es": es.diccionario_es,
     "en": eng.diccionario_eng,
-    #"fr": FR.diccionario_fr,  # Asegúrate de descomentar esto si quieres incluir francés
+    #"fr": FR.diccionario_fr,
     "it": ita.diccionario_ita,
     "pt": por.diccionario_por,
 }
