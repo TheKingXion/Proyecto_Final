@@ -8,13 +8,23 @@ diccionario_por = {
                 print(abs(numero1))  # Saída: 10
                 '''
         },
+        "absolute_import": {
+            "significado": "Diretiva usada para habilitar importações absolutas no Python 2.x e versões posteriores.",
+            "uso": "É usado para evitar conflitos entre módulos locais e globais.",
+            "ejemplo": '''
+                from __future__ import absolute_import
+
+                # Sempre importa o módulo global, não um local com o mesmo nome
+                import math
+                '''
+        },
         "all": {
             "significado": "Retorna True se todos os elementos de um iterável forem verdadeiros (ou se o iterável estiver vazio).",
             "uso": "É usado para verificar se todos os valores de um iterável atendem a uma condição.",
             "ejemplo": '''
                 lista = [True, True, True]
                 print(all(lista))  # Saída: True
-                
+
                 numeros = [1, 2, 0]
                 print(all(numeros))  # Saída: False (0 é avaliado como False)
                 '''
@@ -259,16 +269,6 @@ diccionario_por = {
                         self.assertAlmostEqual(3.14159, 3.14, places=2)  # O teste passa
                 '''
         },
-        "absolute_import": {
-            "significado": "Diretiva usada para habilitar importações absolutas no Python 2.x e versões posteriores.",
-            "uso": "É usado para evitar conflitos entre módulos locais e globais.",
-            "ejemplo": '''
-                from __future__ import absolute_import
-
-                # Sempre importa o módulo global, não um local com o mesmo nome
-                import math
-                '''
-        },
         "allexcept": {
             "significado": "Não é um termo nativo do Python. Pode se referir a uma abordagem lógica que aplica operações a todos os elementos, exceto alguns específicos.",
             "uso": "Geralmente implementado manualmente.",
@@ -375,10 +375,252 @@ diccionario_por = {
         },
     },
     "b": {
-        "": {
-            "significado": "",
-            "uso": "",
-            "ejemplo": ''''''
+        "bin": {
+            "significado": "Converte um número em sua representação binária como uma string.",
+            "uso": "É utilizado para obter a representação binária de um número inteiro.",
+            "ejemplo": '''
+                numero = 10
+                print(bin(numero))  # Saída: '0b1010'
+                '''
+        },
+        "bool": {
+            "significado": "Tipo de dado que representa valores booleanos: True ou False.",
+            "uso": "É utilizado para representar e operar com valores de verdade.",
+            "ejemplo": '''
+                valor = bool(1)
+                print(valor)  # Saída: True
+                '''
+        },
+        "break": {
+            "significado": "Palavra-chave que termina a execução de um loop.",
+            "uso": "É utilizado para sair de um loop de forma antecipada.",
+            "ejemplo": '''
+                for i in range(5):
+                    if i == 3:
+                        break
+                    print(i)  # Saída: 0 1 2
+                '''
+        },
+        "bytes": {
+            "significado": "Tipo de dado imutável que representa uma sequência de bytes.",
+            "uso": "É utilizado para trabalhar com dados binários.",
+            "ejemplo": '''
+                b = bytes([65, 66, 67])
+                print(b)  # Saída: b'ABC'
+                '''
+        },
+        "bytearray": {
+            "significado": "Tipo de dado mutável que representa uma sequência de bytes.",
+            "uso": "É utilizado para modificar sequências de bytes.",
+            "ejemplo": '''
+                b = bytearray([65, 66, 67])
+                b[0] = 90
+                print(b)  # Saída: bytearray(b'ZBC')
+                '''
+        },
+        "byteswap": {
+            "significado": "Método que troca a ordem dos bytes em um objeto.",
+            "uso": "É utilizado para alterar a ordem dos bytes em um tipo de dado numérico.",
+            "ejemplo": '''
+                import numpy as np
+
+                a = np.array([1, 256], dtype=np.int16)
+                a = a.byteswap()
+                print(a)  # Saída: [256 1]
+                '''
+        },
+        "buffer": {
+            "significado": "Uma classe em Python que fornece uma visão de acesso a uma área de memória de um objeto.",
+            "uso": "É utilizado para acessar a memória de forma eficiente, especialmente em operações com grandes quantidades de dados.",
+            "ejemplo": '''
+                buffer = memoryview(b'abc')
+                print(buffer[0])  # Saída: 97 (equivalente a 'a')
+                '''
+        },
+        "base64": {
+            "significado": "Módulo que fornece funções para codificar e decodificar dados em base64.",
+            "uso": "É utilizado para representar dados binários em uma string de caracteres ASCII.",
+            "ejemplo": '''
+                import base64
+
+                encoded = base64.b64encode(b'abc')
+                print(encoded)  # Saída: b'YWJj'
+                '''
+        },
+        "bitwise_and": {
+            "significado": "Operador que realiza uma operação AND bit a bit entre dois números.",
+            "uso": "É utilizado para comparar os bits correspondentes de dois números e devolver 1 somente se ambos os bits forem 1.",
+            "ejemplo": '''
+                x = 5  # binário: 0101
+                y = 3  # binário: 0011
+                print(x & y)  # Saída: 1 (binário: 0001)
+                '''
+        },
+        "bitwise_or": {
+            "significado": "Operador que realiza uma operação OR bit a bit entre dois números.",
+            "uso": "É utilizado para comparar os bits correspondentes de dois números e devolver 1 se pelo menos um dos bits for 1.",
+            "ejemplo": '''
+                x = 5  # binário: 0101
+                y = 3  # binário: 0011
+                print(x | y)  # Saída: 7 (binário: 0111)
+                '''
+        },
+        "bitwise_xor": {
+            "significado": "Operador que realiza uma operação XOR bit a bit entre dois números.",
+            "uso": "É utilizado para comparar os bits correspondentes de dois números e devolver 1 se os bits forem diferentes.",
+            "ejemplo": '''
+                x = 5  # binário: 0101
+                y = 3  # binário: 0011
+                print(x ^ y)  # Saída: 6 (binário: 0110)
+                '''
+        },
+        "bitwise_not": {
+        "significado": "Operador que realiza uma operação NOT bit a bit sobre um número.",
+        "uso": "É utilizado para inverter todos os bits de um número.",
+        "ejemplo": '''
+            x = 5  # binário: 0101
+            print(~x)  # Saída: -6 (binário: 1010)
+            '''
+        },
+        "binomial": {
+            "significado": "Função que calcula o coeficiente binomial (n sobre k).",
+            "uso": "É utilizado para calcular o número de formas de selecionar k elementos de um conjunto de n elementos.",
+            "ejemplo": '''
+                from scipy.special import comb
+
+                resultado = comb(5, 2)
+                print(resultado)  # Saída: 10.0
+                '''
+        },
+        "binascii": {
+            "significado": "Módulo que contém funções para converter entre binário e diferentes representações de texto.",
+            "uso": "É utilizado para realizar conversões entre strings de texto e dados binários.",
+            "ejemplo": '''
+                import binascii
+
+                encoded = binascii.hexlify(b'abc')
+                print(encoded)  # Saída: b'616263'
+                '''
+        },
+        "byteorder": {
+            "significado": "Indica a ordem dos bytes para representar números na memória.",
+            "uso": "É utilizado para manipular a representação de números em sistemas com diferentes arquiteturas.",
+            "ejemplo": '''
+                import sys
+
+                print(sys.byteorder)  # Saída: 'little' ou 'big'
+                '''
+        },
+        "bit_length": {
+            "significado": "Retorna o número de bits necessários para representar um número em binário.",
+            "uso": "É utilizado para obter o comprimento em bits de um número inteiro.",
+            "ejemplo": '''
+                numero = 10
+                print(numero.bit_length())  # Saída: 4
+                '''
+        },
+        "breakpoint": {
+            "significado": "Uma função que estabelece um ponto de interrupção no código, ativando o depurador.",
+            "uso": "É utilizado para pausar a execução e entrar no depurador interativo.",
+            "ejemplo": '''
+                def funcao():
+                    breakpoint()  # Interrupção aqui
+                    print('Olá')
+                funcao()
+                '''
+        },
+        "binhex": {
+            "significado": "Função para converter um arquivo binário em formato hexadecimal.",
+            "uso": "É utilizado para representar dados binários em formato legível em hexadecimal.",
+            "ejemplo": '''
+                import binhex
+
+                with open('arquivo.bin', 'rb') as f:
+                    binhex.binhex(f, 'arquivo.hex')
+                '''
+        },
+        "bitset": {
+            "significado": "Estrutura de dados que permite armazenar uma coleção de bits.",
+            "uso": "É utilizado para representar conjuntos de bits e realizar operações eficientes sobre eles.",
+            "ejemplo": '''
+                # ejemplo não padrão em Python, mas pode-se usar o módulo `bitarray` para criar bitsets
+                from bitarray import bitarray
+
+                bitset = bitarray('10101')
+                print(bitset)  # Saída: bitarray('10101')
+                '''
+        },
+        "broadcast": {
+            "significado": "Técnica que permite que arrays de formas diferentes sejam alinhados para realizar operações element-wise.",
+            "uso": "É utilizado principalmente no NumPy para operações com arrays de tamanhos diferentes.",
+            "ejemplo": '''
+                import numpy as np
+
+                a = np.array([1, 2, 3])
+                b = np.array([[1], [2], [3]])
+                resultado = a + b
+                print(resultado)
+                # Saída:
+                # [[2 3 4]
+                #  [3 4 5]
+                #  [4 5 6]]
+                '''
+        },
+        "bitarray": {
+            "significado": "Módulo que implementa um tipo de dado eficiente para trabalhar com arrays de bits.",
+            "uso": "É utilizado para manipular e gerenciar arrays de bits de forma eficiente.",
+            "ejemplo": '''
+                from bitarray import bitarray
+
+                a = bitarray('10101')
+                a.append('1')
+                print(a)  # Saída: bitarray('101011')
+                '''
+        },
+        "buffer": {
+            "significado": "Uma classe em Python que fornece uma visão de acesso a uma área de memória de um objeto.",
+            "uso": "É utilizado para acessar a memória de maneira eficiente, especialmente em operações com grandes quantidades de dados.",
+            "exemplo": '''
+                buffer = memoryview(b'abc')
+                print(buffer[0])  # Saída: 97 (equivalente a 'a')
+                '''
+        },
+        "bitwise_left_shift": {
+            "significado": "Operador que realiza um deslocamento de bits para a esquerda.",
+            "uso": "É utilizado para deslocar os bits de um número para a esquerda, multiplicando o valor por potências de dois.",
+            "exemplo": '''
+                x = 5  # binário: 0101
+                print(x << 1)  # Saída: 10 (binário: 1010)
+                '''
+        },
+        "bitwise_right_shift": {
+            "significado": "Operador que realiza um deslocamento de bits para a direita.",
+            "uso": "É utilizado para deslocar os bits de um número para a direita, dividindo o valor por potências de dois.",
+            "exemplo": '''
+                x = 5  # binário: 0101
+                print(x >> 1)  # Saída: 2 (binário: 0010)
+                '''
+        },
+        "bz2": {
+            "significado": "Módulo que fornece compressão e descompressão usando o algoritmo bzip2.",
+            "uso": "É utilizado para manipular arquivos comprimidos no formato bzip2.",
+            "exemplo": '''
+                import bz2
+
+                with bz2.open('arquivo.bz2', 'rb') as arquivo:
+                    conteudo = arquivo.read()
+                    print(conteudo)
+                '''
+        },
+        "bool_": {
+            "significado": "Tipo de dado do NumPy para valores booleanos, similar ao `bool` do Python.",
+            "uso": "É utilizado em operações com arrays do NumPy para representar valores booleanos.",
+            "exemplo": '''
+                import numpy as np
+
+                valor = np.bool_(True)
+                print(valor)  # Saída: True
+                '''
         },
     },
     "c": {
