@@ -17,7 +17,7 @@ header {
     background-color: #f0f0f0;
     padding: 10px;
     display: flex;
-    justify-content: space-between; /* Para alinear los elementos en los extremos */
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -69,18 +69,18 @@ h1 {
 
 .content {
     display: flex;
-    flex-direction: row; /* Alinea elementos horizontalmente */
+    flex-direction: row; 
     align-items: flex-start; /* Centra el contenido verticalmente */
     gap: 20px; /* Espacio entre la lista y la letra seleccionada */
 }
 
 .alphabet-menu {
-    background-color: #00bcd4;/* Color de fondo del menu de letras*/
+    background-color: #00bcd4;
     border-radius: 10px 25px 10px 25px; /* Bordes del menu de letras */
     padding: 5px;
-    width: 80px; /* Ancho del menu de letras */
-    height: auto; /* Altro del menu de letras */
-    text-align: center; /* Alineacion del texto dentro del menu */
+    width: 80px; 
+    height: auto; 
+    text-align: center;
  /* overflow-y: scroll;*/
 }
 
@@ -124,33 +124,43 @@ h1 {
 .search-container {
     display: flex;
     align-items: center;
-    position: absolute; /* Para posicionar el cuadro de búsqueda */
-    top: 10px; /* Ajusta según sea necesario */
-    right: 10px; /* Ajusta según sea necesario */
+    position: absolute;
+    top: 5px;
+    right: 5px;
+    flex-direction: row-reverse;
 }
+
+.search-icon {
+    width: 50px;
+    height: 50px;
+    display: block;
+}
+
 .search-button {
-    background-color: #4CAF50;
+    background: transparent;
+    /*background-color: #4CAF50;*/
     border: none;
     color: white;
-    padding: 10px 20px;
+    padding: 1px 10px;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 16px;
-    margin: 4px 2px;
+    margin: 5px 11px;
     cursor: pointer;
     border-radius: 4px;
 }
 .search-input {
+    background-color: #bef1ec;
     padding: 10px;
     font-size: 16px;
-    border: 1px solid #ddd;
+    border: 2px solid #00fff7;
     border-radius: 4px;
     width: 0;
     transition: width 0.4s ease-in-out;
 }
 .search-input.active {
-    width: 200px;
+    width: 240px;
 }
 
 @media (max-width: 768px) {

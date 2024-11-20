@@ -10,7 +10,9 @@
     <div class="container">
         <header>
             <div class="search-container">
-                <button class="search-button" onclick="toggleSearch()">Buscar</button>
+                <button class="search-button" onclick="toggleSearch()">
+                    <img src="{{ url_for('static', filename='images/search_ico.png') }}" alt="Buscar" class="search-icon">
+                </button>
                 <input type="text" id="searchInput" class="search-input" placeholder="Buscar término...">
             </div>
             <div class="language-selection">
