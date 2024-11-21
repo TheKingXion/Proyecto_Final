@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Forma de Utilizar el Diccionario - Diccionario del 3MF</title>
+    <title id="page-title">Forma de Utilizar el Diccionario - Diccionario del 3MF</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/dictionary_usage.css') }}">
     <link rel="stylesheet" href="{{ url_for('static', filename='css/particles_dicc.css') }}">
 </head>
@@ -34,7 +34,6 @@
             </div>
         </header>
         <main>
-            
             <div class="content">
                 <div class="alphabet-menu">
                     <ul id="alphabet-list">
@@ -45,10 +44,10 @@
                 </div>
                 <div id="selected-letter" class="selected-letter">A</div>
                 <div id="terms-container">
-                    <h1>¿Como se usa el Diccionario?</h1>
-                    <h2>Tan simple como dar click en la letra de la cual quieres ver los terminos y te dejara ver los terminos traducidos</h2>
-                    <h1>¿Como se usa el "Buscar"?</h1>
-                    <h2>Vas a la letra y cuando estes en la letra que tiene el termino, preciona el boton de buscar y busca ejemplo "If" y das ENTER</h2>
+                    <h1 id="header1">¿Como se usa el Diccionario?</h1>
+                    <h2 id="header2">Tan simple como dar click en la letra de la cual quieres ver los terminos y te dejara ver los terminos traducidos</h2>
+                    <h1 id="header3">¿Como se usa el "Buscar"?</h1>
+                    <h2 id="header4">Vas a la letra y cuando estes en la letra que tiene el termino, preciona el boton de buscar y busca ejemplo "If" y das ENTER</h2>
                 </div>
             </div>
         </main>
@@ -57,9 +56,11 @@
     <script src="{{ url_for('static', filename='js/dictionary_usage.js') }}"></script>
     <script src="{{ url_for('static', filename='js/words_particle.js') }}"></script>
     <script>
-        document.addEventListener('DOMContentLoaded', function() {
-            initParticles();
-        });
+
+
+
+
+        
     </script>
 </body>
 </html>

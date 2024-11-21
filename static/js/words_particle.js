@@ -36,11 +36,20 @@ function animateParticle(particle, startX, startY) {
 }
 
 function changeLanguage() {
-    currentLanguage = languages[(languages.indexOf(currentLanguage) + 1) % languages.length];
+    var selectedLanguage = document.getElementById('input-language').value;
+    updateTextContent(selectedLanguage);
+
+    // Cambiar las partículas a la nueva lengua
+    currentLanguage = selectedLanguage;
     document.querySelectorAll('.particle').forEach(particle => {
         particle.textContent = words[currentLanguage][Math.floor(Math.random() * words[currentLanguage].length)];
     });
 }
+
+document.addEventListener('DOMContentLoaded', function() {
+    initParticles();
+    updateTextContent('{{ idioma }}'); // Inicializa los textos según el idioma cargado
+});
 
 function initParticles() {
     for (let i = 0; i < 20; i++) {
