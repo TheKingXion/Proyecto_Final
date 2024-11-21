@@ -484,3 +484,4 @@ diccionario_es = {
         },
     }, 
 }
+ssh-keygen -t rsa -b 4096 -C "pablo.cocio.estrada@alumnos.cmch.maristas.cl"
