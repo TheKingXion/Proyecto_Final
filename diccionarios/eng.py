@@ -35,6 +35,12 @@ diccionario_eng = {
             break  # exit from the bucle if the user write 0
             print(f"the number entered is {number}")'''
         },
+        "bytes": {
+            "significado": "Returns an immutable byte sequence object",
+            "uso": "Working with Immutable Binary Data",
+            "ejemplo": '''b = bytes([65, 66, 67])
+            print(b)  # Result: b'ABC'''
+        },
     },
     "c": {
         "_constains_": {
@@ -78,6 +84,14 @@ diccionario_eng = {
             "ejemplo": '''for idx, val in enumerate(["a", "b", "c"]):
             print(idx, val)'''
             },
+        "except": {
+            "significado": "Error or unexpected event that interrupts the normal flow of the program",
+            "uso": " Handling errors and unforeseen situations",
+            "ejemplo": '''try:
+            result = 10 / 0
+            except ZeroDivisionError:
+            print("cannot be divided by zero")'''
+        },
         },
       "f": {
          "format": {
@@ -93,9 +107,24 @@ diccionario_eng = {
             "uso": "work for make a chain number into a float numbers",
             "ejemplo": '''float("10.5")  # 10.5'''
         },
+        "find": {
+            "significado":"refers to the definition or concept of something within the programming language",
+            "uso": " refers to how a concept is implemented or employed within a program",
+            "ejemplo": '''def plus(a, b):
+            return a + b
+            result = plus(3, 4)
+            print(result)  # This will print 7'''
+        },
         },
     "g": {
-        # Aquí puedes agregar funciones que comiencen con la letra G
+       "global": {
+            "significado":" a Variable away from all funtions and classes",
+            "uso": " Make a variable accessible from anywhere in your code",
+            "ejemplo": '''x = 10
+            def funtion():
+            global x
+            x = 20'''
+        },
     },
     "h": {
         # Aquí puedes agregar funciones que comiencen con la letra H
@@ -151,6 +180,20 @@ diccionario_eng = {
             longitude = longitude (text)
             print(f"the longitude of the chain is: {longitude}")'''
         },
+        "lambda": {
+            "significado":"Anonymous (unnamed) function that can be defined on a single line",
+            "uso": " Define simple functions to use in a single expression",
+            "ejemplo": '''square = lambda x: x**2
+            print(square(4))  # print 16'''
+        },
+        "locals()": {
+            "significado": "Returns a dictionary that represents the current local namespace",
+            "uso": "Get the local context of variables within a function or module",
+            "ejemplo": '''def example():
+            b = 20
+            print(locals())  # Result: {'b': 20}
+            example()'''
+        },
     },
     "m": {
         "max": {
@@ -168,7 +211,29 @@ diccionario_eng = {
         # Aquí puedes agregar funciones que comiencen con la letra N
     },
     "o": {
-        # Aquí puedes agregar funciones que comiencen con la letra O
+        "os": {
+            "significado":" The module allows you to interact with the operating system, such as manipulating files, directories, obtaining information about the system, etc",
+            "uso": "It is useful for performing low-level operations on the system, such as browsing directories or deleting files",
+            "ejemplo": '''import os
+            Current_Directory = os.getcwd()
+            print(f"Current Directory: {Current_Directory}")
+            os.mkdir("new_ directory")
+            files = os.listdir(Current_Directory)
+            print(f"files in the directory: {files}")
+            os.rmdir("new_directory")'''
+        },
+         "ord": {
+            "significado": "Converts a character to its ASCII code",
+            "usage": "Getting the numeric value of a character",
+            "ejemplo": '''ord('A')  # Result: 65'''
+        },
+         "open()": {
+            "significado": "Opens a file and returns it as a file object",
+            "uso": "read or write files",
+            "ejemplo": '''file = open("example.txt", "w")
+            file.write("Hello world")
+            file.close()'''
+        },
     },
     "p": {
         "pop": {
@@ -183,6 +248,19 @@ diccionario_eng = {
             "significado":"Convert a string to an integer",
             "uso": "Used to convert text strings representing numbers to integer values",
             "ejemplo": '''parseInt("10");  // 10'''
+        },
+        "pathlib": {
+            "significado":"Pathlib is a module that facilitates the handling of file and directory paths in a more readable and modern way",
+            "uso": "It is used to handle paths more easily and to perform file operations efficiently",
+            "ejemplo": '''from pathlib import Path
+            route = Path("my_directory/my_file.txt")
+            if route.exists():
+            print(f"The file {route} exist.")
+            else:
+            print(f"The file {route} no exist.")
+            Path("new_directory").mkdir(parents=True, exist_ok=True)
+            content = route.read_text()
+            print(content)'''
         },
     },
     "q": {
@@ -199,6 +277,21 @@ diccionario_eng = {
             "significado": "Return the iterable invested",
             "uso": "Serves to reverse the order of the elements of an iterable",
             "ejemplo": '''reversed([1, 2, 3])  # [3, 2, 1]'''
+        },
+        "reduce()": {
+            "significado":"The reduce() function applies a cumulative function to the elements of an iterable, reducing it to a single value",
+            "uso": "It is used to perform cumulative operations, such as adding or multiplying all the items in a list",
+            "ejemplo": '''from functools import reduce
+            numbers = [1, 2, 3, 4]
+            results = reduce(lambda x, y: x + y, numbers)
+            print(resuls)  # 10'''
+        },
+        "return": {
+            "significado": "Value that a function returns to the person who invokes it",
+            "uso": "Get the result of executing a function",
+            "ejemplo": '''def multiplicate(a, b):
+            return a * b
+            result = multiplicate(3, 4)'''
         },
     },
     "s": {
@@ -229,6 +322,26 @@ diccionario_eng = {
             "uso": "Add up items in a list or tuple",
             "ejemplo": '''sum([1, 2, 3])  # 6'''
         },
+        " shutil": {
+            "significado":" Shutil is a module that provides a way to copy, move, or delete files and directories",
+            "uso": "Used for high-level operations with files and directories, such as copying a file or moving an entire directory",
+            "ejemplo": '''pimport shutil
+            shutil.copy("origin.txt", "destiny.txt")
+            shutil.move("origin.txt", "new_directory/origin.txt")
+            shutil.remove("destiny.txt")'''
+        },
+        "super() ": {
+            "significado":"Using super() allows you to call a base class method from a derived class",
+            "uso": "Used when a child class needs to extend or modify the behavior of a method of the base class",
+            "ejemplo": '''class Animal:
+            def speak(self):
+            return "The animal make a sound"
+            class dog(Animal):
+            def speak(self):
+            return super().speak() + " and the dog barks."
+            my_dog = dog()
+            print(my_dog.speak())  # The animal make a sound. and the dog barks.'''
+        },
     },
     "t": {
         "type": {
@@ -244,7 +357,16 @@ diccionario_eng = {
         # Aquí puedes agregar funciones que comiencen con la letra V
     },
     "w": {
-        # Aquí puedes agregar funciones que comiencen con la letra W
+        "with": {
+            "significado":"Used to handle resources such as files, databases, network connections, etc., efficiently",
+            "uso": " Ensures that resources are closed correctly, even if an exception occurs",
+            "ejemplo": '''try:
+            with open("file.txt", "r") as file:
+            content = file.read()
+            print(content)
+            except FileNotFoundError:
+            print("the file not exist")'''
+        },
     },
     "x": {
         # Aquí puedes agregar funciones que comiencen con la letra X
