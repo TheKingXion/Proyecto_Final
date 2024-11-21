@@ -218,7 +218,58 @@ diccionario_es = {
         },
     },
     "h": {
-        # Aquí puedes agregar funciones que comiencen con la letra H
+       "hash": {
+            "significado": "Devuelve el valor hash de un objeto.",
+            "uso": "es el resultado de una función hash, que toma una entrada (o mensaje) y la transforma en una cadena de longitud fija",
+            "ejemplo": '''import hashlib
+            # Función para obtener el hash de una contraseña
+            def obtener_hash_contraseña(contraseña):
+            # Usamos SHA-256 para crear un hash
+            sha256 = hashlib.sha256()
+            sha256.update(contraseña.encode())  # Codificamos la contraseña en bytes
+            return sha256.hexdigest()  # Devuelve el hash en formato hexadecimal
+            # Ejemplo de uso
+            contraseña_original = "miContraseñaSegura123"
+            hash_contraseña = obtener_hash_contraseña(contraseña_original)
+            print("Contraseña original:", contraseña_original)
+            print("Hash de la contraseña:", hash_contraseña)'''
+        },
+         "help": {
+            "significado":"Muestra la ayuda de un módulo, función o clase",
+            "uso": " muestra la documentación asociada con el objeto que le pases como argumento. ",
+            "ejemplo": '''class MiClase:
+            """Esta es una clase de ejemplo."""
+            def __init__(self, nombre):
+            self.nombre = nombre 
+            def saludar(self):
+            return f"Hola, {self.nombre}!"
+            # Obtener ayuda sobre la clase MiClase
+            help(MiClase)'''
+        },
+        "head": {
+            "significado": "Devuelve las primeras filas de un DataFrame en pandas.",
+            "uso": " es utilizado en sistemas operativos tipo Unix (como Linux o macOS) para mostrar las primeras líneas de un archivo.",
+            "ejemplo": '''# Lista de ejemplo
+            mi_lista = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+            # Obtener los primeros 3 elementos de la lista (equivalente al 'head' de la lista)
+            primeros_tres = mi_lista[:3]
+            print(primeros_tres)  # Salida: [1, 2, 3]'''
+        },
+        "http": {
+            "significado":"Proporciona soporte para el protocolo HTTP en Python..",
+            "uso": " se utiliza principalmente para realizar solicitudes a un servidor web, ya sea para obtener datos de una API ",
+            "ejemplo": '''import requests
+            # URL del recurso o API
+            url = "https://jsonplaceholder.typicode.com/posts/1"
+            # Realizar una solicitud GET para obtener datos
+            response = requests.get(url)
+            # Verificar si la solicitud fue exitosa (código 200)
+            if response.status_code == 200:
+            # Mostrar el contenido de la respuesta (en formato JSON)
+            print(response.json())
+            else:
+            print(f"Error: {response.status_code}")'''
+        },
     },
     "i": {
         "if": {
@@ -270,12 +321,17 @@ diccionario_es = {
         },
     },
     "k": {
-        # Aquí puedes agregar funciones que comiencen con la letra K
+         "len()": {
+            "significado": "Devuelve la longitud de un objeto (como una lista o cadena).",
+            "uso": "Usado para contar elementos en una secuencia.",
+            "ejemplo": '''lista = [1, 2, 3, 4]
+            print(len(lista))  # 4'''
+        },
     },
     "l": {
         "len()": {
             "significado": "Devuelve la longitud de un objeto (como una lista o cadena).",
-            "usage": "Usado para contar elementos en una secuencia.",
+            "uso": "Usado para contar elementos en una secuencia.",
             "ejemplo": '''lista = [1, 2, 3, 4]
             print(len(lista))  # 4'''
         },
@@ -484,4 +540,3 @@ diccionario_es = {
         },
     }, 
 }
-ssh-keygen -t rsa -b 4096 -C "pablo.cocio.estrada@alumnos.cmch.maristas.cl"
