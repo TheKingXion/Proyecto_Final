@@ -9,6 +9,12 @@
 <body>
     <div class="container">
         <header>
+            <div id="particles"></div>
+            <div class="home-container">
+                <button id="homeButton" class="home-button">
+                    <img src="{{ url_for('static', filename='images/home_ico.png') }}" alt="Home" class="home-icon">
+                </button>
+            </div>
             <div class="search-container">
                 <button class="search-button" onclick="toggleSearch()">
                     <img src="{{ url_for('static', filename='images/search_ico.png') }}" alt="Buscar" class="search-icon">
@@ -46,47 +52,13 @@
             </div>
         </main>
     </div>
-    
+
+    <script src="{{ url_for('static', filename='js/dictionary_usage.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/particles.js') }}"></script>
     <script>
-    function selectLetter(letter, element) {
-        document.querySelectorAll('#alphabet-list li').forEach(li => li.classList.remove('active'));
-        element.classList.add('active');
-        document.getElementById('selected-letter').textContent = letter;
-        
-        fetch(`/terms/${letter}?idioma={{ idioma }}`)
-            .then(response => response.text())
-            .then(html => {
-                document.getElementById('terms-container').innerHTML = html;
-            });
-    }
-
-    function changeLanguage() {
-        var selectedLanguage = document.getElementById('input-language').value;
-        window.location.href = '/dictionary-usage?idioma=' + selectedLanguage;
-    }
-
-    function toggleSearch() {
-        var searchInput = document.getElementById('searchInput');
-        searchInput.classList.toggle('active');
-        if (searchInput.classList.contains('active')) {
-            searchInput.focus();
-        }
-    }
-
-    document.getElementById('searchInput').addEventListener('keyup', function(event) {
-        if (event.key === 'Enter') {
-            var searchTerm = this.value.toLowerCase();
-            var terms = document.querySelectorAll('.term');
-            terms.forEach(function(term) {
-                var termName = term.querySelector('h3').textContent.toLowerCase();
-                if (termName.includes(searchTerm)) {
-                    term.style.display = 'block';
-                } else {
-                    term.style.display = 'none';
-                }
-            });
-        }
-    });
+        document.addEventListener('DOMContentLoaded', function() {
+            initParticles();
+        });
     </script>
 </body>
 </html>
