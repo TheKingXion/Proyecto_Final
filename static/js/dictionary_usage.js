@@ -12,7 +12,17 @@ function selectLetter(letter, element) {
 
 function changeLanguage() {
     var selectedLanguage = document.getElementById('input-language').value;
-    window.location.href = '/dictionary-usage?idioma=' + selectedLanguage;
+    var xhr = new XMLHttpRequest();
+    xhr.open('GET', '/dictionary-usage?idioma=' + selectedLanguage, true);
+    xhr.onload = function() {
+        if (xhr.status === 200) {
+            var response = xhr.responseText;
+            document.open();
+            document.write(response);
+            document.close();
+        }
+    };
+    xhr.send();
 }
 
 function toggleSearch() {
@@ -75,7 +85,6 @@ function updateTextContent(language) {
     // Actualizar los textos de la página
     document.title = textContent[language].title;
     document.getElementById('header1').textContent = textContent[language].header1;
-    document.getElementById('header2').textContent = textContent[language].header2;
     document.getElementById('header3').textContent = textContent[language].header3;
     document.getElementById('header4').textContent = textContent[language].header4;
 }

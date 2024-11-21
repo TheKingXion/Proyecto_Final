@@ -1,12 +1,11 @@
 from flask import Flask, render_template, request
-from diccionarios import es, eng, fr, ita, por
+from diccionarios import es, eng, ita, por
 
 app = Flask(__name__)
 
 diccionarios = {
     "es": es.diccionario_es,
     "en": eng.diccionario_eng,
-    #"fr": FR.diccionario_fr,
     "it": ita.diccionario_ita,
     "pt": por.diccionario_por,
 }
@@ -21,7 +20,7 @@ def developers():
 
 @app.route('/dictionary-usage', methods=['GET'])
 def dictionary_usage():
-    idioma = request.args.get('idioma', 'es')  # Cambiado a 'es' por defecto para usar el diccionario en español
+    idioma = request.args.get('idioma', 'es')  # Cambiado a 'es' por defecto
     diccionario = diccionarios.get(idioma, diccionarios["es"])  # Usa el diccionario en español por defecto
     return render_template('dictionary_usage.html', datos=diccionario, idioma=idioma)
 
