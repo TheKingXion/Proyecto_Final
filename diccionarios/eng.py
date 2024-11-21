@@ -24,6 +24,347 @@ diccionario_eng = {
             "uso": "It is used to obtain the absolute value of a number",
             "ejemplo": '''abs(-5)  # 5'''
         },
+        "absolute_import": {
+            "significado": "Policy used to enable absolute imports in Python 2.x and later versions",
+            "uso": "It is used to avoid conflicts between local and global modules",
+            "ejemplo": '''
+                from __future__ import absolute_import
+
+                # The global module always matters, not a local one with the same name
+                import math
+                '''
+        },
+        "add": {
+            "significado": "Method used to add an element to a set or perform a sum between arrays (depending on the context)",
+            "uso": "It is used in sets to add elements or in NumPy to perform mathematical operations",
+            "ejemplo": '''
+                # Sets
+                ensemble = {1, 2, 3}
+                ensemble.add(4)
+                print(ensemble)  # exit: {1, 2, 3, 4}
+
+                # NumPy
+                import numpy as np
+                result = np.add(2, 3)
+                print(result)  # Saída: 5 '''
+        },
+        "allclose": {
+            "significado": "Verifies that all elements of two arrays are approximately equal",
+            "uso": "It is used in NumPy to check the equality of elements with tolerance for small differences",
+            "ejemplo": '''
+                import numpy as np
+
+                a = [1.0, 2.001]
+                b = [1.0, 2.0009]
+                print(np.allclose(a, b, atol=0.01))  # exit: True '''
+        },
+        "allexcept": {
+            "significado": "It is not a native Python term. It can refer to a logical approach that applies operations to all elements except for a few specific ones",
+            "uso": "Usually implemented manually",
+            "ejemplo": '''
+                list = [1, 2, 3, 4]
+                result = [x for x in list if x != 2]  # Filters out all but 2
+                print(result)  # exit: [1, 3, 4]
+                '''
+        },
+         "append": {
+            "significado": "Adds an element to the end of a list",
+            "uso": "It is used to add new elements to an existing list",
+            "ejemplo": '''
+                list = [1, 2, 3]
+                list.append(4)
+                print(list)  # exit: [1, 2, 3, 4]
+            '''
+        },
+        "apply": {
+            "significado": "Method used to apply a function to rows or columns of a DataFrame",
+            "uso": "It is used to perform custom operations on rows or columns",
+            "ejemplo": '''
+                import pandas as pd
+
+                dice = pd.DataFrame({'A': [1, 2, 3]})
+                dice['B'] = dice['A'].apply(lambda x: x * 2)
+                print(dice)
+                # exit:
+                #    A  B
+                # 0  1  2
+                # 1  2  4
+                # 2  3  6
+                '''
+        },
+        "argmin": {
+            "significado": "Returns the index of the minimum value in an array or iterable",
+            "uso": "It is used in libraries such as NumPy to find the index of the lowest value in data structures",
+            "ejemplo": '''
+                import numpy as np
+
+                numbers = [1, 5, 2, 9, 3]
+                print(np.argmin(numbers))  # exit: 0 (Value 1 Index)
+            '''
+        },
+        "array": {
+            "significado": "It is a data structure that contains multiple elements of the same type, commonly used in libraries such as NumPy",
+            "uso": "It is used to efficiently store and operate large amounts of homogeneous data",
+            "ejemplo": '''
+                import numpy as np
+
+                numbers = np.array([1, 2, 3, 4])
+                print(numbers)  # exit: [1 2 3 4]
+            '''
+        },
+        "args": {
+            "significado": "It is a parameter that allows it to receive a variable number of positional arguments in a function",
+            "uso": "It is used to handle multiple arguments in a function without specifying each one individually",
+            "ejemplo": '''
+                def numbers_sum(*args):
+                    return sum(args)
+
+                print(numbers_sum(1, 2, 3))  # exit: 6
+                '''
+        },
+        "arccos": {
+            "significado": "Returns the cosine arc (in radians) of a value",
+            "uso": "It is used in trigonometric calculations with NumPy",
+            "ejemplo": '''
+                import numpy as np
+
+                result = np.arccos(0.5)
+                print(result)  # exit: 1.0471975511965976 (equivalent a π/3)
+                '''
+        },
+        "arcsin": {
+            "significado": "Returns the arc sine (in radians) of a value",
+            "uso": "It is used in trigonometric calculations with NumPy",
+            "ejemplo": '''
+                import numpy as np
+
+                result = np.arcsin(0.5)
+                print(result)  # exit: 0.5235987755982988 (equivalent a π/6)
+                '''
+        },
+        "arctan": {
+            "significado": "Returns the tangent arc (in radians) of a value",
+            "uso": "It is used in trigonometric calculations with NumPy",
+            "ejemplo": '''
+                import numpy as np
+
+                result = np.arctan(1)
+                print(result)  # exit: 0.7853981633974483 (equivalent a π/4)
+                '''
+        },
+        "argparse": {
+            "significado": "Python module used to manage arguments and command-line options",
+            "uso": "It is used to create easy-to-use command-line interfaces",
+            "ejemplo": '''
+                import argparse
+
+                parser = argparse.ArgumentParser(description='example of argparse')
+                parser.add_argument('--nome', type=str, help='your name')
+                args = parser.parse_args()
+                print(f'Hello, {args.nome}')
+                '''
+        },
+        "array_like": {
+            "significado": "Refers to any object that can be treated as an array, such as lists, tuples, or NumPy arrays",
+            "uso": "It is used as input in NumPy or similar functions for operations with data",
+            "ejemplo": '''
+                import numpy as np
+
+                list = [1, 2, 3]
+                array = np.array(list)  # list and array_like
+                print(array)  # exit: [1 2 3]
+                '''
+        },
+        "arange": {
+            "significado": "Generates an array with equally spaced values within a range",
+            "uso": "It is used in NumPy to create number sequences",
+            "ejemplo": '''
+                import numpy as np
+
+                result = np.arange(0, 10, 2)
+                print(result)  # exit: [0 2 4 6 8]
+                '''
+        },
+        "argmax": {
+            "significado": "Returns the index of the maximum value in an array or iterable",
+            "uso": "It is used in libraries such as NumPy to find the index of the highest value in data structures",
+            "ejemplo": '''
+                import numpy as np
+
+                numbers = [1, 5, 2, 9, 3]
+                print(np.argmax(numbers))  # exit: 3 (Value 9 Index)
+            '''
+        },
+        "as": {
+            "significado": "Keyword used to assign an alias to modules or in 'with' statements",
+            "uso": "Makes it easy to reference long or specific names in code",
+            "ejemplo": '''
+                import numpy as np
+
+                with open('file.txt', 'r') as file:
+                    content = file.read()
+                '''
+        },
+        "assert": {
+            "significado": "Evaluates an expression and throws an exception 'AssertionError' if the expression is false",
+            "uso": "It is used to check conditions that must be met during program execution",
+            "ejemplo": '''
+                x = 5
+                assert x > 0, 'x must be greater than 0'  # Does not generate error
+                assert x < 0, 'x must be less than 0'  # Generates AssertionError
+                '''
+        },
+        "async": {
+            "significado": "Defines an asynchronous function that can be used with 'await'",
+            "uso": "It is used to implement asynchronous programming in Python",
+            "ejemplo": '''
+                import asyncio
+
+                async def Greeting():
+                    print('Hello')
+                    await asyncio.sleep(1)
+                    print('Bye')
+
+                asyncio.run(Greeting())
+                '''
+        },
+        "assertEqual": {
+            "significado": "Checks if two values are equal in a unit test",
+            "uso": "It is used in unit tests to validate the equality of expected and actual values",
+            "ejemplo": '''
+                import unittest
+
+                class Test(unittest.TestCase):
+                    def test_sum(self):
+                        self.assertEqual(1 + 1, 2)  # The test passes
+                '''
+        },
+        "assertIsNone": {
+            "significado": "Checks if a value is None in a unit test",
+            "uso": "It is used in unit tests to validate that a value is None",
+            "ejemplo": '''
+                import unittest
+
+                class Test(unittest.TestCase):
+                    def test_value_none(self):
+                        self.assertIsNone(None)  # The test passes
+                '''
+        },
+        "assertAlmostEqual": {
+            "significado": "Checks whether two values are approximately equal to a specific number of decimal places in a unit test",
+            "uso": "It is used in unit tests to validate values with tolerance to small differences",
+            "ejemplo": '''
+                import unittest
+
+                class Test(unittest.TestCase):
+                    def test_aprox(self):
+                        self.assertAlmostEqual(3.14159, 3.14, places=2)  # The test passes
+                '''
+        },
+        "as_tuple": {
+            "significado": "Method that converts an object to a tuple (common in libraries such as SymPy)",
+            "uso": "It is used to transform objects into tuple representations",
+            "ejemplo": '''
+                from sympy import Point
+
+                p = Point(2, 3)
+                print(p.as_tuple())  # exit: (2, 3)
+                '''
+        },
+        "ascii": {
+            "significado": "Returns a human-readable representation of an object using ASCII characters",
+            "uso": "It is used to represent strings or characters in an ASCII-safe format by replacing non-ASCII characters with escape sequences",
+            "ejemplo": '''
+                texto = "Hi, how are you?"
+                print(ascii(text))  # exit: 'Hi\\xe1, how are\\xea you\\xe1?'
+            '''
+        },
+        "at": {
+            "significado": "Method used to access specific elements in structures such as DataFrames or arrays (usually in pandas)",
+            "uso": "It is used to quickly access an individual value in a specific position",
+            "ejemplo": '''
+                import pandas as pd
+
+                dices = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
+                print(dices.at[0, 'A'])  # exit: 1
+                '''
+        },
+        "attribute": {
+            "significado": "Refers to a property or characteristic associated with an object in Python",
+            "uso": "It is used to access or modify properties of objects created from classes",
+            "ejemplo": '''
+                class Person:
+                    def __init__(self, name, age):
+                        self.name = name
+                        self.age = age
+
+                p = Person('João', 30)
+                print(p.name)  # exit: João
+                p.age = 31
+                print(p.age)  # exit: 31
+                '''
+        },
+        "attributeError": {
+            "significado": "It is an exception that occurs when you try to access or assign an attribute that does not exist",
+            "uso": "It is used to catch and handle errors related to invalid attributes",
+            "ejemplo": '''
+                try:
+                    objet = 5
+                    objet.atribute = 10
+                except AttributeError as e:
+                    print('Error:', e)
+                # exit: Error: 'int' object has no attribute 'atribute'
+                '''
+        },
+        "atleast_1d": {
+            "significado": "Converts inputs to arrays with at least one dimension",
+            "uso": "It is used in NumPy to ensure that data has a minimum dimension",
+            "ejemplo": '''
+                import numpy as np
+
+                result = np.atleast_1d(5)
+                print(result)  # exit: [5]
+                '''
+        },
+        "atleast_2d": {
+            "significado": "Converts inputs to arrays with at least two dimensions",
+            "uso": "It is used in NumPy to work with data in array format",
+            "ejemplo": '''
+                import numpy as np
+
+                result = np.atleast_2d([1, 2, 3])
+                print(result)
+                # exit:
+                # [[1 2 3]]
+                '''
+        },
+        "average": {
+            "significado": "Averages the elements of an array or list",
+            "uso": "It is used in NumPy to calculate averages, with the possibility of weighting values",
+            "ejemplo": '''
+                import numpy as np
+
+                values = [1, 2, 3, 4]
+                print(np.average(values))  # exit: 2.5
+                '''
+        },
+        "await": {
+            "significado": "It is used to wait for the result of an asynchronous function.",
+            "uso": "It is used within functions defined with 'async' to pause their execution until an asynchronous task is completed",
+            "ejemplo": '''
+                import asyncio
+
+                async def task():
+                    await asyncio.sleep(1)
+                    return 'Task ready'
+
+                async def main():
+                    result = await task()
+                    print(result)
+
+                asyncio.run(main())
+                '''
+        },
     },
     "b": {
         "break": {
