@@ -5,12 +5,11 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Forma de Utilizar el Diccionario - Diccionario del 3MF</title>
     <link rel="stylesheet" href="{{ url_for('static', filename='css/dictionary_usage.css') }}">
-    <link rel="stylesheet" href="{{ url_for('static', filename='css/particles.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/particles_dicc.css') }}">
 </head>
 <body>
     <div class="container">
         <header>
-            <div id="particles"></div>
             <div class="home-container">
                 <button id="homeButton" class="home-button">
                     <img src="{{ url_for('static', filename='images/home_ico.png') }}" alt="Home" class="home-icon">
@@ -35,6 +34,7 @@
             </div>
         </header>
         <main>
+            
             <div class="content">
                 <div class="alphabet-menu">
                     <ul id="alphabet-list">
@@ -53,7 +53,7 @@
             </div>
         </main>
     </div>
-
+    <div id="particles"></div>
     <script src="{{ url_for('static', filename='js/dictionary_usage.js') }}"></script>
     <script src="{{ url_for('static', filename='js/words_particle.js') }}"></script>
     <script>

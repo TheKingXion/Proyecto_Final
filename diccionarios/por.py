@@ -624,10 +624,16 @@ diccionario_por = {
         },
     },
     "c": {
-        "": {
-            "significado": "",
-            "uso": "",
-            "ejemplo": ''''''
+        "callable": {
+        "significado": "Verifica si un objeto es invocable (como una función o una clase).",
+        "uso": "Se utiliza para determinar si un objeto puede ser llamado.",
+        "ejemplo": '''
+            def funcion():
+                return "Hola"
+
+            print(callable(funcion))  # Saída: True
+            print(callable(42))  # Saída: False
+            '''
         },
     },
     "d": {

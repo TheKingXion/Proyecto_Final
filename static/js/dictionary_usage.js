@@ -49,5 +49,5 @@ document.addEventListener('DOMContentLoaded', function() {
 });
 
 document.getElementById('homeButton').addEventListener('click', function() {
-    window.location.href = '/dictionary-usage?idioma={{ idioma }}';
+    window.location.href = '/dictionary-usage';
 });
