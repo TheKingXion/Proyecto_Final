@@ -1,0 +1,15 @@
+#particles {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 0;
+}
+
+.particle {
+    position: absolute;
+    font-size: 16px;
+    color: rgba(0, 0, 0, 0.7);
+    user-select: none;
+}
