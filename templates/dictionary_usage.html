@@ -10,6 +10,11 @@
 <body>
     <div class="container">
         <header>
+            <div id="pagination-controls" class="pagination-controls">
+                <button id="prev-page" class="pagination-button">&larr;</button>
+                <span id="page-number">Página 1</span>
+                <button id="next-page" class="pagination-button">&rarr;</button>
+            </div>
             <div class="home-container">
                 <button id="homeButton" class="home-button">
                     <img src="{{ url_for('static', filename='images/home_ico.png') }}" alt="Home" class="home-icon">
@@ -57,12 +62,22 @@
     <script src="{{ url_for('static', filename='js/words_particle.js') }}"></script>
     <script>
             function selectLetter(letter, element) {
+                // Desactivar la clase activa de todas las letras
                 document.querySelectorAll('#alphabet-list li').forEach(li => li.classList.remove('active'));
+                // Activar la clase en la letra seleccionada
                 element.classList.add('active');
+                // Actualizar el contenido de la letra seleccionada
                 document.getElementById('selected-letter').textContent = letter;
 
+                // Actualizar los términos de la letra seleccionada
                 updateTermsForLetter(letter);
-            }
+
+                // Desplazar la página al inicio
+                window.scrollTo({
+                    top: 0,
+                    behavior: 'smooth' // Desplazamiento suave
+                });
+}
 
             function changeLanguage() {
                 const selectedLanguage = document.getElementById('input-language').value;
@@ -102,6 +117,83 @@
                         container.innerHTML = html;
                     });
             } 
+    </script>
+
+    <script>
+
+            function updateTermsForLetter(letter) {
+                fetch(`/terms/${letter}?idioma=${getCurrentLanguage()}`)
+                    .then(response => response.text())
+                    .then(html => {
+                        const container = document.getElementById('terms-container');
+                        container.innerHTML = html;
+                        initializePagination();
+                    });
+            }
+
+            function initializePagination() {
+                const termsContainer = document.getElementById('terms-container');
+                const terms = termsContainer.getElementsByClassName('term');
+                const prevButton = document.getElementById('prev-page');
+                const nextButton = document.getElementById('next-page');
+                const pageNumber = document.getElementById('page-number');
+                const termsPerPage = 3;
+                let currentPage = 1;
+
+                function showPage(page) {
+                    const startIndex = (page - 1) * termsPerPage;
+                    const endIndex = startIndex + termsPerPage;
+
+                    for (let i = 0; i < terms.length; i++) {
+                        if (i >= startIndex && i < endIndex) {
+                            terms[i].style.display = 'block';
+                        } else {
+                            terms[i].style.display = 'none';
+                        }
+                    }
+                }
+
+                function updatePaginationControls() {
+                    const totalPages = Math.ceil(terms.length / termsPerPage);
+                    pageNumber.textContent = `Página ${currentPage} de ${totalPages}`;
+                    prevButton.disabled = currentPage === 1;
+                    nextButton.disabled = currentPage === totalPages;
+
+                    const paginationControls = document.getElementById('pagination-controls');
+                    if (terms.length <= termsPerPage) {
+                        paginationControls.style.display = 'none';
+                    } else {
+                        paginationControls.style.display = 'flex';
+                    }
+                }
+
+                prevButton.addEventListener('click', function() {
+                    if (currentPage > 1) {
+                        currentPage--;
+                        showPage(currentPage);
+                        updatePaginationControls();
+                    }
+                });
+
+                nextButton.addEventListener('click', function() {
+                    const totalPages = Math.ceil(terms.length / termsPerPage);
+                    if (currentPage < totalPages) {
+                        currentPage++;
+                        showPage(currentPage);
+                        updatePaginationControls();
+                    }
+                });
+
+                showPage(currentPage);
+                updatePaginationControls();
+            }
+
+
+            document.addEventListener('DOMContentLoaded', function() {
+
+                initializePagination();
+            });
+
     </script>
 </body>
 </html>

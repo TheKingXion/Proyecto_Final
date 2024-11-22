@@ -580,7 +580,7 @@ diccionario_por = {
         "buffer": {
             "significado": "Uma classe em Python que fornece uma visão de acesso a uma área de memória de um objeto.",
             "uso": "É utilizado para acessar a memória de maneira eficiente, especialmente em operações com grandes quantidades de dados.",
-            "exemplo": '''
+            "ejemplo": '''
                 buffer = memoryview(b'abc')
                 print(buffer[0])  # Saída: 97 (equivalente a 'a')
                 '''
@@ -588,7 +588,7 @@ diccionario_por = {
         "bitwise_left_shift": {
             "significado": "Operador que realiza um deslocamento de bits para a esquerda.",
             "uso": "É utilizado para deslocar os bits de um número para a esquerda, multiplicando o valor por potências de dois.",
-            "exemplo": '''
+            "ejemplo": '''
                 x = 5  # binário: 0101
                 print(x << 1)  # Saída: 10 (binário: 1010)
                 '''
@@ -596,7 +596,7 @@ diccionario_por = {
         "bitwise_right_shift": {
             "significado": "Operador que realiza um deslocamento de bits para a direita.",
             "uso": "É utilizado para deslocar os bits de um número para a direita, dividindo o valor por potências de dois.",
-            "exemplo": '''
+            "ejemplo": '''
                 x = 5  # binário: 0101
                 print(x >> 1)  # Saída: 2 (binário: 0010)
                 '''
@@ -604,7 +604,7 @@ diccionario_por = {
         "bz2": {
             "significado": "Módulo que fornece compressão e descompressão usando o algoritmo bzip2.",
             "uso": "É utilizado para manipular arquivos comprimidos no formato bzip2.",
-            "exemplo": '''
+            "ejemplo": '''
                 import bz2
 
                 with bz2.open('arquivo.bz2', 'rb') as arquivo:
@@ -615,7 +615,7 @@ diccionario_por = {
         "bool_": {
             "significado": "Tipo de dado do NumPy para valores booleanos, similar ao `bool` do Python.",
             "uso": "É utilizado em operações com arrays do NumPy para representar valores booleanos.",
-            "exemplo": '''
+            "ejemplo": '''
                 import numpy as np
 
                 valor = np.bool_(True)

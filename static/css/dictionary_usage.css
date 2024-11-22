@@ -1,3 +1,4 @@
+/*Diccionary_usage.css*/
 body, html {
     font-family: Arial, sans-serif;
     margin: 0;
@@ -222,6 +223,42 @@ h2 {
     outline: none;
     box-shadow: 0 0 5px rgba(27, 18, 89, 0.5);
 }
+
+.terms-section {
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+}
+
+.pagination-controls {
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin-left: 155px;
+}
+
+.pagination-button {
+    background-color: #F2B705;
+    color: #FFFFFF;
+    border: none;
+    padding: 10px 15px;
+    margin: 0 10px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+}
+
+.pagination-button:hover {
+    background-color: #D92534;
+}
+
+#page-number {
+    font-size: 16px;
+    font-weight: bold;
+    color: #F2B705;
+}
+
 
 @media (max-width: 768px) {
     
