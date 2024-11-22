@@ -1,30 +1,3 @@
-function selectLetter(letter, element) {
-    document.querySelectorAll('#alphabet-list li').forEach(li => li.classList.remove('active'));
-    element.classList.add('active');
-    document.getElementById('selected-letter').textContent = letter;
-    
-    fetch(`/terms/${letter}?idioma=${getCurrentLanguage()}`)
-        .then(response => response.text())
-        .then(html => {
-            document.getElementById('terms-container').innerHTML = html;
-        });
-}
-
-function changeLanguage() {
-    var selectedLanguage = document.getElementById('input-language').value;
-    var xhr = new XMLHttpRequest();
-    xhr.open('GET', '/dictionary-usage?idioma=' + selectedLanguage, true);
-    xhr.onload = function() {
-        if (xhr.status === 200) {
-            var response = xhr.responseText;
-            document.open();
-            document.write(response);
-            document.close();
-        }
-    };
-    xhr.send();
-}
-
 function toggleSearch() {
     var searchInput = document.getElementById('searchInput');
     searchInput.classList.toggle('active');
@@ -99,4 +72,4 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.getElementById('homeButton').addEventListener('click', function() {
     window.location.href = '/dictionary-usage';
-});
+}); 

@@ -56,11 +56,52 @@
     <script src="{{ url_for('static', filename='js/dictionary_usage.js') }}"></script>
     <script src="{{ url_for('static', filename='js/words_particle.js') }}"></script>
     <script>
+            function selectLetter(letter, element) {
+                document.querySelectorAll('#alphabet-list li').forEach(li => li.classList.remove('active'));
+                element.classList.add('active');
+                document.getElementById('selected-letter').textContent = letter;
 
+                updateTermsForLetter(letter);
+            }
 
+            function changeLanguage() {
+                const selectedLanguage = document.getElementById('input-language').value;
 
+                // Cambiar los textos de la página dinámicamente
+                fetch(`/dictionary-usage?idioma=${selectedLanguage}`)
+                    .then(response => response.text())
+                    .then(html => {
+                        const parser = new DOMParser();
+                        const doc = parser.parseFromString(html, 'text/html');
 
-        
+                        // Actualizar contenido del diccionario
+                        document.getElementById('terms-container').innerHTML =
+                            doc.getElementById('terms-container').innerHTML;
+
+                        // Actualizar idioma en el menú
+                        document.getElementById('input-language').value = selectedLanguage;
+
+                        // Actualizar texto de la sección superior
+                        updateTextContent(selectedLanguage);
+
+                        // Actualizar los términos de la letra seleccionada si ya hay una letra activa
+                        const activeLetterElement = document.querySelector('#alphabet-list li.active');
+                        if (activeLetterElement) {
+                            const activeLetter = activeLetterElement.textContent;
+                            updateTermsForLetter(activeLetter);
+                        }
+                    });
+            }
+
+            // Nueva función para actualizar los términos de una letra específica
+            function updateTermsForLetter(letter) {
+                fetch(`/terms/${letter}?idioma=${getCurrentLanguage()}`)
+                    .then(response => response.text())
+                    .then(html => {
+                        const container = document.getElementById('terms-container');
+                        container.innerHTML = html;
+                    });
+            } 
     </script>
 </body>
 </html>
