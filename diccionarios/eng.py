@@ -35,12 +35,12 @@ diccionario_eng = {
                 # Sets
                 ensemble = {1, 2, 3}
                 ensemble.add(4)
-                print(ensemble)  # exit: {1, 2, 3, 4}
+                print(ensemble)  # Output: {1, 2, 3, 4}
 
                 # NumPy
                 import numpy as np
                 result = np.add(2, 3)
-                print(result)  # exit: 5 '''
+                print(result)  # Output: 5 '''
         },
         "allclose": {
             "significado": "Verifies that all elements of two arrays are approximately equal",
@@ -50,7 +50,7 @@ diccionario_eng = {
 
                 a = [1.0, 2.001]
                 b = [1.0, 2.0009]
-                print(np.allclose(a, b, atol=0.01))  # exit: True '''
+                print(np.allclose(a, b, atol=0.01))  # Output: True '''
         },
         "allexcept": {
             "significado": "It is not a native Python term. It can refer to a logical approach that applies operations to all elements except for a few specific ones",
@@ -58,7 +58,7 @@ diccionario_eng = {
             "ejemplo": '''
                 list = [1, 2, 3, 4]
                 result = [x for x in list if x != 2]  # Filters out all but 2
-                print(result)  # exit: [1, 3, 4]
+                print(result)  # Output: [1, 3, 4]
                 '''
         },
          "append": {
@@ -67,7 +67,7 @@ diccionario_eng = {
             "ejemplo": '''
                 list = [1, 2, 3]
                 list.append(4)
-                print(list)  # exit: [1, 2, 3, 4]
+                print(list)  # Output: [1, 2, 3, 4]
             '''
         },
         "apply": {
@@ -79,7 +79,7 @@ diccionario_eng = {
                 dice = pd.DataFrame({'A': [1, 2, 3]})
                 dice['B'] = dice['A'].apply(lambda x: x * 2)
                 print(dice)
-                # exit:
+                # Output:
                 #    A  B
                 # 0  1  2
                 # 1  2  4
@@ -93,7 +93,7 @@ diccionario_eng = {
                 import numpy as np
 
                 numbers = [1, 5, 2, 9, 3]
-                print(np.argmin(numbers))  # exit: 0 (Value 1 Index)
+                print(np.argmin(numbers))  # Output: 0 (Value 1 Index)
             '''
         },
         "array": {
@@ -103,7 +103,7 @@ diccionario_eng = {
                 import numpy as np
 
                 numbers = np.array([1, 2, 3, 4])
-                print(numbers)  # exit: [1 2 3 4]
+                print(numbers)  # Output: [1 2 3 4]
             '''
         },
         "args": {
@@ -113,7 +113,7 @@ diccionario_eng = {
                 def numbers_sum(*args):
                     return sum(args)
 
-                print(numbers_sum(1, 2, 3))  # exit: 6
+                print(numbers_sum(1, 2, 3))  # Output: 6
                 '''
         },
         "arccos": {
@@ -123,7 +123,7 @@ diccionario_eng = {
                 import numpy as np
 
                 result = np.arccos(0.5)
-                print(result)  # exit: 1.0471975511965976 (equivalent a π/3)
+                print(result)  # Output: 1.0471975511965976 (equivalent a π/3)
                 '''
         },
         "arcsin": {
@@ -133,7 +133,7 @@ diccionario_eng = {
                 import numpy as np
 
                 result = np.arcsin(0.5)
-                print(result)  # exit: 0.5235987755982988 (equivalent a π/6)
+                print(result)  # Output: 0.5235987755982988 (equivalent a π/6)
                 '''
         },
         "arctan": {
@@ -143,7 +143,7 @@ diccionario_eng = {
                 import numpy as np
 
                 result = np.arctan(1)
-                print(result)  # exit: 0.7853981633974483 (equivalent a π/4)
+                print(result)  # Output: 0.7853981633974483 (equivalent a π/4)
                 '''
         },
         "argparse": {
@@ -152,7 +152,7 @@ diccionario_eng = {
             "ejemplo": '''
                 import argparse
 
-                parser = argparse.ArgumentParser(description='example of argparse')
+                parser = argparse.ArgumentParser(description='ejemplo of argparse')
                 parser.add_argument('--nome', type=str, help='your name')
                 args = parser.parse_args()
                 print(f'Hello, {args.nome}')
@@ -166,7 +166,7 @@ diccionario_eng = {
 
                 list = [1, 2, 3]
                 array = np.array(list)  # list and array_like
-                print(array)  # exit: [1 2 3]
+                print(array)  # Output: [1 2 3]
                 '''
         },
         "arange": {
@@ -176,7 +176,7 @@ diccionario_eng = {
                 import numpy as np
 
                 result = np.arange(0, 10, 2)
-                print(result)  # exit: [0 2 4 6 8]
+                print(result)  # Output: [0 2 4 6 8]
                 '''
         },
         "argmax": {
@@ -186,7 +186,7 @@ diccionario_eng = {
                 import numpy as np
 
                 numbers = [1, 5, 2, 9, 3]
-                print(np.argmax(numbers))  # exit: 3 (Value 9 Index)
+                print(np.argmax(numbers))  # Output: 3 (Value 9 Index)
             '''
         },
         "as": {
@@ -262,7 +262,7 @@ diccionario_eng = {
                 from sympy import Point
 
                 p = Point(2, 3)
-                print(p.as_tuple())  # exit: (2, 3)
+                print(p.as_tuple())  # Output: (2, 3)
                 '''
         },
         "ascii": {
@@ -270,7 +270,7 @@ diccionario_eng = {
             "uso": "It is used to represent strings or characters in an ASCII-safe format by replacing non-ASCII characters with escape sequences",
             "ejemplo": '''
                 texto = "Hi, how are you?"
-                print(ascii(text))  # exit: 'Hi\\xe1, how are\\xea you\\xe1?'
+                print(ascii(text))  # Output: 'Hi\\xe1, how are\\xea you\\xe1?'
             '''
         },
         "at": {
@@ -280,7 +280,7 @@ diccionario_eng = {
                 import pandas as pd
 
                 dices = pd.DataFrame({'A': [1, 2], 'B': [3, 4]})
-                print(dices.at[0, 'A'])  # exit: 1
+                print(dices.at[0, 'A'])  # Output: 1
                 '''
         },
         "attribute": {
@@ -293,9 +293,9 @@ diccionario_eng = {
                         self.age = age
 
                 p = Person('João', 30)
-                print(p.name)  # exit: João
+                print(p.name)  # Output: João
                 p.age = 31
-                print(p.age)  # exit: 31
+                print(p.age)  # Output: 31
                 '''
         },
         "attributeError": {
@@ -307,7 +307,7 @@ diccionario_eng = {
                     objet.atribute = 10
                 except AttributeError as e:
                     print('Error:', e)
-                # exit: Error: 'int' object has no attribute 'atribute'
+                # Output: Error: 'int' object has no attribute 'atribute'
                 '''
         },
         "atleast_1d": {
@@ -317,7 +317,7 @@ diccionario_eng = {
                 import numpy as np
 
                 result = np.atleast_1d(5)
-                print(result)  # exit: [5]
+                print(result)  # Output: [5]
                 '''
         },
         "atleast_2d": {
@@ -328,7 +328,7 @@ diccionario_eng = {
 
                 result = np.atleast_2d([1, 2, 3])
                 print(result)
-                # exit:
+                # Output:
                 # [[1 2 3]]
                 '''
         },
@@ -339,7 +339,7 @@ diccionario_eng = {
                 import numpy as np
 
                 values = [1, 2, 3, 4]
-                print(np.average(values))  # exit: 2.5
+                print(np.average(values))  # Output: 2.5
                 '''
         },
         "await": {
@@ -363,11 +363,11 @@ diccionario_eng = {
     "b": {
         "break": {
             "significado":"End a loop early",
-            "uso": "to manually exit a loop",
+            "uso": "to manually Output a loop",
             "ejemplo":'''while True:
-            number = int(input("enter a number (enter a 0 for exit): "))
+            number = int(input("enter a number (enter a 0 for Output): "))
             if number == 0:
-            break  # exit from the bucle if the user write 0
+            break  # Output from the bucle if the user write 0
             print(f"the number entered is {number}")'''
         },
         "bytes": {
@@ -381,7 +381,7 @@ diccionario_eng = {
             "uso": "It is used to obtain the binary representation of an integer",
             "ejemplo": '''
                 number = 10
-                print(bin(number))  # exit: '0b1010'
+                print(bin(number))  # Output: '0b1010'
                 '''
         },
         "bool": {
@@ -389,7 +389,7 @@ diccionario_eng = {
             "uso": "It is used to represent and operate with truth values",
             "ejemplo": '''
                 value = bool(1)
-                print(value)  # exit: True
+                print(value)  # Output: True
                 '''
         },
         "bytearray": {
@@ -398,7 +398,7 @@ diccionario_eng = {
             "ejemplo": '''
                 b = bytearray([65, 66, 67])
                 b[0] = 90
-                print(b)  # exit: bytearray(b'ZBC')
+                print(b)  # Output: bytearray(b'ZBC')
                 '''
         },
         "byteswap": {
@@ -409,7 +409,7 @@ diccionario_eng = {
 
                 a = np.array([1, 256], dtype=np.int16)
                 a = a.byteswap()
-                print(a)  # exit: [256 1]
+                print(a)  # Output: [256 1]
                 '''
         },
         "buffer": {
@@ -417,7 +417,7 @@ diccionario_eng = {
             "uso": "It is used to access memory efficiently, especially in operations with large amounts of data",
             "ejemplo": '''
                 buffer = memoryview(b'abc')
-                print(buffer[0])  # exit: 97 (equivalent 'a')
+                print(buffer[0])  # Output: 97 (equivalent 'a')
                 '''
         },
         "base64": {
@@ -427,7 +427,7 @@ diccionario_eng = {
                 import base64
 
                 encoded = base64.b64encode(b'abc')
-                print(encoded)  # exit: b'YWJj'
+                print(encoded)  # Output: b'YWJj'
                 '''
         },
         "bitwise_and": {
@@ -436,7 +436,7 @@ diccionario_eng = {
             "ejemplo": '''
                 x = 5  # binary: 0101
                 y = 3  # binary: 0011
-                print(x & y)  # exit: 1 (binary: 0001)
+                print(x & y)  # Output: 1 (binary: 0001)
                 '''
         },
         "bitwise_or": {
@@ -445,7 +445,7 @@ diccionario_eng = {
             "ejemplo": '''
                 x = 5  # binary: 0101
                 y = 3  # binary: 0011
-                print(x | y)  # exit: 7 (binary: 0111)
+                print(x | y)  # Output: 7 (binary: 0111)
                 '''
         },
         "bitwise_xor": {
@@ -454,7 +454,7 @@ diccionario_eng = {
             "ejemplo": '''
                 x = 5  # binary: 0101
                 y = 3  # binary: 0011
-                print(x ^ y)  # exit: 6 (binary: 0110)
+                print(x ^ y)  # Output: 6 (binary: 0110)
                 '''
         },
         "bitwise_not": {
@@ -462,7 +462,7 @@ diccionario_eng = {
         "uso": "It is used to invert all the bits of a number",
         "ejemplo": '''
             x = 5  # binary: 0101
-            print(~x)  # exit: -6 (binary: 1010)
+            print(~x)  # Output: -6 (binary: 1010)
             '''
         },
         "binomial": {
@@ -472,7 +472,7 @@ diccionario_eng = {
                 from scipy.special import comb
 
                 result = comb(5, 2)
-                print(result)  # exit: 10.0
+                print(result)  # Output: 10.0
                 '''
         },
         "binascii": {
@@ -482,7 +482,7 @@ diccionario_eng = {
                 import binascii
 
                 encoded = binascii.hexlify(b'abc')
-                print(encoded)  # exit: b'616263'
+                print(encoded)  # Output: b'616263'
                 '''
         },
         "byteorder": {
@@ -491,7 +491,7 @@ diccionario_eng = {
             "ejemplo": '''
                 import sys
 
-                print(sys.byteorder)  # exit: 'little' or 'big'
+                print(sys.byteorder)  # Output: 'little' or 'big'
                 '''
         },
         "bit_length": {
@@ -499,7 +499,7 @@ diccionario_eng = {
             "uso": "It is used to obtain the length in bits of an integer",
             "ejemplo": '''
                 number = 10
-                print(number.bit_length())  # exit: 4
+                print(number.bit_length())  # Output: 4
                 '''
         },
         "breakpoint": {
@@ -526,11 +526,11 @@ diccionario_eng = {
             "significado": "Data structure that allows you to store a collection of bits",
             "uso": "It is used to represent sets of bits and perform efficient operations on them",
             "ejemplo": '''
-                # example is not standard in Python, but one can use the 'bitarray' module to create bitsets
+                # ejemplo is not standard in Python, but one can use the 'bitarray' module to create bitsets
                 from bitarray import bitarray
 
                 bitset = bitarray('10101')
-                print(bitset)  # exit: bitarray('10101')
+                print(bitset)  # Output: bitarray('10101')
                 '''
         },
         "broadcast": {
@@ -543,7 +543,7 @@ diccionario_eng = {
                 b = np.array([[1], [2], [3]])
                 result = a + b
                 print(result)
-                # exit:
+                # Output:
                 # [[2 3 4]
                 #  [3 4 5]
                 #  [4 5 6]]
@@ -557,7 +557,7 @@ diccionario_eng = {
 
                 a = bitarray('10101')
                 a.append('1')
-                print(a)  # exit: bitarray('101011')
+                print(a)  # Output: bitarray('101011')
                 '''
         },
         "buffer": {
@@ -565,7 +565,7 @@ diccionario_eng = {
             "uso": "It is used to access memory efficiently, especially in operations with large amounts of data",
             "ejemplo": '''
                 buffer = memoryview(b'abc')
-                print(buffer[0])  # exit: 97 (equivalent 'a')
+                print(buffer[0])  # Output: 97 (equivalent 'a')
                 '''
         },
         "bitwise_left_shift": {
@@ -573,7 +573,7 @@ diccionario_eng = {
             "uso": "It is used to shift the bits of a number to the left by multiplying the value by powers of two",
             "ejemplo": '''
                 x = 5  # binary: 0101
-                print(x << 1)  # exit: 10 (binary: 1010)
+                print(x << 1)  # Output: 10 (binary: 1010)
                 '''
         },
         "bitwise_right_shift": {
@@ -581,7 +581,7 @@ diccionario_eng = {
             "uso": "It is used to shift the bits of a number to the right, dividing the value by powers of two",
             "ejemplo": '''
                 x = 5  # binary: 0101
-                print(x >> 1)  # exit: 2 (binary: 0010)
+                print(x >> 1)  # Output: 2 (binary: 0010)
                 '''
         },
         "bz2": {
@@ -602,35 +602,268 @@ diccionario_eng = {
                 import numpy as np
 
                 value = np.bool_(True)
-                print(value)  # exit: True
+                print(value)  # Output: True
                 '''
         },
     },
     "c": {
-        "_constains_": {
-            "significado": "Defines how to check if one object contains another (for the in operator)",
-            "uso": "Customize the behavior of the in operator when used with an object of a user-defined class",
-            "ejemplo": '''class Box:
-            def __init__(self, elements):
-            self.elements = elements
-            def __contains__(self, item):
-            return item in self.elements
-            box = Box([1, 2, 3])
-            print(2 in box)  # True'''
-        },
-        "count": {
-            "significado":"Returns the number of times an item appears in a list or string",
-            "uso": "Count occurrences of a value in a collection",
-            "ejemplo": '''list = [1, 2, 2, 3, 2, 4]
-            print(list.count(2))  # 3'''
-        },
-        "clear": {
-            "significado":" Delete all from a list or dictionary",
-            "uso": "Empty the contents of a collection",
-            "ejemplo": '''list = [1, 2, 3]
-            list.clear()
-            print(list)  # []'''
-        },
+        {
+    "callable": {
+        "significado": "Checks if an object is callable (like a function or a class).",
+        "uso": "Used to determine if an object can be called.",
+        "ejemplo": '''
+            def function():
+                return "Hello"
+            
+            print(callable(function))  # Output: True
+            print(callable(42))  # Output: False
+            '''
+    },
+    "chr": {
+        "significado": "Returns the Unicode character corresponding to an integer number.",
+        "uso": "Used to convert a Unicode code point into its character representation.",
+        "ejemplo": '''
+            print(chr(65))  # Output: 'A'
+            print(chr(8364))  # Output: '€'
+            '''
+    },
+    "class": {
+        "significado": "Keyword used to define a class in Python.",
+        "uso": "Used to create custom objects with attributes and methods.",
+        "ejemplo": '''
+            class Person:
+                def __init__(self, name):
+                    self.name = name
+                
+                def greet(self):
+                    print(f"Hello, my name is {self.name}")
+            
+            p = Person("Juan")
+            p.greet()  # Output: Hello, my name is Juan
+            '''
+    },
+    "classmethod": {
+        "significado": "Defines a class method that takes the class as the first argument instead of an instance.",
+        "uso": "Used to create methods that affect the class in general.",
+        "ejemplo": '''
+            class MyClass:
+                counter = 0
+
+                @classmethod
+                def increment(cls):
+                    cls.counter += 1
+            
+            MyClass.increment()
+            print(MyClass.counter)  # Output: 1
+            '''
+    },
+    "compile": {
+        "significado": "Compiles a string of code into an executable Python object.",
+        "uso": "Used to compile dynamic code from text or files.",
+        "ejemplo": '''
+            code = "print('Hello World')"
+            compiled = compile(code, '<string>', 'exec')
+            exec(compiled)  # Output: Hello World
+            '''
+    },
+    "complex": {
+        "significado": "Creates a complex number in Python.",
+        "uso": "Used to represent complex numbers with real and imaginary parts.",
+        "ejemplo": '''
+            c = complex(2, 3)
+            print(c)  # Output: (2+3j)
+            print(c.real, c.imag)  # Output: 2.0 3.0
+            '''
+    },
+    "continue": {
+        "significado": "Keyword that skips to the next iteration of a loop.",
+        "uso": "Used to skip the rest of the code in the current iteration.",
+        "ejemplo": '''
+            for i in range(5):
+                if i == 2:
+                    continue
+                print(i)  # Output: 0 1 3 4
+            '''
+    },
+    "copy": {
+        "significado": "Creates a shallow copy of an object.",
+        "uso": "Used to duplicate data structures without duplicating nested objects.",
+        "ejemplo": '''
+            import copy
+
+            list1 = [1, 2, [3, 4]]
+            copy1 = copy.copy(list1)
+            print(copy1)  # Output: [1, 2, [3, 4]]
+            '''
+    },
+    "coroutine": {
+        "significado": "Object representing a suspended asynchronous function.",
+        "uso": "Used to manage asynchronous tasks with `async` and `await`.",
+        "ejemplo": '''
+            async def task():
+                print("Start")
+                await asyncio.sleep(1)
+                print("End")
+            
+            import asyncio
+            asyncio.run(task())  # Output: Start... End
+            '''
+    },
+    "count": {
+        "significado": "Returns the number of occurrences of an element in a collection.",
+        "uso": "Used to count the number of times an element appears in a list or string.",
+        "ejemplo": '''
+            list1 = [1, 2, 2, 3]
+            print(list1.count(2))  # Output: 2
+            '''
+    },
+    "clear": {
+        "significado": "Removes all elements from a list or dictionary.",
+        "uso": "Used to clear the contents of a list or dictionary.",
+        "ejemplo": '''
+            list1 = [1, 2, 3]
+            list1.clear()
+            print(list1)  # Output: []
+            '''
+    },
+    "cmath": {
+        "significado": "Module that provides mathematical functions for working with complex numbers.",
+        "uso": "Used to perform mathematical operations on complex numbers.",
+        "ejemplo": '''
+            import cmath
+
+            number = cmath.sqrt(-1)
+            print(number)  # Output: 1j
+            '''
+    },
+    "chain": {
+        "significado": "Function that combines multiple iterators into one.",
+        "uso": "Used to concatenate multiple iterators.",
+        "ejemplo": '''
+            import itertools
+
+            a = [1, 2, 3]
+            b = [4, 5, 6]
+            result = list(itertools.chain(a, b))
+            print(result)  # Output: [1, 2, 3, 4, 5, 6]
+            '''
+    },
+    "csv": {
+        "significado": "Module to read and write CSV (Comma Separated Values) files.",
+        "uso": "Used to handle CSV files.",
+        "ejemplo": '''
+            import csv
+
+            with open('file.csv', mode='w', newline='') as file:
+                writer = csv.writer(file)
+                writer.writerow(['Name', 'Age'])
+                writer.writerow(['Ana', 30])
+            '''
+    },
+    "copyreg": {
+        "significado": "Module that provides functions for registering objects for copying and unpickling.",
+        "uso": "Used to customize the behavior of object copying and storing.",
+        "ejemplo": '''
+            import copyreg
+
+            def create_person(name, age):
+                return {'name': name, 'age': age}
+
+            copyreg.pickle(dict, create_person)
+            '''
+    },
+    "counter": {
+        "significado": "Class in the `collections` module that counts hashable elements in a sequence.",
+        "uso": "Used to count the frequency of elements in an iterable.",
+        "ejemplo": '''
+            from collections import Counter
+
+            counter = Counter([1, 2, 2, 3, 3, 3])
+            print(counter)  # Output: Counter({3: 3, 2: 2, 1: 1})
+            '''
+    },
+    "cProfile": {
+        "significado": "Module for performance profiling of Python programs.",
+        "uso": "Used to profile code and analyze the efficiency of the program.",
+        "ejemplo": '''
+            import cProfile
+
+            def function():
+                for i in range(1000):
+                    pass
+
+            cProfile.run('function()')
+            '''
+    },
+    "capitalize": {
+        "significado": "String method that capitalizes the first letter and makes the rest lowercase.",
+        "uso": "Used to capitalize the first letter of a string.",
+        "ejemplo": '''
+            text = 'hello world'
+            print(text.capitalize())  # Output: 'Hello world'
+            '''
+    },
+    "center": {
+        "significado": "String method that centers a string within a specified length field.",
+        "uso": "Used to align text in the center of a string with padding.",
+        "ejemplo": '''
+            text = 'hello'
+            print(text.center(10, '*'))  # Output: '**hello****'
+            '''
+    },
+    "ceil": {
+        "significado": "Function in the `math` module that returns the smallest integer greater than or equal to a given number.",
+        "uso": "Used to round a number up.",
+        "ejemplo": '''
+            import math
+
+            number = 3.4
+            print(math.ceil(number))  # Output: 4
+            '''
+    },
+    "call": {
+        "significado": "Method used to invoke a callable object, like functions or classes.",
+        "uso": "Used to call an object that can be executed.",
+        "ejemplo": '''
+            def greeting():
+                return 'Hello'
+            
+            print(callable(greeting))  # Output: True
+            '''
+    },
+    "clamp": {
+        "significado": "Function that restricts a value within a specified range.",
+        "uso": "Used to ensure a value stays within a given range.",
+        "ejemplo": '''
+            def clamp(value, minimum, maximum):
+                return max(minimum, min(value, maximum))
+
+            print(clamp(5, 1, 10))  # Output: 5
+            '''
+    },
+    "choice": {
+        "significado": "Function in the `random` module that selects a random element from a sequence.",
+        "uso": "Used to select a random value from a list or sequence.",
+        "ejemplo": '''
+            import random
+
+            list1 = [1, 2, 3, 4, 5]
+            print(random.choice(list1))  # Output: a random value from the list
+            '''
+    },
+    "collections": {
+        "significado": "Module that implements specialized data types like `Counter`, `deque`, `OrderedDict`, among others.",
+        "uso": "Used to work with collections of data efficiently.",
+        "ejemplo": '''
+            from collections import deque
+
+            queue = deque([1, 2, 3])
+            queue.append(4)
+            print(queue)  # Output: deque([1, 2, 3, 4])
+            '''
+    }
+}
+
      },
     "d": {
         "del": {
@@ -753,16 +986,16 @@ diccionario_eng = {
         "locals()": {
             "significado": "Returns a dictionary that represents the current local namespace",
             "uso": "Get the local context of variables within a function or module",
-            "ejemplo": '''def example():
+            "ejemplo": '''def ejemplo():
             b = 20
             print(locals())  # Result: {'b': 20}
-            example()'''
+            ejemplo()'''
         },
     },
     "m": {
         "max": {
             "significado": "Returns the largest value of an iterable",
-            "usage": "find the max value",
+            "uso": "find the max value",
             "ejemplo": '''max([1, 2, 3])  # 3'''
         },
         "map": {
@@ -788,13 +1021,13 @@ diccionario_eng = {
         },
          "ord": {
             "significado": "Converts a character to its ASCII code",
-            "usage": "Getting the numeric value of a character",
+            "uso": "Getting the numeric value of a character",
             "ejemplo": '''ord('A')  # Result: 65'''
         },
          "open()": {
             "significado": "Opens a file and returns it as a file object",
             "uso": "read or write files",
-            "ejemplo": '''file = open("example.txt", "w")
+            "ejemplo": '''file = open("ejemplo.txt", "w")
             file.write("Hello world")
             file.close()'''
         },
@@ -805,8 +1038,8 @@ diccionario_eng = {
             "uso": "To remove a specific value from a list",
             "ejemplo": '''fruits = ["apple", "banana", "orange", "pear"]
             ultima_fruta = fruits.pop()
-            print("Deleted last fruit:", last_fruit)  # exit: pera
-            print("list later of pop:", fruits)  # exit: ['apple', 'banana', 'orange']'''
+            print("Deleted last fruit:", last_fruit)  # Output: pera
+            print("list later of pop:", fruits)  # Output: ['apple', 'banana', 'orange']'''
         },
          "parseInt": {
             "significado":"Convert a string to an integer",
@@ -865,8 +1098,8 @@ diccionario_eng = {
         "ejemplo":''' # number
         number = 123
         number_like_str = str(number)
-        print(type(number_like_str))  # exit: <class 'str'>
-        print(number_like_str)        # exit: '123'''
+        print(type(number_like_str))  # Output: <class 'str'>
+        print(number_like_str)        # Output: '123'''
         },
         "split": {
         "significado":"Divides a string into a list of substrings.",
