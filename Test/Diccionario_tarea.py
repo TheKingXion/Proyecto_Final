@@ -1,37 +1,55 @@
 import diccionario
-# Funciones
+
 def agregar_termino():
+    letra = input("Ingrese la letra del término (ejemplo: 'a'): ").lower()
     palabra_ingles = input("Ingrese la palabra en inglés: ").lower()
-    if palabra_ingles in diccionario:
+    
+    # Si no existe la letra en el diccionario, la creamos
+    if letra not in diccionario.diccionario:
+        diccionario.diccionario[letra] = {}
+
+    # Verificar si la palabra ya está en la letra correspondiente
+    if palabra_ingles in diccionario.diccionario[letra]:
         print("El término ya existe en el diccionario.")
     else:
         traduccion = input("Ingrese la traducción al español: ")
         categoria = input("Ingrese la categoría (Estructuras de Datos, Funciones, Condicionales, Ciclos, General): ")
-        diccionario[palabra_ingles] = {
+        definicion = input("Ingrese la definición del término: ")
+        
+        diccionario.diccionario[letra][palabra_ingles] = {
             "traduccion": traduccion,
-            "categoria": categoria
+            "categoria": categoria,
+            "definicion": definicion
         }
-        print(f"Término '{palabra_ingles}' agregado con éxito.")
-
+        print(f"Término '{palabra_ingles}' agregado con éxito en la letra '{letra.upper()}'.")
+        
 def eliminar_termino():
+    letra = input("Ingrese la letra del término (ejemplo: 'a'): ").lower()
     palabra_ingles = input("Ingrese la palabra en inglés a eliminar: ").lower()
-    if palabra_ingles in diccionario:
-        del diccionario[palabra_ingles]
-        print(f"Término '{palabra_ingles}' eliminado.")
+    
+    if letra in diccionario.diccionario and palabra_ingles in diccionario.diccionario[letra]:
+        del diccionario.diccionario[letra][palabra_ingles]
+        print(f"Término '{palabra_ingles}' eliminado de la letra '{letra.upper()}'.")
     else:
         print("El término no existe en el diccionario.")
-
+        
 def buscar_termino():
+    letra = input("Ingrese la letra del término (ejemplo: 'a'): ").lower()
     palabra_ingles = input("Ingrese la palabra en inglés a buscar: ").lower()
-    if palabra_ingles in diccionario:
-        print(f"Traducción: {diccionario[palabra_ingles]['traduccion']}")
-        print(f"Categoría: {diccionario[palabra_ingles]['categoria']}")
+    
+    if letra in diccionario.diccionario and palabra_ingles in diccionario.diccionario[letra]:
+        termino = diccionario.diccionario[letra][palabra_ingles]
+        print(f"Traducción: {termino['traduccion']}")
+        print(f"Categoría: {termino['categoria']}")
+        print(f"Definición: {termino['definicion']}")
     else:
         print("El término no existe en el diccionario.")
-
+        
 def mostrar_terminos():
-    for palabra_ingles, detalles in diccionario.items():
-        print(f"{palabra_ingles.capitalize()}: {detalles['traduccion']} (Categoría: {detalles['categoria']})")
+    for letra, terminos in diccionario.diccionario.items():
+        print(f"\nTérminos de la letra '{letra.upper()}':")
+        for palabra_ingles, detalles in terminos.items():
+            print(f"Termino: {palabra_ingles.capitalize()}  -  Categoría: {detalles['categoria']}")
 
 def menu():
     while True:
@@ -53,11 +71,11 @@ def menu():
         elif opcion == "4":
             mostrar_terminos()
         elif opcion == "5":
-            print("Este programa fue desarrollado por [Nombre del equipo] usando Python.")
+            print("Este programa fue desarrollado por Luis Gonzalez, Pablo Cocio, Vicente Soto, Benjamin Cona, Ambar Rojas usando Python.")
         elif opcion == "6":
             print("¡Hasta luego!")
             break
         else:
-            print("Opción no válida. Intente nuevamente.")
+            print("Opción no válida. Intente nuevamente. (1-6)")
 
 menu()
