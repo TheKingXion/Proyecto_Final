@@ -5,929 +5,929 @@
 
 Estructura del diccionario.
 diccionario = {
-"A":{"terminos,": {"categoría": "No pescar en español", "traducción": "definicion en español"}},
+"A":{"terminos,": {"categoría": "categoría en español", "traducción": "definicion en español"}},
 }
 '''
 diccionario = {
     "a": {
         "abs": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Devuelve el valor absoluto de un número.",
             "traduccion": "Returns the absolute value of a number."},
         "all": {
-            "No pescar": ("Funciones de lista",),
+            "categoría": ("Funciones de lista",),
             "definicion": "Devuelve True si todos los elementos en un iterable son verdaderos.",
             "traduccion": "Returns True if all elements in an iterable are true."},
         "any": {
-            "No pescar": ("Funciones de lista",),
+            "categoría": ("Funciones de lista",),
             "definicion": "Devuelve True si algún elemento en un iterable es verdadero.",
             "traduccion": "Returns True if any element in an iterable is true."},
         "ascii": {
-            "No pescar": ("Manipulación de texto",),
+            "categoría": ("Manipulación de texto",),
             "definicion": "Devuelve la versión ASCII de un objeto, eliminando caracteres especiales.",
             "traduccion": "Returns the ASCII version of an object, escaping non-ASCII characters."},
         "append": {
-            "No pescar": ("Listas",),
+            "categoría": ("Listas",),
             "definicion": "Agrega un elemento al final de una lista.",
             "traduccion": "Adds an element to the end of a list."},
         "argmax": {
-            "No pescar": ("Funciones NumPy",),
+            "categoría": ("Funciones NumPy",),
             "definicion": "Devuelve el índice del elemento máximo en una lista o array.",
             "traduccion": "Returns the index of the maximum element in a list or array."},
         "argmin": {
-            "No pescar": ("Funciones NumPy",),
+            "categoría": ("Funciones NumPy",),
             "definicion": "Devuelve el índice del elemento mínimo en una lista o array.",
             "traduccion": "Returns the index of the minimum element in a list or array."},
         "array": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Estructura de datos que puede almacenar múltiples valores del mismo tipo.",
             "traduccion": "Data structure that can store multiple values of the same type."},
         "as": {
-            "No pescar": ("Sintaxis de lenguaje",),
+            "categoría": ("Sintaxis de lenguaje",),
             "definicion": "Usado para crear un alias en una importación.",
             "traduccion": "Used to create an alias in an import."},
         "assert": {
-            "No pescar": ("Depuración",),
+            "categoría": ("Depuración",),
             "definicion": "Usado para declarar una condición que debe ser verdadera en el programa.",
             "traduccion": "Used to declare a condition that must be true in the program."},
         "async": {
-            "No pescar": ("Programación asincrónica",),
+            "categoría": ("Programación asincrónica",),
             "definicion": "Declara una función como asincrónica.",
             "traduccion": "Declares a function as asynchronous."},
         "await": {
-            "No pescar": ("Programación asincrónica",),
+            "categoría": ("Programación asincrónica",),
             "definicion": "Usado para esperar una coroutine en un entorno asincrónico.",
             "traduccion": "Used to wait for a coroutine in an asynchronous context."},
         "attribute": {
-            "No pescar": ("Programación orientada a objetos",),
+            "categoría": ("Programación orientada a objetos",),
             "definicion": "Una propiedad o método de un objeto.",
             "traduccion": "A property or method of an object."},
         "at": {
-            "No pescar": ("Indexación",),
+            "categoría": ("Indexación",),
             "definicion": "Usado para acceder a un índice específico en una lista o array.",
             "traduccion": "Used to access a specific index in a list or array."},
         "args": {
-            "No pescar": ("Funciones",),
+            "categoría": ("Funciones",),
             "definicion": "Argumentos posicionales pasados a una función.",
             "traduccion": "Positional arguments passed to a function."},
         "kwargs": {
-            "No pescar": ("Funciones",),
+            "categoría": ("Funciones",),
             "definicion": "Argumentos con nombre pasados a una función.",
             "traduccion": "Keyword arguments passed to a function."},
         "apply": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Usado para aplicar una función a un iterable.",
             "traduccion": "Used to apply a function to an iterable."},
         "assertEqual": {
-            "No pescar": ("Pruebas unitarias",),
+            "categoría": ("Pruebas unitarias",),
             "definicion": "Verifica que dos valores son iguales.",
             "traduccion": "Checks that two values are equal."},
         "assertIsNone": {
-            "No pescar": ("Pruebas unitarias",),
+            "categoría": ("Pruebas unitarias",),
             "definicion": "Verifica que el valor sea None.",
             "traduccion": "Checks that the value is None."},
         "attributeError": {
-            "No pescar": ("Manejo de excepciones",),
+            "categoría": ("Manejo de excepciones",),
             "definicion": "Excepción lanzada cuando un atributo de un objeto no se encuentra.",
             "traduccion": "Exception raised when an attribute of an object is not found."},
         "add": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Devuelve la suma de dos números.",
             "traduccion": "Returns the sum of two numbers."},
         "allclose": {
-            "No pescar": ("Funciones NumPy",),
+            "categoría": ("Funciones NumPy",),
             "definicion": "Verifica si dos arrays son iguales dentro de una tolerancia específica.",
             "traduccion": "Checks if two arrays are equal within a specific tolerance."},
         "average": {
-            "No pescar": ("Estadística",),
+            "categoría": ("Estadística",),
             "definicion": "Calcula el promedio de una lista de números.",
             "traduccion": "Calculates the average of a list of numbers."},
         "assertAlmostEqual": {
-            "No pescar": ("Pruebas unitarias",),
+            "categoría": ("Pruebas unitarias",),
             "definicion": "Verifica que dos números son aproximadamente iguales.",
             "traduccion": "Checks that two numbers are approximately equal."},
         "absolute_import": {
-            "No pescar": ("Importación de módulos",),
+            "categoría": ("Importación de módulos",),
             "definicion": "Importación que se refiere a un módulo desde la raíz del paquete.",
             "traduccion": "Import that refers to a module from the root of the package."},
         "allexcept": {
-            "No pescar": ("Manejo de excepciones",),
+            "categoría": ("Manejo de excepciones",),
             "definicion": "Usado para capturar todas las excepciones excepto una específica.",
             "traduccion": "Used to catch all exceptions except for a specific one."},
         "as_tuple": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Devuelve los resultados como una tupla.",
             "traduccion": "Returns the results as a tuple."},
         "atleast_1d": {
-            "No pescar": ("Funciones NumPy",),
+            "categoría": ("Funciones NumPy",),
             "definicion": "Convierte una entrada en un array de al menos una dimensión.",
             "traduccion": "Converts input to an array of at least one dimension."},
         "atleast_2d": {
-            "No pescar": ("Funciones NumPy",),
+            "categoría": ("Funciones NumPy",),
             "definicion": "Convierte una entrada en un array de al menos dos dimensiones.",
             "traduccion": "Converts input to an array of at least two dimensions."},
         "arange": {
-            "No pescar": ("Funciones NumPy",),
+            "categoría": ("Funciones NumPy",),
             "definicion": "Crea un array con valores espaciados uniformemente en un rango específico.",
             "traduccion": "Creates an array with evenly spaced values within a specified range."},
         "arccos": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Devuelve el arco coseno de un número.",
             "traduccion": "Returns the arc cosine of a number."},
         "arcsin": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Devuelve el arco seno de un número.",
             "traduccion": "Returns the arc sine of a number."},
         "arctan": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Devuelve el arco tangente de un número.",
             "traduccion": "Returns the arc tangent of a number."},
         "argparse": {
-            "No pescar": ("Análisis de argumentos",),
+            "categoría": ("Análisis de argumentos",),
             "definicion": "Módulo para analizar argumentos de línea de comandos.",
             "traduccion": "Module for parsing command-line arguments."},
         "array_like": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Cualquier objeto que pueda ser convertido a un array.",
             "traduccion": "Any object that can be converted to an array."}},
     
     "b": {
         "bin": {
-            "No pescar": ("Conversión de datos",),
+            "categoría": ("Conversión de datos",),
             "definicion": "Convierte un número en su representación binaria.",
             "traduccion": "Converts a number to its binary representation."},
         "bool": {
-            "No pescar": ("Tipos de datos",),
+            "categoría": ("Tipos de datos",),
             "definicion": "Convierte un valor en su equivalente booleano (True o False).",
             "traduccion": "Converts a value to its boolean equivalent (True or False)."},
         "break": {
-            "No pescar": ("Control de flujo",),
+            "categoría": ("Control de flujo",),
             "definicion": "Termina el ciclo en el que se encuentra.",
             "traduccion": "Terminates the loop it is in."},
         "bytes": {
-            "No pescar": ("Tipos de datos",),
+            "categoría": ("Tipos de datos",),
             "definicion": "Convierte a una secuencia inmutable de bytes.",
             "traduccion": "Converts to an immutable sequence of bytes."},
         "bytearray": {
-            "No pescar": ("Tipos de datos",),
+            "categoría": ("Tipos de datos",),
             "definicion": "Crea una secuencia mutable de bytes.",
             "traduccion": "Creates a mutable sequence of bytes."},
         "byteswap": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Invierte el orden de los bytes en una estructura de datos.",
             "traduccion": "Swaps the byte order in a data structure."},
         "buffer": {
-            "No pescar": ("Memoria",),
+            "categoría": ("Memoria",),
             "definicion": "Interfaz para acceder a los datos sin copiarlos.",
             "traduccion": "Interface to access data without copying it."},
         "base64": {
-            "No pescar": ("Codificación y decodificación",),
+            "categoría": ("Codificación y decodificación",),
             "definicion": "Codifica y decodifica datos en el formato base64.",
             "traduccion": "Encodes and decodes data in base64 format."},
         "bitwise_and": {
-            "No pescar": ("Operadores bit a bit",),
+            "categoría": ("Operadores bit a bit",),
             "definicion": "Operador AND bit a bit entre dos números.",
             "traduccion": "Performs a bitwise AND operation between two numbers."},
         "bitwise_or": {
-            "No pescar": ("Operadores bit a bit",),
+            "categoría": ("Operadores bit a bit",),
             "definicion": "Operador OR bit a bit entre dos números.",
             "traduccion": "Performs a bitwise OR operation between two numbers."},
         "bitwise_xor": {
-            "No pescar": ("Operadores bit a bit",),
+            "categoría": ("Operadores bit a bit",),
             "definicion": "Operador XOR bit a bit entre dos números.",
             "traduccion": "Performs a bitwise XOR operation between two numbers."},
         "bitwise_not": {
-            "No pescar": ("Operadores bit a bit",),
+            "categoría": ("Operadores bit a bit",),
             "definicion": "Operador NOT bit a bit que invierte los bits de un número.",
             "traduccion": "Performs a bitwise NOT operation, inverting bits of a number."},
         "binomial": {
-            "No pescar": ("Estadística",),
+            "categoría": ("Estadística",),
             "definicion": "Distribución binomial en estadística.",
             "traduccion": "Binomial distribution in statistics."},
         "binascii": {
-            "No pescar": ("Conversión de datos",),
+            "categoría": ("Conversión de datos",),
             "definicion": "Módulo para conversiones entre datos binarios y representaciones ASCII.",
             "traduccion": "Module for conversions between binary data and ASCII representations."},
         "byteorder": {
-            "No pescar": ("Memoria",),
+            "categoría": ("Memoria",),
             "definicion": "Propiedad que determina el orden de los bytes en un sistema ('big' o 'little').",
             "traduccion": "Property determining byte order in a system ('big' or 'little')."},
         "bit_length": {
-            "No pescar": ("Operaciones numéricas",),
+            "categoría": ("Operaciones numéricas",),
             "definicion": "Devuelve el número de bits necesarios para representar un número en binario.",
             "traduccion": "Returns the number of bits required to represent a number in binary."},
         "breakpoint": {
-            "No pescar": ("Depuración",),
+            "categoría": ("Depuración",),
             "definicion": "Punto de interrupción para depurar el código.",
             "traduccion": "Breakpoint for debugging code."},
         "binhex": {
-            "No pescar": ("Conversión de datos",),
+            "categoría": ("Conversión de datos",),
             "definicion": "Convierte datos binarios en formato hexadecimal.",
             "traduccion": "Converts binary data to hexadecimal format."},
         "bitset": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Conjunto de bits para operaciones bit a bit.",
             "traduccion": "Set of bits for bitwise operations."},
         "broadcast": {
-            "No pescar": ("Manipulación de arrays",),
+            "categoría": ("Manipulación de arrays",),
             "definicion": "Extiende dimensiones para operaciones en arrays.",
             "traduccion": "Extends dimensions for operations on arrays."},
         "bitarray": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Estructura de datos que representa una secuencia de bits.",
             "traduccion": "Data structure representing a sequence of bits."},
         "buffer": {
-            "No pescar": ("Memoria",),
+            "categoría": ("Memoria",),
             "definicion": "Interfaz para manejar objetos de memoria sin copiarlos.",
             "traduccion": "Interface for handling memory objects without copying them."},
         "bitwise_left_shift": {
-            "No pescar": ("Operadores bit a bit",),
+            "categoría": ("Operadores bit a bit",),
             "definicion": "Desplaza los bits de un número a la izquierda, equivalente a multiplicación por potencias de dos.",
             "traduccion": "Shifts the bits of a number to the left, equivalent to multiplication by powers of two."},
         "bitwise_right_shift": {
-            "No pescar": ("Operadores bit a bit",),
+            "categoría": ("Operadores bit a bit",),
             "definicion": "Desplaza los bits de un número a la derecha, equivalente a división por potencias de dos.",
             "traduccion": "Shifts the bits of a number to the right, equivalent to division by powers of two."},
         "bz2": {
-            "No pescar": ("Compresión de datos",),
+            "categoría": ("Compresión de datos",),
             "definicion": "Módulo para compresión y descompresión de archivos en formato bzip2.",
             "traduccion": "Module for compressing and decompressing files in bzip2 format."},
         "bool_": {
-            "No pescar": ("Tipos de datos",),
+            "categoría": ("Tipos de datos",),
             "definicion": "Tipo de dato booleano en bibliotecas como NumPy.",
             "traduccion": "Boolea"}},
     "c": {
         "callable": {
-            "No pescar": ("Funciones",),
+            "categoría": ("Funciones",),
             "definicion": "Devuelve True si el objeto es llamable (función, método, etc.).",
             "traduccion": "Returns True if the object is callable (function, method, etc.)."},
         "chr": {
-            "No pescar": ("Conversión de datos",),
+            "categoría": ("Conversión de datos",),
             "definicion": "Convierte un código ASCII en su carácter correspondiente.",
             "traduccion": "Converts an ASCII code to its corresponding character."},
         "class": {
-            "No pescar": ("Programación orientada a objetos",),
+            "categoría": ("Programación orientada a objetos",),
             "definicion": "Define una nueva clase para crear objetos personalizados.",
             "traduccion": "Defines a new class to create custom objects."},
         "classmethod": {
-            "No pescar": ("Programación orientada a objetos",),
+            "categoría": ("Programación orientada a objetos",),
             "definicion": "Convierte un método en un método de clase, accesible desde la clase sin instanciarla.",
             "traduccion": "Converts a method to a class method, accessible from the class without instantiating it."},
         "compile": {
-            "No pescar": ("Compilación",),
+            "categoría": ("Compilación",),
             "definicion": "Compila una cadena de texto en código ejecutable de Python.",
             "traduccion": "Compiles a text string into executable Python code."},
         "complex": {
-            "No pescar": ("Tipos de datos",),
+            "categoría": ("Tipos de datos",),
             "definicion": "Crea un número complejo a partir de dos valores (real e imaginario).",
             "traduccion": "Creates a complex number from two values (real and imaginary)."},
         "continue": {
-            "No pescar": ("Control de flujo",),
+            "categoría": ("Control de flujo",),
             "definicion": "Salta la iteración actual de un bucle y pasa a la siguiente.",
             "traduccion": "Skips the current iteration of a loop and moves to the next one."},
         "copy": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Crea una copia superficial de una lista, diccionario u otro objeto mutable.",
             "traduccion": "Creates a shallow copy of a list, dictionary, or other mutable object."},
         "coroutine": {
-            "No pescar": ("Programación asincrónica",),
+            "categoría": ("Programación asincrónica",),
             "definicion": "Define una función especial que puede pausarse y reanudarse (asincrónica).",
             "traduccion": "Defines a special function that can be paused and resumed (asynchronous)."},
         "count": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Cuenta la cantidad de ocurrencias de un valor en una lista o cadena.",
             "traduccion": "Counts the occurrences of a value in a list or string."},
         "clear": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Elimina todos los elementos de una lista o diccionario.",
             "traduccion": "Removes all elements from a list or dictionary."},
         "cmath": {
-            "No pescar": ("Matemáticas complejas",),
+            "categoría": ("Matemáticas complejas",),
             "definicion": "Módulo para operaciones matemáticas complejas.",
             "traduccion": "Module for complex mathematical operations."},
         "chain": {
-            "No pescar": ("Manipulación de iterables",),
+            "categoría": ("Manipulación de iterables",),
             "definicion": "Función del módulo itertools que concatena múltiples iterables.",
             "traduccion": "Function from itertools module that concatenates multiple iterables."},
         "csv": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Módulo para manipular archivos CSV (valores separados por comas).",
             "traduccion": "Module for handling CSV (comma-separated values) files."},
         "copyreg": {
-            "No pescar": ("Serialización",),
+            "categoría": ("Serialización",),
             "definicion": "Módulo que registra funciones para serialización de objetos.",
             "traduccion": "Module that registers functions for object serialization."},
         "counter": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Clase de collections para contar elementos en un iterable.",
             "traduccion": "Class from collections to count elements in an iterable."},
         "cProfile": {
-            "No pescar": ("Depuración y optimización",),
+            "categoría": ("Depuración y optimización",),
             "definicion": "Herramienta para realizar un perfil de rendimiento de código Python.",
             "traduccion": "Tool for profiling Python code performance."},
         "capitalize": {
-            "No pescar": ("Manipulación de texto",),
+            "categoría": ("Manipulación de texto",),
             "definicion": "Devuelve una copia de la cadena con la primera letra en mayúscula.",
             "traduccion": "Returns a copy of the string with the first letter capitalized."},
         "center": {
-            "No pescar": ("Manipulación de texto",),
+            "categoría": ("Manipulación de texto",),
             "definicion": "Devuelve una cadena centrada, con ancho especificado y relleno opcional.",
             "traduccion": "Returns a centered string with specified width and optional fill character."},
         "ceil": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Redondea un número al entero más próximo hacia arriba.",
             "traduccion": "Rounds a number up to the nearest integer."},
         "call": {
-            "No pescar": ("Funciones",),
+            "categoría": ("Funciones",),
             "definicion": "Ejecuta una función o método específico en un objeto.",
             "traduccion": "Executes a specific function or method on an object."},
         "clamp": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Restringe un valor dentro de un rango especificado (no en la biblioteca estándar).",
             "traduccion": "Restricts a value within a specified range (not in standard library)."},
         "choice": {
-            "No pescar": ("Generación de datos aleatorios",),
+            "categoría": ("Generación de datos aleatorios",),
             "definicion": "Selecciona un elemento aleatorio de una secuencia.",
             "traduccion": "Selects a random element from a sequence."},
         "collections": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Módulo que proporciona estructuras de datos especializadas.",
             "traduccion": "Module providing specialized data structures."},
         "compress": {
-            "No pescar": ("Manipulación de iterables",),
+            "categoría": ("Manipulación de iterables",),
             "definicion": "Filtra elementos de un iterable según un selector booleano.",
             "traduccion": "Filters elements in an iterable according to a boolean selector."},
         "complex_conjugate": {
-            "No pescar": ("Matemáticas complejas",),
+            "categoría": ("Matemáticas complejas",),
             "definicion": "Devuelve el conjugado de un número complejo.",
             "traduccion": "Returns the conjugate of a complex number."},
         "ctypes": {
-            "No pescar": ("Interoperabilidad",),
+            "categoría": ("Interoperabilidad",),
             "definicion": "Módulo para manipular datos en bibliotecas compartidas en C.",
             "traduccion": "Module for handling data in C shared libraries."},
         "clear_screen": { 
-            "No pescar": ("Interacción con el sistema",),
+            "categoría": ("Interacción con el sistema",),
             "definicion": "Limpia la pantalla en algunos entornos de terminal (no es una función estándar).",
             "traduccion": "Clears the screen in some terminal environments (not a standard function)."},
         "call_later": {
-            "No pescar": ("Programación asincrónica",),
+            "categoría": ("Programación asincrónica",),
             "definicion": "Programa la ejecución de una función después de un tiempo en asyncio.",
             "traduccion": "Schedules the execution of a function after a delay in asyncio."},
         "chunk": {
-            "No pescar": ("Manipulación de iterables",),
+            "categoría": ("Manipulación de iterables",),
             "definicion": "Divide un iterable en partes de tamaño fijo (disponible en itertools y otras bibliotecas).",
             "traduccion": "Splits an iterable into fixed-size chunks (available in itertools and other libraries)."},
         "cycle": {
-            "No pescar": ("Manipulación de iterables",),
+            "categoría": ("Manipulación de iterables",),
             "definicion": "Itertools: Cicla infinitamente a través de un iterable.",
             "traduccion": "Itertools: Cycles infinitely through an iterable."},
         "coerce": {
-            "No pescar": ("Conversión de datos",),
+            "categoría": ("Conversión de datos",),
             "definicion": "Convierte parámetros a un tipo común (obsoleto en Python 3).",
             "traduccion": "Converts parameters to a common type (obsolete in Python 3)."},
         "current_thread": {
-            "No pescar": ("Hilos",),
+            "categoría": ("Hilos",),
             "definicion": "Obtiene el hilo actual de ejecución en threading.",
             "traduccion": "Gets the current thread in threading."},
         "configparser": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Módulo para manipular archivos de configuración estilo INI.",
             "traduccion": "Module for handling INI-style configuration files."},
         "compileall": {
-            "No pescar": ("Compilación",),
+            "categoría": ("Compilación",),
             "definicion": "Compila recursivamente archivos .py en bytecode.",
             "traduccion": "Recursively compiles .py files to bytecode."},
         "copytree": {
-            "No pescar": ("Manipulación de archivos",),
+            "categoría": ("Manipulación de archivos",),
             "definicion": "Copia recursivamente un directorio completo.",
             "traduccion": "Recursively copies an entire directory."}},
     
     "d": {
         "def": {
-            "No pescar": "Función",
+            "categoría": "Función",
             "definicion": "Declara una función o método.",
             "traduccion": "Declares a function or method."},
         "delattr": {
-            "No pescar": "Función",
+            "categoría": "Función",
             "definicion": "Elimina un atributo de un objeto.",
             "traduccion": "Deletes an attribute from an object."},
         "dataframe": {
-            "No pescar": "Estructura de datos",
+            "categoría": "Estructura de datos",
             "definicion": "Estructura de datos de Pandas para manipulación de datos tabulares.",
             "traduccion": "Pandas data structure for manipulating tabular data."},
         "decode": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Convierte bytes en una cadena utilizando una codificación.",
             "traduccion": "Converts bytes into a string using an encoding."},
         "decimal": {
-            "No pescar": "Módulo",
+            "categoría": "Módulo",
             "definicion": "Módulo para operaciones aritméticas con decimales de precisión exacta.",
             "traduccion": "Module for arithmetic operations with exact decimal precision."},
         "device": {
-            "No pescar": "Atributo",
+            "categoría": "Atributo",
             "definicion": "Atributo en PyTorch para definir el dispositivo (CPU o GPU) donde se almacenan los tensores.",
             "traduccion": "Attribute in PyTorch to define the device (CPU or GPU) for tensor storage."},
         "dict.get": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Obtiene el valor de una clave en un diccionario o un valor predeterminado si la clave no existe.",
             "traduccion": "Gets the value of a dictionary key or a default if the key doesn't exist."},
         "dropna": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Elimina filas o columnas con valores nulos en un DataFrame de Pandas.",
             "traduccion": "Removes rows or columns with null values in a Pandas DataFrame."},
         "dtype": {
-            "No pescar": "Atributo",
+            "categoría": "Atributo",
             "definicion": "Especifica el tipo de datos de un array en NumPy.",
             "traduccion": "Specifies the data type of a NumPy array."},
         "deque.appendleft": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Agrega un elemento al inicio de una deque.",
             "traduccion": "Adds an element to the beginning of a deque."},
         "dict.update": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Actualiza un diccionario con pares clave-valor de otro diccionario.",
             "traduccion": "Updates a dictionary with key-value pairs from another dictionary."},
         "del": {
-            "No pescar": "Operador",
+            "categoría": "Operador",
             "definicion": "Elimina una variable, elemento o atributo.",
             "traduccion": "Deletes a variable, element, or attribute."},
         "dict": {
-            "No pescar": "Tipo de dato",
+            "categoría": "Tipo de dato",
             "definicion": "Tipo de dato de diccionario que almacena pares clave-valor.",
             "traduccion": "Dictionary data type that stores key-value pairs."},
         "dir": {
-            "No pescar": "Función",
+            "categoría": "Función",
             "definicion": "Devuelve una lista de atributos y métodos disponibles para un objeto.",
             "traduccion": "Returns a list of attributes and methods available for an object."},
         "divmod": {
-            "No pescar": "Función",
+            "categoría": "Función",
             "definicion": "Devuelve el cociente y el residuo de una división.",
             "traduccion": "Returns the quotient and remainder of a division."},
         "deque": {
-            "No pescar": "Clase",
+            "categoría": "Clase",
             "definicion": "Clase de collections para una cola de doble extremo.",
             "traduccion": "Class from collections for a double-ended queue."},
         "defaultdict": {
-            "No pescar": "Tipo de dato",
+            "categoría": "Tipo de dato",
             "definicion": "Diccionario que asigna un valor predeterminado a claves no existentes.",
             "traduccion": "Dictionary that assigns a default value to nonexistent keys."},
         "decode": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Convierte bytes a una cadena usando una codificación específica.",
             "traduccion": "Converts bytes to a string using a specific encoding."},
         "deflate": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Método de compresión para reducir el tamaño de archivos.",
             "traduccion": "Compression method to reduce file sizes."},
         "deepcopy": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Copia un objeto y todos sus objetos anidados.",
             "traduccion": "Copies an object and all its nested objects."},
         "detach": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Desconecta un buffer de un flujo (usado en IO).",
             "traduccion": "Disconnects a buffer from a stream (used in IO)."},
         "dump": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Serializa un objeto a un archivo en formato binario o JSON.",
             "traduccion": "Serializes an object to a file in binary or JSON format."},
         "dumps": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Serializa un objeto a una cadena en formato JSON.",
             "traduccion": "Serializes an object to a string in JSON format."},
         "difference": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Devuelve la diferencia entre conjuntos.",
             "traduccion": "Returns the difference between sets."},
         "difference_update": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Actualiza un conjunto, eliminando elementos encontrados en otro conjunto.",
             "traduccion": "Updates a set by removing elements found in another set."},
         "decode_header": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Decodifica un encabezado de correo electrónico.",
             "traduccion": "Decodes an email header."},
         "disk_usage": {
-            "No pescar": "Función",
+            "categoría": "Función",
             "definicion": "Devuelve el uso de espacio en disco de un directorio o disco (en shutil).",
             "traduccion": "Returns disk space usage of a directory or disk (in shutil)."},
         "datetime": {
-            "No pescar": "Clase",
+            "categoría": "Clase",
             "definicion": "Clase para manipular fechas y horas.",
             "traduccion": "Class for manipulating dates and times."},
         "difference": {
-            "No pescar": "Método",
+            "categoría": "Método",
             "definicion": "Devuelve la diferencia entre dos o más conjuntos.",
             "traduccion": "Returns the difference between two or more sets."},
         "disk_cache": {
-            "No pescar": "Caché",
+            "categoría": "Caché",
             "definicion": "Caché que almacena temporalmente datos en el disco.",
             "traduccion": "Cache that temporarily stores data on disk."}},
     "e":{
         "enumerate": {
-            "No pescar": ("Manipulación de iterables",),
+            "categoría": ("Manipulación de iterables",),
             "definicion": "Agrega un contador a un iterable y lo devuelve como un objeto enumerado.",
             "traduccion": "Adds a counter to an iterable and returns it as an enumerated object."},
         "eval": {
-            "No pescar": ("Evaluación de expresiones",),
+            "categoría": ("Evaluación de expresiones",),
             "definicion": "Ejecuta una expresión Python desde una cadena dada.",
             "traduccion": "Executes a Python expression from a given string."},
         "exec": {
-            "No pescar": ("Ejecución de código",),
+            "categoría": ("Ejecución de código",),
             "definicion": "Ejecuta un código Python dinámico en el entorno actual.",
             "traduccion": "Executes dynamic Python code in the current environment."},
         "except": {
-            "No pescar": ("Manejo de excepciones",),
+            "categoría": ("Manejo de excepciones",),
             "definicion": "Bloque que captura excepciones en el manejo de errores.",
             "traduccion": "Block that catches exceptions in error handling."},
         "else": {
-            "No pescar": ("Control de flujo",),
+            "categoría": ("Control de flujo",),
             "definicion": "Bloque que se ejecuta cuando no se cumple una condición if.",
             "traduccion": "Block that runs when an if condition is not met."},
         "elif": {
-            "No pescar": ("Control de flujo",),
+            "categoría": ("Control de flujo",),
             "definicion": "Condición alternativa en una declaración if.",
             "traduccion": "Alternative condition in an if statement."},
         "exit": {
-            "No pescar": ("Control de programa",),
+            "categoría": ("Control de programa",),
             "definicion": "Finaliza el programa actual.",
             "traduccion": "Terminates the current program."},
         "end": {
-            "No pescar": ("Impresión",),
+            "categoría": ("Impresión",),
             "definicion": "Argumento en print() que especifica el carácter final en la salida.",
             "traduccion": "Argument in print() specifying the end character in output."},
         "expandtabs": {
-            "No pescar": ("Manipulación de texto",),
+            "categoría": ("Manipulación de texto",),
             "definicion": "Convierte tabulaciones en espacios en una cadena.",
             "traduccion": "Converts tabs to spaces in a string."},
         "encode": {
-            "No pescar": ("Codificación",),
+            "categoría": ("Codificación",),
             "definicion": "Convierte una cadena en bytes usando una codificación específica.",
             "traduccion": "Converts a string to bytes using a specified encoding."},
         "element": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Un item en una colección como listas o conjuntos.",
             "traduccion": "An item in a collection such as lists or sets."},
         "error": {
-            "No pescar": ("Manejo de errores",),
+            "categoría": ("Manejo de errores",),
             "definicion": "Indica que ha ocurrido un problema en el programa.",
             "traduccion": "Indicates that an issue has occurred in the program."},
         "exception": {
-            "No pescar": ("Manejo de excepciones",),
+            "categoría": ("Manejo de excepciones",),
             "definicion": "Un error que ocurre durante la ejecución del programa.",
             "traduccion": "An error that occurs during program execution."},
         "evaluate": {
-            "No pescar": ("Evaluación de expresiones",),
+            "categoría": ("Evaluación de expresiones",),
             "definicion": "Determina el valor de una expresión o variable.",
             "traduccion": "Determines the value of an expression or variable."},
         "elements": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Conjunto de items en una colección.",
             "traduccion": "Set of items in a collection."},
         "exponential": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Función que calcula la potencia de un número.",
             "traduccion": "Function that calculates the power of a number."},
         "enumerations": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Tipo de dato que permite definir conjuntos de constantes.",
             "traduccion": "Data type that allows defining sets of constants."},
         "encode_utf8": {
-            "No pescar": ("Codificación",),
+            "categoría": ("Codificación",),
             "definicion": "Convierte una cadena a bytes usando la codificación UTF-8.",
             "traduccion": "Converts a string to bytes using UTF-8 encoding."},
         "execfile": {
-            "No pescar": ("Ejecución de código",),
+            "categoría": ("Ejecución de código",),
             "definicion": "Ejecuta un archivo Python como si fuera un script.",
             "traduccion": "Executes a Python file as if it were a script."},
         "edit_distance": {
-            "No pescar": ("Manipulación de texto",),
+            "categoría": ("Manipulación de texto",),
             "definicion": "Número mínimo de operaciones necesarias para transformar una cadena en otra.",
             "traduccion": "Minimum number of operations needed to transform one string into another."},
         "eval_input": {
-            "No pescar": ("Evaluación de expresiones",),
+            "categoría": ("Evaluación de expresiones",),
             "definicion": "Evalúa una expresión ingresada por el usuario.",
             "traduccion": "Evaluates an expression entered by the user."},
         "exceed": {
-            "No pescar": ("Comparación",),
+            "categoría": ("Comparación",),
             "definicion": "Sobrepasar un límite o cantidad.",
             "traduccion": "To go beyond a limit or amount."},
         "expected": {
-            "No pescar": ("Comparación",),
+            "categoría": ("Comparación",),
             "definicion": "El resultado que se prevé en una operación.",
             "traduccion": "The outcome that is anticipated in an operation."},
         "encode_base64": {
-            "No pescar": ("Codificación",),
+            "categoría": ("Codificación",),
             "definicion": "Convierte datos en una representación Base64.",
             "traduccion": "Converts data into a Base64 representation."},
         "execute": {
-            "No pescar": ("Ejecución de código",),
+            "categoría": ("Ejecución de código",),
             "definicion": "Llevar a cabo un comando o instrucción.",
             "traduccion": "Carry out a command or instruction."},
         "exit_code": {
-            "No pescar": ("Control de programa",),
+            "categoría": ("Control de programa",),
             "definicion": "Valor devuelto al finalizar un programa.",
             "traduccion": "Value returned when a program finishes."},
         "evaluate_expression": {
-            "No pescar": ("Evaluación de expresiones",),
+            "categoría": ("Evaluación de expresiones",),
             "definicion": "Evalúa una expresión para determinar su valor.",
             "traduccion": "Evaluates an expression to determine its value."},
         "environment": {
-            "No pescar": ("Configuración",),
+            "categoría": ("Configuración",),
             "definicion": "Conjunto de variables que afectan la ejecución de un programa.",
             "traduccion": "Set of variables that affect the execution of a program."},
         "environment_variable": {
-            "No pescar": ("Configuración",),
+            "categoría": ("Configuración",),
             "definicion": "Variable que define el comportamiento de procesos en el sistema.",
             "traduccion": "Variable that defines the behavior of processes in the system."},
         "exp": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Función que devuelve el valor de e elevado a la potencia especificada.",
             "traduccion": "Function that returns the value of e raised to the specified power."},
         "exception_handling": {
-            "No pescar": ("Manejo de excepciones",),
+            "categoría": ("Manejo de excepciones",),
             "definicion": "Mecanismo para manejar errores y excepciones en el código.",
             "traduccion": "Mechanism to handle errors and exceptions in code."},
         "expand": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Desarrolla variables o estructuras de datos.",
             "traduccion": "Expands variables or data structures."},
         "environment_config": {
-            "No pescar": ("Configuración",),
+            "categoría": ("Configuración",),
             "definicion": "Configuraciones que definen el entorno de ejecución.",
             "traduccion": "Configurations that define the runtime environment."},
         "equal": {
-            "No pescar": ("Comparación",),
+            "categoría": ("Comparación",),
             "definicion": "Operador que verifica la igualdad entre dos valores.",
             "traduccion": "Operator that checks equality between two values."},
         "error_handling": {
-            "No pescar": ("Manejo de errores",),
+            "categoría": ("Manejo de errores",),
             "definicion": "Proceso de gestionar errores en el código.",
             "traduccion": "Process of managing errors in code."},
         "event": {
-            "No pescar": ("Eventos",),
+            "categoría": ("Eventos",),
             "definicion": "Acción que ocurre en un programa, como un clic de ratón.",
             "traduccion": "An action that occurs in a program, such as a mouse click."},
         "event_loop": {
-            "No pescar": ("Programación asincrónica",),
+            "categoría": ("Programación asincrónica",),
             "definicion": "Ciclo que espera y despacha eventos o mensajes.",
             "traduccion": "Loop that waits for and dispatches events or messages."},
         "exception_type": {
-            "No pescar": ("Manejo de excepciones",),
+            "categoría": ("Manejo de excepciones",),
             "definicion": "Tipo de error que se puede manejar en Python.",
             "traduccion": "Type of error that can be handled in Python."},
         "error_message": {
-            "No pescar": ("Manejo de errores",),
+            "categoría": ("Manejo de errores",),
             "definicion": "Mensaje que describe el error ocurrido.",
             "traduccion": "Message describing the error that occurred."},
         "extract": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Obtiene un valor específico de una colección.",
             "traduccion": "Retrieves a specific value from a collection."},
         "exit_status": {
-            "No pescar": ("Control de programa",),
+            "categoría": ("Control de programa",),
             "definicion": "Estado de salida que indica si un programa finalizó con éxito.",
             "traduccion": "Exit status indicating whether a program finished successfully."}},
     
     "f": {
         "filemode": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Modo en el que se abre un archivo, como lectura o escritura.",
             "traduccion": "Mode in which a file is opened, such as read or write."},
         "frozen_set": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Colección inmutable de elementos únicos.",
             "traduccion": "Immutable collection of unique elements."},
         "format_map": {
-            "No pescar": ("Manipulación de texto",),
+            "categoría": ("Manipulación de texto",),
             "definicion": "Devuelve una cadena formateada usando un diccionario.",
             "traduccion": "Returns a formatted string using a dictionary."},
         "find": {
-            "No pescar": ("Manipulación de texto",),
+            "categoría": ("Manipulación de texto",),
             "definicion": "Busca una subcadena dentro de una cadena y devuelve su índice.",
             "traduccion": "Searches for a substring within a string and returns its index."},
         "float32": {
-            "No pescar": ("Tipos de datos",),
+            "categoría": ("Tipos de datos",),
             "definicion": "Tipo de dato que representa un número en punto flotante de 32 bits.",
             "traduccion": "Data type representing a 32-bit floating-point number."},
         "float64": {
-            "No pescar": ("Tipos de datos",),
+            "categoría": ("Tipos de datos",),
             "definicion": "Tipo de dato que representa un número en punto flotante de 64 bits.",
             "traduccion": "Data type representing a 64-bit floating-point number."},
         "formatting": {
-            "No pescar": ("Manipulación de texto",),
+            "categoría": ("Manipulación de texto",),
             "definicion": "Proceso de dar formato a la salida de texto.",
             "traduccion": "Process of formatting the output of text."},
         "flush_output": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Forza la escritura de datos en la salida estándar.",
             "traduccion": "Forces the writing of data to standard output."},
         "function_definition": {
-            "No pescar": ("Funciones",),
+            "categoría": ("Funciones",),
             "definicion": "La forma en que se define una función en Python.",
             "traduccion": "The way a function is defined in Python."},
         "filepath": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Ruta que especifica la ubicación de un archivo en el sistema de archivos.",
             "traduccion": "Path that specifies the location of a file in the file system."},
         "flask": {
-            "No pescar": ("Frameworks",),
+            "categoría": ("Frameworks",),
             "definicion": "Microframework para desarrollar aplicaciones web en Python.",
             "traduccion": "Microframework for developing web applications in Python."},
         "filtering": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Proceso de eliminar elementos no deseados de una colección.",
             "traduccion": "Process of removing unwanted elements from a collection."},
         "futures": {
-            "No pescar": ("Programación asincrónica",),
+            "categoría": ("Programación asincrónica",),
             "definicion": "Una forma de trabajar con programación asíncrona en Python.",
             "traduccion": "A way to work with asynchronous programming in Python."},
         "fold": {
-            "No pescar": ("Funciones",),
+            "categoría": ("Funciones",),
             "definicion": "Función que aplica una operación acumulativa sobre un iterable.",
             "traduccion": "Function that applies an accumulating operation over an iterable."},
         "fromkeys": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Método de diccionario que crea un nuevo diccionario con claves y un valor por defecto.",
             "traduccion": "Dictionary method that creates a new dictionary with keys and a default value."},
         "flask_restful": {
-            "No pescar": ("Frameworks",),
+            "categoría": ("Frameworks",),
             "definicion": "Extensión de Flask para construir APIs RESTful de manera sencilla.",
             "traduccion": "Flask extension for building RESTful APIs easily."},
         "fix": {
-            "No pescar": ("Depuración",),
+            "categoría": ("Depuración",),
             "definicion": "Corregir o ajustar errores en el código.",
             "traduccion": "To correct or adjust bugs in code."},
         "float_conversion": {
-            "No pescar": ("Conversión de datos",),
+            "categoría": ("Conversión de datos",),
             "definicion": "Proceso de convertir un número a su representación en punto flotante.",
             "traduccion": "Process of converting a number to its floating-point representation."},
         "full_path": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Ruta completa a un archivo, incluyendo el nombre del archivo y su directorio.",
             "traduccion": "Complete path to a file, including the filename and its directory."},
         "filter": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Crea una lista de elementos para los cuales una función devuelve True.",
             "traduccion": "Creates a list of elements for which a function returns True."},
         "float": {
-            "No pescar": ("Tipos de datos",),
+            "categoría": ("Tipos de datos",),
             "definicion": "Tipo de dato que representa un número en punto flotante.",
             "traduccion": "Data type that represents a floating-point number."},
         "for": {
-            "No pescar": ("Control de flujo",),
+            "categoría": ("Control de flujo",),
             "definicion": "Crea un bucle que itera sobre un iterable.",
             "traduccion": "Creates a loop that iterates over an iterable."},
         "format": {
-            "No pescar": ("Manipulación de texto",),
+            "categoría": ("Manipulación de texto",),
             "definicion": "Devuelve una cadena formateada.",
             "traduccion": "Returns a formatted string."},
         "from": {
-            "No pescar": ("Importación de módulos",),
+            "categoría": ("Importación de módulos",),
             "definicion": "Utilizado para importar módulos o partes de un módulo.",
             "traduccion": "Used to import modules or parts of a module."},
         "function": {
-            "No pescar": ("Funciones",),
+            "categoría": ("Funciones",),
             "definicion": "Bloque de código reutilizable que realiza una tarea específica.",
             "traduccion": "Reusable block of code that performs a specific task."},
         "fibonacci": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Secuencia de números donde cada número es la suma de los dos anteriores.",
             "traduccion": "Sequence of numbers where each number is the sum of the two preceding ones."},
         "file": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Objeto que representa un archivo en el sistema de archivos.",
             "traduccion": "Object that represents a file in the file system."},
         "fwrite": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Escribe datos en un archivo abierto.",
             "traduccion": "Writes data to an open file."},
         "fread": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Lee datos de un archivo abierto.",
             "traduccion": "Reads data from an open file."},
         "finally": {
-            "No pescar": ("Manejo de excepciones",),
+            "categoría": ("Manejo de excepciones",),
             "definicion": "Bloque que se ejecuta después de un try/except, sin importar si se produjo un error.",
             "traduccion": "Block that executes after a try/except, regardless of whether an error occurred."},
         "freeze": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Convierte un objeto en un formato inmutable.",
             "traduccion": "Converts an object into an immutable format."},
         "flush": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Vacía el búfer de un archivo para asegurar que todos los datos se escriban.",
             "traduccion": "Flushes the file buffer to ensure all data is written."},
         "fstring": {
-            "No pescar": ("Manipulación de texto",),
+            "categoría": ("Manipulación de texto",),
             "definicion": "Cadena formateada literal, que permite incrustar expresiones.",
             "traduccion": "Formatted string literal, allowing embedded expressions."},
         "factorial": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Producto de todos los números enteros positivos hasta un número dado.",
             "traduccion": "Product of all positive integers up to a given number."},
         "frozen": {
-            "No pescar": ("Estructura de datos",),
+            "categoría": ("Estructura de datos",),
             "definicion": "Un tipo de conjunto inmutable.",
             "traduccion": "An immutable set type."},
         "filterfalse": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Devuelve un iterador que filtra elementos de una secuencia para los cuales la función es False.",
             "traduccion": "Returns an iterator filtering elements from a sequence for which the function is False."},
         "fuzzy": {
-            "No pescar": ("Manejo de datos",),
+            "categoría": ("Manejo de datos",),
             "definicion": "Método que permite trabajar con datos inexactos o imprecisos.",
             "traduccion": "Method that allows working with inaccurate or imprecise data."},
         "fibonacci_sequence": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Genera la secuencia de Fibonacci hasta un número específico.",
             "traduccion": "Generates the Fibonacci sequence up to a specific number."},
         "format_spec": {
-            "No pescar": ("Manipulación de texto",),
+            "categoría": ("Manipulación de texto",),
             "definicion": "Especificación que define cómo se debe formatear un valor.",
             "traduccion": "Specification that defines how a value should be formatted."},
         "fork": {
-            "No pescar": ("Procesos del sistema",),
+            "categoría": ("Procesos del sistema",),
             "definicion": "Crea un nuevo proceso en sistemas operativos basados en Unix.",
             "traduccion": "Creates a new process in Unix-based operating systems."},
         "forking": {
-            "No pescar": ("Procesos del sistema",),
+            "categoría": ("Procesos del sistema",),
             "definicion": "Proceso de dividir un programa en varios procesos para ejecutar tareas en paralelo.",
             "traduccion": "Process of dividing a program into multiple processes to run tasks in parallel."},
         "first": {
-            "No pescar": ("Manipulación de iterables",),
+            "categoría": ("Manipulación de iterables",),
             "definicion": "Método para obtener el primer elemento de una secuencia.",
             "traduccion": "Method to get the first element of a sequence."},
         "float_format": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Especificación de formato para representar números en punto flotante.",
             "traduccion": "Format specification for representing floating-point numbers."},
         "filter_none": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Devuelve un iterador que filtra elementos que no son None.",
             "traduccion": "Returns an iterator filtering elements that are not None."},
         "func_code": {
-            "No pescar": ("Funciones",),
+            "categoría": ("Funciones",),
             "definicion": "Código byte que representa el cuerpo de una función.",
             "traduccion": "Bytecode representing the body of a function."},
         "float_power": {
-            "No pescar": ("Matemáticas",),
+            "categoría": ("Matemáticas",),
             "definicion": "Función que eleva un número a la potencia de otro número en punto flotante.",
             "traduccion": "Function that raises a number to the power of another floating-point number."},
         "format_string": {
-            "No pescar": ("Manipulación de texto",),
+            "categoría": ("Manipulación de texto",),
             "definicion": "Cadena que especifica cómo se deben formatear los valores en Python.",
             "traduccion": "String that specifies how values should be formatted in Python."},
         "filename": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Nombre de un archivo, que puede incluir su extensión.",
             "traduccion": "Name of a file, which may include its extension."},
         "file_object": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Objeto que permite interactuar con un archivo abierto en Python.",
             "traduccion": "Object that allows interaction with an open file in Python."},
         "finally_clause": {
-            "No pescar": ("Manejo de excepciones",),
+            "categoría": ("Manejo de excepciones",),
             "definicion": "Parte de una estructura try/except que se ejecuta siempre, independientemente de los errores.",
             "traduccion": "Part of a try/except structure that always executes, regardless of errors."},
         "file_read": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Operación que lee el contenido de un archivo.",
             "traduccion": "Operation that reads the content of a file."},
         "form": {
-            "No pescar": ("Web",),
+            "categoría": ("Web",),
             "definicion": "Representación de datos en un formato estructurado, a menudo utilizado en aplicaciones web.",
             "traduccion": "Representation of data in a structured format, often used in web applications."},
         "function_call": {
-            "No pescar": ("Funciones",),
+            "categoría": ("Funciones",),
             "definicion": "Invocación de una función para ejecutar su código.",
             "traduccion": "Invocation of a function to execute its code."},
         "force": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Método para forzar la ejecución de un proceso o función.",
             "traduccion": "Method to force the execution of a process or function."},
         "function_pointer": {
-            "No pescar": ("Funciones",),
+            "categoría": ("Funciones",),
             "definicion": "Referencia a una función que puede ser pasada como argumento.",
             "traduccion": "Reference to a function that can be passed as an argument."},
         "float_precision": {
-            "No pescar": ("Tipos de datos",),
+            "categoría": ("Tipos de datos",),
             "definicion": "Precisión de un número en punto flotante, que afecta la exactitud de los cálculos.",
             "traduccion": "Precision of a floating-point number, affecting the accuracy of calculations."},
         "format_error": {
-            "No pescar": ("Manejo de errores",),
+            "categoría": ("Manejo de errores",),
             "definicion": "Error que ocurre al formatear datos de manera incorrecta.",
             "traduccion": "Error that occurs when formatting data incorrectly."},
         "file_write": {
-            "No pescar": ("Manejo de archivos",),
+            "categoría": ("Manejo de archivos",),
             "definicion": "Operación que escribe datos en un archivo.",
             "traduccion": "Operation that writes data to a file."},
         "fibonacci_search": {
-            "No pescar": ("Algoritmos de búsqueda",),
+            "categoría": ("Algoritmos de búsqueda",),
             "definicion": "Algoritmo de búsqueda que utiliza la secuencia de Fibonacci para encontrar elementos.",
             "traduccion": "Search algorithm that uses the Fibonacci sequence to find elements."},
         "filter_map": {
-            "No pescar": ("Manipulación de datos",),
+            "categoría": ("Manipulación de datos",),
             "definicion": "Combinación de la funcionalidad de filter y map en una operación.",
             "traduccion": "Combination of the functionality of filter and map in a single operation."}},
     
@@ -1851,43 +1851,43 @@ diccionario = {
     
     "z": {
         "zscore": {
-                "No pescar": ("Estadística",),
+                "categoría": ("Estadística",),
                 "definicion": "Función que calcula el valor z, que indica cuántas desviaciones estándar está un valor de la media.",
                 "traduccion": "Function that calculates the z-score, which indicates how many standard deviations a value is from the mean."},
         "zoneinfo": {
-                "No pescar": ("Manejo de tiempo",),
+                "categoría": ("Manejo de tiempo",),
                 "definicion": "Módulo que proporciona soporte para zonas horarias en Python.",
                 "traduccion": "Module that provides support for time zones in Python."},
         "zipfile": {
-                "No pescar": ("Manejo de archivos",),
+                "categoría": ("Manejo de archivos",),
                 "definicion": "Módulo para crear, leer y modificar archivos ZIP.",
                 "traduccion": "Module for creating, reading, and modifying ZIP files."},
         "zeta": {
-                "No pescar": ("Matemáticas",),
+                "categoría": ("Matemáticas",),
                 "definicion": "Función matemática que involucra una serie infinita, generalmente utilizada en teoría de números.",
                 "traduccion": "Mathematical function involving an infinite series, often used in number theory."},
         "zorder": {
-                "No pescar": ("Gráficos",),
+                "categoría": ("Gráficos",),
                 "definicion": "Propiedad que determina el orden de apilamiento de los objetos gráficos en un gráfico.",
                 "traduccion": "Property that determines the stacking order of graphical objects in a plot."},
         "zfill": {
-                "No pescar": ("Manipulación de texto",),
+                "categoría": ("Manipulación de texto",),
                 "definicion": "Método que completa una cadena con ceros hasta una longitud especificada.",
                 "traduccion": "Method that pads a string with zeros to a specified length."},
         "zipapp": {
-                "No pescar": ("Herramientas",),
+                "categoría": ("Herramientas",),
                 "definicion": "Herramienta que permite empaquetar aplicaciones Python en archivos zip ejecutables.",
                 "traduccion": "Tool that allows packing Python applications into executable zip files."},
         "zlib.decompress": {
-                "No pescar": ("Compresión de datos",),
+                "categoría": ("Compresión de datos",),
                 "definicion": "Función del módulo zlib que descomprime los datos previamente comprimidos.",
                 "traduccion": "Function from the zlib module that decompresses data previously compressed."},
         "zlib.compress": {
-                "No pescar": ("Compresión de datos",),
+                "categoría": ("Compresión de datos",),
                 "definicion": "Función del módulo zlib que comprime datos en un formato específico.",
                 "traduccion": "Function from the zlib module that compresses data into a specific format."},
         "zen_of_python": {
-                "No pescar": ("Buenas prácticas",),
+                "categoría": ("Buenas prácticas",),
                 "definicion": "Conjunto de principios que guían el diseño y desarrollo de código Python claro y eficiente.",
                 "traduccion": "Set of principles that guide the design and development of clear and efficient Python code."}}
 
