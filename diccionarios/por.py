@@ -2292,6 +2292,813 @@ diccionario_por = {
             "uso": "",
             "ejemplo": ''''''
         },
+        "get": {
+            "significado": "Método que obtiene el valor de una clave en un diccionario. Si la clave no existe, devuelve un valor por defecto.",
+            "uso": "Se utiliza para obtener el valor asociado a una clave en un diccionario de manera segura.",
+            "exemplo": """
+                diccionario = {'a': 1, 'b': 2}
+                print(diccionario.get('a'))  # Saída: 1
+                print(diccionario.get('c', 'No encontrado'))  # Saída: No encontrado
+                """
+        },
+        "global": {
+            "significado": "Palabra clave que se utiliza para declarar que una variable es global, es decir, que pertenece al ámbito global.",
+            "uso": "Se utiliza para modificar variables globales dentro de una función.",
+            "exemplo": """
+                x = 10
+                def cambiar_global():
+                    global x
+                    x = 20
+                cambiar_global()
+                print(x)  # Saída: 20
+                """
+        },
+        "generator": {
+            "significado": "Función que devuelve un iterador, permitiendo generar elementos de uno en uno durante la ejecución.",
+            "uso": "Se utiliza para crear secuencias de elementos de manera perezosa (lazy evaluation), sin tener que almacenarlos todos en memoria.",
+            "exemplo": """
+                def contar_hasta_tres():
+                    yield 1
+                    yield 2
+                    yield 3
+                for num in contar_hasta_tres():
+                    print(num)  # Saída: 1, 2, 3
+                """
+        },
+        "globals": {
+            "significado": "Función que devuelve un diccionario de todas las variables globales.",
+            "uso": "Se utiliza para acceder y modificar el diccionario de variables globales.",
+            "exemplo": """
+                x = 10
+                print(globals())  # Saída: {'x': 10, ...}
+                """
+        },
+        "getattr": {
+            "significado": "Función que obtiene el valor de un atributo de un objeto.",
+            "uso": "Se utiliza para acceder a un atributo de un objeto, incluso si no se conoce su nombre de antemano.",
+            "exemplo": """
+                class Persona:
+                    def __init__(self, nombre):
+                        self.nombre = nombre
+                p = Persona('Juan')
+                print(getattr(p, 'nombre'))  # Saída: Juan
+                """
+        },
+        "groupby": {
+            "significado": "Función de `itertools` que agrupa los elementos de un iterable según una clave.",
+            "uso": "Se utiliza para agrupar datos en función de un criterio, como en el caso de una lista de elementos.",
+            "exemplo": """
+                from itertools import groupby
+                datos = [1, 2, 2, 3, 3, 3]
+                grupos = groupby(datos, key=lambda x: x)
+                for clave, grupo in grupos:
+                    print(clave, list(grupo))  # Saída: 1 [1], 2 [2, 2], 3 [3, 3, 3]
+                """
+        },
+        "gc": {
+            "significado": "Módulo de recolección de basura que permite interactuar con el recolector de basura de Python.",
+            "uso": "Se utiliza para gestionar la memoria y liberar objetos no referenciados.",
+            "exemplo": """
+                import gc
+                gc.collect()  # Forzar la recolección de basura
+                """
+        },
+        "git": {
+            "significado": "Sistema de control de versiones distribuido para gestionar el código fuente.",
+            "uso": "Se utiliza para manejar versiones de código, facilitando el trabajo en equipo y el control de cambios.",
+            "exemplo": """
+                # Usando Git en la terminal
+                git clone https://github.com/usuario/repositorio.git
+                """
+        },
+        "generator_expression": {
+            "significado": "Expresión que permite generar un generador de manera compacta, similar a una lista por comprensión.",
+            "uso": "Se utiliza para crear generadores de manera eficiente y sin necesidad de almacenar todos los elementos.",
+            "exemplo": """
+                numeros = (x * 2 for x in range(5))
+                for num in numeros:
+                    print(num)  # Saída: 0, 2, 4, 6, 8
+                """
+        },
+        "gzip": {
+            "significado": "Módulo que permite comprimir y descomprimir archivos en formato gzip.",
+            "uso": "Se utiliza para trabajar con archivos comprimidos en el formato gzip, reduciendo su tamaño para almacenamiento o transmisión.",
+            "exemplo": """
+                import gzip
+                with gzip.open('archivo.txt.gz', 'rb') as f:
+                    contenido = f.read()
+                    print(contenido)
+                """
+        },
+        "graph": {
+            "significado": "Estructura de datos que representa relaciones entre objetos a través de nodos y aristas.",
+            "uso": "Se utiliza para representar relaciones complejas entre objetos, como en redes sociales o rutas de transporte.",
+            "exemplo": """
+                # Ejemplo básico de grafo
+                grafo = {'A': ['B', 'C'], 'B': ['A', 'D'], 'C': ['A'], 'D': ['B']}
+                print(grafo)
+                """
+        },
+        "grid": {
+            "significado": "Estructura de datos o disposición de elementos en filas y columnas.",
+            "uso": "Se utiliza para representar una cuadrícula, como en un tablero de ajedrez o una interfaz de usuario.",
+            "exemplo": """
+                grid = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
+                for fila in grid:
+                    print(fila)  # Saída: [1, 2, 3], [4, 5, 6], [7, 8, 9]
+                """
+        },
+        "getopt": {
+            "significado": "Módulo que proporciona una forma de analizar los argumentos de la línea de comandos.",
+            "uso": "Se utiliza para gestionar opciones y parámetros pasados a un programa desde la línea de comandos.",
+            "exemplo": """
+                import getopt
+                opciones, argumentos = getopt.getopt(['-f', 'archivo.txt'], 'f:')
+                print(opciones)  # Saída: [('f', 'archivo.txt')]
+                """
+        },
+        "gcd": {
+            "significado": "Función que calcula el máximo común divisor de dos números.",
+            "uso": "Se utiliza para encontrar el mayor número que divide a dos números sin dejar residuo.",
+            "exemplo": """
+                import math
+                print(math.gcd(24, 36))  # Saída: 12
+                """
+        },
+        "getpass": {
+            "significado": "Función que lee una contraseña de manera oculta (sin mostrar caracteres al escribir).",
+            "uso": "Se utiliza para leer contraseñas o entradas sensibles de forma segura en la terminal.",
+            "exemplo": """
+                import getpass
+                password = getpass.getpass('Introduce tu contraseña: ')
+                print(password)  # La contraseña no se muestra mientras se escribe
+                """
+        },
+        "gradients": {
+            "significado": "Cambio en el valor de una variable con respecto a otra, comúnmente utilizado en cálculo y machine learning.",
+            "uso": "Se utiliza para calcular la dirección y la tasa de cambio de una función en relación con sus variables.",
+            "exemplo": """
+                # Ejemplo de gradiente en optimización
+                def funcion(x):
+                    return x**2
+                gradiente = 2 * 3  # Gradiente de x^2 en x = 3
+                print(gradiente)  # Saída: 6
+                """
+        },
+        "graphlib": {
+            "significado": "Módulo en Python que proporciona estructuras de datos para trabajar con grafos.",
+            "uso": "Se utiliza para representar y manipular grafos de manera eficiente.",
+            "exemplo": """
+                import graphlib
+                grafo = graphlib.TopologicalSorter({'A': ['B'], 'B': ['C'], 'C': []})
+                print(list(grafo.static_order()))  # Saída: ['A', 'B', 'C']
+                """
+        },
+        "get_event_loop": {
+            "significado": "Función de la biblioteca `asyncio` que obtiene el bucle de eventos de la aplicación.",
+            "uso": "Se utiliza para obtener el bucle de eventos principal en un programa asíncrono.",
+            "exemplo": """
+                import asyncio
+                loop = asyncio.get_event_loop()
+                print(loop)  # Saída: <_UnixSelectorEventLoop running=True closed=False pid=12345>
+                """
+        },
+        "get_terminal_size": {
+            "significado": "Función que obtiene el tamaño de la terminal en filas y columnas.",
+            "uso": "Se utiliza para obtener la resolución de la terminal y ajustar el diseño de la salida.",
+            "exemplo": """
+                import shutil
+                tamaño = shutil.get_terminal_size()
+                print(tamaño)  # Saída: os.terminal_size(columns=80, lines=24)
+                """
+        },
+        "getsizeof": {
+            "significado": "Función del módulo `sys` que devuelve el tamaño de un objeto en bytes.",
+            "uso": "Se utiliza para medir la memoria que ocupa un objeto en Python.",
+            "exemplo": """
+                import sys
+                objeto = [1, 2, 3]
+                print(sys.getsizeof(objeto))  # Saída: 72 (dependiendo del sistema)
+                """
+        },
+        "google": {
+            "significado": "Motor de búsqueda de internet, también utilizado como nombre de la empresa.",
+            "uso": "Se utiliza para buscar información en la web a través de un navegador o API.",
+            "exemplo": """
+                # Buscando algo en Google
+                # Se puede hacer a través de la interfaz web en www.google.com
+                """
+        },
+        "getdefaultencoding": {
+            "significado": "Método que devuelve el nombre de la codificación predeterminada utilizada por el sistema.",
+            "uso": "Se utiliza para conocer la codificación de texto predeterminada en Python.",
+            "exemplo": """
+                import sys
+                print(sys.getdefaultencoding())  # Saída: 'utf-8' (dependiendo del sistema)
+                """
+        },
+        "geometry": {
+            "significado": "Área de las matemáticas que se ocupa de las propiedades y relaciones de puntos, líneas, superficies y sólidos.",
+            "uso": "Se utiliza en campos como la computación gráfica, ingeniería y arquitectura para describir formas y estructuras.",
+            "exemplo": """
+                # Ejemplo de geometría en programación
+                import math
+                area_circulo = math.pi * (5**2)  # Área de un círculo con radio 5
+                print(area_circulo)  # Saída: 78.53981633974483
+                """
+        },
+        "greenlet": {
+            "significado": "Módulo que proporciona primitivas para el control de flujo cooperativo de hilos (lightweight threads).",
+            "uso": "Se utiliza para ejecutar funciones concurrentemente sin la sobrecarga de los hilos tradicionales.",
+            "exemplo": """
+                from greenlet import greenlet
+                def funcion1():
+                    print('En la función 1')
+                    g2.switch()
+                def funcion2():
+                    print('En la función 2')
+                    g1.switch()
+                g1 = greenlet(funcion1)
+                g2 = greenlet(funcion2)
+                g1.switch()  # Saída: En la función 1, En la función 2
+                """
+        },
+        "gitignore": {
+            "significado": "Archivo de configuración utilizado por Git para especificar qué archivos o directorios deben ser ignorados en el control de versiones.",
+            "uso": "Se utiliza para evitar que ciertos archivos se incluyan en el repositorio Git, como archivos temporales o de configuración local.",
+            "exemplo": """
+                # Ejemplo de .gitignore
+                *.log
+                __pycache__/
+                """
+        },
+        "grammar": {
+            "significado": "Conjunto de reglas que describen la estructura de un lenguaje.",
+            "uso": "Se utiliza para definir cómo se deben formar las oraciones o expresiones válidas en un lenguaje.",
+            "exemplo": """
+                # Ejemplo de gramática en programación
+                def sumar(a, b):
+                    return a + b
+                # La sintaxis es la gramática de la función sumar
+                """
+        },
+        "gettext": {
+            "significado": "Función que traduce un texto a un idioma específico, a menudo utilizada en aplicaciones multilingües.",
+            "uso": "Se utiliza para obtener una cadena de texto traducida según el idioma actual del sistema.",
+            "exemplo": """
+                import gettext
+                traduccion = gettext.translation('mi_app', localedir='locales', languages=['es'])
+                print(traduccion.gettext('Hello'))  # Saída: Hola
+                """
+        },
+        "generate_tokens": {
+            "significado": "Función que genera una secuencia de tokens a partir de un objeto de texto, utilizado para analizar y procesar código fuente.",
+            "uso": "Se utiliza en la creación de analizadores léxicos para dividir un texto en unidades significativas.",
+            "exemplo": """
+                import token
+                import tokenize
+                codigo = 'print("Hola Mundo")'
+                tokens = tokenize.generate_tokens(iter(codigo).__next__)
+                for t in tokens:
+                    print(t)
+                """
+        },
+        "gevent": {
+            "significado": "Biblioteca de Python para trabajar con concurrencia basada en hilos ligeros, utilizando corutinas.",
+            "uso": "Se utiliza para manejar tareas concurrentes de manera eficiente sin la necesidad de múltiples hilos.",
+            "exemplo": """
+                import gevent
+                def tarea():
+                    print('Tarea completada')
+                gevent.spawn(tarea).join()
+                """
+        },
+        "gui": {
+            "significado": "Interfaz gráfica de usuario, un sistema de interacción visual con los programas informáticos.",
+            "uso": "Se utiliza para crear aplicaciones con interfaces visuales, facilitando la interacción del usuario.",
+            "exemplo": """
+                import tkinter as tk
+                ventana = tk.Tk()
+                ventana.title('Mi GUI')
+                ventana.mainloop()
+                """
+        },
+        "generator_function": {
+            "significado": "Función que utiliza `yield` para devolver un generador.",
+            "uso": "Se utiliza para crear funciones que devuelven un generador y permiten la iteración perezosa.",
+            "exemplo": """
+                def contar():
+                    yield 1
+                    yield 2
+                    yield 3
+                for numero in contar():
+                    print(numero)  # Saída: 1, 2, 3
+                """
+        },
+        "get_data": {
+            "significado": "Método o función que obtiene datos de una fuente externa o interna.",
+            "uso": "Se utiliza para recuperar datos desde bases de datos, APIs u otras fuentes.",
+            "exemplo": """
+                def obtener_datos():
+                    return {'nombre': 'Juan', 'edad': 25}
+                print(obtener_datos())  # Saída: {'nombre': 'Juan', 'edad': 25}
+                """
+        },
+        "git_branch": {
+            "significado": "Comando de Git que permite trabajar con ramas dentro de un repositorio.",
+            "uso": "Se utiliza para crear, listar y cambiar entre diferentes ramas de un proyecto en Git.",
+            "exemplo": """
+                git branch  # Muestra las ramas existentes
+                git checkout -b nueva_rama  # Crea y cambia a la nueva rama
+                """
+        },
+        "governance": {
+            "significado": "El proceso de toma de decisiones y gestión en una organización o sistema.",
+            "uso": "Se utiliza para referirse a cómo se administra y regula un sistema o entidad.",
+            "exemplo": """
+                La gobernanza corporativa se refiere a las prácticas y estructuras organizacionales para la toma de decisiones.
+                """
+        },
+        "gtts": {
+            "significado": "Biblioteca de Python para convertir texto en voz usando el servicio Google Text-to-Speech.",
+            "uso": "Se utiliza para generar archivos de audio a partir de texto en varios idiomas.",
+            "exemplo": """
+                from gtts import gTTS
+                tts = gTTS('Hola, ¿cómo estás?', lang='es')
+                tts.save('hola.mp3')
+                """
+        },
+        "get_identity": {
+            "significado": "Método o función que obtiene la identidad de un objeto o usuario.",
+            "uso": "Se utiliza para obtener información sobre la identidad de un objeto o entidad, como un identificador único.",
+            "exemplo": """
+                def get_identity(usuario):
+                    return usuario['id']
+                usuario = {'id': 123, 'nombre': 'Juan'}
+                print(get_identity(usuario))  # Saída: 123
+                """
+        },
+        "get_status": {
+            "significado": "Método o función que obtiene el estado de una operación, proceso o entidad.",
+            "uso": "Se utiliza para verificar o recuperar el estado actual de un sistema o proceso.",
+            "exemplo": """
+                def get_status(operacion):
+                    return operacion['estado']
+                operacion = {'estado': 'completada'}
+                print(get_status(operacion))  # Saída: completada
+                """
+        },
+        "generator_instance": {
+            "significado": "Instancia de un generador, que es un objeto que permite iterar sobre una secuencia de elementos.",
+            "uso": "Se utiliza para manejar iteraciones de manera eficiente utilizando la palabra clave `yield`.",
+            "exemplo": """
+                def contador():
+                    yield 1
+                    yield 2
+                    yield 3
+                generador = contador()
+                for numero in generador:
+                    print(numero)  # Saída: 1, 2, 3
+                """
+        },
+        "guess_encoding": {
+            "significado": "Método que adivina la codificación de un archivo de texto, basado en su contenido.",
+            "uso": "Se utiliza para detectar la codificación de archivos de texto que no tienen especificada una.",
+            "exemplo": """
+                import chardet
+                with open('archivo.txt', 'rb') as f:
+                    resultado = chardet.detect(f.read())
+                print(resultado['encoding'])  # Saída: utf-8
+                """
+        },
+        "git_commit": {
+            "significado": "Comando de Git utilizado para registrar los cambios en el repositorio.",
+            "uso": "Se utiliza para guardar un conjunto de cambios realizados en los archivos de un proyecto en el repositorio.",
+            "exemplo": """
+                git commit -m "Mensaje del commit"
+                """
+        },
+        "gradient_descent": {
+            "significado": "Método de optimización utilizado para minimizar funciones iterativamente, ajustando los parámetros en la dirección del gradiente negativo.",
+            "uso": "Se utiliza principalmente en machine learning para encontrar los valores óptimos de los parámetros del modelo.",
+            "exemplo": """
+                # Ejemplo simplificado de gradiente descendente
+                def gradiente_descendente(funcion, derivada, x_inicial, tasa_aprendizaje, iteraciones):
+                    x = x_inicial
+                    for _ in range(iteraciones):
+                        x -= tasa_aprendizaje * derivada(x)
+                    return x
+                """
+        },
+        "get_referrers": {
+            "significado": "Función que obtiene una lista de objetos que hacen referencia a un objeto dado.",
+            "uso": "Se utiliza para rastrear las referencias hacia un objeto, útil para análisis de memoria.",
+            "exemplo": """
+                import sys
+                referencia = sys.get_referrers(objeto)
+                print(referencia)
+                """
+        },
+        "get_window_extent": {
+            "significado": "Método que obtiene las dimensiones de una ventana gráfica o área en la pantalla.",
+            "uso": "Se utiliza para determinar el tamaño y las coordenadas de la ventana de una aplicación o gráfico.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+                fig, ax = plt.subplots()
+                extent = ax.get_window_extent()
+                print(extent)
+                """
+        },
+        "group": {
+            "significado": "Método que agrupa elementos en una colección o estructura basada en algún criterio.",
+            "uso": "Se utiliza para organizar datos en grupos o categorías.",
+            "exemplo": """
+                from itertools import groupby
+                lista = [1, 1, 2, 2, 3]
+                grupo = groupby(lista)
+                for clave, valor in grupo:
+                    print(clave, list(valor))  # Saída: 1 [1, 1], 2 [2, 2], 3 [3]
+                """
+        },
+        "get_history": {
+            "significado": "Método que obtiene el historial de operaciones o acciones previas.",
+            "uso": "Se utiliza para recuperar las acciones anteriores realizadas en un sistema o aplicación.",
+            "exemplo": """
+                # Ejemplo de recuperación del historial en un sistema
+                historial = get_history()
+                print(historial)
+                """
+        },
+        "gradient": {
+            "significado": "El vector que indica la dirección y la tasa de cambio de una función en un punto dado.",
+            "uso": "Se utiliza principalmente en el cálculo diferencial y en el entrenamiento de modelos en machine learning.",
+            "exemplo": """
+                # Ejemplo de gradiente de una función
+                import numpy as np
+                def funcion(x):
+                    return x**2
+                gradiente = 2 * 3  # Gradiente de x^2 en x = 3
+                print(gradiente)  # Saída: 6
+                """
+        },
+        "getfqdn": {
+            "significado": "Función que obtiene el nombre de dominio completo (FQDN) de la máquina local.",
+            "uso": "Se utiliza para obtener el nombre completo de dominio de la computadora en una red.",
+            "exemplo": """
+                import socket
+                fqdn = socket.getfqdn()
+                print(fqdn)  # Saída: ejemplo.local
+                """
+        },
+        "get_url": {
+            "significado": "Función que obtiene una URL específica, generalmente para acceder a un recurso en línea.",
+            "uso": "Se utiliza para recuperar una URL desde una fuente externa o generar una URL para un recurso.",
+            "exemplo": """
+                import requests
+                url = "http://example.com"
+                respuesta = requests.get(url)
+                print(respuesta.url)
+                """
+        },
+        "get_line": {
+            "significado": "Método que obtiene una línea específica de un archivo o conjunto de datos.",
+            "uso": "Se utiliza para acceder a una línea específica dentro de un archivo o texto.",
+            "exemplo": """
+                with open('archivo.txt', 'r') as f:
+                    linea = f.readline()
+                    print(linea)
+                """
+        },
+        "get_clock_info": {
+            "significado": "Método que obtiene información sobre el reloj del sistema, como la frecuencia de actualización.",
+            "uso": "Se utiliza para obtener detalles sobre el rendimiento y las características del reloj del sistema.",
+            "exemplo": """
+                import time
+                info = time.get_clock_info('time')
+                print(info)
+                """
+        },
+        "getmtime": {
+            "significado": "Función que obtiene la hora de la última modificación de un archivo.",
+            "uso": "Se utiliza para obtener el tiempo de la última modificación de un archivo o directorio.",
+            "exemplo": """
+                import os
+                ultima_modificacion = os.path.getmtime('archivo.txt')
+                print(ultima_modificacion)
+                """
+        },
+        "gettext_install": {
+            "significado": "Comando o función que instala el paquete `gettext` para la internacionalización de aplicaciones.",
+            "uso": "Se utiliza para instalar el paquete necesario para traducir cadenas de texto en aplicaciones de Python.",
+            "exemplo": """
+                # Ejemplo en la terminal
+                pip install gettext
+                """
+        },
+        "geometry_manager": {
+            "significado": "Método utilizado para gestionar el tamaño y la ubicación de los widgets en interfaces gráficas.",
+            "uso": "Se utiliza en bibliotecas de interfaces gráficas como Tkinter para controlar la disposición de los elementos.",
+            "exemplo": """
+                import tkinter as tk
+                root = tk.Tk()
+                label = tk.Label(root, text="Hola Mundo")
+                label.pack()  # Usa el geometry manager 'pack'
+                root.mainloop()
+                """
+        },
+        "gcd_algorithm": {
+            "significado": "Algoritmo para calcular el máximo común divisor (GCD) de dos números.",
+            "uso": "Se utiliza para encontrar el mayor número que divide exactamente a dos números.",
+            "exemplo": """
+                import math
+                gcd = math.gcd(24, 36)
+                print(gcd)  # Saída: 12
+                """
+        },
+        "googletrans": {
+            "significado": "Biblioteca de Python que utiliza la API de Google Translate para traducir texto entre diferentes idiomas.",
+            "uso": "Se utiliza para traducir texto automáticamente usando los servicios de Google Translate.",
+            "exemplo": """
+                from googletrans import Translator
+                translator = Translator()
+                traduccion = translator.translate('Hola, ¿cómo estás?', src='es', dest='en')
+                print(traduccion.text)  # Saída: Hello, how are you?
+                """
+        },
+        "get_dpi": {
+            "significado": "Función que obtiene la densidad de píxeles por pulgada (DPI) de la pantalla.",
+            "uso": "Se utiliza para obtener la resolución de la pantalla en términos de píxeles por pulgada.",
+            "exemplo": """
+                import tkinter as tk
+                root = tk.Tk()
+                dpi = root.winfo_fpixels('1i')  # Píxeles por pulgada
+                print(dpi)
+                """
+        },
+        "geolocation": {
+            "significado": "Proceso de determinar la ubicación geográfica de un dispositivo.",
+            "uso": "Se utiliza para obtener la latitud, longitud y otros detalles sobre la ubicación de un dispositivo.",
+            "exemplo": """
+                # Ejemplo usando geopy
+                from geopy.geocoders import Nominatim
+                geolocator = Nominatim(user_agent="mi_app")
+                ubicacion = geolocator.geocode("1600 Pennsylvania Ave NW, Washington, DC 20500")
+                print(ubicacion.address)
+                """
+        },
+        "git_merge": {
+            "significado": "Comando de Git que combina cambios de diferentes ramas en una sola.",
+            "uso": "Se utiliza para fusionar las ramas de un repositorio en Git.",
+            "exemplo": """
+                git checkout master
+                git merge rama-feature
+                """
+        },
+        "get_tick_params": {
+            "significado": "Función que obtiene los parámetros de los 'ticks' en un gráfico.",
+            "uso": "Se utiliza en bibliotecas gráficas como Matplotlib para ajustar los valores de los ejes en los gráficos.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+                fig, ax = plt.subplots()
+                ticks = ax.get_xticks()
+                print(ticks)
+                """
+        },
+        "getrandbits": {
+            "significado": "Método que devuelve un número aleatorio con una cantidad específica de bits.",
+            "uso": "Se utiliza para generar números aleatorios binarios con un número determinado de bits.",
+            "exemplo": """
+                import random
+                numero = random.getrandbits(8)  # 8 bits
+                print(numero)  # Saída: número aleatorio de 8 bits
+                """
+        },
+        "gui_toolkit": {
+            "significado": "Conjunto de herramientas o bibliotecas utilizadas para desarrollar interfaces gráficas de usuario (GUI).",
+            "uso": "Se utiliza para construir aplicaciones con interfaces visuales interactivas.",
+            "exemplo": """
+                # Ejemplo con Tkinter
+                import tkinter as tk
+                root = tk.Tk()
+                label = tk.Label(root, text="Hola Mundo")
+                label.pack()
+                root.mainloop()
+                """
+        },
+        "getpid": {
+            "significado": "Función que obtiene el ID del proceso actual.",
+            "uso": "Se utiliza para obtener el identificador único del proceso en ejecución.",
+            "exemplo": """
+                import os
+                pid = os.getpid()
+                print(pid)  # Saída: ID del proceso actual
+                """
+        },
+        "get_event": {
+            "significado": "Método que obtiene un evento específico en el contexto de un sistema o aplicación.",
+            "uso": "Se utiliza para recuperar un evento de un sistema de gestión de eventos.",
+            "exemplo": """
+                # Ejemplo en un sistema de eventos
+                evento = get_event("click")
+                print(evento)
+                """
+        },
+        "gmm": {
+            "significado": "Modelo de Mezcla Gaussiana (GMM), un modelo probabilístico para la distribución de datos.",
+            "uso": "Se utiliza en machine learning para modelar datos como una mezcla de distribuciones gaussianas.",
+            "exemplo": """
+                from sklearn.mixture import GaussianMixture
+                gmm = GaussianMixture(n_components=2)
+                gmm.fit(datos)
+                """
+        },
+        "gather": {
+            "significado": "Función utilizada para recopilar o juntar elementos o resultados en una estructura.",
+            "uso": "Se utiliza para recoger resultados de operaciones paralelas o de múltiples fuentes.",
+            "exemplo": """
+                import asyncio
+                async def tarea():
+                    return 1
+                async def main():
+                    resultados = await asyncio.gather(tarea(), tarea())
+                    print(resultados)
+                asyncio.run(main())
+                """
+        },
+        "get_statistics": {
+            "significado": "Método que obtiene las estadísticas de un conjunto de datos.",
+            "uso": "Se utiliza para calcular y recuperar métricas estadísticas como media, mediana, desviación estándar, etc.",
+            "exemplo": """
+                import statistics
+                datos = [1, 2, 3, 4, 5]
+                media = statistics.mean(datos)
+                print(media)  # Saída: 3
+                """
+        },
+        "get_user": {
+            "significado": "Método que obtiene la información del usuario actual.",
+            "uso": "Se utiliza para recuperar los detalles del usuario en un sistema.",
+            "exemplo": """
+                import os
+                usuario = os.getlogin()
+                print(usuario)  # Saída: nombre de usuario
+                """
+        },
+        "get_unique": {
+            "significado": "Función que obtiene los elementos únicos de un conjunto de datos.",
+            "uso": "Se utiliza para recuperar los valores no repetidos de una lista o conjunto.",
+            "exemplo": """
+                import numpy as np
+                datos = [1, 2, 2, 3, 4, 4]
+                unicos = np.unique(datos)
+                print(unicos)  # Saída: [1 2 3 4]
+                """
+        },
+        "git_rebase": {
+            "significado": "Comando de Git que permite aplicar cambios de una rama en otra, reescribiendo el historial.",
+            "uso": "Se utiliza para integrar los cambios de una rama en otra de una manera más limpia, reorganizando los commits.",
+            "exemplo": """
+                git checkout feature-branch
+                git rebase main
+                """
+        },
+        "get_score": {
+            "significado": "Método para obtener una puntuación o calificación basada en algún criterio o cálculo.",
+            "uso": "Se utiliza en diversas aplicaciones para obtener la puntuación de un sistema, juego, examen, etc.",
+            "exemplo": """
+                score = game.get_score()
+                print(score)  # Saída: puntuación actual
+                """
+        },
+        "graph_data": {
+            "significado": "Proceso de representar datos en forma de gráficos.",
+            "uso": "Se utiliza para visualizar información y patrones mediante gráficos como barras, líneas, etc.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+                datos = [1, 2, 3, 4, 5]
+                plt.plot(datos)
+                plt.show()
+                """
+        },
+        "get_installed_distributions": {
+            "significado": "Función que obtiene las distribuciones de paquetes instaladas en el entorno de Python.",
+            "uso": "Se utiliza para obtener una lista de los paquetes instalados en un entorno Python.",
+            "exemplo": """
+                from pkg_resources import get_distribution
+                distribuciones = get_installed_distributions()
+                for distrib in distribuciones:
+                    print(distrib)
+                """
+        },
+        "geocode": {
+            "significado": "Proceso de convertir una dirección en coordenadas geográficas (latitud y longitud).",
+            "uso": "Se utiliza para obtener la ubicación geográfica de una dirección textual.",
+            "exemplo": """
+                from geopy.geocoders import Nominatim
+                geolocator = Nominatim(user_agent="mi_app")
+                ubicacion = geolocator.geocode("1600 Pennsylvania Ave NW, Washington, DC 20500")
+                print(ubicacion.latitude, ubicacion.longitude)
+                """
+        },
+        "get_type_hints": {
+            "significado": "Función que obtiene las sugerencias de tipos de los parámetros y valores de retorno de una función.",
+            "uso": "Se utiliza para obtener las anotaciones de tipo de una función.",
+            "exemplo": """
+                from typing import get_type_hints
+                def ejemplo(x: int, y: str) -> bool:
+                    return True
+                print(get_type_hints(ejemplo))
+                """
+        },
+        "genericpath": {
+            "significado": "Módulo que proporciona funciones para trabajar con rutas de archivos y directorios de forma genérica.",
+            "uso": "Se utiliza para manejar y manipular rutas de archivos y directorios.",
+            "exemplo": """
+                import genericpath
+                archivo = "/ruta/a/archivo.txt"
+                print(genericpath.exists(archivo))  # Saída: True o False
+                """
+        },
+        "get_resource_path": {
+            "significado": "Método que obtiene la ruta de un recurso dentro de un paquete o aplicación.",
+            "uso": "Se utiliza para localizar recursos dentro de un entorno empaquetado.",
+            "exemplo": """
+                import pkg_resources
+                ruta = pkg_resources.resource_filename('mi_paquete', 'recurso.txt')
+                print(ruta)
+                """
+        },
+        "git_pull": {
+            "significado": "Comando de Git que actualiza el repositorio local con los cambios más recientes del repositorio remoto.",
+            "uso": "Se utiliza para obtener los cambios más recientes desde el repositorio remoto y fusionarlos con la rama local.",
+            "exemplo": """
+                git pull origin master
+                """
+        },
+        "get_cached_properties": {
+            "significado": "Método para obtener propiedades que han sido almacenadas en caché.",
+            "uso": "Se utiliza para acceder a propiedades previamente calculadas y almacenadas en memoria para mejorar la eficiencia.",
+            "exemplo": """
+                class MiClase:
+                    @property
+                    def propiedad(self):
+                        if not hasattr(self, '_cached_propiedad'):
+                            self._cached_propiedad = 42  # Ejemplo de cálculo
+                        return self._cached_propiedad
+                obj = MiClase()
+                print(obj.propiedad)  # Saída: 42
+                """
+        },
+        "geopandas": {
+            "significado": "Biblioteca de Python para la manipulación y análisis de datos geoespaciales.",
+            "uso": "Se utiliza para trabajar con datos espaciales, como mapas y coordenadas geográficas.",
+            "exemplo": """
+                import geopandas as gpd
+                gdf = gpd.read_file('mapa.shp')
+                gdf.plot()
+                """
+        },
+        "get_open_files": {
+            "significado": "Función que obtiene una lista de archivos abiertos en un sistema.",
+            "uso": "Se utiliza para monitorear los archivos abiertos en un proceso o sistema.",
+            "exemplo": """
+                import psutil
+                procesos = psutil.process_iter(['pid', 'name'])
+                for proceso in procesos:
+                    archivos = proceso.open_files()
+                    for archivo in archivos:
+                        print(archivo.path)
+                """
+        },
+        "get_active_connections": {
+            "significado": "Método que obtiene las conexiones activas en un sistema o red.",
+            "uso": "Se utiliza para obtener las conexiones activas en una aplicación o sistema operativo.",
+            "exemplo": """
+                import psutil
+                conexiones = psutil.net_connections()
+                for conexion in conexiones:
+                    print(conexion)
+                """
+        },
+        "guess_language": {
+            "significado": "Función que adivina el idioma de un texto dado.",
+            "uso": "Se utiliza para determinar el idioma de una cadena de texto.",
+            "exemplo": """
+                from langdetect import detect
+                idioma = detect("Hola, ¿cómo estás?")
+                print(idioma)  # Saída: es
+                """
+        },
+        "get_doc": {
+            "significado": "Método que obtiene la documentación asociada a un objeto o función.",
+            "uso": "Se utiliza para obtener la cadena de documentación (docstring) de un objeto o función.",
+            "exemplo": """
+                def ejemplo():
+                    \"\"\"Esta es la documentación de la función\"\"\"
+                    pass
+                print(ejemplo.__doc__)
+                """
+        },
         
     },
     "h": {
