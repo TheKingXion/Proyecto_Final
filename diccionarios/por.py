@@ -625,23 +625,390 @@ diccionario_por = {
     },
     "c": {
         "callable": {
-        "significado": "Verifica si un objeto es invocable (como una función o una clase).",
-        "uso": "Se utiliza para determinar si un objeto puede ser llamado.",
-        "ejemplo": '''
-            def funcion():
-                return "Hola"
+            "significado": "Verifica si un objeto es invocable (como una función o una clase).",
+            "uso": "Se utiliza para determinar si un objeto puede ser llamado.",
+            "ejemplo": '''
+                def funcion():
+                    return "Hola"
 
-            print(callable(funcion))  # Saída: True
-            print(callable(42))  # Saída: False
-            '''
+                print(callable(funcion))  # Saída: True
+                print(callable(42))  # Saída: False
+                '''
+        },
+        "chr": {
+            "significado": "Devuelve el carácter Unicode correspondiente a un número entero.",
+            "uso": "Se utiliza para convertir un código Unicode en su representación de carácter.",
+            "ejemplo": '''
+                print(chr(65))  # Saída: 'A'
+                print(chr(8364))  # Saída: '€'
+                '''
+        },
+        "class": {
+            "significado": "Palabra clave para definir una clase en Python.",
+            "uso": "Se utiliza para crear objetos personalizados con atributos y métodos.",
+            "ejemplo": '''
+                class Persona:
+                    def __init__(self, nombre):
+                        self.nombre = nombre
+
+                    def saludar(self):
+                        print(f"Hola, me llamo {self.nombre}")
+
+                p = Persona("Juan")
+                p.saludar()  # Saída: Hola, me llamo Juan
+                '''
+        },
+        "classmethod": {
+            "significado": "Define un método de clase, que recibe la clase como primer argumento en lugar de una instancia.",
+            "uso": "Se utiliza para crear métodos que afectan a la clase en general.",
+            "ejemplo": '''
+                class MiClase:
+                    contador = 0
+
+                    @classmethod
+                    def incrementar(cls):
+                        cls.contador += 1
+
+                MiClase.incrementar()
+                print(MiClase.contador)  # Saída: 1
+                '''
+        },
+        "compile": {
+            "significado": "Compila una cadena de código en un objeto ejecutable de Python.",
+            "uso": "Se utiliza para compilar código dinámico desde texto o archivos.",
+            "ejemplo": '''
+                codigo = "print('Hola Mundo')"
+                compilado = compile(codigo, '<string>', 'exec')
+                exec(compilado)  # Saída: Hola Mundo
+                '''
+        },
+        "complex": {
+            "significado": "Crea un número complejo en Python.",
+            "uso": "Se utiliza para representar números complejos con parte real e imaginaria.",
+            "ejemplo": '''
+                c = complex(2, 3)
+                print(c)  # Saída: (2+3j)
+                print(c.real, c.imag)  # Saída: 2.0 3.0
+                '''
+        },
+        "continue": {
+            "significado": "Palabra clave que salta a la siguiente iteración de un bucle.",
+            "uso": "Se utiliza para omitir el resto del código en la iteración actual.",
+            "ejemplo": '''
+                for i in range(5):
+                    if i == 2:
+                        continue
+                    print(i)  # Saída: 0 1 3 4
+                '''
+        },
+        "copy": {
+            "significado": "Crea una copia superficial de un objeto.",
+            "uso": "Se utiliza para duplicar estructuras de datos sin duplicar objetos anidados.",
+            "ejemplo": '''
+                import copy
+
+                lista = [1, 2, [3, 4]]
+                copia = copy.copy(lista)
+                print(copia)  # Saída: [1, 2, [3, 4]]
+                '''
+        },
+        "coroutine": {
+            "significado": "Objeto que representa una función asincrónica suspendida.",
+            "uso": "Se utiliza para manejar tareas asincrónicas con `async` y `await`.",
+            "ejemplo": '''
+                async def tarea():
+                    print("Inicio")
+                    await asyncio.sleep(1)
+                    print("Fin")
+
+                import asyncio
+                asyncio.run(tarea())  # Saída: Inicio... Fin
+                '''
+        },
+        "count": {
+            "significado": "Devuelve el número de ocurrencias de un elemento en una colección.",
+            "uso": "Se utiliza para contar la cantidad de veces que aparece un elemento en una lista o cadena.",
+            "ejemplo": '''
+                lista = [1, 2, 2, 3]
+                print(lista.count(2))  # Saída: 2
+                '''
+        },
+        "clear": {
+            "significado": "Elimina todos los elementos de una lista o un diccionario.",
+            "uso": "Se utiliza para vaciar el contenido de una lista o un diccionario.",
+            "exemplo": """
+                lista = [1, 2, 3]
+                lista.clear()
+                print(lista)  # Saída: []
+                """
+        },
+        "cmath": {
+            "significado": "Módulo que proporciona funciones matemáticas para trabajar con números complejos.",
+            "uso": "Se utiliza para realizar operaciones matemáticas en números complejos.",
+            "exemplo": """
+                import cmath
+
+                numero = cmath.sqrt(-1)
+                print(numero)  # Saída: 1j
+                """
+        },
+        "chain": {
+            "significado": "Función que combina varios iteradores en uno solo.",
+            "uso": "Se utiliza para concatenar múltiples iteradores.",
+            "exemplo": """
+                import itertools
+
+                a = [1, 2, 3]
+                b = [4, 5, 6]
+                resultado = list(itertools.chain(a, b))
+                print(resultado)  # Saída: [1, 2, 3, 4, 5, 6]
+                """
+        },
+        "csv": {
+            "significado": "Módulo para leer y escribir archivos en formato CSV (Comma Separated Values).",
+            "uso": "Se utiliza para manejar archivos CSV.",
+            "exemplo": """
+                import csv
+
+                with open('archivo.csv', mode='w', newline='') as archivo:
+                    writer = csv.writer(archivo)
+                    writer.writerow(['Nombre', 'Edad'])
+                    writer.writerow(['Ana', 30])
+                """
+        },
+        "copyreg": {
+            "significado": "Módulo que proporciona funciones para registrar objetos para la copia y el desacoplamiento.",
+            "uso": "Se utiliza para personalizar el comportamiento de copiado y almacenamiento de objetos.",
+            "exemplo": """
+                import copyreg
+
+                def crear_persona(nombre, edad):
+                    return {'nombre': nombre, 'edad': edad}
+
+                copyreg.pickle(dict, crear_persona)
+                """
+        },
+        "counter": {
+            "significado": "Clase en el módulo `collections` que cuenta elementos hashables en una secuencia.",
+            "uso": "Se utiliza para contar la frecuencia de elementos en un iterable.",
+            "exemplo": """
+                from collections import Counter
+
+                contador = Counter([1, 2, 2, 3, 3, 3])
+                print(contador)  # Saída: Counter({3: 3, 2: 2, 1: 1})
+                """
+        },
+        "cProfile": {
+            "significado": "Módulo para la medición del rendimiento de los programas en Python.",
+            "uso": "Se utiliza para hacer perfiles de código y analizar la eficiencia del programa.",
+            "exemplo": """
+                import cProfile
+
+                def funcion():
+                    for i in range(1000):
+                        pass
+
+                cProfile.run('funcion()')
+                """
+        },
+        "capitalize": {
+            "significado": "Método de cadena que convierte la primera letra en mayúscula y el resto en minúsculas.",
+            "uso": "Se utiliza para capitalizar la primera letra de una cadena.",
+            "exemplo": """
+                texto = 'hola mundo'
+                print(texto.capitalize())  # Saída: 'Hola mundo'
+                """
+        },
+        "center": {
+            "significado": "Método de cadena que centra una cadena dentro de un campo de longitud especificada.",
+            "uso": "Se utiliza para alinear texto en el centro de una cadena con un relleno.",
+            "exemplo": """
+                texto = 'hola'
+                print(texto.center(10, '*'))  # Saída: '**hola****'
+                """
+        },
+        "ceil": {
+            "significado": "Función del módulo `math` que devuelve el entero más cercano mayor o igual a un número dado.",
+            "uso": "Se utiliza para redondear un número hacia arriba.",
+            "exemplo": """
+                import math
+
+                numero = 3.4
+                print(math.ceil(numero))  # Saída: 4
+                """
+        },
+        "call": {
+            "significado": "Método utilizado para invocar un objeto que es callable, como funciones o clases.",
+            "uso": "Se utiliza para llamar a un objeto que se puede ejecutar.",
+            "exemplo": """
+                def saludo():
+                    return 'Hola'
+
+                print(callable(saludo))  # Saída: True
+                """
+        },
+        "clamp": {
+            "significado": "Función que restringe un valor dentro de un rango especificado.",
+            "uso": "Se utiliza para garantizar que un valor se mantenga dentro de un rango dado.",
+            "exemplo": """
+                def clamp(valor, minimo, maximo):
+                    return max(minimo, min(valor, maximo))
+
+                print(clamp(5, 1, 10))  # Saída: 5
+                """
+        },
+        "choice": {
+            "significado": "Función del módulo `random` que selecciona un elemento aleatorio de una secuencia.",
+            "uso": "Se utiliza para elegir un valor aleatorio de una lista o secuencia.",
+            "exemplo": """
+                import random
+
+                lista = [1, 2, 3, 4, 5]
+                print(random.choice(lista))  # Saída: un valor aleatorio de la lista
+                """
+        },
+        "collections": {
+            "significado": "Módulo que implementa tipos de datos especializados como `Counter`, `deque`, `OrderedDict`, entre otros.",
+            "uso": "Se utiliza para trabajar con colecciones de datos de manera eficiente.",
+            "exemplo": """
+                from collections import deque
+
+                cola = deque([1, 2, 3])
+                cola.append(4)
+                print(cola)  # Saída: deque([1, 2, 3, 4])
+                """
+        },
+        "compress": {
+            "significado": "Función en el módulo `itertools` que permite comprimir elementos de un iterable.",
+            "uso": "Se utiliza para filtrar los elementos de un iterable basándose en una condición booleana.",
+            "exemplo": """
+                import itertools
+
+                datos = [1, 2, 3, 4, 5]
+                condiciones = [True, False, True, False, True]
+                resultado = list(itertools.compress(datos, condiciones))
+                print(resultado)  # Saída: [1, 3, 5]
+                """
+        },
+        "complex_conjugate": {
+            "significado": "Método de los números complejos en Python que devuelve el conjugado complejo de un número.",
+            "uso": "Se utiliza para obtener el conjugado de un número complejo.",
+            "exemplo": """
+                numero_complejo = 3 + 4j
+                print(numero_complejo.conjugate())  # Saída: (3-4j)
+                """
+        },
+        "ctypes": {
+            "significado": "Módulo en Python que permite interactuar con bibliotecas de C y realizar llamadas a funciones de bajo nivel.",
+            "uso": "Se utiliza para trabajar con tipos de datos y funciones de bibliotecas externas escritas en C.",
+            "exemplo": """
+                import ctypes
+
+                # Crear una variable de tipo entero
+                valor = ctypes.c_int(5)
+                print(valor.value)  # Saída: 5
+                """
+        },
+        "clear_screen": {
+            "significado": "Función utilizada para limpiar la pantalla de la consola.",
+            "uso": "Se utiliza para eliminar el contenido visible de la terminal o consola.",
+            "exemplo": """
+                import os
+
+                def clear_screen():
+                    os.system('cls' if os.name == 'nt' else 'clear')
+
+                clear_screen()
+                """
+        },
+        "call_later": {
+            "significado": "Método utilizado para programar la ejecución de una función después de un cierto tiempo.",
+            "uso": "Se utiliza en programación asíncrona para ejecutar tareas después de un retraso.",
+            "exemplo": """
+                import asyncio
+
+                async def tarea():
+                    print('Tarea ejecutada')
+
+                asyncio.get_event_loop().call_later(2, asyncio.create_task, tarea())
+                """
+        },
+        "chunk": {
+            "significado": "Técnica que divide un iterable en partes más pequeñas o trozos.",
+            "uso": "Se utiliza para dividir grandes volúmenes de datos en partes manejables.",
+            "exemplo": """
+                def chunk(iterable, tamaño):
+                    for i in range(0, len(iterable), tamaño):
+                        yield iterable[i:i + tamaño]
+
+                lista = [1, 2, 3, 4, 5, 6, 7, 8, 9]
+                for trozo in chunk(lista, 3):
+                    print(trozo)  # Saída: [1, 2, 3], [4, 5, 6], [7, 8, 9]
+                """
+        },
+        "cycle": {
+            "significado": "Función en el módulo `itertools` que crea un iterador que repite indefinidamente una secuencia.",
+            "uso": "Se utiliza para recorrer un iterable en bucle sin fin.",
+            "exemplo": """
+                import itertools
+
+                ciclo = itertools.cycle([1, 2, 3])
+                for i in range(6):
+                    print(next(ciclo))  # Saída: 1, 2, 3, 1, 2, 3
+                """
+        },
+        "coerce": {
+            "significado": "Función que intenta convertir un valor en un tipo compatible.",
+            "uso": "Se utiliza para forzar la conversión de un valor a un tipo de datos específico.",
+            "exemplo": """
+                # La función coerce fue removida en versiones modernas de Python
+                """
+        },
+        "current_thread": {
+            "significado": "Método del módulo `threading` que devuelve el hilo actual de ejecución.",
+            "uso": "Se utiliza para obtener el hilo de ejecución en el que se está ejecutando el código.",
+            "exemplo": """
+                import threading
+
+                def mostrar_hilo():
+                    print(threading.current_thread())
+
+                mostrar_hilo()
+                """
+        },
+        "configparser": {
+            "significado": "Módulo que permite manejar archivos de configuración, como los archivos INI.",
+            "uso": "Se utiliza para leer, escribir y modificar archivos de configuración.",
+            "exemplo": """
+                import configparser
+
+                config = configparser.ConfigParser()
+                config.read('config.ini')
+
+                print(config['DEFAULT']['color'])  # Saída: rojo
+                """
+        },
+        "compileall": {
+            "significado": "Módulo en Python que compila todos los archivos `.py` en un directorio y sus subdirectorios.",
+            "uso": "Se utiliza para compilar código Python a bytecode, lo que puede mejorar el rendimiento de la ejecución.",
+            "exemplo": """
+                import compileall
+
+                compileall.compile_dir('mi_carpeta')
+                """
+        },
+        "copytree": {
+            "significado": "Función en el módulo `shutil` que copia un directorio completo, incluyendo su contenido, a otro destino.",
+            "uso": "Se utiliza para copiar un directorio y todo su contenido a una nueva ubicación.",
+            "exemplo": """
+                import shutil
+
+                shutil.copytree('origen', 'destino')
+                """
         },
     },
     "d": {
-        "": {
-            "significado": "",
-            "uso": "",
-            "ejemplo": ''''''
-        },
+        
     },
     "e": {
         "": {
