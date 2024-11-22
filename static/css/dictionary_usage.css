@@ -134,6 +134,13 @@ h2 {
     align-items: center;
     margin-left: 15px;
     margin-top: 22px;
+    transition: transform 0.3s, background-color 0.3s;
+}
+
+.selected-letter:hover {
+    transform: scale(1.1);
+    background-color: #F2B705;
+    color: #0D0259;
 }
 
 .search-container {

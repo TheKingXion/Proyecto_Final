@@ -1,0 +1,91 @@
+@media (max-width: 768px) {
+    /* Header adjustments */
+    header {
+        flex-direction: column;
+        align-items: center;
+        padding: 15px 5px;
+    }
+
+    .language-selection {
+        margin-top: 15px;
+        width: 100%;
+    }
+
+    .search-container,
+    .home-container {
+        position: static;
+        margin-top: 15px;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Content layout */
+    .content {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    /* Alphabet menu */
+    .alphabet-menu {
+        position: static;
+        width: 90%;
+        max-width: none;
+        margin: 10px auto;
+        padding: 10px;
+    }
+
+    .alphabet-menu ul {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    .alphabet-menu ul li {
+        margin: 5px;
+        padding: 8px;
+        font-size: 16px;
+    }
+
+    /* Selected letter */
+    .selected-letter {
+        margin: 20px auto;
+        font-size: 48pt;
+        width: 60pt;
+        height: 60pt;
+    }
+
+    /* Terms container */
+    #terms-container {
+        width: 90%;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 2rem;
+        margin-bottom: 15px;
+    }
+
+    h2 {
+        font-size: 1rem;
+        margin-bottom: 20px;
+    }
+
+    /* Pagination controls */
+    .pagination-controls {
+        margin-left: 0;
+        width: 100%;
+        justify-content: center;
+    }
+
+    /* Search input */
+    .search-input {
+        width: 70%;
+        max-width: 250px;
+    }
+
+    .search-input:focus {
+        width: 80%;
+        max-width: 300px;
+    }
+}
+

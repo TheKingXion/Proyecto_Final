@@ -1,11 +1,75 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Developers - Diccionario del 3MF</title>
+    <link rel="icon" href="{{ url_for('static', filename='images/web_ico.png') }}" type="image/png">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/developers.css') }}">
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/particles.css') }}">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    pagina en desarrollo
+    <div id="particles"></div>
+    <div class="container">
+        <h1 class="title">Developers</h1>
+        <div class="content">
+            <div class="dev-grid">
+                <div class="dev-card">
+                    <h2>Luis Gonzalez</h2>
+                    <p>Líder del proyecto</p>
+                    <p>Desarrollador</p>
+                    <a href="https://github.com/TheKingXion" target="_blank" rel="noopener noreferrer" class="github-link">@TheKingXion</a>
+                </div>
+                <div class="dev-card">
+                    <h2>Pablo Cocio</h2>
+                    <p>Desarrollador</p>
+                    <p>Traductor</p>
+                    <a href="https://github.com/PABLOYAMI" target="_blank" rel="noopener noreferrer" class="github-link">@PABLOYAMI</a>
+                </div>
+                <div class="dev-card">
+                    <h2>Benjamin Cona</h2>
+                    <p>Desarrollador</p>
+                    <p>Traductor</p>
+                    <a href="https://github.com/conabenjamin" target="_blank" rel="noopener noreferrer" class="github-link">@conabenjamin</a>
+                </div>
+                <div class="dev-card">
+                    <h2>Vicente Soto</h2>
+                    <p>Desarrollador</p>
+                    <p>Traductor</p>
+                    <a href="https://github.com/Vicenticoo" target="_blank" rel="noopener noreferrer" class="github-link">@Vicenticoo</a>
+                </div>
+                <div class="dev-card">
+                    <h2>Ambar Rojas</h2>
+                    <p>Desarrolladora</p>
+                    <p>Diseñadora</p>
+                    <a href="https://github.com/ambaracevedo" target="_blank" rel="noopener noreferrer" class="github-link">@ambaracevedo</a>
+                </div>
+            </div>
+            <div class="tech-section">
+                <h2>Tecnologías Utilizadas</h2>
+                <div class="tech-tags">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                    <span class="tech-tag">Python</span>
+                    <span class="tech-tag">Flask</span>
+                    <span class="tech-tag">Bash Script</span>
+                </div>
+            </div>
+        </div>
+        <a href="{{ url_for('index') }}" class="back-button">
+            <span>Volver al Inicio</span>
+            <div class="liquid"></div>
+        </a>
+    </div>
+
+    <script src="{{ url_for('static', filename='js/words_particle.js') }}"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            initParticles();
+        });
+    </script>
 </body>
 </html>
+

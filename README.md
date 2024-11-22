@@ -26,7 +26,7 @@ Traducción de términos técnicos en Inglés, Español, Portugués, Italiano y 
   - Colaboración en el rediseño de la página.  
   - Propuesta de mejoras en la lógica del sitio web.
 
-- **Ambar Rojas**  
+- **Ambar Rojas** - [@ambaracevedo](https://github.com/ambaracevedo)
   - Creación del diccionario `FR.py`.  
   - Contribución en el rediseño y estética de la página.
 
