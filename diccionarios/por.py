@@ -625,76 +625,76 @@ diccionario_por = {
     },
     "c": {
         "callable": {
-            "significado": "Verifica si un objeto es invocable (como una función o una clase).",
-            "uso": "Se utiliza para determinar si un objeto puede ser llamado.",
-            "ejemplo": '''
-                def funcion():
-                    return "Hola"
+            "significado": "Verifica se um objeto é invocável (como uma função ou uma classe).",
+            "uso": "É utilizado para determinar se um objeto pode ser chamado.",
+            "exemplo": '''
+                def funcao():
+                    return "Olá"
 
-                print(callable(funcion))  # Saída: True
+                print(callable(funcao))  # Saída: True
                 print(callable(42))  # Saída: False
                 '''
         },
         "chr": {
-            "significado": "Devuelve el carácter Unicode correspondiente a un número entero.",
-            "uso": "Se utiliza para convertir un código Unicode en su representación de carácter.",
-            "ejemplo": '''
+            "significado": "Retorna o caractere Unicode correspondente a um número inteiro.",
+            "uso": "É utilizado para converter um código Unicode em sua representação de caractere.",
+            "exemplo": '''
                 print(chr(65))  # Saída: 'A'
                 print(chr(8364))  # Saída: '€'
                 '''
         },
         "class": {
-            "significado": "Palabra clave para definir una clase en Python.",
-            "uso": "Se utiliza para crear objetos personalizados con atributos y métodos.",
-            "ejemplo": '''
-                class Persona:
-                    def __init__(self, nombre):
-                        self.nombre = nombre
+            "significado": "Palavra-chave para definir uma classe em Python.",
+            "uso": "É utilizada para criar objetos personalizados com atributos e métodos.",
+            "exemplo": '''
+                class Pessoa:
+                    def __init__(self, nome):
+                        self.nome = nome
 
-                    def saludar(self):
-                        print(f"Hola, me llamo {self.nombre}")
+                    def cumprimentar(self):
+                        print(f"Olá, meu nome é {self.nome}")
 
-                p = Persona("Juan")
-                p.saludar()  # Saída: Hola, me llamo Juan
+                p = Pessoa("João")
+                p.cumprimentar()  # Saída: Olá, meu nome é João
                 '''
         },
         "classmethod": {
-            "significado": "Define un método de clase, que recibe la clase como primer argumento en lugar de una instancia.",
-            "uso": "Se utiliza para crear métodos que afectan a la clase en general.",
-            "ejemplo": '''
-                class MiClase:
+            "significado": "Define um método de classe, que recebe a classe como primeiro argumento em vez de uma instância.",
+            "uso": "É utilizado para criar métodos que afetam a classe como um todo.",
+            "exemplo": '''
+                class MinhaClasse:
                     contador = 0
 
                     @classmethod
                     def incrementar(cls):
                         cls.contador += 1
 
-                MiClase.incrementar()
-                print(MiClase.contador)  # Saída: 1
+                MinhaClasse.incrementar()
+                print(MinhaClasse.contador)  # Saída: 1
                 '''
         },
         "compile": {
-            "significado": "Compila una cadena de código en un objeto ejecutable de Python.",
-            "uso": "Se utiliza para compilar código dinámico desde texto o archivos.",
-            "ejemplo": '''
-                codigo = "print('Hola Mundo')"
+            "significado": "Compila uma string de código em um objeto executável de Python.",
+            "uso": "É utilizado para compilar código dinâmico a partir de texto ou arquivos.",
+            "exemplo": '''
+                codigo = "print('Olá Mundo')"
                 compilado = compile(codigo, '<string>', 'exec')
-                exec(compilado)  # Saída: Hola Mundo
+                exec(compilado)  # Saída: Olá Mundo
                 '''
         },
         "complex": {
-            "significado": "Crea un número complejo en Python.",
-            "uso": "Se utiliza para representar números complejos con parte real e imaginaria.",
-            "ejemplo": '''
+            "significado": "Cria um número complexo em Python.",
+            "uso": "É utilizado para representar números complexos com parte real e imaginária.",
+            "exemplo": '''
                 c = complex(2, 3)
                 print(c)  # Saída: (2+3j)
                 print(c.real, c.imag)  # Saída: 2.0 3.0
                 '''
         },
         "continue": {
-            "significado": "Palabra clave que salta a la siguiente iteración de un bucle.",
-            "uso": "Se utiliza para omitir el resto del código en la iteración actual.",
-            "ejemplo": '''
+            "significado": "Palavra-chave que salta para a próxima iteração de um loop.",
+            "uso": "É utilizada para ignorar o restante do código na iteração atual.",
+            "exemplo": '''
                 for i in range(5):
                     if i == 2:
                         continue
@@ -702,9 +702,9 @@ diccionario_por = {
                 '''
         },
         "copy": {
-            "significado": "Crea una copia superficial de un objeto.",
-            "uso": "Se utiliza para duplicar estructuras de datos sin duplicar objetos anidados.",
-            "ejemplo": '''
+            "significado": "Cria uma cópia superficial de um objeto.",
+            "uso": "É utilizada para duplicar estruturas de dados sem duplicar objetos aninhados.",
+            "exemplo": '''
                 import copy
 
                 lista = [1, 2, [3, 4]]
@@ -713,39 +713,39 @@ diccionario_por = {
                 '''
         },
         "coroutine": {
-            "significado": "Objeto que representa una función asincrónica suspendida.",
-            "uso": "Se utiliza para manejar tareas asincrónicas con `async` y `await`.",
-            "ejemplo": '''
-                async def tarea():
-                    print("Inicio")
+            "significado": "Objeto que representa uma função assíncrona suspensa.",
+            "uso": "É utilizada para lidar com tarefas assíncronas usando `async` e `await`.",
+            "exemplo": '''
+                async def tarefa():
+                    print("Início")
                     await asyncio.sleep(1)
-                    print("Fin")
+                    print("Fim")
 
                 import asyncio
-                asyncio.run(tarea())  # Saída: Inicio... Fin
+                asyncio.run(tarefa())  # Saída: Início... Fim
                 '''
         },
         "count": {
-            "significado": "Devuelve el número de ocurrencias de un elemento en una colección.",
-            "uso": "Se utiliza para contar la cantidad de veces que aparece un elemento en una lista o cadena.",
-            "ejemplo": '''
+            "significado": "Retorna o número de ocorrências de um elemento em uma coleção.",
+            "uso": "É utilizada para contar quantas vezes um elemento aparece em uma lista ou string.",
+            "exemplo": '''
                 lista = [1, 2, 2, 3]
                 print(lista.count(2))  # Saída: 2
                 '''
         },
         "clear": {
-            "significado": "Elimina todos los elementos de una lista o un diccionario.",
-            "uso": "Se utiliza para vaciar el contenido de una lista o un diccionario.",
-            "ejemplo": '''
+            "significado": "Remove todos os elementos de uma lista ou dicionário.",
+            "uso": "É utilizada para esvaziar o conteúdo de uma lista ou dicionário.",
+            "exemplo": '''
                 lista = [1, 2, 3]
                 lista.clear()
                 print(lista)  # Saída: []
                 '''
         },
         "cmath": {
-            "significado": "Módulo que proporciona funciones matemáticas para trabajar con números complejos.",
-            "uso": "Se utiliza para realizar operaciones matemáticas en números complejos.",
-            "ejemplo": '''
+            "significado": "Módulo que fornece funções matemáticas para trabalhar com números complexos.",
+            "uso": "É utilizado para realizar operações matemáticas em números complexos.",
+            "exemplo": '''
                 import cmath
 
                 numero = cmath.sqrt(-1)
@@ -753,9 +753,9 @@ diccionario_por = {
                 '''
         },
         "chain": {
-            "significado": "Función que combina varios iteradores en uno solo.",
-            "uso": "Se utiliza para concatenar múltiples iteradores.",
-            "ejemplo": '''
+            "significado": "Função que combina vários iteradores em um só.",
+            "uso": "É utilizada para concatenar múltiplos iteradores.",
+            "exemplo": '''
                 import itertools
 
                 a = [1, 2, 3]
@@ -765,33 +765,33 @@ diccionario_por = {
                 '''
         },
         "csv": {
-            "significado": "Módulo para leer y escribir archivos en formato CSV (Comma Separated Values).",
-            "uso": "Se utiliza para manejar archivos CSV.",
-            "ejemplo": '''
+            "significado": "Módulo para ler e escrever arquivos em formato CSV (Comma Separated Values).",
+            "uso": "É utilizado para manipular arquivos CSV.",
+            "exemplo": '''
                 import csv
 
-                with open('archivo.csv', mode='w', newline='') as archivo:
-                    writer = csv.writer(archivo)
-                    writer.writerow(['Nombre', 'Edad'])
+                with open('arquivo.csv', mode='w', newline='') as arquivo:
+                    writer = csv.writer(arquivo)
+                    writer.writerow(['Nome', 'Idade'])
                     writer.writerow(['Ana', 30])
                 '''
         },
         "copyreg": {
-            "significado": "Módulo que proporciona funciones para registrar objetos para la copia y el desacoplamiento.",
-            "uso": "Se utiliza para personalizar el comportamiento de copiado y almacenamiento de objetos.",
-            "ejemplo": '''
+            "significado": "Módulo que fornece funções para registrar objetos para cópia e desacoplamento.",
+            "uso": "É utilizado para personalizar o comportamento de cópia e armazenamento de objetos.",
+            "exemplo": '''
                 import copyreg
 
-                def crear_persona(nombre, edad):
-                    return {'nombre': nombre, 'edad': edad}
+                def criar_pessoa(nome, idade):
+                    return {'nome': nome, 'idade': idade}
 
-                copyreg.pickle(dict, crear_persona)
+                copyreg.pickle(dict, criar_pessoa)
                 '''
         },
         "counter": {
-            "significado": "Clase en el módulo `collections` que cuenta elementos hashables en una secuencia.",
-            "uso": "Se utiliza para contar la frecuencia de elementos en un iterable.",
-            "ejemplo": '''
+            "significado": "Classe no módulo `collections` que conta elementos hasháveis em uma sequência.",
+            "uso": "É utilizada para contar a frequência de elementos em um iterável.",
+            "exemplo": '''
                 from collections import Counter
 
                 contador = Counter([1, 2, 2, 3, 3, 3])
@@ -799,38 +799,38 @@ diccionario_por = {
                 '''
         },
         "cProfile": {
-            "significado": "Módulo para la medición del rendimiento de los programas en Python.",
-            "uso": "Se utiliza para hacer perfiles de código y analizar la eficiencia del programa.",
-            "ejemplo": '''
+            "significado": "Módulo para a medição do desempenho de programas em Python.",
+            "uso": "É utilizado para fazer perfis de código e analisar a eficiência do programa.",
+            "exemplo": '''
                 import cProfile
 
-                def funcion():
+                def funcao():
                     for i in range(1000):
                         pass
 
-                cProfile.run('funcion()')
+                cProfile.run('funcao()')
                 '''
         },
         "capitalize": {
-            "significado": "Método de cadena que convierte la primera letra en mayúscula y el resto en minúsculas.",
-            "uso": "Se utiliza para capitalizar la primera letra de una cadena.",
-            "ejemplo": '''
-                texto = 'hola mundo'
-                print(texto.capitalize())  # Saída: 'Hola mundo'
+            "significado": "Método de string que converte a primeira letra em maiúscula e o resto em minúsculas.",
+            "uso": "É utilizado para capitalizar a primeira letra de uma string.",
+            "exemplo": '''
+                texto = 'ola mundo'
+                print(texto.capitalize())  # Saída: 'Ola mundo'
                 '''
         },
         "center": {
-            "significado": "Método de cadena que centra una cadena dentro de un campo de longitud especificada.",
-            "uso": "Se utiliza para alinear texto en el centro de una cadena con un relleno.",
-            "ejemplo": '''
-                texto = 'hola'
-                print(texto.center(10, '*'))  # Saída: '**hola****'
+            "significado": "Método de string que centraliza uma string dentro de um campo de comprimento especificado.",
+            "uso": "É utilizado para alinhar texto no centro de uma string com preenchimento.",
+            "exemplo": '''
+                texto = 'ola'
+                print(texto.center(10, '*'))  # Saída: '**ola****'
                 '''
         },
         "ceil": {
-            "significado": "Función del módulo `math` que devuelve el entero más cercano mayor o igual a un número dado.",
-            "uso": "Se utiliza para redondear un número hacia arriba.",
-            "ejemplo": '''
+            "significado": "Função do módulo `math` que retorna o inteiro mais próximo maior ou igual a um número dado.",
+            "uso": "É utilizada para arredondar um número para cima.",
+            "exemplo": '''
                 import math
 
                 numero = 3.4
@@ -838,19 +838,19 @@ diccionario_por = {
                 '''
         },
         "call": {
-            "significado": "Método utilizado para invocar un objeto que es callable, como funciones o clases.",
-            "uso": "Se utiliza para llamar a un objeto que se puede ejecutar.",
-            "ejemplo": '''
-                def saludo():
-                    return 'Hola'
+            "significado": "Método utilizado para invocar um objeto que é callable, como funções ou classes.",
+            "uso": "É utilizado para chamar um objeto que pode ser executado.",
+            "exemplo": '''
+                def saudacao():
+                    return 'Olá'
 
-                print(callable(saludo))  # Saída: True
+                print(callable(saudacao))  # Saída: True
                 '''
         },
         "clamp": {
-            "significado": "Función que restringe un valor dentro de un rango especificado.",
-            "uso": "Se utiliza para garantizar que un valor se mantenga dentro de un rango dado.",
-            "ejemplo": '''
+            "significado": "Função que restringe um valor dentro de um intervalo especificado.",
+            "uso": "É utilizada para garantir que um valor permaneça dentro de um intervalo definido.",
+            "exemplo": '''
                 def clamp(valor, minimo, maximo):
                     return max(minimo, min(valor, maximo))
 
@@ -858,61 +858,61 @@ diccionario_por = {
                 '''
         },
         "choice": {
-            "significado": "Función del módulo `random` que selecciona un elemento aleatorio de una secuencia.",
-            "uso": "Se utiliza para elegir un valor aleatorio de una lista o secuencia.",
-            "ejemplo": '''
+            "significado": "Função do módulo `random` que seleciona um elemento aleatório de uma sequência.",
+            "uso": "É utilizada para escolher um valor aleatório de uma lista ou sequência.",
+            "exemplo": '''
                 import random
 
                 lista = [1, 2, 3, 4, 5]
-                print(random.choice(lista))  # Saída: un valor aleatorio de la lista
+                print(random.choice(lista))  # Saída: um valor aleatório da lista
                 '''
         },
         "collections": {
-            "significado": "Módulo que implementa tipos de datos especializados como `Counter`, `deque`, `OrderedDict`, entre otros.",
-            "uso": "Se utiliza para trabajar con colecciones de datos de manera eficiente.",
-            "ejemplo": '''
+            "significado": "Módulo que implementa tipos de dados especializados como `Counter`, `deque`, `OrderedDict`, entre outros.",
+            "uso": "É utilizado para trabalhar com coleções de dados de forma eficiente.",
+            "exemplo": '''
                 from collections import deque
 
-                cola = deque([1, 2, 3])
-                cola.append(4)
-                print(cola)  # Saída: deque([1, 2, 3, 4])
+                fila = deque([1, 2, 3])
+                fila.append(4)
+                print(fila)  # Saída: deque([1, 2, 3, 4])
                 '''
         },
         "compress": {
-            "significado": "Función en el módulo `itertools` que permite comprimir elementos de un iterable.",
-            "uso": "Se utiliza para filtrar los elementos de un iterable basándose en una condición booleana.",
-            "ejemplo": '''
+            "significado": "Função no módulo `itertools` que permite comprimir elementos de um iterável.",
+            "uso": "É utilizada para filtrar os elementos de um iterável com base em uma condição booleana.",
+            "exemplo": '''
                 import itertools
 
-                datos = [1, 2, 3, 4, 5]
-                condiciones = [True, False, True, False, True]
-                resultado = list(itertools.compress(datos, condiciones))
+                dados = [1, 2, 3, 4, 5]
+                condicoes = [True, False, True, False, True]
+                resultado = list(itertools.compress(dados, condicoes))
                 print(resultado)  # Saída: [1, 3, 5]
                 '''
         },
         "complex_conjugate": {
-            "significado": "Método de los números complejos en Python que devuelve el conjugado complejo de un número.",
-            "uso": "Se utiliza para obtener el conjugado de un número complejo.",
-            "ejemplo": '''
-                numero_complejo = 3 + 4j
-                print(numero_complejo.conjugate())  # Saída: (3-4j)
+            "significado": "Método dos números complexos em Python que retorna o conjugado complexo de um número.",
+            "uso": "É utilizado para obter o conjugado de um número complexo.",
+            "exemplo": '''
+                numero_complexo = 3 + 4j
+                print(numero_complexo.conjugate())  # Saída: (3-4j)
                 '''
         },
         "ctypes": {
-            "significado": "Módulo en Python que permite interactuar con bibliotecas de C y realizar llamadas a funciones de bajo nivel.",
-            "uso": "Se utiliza para trabajar con tipos de datos y funciones de bibliotecas externas escritas en C.",
-            "ejemplo": '''
+            "significado": "Módulo em Python que permite interagir com bibliotecas de C e realizar chamadas de funções de baixo nível.",
+            "uso": "É utilizado para trabalhar com tipos de dados e funções de bibliotecas externas escritas em C.",
+            "exemplo": '''
                 import ctypes
 
-                # Crear una variable de tipo entero
+                # Criar uma variável de tipo inteiro
                 valor = ctypes.c_int(5)
                 print(valor.value)  # Saída: 5
                 '''
         },
         "clear_screen": {
-            "significado": "Función utilizada para limpiar la pantalla de la consola.",
-            "uso": "Se utiliza para eliminar el contenido visible de la terminal o consola.",
-            "ejemplo": '''
+            "significado": "Função utilizada para limpar a tela do console.",
+            "uso": "É utilizada para remover o conteúdo visível do terminal ou console.",
+            "exemplo": '''
                 import os
 
                 def clear_screen():
@@ -922,34 +922,34 @@ diccionario_por = {
                 '''
         },
         "call_later": {
-            "significado": "Método utilizado para programar la ejecución de una función después de un cierto tiempo.",
-            "uso": "Se utiliza en programación asíncrona para ejecutar tareas después de un retraso.",
-            "ejemplo": '''
+            "significado": "Método utilizado para agendar a execução de uma função após um certo tempo.",
+            "uso": "É utilizado em programação assíncrona para executar tarefas após um atraso.",
+            "exemplo": '''
                 import asyncio
 
-                async def tarea():
-                    print('Tarea ejecutada')
+                async def tarefa():
+                    print('Tarefa executada')
 
-                asyncio.get_event_loop().call_later(2, asyncio.create_task, tarea())
+                asyncio.get_event_loop().call_later(2, asyncio.create_task, tarefa())
                 '''
         },
         "chunk": {
-            "significado": "Técnica que divide un iterable en partes más pequeñas o trozos.",
-            "uso": "Se utiliza para dividir grandes volúmenes de datos en partes manejables.",
-            "ejemplo": '''
-                def chunk(iterable, tamaño):
-                    for i in range(0, len(iterable), tamaño):
-                        yield iterable[i:i + tamaño]
+            "significado": "Técnica que divide um iterável em partes menores ou blocos.",
+            "uso": "É utilizada para dividir grandes volumes de dados em partes mais manejáveis.",
+            "exemplo": '''
+                def chunk(iteravel, tamanho):
+                    for i in range(0, len(iteravel), tamanho):
+                        yield iteravel[i:i + tamanho]
 
                 lista = [1, 2, 3, 4, 5, 6, 7, 8, 9]
-                for trozo in chunk(lista, 3):
-                    print(trozo)  # Saída: [1, 2, 3], [4, 5, 6], [7, 8, 9]
+                for bloco in chunk(lista, 3):
+                    print(bloco)  # Saída: [1, 2, 3], [4, 5, 6], [7, 8, 9]
                 '''
         },
         "cycle": {
-            "significado": "Función en el módulo `itertools` que crea un iterador que repite indefinidamente una secuencia.",
-            "uso": "Se utiliza para recorrer un iterable en bucle sin fin.",
-            "ejemplo": '''
+            "significado": "Função no módulo `itertools` que cria um iterador que repete indefinidamente uma sequência.",
+            "uso": "É utilizada para percorrer um iterável em loop infinito.",
+            "exemplo": '''
                 import itertools
 
                 ciclo = itertools.cycle([1, 2, 3])
@@ -958,103 +958,103 @@ diccionario_por = {
                 '''
         },
         "coerce": {
-            "significado": "Función que intenta convertir un valor en un tipo compatible.",
-            "uso": "Se utiliza para forzar la conversión de un valor a un tipo de datos específico.",
-            "ejemplo": '''
-                # La función coerce fue removida en versiones modernas de Python
+            "significado": "Função que tenta converter um valor em um tipo compatível.",
+            "uso": "Era utilizada para forçar a conversão de um valor para um tipo de dados específico.",
+            "exemplo": '''
+                # A função coerce foi removida em versões modernas do Python.
                 '''
         },
         "current_thread": {
-            "significado": "Método del módulo `threading` que devuelve el hilo actual de ejecución.",
-            "uso": "Se utiliza para obtener el hilo de ejecución en el que se está ejecutando el código.",
-            "ejemplo": '''
+            "significado": "Método do módulo `threading` que retorna a thread atual de execução.",
+            "uso": "É utilizado para obter a thread de execução onde o código está sendo executado.",
+            "exemplo": '''
                 import threading
 
-                def mostrar_hilo():
+                def mostrar_thread():
                     print(threading.current_thread())
 
-                mostrar_hilo()
+                mostrar_thread()
                 '''
         },
         "configparser": {
-            "significado": "Módulo que permite manejar archivos de configuración, como los archivos INI.",
-            "uso": "Se utiliza para leer, escribir y modificar archivos de configuración.",
-            "ejemplo": '''
+            "significado": "Módulo que permite manipular arquivos de configuração, como arquivos INI.",
+            "uso": "É utilizado para ler, escrever e modificar arquivos de configuração.",
+            "exemplo": '''
                 import configparser
 
                 config = configparser.ConfigParser()
                 config.read('config.ini')
 
-                print(config['DEFAULT']['color'])  # Saída: rojo
+                print(config['DEFAULT']['color'])  # Saída: vermelho
                 '''
         },
         "compileall": {
-            "significado": "Módulo en Python que compila todos los archivos `.py` en un directorio y sus subdirectorios.",
-            "uso": "Se utiliza para compilar código Python a bytecode, lo que puede mejorar el rendimiento de la ejecución.",
-            "ejemplo": '''
+            "significado": "Módulo em Python que compila todos os arquivos `.py` em um diretório e seus subdiretórios.",
+            "uso": "É utilizado para compilar código Python para bytecode, o que pode melhorar o desempenho da execução.",
+            "exemplo": '''
                 import compileall
 
-                compileall.compile_dir('mi_carpeta')
+                compileall.compile_dir('meu_diretorio')
                 '''
         },
         "copytree": {
-            "significado": "Función en el módulo `shutil` que copia un directorio completo, incluyendo su contenido, a otro destino.",
-            "uso": "Se utiliza para copiar un directorio y todo su contenido a una nueva ubicación.",
-            "ejemplo": '''
+            "significado": "Função no módulo `shutil` que copia um diretório completo, incluindo seu conteúdo, para outro destino.",
+            "uso": "É utilizada para copiar um diretório e todo o seu conteúdo para um novo local.",
+            "exemplo": '''
                 import shutil
 
-                shutil.copytree('origen', 'destino')
+                shutil.copytree('origem', 'destino')
                 '''
         },
     },
     "d": {
         "def": {
-        "significado": "Palabra clave en Python utilizada para definir una función.",
-        "uso": "Se utiliza para crear una nueva función con un nombre y un bloque de código.",
-        "ejemplo": '''
-            def saludo():
-                print('Hola Mundo')
+            "significado": "Palavra-chave em Python usada para definir uma função.",
+            "uso": "É utilizada para criar uma nova função com um nome e um bloco de código.",
+            "exemplo": '''
+                def saudacao():
+                    print('Olá Mundo')
 
-            saludo()  # Saída: Hola Mundo
-            '''
+                saudacao()  # Saída: Olá Mundo
+                '''
         },
         "delattr": {
-            "significado": "Función que elimina un atributo de un objeto en Python.",
-            "uso": "Se utiliza para eliminar un atributo específico de un objeto.",
-            "ejemplo": '''
-                class Persona:
-                    def __init__(self, nombre):
-                        self.nombre = nombre
+            "significado": "Função que remove um atributo de um objeto em Python.",
+            "uso": "É utilizada para excluir um atributo específico de um objeto.",
+            "exemplo": '''
+                class Pessoa:
+                    def __init__(self, nome):
+                        self.nome = nome
 
-                p = Persona('Juan')
-                delattr(p, 'nombre')
-                print(hasattr(p, 'nombre'))  # Saída: False
+                p = Pessoa('João')
+                delattr(p, 'nome')
+                print(hasattr(p, 'nome'))  # Saída: False
                 '''
         },
         "dataframe": {
-            "significado": "Estructura de datos bidimensional en la librería Pandas, similar a una tabla, que permite almacenar datos de diferentes tipos.",
-            "uso": "Se utiliza para manejar grandes volúmenes de datos tabulares en Python.",
-            "ejemplo": '''
+            "significado": "Estrutura de dados bidimensional na biblioteca Pandas, similar a uma tabela, que permite armazenar dados de diferentes tipos.",
+            "uso": "É utilizada para manipular grandes volumes de dados tabulares em Python.",
+            "exemplo": '''
                 import pandas as pd
 
-                data = {'Nombre': ['Juan', 'Ana'], 'Edad': [28, 22]}
-                df = pd.DataFrame(data)
+                dados = {'Nome': ['João', 'Ana'], 'Idade': [28, 22]}
+                df = pd.DataFrame(dados)
                 print(df)
                 '''
         },
         "decode": {
-            "significado": "Método utilizado para decodificar datos binarios a un formato de texto, generalmente en una codificación como UTF-8.",
-            "uso": "Se utiliza para convertir datos binarios en cadenas de texto legibles.",
-            "ejemplo": '''
-                encoded = b'Hola Mundo'
-                decoded = encoded.decode('utf-8')
-                print(decoded)  # Saída: Hola Mundo
+            "significado": "Método utilizado para decodificar dados binários para um formato de texto, geralmente em uma codificação como UTF-8.",
+            "uso": "É utilizado para converter dados binários em cadeias de texto legíveis.",
+            "exemplo": '''
+                codificado = b'Olá Mundo'
+                decodificado = codificado.decode('utf-8')
+                print(decodificado)  # Saída: Olá Mundo
                 '''
         },
         "decimal": {
-            "significado": "Módulo en Python que proporciona soporte para realizar cálculos con decimales de precisión arbitraria.",
-            "uso": "Se utiliza para realizar operaciones aritméticas precisas sin los errores de redondeo típicos de los números de punto flotante.",
-            "ejemplo": '''
+            "significado": "Módulo em Python que fornece suporte para realizar cálculos com decimais de precisão arbitrária.",
+            "uso": "É utilizado para realizar operações aritméticas precisas sem os erros de arredondamento típicos dos números de ponto flutuante.",
+            "exemplo": '''
                 from decimal import Decimal
 
                 x = Decimal('0.1')
@@ -1063,23 +1063,23 @@ diccionario_por = {
                 '''
         },
         "device": {
-            "significado": "Término general para referirse a cualquier dispositivo de hardware o sistema en el que se ejecuta un programa.",
-            "uso": "Se utiliza para referirse a dispositivos como computadoras, teléfonos móviles, etc.",
-            "ejemplo": "No es un término específico de Python, pero se puede usar en bibliotecas como TensorFlow para referirse a dispositivos de procesamiento como CPU o GPU."
+            "significado": "Termo geral para se referir a qualquer dispositivo de hardware ou sistema onde um programa é executado.",
+            "uso": "É utilizado para se referir a dispositivos como computadores, telefones móveis, etc.",
+            "exemplo": "Não é um termo específico de Python, mas pode ser usado em bibliotecas como TensorFlow para se referir a dispositivos de processamento como CPU ou GPU."
         },
         "dict.get": {
-            "significado": "Método de los diccionarios en Python que devuelve el valor de una clave especificada, o un valor por defecto si la clave no existe.",
-            "uso": "Se utiliza para obtener el valor asociado a una clave sin generar un error si la clave no existe.",
-            "ejemplo": '''
+            "significado": "Método dos dicionários em Python que retorna o valor de uma chave especificada ou um valor padrão se a chave não existir.",
+            "uso": "É utilizado para obter o valor associado a uma chave sem gerar um erro se a chave não existir.",
+            "exemplo": '''
                 d = {'a': 1, 'b': 2}
                 print(d.get('a'))  # Saída: 1
-                print(d.get('c', 'No encontrado'))  # Saída: No encontrado
+                print(d.get('c', 'Não encontrado'))  # Saída: Não encontrado
                 '''
         },
         "dropna": {
-            "significado": "Método en Pandas utilizado para eliminar los valores faltantes (NaN) en un DataFrame o Serie.",
-            "uso": "Se utiliza para limpiar los datos eliminando las filas o columnas que contienen valores nulos.",
-            "ejemplo": '''
+            "significado": "Método em Pandas utilizado para remover valores ausentes (NaN) em um DataFrame ou Série.",
+            "uso": "É utilizado para limpar os dados removendo as linhas ou colunas que contêm valores nulos.",
+            "exemplo": '''
                 import pandas as pd
 
                 df = pd.DataFrame({'A': [1, 2, None], 'B': [None, 3, 4]})
@@ -1087,9 +1087,9 @@ diccionario_por = {
                 '''
         },
         "dtype": {
-            "significado": "Propiedad de los arrays en Numpy o de las columnas en un DataFrame de Pandas que indica el tipo de dato de los elementos.",
-            "uso": "Se utiliza para obtener o especificar el tipo de datos de un array o columna.",
-            "ejemplo": '''
+            "significado": "Propriedade dos arrays em Numpy ou das colunas em um DataFrame do Pandas que indica o tipo de dado dos elementos.",
+            "uso": "É utilizada para obter ou especificar o tipo de dados de um array ou coluna.",
+            "exemplo": '''
                 import numpy as np
 
                 arr = np.array([1, 2, 3])
@@ -1097,9 +1097,9 @@ diccionario_por = {
                 '''
         },
         "deque.appendleft": {
-            "significado": "Método del tipo de dato `deque` en el módulo `collections` que agrega un elemento al principio de la deque.",
-            "uso": "Se utiliza para insertar un nuevo elemento en la parte izquierda de una deque.",
-            "ejemplo": '''
+            "significado": "Método do tipo de dado `deque` no módulo `collections` que adiciona um elemento ao início da deque.",
+            "uso": "É utilizado para inserir um novo elemento na parte esquerda de uma deque.",
+            "exemplo": '''
                 from collections import deque
 
                 d = deque([2, 3, 4])
@@ -1108,9 +1108,9 @@ diccionario_por = {
                 '''
         },
         "dict.update": {
-            "significado": "Método de los diccionarios en Python que actualiza un diccionario con los elementos de otro diccionario o iterable.",
-            "uso": "Se utiliza para agregar o modificar elementos en un diccionario utilizando otro diccionario o iterable.",
-            "ejemplo": '''
+            "significado": "Método dos dicionários em Python que atualiza um dicionário com os elementos de outro dicionário ou iterável.",
+            "uso": "É utilizado para adicionar ou modificar elementos em um dicionário usando outro dicionário ou iterável.",
+            "exemplo": '''
                 d1 = {'a': 1, 'b': 2}
                 d2 = {'b': 3, 'c': 4}
                 d1.update(d2)
@@ -1118,42 +1118,42 @@ diccionario_por = {
                 '''
         },
         "del": {
-            "significado": "Palabra clave en Python que elimina un atributo o un elemento de una colección.",
-            "uso": "Se utiliza para eliminar elementos de una lista, atributo de un objeto o una variable.",
-            "ejemplo": '''
+            "significado": "Palavra-chave em Python que remove um atributo ou um elemento de uma coleção.",
+            "uso": "É utilizada para remover elementos de uma lista, atributo de um objeto ou uma variável.",
+            "exemplo": '''
                 lista = [1, 2, 3]
                 del lista[1]
                 print(lista)  # Saída: [1, 3]
                 '''
         },
         "dict": {
-            "significado": "Tipo de datos en Python que representa un diccionario, una colección de pares clave-valor.",
-            "uso": "Se utiliza para almacenar y manipular datos de forma eficiente, asociando claves únicas a valores.",
-            "ejemplo": '''
+            "significado": "Tipo de dado em Python que representa um dicionário, uma coleção de pares chave-valor.",
+            "uso": "É utilizado para armazenar e manipular dados de forma eficiente, associando chaves únicas a valores.",
+            "exemplo": '''
                 d = {'a': 1, 'b': 2}
                 print(d['a'])  # Saída: 1
                 '''
         },
         "dir": {
-            "significado": "Función que devuelve una lista de los atributos y métodos de un objeto.",
-            "uso": "Se utiliza para obtener información sobre los métodos y atributos disponibles para un objeto o módulo.",
-            "ejemplo": '''
+            "significado": "Função que retorna uma lista dos atributos e métodos de um objeto.",
+            "uso": "É utilizada para obter informações sobre os métodos e atributos disponíveis para um objeto ou módulo.",
+            "exemplo": '''
                 x = [1, 2, 3]
                 print(dir(x))
                 '''
         },
         "divmod": {
-            "significado": "Función que recibe dos números y devuelve una tupla con el cociente y el residuo de su división.",
-            "uso": "Se utiliza para obtener tanto el cociente como el residuo de una división en una sola operación.",
-            "ejemplo": '''
+            "significado": "Função que recebe dois números e retorna uma tupla com o quociente e o resto da sua divisão.",
+            "uso": "É utilizada para obter tanto o quociente quanto o resto de uma divisão em uma única operação.",
+            "exemplo": '''
                 resultado = divmod(9, 4)
                 print(resultado)  # Saída: (2, 1)
                 '''
         },
         "deque": {
-            "significado": "Tipo de datos en el módulo `collections` de Python que representa una cola doblemente terminada, que permite añadir y eliminar elementos de ambos extremos de manera eficiente.",
-            "uso": "Se utiliza para implementar colas y pilas de manera eficiente.",
-            "ejemplo": '''
+            "significado": "Tipo de dado no módulo `collections` do Python que representa uma fila duplamente terminada, permitindo adicionar e remover elementos de ambos os extremos de forma eficiente.",
+            "uso": "É usado para implementar filas e pilhas de maneira eficiente.",
+            "exemplo": '''
                 from collections import deque
 
                 d = deque([1, 2, 3])
@@ -1162,9 +1162,9 @@ diccionario_por = {
                 '''
         },
         "defaultdict": {
-            "significado": "Clase en el módulo `collections` que extiende el diccionario estándar y permite establecer un valor por defecto para claves inexistentes.",
-            "uso": "Se utiliza para evitar la generación de errores al acceder a claves no existentes, proporcionando un valor por defecto.",
-            "ejemplo": '''
+            "significado": "Classe no módulo `collections` que estende o dicionário padrão e permite definir um valor padrão para chaves inexistentes.",
+            "uso": "É usado para evitar erros ao acessar chaves não existentes, fornecendo um valor padrão.",
+            "exemplo": '''
                 from collections import defaultdict
 
                 d = defaultdict(int)
@@ -1173,29 +1173,29 @@ diccionario_por = {
                 '''
         },
         "decode": {
-            "significado": "Método utilizado para convertir datos binarios en texto en una codificación específica.",
-            "uso": "Se utiliza para decodificar una secuencia de bytes en una cadena de texto en una codificación dada.",
-            "ejemplo": '''
-                encoded = b'Hola Mundo'
+            "significado": "Método usado para converter dados binários em texto em uma codificação específica.",
+            "uso": "É usado para decodificar uma sequência de bytes em uma string de texto em uma codificação específica.",
+            "exemplo": '''
+                encoded = b'Olá Mundo'
                 decoded = encoded.decode('utf-8')
-                print(decoded)  # Saída: Hola Mundo
+                print(decoded)  # Saída: Olá Mundo
                 '''
         },
         "deflate": {
-            "significado": "Algoritmo de compresión de datos sin pérdida, utilizado para reducir el tamaño de los archivos.",
-            "uso": "Se utiliza para comprimir datos en un formato más eficiente.",
-            "ejemplo": '''
+            "significado": "Algoritmo de compressão de dados sem perda, usado para reduzir o tamanho de arquivos.",
+            "uso": "É usado para compactar dados em um formato mais eficiente.",
+            "exemplo": '''
                 import zlib
 
-                data = b'Hola Mundo'*100
-                compressed = zlib.deflate(data)
+                data = b'Olá Mundo'*100
+                compressed = zlib.compress(data)
                 print(compressed)
                 '''
         },
         "deepcopy": {
-            "significado": "Función del módulo `copy` que crea una copia profunda de un objeto, es decir, copia todos los elementos del objeto original, incluso los objetos dentro de objetos.",
-            "uso": "Se utiliza cuando se necesita hacer una copia completa e independiente de un objeto.",
-            "ejemplo": '''
+            "significado": "Função do módulo `copy` que cria uma cópia profunda de um objeto, ou seja, copia todos os elementos do objeto original, incluindo objetos dentro de objetos.",
+            "uso": "É usado quando é necessário fazer uma cópia completa e independente de um objeto.",
+            "exemplo": '''
                 import copy
 
                 original = {'a': [1, 2, 3]}
@@ -1206,9 +1206,9 @@ diccionario_por = {
                 '''
         },
         "detach": {
-            "significado": "Método de objetos en Python, utilizado para separar un objeto de su contexto o de su flujo de datos.",
-            "uso": "Se utiliza para liberar recursos o desvincular un objeto de su entorno de ejecución.",
-            "ejemplo": '''
+            "significado": "Método usado em objetos no Python para desvincular um objeto de seu contexto ou fluxo de dados.",
+            "uso": "É usado para liberar recursos ou desvincular um objeto de seu ambiente de execução.",
+            "exemplo": '''
                 import torch
 
                 tensor = torch.tensor([1, 2, 3])
@@ -1217,9 +1217,9 @@ diccionario_por = {
                 '''
         },
         "dump": {
-            "significado": "Método de la biblioteca `pickle` que serializa un objeto y lo escribe en un archivo.",
-            "uso": "Se utiliza para guardar un objeto en un archivo de forma serializada.",
-            "ejemplo": '''
+            "significado": "Método da biblioteca `pickle` que serializa um objeto e o grava em um arquivo.",
+            "uso": "É usado para salvar um objeto em um arquivo de forma serializada.",
+            "exemplo": '''
                 import pickle
 
                 data = {'a': 1, 'b': 2}
@@ -1228,9 +1228,9 @@ diccionario_por = {
                 '''
         },
         "dumps": {
-            "significado": "Método de la biblioteca `pickle` que serializa un objeto y lo devuelve como una cadena de bytes.",
-            "uso": "Se utiliza para convertir un objeto en un formato de cadena para su almacenamiento o transmisión.",
-            "ejemplo": '''
+            "significado": "Método da biblioteca `pickle` que serializa um objeto e o retorna como uma string de bytes.",
+            "uso": "É usado para converter um objeto em um formato de string para armazenamento ou transmissão.",
+            "exemplo": '''
                 import pickle
 
                 data = {'a': 1, 'b': 2}
@@ -1239,18 +1239,18 @@ diccionario_por = {
                 '''
         },
         "difference": {
-            "significado": "Método de conjuntos en Python que devuelve la diferencia entre dos o más conjuntos.",
-            "uso": "Se utiliza para encontrar los elementos que están en un conjunto pero no en los otros.",
-            "ejemplo": '''
+            "significado": "Método de conjuntos no Python que retorna a diferença entre dois ou mais conjuntos.",
+            "uso": "É usado para encontrar os elementos que estão em um conjunto, mas não nos outros.",
+            "exemplo": '''
                 a = {1, 2, 3}
                 b = {2, 3, 4}
                 print(a.difference(b))  # Saída: {1}
                 '''
         },
         "difference_update": {
-            "significado": "Método de conjuntos en Python que elimina los elementos de un conjunto que están presentes en otro conjunto.",
-            "uso": "Se utiliza para modificar un conjunto eliminando sus elementos que se encuentran en otro conjunto.",
-            "ejemplo": '''
+            "significado": "Método de conjuntos no Python que remove os elementos de um conjunto que estão presentes em outro conjunto.",
+            "uso": "É usado para modificar um conjunto, removendo os elementos que se encontram em outro conjunto.",
+            "exemplo": '''
                 a = {1, 2, 3}
                 b = {2, 3, 4}
                 a.difference_update(b)
@@ -1258,20 +1258,20 @@ diccionario_por = {
                 '''
         },
         "decode_header": {
-            "significado": "Función del módulo `email.header` que decodifica una cabecera de correo electrónico.",
-            "uso": "Se utiliza para decodificar una cabecera de correo electrónico que puede estar en diferentes codificaciones.",
-            "ejemplo": '''
+            "significado": "Função do módulo `email.header` que decodifica um cabeçalho de e-mail.",
+            "uso": "É usada para decodificar um cabeçalho de e-mail que pode estar em diferentes codificações.",
+            "exemplo": '''
                 from email.header import decode_header
 
                 header = '=?utf-8?B?SG9sYSBNdW5kbyA8MTIzNDU+?='
                 decoded, encoding = decode_header(header)[0]
-                print(decoded.decode(encoding))  # Saída: Hola Mundo <12345>
+                print(decoded.decode(encoding))  # Saída: Olá Mundo <12345>
                 '''
         },
         "disk_usage": {
-            "significado": "Función del módulo `shutil` que devuelve el uso del disco de una ruta o directorio.",
-            "uso": "Se utiliza para obtener información sobre el espacio utilizado y disponible en un sistema de archivos.",
-            "ejemplo": '''
+            "significado": "Função do módulo `shutil` que retorna o uso do disco de um caminho ou diretório.",
+            "uso": "É usada para obter informações sobre o espaço usado e disponível em um sistema de arquivos.",
+            "exemplo": '''
                 import shutil
 
                 usage = shutil.disk_usage('/')
@@ -1279,28 +1279,19 @@ diccionario_por = {
                 '''
         },
         "datetime": {
-            "significado": "Módulo de Python que proporciona clases para trabajar con fechas y horas.",
-            "uso": "Se utiliza para manipular y trabajar con fechas, horas y tiempos en general.",
-            "ejemplo": '''
+            "significado": "Módulo do Python que fornece classes para trabalhar com datas e horas.",
+            "uso": "É usado para manipular e trabalhar com datas, horas e tempos em geral.",
+            "exemplo": '''
                 import datetime
 
-                ahora = datetime.datetime.now()
-                print(ahora)  # Saída: 2024-11-22 12:00:00.123456
-                '''
-        },
-        "difference": {
-            "significado": "Método de conjuntos en Python que devuelve la diferencia entre dos o más conjuntos.",
-            "uso": "Se utiliza para obtener los elementos de un conjunto que no están presentes en los demás.",
-            "ejemplo": '''
-                a = {1, 2, 3, 4}
-                b = {2, 3, 5}
-                print(a.difference(b))  # Saída: {1, 4}
+                agora = datetime.datetime.now()
+                print(agora)  # Saída: 2024-11-22 12:00:00.123456
                 '''
         },
         "disk_cache": {
-            "significado": "Almacenamiento en caché en disco para mejorar la velocidad de acceso a datos o resultados computacionales.",
-            "uso": "Se utiliza para almacenar temporalmente resultados o datos en el disco para evitar tener que recalcular o volver a obtener los datos.",
-            "ejemplo": '''
+            "significado": "Armazenamento em cache no disco para melhorar a velocidade de acesso a dados ou resultados computacionais.",
+            "uso": "É usado para armazenar temporariamente resultados ou dados no disco para evitar a necessidade de recalcular ou obter novamente os dados.",
+            "exemplo": '''
                 import joblib
 
                 result = joblib.Memory('cache_dir').cache(some_function)
@@ -2287,11 +2278,6 @@ diccionario_por = {
 
     },
     "g": {
-        "": {
-            "significado": "",
-            "uso": "",
-            "ejemplo": ''''''
-        },
         "get": {
             "significado": "Método que obtiene el valor de una clave en un diccionario. Si la clave no existe, devuelve un valor por defecto.",
             "uso": "Se utiliza para obtener el valor asociado a una clave en un diccionario de manera segura.",
