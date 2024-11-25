@@ -607,7 +607,6 @@ diccionario_eng = {
         },
     },
     "c": {
-        {
     "callable": {
         "significado": "Checks if an object is callable (like a function or a class).",
         "uso": "Used to determine if an object can be called.",
@@ -861,9 +860,7 @@ diccionario_eng = {
             queue.append(4)
             print(queue)  # Output: deque([1, 2, 3, 4])
             '''
-    }
-}
-
+        },
      },
     "d": {
         "del": {
@@ -890,7 +887,7 @@ diccionario_eng = {
             print("cannot be divided by zero")'''
         },
         },
-      "f": {
+    "f": {
          "format": {
             "significado": "Allows values to be inserted within a text string in a more readable and flexible way",
             "uso": "It is used to format strings dynamically, inserting values in specific places",
