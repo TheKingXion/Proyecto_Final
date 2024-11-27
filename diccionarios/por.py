@@ -4133,6 +4133,316 @@ diccionario_por = {
             "uso": "Serve para interagir com o usuário e obter informações.",
             "ejemplo": "input('insira um número')"
         },
+        "immutable": {
+            "significado": "Propriedade de um objeto ou estrutura de dados que não pode ser modificado após sua criação.",
+            "uso": "É usado para garantir que o conteúdo de um objeto não seja alterado depois de definido.",
+            "exemplo": """
+                tupla = (1, 2, 3)
+                # tupla[0] = 4  # Isso geraria um erro, pois tuplas são imutáveis.
+                """
+        },
+        "index": {
+            "significado": "Posição de um elemento dentro de uma sequência ou estrutura de dados.",
+            "uso": "É utilizado para acessar ou referenciar elementos em listas, tuplas ou outros tipos de dados sequenciais.",
+            "exemplo": """
+                lista = [10, 20, 30]
+                print(lista[1])  # Saída: 20
+                """
+        },
+        "instance": {
+            "significado": "Objeto individual de uma classe em programação orientada a objetos.",
+            "uso": "É utilizado para criar e manipular um objeto que foi instanciado a partir de uma classe.",
+            "exemplo": """
+                class Carro:
+                    def __init__(self, modelo):
+                        self.modelo = modelo
+
+                carro1 = Carro("Fusca")  # Instância da classe Carro
+                print(carro1.modelo)  # Saída: Fusca
+                """
+        },
+        "inheritance": {
+            "significado": "Mecanismo da programação orientada a objetos onde uma classe herda propriedades e métodos de outra.",
+            "uso": "É utilizado para criar uma nova classe com base em uma classe existente, reutilizando seu código.",
+            "exemplo": """
+                class Animal:
+                    def falar(self):
+                        print("Som do animal")
+
+                class Cachorro(Animal):
+                    def falar(self):
+                        print("Latido")
+
+                cachorro = Cachorro()
+                cachorro.falar()  # Saída: Latido
+                """
+        },
+        "interface": {
+            "significado": "Contrato que define um conjunto de métodos que uma classe deve implementar, sem fornecer a implementação.",
+            "uso": "É utilizado para especificar o comportamento esperado de classes que implementam a interface.",
+            "exemplo": """
+                from abc import ABC, abstractmethod
+
+                class Forma(ABC):
+                    @abstractmethod
+                    def area(self):
+                        pass
+
+                class Circulo(Forma):
+                    def area(self):
+                        return 3.14 * 10 * 10
+                """
+        },
+        "instance_method": {
+            "significado": "Método que é definido dentro de uma classe e opera sobre instâncias dessa classe.",
+            "uso": "É utilizado para realizar operações ou manipular dados associados a uma instância específica de uma classe.",
+            "exemplo": """
+                class Pessoa:
+                    def saudacao(self):
+                        print("Olá, sou uma pessoa.")
+
+                p = Pessoa()
+                p.saudacao()  # Saída: Olá, sou uma pessoa.
+                """
+        },
+        "immutable_set": {
+            "significado": "Estrutura de dados do tipo conjunto (set) que não pode ser modificada após sua criação.",
+            "uso": "É usado quando se deseja garantir que os elementos de um conjunto não sejam alterados após a criação.",
+            "exemplo": """
+                conjunto_imutavel = frozenset([1, 2, 3])
+                # conjunto_imutavel.add(4)  # Isso geraria um erro, pois o conjunto é imutável
+                """
+        },
+        "increment": {
+            "significado": "Ação de aumentar o valor de uma variável ou contador.",
+            "uso": "É utilizado para adicionar um valor a uma variável, frequentemente usado em contagens ou iterações.",
+            "exemplo": """
+                contador = 0
+                contador += 1  # Incrementa o valor de contador
+                print(contador)  # Saída: 1
+                """
+        },
+        "input_validation": {
+            "significado": "Processo de verificar se os dados inseridos são válidos de acordo com critérios específicos.",
+            "uso": "É utilizado para garantir que os dados fornecidos pelo usuário ou sistema estejam no formato correto antes de serem processados.",
+            "exemplo": """
+                idade = int(input("Qual a sua idade? "))
+                if idade < 0:
+                    print("Idade inválida.")
+                else:
+                    print("Idade válida.")
+                """
+        },
+        "indexing": {
+            "significado": "Ação de acessar um elemento em uma estrutura de dados sequencial usando seu índice.",
+            "uso": "É utilizado para buscar elementos em listas, tuplas, ou strings usando a posição de cada item.",
+            "exemplo": """
+                lista = ['a', 'b', 'c']
+                print(lista[0])  # Saída: 'a'
+                """
+        },
+        "insertion_sort": {
+            "significado": "Algoritmo de ordenação que constrói a sequência ordenada um item de cada vez, inserindo o item na posição correta.",
+            "uso": "É utilizado para ordenar listas ou arrays de forma eficiente para pequenos conjuntos de dados.",
+            "exemplo": """
+                def insertion_sort(arr):
+                    for i in range(1, len(arr)):
+                        chave = arr[i]
+                        j = i - 1
+                        while j >= 0 and chave < arr[j]:
+                            arr[j + 1] = arr[j]
+                            j -= 1
+                        arr[j + 1] = chave
+                    return arr
+
+                lista = [12, 11, 13, 5, 6]
+                print(insertion_sort(lista))  # Saída: [5, 6, 11, 12, 13]
+                """
+        },
+        "integer": {
+            "significado": "Tipo de dado que representa números inteiros, sem parte decimal.",
+            "uso": "É utilizado para armazenar valores numéricos inteiros.",
+            "exemplo": """
+                numero = 42
+                print(type(numero))  # Saída: <class 'int'>
+                """
+        },
+        "iterable": {
+            "significado": "Objeto que pode ser iterado (percorrido) em um loop, como listas, tuplas e strings.",
+            "uso": "É utilizado para referir-se a qualquer objeto que tenha suporte a iteração, permitindo o acesso aos seus elementos um a um.",
+            "exemplo": """
+                lista = [1, 2, 3]
+                for item in lista:
+                    print(item)
+                """
+        },
+        "identifier": {
+            "significado": "Nome que identifica uma variável, função, classe ou outro elemento no código.",
+            "uso": "É utilizado para dar nome a componentes de um programa, como variáveis e funções, para que possam ser referenciados no código.",
+            "exemplo": """
+                nome = "João"
+                idade = 30
+                print(nome, idade)  # Saída: João 30
+                """
+        },
+        "iteration": {
+                "significado": "Processo de percorrer uma sequência ou estrutura de dados, como uma lista ou tupla, para acessar seus elementos um a um.",
+                "uso": "É utilizado para realizar operações em cada elemento de uma sequência, geralmente com o uso de um laço de repetição.",
+                "exemplo": """
+                    lista = [1, 2, 3]
+                    for item in lista:
+                        print(item)
+                    """
+            },
+            "IP_address": {
+                "significado": "Endereço único atribuído a dispositivos conectados a uma rede, usado para identificá-los e permitir a comunicação.",
+                "uso": "É utilizado para identificar de forma única dispositivos em redes locais ou na internet.",
+                "exemplo": """
+                    ip = "192.168.1.1"
+                    print("IP do dispositivo:", ip)
+                    """
+            },
+            "if_statement": {
+                "significado": "Estrutura condicional utilizada para executar um bloco de código se uma condição for verdadeira.",
+                "uso": "É utilizado para controlar o fluxo de execução de um programa, realizando diferentes ações dependendo das condições.",
+                "exemplo": """
+                    idade = 18
+                    if idade >= 18:
+                        print("Maior de idade")
+                    else:
+                        print("Menor de idade")
+                    """
+            },
+            "interface_class": {
+                "significado": "Classe que define um conjunto de métodos que outras classes devem implementar, sem fornecer uma implementação concreta.",
+                "uso": "É utilizado para criar contratos de comportamento que as classes que a implementarem devem seguir.",
+                "exemplo": """
+                    from abc import ABC, abstractmethod
+
+                    class Veiculo(ABC):
+                        @abstractmethod
+                        def mover(self):
+                            pass
+
+                    class Carro(Veiculo):
+                        def mover(self):
+                            print("Carro em movimento")
+                    """
+            },
+            "input_device": {
+                "significado": "Dispositivo utilizado para inserir dados em um computador ou sistema, como teclado, mouse, ou scanner.",
+                "uso": "É utilizado para permitir que o usuário ou outro sistema forneça dados para o computador.",
+                "exemplo": """
+                    teclado = "Teclado USB"
+                    print("Dispositivo de entrada:", teclado)
+                    """
+            },
+            "introspection": {
+                "significado": "Processo de inspeção de objetos em tempo de execução para obter informações sobre suas propriedades e comportamentos.",
+                "uso": "É utilizado para examinar e manipular a estrutura interna de um objeto ou classe em um programa.",
+                "exemplo": """
+                    x = 42
+                    print(type(x))  # Saída: <class 'int'>
+                    print(dir(x))  # Saída: lista de atributos e métodos do objeto
+                    """
+            },
+            "instance_variable": {
+                "significado": "Variável que pertence a uma instância específica de uma classe, armazenando dados relacionados àquela instância.",
+                "uso": "É utilizado para armazenar dados que são específicos a cada objeto instanciado de uma classe.",
+                "exemplo": """
+                    class Carro:
+                        def __init__(self, modelo):
+                            self.modelo = modelo
+
+                    carro1 = Carro("Fusca")
+                    print(carro1.modelo)  # Saída: Fusca
+                    """
+            },
+            "index_out_of_bounds": {
+                "significado": "Erro que ocorre quando se tenta acessar um índice fora do intervalo válido de uma sequência ou lista.",
+                "uso": "É utilizado para descrever um erro comum quando se trabalha com índices em sequências de dados.",
+                "exemplo": """
+                    lista = [1, 2, 3]
+                    # print(lista[5])  # Isso causaria um erro de índice fora dos limites
+                    """
+            },
+            "input_output": {
+                "significado": "Operações que envolvem a recepção (entrada) e o envio (saída) de dados entre o programa e o ambiente externo.",
+                "uso": "É utilizado para descrever a interação de um programa com o usuário ou outros sistemas, por meio de entrada e saída de dados.",
+                "exemplo": """
+                    nome = input("Qual seu nome? ")
+                    print("Olá, " + nome)
+                    """
+            },
+            "inplace": {
+                "significado": "Operação realizada diretamente sobre os dados originais, sem criar uma cópia.",
+                "uso": "É utilizado para modificar os dados diretamente na memória sem a necessidade de alocar novo espaço para os dados.",
+                "exemplo": """
+                    lista = [1, 2, 3]
+                    lista.append(4)  # Modifica a lista original inplace
+                    print(lista)  # Saída: [1, 2, 3, 4]
+                    """
+            },
+            "inherit": {
+                "significado": "Ação de uma classe herdar propriedades e métodos de outra classe, permitindo reutilização de código.",
+                "uso": "É utilizado para criar classes derivadas, que herdam funcionalidades de classes base.",
+                "exemplo": """
+                    class Animal:
+                        def falar(self):
+                            print("Som do animal")
+
+                    class Cachorro(Animal):
+                        def falar(self):
+                            print("Latido")
+
+                    cachorro = Cachorro()
+                    cachorro.falar()  # Saída: Latido
+                    """
+            },
+            "index_of": {
+                "significado": "Método utilizado para encontrar a posição (índice) de um elemento dentro de uma sequência, como uma lista ou string.",
+                "uso": "É utilizado para localizar a posição de um item em uma lista ou sequência.",
+                "exemplo": """
+                    lista = [10, 20, 30, 40]
+                    print(lista.index(30))  # Saída: 2
+                    """
+            },
+            "instruction_set": {
+                "significado": "Conjunto de instruções que um processador é capaz de executar, formando a base para a execução de programas.",
+                "uso": "É utilizado para descrever as operações que um processador pode realizar para executar um programa.",
+                "exemplo": """
+                    A arquitetura de um processador define seu conjunto de instruções.
+                    """
+            },
+            "iterable_object": {
+                "significado": "Objeto que pode ser percorrido em um laço de repetição, como listas, tuplas e strings.",
+                "uso": "É utilizado para se referir a objetos que implementam o protocolo de iteração, permitindo o acesso a seus elementos sequencialmente.",
+                "exemplo": """
+                    lista = [1, 2, 3]
+                    for item in lista:
+                        print(item)
+                    """
+            },
+            "image_processing": {
+                "significado": "Técnicas e algoritmos usados para manipular e analisar imagens digitais.",
+                "uso": "É utilizado para modificar, melhorar ou extrair informações de imagens por meio de processos computacionais.",
+                "exemplo": """
+                    import cv2
+                    imagem = cv2.imread("imagem.jpg")
+                    imagem_cinza = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
+                    cv2.imshow("Imagem em cinza", imagem_cinza)
+                    cv2.waitKey(0)
+                    """
+            },
+            "indirect_addressing": {
+                "significado": "Método de acesso a dados em que o endereço de memória é armazenado em um local, e o valor real é obtido a partir desse endereço.",
+                "uso": "É utilizado para referenciar dados de forma indireta, permitindo maior flexibilidade e dinamismo na manipulação de memória.",
+                "exemplo": """
+                    # Isso envolve manipulação avançada de ponteiros e endereços em linguagens como C.
+                    """
+            },
+
+
         
     },
     "j": {
