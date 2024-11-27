@@ -4128,11 +4128,6 @@ diccionario_por = {
             "uso": "Usado para tomar decisões no fluxo de um programa.",
             "ejemplo": "if x > 10: print('Maior que 10')"
         },
-        "input": {
-            "significado": "Lê dados inseridos pelo usuário no console",
-            "uso": "Serve para interagir com o usuário e obter informações.",
-            "ejemplo": "input('insira um número')"
-        },
         "immutable": {
             "significado": "Propriedade de um objeto ou estrutura de dados que não pode ser modificado após sua criação.",
             "uso": "É usado para garantir que o conteúdo de um objeto não seja alterado depois de definido.",
@@ -4441,12 +4436,32 @@ diccionario_por = {
                     # Isso envolve manipulação avançada de ponteiros e endereços em linguagens como C.
                     """
             },
+            "i/o_buffer": {
+                "significado": "Área de almacenamiento temporal utilizada para transferir datos entre dispositivos de entrada y salida.",
+                "uso": "É utilizado para suavizar a comunicação entre sistemas que operam com diferentes velocidades, armazenando dados temporariamente.",
+                "exemplo": """
+                    with open('arquivo.txt', 'r') as file:
+                        buffer = file.read()
+                        print(buffer)
+                    """
+            },
+            "instance_variable": {
+                "significado": "Variável que pertence a uma instância específica de uma classe, armazenando dados relacionados àquela instância.",
+                "uso": "É utilizado para armazenar dados que são específicos a cada objeto instanciado de uma classe.",
+                "exemplo": """
+                    class Carro:
+                        def __init__(self, modelo):
+                            self.modelo = modelo
+
+                    carro1 = Carro("Fusca")
+                    print(carro1.modelo)  # Saída: Fusca
+                    """
+            },
 
 
-        
     },
     "j": {
-        # Aquí puedes agregar funciones que comiencen con la letra J
+       
     },
     "k": {
         "kwargs": {
