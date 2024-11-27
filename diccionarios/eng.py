@@ -863,12 +863,306 @@ diccionario_eng = {
         },
      },
     "d": {
+        "def": {
+            "significado": "Python keyword used to define a function",
+            "uso": "It is used to create a new function with a name and a block of code",
+            "ejemplo": '''
+                def Hello_world():
+                    print('Hello World')
+
+                Hello_world()  # Output: Hello World
+                '''
+        },
+        "delattr": {
+            "significado": "Function that removes an attribute from an object in Python",
+            "uso": "It is used to exclude a specific attribute of an object",
+            "ejemplo": '''
+                class Person:
+                    def __init__(self, name):
+                        self.name = name
+
+                p = Person('pepe')
+                delattr(p, 'name')
+                print(hasattr(p, 'name'))  # Output: False
+                '''
+        },
+        "dataframe": {
+            "significado": "Two-dimensional data structure in the Pandas library, similar to a table, which allows you to store data of different types",
+            "uso": "It is used to manipulate large volumes of tabular data in Python",
+            "ejemplo": '''
+                import pandas as pd
+
+                data = {'Name': ['pepe', 'Lala'], 'age': [28, 22]}
+                df = pd.DataFrame(data)
+                print(df)
+                '''
+        },
+        "decode": {
+            "significado": "A method used to decode binary data into a text format, usually in an encoding such as UTF-8",
+            "uso": "It is used to convert binary data into readable text strings",
+            "ejemplo": '''
+                Encoded = b'Hello World'
+                Decoded = Encoded.decode('utf-8')
+                print(Decoded)  # Output: Hello World
+                '''
+        },
+        "decimal": {
+            "significado": "Python module that provides support for performing calculations with arbitrary precision decimals",
+            "uso": "It is used to perform accurate arithmetic operations without the rounding errors typical of floating-point numbers",
+            "ejemplo": '''
+                from decimal import Decimal
+
+                x = Decimal('0.1')
+                y = Decimal('0.2')
+                print(x + y)  # Output: 0.3
+                '''
+        },
+        "device": {
+            "significado": "General term to refer to any hardware device or system where a program runs",
+            "uso": "It is used to refer to devices such as computers, mobile phones, etc",
+            "ejemplo": '''
+            import torch
+
+            device = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
+
+            print(f'Using device: {device}')
+
+            tensor = torch.randn(3, 3)
+            tensor = tensor.to(device)
+
+            print(f'Tensor: {tensor}')
+            print(f'Tensor is on device: {tensor.device}')
+            '''
+        },
+        "dict.get": {
+            "significado": "Python dictionaries method that returns the value of a specified key or a default value if the key does not exist",
+            "uso": "It is used to get the value associated with a key without generating an error if the key does not exist",
+            "ejemplo": '''
+                d = {'a': 1, 'b': 2}
+                print(d.get('a'))  # Output: 1
+                print(d.get('c', 'not found'))  # Output: not found
+                '''
+        },
+        "dropna": {
+            "significado": "Method in Pandas used to remove missing values (NaN) in a DataFrame or Series",
+            "uso": "It is used to clean up data by removing rows or columns that contain null values",
+            "ejemplo": '''
+                import pandas as pd
+
+                df = pd.DataFrame({'A': [1, 2, None], 'B': [None, 3, 4]})
+                print(df.dropna())
+                '''
+        },
+        "dtype": {
+            "significado": "Property of arrays in Numpy or columns in a Pandas DataFrame that indicates the data type of the elements",
+            "uso": "It is used to obtain or specify the type of data of an array or column",
+            "ejemplo": '''
+                import numpy as np
+
+                arr = np.array([1, 2, 3])
+                print(arr.dtype)  # Output: int64
+                '''
+        },
+        "deque.appendleft": {
+            "significado": "Method of the 'deck' data type in the 'collections' module that adds an element to the beginning of the deck",
+            "uso": "It is used to insert a new element on the left side of a deck",
+            "ejemplo": '''
+                from collections import deque
+
+                d = deque([2, 3, 4])
+                d.appendleft(1)
+                print(d)  # Output: deque([1, 2, 3, 4])
+                '''
+        },
+        "dict.update": {
+            "significado": "Python dictionaries method that updates a dictionary with the elements of another dictionary or iterable",
+            "uso": "It is used to add or modify elements in a dictionary using another dictionary or iterate",
+            "ejemplo": '''
+                d1 = {'a': 1, 'b': 2}
+                d2 = {'b': 3, 'c': 4}
+                d1.update(d2)
+                print(d1)  # Output: {'a': 1, 'b': 3, 'c': 4}
+                '''
+        },
         "del": {
-            "significado": "Remove a object or variable",
-            "uso": "Delete a object, variable or element from a colletion",
-            "ejemplo": '''list = [1, 2, 3]
-            del list[0]
-            print(list)  # [2, 3]'''
+            "significado": "Python keyword that removes an attribute or element from a collection",
+            "uso": "It is used to remove elements from a list, an object's attribute, or a variable",
+            "ejemplo": '''
+                list = [1, 2, 3]
+                del list[1]
+                print(list)  # Output: [1, 3]
+                '''
+        },
+        "dict": {
+            "significado": "Type of data in Python that represents a dictionary, a collection of key-value pairs",
+            "uso": "It is used to store and manipulate data efficiently by associating unique keys with values",
+            "ejemplo": '''
+                d = {'a': 1, 'b': 2}
+                print(d['a'])  # Output: 1
+                '''
+        },
+        "dir": {
+            "significado": "Function that returns a list of an object's attributes and methods",
+            "uso": "It is used to obtain information about the methods and attributes available for an object or module",
+            "ejemplo": '''
+                x = [1, 2, 3]
+                print(dir(x))
+                '''
+        },
+        "divmod": {
+            "significado": "Function that takes two numbers and returns a tuple with the quotient and the rest of its division",
+            "uso": "It is used to obtain both the quotient and the remainder of a division in a single operation",
+            "ejemplo": '''
+                result = divmod(9, 4)
+                print(result)  # Output: (2, 1)
+                '''
+        },
+        "deque": {
+            "significado": "Type of data in the Python 'collections' module that represents a double-ended queue, allowing you to add and remove elements from both ends efficiently",
+            "uso": "It is used to implement queues and stacks in an efficient manner",
+            "ejemplo": '''
+                from collections import deque
+
+                d = deque([1, 2, 3])
+                d.append(4)
+                print(d)  # Output: deque([1, 2, 3, 4])
+                '''
+        },
+        "defaultdict": {
+            "significado": "Class in the 'collections' module that extends the default dictionary and allows you to set a default value for non-existent keys",
+            "uso": "It is used to prevent errors when accessing non-existent keys by providing a default value",
+            "ejemplo": '''
+                from collections import defaultdict
+
+                d = defaultdict(int)
+                d['a'] += 1
+                print(d)  # Output: defaultdict(<class 'int'>, {'a': 1})
+                '''
+        },
+        "decode": {
+            "significado": "Method used to convert binary data to text in a specific encoding",
+            "uso": "It is used to decode a sequence of bytes into a text string in a specific encoding",
+            "ejemplo": '''
+                encoded = b'Hello World'
+                decoded = encoded.decode('utf-8')
+                print(decoded)  # Output: Hello Wolrd
+                '''
+        },
+        "deflate": {
+            "significado": "Lossless data compression algorithm, used to reduce file sizes",
+            "uso": "It is used to compress data into a more efficient format",
+            "ejemplo": '''
+                import zlib
+
+                data = b'Hello Wolrd'*100
+                compressed = zlib.compress(data)
+                print(compressed)
+                '''
+        },
+        "deepcopy": {
+            "significado": "Function of the 'copy' module that creates a deep copy of an object, i.e. copies all elements of the original object, including objects within objects",
+            "uso": "It is used when it is necessary to make a complete and independent copy of an object",
+            "ejemplo": '''
+                import copy
+
+                original = {'a': [1, 2, 3]}
+                copy = copy.deepcopy(original)
+                copy['a'][0] = 100
+                print(original)  # Output: {'a': [1, 2, 3]}
+                print(copy)     # Output: {'a': [100, 2, 3]}
+                '''
+        },
+        "detach": {
+            "significado": "Method used on objects in Python to unlink an object from its context or dataflow",
+            "uso": "It is used to free up resources or unbind an object from its execution environment",
+            "ejemplo": '''
+                import torch
+
+                tensor = torch.tensor([1, 2, 3])
+                detached_tensor = tensor.detach()
+                print(detached_tensor)  # Output: tensor([1, 2, 3])
+                '''
+        },
+        "dump": {
+            "significado": "Pickle library method that serializes an object and writes it to a file",
+            "uso": "It is used to save an object to a file in serialized form",
+            "ejemplo": '''
+                import pickle
+
+                data = {'a': 1, 'b': 2}
+                with open('data.pkl', 'wb') as f:
+                    pickle.dump(data, f)
+                '''
+        },
+        "dumps": {
+            "significado": "Pickle library method that serializes an object and returns it as a byte string",
+            "uso": "It is used to convert an object into a string format for storage or transmission",
+            "ejemplo": '''
+                import pickle
+
+                data = {'a': 1, 'b': 2}
+                serialized = pickle.dumps(data)
+                print(serialized)
+                '''
+        },
+        "difference": {
+            "significado": "Sets method in Python that returns the difference between two or more sets",
+            "uso": "It is used to find the elements that are in one set but not in the others",
+            "ejemplo": '''
+                a = {1, 2, 3}
+                b = {2, 3, 4}
+                print(a.difference(b))  # Output: {1}
+                '''
+        },
+        "difference_update": {
+            "significado": "Sets method in Python that removes elements from one set that are present in another set",
+            "uso": "It is used to modify a set by removing the elements that are in another set",
+            "ejemplo": '''
+                a = {1, 2, 3}
+                b = {2, 3, 4}
+                a.difference_update(b)
+                print(a)  # Output: {1}
+                '''
+        },
+        "decode_header": {
+            "significado": "Function of the 'email.header' module that decodes an email header",
+            "uso": "It is used to decode an email header that can be in different encodings",
+            "ejemplo": '''
+                from email.header import decode_header
+
+                header = '=?utf-8?B?SG9sYSBNdW5kbyA8MTIzNDU+?='
+                decoded, encoding = decode_header(header)[0]
+                print(decoded.decode(encoding))  # Output: Hello World <12345>
+                '''
+        },
+        "disk_usage": {
+            "significado": "Function of the 'shutil' module that returns disk usage of a path or directory",
+            "uso": "It is used to obtain information about the used and available space in a file system",
+            "ejemplo": '''
+                import shutil
+
+                usage = shutil.disk_usage('/')
+                print(usage)  # Output: usage(total=500000000, used=200000000, free=300000000)
+                '''
+        },
+        "datetime": {
+            "significado": "Python module that provides classes for working with dates and times",
+            "uso": "It is used to manipulate and work with dates, times and times in general",
+            "ejemplo": '''
+                import datetime
+
+                now = datetime.datetime.now()
+                print(now)  # Output: 2024-11-22 12:00:00.123456
+                '''
+        },
+        "disk_cache": {
+            "significado": "Disk caching to improve data access speed or computational results",
+            "uso": "It is used to temporarily store results or data on disk to avoid the need to recalculate or re-obtain the data",
+            "ejemplo": '''
+                import joblib
+
+                result = joblib.Memory('cache_dir').cache(some_function)
+                '''
         },
     },
     "e": {
