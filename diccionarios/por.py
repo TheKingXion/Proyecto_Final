@@ -4131,35 +4131,35 @@ diccionario_por = {
         "immutable": {
             "significado": "Propriedade de um objeto ou estrutura de dados que não pode ser modificado após sua criação.",
             "uso": "É usado para garantir que o conteúdo de um objeto não seja alterado depois de definido.",
-            "exemplo": """
+            "ejemplo": '''
                 tupla = (1, 2, 3)
                 # tupla[0] = 4  # Isso geraria um erro, pois tuplas são imutáveis.
-                """
+                '''
         },
         "index": {
             "significado": "Posição de um elemento dentro de uma sequência ou estrutura de dados.",
             "uso": "É utilizado para acessar ou referenciar elementos em listas, tuplas ou outros tipos de dados sequenciais.",
-            "exemplo": """
+            "ejemplo": '''
                 lista = [10, 20, 30]
                 print(lista[1])  # Saída: 20
-                """
+                '''
         },
         "instance": {
             "significado": "Objeto individual de uma classe em programação orientada a objetos.",
             "uso": "É utilizado para criar e manipular um objeto que foi instanciado a partir de uma classe.",
-            "exemplo": """
+            "ejemplo": '''
                 class Carro:
                     def __init__(self, modelo):
                         self.modelo = modelo
 
                 carro1 = Carro("Fusca")  # Instância da classe Carro
                 print(carro1.modelo)  # Saída: Fusca
-                """
+                '''
         },
         "inheritance": {
             "significado": "Mecanismo da programação orientada a objetos onde uma classe herda propriedades e métodos de outra.",
             "uso": "É utilizado para criar uma nova classe com base em uma classe existente, reutilizando seu código.",
-            "exemplo": """
+            "ejemplo": '''
                 class Animal:
                     def falar(self):
                         print("Som do animal")
@@ -4170,12 +4170,12 @@ diccionario_por = {
 
                 cachorro = Cachorro()
                 cachorro.falar()  # Saída: Latido
-                """
+                '''
         },
         "interface": {
             "significado": "Contrato que define um conjunto de métodos que uma classe deve implementar, sem fornecer a implementação.",
             "uso": "É utilizado para especificar o comportamento esperado de classes que implementam a interface.",
-            "exemplo": """
+            "ejemplo": '''
                 from abc import ABC, abstractmethod
 
                 class Forma(ABC):
@@ -4186,60 +4186,60 @@ diccionario_por = {
                 class Circulo(Forma):
                     def area(self):
                         return 3.14 * 10 * 10
-                """
+                '''
         },
         "instance_method": {
             "significado": "Método que é definido dentro de uma classe e opera sobre instâncias dessa classe.",
             "uso": "É utilizado para realizar operações ou manipular dados associados a uma instância específica de uma classe.",
-            "exemplo": """
+            "ejemplo": '''
                 class Pessoa:
                     def saudacao(self):
                         print("Olá, sou uma pessoa.")
 
                 p = Pessoa()
                 p.saudacao()  # Saída: Olá, sou uma pessoa.
-                """
+                '''
         },
         "immutable_set": {
             "significado": "Estrutura de dados do tipo conjunto (set) que não pode ser modificada após sua criação.",
             "uso": "É usado quando se deseja garantir que os elementos de um conjunto não sejam alterados após a criação.",
-            "exemplo": """
+            "ejemplo": '''
                 conjunto_imutavel = frozenset([1, 2, 3])
                 # conjunto_imutavel.add(4)  # Isso geraria um erro, pois o conjunto é imutável
-                """
+                '''
         },
         "increment": {
             "significado": "Ação de aumentar o valor de uma variável ou contador.",
             "uso": "É utilizado para adicionar um valor a uma variável, frequentemente usado em contagens ou iterações.",
-            "exemplo": """
+            "ejemplo": '''
                 contador = 0
                 contador += 1  # Incrementa o valor de contador
                 print(contador)  # Saída: 1
-                """
+                '''
         },
         "input_validation": {
             "significado": "Processo de verificar se os dados inseridos são válidos de acordo com critérios específicos.",
             "uso": "É utilizado para garantir que os dados fornecidos pelo usuário ou sistema estejam no formato correto antes de serem processados.",
-            "exemplo": """
+            "ejemplo": '''
                 idade = int(input("Qual a sua idade? "))
                 if idade < 0:
                     print("Idade inválida.")
                 else:
                     print("Idade válida.")
-                """
+                '''
         },
         "indexing": {
             "significado": "Ação de acessar um elemento em uma estrutura de dados sequencial usando seu índice.",
             "uso": "É utilizado para buscar elementos em listas, tuplas, ou strings usando a posição de cada item.",
-            "exemplo": """
+            "ejemplo": '''
                 lista = ['a', 'b', 'c']
                 print(lista[0])  # Saída: 'a'
-                """
+                '''
         },
         "insertion_sort": {
             "significado": "Algoritmo de ordenação que constrói a sequência ordenada um item de cada vez, inserindo o item na posição correta.",
             "uso": "É utilizado para ordenar listas ou arrays de forma eficiente para pequenos conjuntos de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 def insertion_sort(arr):
                     for i in range(1, len(arr)):
                         chave = arr[i]
@@ -4252,66 +4252,66 @@ diccionario_por = {
 
                 lista = [12, 11, 13, 5, 6]
                 print(insertion_sort(lista))  # Saída: [5, 6, 11, 12, 13]
-                """
+                '''
         },
         "integer": {
             "significado": "Tipo de dado que representa números inteiros, sem parte decimal.",
             "uso": "É utilizado para armazenar valores numéricos inteiros.",
-            "exemplo": """
+            "ejemplo": '''
                 numero = 42
                 print(type(numero))  # Saída: <class 'int'>
-                """
+                '''
         },
         "iterable": {
             "significado": "Objeto que pode ser iterado (percorrido) em um loop, como listas, tuplas e strings.",
             "uso": "É utilizado para referir-se a qualquer objeto que tenha suporte a iteração, permitindo o acesso aos seus elementos um a um.",
-            "exemplo": """
+            "ejemplo": '''
                 lista = [1, 2, 3]
                 for item in lista:
                     print(item)
-                """
+                '''
         },
         "identifier": {
             "significado": "Nome que identifica uma variável, função, classe ou outro elemento no código.",
             "uso": "É utilizado para dar nome a componentes de um programa, como variáveis e funções, para que possam ser referenciados no código.",
-            "exemplo": """
+            "ejemplo": '''
                 nome = "João"
                 idade = 30
                 print(nome, idade)  # Saída: João 30
-                """
+                '''
         },
         "iteration": {
                 "significado": "Processo de percorrer uma sequência ou estrutura de dados, como uma lista ou tupla, para acessar seus elementos um a um.",
                 "uso": "É utilizado para realizar operações em cada elemento de uma sequência, geralmente com o uso de um laço de repetição.",
-                "exemplo": """
+                "ejemplo": '''
                     lista = [1, 2, 3]
                     for item in lista:
                         print(item)
-                    """
+                    '''
             },
             "IP_address": {
                 "significado": "Endereço único atribuído a dispositivos conectados a uma rede, usado para identificá-los e permitir a comunicação.",
                 "uso": "É utilizado para identificar de forma única dispositivos em redes locais ou na internet.",
-                "exemplo": """
+                "ejemplo": '''
                     ip = "192.168.1.1"
                     print("IP do dispositivo:", ip)
-                    """
+                    '''
             },
             "if_statement": {
                 "significado": "Estrutura condicional utilizada para executar um bloco de código se uma condição for verdadeira.",
                 "uso": "É utilizado para controlar o fluxo de execução de um programa, realizando diferentes ações dependendo das condições.",
-                "exemplo": """
+                "ejemplo": '''
                     idade = 18
                     if idade >= 18:
                         print("Maior de idade")
                     else:
                         print("Menor de idade")
-                    """
+                    '''
             },
             "interface_class": {
                 "significado": "Classe que define um conjunto de métodos que outras classes devem implementar, sem fornecer uma implementação concreta.",
                 "uso": "É utilizado para criar contratos de comportamento que as classes que a implementarem devem seguir.",
-                "exemplo": """
+                "ejemplo": '''
                     from abc import ABC, abstractmethod
 
                     class Veiculo(ABC):
@@ -4322,66 +4322,66 @@ diccionario_por = {
                     class Carro(Veiculo):
                         def mover(self):
                             print("Carro em movimento")
-                    """
+                    '''
             },
             "input_device": {
                 "significado": "Dispositivo utilizado para inserir dados em um computador ou sistema, como teclado, mouse, ou scanner.",
                 "uso": "É utilizado para permitir que o usuário ou outro sistema forneça dados para o computador.",
-                "exemplo": """
+                "ejemplo": '''
                     teclado = "Teclado USB"
                     print("Dispositivo de entrada:", teclado)
-                    """
+                    '''
             },
             "introspection": {
                 "significado": "Processo de inspeção de objetos em tempo de execução para obter informações sobre suas propriedades e comportamentos.",
                 "uso": "É utilizado para examinar e manipular a estrutura interna de um objeto ou classe em um programa.",
-                "exemplo": """
+                "ejemplo": '''
                     x = 42
                     print(type(x))  # Saída: <class 'int'>
                     print(dir(x))  # Saída: lista de atributos e métodos do objeto
-                    """
+                    '''
             },
             "instance_variable": {
                 "significado": "Variável que pertence a uma instância específica de uma classe, armazenando dados relacionados àquela instância.",
                 "uso": "É utilizado para armazenar dados que são específicos a cada objeto instanciado de uma classe.",
-                "exemplo": """
+                "ejemplo": '''
                     class Carro:
                         def __init__(self, modelo):
                             self.modelo = modelo
 
                     carro1 = Carro("Fusca")
                     print(carro1.modelo)  # Saída: Fusca
-                    """
+                    '''
             },
             "index_out_of_bounds": {
                 "significado": "Erro que ocorre quando se tenta acessar um índice fora do intervalo válido de uma sequência ou lista.",
                 "uso": "É utilizado para descrever um erro comum quando se trabalha com índices em sequências de dados.",
-                "exemplo": """
+                "ejemplo": '''
                     lista = [1, 2, 3]
                     # print(lista[5])  # Isso causaria um erro de índice fora dos limites
-                    """
+                    '''
             },
             "input_output": {
                 "significado": "Operações que envolvem a recepção (entrada) e o envio (saída) de dados entre o programa e o ambiente externo.",
                 "uso": "É utilizado para descrever a interação de um programa com o usuário ou outros sistemas, por meio de entrada e saída de dados.",
-                "exemplo": """
+                "ejemplo": '''
                     nome = input("Qual seu nome? ")
                     print("Olá, " + nome)
-                    """
+                    '''
             },
             "inplace": {
                 "significado": "Operação realizada diretamente sobre os dados originais, sem criar uma cópia.",
                 "uso": "É utilizado para modificar os dados diretamente na memória sem a necessidade de alocar novo espaço para os dados.",
-                "exemplo": """
+                "ejemplo": '''
                     lista = [1, 2, 3]
                     lista.append(4)  # Modifica a lista original inplace
                     print(lista)  # Saída: [1, 2, 3, 4]
-                    """
+                    '''
             },
             "inherit": {
                 "significado": "Ação de uma classe herdar propriedades e métodos de outra classe, permitindo reutilização de código.",
                 "uso": "É utilizado para criar classes derivadas, que herdam funcionalidades de classes base.",
-                "exemplo": """
+                "ejemplo": '''
                     class Animal:
                         def falar(self):
                             print("Som do animal")
@@ -4392,70 +4392,70 @@ diccionario_por = {
 
                     cachorro = Cachorro()
                     cachorro.falar()  # Saída: Latido
-                    """
+                    '''
             },
             "index_of": {
                 "significado": "Método utilizado para encontrar a posição (índice) de um elemento dentro de uma sequência, como uma lista ou string.",
                 "uso": "É utilizado para localizar a posição de um item em uma lista ou sequência.",
-                "exemplo": """
+                "ejemplo": '''
                     lista = [10, 20, 30, 40]
                     print(lista.index(30))  # Saída: 2
-                    """
+                    '''
             },
             "instruction_set": {
                 "significado": "Conjunto de instruções que um processador é capaz de executar, formando a base para a execução de programas.",
                 "uso": "É utilizado para descrever as operações que um processador pode realizar para executar um programa.",
-                "exemplo": """
+                "ejemplo": '''
                     A arquitetura de um processador define seu conjunto de instruções.
-                    """
+                    '''
             },
             "iterable_object": {
                 "significado": "Objeto que pode ser percorrido em um laço de repetição, como listas, tuplas e strings.",
                 "uso": "É utilizado para se referir a objetos que implementam o protocolo de iteração, permitindo o acesso a seus elementos sequencialmente.",
-                "exemplo": """
+                "ejemplo": '''
                     lista = [1, 2, 3]
                     for item in lista:
                         print(item)
-                    """
+                    '''
             },
             "image_processing": {
                 "significado": "Técnicas e algoritmos usados para manipular e analisar imagens digitais.",
                 "uso": "É utilizado para modificar, melhorar ou extrair informações de imagens por meio de processos computacionais.",
-                "exemplo": """
+                "ejemplo": '''
                     import cv2
                     imagem = cv2.imread("imagem.jpg")
                     imagem_cinza = cv2.cvtColor(imagem, cv2.COLOR_BGR2GRAY)
                     cv2.imshow("Imagem em cinza", imagem_cinza)
                     cv2.waitKey(0)
-                    """
+                    '''
             },
             "indirect_addressing": {
                 "significado": "Método de acesso a dados em que o endereço de memória é armazenado em um local, e o valor real é obtido a partir desse endereço.",
                 "uso": "É utilizado para referenciar dados de forma indireta, permitindo maior flexibilidade e dinamismo na manipulação de memória.",
-                "exemplo": """
+                "ejemplo": '''
                     # Isso envolve manipulação avançada de ponteiros e endereços em linguagens como C.
-                    """
+                    '''
             },
             "i/o_buffer": {
                 "significado": "Área de almacenamiento temporal utilizada para transferir datos entre dispositivos de entrada y salida.",
                 "uso": "É utilizado para suavizar a comunicação entre sistemas que operam com diferentes velocidades, armazenando dados temporariamente.",
-                "exemplo": """
+                "ejemplo": '''
                     with open('arquivo.txt', 'r') as file:
                         buffer = file.read()
                         print(buffer)
-                    """
+                    '''
             },
             "instance_variable": {
                 "significado": "Variável que pertence a uma instância específica de uma classe, armazenando dados relacionados àquela instância.",
                 "uso": "É utilizado para armazenar dados que são específicos a cada objeto instanciado de uma classe.",
-                "exemplo": """
+                "ejemplo": '''
                     class Carro:
                         def __init__(self, modelo):
                             self.modelo = modelo
 
                     carro1 = Carro("Fusca")
                     print(carro1.modelo)  # Saída: Fusca
-                    """
+                    '''
             },
 
 
@@ -4465,347 +4465,347 @@ diccionario_por = {
         "join": {
             "significado": "Método ou função que combina elementos de uma lista ou sequência em uma única string, separada por um delimitador.",
             "uso": "É utilizado para unir elementos de uma lista em uma string, com um separador especificado.",
-            "exemplo": """
+            "ejemplo": '''
                 lista = ["Olá", "mundo"]
                 resultado = " ".join(lista)
                 print(resultado)  # Saída: "Olá mundo"
-            """
+            '''
         },
         "json": {
             "significado": "Formato de dados leve usado para armazenar e transportar dados em formato de texto.",
             "uso": "É utilizado para trocar informações entre sistemas, especialmente em APIs.",
-            "exemplo": """
+            "ejemplo": '''
                 import json
                 dados = {"nome": "João", "idade": 30}
                 json_str = json.dumps(dados)
                 print(json_str)  # Saída: {"nome": "João", "idade": 30}
-            """
+            '''
         },
         "jupyter_notebook": {
             "significado": "Ferramenta interativa que permite criar e compartilhar documentos contendo código, texto, gráficos e outros elementos.",
             "uso": "É utilizado principalmente para análise de dados, aprendizado de máquina e visualização de resultados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Para iniciar o Jupyter Notebook:
                 jupyter notebook
                 # Ele abrirá no navegador e permitirá criar novos notebooks.
-            """
+            '''
         },
         "jump_table": {
             "significado": "Estrutura de dados que armazena endereços de instruções, usada para transferir controle rapidamente em programas.",
             "uso": "É utilizada para implementar switch cases ou tabelas de despachadores em linguagens de programação.",
-            "exemplo": """
+            "ejemplo": '''
                 jump_table = {
                     "op1": funcao1,
                     "op2": funcao2
                 }
                 opcao = "op1"
                 jump_table[opcao]()  # Executa funcao1
-            """
+            '''
         },
         "jvm": {
             "significado": "Java Virtual Machine, componente que executa bytecode Java em qualquer sistema operacional.",
             "uso": "É utilizado para executar programas Java, garantindo portabilidade entre diferentes sistemas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Código Java compilado em bytecode
                 javac MeuPrograma.java
                 # Executado pela JVM
                 java MeuPrograma
-            """
+            '''
         },
         "jshell": {
             "significado": "Ferramenta interativa de linha de comando para executar código Java em tempo real.",
             "uso": "É utilizada para prototipar, testar e aprender Java de maneira interativa.",
-            "exemplo": """
+            "ejemplo": '''
                 # Iniciar o JShell:
                 jshell
                 # Dentro do JShell:
                 System.out.println("Olá Mundo");
-            """
+            '''
         },
         "jupyter": {
             "significado": "Plataforma que suporta notebooks interativos para diferentes linguagens de programação.",
             "uso": "É utilizada para executar código, visualizar resultados e documentar análises.",
-            "exemplo": """
+            "ejemplo": '''
                 # Para iniciar o Jupyter:
                 jupyter notebook
-                """
+                '''
         },
         "jupyter_lab": {
             "significado": "Interface avançada para o Jupyter, oferecendo mais funcionalidades que o Jupyter Notebook.",
             "uso": "É utilizado para organizar notebooks, arquivos de dados e visualizações de maneira integrada.",
-            "exemplo": """
+            "ejemplo": '''
                 # Para iniciar o Jupyter Lab:
                 jupyter lab
-            """
+            '''
         },
         "jupyter_widgets": {
             "significado": "Componentes interativos usados em notebooks Jupyter para criar controles de interface de usuário.",
             "uso": "É utilizado para adicionar sliders, botões e gráficos interativos em notebooks.",
-            "exemplo": """
+            "ejemplo": '''
                 from ipywidgets import IntSlider
                 slider = IntSlider(value=5, min=0, max=10)
                 slider
-            """
+            '''
         },
         "jsonschema": {
             "significado": "Biblioteca usada para validar documentos JSON contra um esquema definido.",
             "uso": "É utilizada para garantir que dados JSON atendam a uma estrutura predefinida.",
-            "exemplo": """
+            "ejemplo": '''
                 from jsonschema import validate
                 schema = {"type": "object", "properties": {"idade": {"type": "integer"}}}
                 dados = {"idade": 25}
                 validate(instance=dados, schema=schema)
-            """
+            '''
         },
         "jwt": {
             "significado": "JSON Web Token, formato usado para transmitir informações de maneira segura entre partes.",
             "uso": "É utilizado para autenticação e troca segura de informações em APIs.",
-            "exemplo": """
+            "ejemplo": '''
                 import jwt
                 token = jwt.encode({"usuario": "admin"}, "segredo", algorithm="HS256")
                 print(token)
-            """
+            '''
         },
         "jupyterhub": {
             "significado": "Versão multiusuário do Jupyter, projetada para organizações e equipes.",
             "uso": "É utilizada para fornecer notebooks Jupyter a vários usuários em um ambiente compartilhado.",
-            "exemplo": """
+            "ejemplo": '''
                 # Para iniciar o JupyterHub:
                 jupyterhub
-            """
+            '''
         },
         "jython": {
             "significado": "Implementação da linguagem Python que roda em cima da JVM.",
             "uso": "É utilizado para integrar código Python em projetos Java.",
-            "exemplo": """
+            "ejemplo": '''
                 # Executar código Python com Jython:
                 jython MeuScript.py
-            """
+            '''
         },
         "jalview": {
             "significado": "Software de visualização para múltiplos alinhamentos de sequência biológica.",
             "uso": "É utilizado em bioinformática para analisar e editar alinhamentos de sequências.",
-            "exemplo": """
+            "ejemplo": '''
                 # Importar um arquivo de alinhamento no Jalview para análise
-            """
+            '''
         },
         "jupyter_console": {
             "significado": "Interface de linha de comando interativa para o kernel do Jupyter.",
             "uso": "É utilizada para executar comandos em um ambiente de terminal, sem interface gráfica.",
-            "exemplo": """
+            "ejemplo": '''
                 # Para iniciar:
                 jupyter console
-            """
+            '''
         },
         "jsonpickle": {
             "significado": "Biblioteca para serializar objetos Python em formato JSON e restaurá-los.",
             "uso": "É utilizada para salvar e carregar objetos complexos como JSON.",
-            "exemplo": """
+            "ejemplo": '''
                 import jsonpickle
                 obj = {"nome": "Maria"}
                 json_str = jsonpickle.encode(obj)
                 print(json_str)
-            """
+            '''
         },
         "jose": {
             "significado": "Biblioteca para trabalhar com JSON Object Signing and Encryption (JOSE).",
             "uso": "É utilizada para assinar, criptografar e autenticar dados JSON.",
-            "exemplo": """
+            "ejemplo": '''
                 from jose import jwt
                 token = jwt.encode({"dados": "seguro"}, "segredo", algorithm="HS256")
                 print(token)
-            """
+            '''
         },
         "jupyter_client": {
             "significado": "Biblioteca para comunicação entre clientes e kernels Jupyter.",
             "uso": "É utilizada para executar e controlar kernels de notebooks remotamente.",
-            "exemplo": """
+            "ejemplo": '''
                 from jupyter_client import KernelManager
                 km = KernelManager()
                 km.start_kernel()
-            """
+            '''
         },
         "joblib": {
             "significado": "Biblioteca Python para salvar e carregar objetos, além de realizar paralelismo leve.",
             "uso": "É utilizada para serializar objetos e distribuir tarefas computacionais de forma eficiente.",
-            "exemplo": """
+            "ejemplo": '''
                 from joblib import dump, load
                 modelo = {"peso": [0.1, 0.5, 0.3]}
                 dump(modelo, 'modelo.joblib')
                 carregado = load('modelo.joblib')
                 print(carregado)
-            """
+            '''
         },
         "jupyter_notebook_extension": {
             "significado": "Extensão para notebooks Jupyter que adiciona funcionalidades extras.",
             "uso": "É utilizada para expandir as capacidades dos notebooks Jupyter, como melhorias de interface e ferramentas adicionais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Instalar extensões:
                 pip install jupyter_contrib_nbextensions
                 # Ativar extensões:
                 jupyter nbextension enable <nome_da_extensão>
-            """
+            '''
         },
         "json_response": {
             "significado": "Resposta de uma API em formato JSON.",
             "uso": "É utilizada para transmitir dados estruturados de um servidor para um cliente.",
-            "exemplo": """
+            "ejemplo": '''
                 from flask import Flask, jsonify
                 app = Flask(__name__)
                 @app.route('/dados')
                 def dados():
                     return jsonify({"status": "sucesso", "mensagem": "Olá"})
-            """
+            '''
         },
         "jupyter_contrib_nbextensions": {
             "significado": "Conjunto de extensões comunitárias para Jupyter Notebook.",
             "uso": "É utilizado para adicionar funcionalidades personalizadas aos notebooks.",
-            "exemplo": """
+            "ejemplo": '''
                 # Instalar extensões comunitárias:
                 pip install jupyter_contrib_nbextensions
-            """
+            '''
         },
         "jupyter_novice": {
             "significado": "Termo usado para indicar usuários iniciantes no ecossistema Jupyter.",
             "uso": "Refere-se a tutoriais ou materiais voltados para pessoas que estão começando com o Jupyter.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplos de tutoriais para iniciantes podem ser encontrados no site oficial:
                 https://jupyter.org
-            """
+            '''
         },
         "jenkins": {
             "significado": "Ferramenta de integração contínua para automação de tarefas em desenvolvimento de software.",
             "uso": "É utilizada para construir, testar e implantar software de forma automatizada.",
-            "exemplo": """
+            "ejemplo": '''
                 # Para instalar Jenkins:
                 sudo apt install jenkins
                 # Acesse o painel:
                 http://localhost:8080
-            """
+            '''
         },
         "jupyter_terminal": {
             "significado": "Terminal integrado ao Jupyter que permite execução de comandos do sistema operacional.",
             "uso": "É utilizado para executar comandos diretamente em um ambiente Jupyter.",
-            "exemplo": """
+            "ejemplo": '''
                 # No Jupyter, abra o terminal clicando em "New > Terminal"
-            """
+            '''
         },
         "jupyter_lab_extension": {
             "significado": "Extensões para JupyterLab que adicionam funcionalidades ou melhoram a experiência do usuário.",
             "uso": "É utilizada para personalizar o JupyterLab com ferramentas adicionais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Instalar uma extensão:
                 jupyter labextension install <nome_da_extensão>
-            """
+            '''
         },
         "jupyter_kernel": {
             "significado": "Processo que executa o código em notebooks Jupyter.",
             "uso": "É utilizado para processar comandos enviados pelos notebooks.",
-            "exemplo": """
+            "ejemplo": '''
                 # Listar kernels disponíveis:
                 jupyter kernelspec list
-            """
+            '''
         },
         "jump_start": {
             "significado": "Início rápido ou guia introdutório para uma ferramenta ou tecnologia.",
             "uso": "É utilizado para começar rapidamente com uma nova tecnologia.",
-            "exemplo": """
+            "ejemplo": '''
                 # Um guia de jump start para Jupyter pode ser encontrado em:
                 https://jupyter.org/install
-            """
+            '''
         },
         "jupyter_tutorial": {
             "significado": "Material educativo que ensina a usar Jupyter Notebook ou JupyterLab.",
             "uso": "É utilizado para aprender as funcionalidades e aplicações do Jupyter.",
-            "exemplo": """
+            "ejemplo": '''
                 # Um exemplo de tutorial:
                 https://realpython.com/jupyter-notebook-introduction/
-            """
+            '''
         },
         "jupyter_quickstart": {
             "significado": "Guia rápido para configurar e começar a usar o Jupyter.",
             "uso": "É utilizado para facilitar a instalação e os primeiros passos com o Jupyter.",
-            "exemplo": """
+            "ejemplo": '''
                 # Guia oficial:
                 https://jupyter.org/install
-            """
+            '''
         },
         "jupyter_magic": {
             "significado": "Comandos especiais que estendem as funcionalidades dos notebooks Jupyter.",
             "uso": "É utilizado para realizar tarefas específicas, como carregar extensões ou controlar execução de código.",
-            "exemplo": """
+            "ejemplo": '''
                 # Comando mágico para verificar o tempo de execução:
                 %timeit x = 2 + 2
-            """
+            '''
         },
         "jinja2": {
             "significado": "Biblioteca de templates usada para criar HTML dinâmico com Python.",
             "uso": "É utilizada para renderizar páginas web com dados dinâmicos.",
-            "exemplo": """
+            "ejemplo": '''
                 from jinja2 import Template
                 template = Template("Olá, {{ nome }}!")
                 renderizado = template.render(nome="João")
                 print(renderizado)  # Saída: Olá, João!
-            """
+            '''
         },
         "jax": {
             "significado": "Biblioteca para computação numérica que combina autograd e paralelismo.",
             "uso": "É utilizada para acelerar cálculos científicos e aprendizado de máquina.",
-            "exemplo": """
+            "ejemplo": '''
                 import jax.numpy as jnp
                 x = jnp.array([1.0, 2.0, 3.0])
                 y = jnp.sin(x)
                 print(y)
-            """
+            '''
         },
         "jupyter_config": {
             "significado": "Arquivo ou ferramenta de configuração para o ambiente Jupyter.",
             "uso": "É utilizado para personalizar o comportamento de notebooks ou servidores Jupyter.",
-            "exemplo": """
+            "ejemplo": '''
                 # Para editar o arquivo de configuração do Jupyter:
                 jupyter notebook --generate-config
                 # Editar o arquivo em ~/.jupyter/jupyter_notebook_config.py
-            """
+            '''
         },
         "job_queue": {
             "significado": "Estrutura que gerencia e organiza tarefas em fila para execução.",
             "uso": "É utilizada em sistemas de processamento paralelo ou distribuído para gerenciar tarefas pendentes.",
-            "exemplo": """
+            "ejemplo": '''
                 from queue import Queue
                 fila = Queue()
                 fila.put('Tarefa 1')
                 fila.put('Tarefa 2')
                 print(fila.get())  # Saída: Tarefa 1
-            """
+            '''
         },
         "jinja2_templates": {
             "significado": "Modelos de template utilizados com o motor de templates Jinja2 para criar HTML dinâmico.",
             "uso": "É utilizado para renderizar páginas HTML com dados dinâmicos em aplicações web.",
-            "exemplo": """
+            "ejemplo": '''
                 from flask import Flask, render_template
                 app = Flask(__name__)
                 @app.route('/')
                 def home():
                     return render_template('index.html', nome='João')
-            """
+            '''
         },
         "jupyter_dashboard": {
             "significado": "Ferramenta para criar dashboards interativos no Jupyter Notebook.",
             "uso": "É utilizada para apresentar visualizações e dados de maneira interativa e organizada.",
-            "exemplo": """
+            "ejemplo": '''
                 # Instalar o pacote:
                 pip install jupyter_dashboards
                 # Configurar e exibir um dashboard no notebook.
-            """
+            '''
         },
         "jq": {
             "significado": "Ferramenta de linha de comando para processar e manipular dados em formato JSON.",
             "uso": "É utilizada para filtrar, transformar e analisar dados JSON diretamente no terminal.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso:
                 echo '{ "nome": "João", "idade": 30 }' | jq '.nome'
                 # Saída: "João"
-            """
+            '''
         },
 
     },
@@ -4827,100 +4827,100 @@ diccionario_por = {
         "kde": {
             "significado": "Estimativa de Densidade Kernel (Kernel Density Estimation), um método para estimar a densidade de probabilidade de uma variável.",
             "uso": "É utilizado em estatística e machine learning para modelar a distribuição de dados de maneira não-paramétrica.",
-            "exemplo": """
+            "ejemplo": '''
                 import seaborn as sns
                 import numpy as np
                 dados = np.random.randn(100)
                 sns.kdeplot(dados)
-            """
+            '''
         },
         "kmeans": {
             "significado": "Algoritmo de agrupamento baseado na minimização da soma das distâncias ao centróide mais próximo.",
             "uso": "É utilizado em machine learning para dividir dados em grupos ou clusters.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.cluster import KMeans
                 import numpy as np
                 dados = np.array([[1, 2], [1, 4], [1, 0], [10, 2], [10, 4], [10, 0]])
                 kmeans = KMeans(n_clusters=2, random_state=0).fit(dados)
                 print(kmeans.labels_)
-            """
+            '''
         },
         "knn": {
             "significado": "K-Nearest Neighbors, um algoritmo de classificação baseado na proximidade dos dados no espaço.",
             "uso": "É utilizado em machine learning para classificação ou regressão com base nos vizinhos mais próximos.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.neighbors import KNeighborsClassifier
                 X = [[0], [1], [2], [3]]
                 y = [0, 0, 1, 1]
                 knn = KNeighborsClassifier(n_neighbors=2)
                 knn.fit(X, y)
                 print(knn.predict([[1.5]]))  # Saída: [0]
-            """
+            '''
         },
         "key": {
             "significado": "Um identificador ou índice utilizado em coleções como dicionários para acessar valores.",
             "uso": "É utilizado para armazenar e acessar pares de chave-valor em estruturas de dados como dicionários.",
-            "exemplo": """
+            "ejemplo": '''
                 dicionario = {'nome': 'João', 'idade': 30}
                 print(dicionario['nome'])  # Saída: João
-            """
+            '''
         },
         "kivy": {
             "significado": "Biblioteca de Python para desenvolvimento de aplicações com interfaces gráficas multi-touch.",
             "uso": "É utilizada para criar aplicativos multiplataforma com interface gráfica.",
-            "exemplo": """
+            "ejemplo": '''
                 from kivy.app import App
                 from kivy.uix.label import Label
                 class MeuApp(App):
                     def build(self):
                         return Label(text='Olá, Mundo!')
                 MeuApp().run()
-            """
+            '''
         },
         "kiwisolver": {
             "significado": "Biblioteca de resolução de restrições para layout de interfaces.",
             "uso": "É utilizada em frameworks como Kivy para resolver equações de layout.",
-            "exemplo": """
+            "ejemplo": '''
                 from kiwisolver import Variable, Solver
                 x = Variable('x')
                 solver = Solver()
                 solver.add_constraint(x >= 10)
                 solver.update_variables()
                 print(x.value())  # Saída: 10
-            """
+            '''
         },
         "keras": {
             "significado": "Biblioteca de alto nível para construir e treinar redes neurais.",
             "uso": "É utilizada para implementar modelos de deep learning de forma simples e eficiente.",
-            "exemplo": """
+            "ejemplo": '''
                 from keras.models import Sequential
                 from keras.layers import Dense
                 modelo = Sequential([Dense(10, activation='relu', input_shape=(8,))])
                 modelo.compile(optimizer='adam', loss='mse')
-            """
+            '''
         },
         "kdb": {
             "significado": "Banco de dados em memória, frequentemente utilizado em aplicações financeiras para análise de grandes volumes de dados.",
             "uso": "É utilizado para armazenar e consultar dados rapidamente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Consultas são feitas com q, a linguagem do KDB:
                 q) tabela: ([] col1: 1 2 3; col2: `a`b`c)
                 q) select from tabela where col1 > 1
-            """
+            '''
         },
         "kivy_garden": {
             "significado": "Conjunto de pacotes comunitários para Kivy.",
             "uso": "É utilizado para expandir a funcionalidade do Kivy com widgets e componentes adicionais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Instalar um pacote:
                 garden install graph
                 # Usar o pacote no aplicativo Kivy
-            """
+            '''
         },
         "knapsack": {
             "significado": "Problema da mochila, um problema de otimização combinatória.",
             "uso": "É utilizado para encontrar a melhor combinação de itens que maximizam um valor dentro de uma capacidade limitada.",
-            "exemplo": """
+            "ejemplo": '''
                 def mochila(capacidade, valores, pesos):
                     n = len(valores)
                     tabela = [[0] * (capacidade + 1) for _ in range(n + 1)]
@@ -4932,23 +4932,23 @@ diccionario_por = {
                                 tabela[i][w] = tabela[i - 1][w]
                     return tabela[n][capacidade]
                 print(mochila(50, [60, 100, 120], [10, 20, 30]))  # Saída: 220
-            """
+            '''
         },
         "kalman_filter": {
             "significado": "Algoritmo que utiliza uma série de medições ao longo do tempo para estimar valores desconhecidos.",
             "uso": "É utilizado em aplicações de rastreamento e previsão, como em navegação e controle.",
-            "exemplo": """
+            "ejemplo": '''
                 from pykalman import KalmanFilter
                 filtro = KalmanFilter(initial_state_mean=0, n_dim_obs=1)
                 medidas = [1, 2, 3]
                 estimativas = filtro.em(measures).smooth(measures)
                 print(estimativas)
-            """
+            '''
         },
         "kruskal": {
             "significado": "Algoritmo para encontrar a árvore geradora mínima de um grafo.",
             "uso": "É utilizado em grafos ponderados para encontrar o conjunto de arestas que conecta todos os vértices com o menor custo total.",
-            "exemplo": """
+            "ejemplo": '''
                 class Grafo:
                     def __init__(self, vertices):
                         self.V = vertices
@@ -4958,457 +4958,457 @@ diccionario_por = {
                     def kruskal(self):
                         self.grafo = sorted(self.grafo, key=lambda item: item[2])
                         # Implementação do algoritmo continua...
-                """
+                '''
         },
         "kmer": {
             "significado": "Subsequências de comprimento k em uma sequência biológica.",
             "uso": "É utilizado em bioinformática para análise de sequências de DNA e RNA.",
-            "exemplo": """
+            "ejemplo": '''
                 def gerar_kmers(sequencia, k):
                     return [sequencia[i:i+k] for i in range(len(sequencia) - k + 1)]
                 print(gerar_kmers('ATCG', 2))  # Saída: ['AT', 'TC', 'CG']
-            """
+            '''
         },
         "kivy_uix": {
             "significado": "Módulo de widgets de interface de usuário no Kivy.",
             "uso": "É utilizado para criar elementos de interface como botões, caixas de texto, etc.",
-            "exemplo": """
+            "ejemplo": '''
                 from kivy.uix.button import Button
                 btn = Button(text='Clique Aqui')
-            """
+            '''
         },
         "kalman_smooth": {
             "significado": "Processo de suavizar uma série temporal usando o filtro de Kalman.",
             "uso": "É utilizado para melhorar estimativas em sistemas dinâmicos.",
-            "exemplo": """
+            "ejemplo": '''
                 from pykalman import KalmanFilter
                 filtro = KalmanFilter(initial_state_mean=0, n_dim_obs=1)
                 medidas = [1, 2, 3]
                 estimativas = filtro.smooth(medidas)[0]
                 print(estimativas)
-            """
+            '''
         },
         "kurtosis": {
             "significado": "Métrica estatística que descreve a forma da cauda de uma distribuição.",
             "uso": "É utilizado para entender a forma de uma distribuição em relação a sua cauda e centralidade.",
-            "exemplo": """
+            "ejemplo": '''
                 from scipy.stats import kurtosis
                 dados = [1, 2, 3, 4, 5]
                 print(kurtosis(dados))  # Saída: valor de curtose
-            """
+            '''
         },
         "knn_classifier": {
             "significado": "Uma implementação do algoritmo K-Nearest Neighbors para classificação.",
             "uso": "Utilizado para prever a classe de uma amostra com base nas classes dos vizinhos mais próximos.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.neighbors import KNeighborsClassifier
                 X = [[0], [1], [2], [3]]
                 y = [0, 0, 1, 1]
                 knn = KNeighborsClassifier(n_neighbors=3)
                 knn.fit(X, y)
                 print(knn.predict([[1.5]]))  # Saída: [0]
-            """
+            '''
         },
         "keylogger": {
             "significado": "Software ou script que registra todas as teclas pressionadas em um teclado.",
             "uso": "Frequentemente usado para segurança ou monitoramento (com consentimento) e, em casos maliciosos, para espionagem.",
-            "exemplo": """
+            "ejemplo": '''
                 # Código de exemplo não fornecido por questões éticas.
-            """
+            '''
         },
         "kron": {
             "significado": "Operação de produto de Kronecker entre dois arrays ou matrizes.",
             "uso": "Utilizado em álgebra linear para operações matriciais específicas.",
-            "exemplo": """
+            "ejemplo": '''
                 import numpy as np
                 A = np.array([[1, 2], [3, 4]])
                 B = np.array([[0, 5], [6, 7]])
                 resultado = np.kron(A, B)
                 print(resultado)
-            """
+            '''
         },
         "k-means++": {
             "significado": "Uma variante do algoritmo K-Means que melhora a inicialização dos centróides.",
             "uso": "Utilizado para melhorar a eficiência e precisão do algoritmo K-Means.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.cluster import KMeans
                 X = [[1, 2], [1, 4], [1, 0], [10, 2], [10, 4], [10, 0]]
                 kmeans = KMeans(n_clusters=2, init='k-means++', random_state=0).fit(X)
                 print(kmeans.cluster_centers_)
-            """
+            '''
         },
         "kingfisher": {
             "significado": "Um nome usado em tecnologia para ferramentas, bibliotecas ou projetos específicos.",
             "uso": "Variante contextual; pode se referir a um banco de dados ou ferramenta de análise.",
-            "exemplo": "Depende do contexto do projeto 'Kingfisher' em uso."
+            "ejemplo": "Depende do contexto do projeto 'Kingfisher' em uso."
         },
         "ksplit": {
             "significado": "Operação de divisão de dados ou strings em partes específicas.",
             "uso": "Utilizado em particionamento de conjuntos de dados ou manipulação de strings.",
-            "exemplo": """
+            "ejemplo": '''
                 string = "a,b,c,d"
                 partes = string.split(',')
                 print(partes)  # Saída: ['a', 'b', 'c', 'd']
-            """
+            '''
         },
         "key_value_pair": {
             "significado": "Estrutura de dados composta por uma chave e um valor associado.",
             "uso": "Utilizada em dicionários ou mapas para armazenar informações organizadas.",
-            "exemplo": """
+            "ejemplo": '''
                 dicionario = {"nome": "Alice", "idade": 25}
                 print(dicionario["nome"])  # Saída: Alice
-            """
+            '''
         },
         "knn_regressor": {
             "significado": "Uma implementação do algoritmo K-Nearest Neighbors para regressão.",
             "uso": "Utilizado para prever valores numéricos com base nos vizinhos mais próximos.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.neighbors import KNeighborsRegressor
                 X = [[0], [1], [2], [3]]
                 y = [0, 0.5, 2.5, 3]
                 knn = KNeighborsRegressor(n_neighbors=2)
                 knn.fit(X, y)
                 print(knn.predict([[1.5]]))  # Saída: [1.5]
-            """
+            '''
         },
         "kerberos": {
             "significado": "Protocolo de autenticação para redes de computadores.",
             "uso": "Utilizado para garantir comunicações seguras em redes não confiáveis.",
-            "exemplo": """
+            "ejemplo": '''
                 # Configuração de exemplo feita no ambiente do servidor, geralmente com comandos CLI.
-            """
+            '''
         },
         "keras_tuner": {
             "significado": "Biblioteca para ajuste de hiperparâmetros em modelos Keras.",
             "uso": "Utilizado para encontrar automaticamente os melhores hiperparâmetros para um modelo de aprendizado profundo.",
-            "exemplo": """
+            "ejemplo": '''
                 from keras_tuner import RandomSearch
                 def modelo_builder(hp):
                     modelo = Sequential()
                     hp_units = hp.Int('units', min_value=32, max_value=512, step=32)
                     modelo.add(Dense(units=hp_units, activation='relu'))
                     return modelo
-            """
+            '''
         },
         "keystone": {
             "significado": "Módulo de autenticação e gerenciamento de identidade na nuvem OpenStack.",
             "uso": "Utilizado para fornecer autenticação centralizada em ambientes OpenStack.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplos dependem da CLI ou API Keystone para integração.
-            """
+            '''
         },
         "kotlin": {
             "significado": "Linguagem de programação moderna e tipada, usada para desenvolvimento Android e multiplataforma.",
             "uso": "Utilizada para construir aplicativos móveis, web e backend.",
-            "exemplo": """
+            "ejemplo": '''
                 fun main() {
                     println("Olá, Mundo!")
                 }
-            """
+            '''
         },
         "kivymd": {
             "significado": "Biblioteca que adiciona componentes Material Design ao Kivy.",
             "uso": "Utilizada para criar interfaces baseadas no Material Design em aplicativos Kivy.",
-            "exemplo": """
+            "ejemplo": '''
                 from kivymd.app import MDApp
                 from kivymd.uix.button import MDRaisedButton
                 class MeuApp(MDApp):
                     def build(self):
                         return MDRaisedButton(text="Clique Aqui")
                 MeuApp().run()
-            """
+            '''
         },
         "kmerscan": {
             "significado": "Ferramenta de bioinformática para análise de k-mers em sequências genéticas.",
             "uso": "Utilizado para detectar padrões em sequências de DNA ou RNA.",
-            "exemplo": """
+            "ejemplo": '''
                 # Ferramenta geralmente executada via terminal para analisar dados biológicos.
-            """
+            '''
         },
         "knockoff": {
             "significado": "Método estatístico para seleção de variáveis usando falsificações controladas.",
             "uso": "Utilizado em análises estatísticas para reduzir falsos positivos em seleções de variáveis.",
-            "exemplo": """
+            "ejemplo": '''
                 # Requer bibliotecas específicas como knockoff.py, usadas para experimentos estatísticos.
-            """
+            '''
         },
         "keycloak": {
             "significado": "Uma ferramenta de gerenciamento de identidade e acesso (IAM) de código aberto.",
             "uso": "Utilizada para autenticação, autorização e gerenciamento de usuários em aplicativos e serviços.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso: configurar um cliente OAuth2 para um aplicativo web
                 # Configurações realizadas via interface Keycloak ou API REST.
-            """
+            '''
         },
         "kudl": {
             "significado": "Ferramenta para manipulação de dados ou estruturas específicas.",
             "uso": "Depende do contexto; pode ser uma biblioteca ou ferramenta personalizada em um projeto.",
-            "exemplo": "Descrição detalhada necessária para um exemplo aplicável."
+            "ejemplo": "Descrição detalhada necessária para um exemplo aplicável."
         },
         "katib": {
             "significado": "Plataforma de ajuste de hiperparâmetros em aprendizado de máquina, parte do Kubeflow.",
             "uso": "Utilizada para realizar buscas automatizadas por hiperparâmetros ideais em modelos de aprendizado.",
-            "exemplo": """
+            "ejemplo": '''
                 # Configuração YAML para um experimento Katib:
                 apiVersion: kubeflow.org/v1
                 kind: Experiment
                 metadata:
                 name: exemplo-katib
-                """
+                '''
         },
         "kwarg": {
             "significado": "Argumento de palavra-chave (keyword argument) em funções Python.",
             "uso": "Utilizado para passar argumentos nomeados em uma função, com flexibilidade para aceitar parâmetros adicionais.",
-            "exemplo": """
+            "ejemplo": '''
                 def funcao_exemplo(**kwargs):
                     for chave, valor in kwargs.items():
                         print(f"{chave}: {valor}")
                 funcao_exemplo(nome="Alice", idade=25)
-            """
+            '''
         },
         "kwlist": {
             "significado": "Lista de palavras reservadas em Python.",
             "uso": "Utilizada para verificar palavras reservadas que não podem ser usadas como identificadores em Python.",
-            "exemplo": """
+            "ejemplo": '''
                 import keyword
                 print(keyword.kwlist)  # Saída: lista de palavras reservadas em Python
-            """
+            '''
         },
         "kdb+": {
             "significado": "Banco de dados em memória e mecanismo de processamento orientado a colunas.",
             "uso": "Utilizado principalmente em análises financeiras e científicas para lidar com grandes volumes de dados em alta velocidade.",
-            "exemplo": """
+            "ejemplo": '''
                 // Exemplo em q, a linguagem de consulta do kdb+:
                 t:([] time:09:00+til 5; price:100+til 5)
                 select from t where price>102
-            """
+            '''
         },
         "kexi": {
             "significado": "Ferramenta de gerenciamento de banco de dados gráfico, parte da suíte Calligra.",
             "uso": "Utilizada para criar e gerenciar bancos de dados sem a necessidade de escrever código SQL.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplos de uso geralmente são interativos na interface do Kexi.
-            """
+            '''
         },
         "kaffeine": {
             "significado": "Um reprodutor multimídia leve para o ambiente KDE.",
             "uso": "Utilizado para reproduzir vídeos, arquivos de áudio e streaming online.",
-            "exemplo": """
+            "ejemplo": '''
                 # Instalação no Linux:
                 sudo apt install kaffeine
-            """
+            '''
         },
         "kerosene": {
             "significado": "Uma biblioteca para aprendizado de máquina em PyTorch que facilita o treinamento de modelos.",
             "uso": "Utilizada para abstrair e simplificar tarefas comuns, como treinamento, validação e registro de métricas.",
-            "exemplo": """
+            "ejemplo": '''
                 from kerosene.trainers import Trainer
                 trainer = Trainer(model, optimizer, loss_function)
                 trainer.train(data_loader)
-            """
+            '''
         },
         "kotlinx": {
             "significado": "Conjunto de bibliotecas complementares ao Kotlin, como kotlinx.coroutines ou kotlinx.serialization.",
             "uso": "Facilita tarefas como concorrência, serialização e manipulação de dados em Kotlin.",
-            "exemplo": """
+            "ejemplo": '''
                 import kotlinx.coroutines.*
                 fun main() = runBlocking {
                     launch { println("Tarefa concorrente!") }
                 }
-            """
+            '''
         },
         "k3s": {
             "significado": "Versão leve e simplificada do Kubernetes para ambientes com recursos limitados.",
             "uso": "Utilizada para implantar e gerenciar clusters Kubernetes de maneira eficiente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Instalação de k3s:
                 curl -sfL https://get.k3s.io | sh -
-            """
+            '''
         },
         "kerb": {
             "significado": "Abreviação de Kerberos, um protocolo de autenticação segura.",
             "uso": "Utilizado para autenticar usuários e serviços em redes seguras.",
-            "exemplo": """
+            "ejemplo": '''
                 # Configuração de autenticação Kerberos:
                 kinit username@DOMAIN.COM
-            """
+            '''
         },
         "k3d": {
             "significado": "Ferramenta para executar clusters k3s em contêineres Docker.",
             "uso": "Facilita a configuração e o gerenciamento de clusters Kubernetes leves em ambientes locais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Criação de um cluster com k3d:
                 k3d cluster create meu-cluster
-            """
+            '''
         },
         "kali": {
             "significado": "Distribuição Linux projetada para testes de segurança e análise forense.",
             "uso": "Utilizada por profissionais de segurança para testes de penetração e auditorias de segurança.",
-            "exemplo": """
+            "ejemplo": '''
                 # Executar um escaneamento com Nmap no Kali Linux:
                 nmap -sV 192.168.0.1
-            """
+            '''
         },
         "kd-tree": {
             "significado": "Estrutura de dados para particionar espaço multidimensional em árvores binárias.",
             "uso": "Utilizada em busca de vizinhos próximos (k-NN) e outras operações espaciais.",
-            "exemplo": """
+            "ejemplo": '''
                 from scipy.spatial import KDTree
                 points = [(1, 2), (3, 4), (5, 6)]
                 tree = KDTree(points)
                 print(tree.query((2, 3)))
-            """
+            '''
         },
         "kmeans_clustering": {
             "significado": "Algoritmo de agrupamento que divide dados em k grupos baseados em seus atributos.",
             "uso": "Utilizado em aprendizado não supervisionado para identificar padrões em dados.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.cluster import KMeans
                 kmeans = KMeans(n_clusters=3)
                 kmeans.fit(dados)
                 print(kmeans.labels_)
-            """
+            '''
         },
         "kmeans_init": {
             "significado": "Método de inicialização de centroides no algoritmo k-means.",
             "uso": "Determina a posição inicial dos centroides para melhorar a eficiência do algoritmo.",
-            "exemplo": """
+            "ejemplo": '''
                 kmeans = KMeans(n_clusters=3, init='k-means++')
                 kmeans.fit(dados)
-            """
+            '''
         },
         "kafka": {
             "significado": "Plataforma de streaming de eventos distribuída de código aberto.",
             "uso": "Utilizada para construir pipelines de dados em tempo real e sistemas de mensageria.",
-            "exemplo": """
+            "ejemplo": '''
                 # Produzir uma mensagem Kafka usando a biblioteca confluent-kafka:
                 from confluent_kafka import Producer
                 p = Producer({'bootstrap.servers': 'localhost:9092'})
                 p.produce('meu-topico', key='chave', value='mensagem')
-            """
+            '''
         },
         "kubectl": {
             "significado": "Ferramenta de linha de comando para gerenciar clusters Kubernetes.",
             "uso": "Utilizada para executar comandos e interagir com recursos no Kubernetes.",
-            "exemplo": """
+            "ejemplo": '''
                 # Listar todos os pods no Kubernetes:
                 kubectl get pods
-            """
+            '''
         },
         "k8s": {
             "significado": "Abreviação de Kubernetes, um sistema para automação de implantação, escala e gerenciamento de contêineres.",
             "uso": "Utilizado para orquestrar aplicações baseadas em contêineres.",
-            "exemplo": """
+            "ejemplo": '''
                 # Criar um deployment no Kubernetes:
                 kubectl create deployment nginx --image=nginx
-            """
+            '''
         },
         "k-nearest_neighbors": {
             "significado": "Algoritmo k-vizinhos mais próximos, utilizado para classificação ou regressão.",
             "uso": "Baseia-se na proximidade dos dados em um espaço dimensional.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.neighbors import KNeighborsClassifier
                 modelo = KNeighborsClassifier(n_neighbors=3)
                 modelo.fit(X_train, y_train)
-            """
+            '''
         },
         "k-nn_regressor": {
             "significado": "Versão do algoritmo k-NN utilizada para regressão em vez de classificação.",
             "uso": "Prevê valores baseando-se na média dos k vizinhos mais próximos.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.neighbors import KNeighborsRegressor
                 regressor = KNeighborsRegressor(n_neighbors=3)
                 regressor.fit(X_train, y_train)
-            """
+            '''
         },
         "keras_layers": {
             "significado": "Camadas disponíveis na biblioteca Keras para construir redes neurais.",
             "uso": "Utilizadas para definir a arquitetura de uma rede neural em aprendizado profundo.",
-            "exemplo": """
+            "ejemplo": '''
                 from keras.models import Sequential
                 from keras.layers import Dense
                 modelo = Sequential()
                 modelo.add(Dense(32, activation='relu', input_dim=100))
-            """
+            '''
         },
         "kivy_app": {
             "significado": "Aplicação desenvolvida usando o framework Kivy para interfaces gráficas em Python.",
             "uso": "Utilizada para criar aplicativos com suporte a touch em várias plataformas.",
-            "exemplo": """
+            "ejemplo": '''
                 from kivy.app import App
                 from kivy.uix.label import Label
                 class MeuApp(App):
                     def build(self):
                         return Label(text='Olá Mundo!')
                 MeuApp().run()
-            """
+            '''
         },
         "key_error": {
             "significado": "Erro em Python que ocorre ao acessar uma chave inexistente em um dicionário.",
             "uso": "Indica que a chave solicitada não está presente no dicionário.",
-            "exemplo": """
+            "ejemplo": '''
                 dicionario = {'a': 1}
                 print(dicionario['b'])  # Gera um KeyError
-            """
+            '''
         },
         "kde_plot": {
             "significado": "Gráfico de estimativa de densidade kernel, utilizado para visualizar distribuições de dados.",
             "uso": "Comumente usado em análise de dados para representar distribuições contínuas de forma suave.",
-            "exemplo": """
+            "ejemplo": '''
                 import seaborn as sns
                 import matplotlib.pyplot as plt
                 dados = [1, 2, 2, 3, 3, 3, 4, 5]
                 sns.kdeplot(dados)
                 plt.show()
-            """
+            '''
         },
         "kerberos_authentication": {
             "significado": "Processo de autenticação segura usando o protocolo Kerberos.",
             "uso": "Utilizado em redes seguras para autenticar usuários e serviços de forma confiável.",
-            "exemplo": """
+            "ejemplo": '''
                 # Inicializar uma sessão Kerberos:
                 kinit username@DOMAIN.COM
-            """
+            '''
         },
         "kivy_garden_widgets": {
             "significado": "Conjunto de widgets adicionais desenvolvidos pela comunidade Kivy.",
             "uso": "Facilita a criação de interfaces gráficas avançadas em aplicativos Kivy.",
-            "exemplo": """
+            "ejemplo": '''
                 # Instalar um widget do Kivy Garden:
                 garden install graph
-            """
+            '''
         },
         "kafka_consumer": {
             "significado": "Componente do Apache Kafka utilizado para consumir mensagens de um tópico.",
             "uso": "Processa dados transmitidos em tempo real no sistema Kafka.",
-            "exemplo": """
+            "ejemplo": '''
                 from kafka import KafkaConsumer
                 consumer = KafkaConsumer('meu-topico', bootstrap_servers='localhost:9092')
                 for mensagem in consumer:
                     print(mensagem.value)
-            """
+            '''
         },
         "kafka_producer": {
             "significado": "Componente do Apache Kafka usado para enviar mensagens para um tópico.",
             "uso": "Utilizado para transmitir dados para sistemas baseados em Kafka.",
-            "exemplo": """
+            "ejemplo": '''
                 from kafka import KafkaProducer
                 producer = KafkaProducer(bootstrap_servers='localhost:9092')
                 producer.send('meu-topico', b'Mensagem Kafka')
-            """
+            '''
         },
         "keras_optimizer": {
             "significado": "Otimizador usado em modelos Keras para ajustar pesos durante o treinamento.",
             "uso": "Determina como os pesos do modelo são ajustados com base na função de perda.",
-            "exemplo": """
+            "ejemplo": '''
                 from keras.optimizers import Adam
                 otimizador = Adam(learning_rate=0.001)
-            """
+            '''
         },
         "kubernetes_deployment": {
             "significado": "Objeto no Kubernetes usado para gerenciar a implantação de aplicativos.",
             "uso": "Facilita o gerenciamento de pods e a implantação de aplicativos escaláveis.",
-            "exemplo": """
+            "ejemplo": '''
                 # Arquivo YAML para um deployment:
                 apiVersion: apps/v1
                 kind: Deployment
@@ -5421,20 +5421,20 @@ diccionario_por = {
                     containers:
                     - name: nginx
                         image: nginx:1.17.10
-                """
+                '''
         },
         "kubernetes_cluster": {
             "significado": "Conjunto de máquinas (nós) que executam contêineres gerenciados pelo Kubernetes.",
             "uso": "Permite o gerenciamento de aplicações em contêiner em um ambiente distribuído.",
-            "exemplo": """
+            "ejemplo": '''
                 # Configurar um cluster com Minikube:
                 minikube start
-            """
+            '''
         },
         "k8s_pod": {
             "significado": "Menor unidade executável em Kubernetes que contém um ou mais contêineres.",
             "uso": "Executa aplicativos em contêiner em um cluster Kubernetes.",
-            "exemplo": """
+            "ejemplo": '''
                 # Criar um pod simples:
                 apiVersion: v1
                 kind: Pod
@@ -5444,53 +5444,53 @@ diccionario_por = {
                 containers:
                 - name: meu-container
                     image: nginx
-                """
+                '''
         },
         "kalman_filtering": {
             "significado": "Método estatístico para estimar o estado de um sistema dinâmico em tempo real.",
             "uso": "Amplamente utilizado em controle e rastreamento, como navegação e visão computacional.",
-            "exemplo": """
+            "ejemplo": '''
                 import pykalman
                 filtro = pykalman.KalmanFilter(initial_state_mean=0, n_dim_obs=1)
                 estimativas = filtro.em(dados).smooth(dados)[0]
-            """
+            '''
         },
         "kafka_streams": {
             "significado": "Biblioteca do Kafka para processar dados em tempo real diretamente de tópicos Kafka.",
             "uso": "Permite criar aplicativos de processamento de dados baseados em fluxo.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo básico com Kafka Streams (Java):
                 StreamsBuilder builder = new StreamsBuilder();
                 KStream<String, String> stream = builder.stream("meu-topico");
                 stream.to("topico-destino");
-                """
+                '''
         },
         "kotlin_coroutines": {
             "significado": "Conceito de concorrência leve em Kotlin para código assíncrono e não bloqueante.",
             "uso": "Facilita a escrita de programas concorrentes com alta performance.",
-            "exemplo": """
+            "ejemplo": '''
                 import kotlinx.coroutines.*
                 fun main() = runBlocking {
                     launch { println("Executando em paralelo!") }
                 }
-            """
+            '''
         },
         "kivy_screen_manager": {
             "significado": "Componente do Kivy para gerenciar e alternar entre várias telas em um aplicativo.",
             "uso": "Utilizado para criar aplicativos com múltiplas interfaces gráficas.",
-            "exemplo": """
+            "ejemplo": '''
                 from kivy.uix.screenmanager import ScreenManager, Screen
                 class Tela1(Screen): pass
                 class Tela2(Screen): pass
                 gerenciador = ScreenManager()
                 gerenciador.add_widget(Tela1(name='tela1'))
                 gerenciador.add_widget(Tela2(name='tela2'))
-            """
+            '''
         },
         "kafka_connect": {
             "significado": "Componente do Kafka para integrar diferentes sistemas com Kafka usando conectores.",
             "uso": "Facilita a movimentação de dados entre Kafka e sistemas externos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Configurar um conector de origem no Kafka Connect:
                 {
                 "name": "meu-conector",
@@ -5501,20 +5501,20 @@ diccionario_por = {
                     "topic": "meu-topico"
                 }
                 }
-            """
+            '''
         },
         "kerberos_ticket": {
             "significado": "Credencial gerada pelo Kerberos para autenticação segura de usuários ou serviços.",
             "uso": "Permite acesso seguro a recursos protegidos em redes baseadas em Kerberos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Verificar tickets Kerberos:
                 klist
-            """
+            '''
         },
         "knapsack_problem": {
             "significado": "Problema de otimização combinatória que busca maximizar o valor em uma mochila limitada pelo seu peso.",
             "uso": "É utilizado em problemas de programação dinâmica para alocação de recursos.",
-            "exemplo": """
+            "ejemplo": '''
                 def knapsack(values, weights, capacity):
                     n = len(values)
                     dp = [[0] * (capacity + 1) for _ in range(n + 1)]
@@ -5525,12 +5525,12 @@ diccionario_por = {
                             else:
                                 dp[i][w] = dp[i-1][w]
                     return dp[n][capacity]
-                """
+                '''
         },
         "kivy_listview": {
             "significado": "Componente da biblioteca Kivy para mostrar listas em aplicações.",
             "uso": "É utilizado para criar interfaces gráficas com listas de elementos interativos.",
-            "exemplo": """
+            "ejemplo": '''
                 from kivy.app import App
                 from kivy.uix.listview import ListView, ListItemButton
 
@@ -5539,12 +5539,12 @@ diccionario_por = {
                         return ListView()
                 
                 MyApp().run()
-                """
+                '''
         },
         "kubernetes_service": {
             "significado": "Recurso do Kubernetes que define uma forma lógica de acessar um grupo de pods.",
             "uso": "É utilizado para balanceamento de carga e comunicação entre pods em um cluster.",
-            "exemplo": """
+            "ejemplo": '''
                 apiVersion: v1
                 kind: Service
                 metadata:
@@ -5556,12 +5556,12 @@ diccionario_por = {
                     - protocol: TCP
                     port: 80
                     targetPort: 8080
-                """
+                '''
         },
         "kfold": {
             "significado": "Método de validação cruzada que divide os dados em k subconjuntos.",
             "uso": "É utilizado para avaliar modelos de machine learning com diferentes partições de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.model_selection import KFold
                 import numpy as np
 
@@ -5569,21 +5569,21 @@ diccionario_por = {
                 kf = KFold(n_splits=2)
                 for train, test in kf.split(X):
                     print('train:', train, 'test:', test)
-                """
+                '''
         },
         "kernel": {
             "significado": "Função que mede a similaridade em machine learning ou o núcleo de um sistema operacional.",
             "uso": "Em machine learning, é utilizado em algoritmos como SVM. Em sistemas, é o componente que interage com o hardware.",
-            "exemplo": """
+            "ejemplo": '''
                 # Kernel em SVM
                 from sklearn.svm import SVC
                 model = SVC(kernel='linear')
-                """
+                '''
         },
         "knapsack_algorithm": {
             "significado": "Algoritmo que resolve o problema da mochila, otimizando a seleção de elementos.",
             "uso": "É utilizado para otimização em programação dinâmica e problemas combinatórios.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo em programação dinâmica
                 def knapsack(values, weights, capacity):
                     n = len(values)
@@ -5595,22 +5595,22 @@ diccionario_por = {
                             else:
                                 dp[i][w] = dp[i-1][w]
                     return dp[n][capacity]
-                """
+                '''
         },
         "k8s_namespace": {
             "significado": "Recurso lógico no Kubernetes para isolar recursos dentro de um cluster.",
             "uso": "É utilizado para organizar e separar ambientes como desenvolvimento, teste e produção.",
-            "exemplo": """
+            "ejemplo": '''
                 apiVersion: v1
                 kind: Namespace
                 metadata:
                 name: dev-environment
-                """
+                '''
         },
         "keras_model": {
             "significado": "Modelo criado com a biblioteca Keras para deep learning.",
             "uso": "É utilizado para construir e treinar redes neuronais.",
-            "exemplo": """
+            "ejemplo": '''
                 from keras.models import Sequential
                 from keras.layers import Dense
 
@@ -5618,12 +5618,12 @@ diccionario_por = {
                     Dense(10, activation='relu', input_shape=(20,)),
                     Dense(1, activation='sigmoid')
                 ])
-                """
+                '''
         },
         "knn_search": {
             "significado": "Busca dos vizinhos mais próximos em um espaço multidimensional.",
             "uso": "É utilizado em machine learning para classificar dados com base na proximidade.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.neighbors import NearestNeighbors
                 import numpy as np
 
@@ -5631,22 +5631,22 @@ diccionario_por = {
                 neigh = NearestNeighbors(n_neighbors=2)
                 neigh.fit(data)
                 print(neigh.kneighbors([[2, 3]]))
-                """
+                '''
         },
         "kaggle_kernel": {
             "significado": "Ambiente de execução fornecido pelo Kaggle para experimentos de machine learning.",
             "uso": "É utilizado para executar scripts de análise e modelos diretamente na plataforma Kaggle.",
-            "exemplo": """
+            "ejemplo": '''
                 # Subir dados para um kernel no Kaggle e executá-los
                 import pandas as pd
                 df = pd.read_csv('/kaggle/input/data.csv')
                 print(df.head())
-                """
+                '''
         },
         "keylogger": {
             "significado": "Programa ou dispositivo que registra pressionamentos de teclas.",
             "uso": "É utilizado para fins de auditoria ou monitoramento do sistema (embora possa ser malicioso).",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo básico (educativo, use eticamente)
                 from pynput import keyboard
 
@@ -5655,30 +5655,30 @@ diccionario_por = {
 
                 with keyboard.Listener(on_press=on_press) as listener:
                     listener.join()
-                """
+                '''
         },
         "kotlin_script": {
             "significado": "Script escrito na linguagem de programação Kotlin.",
             "uso": "É utilizado para tarefas automatizadas, desenvolvimento de aplicações e scripting.",
-            "exemplo": """
+            "ejemplo": '''
                 println("Olá de um script de Kotlin")
-                """
+                '''
         },
         "keyboard_interrupt": {
             "significado": "Exceção que ocorre ao interromper a execução de um programa, geralmente com Ctrl+C.",
             "uso": "É utilizado para interromper um programa em execução de forma controlada.",
-            "exemplo": """
+            "ejemplo": '''
                 try:
                     while True:
                         pass
                 except KeyboardInterrupt:
                     print("Programa interrompido")
-                """
+                '''
         },
         "kriging_interpolation": {
             "significado": "Método de interpolação utilizado em geostatística baseado em um modelo estatístico.",
             "uso": "É utilizado para prever valores em locais não amostrados a partir de dados geográficos.",
-            "exemplo": """
+            "ejemplo": '''
                 from pykrige.ok import OrdinaryKriging
 
                 data = [[1, 1, 10], [2, 2, 20], [3, 3, 30]]
@@ -5688,12 +5688,12 @@ diccionario_por = {
                     [x[2] for x in data]
                 )
                 z, ss = ok.execute("grid", [1, 2, 3], [1, 2, 3])
-                """
+                '''
         },
         "keypair": {
             "significado": "Par de chaves públicas e privadas utilizado em criptografia.",
             "uso": "É utilizado para criptografar e autenticar dados em sistemas seguros.",
-            "exemplo": """
+            "ejemplo": '''
                 from cryptography.hazmat.primitives.asymmetric import rsa
 
                 key = rsa.generate_private_key(
@@ -5703,12 +5703,12 @@ diccionario_por = {
                 private_key = key.private_bytes()
                 public_key = key.public_key().public_bytes()
                 print(private_key, public_key)
-                """
+                '''
         },
         "kinesis": {
             "significado": "Serviço da Amazon Web Services (AWS) para processar e analisar dados em tempo real.",
             "uso": "É utilizado para capturar, processar e analisar fluxos de dados como logs, eventos de IoT, entre outros.",
-            "exemplo": """
+            "ejemplo": '''
                 import boto3
 
                 kinesis = boto3.client('kinesis')
@@ -5718,21 +5718,21 @@ diccionario_por = {
                     PartitionKey='chave-de-particao'
                 )
                 print(response)
-                """
+                '''
         },
         "kdb_query": {
             "significado": "Consulta executada em bancos de dados Kdb+, projetados para análise de séries temporais.",
             "uso": "É utilizado para análises rápidas em dados de alta frequência.",
-            "exemplo": """
+            "ejemplo": '''
                 // Exemplo em Q (linguagem de consulta do Kdb+)
                 trades: ([] time: .z.p + til 10; price: 100 + til 10)
                 select from trades where price > 105
-                """
+                '''
         },
         "kivy_gridlayout": {
             "significado": "Widget da biblioteca Kivy que organiza widgets secundários em uma grade.",
             "uso": "É utilizado para projetar interfaces gráficas organizadas em linhas e colunas.",
-            "exemplo": """
+            "ejemplo": '''
                 from kivy.app import App
                 from kivy.uix.gridlayout import GridLayout
                 from kivy.uix.button import Button
@@ -5745,46 +5745,46 @@ diccionario_por = {
                         return layout
                     
                 MyApp().run()
-                """
+                '''
         },
         "kmeans_classifier": {
             "significado": "Algoritmo de machine learning baseado em agrupamento para classificação não supervisionada.",
             "uso": "É utilizado para agrupar dados em categorias com base na semelhança.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.cluster import KMeans
 
                 X = [[1, 2], [3, 4], [1, 0], [10, 20]]
                 kmeans = KMeans(n_clusters=2, random_state=0)
                 kmeans.fit(X)
                 print(kmeans.labels_)
-                """
+                '''
         },
         "key_error_exception": {
             "significado": "Exceção lançada quando se tenta acessar uma chave inexistente em um dicionário.",
             "uso": "É utilizado para lidar com erros relacionados a chaves não encontradas.",
-            "exemplo": """
+            "ejemplo": '''
                 try:
                     my_dict = {'a': 1, 'b': 2}
                     print(my_dict['c'])
                 except KeyError as e:
                     print(f"Chave não encontrada: {e}")
-                """
+                '''
         },
         "kafka_message": {
             "significado": "Mensagem que é produzida ou consumida usando o Apache Kafka.",
             "uso": "É utilizado para trocar dados entre produtores e consumidores em um sistema distribuído.",
-            "exemplo": """
+            "ejemplo": '''
                 from kafka import KafkaProducer
 
                 producer = KafkaProducer(bootstrap_servers='localhost:9092')
                 producer.send('meu-topic', b'Mensagem de teste')
                 producer.close()
-                """
+                '''
         },
         "kde_estimation": {
             "significado": "Método de estimativa de densidade baseado em kernels.",
             "uso": "É utilizado para estimar distribuições de probabilidade a partir de dados observados.",
-            "exemplo": """
+            "ejemplo": '''
                 import numpy as np
                 from sklearn.neighbors import KernelDensity
 
@@ -5792,35 +5792,35 @@ diccionario_por = {
                 kde = KernelDensity(kernel='gaussian', bandwidth=1.0).fit(data)
                 log_density = kde.score_samples(data)
                 print(np.exp(log_density))
-                """
+                '''
         },
         "kotlin_function": {
             "significado": "Bloco de código reutilizável em Kotlin que realiza uma tarefa específica.",
             "uso": "É utilizado para modularizar código e evitar redundâncias.",
-            "exemplo": """
+            "ejemplo": '''
                 fun saudar(nome: String): String {
                     return "Olá, $nome"
                 }
 
                 println(saudar("Mundo"))
-                """
+                '''
         },
         "k-means++": {
             "significado": "Método de inicialização para o algoritmo K-Means que melhora a seleção inicial de centróides.",
             "uso": "É utilizado para evitar problemas de convergência no K-Means.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.cluster import KMeans
 
                 data = [[1, 2], [3, 4], [1, 0], [10, 20]]
                 kmeans = KMeans(n_clusters=2, init='k-means++', random_state=0)
                 kmeans.fit(data)
                 print(kmeans.cluster_centers_)
-                """
+                '''
         },
         "kubeflow": {
             "significado": "Plataforma de código aberto para desenvolver, implantar e gerenciar fluxos de trabalho de machine learning no Kubernetes.",
             "uso": "É utilizado para automatizar e escalar processos de machine learning.",
-            "exemplo": """
+            "ejemplo": '''
                 # Arquivo de configuração para implantar um pipeline no Kubeflow
                 apiVersion: argoproj.io/v1alpha1
                 kind: Workflow
@@ -5833,12 +5833,12 @@ diccionario_por = {
                     container:
                     image: tensorflow/tensorflow:latest
                     command: ["python", "meu_modelo.py"]
-                """
+                '''
         },
         "keras_layer_dense": {
             "significado": "Camada totalmente conectada de uma rede neural no Keras.",
             "uso": "É utilizada para processar dados em redes neuronais.",
-            "exemplo": """
+            "ejemplo": '''
                 from keras.models import Sequential
                 from keras.layers import Dense
 
@@ -5846,12 +5846,12 @@ diccionario_por = {
                     Dense(64, activation='relu', input_dim=20),
                     Dense(1, activation='sigmoid')
                 ])
-                """
+                '''
         },
         "knn_classifier": {
             "significado": "Classificador baseado nos k vizinhos mais próximos.",
             "uso": "É utilizado para classificar instâncias com base na proximidade a pontos conhecidos.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.neighbors import KNeighborsClassifier
 
                 X = [[0], [1], [2], [3]]
@@ -5859,7 +5859,7 @@ diccionario_por = {
                 knn = KNeighborsClassifier(n_neighbors=2)
                 knn.fit(X, y)
                 print(knn.predict([[1.5]]))  # Saída: [0]
-                """
+                '''
         },
     },
     "l": {
@@ -5873,24 +5873,24 @@ diccionario_por = {
         "lambda_expression": {
             "significado": "Expressão anônima em Python que define uma função sem a necessidade de usar a palavra-chave 'def'.",
             "uso": "É utilizada para definir funções pequenas e simples de forma concisa.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de expressão lambda
                 quadrado = lambda x: x ** 2
                 print(quadrado(5))  # Saída: 25
-                """
+                '''
         },
         "load_balancer": {
             "significado": "Sistema que distribui o tráfego de rede entre vários servidores para otimizar a carga e garantir a disponibilidade.",
             "uso": "É utilizado para gerenciar e balancear a carga entre servidores e melhorar a capacidade de resposta e a disponibilidade de aplicações.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de um balanceador de carga
                 # Em um ambiente de servidor web, o balanceador de carga pode distribuir solicitações entre vários servidores.
-                """
+                '''
         },
         "linked_list": {
             "significado": "Estrutura de dados linear na qual os elementos (nós) estão conectados entre si por meio de ponteiros.",
             "uso": "É utilizada para armazenar e gerenciar coleções de dados de maneira flexível.",
-            "exemplo": """
+            "ejemplo": '''
                 class Node:
                     def __init__(self, value):
                         self.value = value
@@ -5903,41 +5903,41 @@ diccionario_por = {
 
                 head.next = second
                 second.next = third
-                """
+                '''
         },
         "learning_rate": {
             "significado": "Parâmetro em algoritmos de otimização que determina o tamanho dos passos para atualizar os parâmetros do modelo.",
             "uso": "É utilizado para controlar a velocidade de aprendizado em modelos de machine learning e deep learning.",
-            "exemplo": """
+            "ejemplo": '''
                 from keras.optimizers import Adam
 
                 optimizer = Adam(learning_rate=0.001)
-                """
+                '''
         },
         "logger": {
             "significado": "Ferramenta ou módulo em programação que permite registrar eventos e mensagens de um programa.",
             "uso": "É utilizado para capturar e armazenar registros de eventos, erros ou informações em aplicações.",
-            "exemplo": """
+            "ejemplo": '''
                 import logging
 
                 logging.basicConfig(level=logging.INFO)
                 logging.info('Esta é uma mensagem de registro')
-                """
+                '''
         },
         "load_data": {
             "significado": "Processo de carregamento de dados de uma fonte externa, como um arquivo ou banco de dados, para um programa ou sistema.",
             "uso": "É utilizado para importar dados e prepará-los para análise ou processamento em um programa.",
-            "exemplo": """
+            "ejemplo": '''
                 import pandas as pd
 
                 df = pd.read_csv('dados.csv')
                 print(df.head())
-                """
+                '''
         },
         "line_chart": {
             "significado": "Gráfico usado para representar dados em duas dimensões, onde uma linha conecta pontos de dados em um eixo x e y.",
             "uso": "É utilizado para visualizar tendências ao longo do tempo ou mostrar a relação entre variáveis.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 x = [1, 2, 3, 4, 5]
@@ -5948,85 +5948,85 @@ diccionario_por = {
                 plt.ylabel('Y')
                 plt.title('Gráfico de Linha')
                 plt.show()
-                """
+                '''
         },
         "list_comprehension": {
             "significado": "Sintaxe em Python para criar listas de maneira compacta e legível usando uma única linha de código.",
             "uso": "É utilizada para gerar listas baseadas em loops de maneira mais eficiente e concisa.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de list comprehension
                 quadrados = [x ** 2 for x in range(10)]
                 print(quadrados)  # Saída: [0, 1, 4, 9, 16, 25, 36, 49, 64, 81]
-                """
+                '''
         },
         "local_variable": {
             "significado": "Variável declarada dentro de uma função ou bloco de código e acessível apenas nesse contexto.",
             "uso": "É utilizada para armazenar dados temporários e específicos de uma função ou bloco de código.",
-            "exemplo": """
+            "ejemplo": '''
                 def minha_funcao():
                     variavel_local = 10  # Esta é uma variável local
                     print(variavel_local)
 
                 minha_funcao()
                 # print(variavel_local)  # Isso causaria um erro, pois variavel_local não está disponível fora da função
-                """
+                '''
         },
         "long_integer": {
             "significado": "Tipo de dado em algumas linguagens de programação para representar números inteiros de grande tamanho.",
             "uso": "É utilizado para trabalhar com números que excedem o tamanho padrão dos inteiros.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo em Python 3, onde os inteiros são de tamanho arbitrário
                 num = 123456789123456789123456789
                 print(num)
-                """
+                '''
         },
         "library": {
             "significado": "Coleção de funções e módulos pré-escritos que podem ser utilizados em um programa para facilitar tarefas específicas.",
             "uso": "É utilizada para estender as funcionalidades de uma linguagem de programação.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de uma biblioteca em Python
                 import math
 
                 print(math.sqrt(16))  # Saída: 4.0
-                """
+                '''
         },
         "loop": {
             "significado": "Estrutura de controle que permite executar um bloco de código repetidamente até que uma condição seja atendida.",
             "uso": "É utilizada para repetir tarefas ou iterar sobre elementos de uma coleção.",
-            "exemplo": """
+            "ejemplo": '''
                 for i in range(5):
                     print(i)  # Imprime os números de 0 a 4
-                """
+                '''
         },
         "load_file": {
             "significado": "Processo de leitura de dados de um arquivo e carregamento na memória de um programa.",
             "uso": "É utilizado para processar ou analisar dados armazenados em arquivos.",
-            "exemplo": """
+            "ejemplo": '''
                 with open('arquivo.txt', 'r') as file:
                     conteudo = file.read()
                     print(conteudo)
-                """
+                '''
         },
         "list": {
             "significado": "Tipo de dado em Python que representa uma coleção ordenada de elementos que podem ser de diferentes tipos.",
             "uso": "É utilizada para armazenar e manipular sequências de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 minha_lista = [1, 2, 3, 4, 5]
                 print(minha_lista[1])  # Saída: 2
-                """
+                '''
         },
         "lambda_function": {
             "significado": "Função anônima em Python definida com a palavra-chave 'lambda'.",
             "uso": "É utilizada para criar funções pequenas e de uma única linha.",
-            "exemplo": """
+            "ejemplo": '''
                 soma = lambda a, b: a + b
                 print(soma(3, 4))  # Saída: 7
-                """
+                '''
         },
         "lock": {
             "significado": "Mecanismo de sincronização usado para evitar o acesso concorrente a recursos compartilhados em programação concorrente.",
             "uso": "É utilizado para evitar condições de corrida e garantir a integridade dos dados.",
-            "exemplo": """
+            "ejemplo": '''
                 from threading import Lock
 
                 lock = Lock()
@@ -6034,12 +6034,12 @@ diccionario_por = {
                 def funcao_segura_para_threads():
                     with lock:
                         print('Acesso controlado')
-                """
+                '''
         },
         "loss_function": {
             "significado": "Função usada para medir a diferença entre a previsão do modelo e o valor real em machine learning.",
             "uso": "É utilizada para otimizar e ajustar o desempenho do modelo.",
-            "exemplo": """
+            "ejemplo": '''
                 from keras.losses import MeanSquaredError
 
                 funcao_perda = MeanSquaredError()
@@ -6047,12 +6047,12 @@ diccionario_por = {
                 y_pred = [1.1, 1.9, 3.2]
                 perda = funcao_perda(y_true, y_pred)
                 print(perda.numpy())
-                """
+                '''
         },
         "linear_regression": {
             "significado": "Modelo estatístico que busca a relação entre uma variável dependente e uma ou mais variáveis independentes usando uma linha reta.",
             "uso": "É utilizado para fazer previsões e entender a relação entre variáveis.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.linear_model import LinearRegression
 
                 X = [[1], [2], [3], [4]]
@@ -6061,7 +6061,7 @@ diccionario_por = {
                 modelo = LinearRegression()
                 modelo.fit(X, y)
                 print(modelo.predict([[5]]))  # Previsão para o valor 5
-                """
+                '''
         },
 
     },
@@ -6070,28 +6070,28 @@ diccionario_por = {
         "map": {
             "significado": "Função ou método que aplica uma função a cada elemento de um iterável e retorna um iterador dos resultados.",
             "uso": "É utilizado para transformar uma coleção aplicando uma função a cada um de seus elementos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de map
                 numeros = [1, 2, 3, 4]
                 numeros_quadrados = map(lambda x: x ** 2, numeros)
                 print(list(numeros_quadrados))  # Saída: [1, 4, 9, 16]
-                """
+                '''
         },
         "merge": {
             "significado": "Operação de combinar dois ou mais elementos, listas ou conjuntos em um único, mantendo ou criando uma sequência ordenada.",
             "uso": "É utilizado para combinar dados de diferentes fontes ou para ordenar e combinar listas de maneira eficiente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de merge em listas
                 lista1 = [1, 3, 5]
                 lista2 = [2, 4, 6]
                 lista_combinada = sorted(lista1 + lista2)
                 print(lista_combinada)  # Saída: [1, 2, 3, 4, 5, 6]
-                """
+                '''
         },
         "memory_leak": {
             "significado": "Problema em programação onde um programa consome mais memória do que o necessário e não a libera, o que pode levar a falhas ou lentidão.",
             "uso": "É utilizado para descrever e diagnosticar problemas relacionados ao uso ineficiente da memória.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de possível memory leak em Python
                 class ExemploMemoryLeak:
                     def __init__(self):
@@ -6102,24 +6102,24 @@ diccionario_por = {
                 obj = ExemploMemoryLeak()
                 obj.add_data('some data')
                 # Se obj continuar crescendo sem liberar memória, ocorre um memory leak
-                """
+                '''
         },
         "mean": {
             "significado": "Valor médio de um conjunto de números, calculado somando todos os valores e dividindo pelo número de elementos.",
             "uso": "É utilizado em estatística e análise de dados para representar o centro de um conjunto de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de cálculo da média
                 import numpy as np
 
                 dados = [1, 2, 3, 4, 5]
                 media = np.mean(dados)
                 print(media)  # Saída: 3.0
-                """
+                '''
         },
         "machine_learning": {
             "significado": "Campo da inteligência artificial que permite que os computadores aprendam com os dados e melhorem seu desempenho sem programação explícita.",
             "uso": "É utilizado para criar modelos preditivos e sistemas que podem se adaptar e aprender com a experiência.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de machine learning com scikit-learn
                 from sklearn.linear_model import LinearRegression
 
@@ -6129,12 +6129,12 @@ diccionario_por = {
                 modelo = LinearRegression()
                 modelo.fit(X, y)
                 print(modelo.predict([[4]]))  # Previsão para um novo valor
-                """
+                '''
         },
         "model": {
             "significado": "Representação matemática ou computacional de um sistema ou processo, utilizada para fazer previsões ou análises.",
             "uso": "É utilizado em machine learning e estatística para realizar inferências ou previsões baseadas em dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de um modelo simples em scikit-learn
                 from sklearn.model_selection import train_test_split
                 from sklearn.linear_model import LinearRegression
@@ -6145,32 +6145,32 @@ diccionario_por = {
                 modelo = LinearRegression()
                 modelo.fit(X_treino, y_treino)
                 print(modelo.score(X_teste, y_teste))
-                """
+                '''
         },
         "momentum": {
             "significado": "Técnica em otimização de algoritmos que ajuda a acelerar o aprendizado e a evitar mínimos locais mantendo uma 'inércia' na mudança de parâmetros.",
             "uso": "É utilizado em redes neurais e algoritmos de otimização para melhorar a velocidade de convergência e evitar oscilações.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de momentum na otimização
                 from keras.optimizers import SGD
 
                 otimizador = SGD(learning_rate=0.01, momentum=0.9)
-                """
+                '''
         },
         "matrix": {
             "significado": "Estrutura bidimensional de números organizada em linhas e colunas, utilizada em matemática e programação.",
             "uso": "É utilizado em álgebra linear, gráficos por computador e processamento de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 import numpy as np
 
                 matriz = np.array([[1, 2], [3, 4]])
                 print(matriz)
-                """
+                '''
         },
         "merge_sort": {
             "significado": "Algoritmo de ordenação que divide uma lista em sublistas, ordena-as recursivamente e depois as combina em ordem.",
             "uso": "É utilizado para ordenar listas de maneira eficiente com um tempo de complexidade O(n log n).",
-            "exemplo": """
+            "ejemplo": '''
                 def merge_sort(arr):
                     if len(arr) > 1:
                         meio = len(arr) // 2
@@ -6199,12 +6199,12 @@ diccionario_por = {
                             arr[k] = direita[j]
                             j += 1
                             k += 1
-                """
+                '''
         },
         "modularization": {
             "significado": "Processo de dividir um programa em módulos independentes para melhorar a organização e manutenção do código.",
             "uso": "É utilizado para estruturar o código em componentes reutilizáveis e facilitar sua compreensão.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de modularização em Python
                 # Arquivo: modulo.py
                 def saudacao():
@@ -6213,12 +6213,12 @@ diccionario_por = {
                 # Arquivo principal
                 from modulo import saudacao
                 print(saudacao())  # Saída: 'Olá'
-                """
+                '''
         },
         "multithreading": {
             "significado": "Técnica de programação que permite executar múltiplas threads de um processo simultaneamente para melhorar a eficiência e desempenho.",
             "uso": "É utilizado para realizar tarefas concorrentes e aproveitar melhor os recursos do processador.",
-            "exemplo": """
+            "ejemplo": '''
                 import threading
 
                 def imprimir_numeros():
@@ -6228,62 +6228,62 @@ diccionario_por = {
                 thread = threading.Thread(target=imprimir_numeros)
                 thread.start()
                 thread.join()
-                """
+                '''
         },
         "mse": {
             "significado": "Erro quadrático médio, métrica utilizada para medir a diferença média entre os valores reais e os previstos em modelos de regressão.",
             "uso": "É utilizado para avaliar a precisão de um modelo de regressão.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.metrics import mean_squared_error
 
                 y_real = [1, 2, 3]
                 y_predito = [1.1, 2.0, 3.2]
                 mse = mean_squared_error(y_real, y_predito)
                 print(mse)
-                """
+                '''
         },
         "minimax": {
             "significado": "Algoritmo utilizado em jogos de dois jogadores para encontrar a estratégia ótima minimizando a perda máxima possível.",
             "uso": "É utilizado em jogos e teoria dos jogos para avaliar os movimentos possíveis de ambos os jogadores e selecionar o melhor.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de uso de minimax
                 # Em um jogo de xadrez, minimax pode ser usado para escolher o movimento que minimiza a perda máxima.
-                """
+                '''
         },
         "morphism": {
             "significado": "Função entre duas estruturas matemáticas que preserva a relação entre seus elementos.",
             "uso": "É utilizado em teoria das categorias e matemática para mapear estruturas de maneira coerente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de morfismo em álgebra de conjuntos
                 def f(x):
                     return x + 1
                 # f é um morfismo se preserva a estrutura da operação de adição.
-                """
+                '''
         },
         "middleware": {
             "significado": "Software que atua como intermediário entre sistemas operacionais ou bancos de dados e as aplicações que são executadas sobre eles.",
             "uso": "É utilizado para facilitar a comunicação e a gestão de dados entre aplicações distribuídas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de middleware em uma aplicação web
                 # Um middleware em uma aplicação web pode interceptar solicitações e responder antes de que cheguem à lógica de negócios.
-                """
+                '''
         },
         "mean_absolute_error": {
             "significado": "Métrica utilizada para medir a diferença média absoluta entre os valores reais e os previstos.",
             "uso": "É utilizado para avaliar a precisão de modelos de regressão e é menos sensível a erros grandes em comparação com o MSE.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.metrics import mean_absolute_error
 
                 y_real = [1, 2, 3]
                 y_predito = [1.1, 2.0, 3.2]
                 mae = mean_absolute_error(y_real, y_predito)
                 print(mae)
-                """
+                '''
         },
         "metric": {
             "significado": "Função utilizada para avaliar e quantificar o desempenho ou qualidade de um modelo ou sistema.",
             "uso": "É utilizado em diversos campos, como machine learning e análise de dados, para medir a efetividade e precisão dos modelos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de métrica em machine learning
                 from sklearn.metrics import accuracy_score
 
@@ -6291,12 +6291,12 @@ diccionario_por = {
                 y_predito = [0, 1, 1, 1]
                 acuracia = accuracy_score(y_real, y_predito)
                 print(acuracia)  # Saída: 0.75
-                """
+                '''
         },
         "monte_carlo_simulation": {
             "significado": "Método de simulação estocástica que utiliza a geração de números aleatórios para obter resultados aproximados de um problema matemático ou estatístico.",
             "uso": "É utilizado para resolver problemas complexos de cálculo, como estimar áreas, integrais ou probabilidades em sistemas com incerteza.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uma simulação de Monte Carlo para estimar π
                 import numpy as np
 
@@ -6309,12 +6309,12 @@ diccionario_por = {
                     return (dentro_do_circulo / num_amostras) * 4
 
                 print(estimando_pi(1000000))  # Saída aproximada: 3.14159
-                """
+                '''
         },
         "minimum_spanning_tree": {
             "significado": "Árvore que conecta todos os nós de um grafo com o menor peso possível e sem ciclos.",
             "uso": "É utilizado em redes de computadores, design de circuitos e outras áreas para conectar pontos de maneira eficiente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do algoritmo de Kruskal para encontrar uma árvore de expansão mínima
                 from scipy.spatial import distance_matrix
                 import numpy as np
@@ -6322,12 +6322,12 @@ diccionario_por = {
                 pontos = np.array([[0, 0], [1, 0], [0, 1], [1, 1]])
                 matriz_de_distancias = distance_matrix(pontos, pontos)
                 print("Matriz de distâncias:\n", matriz_de_distancias)
-                """
+                '''
         },
         "maximum_likelihood": {
             "significado": "Método de estimação de parâmetros de um modelo estatístico que busca maximizar a função de verossimilhança.",
             "uso": "É utilizado para encontrar os valores dos parâmetros de um modelo que melhor explicam os dados observados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de estimativa de máxima verossimilhança para uma distribuição normal
                 import numpy as np
                 from scipy.stats import norm
@@ -6335,12 +6335,12 @@ diccionario_por = {
                 dados = np.array([1.2, 2.3, 2.8, 3.1, 4.0])
                 media, desvio_padrao = norm.fit(dados)
                 print(f"Média estimada: {media}, Desvio padrão estimado: {desvio_padrao}")
-                """
+                '''
         },
         "model_accuracy": {
             "significado": "Medida de quão bem um modelo de aprendizado de máquina se ajusta aos dados e faz previsões corretas.",
             "uso": "É utilizado para avaliar o desempenho de um modelo em termos de precisão na classificação ou regressão.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de cálculo de precisão de um modelo de classificação
                 from sklearn.metrics import accuracy_score
 
@@ -6348,21 +6348,21 @@ diccionario_por = {
                 y_predito = [0, 1, 0, 1]
                 acuracia = accuracy_score(y_real, y_predito)
                 print(f"Precisão do modelo: {acuracia}")  # Saída: 0.75
-                """
+                '''
         },
         "min": {
             "significado": "Função que retorna o valor mínimo de um conjunto de dados.",
             "uso": "É utilizada para encontrar o menor elemento em uma lista ou conjunto de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso da função min
                 numeros = [3, 1, 4, 1, 5, 9, 2]
                 print(min(numeros))  # Saída: 1
-                """
+                '''
         },
         "multiprocessing": {
             "significado": "Técnica de programação que permite executar múltiplos processos simultaneamente para aproveitar melhor os recursos do sistema.",
             "uso": "É utilizada na programação concorrente para executar tarefas de forma paralela e melhorar o desempenho de programas intensivos em processamento.",
-            "exemplo": """
+            "ejemplo": '''
                 import multiprocessing
 
                 def funcao_trabalhador(num):
@@ -6377,20 +6377,20 @@ diccionario_por = {
 
                     for p in processos:
                         p.join()
-                """
+                '''
         },
         "modulus": {
             "significado": "Operação matemática que retorna o resto da divisão de dois números.",
             "uso": "É utilizada para encontrar o resto de uma divisão e em algoritmos de programação para avaliar condições de divisibilidade.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso da operação de módulo
                 print(10 % 3)  # Saída: 1
-                """
+                '''
         },
         "machine_vision": {
             "significado": "Campo da inteligência artificial que permite às máquinas interpretar e compreender imagens e vídeos.",
             "uso": "É utilizado em reconhecimento de imagens, diagnóstico médico, controle de qualidade em manufatura, etc.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do OpenCV para detectar bordas em uma imagem
                 import cv2
 
@@ -6399,20 +6399,20 @@ diccionario_por = {
                 cv2.imshow('Bordas', bordas)
                 cv2.waitKey(0)
                 cv2.destroyAllWindows()
-                """
+                '''
         },
         "monoid": {
             "significado": "Estrutura algébrica que consiste em um conjunto e uma operação binária que é associativa e tem um elemento neutro.",
             "uso": "É utilizado em teoria da computação e álgebra abstrata para modelar operações combinadas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de um monóide em programação
                 # O conjunto de números inteiros com a operação de soma é um monóide
-                """
+                '''
         },
         "markov_chain": {
             "significado": "Modelo matemático que descreve um sistema que transita de um estado para outro de acordo com probabilidades de transição que dependem apenas do estado atual.",
             "uso": "É utilizado na simulação de processos estocásticos, previsão de sequências e modelagem de processos de decisão.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de uma cadeia de Markov para modelar uma sequência de estados
                 import numpy as np
 
@@ -6421,45 +6421,45 @@ diccionario_por = {
                 estado_atual = 0  # Índice de 'Ensolarado'
                 proximo_estado = np.random.choice([0, 1], p=matriz_de_transicao[estado_atual])
                 print(f"Próximo estado: {estados[proximo_estado]}")
-                """
+                '''
         },
         "mean_squared_error": {
             "significado": "Métrica utilizada para medir a diferença média ao quadrado entre os valores reais e os valores previstos por um modelo.",
             "uso": "É utilizada para avaliar a precisão de um modelo de regressão, penalizando mais os erros grandes.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.metrics import mean_squared_error
 
                 y_real = [1, 2, 3]
                 y_predito = [1.1, 2.0, 3.2]
                 mse = mean_squared_error(y_real, y_predito)
                 print(f"Erro quadrático médio: {mse}")
-                """
+                '''
         },
         "memory_management": {
             "significado": "Processo de gestão e administração da memória em um sistema operacional para otimizar seu uso e desempenho.",
             "uso": "É utilizado para garantir que os programas utilizem de forma eficiente a memória disponível.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de técnicas de gestão de memória em Python
                 import gc
                 gc.collect()  # Coleta objetos não utilizados para liberar memória
-                """
+                '''
         },
         "matrix_multiplication": {
             "significado": "Operação matemática que toma duas matrizes e produz uma nova matriz multiplicando seus elementos de acordo com uma regra de multiplicação de matrizes.",
             "uso": "É utilizado em álgebra linear, gráficos por computador e no treinamento de modelos de machine learning.",
-            "exemplo": """
+            "ejemplo": '''
                 import numpy as np
 
                 A = np.array([[1, 2], [3, 4]])
                 B = np.array([[5, 6], [7, 8]])
                 resultado = np.matmul(A, B)
                 print(resultado)
-                """
+                '''
         },
         "minimization": {
             "significado": "Processo de encontrar o valor mínimo de uma função objetivo sob certas condições.",
             "uso": "É utilizado em otimização matemática e algoritmos de machine learning para encontrar a melhor solução ou parâmetro.",
-            "exemplo": """
+            "ejemplo": '''
                 from scipy.optimize import minimize
 
                 def funcao_objetivo(x):
@@ -6467,12 +6467,12 @@ diccionario_por = {
 
                 resultado = minimize(funcao_objetivo, 0)
                 print(resultado.x)  # Mostra o mínimo encontrado
-                """
+                '''
         },
         "module": {
             "significado": "Unidade de código independente em uma linguagem de programação que agrupa funções, variáveis e classes.",
             "uso": "É utilizado para organizar e reutilizar o código de forma estruturada.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de um módulo em Python
                 # Arquivo: my_module.py
                 def cumprimentar():
@@ -6481,52 +6481,52 @@ diccionario_por = {
                 # Arquivo principal
                 from my_module import cumprimentar
                 print(cumprimentar())  # Saída: Hello, world!
-                """
+                '''
         },
         "mapping": {
             "significado": "Processo de associar elementos de um conjunto com elementos de outro conjunto por meio de uma função ou relação.",
             "uso": "É utilizado em programação para transformar dados ou estruturar informações de forma mais eficiente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de mapping em Python
                 numeros = [1, 2, 3, 4]
                 numeros_ao_quadrado = list(map(lambda x: x**2, numeros))
                 print(numeros_ao_quadrado)  # Saída: [1, 4, 9, 16]
-                """
+                '''
         },
         "monadic": {
             "significado": "Relativo a um monádico, que é uma estrutura usada em programação funcional para lidar com efeitos e encadear operações de forma sequencial.",
             "uso": "É utilizado para estruturar e sequenciar operações em linguagens de programação funcional como Haskell.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de monada em Haskell para operações com Maybe
                 safeDivide :: Float -> Float -> Maybe Float
                 safeDivide _ 0 = Nothing
                 safeDivide x y = Just (x / y)
-                """
+                '''
         },
         "mutability": {
             "significado": "Propriedade de um objeto ou variável que permite modificar seu estado ou conteúdo após sua criação.",
             "uso": "É utilizado para descrever o comportamento das estruturas de dados em programação e a gestão de estados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de mutabilidade em Python
                 lst = [1, 2, 3]
                 lst[0] = 10  # Modifica o primeiro elemento da lista
                 print(lst)  # Saída: [10, 2, 3]
-                """
+                '''
         },
         "manipulation": {
             "significado": "Processo de modificar ou controlar elementos de um conjunto de dados ou uma estrutura de forma específica.",
             "uso": "É utilizado na programação para transformar e gerenciar dados de forma eficiente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de manipulação de uma string em Python
                 texto = "Hello, world!"
                 texto_modificado = texto.replace("world", "Python")
                 print(texto_modificado)  # Saída: Hello, Python!
-                """
+                '''
         },
         "masking": {
             "significado": "Processo de ocultar ou restringir dados para proteger informações sensíveis ou para modificar a visibilidade de elementos.",
             "uso": "É utilizado em programação e processamento de imagens para filtrar ou modificar a aparência dos dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de masking em processamento de imagens com OpenCV
                 import cv2
                 import numpy as np
@@ -6538,23 +6538,23 @@ diccionario_por = {
                 cv2.imshow('Imagem Mascarada', imagem_mascarada)
                 cv2.waitKey(0)
                 cv2.destroyAllWindows()
-                """
+                '''
         },
         "multidimensional_array": {
             "significado": "Estrutura de dados que permite armazenar elementos em mais de uma dimensão, como matrizes ou tensores.",
             "uso": "É utilizado em álgebra linear, ciência de dados e processamento de imagens para representar e manipular dados complexos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de arrays multidimensionais com NumPy
                 import numpy as np
 
                 array_2d = np.array([[1, 2, 3], [4, 5, 6]])
                 print(array_2d.shape)  # Saída: (2, 3)
-                """
+                '''
         },
         "merge_sort": {
             "significado": "Algoritmo de ordenação eficiente baseado na técnica de dividir e conquistar que divide a lista em sublistas, as ordena e as combina.",
             "uso": "É utilizado para ordenar grandes volumes de dados de forma eficiente e estável.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de implementação de Merge Sort em Python
                 def merge_sort(arr):
                     if len(arr) > 1:
@@ -6588,12 +6588,12 @@ diccionario_por = {
                 arr = [5, 2, 4, 1, 3]
                 merge_sort(arr)
                 print(arr)  # Saída: [1, 2, 3, 4, 5]
-                """
+                '''
         },
         "mapreduce": {
             "significado": "Modelo de programação para o processamento e geração de grandes conjuntos de dados que são divididos em tarefas menores e processados em paralelo.",
             "uso": "É utilizado em sistemas distribuídos para processar e analisar grandes volumes de dados de forma eficiente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de MapReduce com Python
                 from functools import reduce
 
@@ -6601,12 +6601,12 @@ diccionario_por = {
                 mapped_data = list(map(lambda x: x * 2, data))
                 reduced_data = reduce(lambda x, y: x + y, mapped_data)
                 print(reduced_data)  # Saída: 30
-                """
+                '''
         },
         "monad": {
             "significado": "Abstração em programação funcional que permite encadear operações e lidar com efeitos colaterais de forma modular.",
             "uso": "É utilizado para estruturar código e controlar efeitos colaterais em linguagens funcionais como Haskell.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de uso de monada em Haskell
                 import Control.Monad
 
@@ -6614,12 +6614,12 @@ diccionario_por = {
                     putStrLn "Introduza um número:"
                     num <- readLn
                     putStrLn $ "O dobro é: " ++ show (num * 2)
-                """
+                '''
         },
         "method_overloading": {
             "significado": "Capacidade de uma classe para definir múltiplos métodos com o mesmo nome, mas com parâmetros diferentes.",
             "uso": "É utilizado para criar métodos que realizam a mesma operação de forma generalizada com diferentes tipos de argumentos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de sobrecarga de métodos em Python (com a ajuda de @overload)
                 from typing import overload
 
@@ -6638,22 +6638,22 @@ diccionario_por = {
                 p = Printer()
                 p.print_message("Olá, mundo!")
                 p.print_message(123)
-                """
+                '''
         },
         "mutable": {
             "significado": "Propriedade de um objeto que permite que seu conteúdo ou estado seja modificado após sua criação.",
             "uso": "É utilizado para descrever o comportamento de estruturas de dados que podem mudar, como listas e dicionários em Python.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de mutabilidade em Python
                 data = [1, 2, 3]
                 data.append(4)  # Modifica o conteúdo da lista
                 print(data)  # Saída: [1, 2, 3, 4]
-                """
+                '''
         },
         "multithreaded": {
             "significado": "Descrever um programa ou sistema que pode executar múltiplas threads ou processos de forma concorrente.",
             "uso": "É utilizado para executar tarefas simultaneamente e melhorar o desempenho de programas que requerem processamento paralelo.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de programação multithreaded em Python com threading
                 import threading
 
@@ -6664,12 +6664,12 @@ diccionario_por = {
                 thread = threading.Thread(target=print_hello)
                 thread.start()
                 thread.join()
-                """
+                '''
         },
         "max_heap": {
             "significado": "Estrutura de dados do tipo heap onde o elemento máximo está na raiz e cada nó é maior ou igual aos seus nós filhos.",
             "uso": "É utilizado para implementar filas de prioridade e algoritmos de seleção de elementos máximos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de um max-heap em Python com heapq (requer inversão de valores)
                 import heapq
 
@@ -6679,12 +6679,12 @@ diccionario_por = {
                 heapq.heappush(max_heap, -5)
 
                 print(-heapq.heappop(max_heap))  # Saída: 20
-                """
+                '''
         },
         "min_heap": {
             "significado": "Estrutura de dados do tipo heap onde o elemento mínimo está na raiz e cada nó é menor ou igual aos seus nós filhos.",
             "uso": "É utilizado para manter um conjunto de elementos onde o mínimo pode ser extraído rapidamente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de um min-heap em Python com heapq
                 import heapq
 
@@ -6692,44 +6692,44 @@ diccionario_por = {
                 heapq.heapify(min_heap)
                 heapq.heappush(min_heap, 2)
                 print(heapq.heappop(min_heap))  # Saída: 1
-                """
+                '''
         },
         "method": {
             "significado": "Função ou procedimento definido em uma classe que realiza uma operação específica.",
             "uso": "É utilizado para definir comportamentos de objetos na programação orientada a objetos.",
-            "exemplo": """
+            "ejemplo": '''
                 class Calculator:
                     def add(self, a, b):
                         return a + b
 
                 calc = Calculator()
                 print(calc.add(5, 3))  # Saída: 8
-                """
+                '''
         },
         "monoid": {
             "significado": "Estrutura algébrica que possui uma operação binária associativa e um elemento neutro que não afeta o resultado da operação.",
             "uso": "É utilizado em programação funcional para modelar operações e estruturas como concatenação de cadeias de caracteres e soma de números.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de monoid em Python com concatenação de strings
                 from functools import reduce
 
                 strings = ["Hello", " ", "World"]
                 result = reduce(lambda x, y: x + y, strings)
                 print(result)  # Saída: Hello World
-                """
+                '''
         },
         "memory_management_unit": {
             "significado": "Componente de hardware que gerencia a memória de um sistema, coordenando a transferência de dados entre a memória principal e outros dispositivos.",
             "uso": "É utilizado para garantir o acesso eficiente e seguro à memória em sistemas computacionais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual da função de uma MMU em sistemas operacionais
                 # A MMU mapeia endereços de memória virtual para endereços físicos na RAM.
-                """
+                '''
         },
         "mvp": {
             "significado": "Modelo de design de software que separa a lógica de apresentação, a lógica de negócios e a entrada do usuário para promover a prova e a manutenção de aplicações.",
             "uso": "É utilizado no desenvolvimento de aplicações para melhorar a separação de responsabilidades e facilitar a prova e a escalabilidade.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de estrutura MVP em uma aplicação de Python
                 class Model:
                     def get_data(self):
@@ -6752,12 +6752,12 @@ diccionario_por = {
                 view = View()
                 presenter = Presenter(model, view)
                 presenter.update_view()  # Saída: Displaying: Data from Model
-                """
+                '''
         },
         "markup_language": {
             "significado": "Linguagem de programação usada para definir a estrutura e apresentação de texto na web, geralmente por meio de tags.",
             "uso": "É utilizado para construir e apresentar documentos com formatação na web.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de uma linguagem de marcação (HTML)
                 <!DOCTYPE html>
                 <html>
@@ -6769,38 +6769,38 @@ diccionario_por = {
                     <p>This is a paragraph.</p>
                 </body>
                 </html>
-                """
+                '''
         },
         "monolithic": {
             "significado": "Arquitetura de software na qual todos os componentes do aplicativo estão integrados em um único bloco ou programa.",
             "uso": "É utilizado para descrever aplicativos que não têm separação de serviços e podem ser difíceis de escalar ou manter.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de um aplicativo monolítico em Python
                 # Um aplicativo de software onde a lógica de apresentação, negócios e acesso a dados estão em um único arquivo.
-                """
+                '''
         },
         "memory_block": {
             "significado": "Unidade de armazenamento em memória que é alocada para armazenar dados ou programas.",
             "uso": "É utilizado em programação para gerenciar e manipular segmentos de memória no sistema.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de blocos de memória em programação C
                 # Alocação de um bloco de memória de 100 bytes
                 char *block = (char *)malloc(100 * sizeof(char));
                 free(block);
-                """
+                '''
         },
         "multimodal": {
             "significado": "Em tecnologia, refere-se a sistemas ou aplicações que usam múltiplas formas de interação ou entrada/saída de dados.",
             "uso": "É utilizado em interfaces de usuário avançadas e sistemas de inteligência artificial para permitir múltiplas formas de interação.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de um sistema multimodal
                 # Um assistente virtual que pode responder a comandos de voz e texto
-                """
+                '''
         },
         "message_queue": {
             "significado": "Estrutura de dados ou sistema que permite a comunicação entre diferentes partes de um sistema por meio do envio e recebimento de mensagens.",
             "uso": "É utilizado em sistemas distribuídos para desacoplar processos e facilitar a comunicação assíncrona.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de uma fila de mensagens em Python com a biblioteca `queue`
                 import queue
 
@@ -6808,12 +6808,12 @@ diccionario_por = {
                 message_queue.put("Mensagem 1")
                 message_queue.put("Mensagem 2")
                 print(message_queue.get())  # Saída: Mensagem 1
-                """
+                '''
         },
         "mse": {
             "significado": "Erro quadrático médio, uma medida de precisão que calcula a média dos erros ao quadrado entre os valores previstos e os reais.",
             "uso": "É utilizado em estatística e aprendizado de máquina para avaliar a precisão de modelos de previsão.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de cálculo de MSE em Python
                 from sklearn.metrics import mean_squared_error
 
@@ -6821,12 +6821,12 @@ diccionario_por = {
                 y_pred = [1.1, 2.1, 3.1, 4.1, 5.1]
                 mse = mean_squared_error(y_true, y_pred)
                 print(mse)  # Saída: 0.01
-                """
+                '''
         },
         "mean_absolute_error": {
             "significado": "Erro absoluto médio, uma medida de precisão que calcula a média dos erros absolutos entre os valores previstos e os reais.",
             "uso": "É utilizado para avaliar a precisão de um modelo de previsão e entender a magnitude média dos erros.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de cálculo de MAE em Python
                 from sklearn.metrics import mean_absolute_error
 
@@ -6834,12 +6834,12 @@ diccionario_por = {
                 y_pred = [1.1, 2.1, 3.1, 4.1, 5.1]
                 mae = mean_absolute_error(y_true, y_pred)
                 print(mae)  # Saída: 0.1
-                """
+                '''
         },
         "matrix_factorization": {
             "significado": "Técnica matemática usada para decompor uma matriz em produtos de matrizes menores, geralmente em contextos de análise de dados e sistemas de recomendação.",
             "uso": "É utilizado para reduzir a dimensionalidade de dados, descobrir padrões latentes e fazer recomendações personalizadas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de matrix factorization com a biblioteca `scikit-learn` em Python
                 from sklearn.decomposition import NMF
                 import numpy as np
@@ -6850,12 +6850,12 @@ diccionario_por = {
                 H = model.components_
                 print(W)
                 print(H)
-                """
+                '''
         },
         "multiprocessing": {
             "significado": "Técnica de programação que permite a execução simultânea de processos para aproveitar múltiplos núcleos da CPU e melhorar a eficiência dos programas.",
             "uso": "É utilizado para paralelizar tarefas e melhorar o desempenho de aplicações em Python e outras linguagens.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de multiprocessing em Python
                 from multiprocessing import Process
 
@@ -6866,12 +6866,12 @@ diccionario_por = {
                     p = Process(target=print_hello)
                     p.start()
                     p.join()
-                """
+                '''
         },
         "maximum_likelihood_estimation": {
             "significado": "Método estatístico para estimar os parâmetros de um modelo que maximiza a probabilidade dos dados observados.",
             "uso": "É utilizado em modelos de inferência estatística para encontrar os melhores parâmetros que explicam os dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de MLE em Python para uma distribuição normal
                 import numpy as np
                 from scipy.stats import norm
@@ -6879,12 +6879,12 @@ diccionario_por = {
                 data = np.array([1.5, 2.3, 2.8, 3.1, 3.7])
                 mean, var = norm.fit(data)
                 print(f"Média: {mean}, Variância: {var}")
-                """
+                '''
         },
         "minimum_spanning_tree": {
             "significado": "Árvore de um grafo que conecta todos os nós com a mínima soma de pesos de suas arestas e sem ciclos.",
             "uso": "É utilizado em algoritmos de redes e otimização para encontrar a forma mais eficiente de conectar um conjunto de pontos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de um algoritmo de árvore de expansão mínima (Prim) em Python
                 import networkx as nx
 
@@ -6892,35 +6892,35 @@ diccionario_por = {
                 G.add_weighted_edges_from([(1, 2, 1), (1, 3, 3), (2, 3, 2), (3, 4, 4), (2, 4, 5)])
                 mst = nx.minimum_spanning_tree(G)
                 print(mst.edges(data=True))
-                """
+                '''
         },
         "markup": {
             "significado": "Linguagem de programação que utiliza tags para definir a estrutura e apresentação de conteúdo, como HTML ou XML.",
             "uso": "É utilizado no desenvolvimento de conteúdo web e na organização de dados estruturados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de HTML como linguagem de marcação
                 <div>
                     <h1>Welcome to My Page</h1>
                     <p>This is a paragraph in a markup language.</p>
                 </div>
-                """
+                '''
         },
         "median": {
             "significado": "Valor central em um conjunto de dados ordenados, que divide o conjunto em duas metades iguais.",
             "uso": "É utilizado como uma medida de tendência central para representar o valor médio de um conjunto de dados, especialmente quando há valores atípicos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de cálculo da mediana em Python
                 import numpy as np
 
                 data = [1, 3, 2, 5, 4]
                 median = np.median(data)
                 print(median)  # Saída: 3
-                """
+                '''
         },
         "modular_programming": {
             "significado": "Abordagem de desenvolvimento de software na qual o código é dividido em módulos independentes e reutilizáveis.",
             "uso": "É utilizado para organizar o código em partes mais gerenciáveis e facilitar sua manutenção e escalabilidade.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de programação modular em Python
                 # Arquivo modulo.py
                 def greet(name):
@@ -6929,12 +6929,12 @@ diccionario_por = {
                 # Arquivo main.py
                 from modulo import greet
                 print(greet("World"))  # Saída: Hello, World!
-                """
+                '''
         },
         "model_training": {
             "significado": "Processo de ensinar um modelo de machine learning a reconhecer padrões a partir de um conjunto de dados de treinamento.",
             "uso": "É utilizado no desenvolvimento de modelos de aprendizado de máquina para fazer previsões ou classificações com base em dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de treinamento de um modelo de regressão linear em Python
                 from sklearn.model_selection import train_test_split
                 from sklearn.linear_model import LinearRegression
@@ -6947,34 +6947,34 @@ diccionario_por = {
                 model = LinearRegression()
                 model.fit(X_train, y_train)
                 print(model.predict([[6]]))  # Saída: [12.]
-                """
+                '''
         },
         "monitor": {
             "significado": "Dispositivo ou componente de software que supervisiona e exibe o estado de um sistema ou processo.",
             "uso": "É utilizado para rastrear o desempenho e a atividade de sistemas ou aplicações.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de um monitor de CPU em Python com psutil
                 import psutil
 
                 cpu_usage = psutil.cpu_percent(interval=1)
                 print(f"Uso da CPU: {cpu_usage}%")
-                """
+                '''
         },
         "memory_leak": {
             "significado": "Problema de programação onde uma aplicação não libera a memória que já não precisa, o que pode levar a uma falta de recursos e um desempenho lento.",
             "uso": "É utilizado para descrever um erro de programação que deve ser resolvido para manter a eficiência de uma aplicação.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de um vazamento de memória em Python
                 # Manter uma referência a objetos que já não são necessários pode causar vazamentos de memória.
                 memory_leak_list = []
                 while True:
                     memory_leak_list.append([1] * 10**6)  # Simula um vazamento de memória
-                """
+                '''
         },
         "markov_chain": {
             "significado": "Modelo matemático que descreve um processo estocástico em que o próximo estado depende apenas do estado atual.",
             "uso": "É utilizado em modelos preditivos, como a previsão de sequências de texto, processos de decisão e sistemas de recomendação.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uma cadeia de Markov simples em Python
                 import random
 
@@ -6987,7 +6987,7 @@ diccionario_por = {
                 current_state = 'Rain'
                 next_state = 'Sunny' if random.random() < transitions[current_state]['Sunny'] else 'Rain'
                 print(f"Próximo estado: {next_state}")
-                """
+                '''
         },
     },
     "n": {
@@ -6995,7 +6995,7 @@ diccionario_por = {
         "Neural_network": {
             "significado": "Modelo de computação inspirado na estrutura e função do cérebro humano, composto por nós interconectados (neurônios) que podem aprender padrões complexos.",
             "uso": "É utilizado em aprendizado de máquina e inteligência artificial para resolver problemas de classificação, reconhecimento de padrões, previsão e mais.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uma rede neural simples com `TensorFlow` em Python
                 import tensorflow as tf
                 from tensorflow.keras import layers
@@ -7005,12 +7005,12 @@ diccionario_por = {
                     layers.Dense(1, activation='sigmoid')
                 ])
                 model.compile(optimizer='adam', loss='binary_crossentropy', metrics=['accuracy'])
-                """
+                '''
         },
         "Naive_bayes": {
             "significado": "Classificador probabilístico baseado no teorema de Bayes com a suposição de independência entre as características.",
             "uso": "É usado para problemas de classificação, como a classificação de e-mails como spam ou não spam.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de um classificador Naive Bayes com `scikit-learn` em Python
                 from sklearn.naive_bayes import GaussianNB
                 from sklearn.model_selection import train_test_split
@@ -7024,12 +7024,12 @@ diccionario_por = {
                 model.fit(X_train, y_train)
                 predictions = model.predict(X_test)
                 print(accuracy_score(y_test, predictions))
-                """
+                '''
         },
         "Numpy": {
             "significado": "Biblioteca Python que oferece suporte para matrizes multidimensionais e funções matemáticas de alto nível.",
             "uso": "É utilizado para realizar cálculos numéricos e operações em grandes conjuntos de dados de forma eficiente.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do NumPy para operações com matrizes
                 import numpy as np
 
@@ -7037,12 +7037,12 @@ diccionario_por = {
                 b = np.array([4, 5, 6])
                 sum_ab = a + b
                 print(sum_ab)  # Saída: [5 7 9]
-                """
+                '''
         },
         "Node": {
             "significado": "Elemento fundamental de estruturas de dados como listas encadeadas e árvores, que pode conter dados e referências a outros nós.",
             "uso": "É usado na implementação de estruturas de dados e algoritmos como grafos, listas encadeadas e árvores.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de implementação de um nó em uma lista encadeada em Python
                 class Node:
                     def __init__(self, value):
@@ -7053,12 +7053,12 @@ diccionario_por = {
                 node2 = Node(20)
                 node1.next = node2
                 print(node1.next.value)  # Saída: 20
-                """
+                '''
         },
         "Nms": {
             "significado": "Siglas de 'Non-Maximum Suppression', um algoritmo usado em visão computacional para filtrar detecções de objetos que se sobrepõem demais.",
             "uso": "É usado na detecção de objetos para eliminar as detecções redundantes e conservar apenas a melhor.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de Non-Maximum Suppression em Python
                 import numpy as np
 
@@ -7088,12 +7088,12 @@ diccionario_por = {
 
                 selected_indices = non_max_suppression(boxes, scores)
                 print(selected_indices)
-                """
+                '''
         },
         "Nearest_neighbor": {
             "significado": "Algoritmo de busca que encontra o ponto de dados mais próximo em um conjunto de dados com base em uma métrica de distância.",
             "uso": "É utilizado em classificação, regressão e problemas de recomendação.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de um classificador de vizinho mais próximo com `scikit-learn` em Python
                 from sklearn.neighbors import KNeighborsClassifier
                 from sklearn.model_selection import train_test_split
@@ -7106,24 +7106,24 @@ diccionario_por = {
                 model.fit(X_train, y_train)
                 prediction = model.predict([[2, 3]])
                 print(prediction)  # Saída: [1]
-                """
+                '''
         },
         "Network_topology": {
             "significado": "Estrutura de interconexão de elementos em uma rede, como nós e links, que define como os dados são transmitidos.",
             "uso": "É utilizado para projetar e analisar redes de computadores e outros sistemas de comunicação.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de representação de uma topologia de rede em Python
                 import networkx as nx
 
                 G = nx.Graph()
                 G.add_edges_from([(1, 2), (2, 3), (3, 4), (4, 1), (2, 4)])
                 nx.draw(G, with_labels=True)
-                """
+                '''
         },
         "Normalization": {
             "significado": "Processo de escalonar os valores de um conjunto de dados para que estejam dentro de um intervalo específico, como [0, 1] ou [-1, 1].",
             "uso": "É utilizado para melhorar a convergência de algoritmos de aprendizado de máquina e tornar comparáveis características de diferentes escalas.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de normalização de dados em Python usando `scikit-learn`
                 from sklearn.preprocessing import MinMaxScaler
                 import numpy as np
@@ -7132,12 +7132,12 @@ diccionario_por = {
                 scaler = MinMaxScaler()
                 normalized_data = scaler.fit_transform(data)
                 print(normalized_data)
-                """
+                '''
         },
         "Naive_bayes_classifier": {
             "significado": "Classificador baseado no teorema de Bayes com a suposição de independência entre as características, otimizado para a classificação de dados.",
             "uso": "É utilizado na classificação de texto, detecção de spam e análise de sentimentos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de um classificador Naive Bayes para texto em Python
                 from sklearn.feature_extraction.text import CountVectorizer
                 from sklearn.naive_bayes import MultinomialNB
@@ -7151,12 +7151,12 @@ diccionario_por = {
                 model.fit(X, labels)
                 new_doc = vectorizer.transform(["new message"])
                 print(model.predict(new_doc))
-                """
+                '''
         },
         "Newton_raphson_method": {
             "significado": "Método iterativo de solução numérica para encontrar raízes de uma função.",
             "uso": "É utilizado na resolução de equações não lineares e problemas de otimização.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de método de Newton-Raphson em Python
                 def newton_raphson(f, df, x0, tol=1e-5, max_iter=100):
                     x = x0
@@ -7172,12 +7172,12 @@ diccionario_por = {
 
                 root = newton_raphson(f, df, x0=1)
                 print(root)  # Saída: Raiz da função
-                """
+                '''
         },
         "Named_entity_recognition": {
             "significado": "Tarefa de processamento de linguagem natural que identifica e classifica entidades mencionadas em um texto, como nomes de pessoas, organizações e localizações.",
             "uso": "É utilizado em sistemas de análise de texto, chatbots e mineração de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de NER com `spaCy` em Python
                 import spacy
 
@@ -7186,12 +7186,12 @@ diccionario_por = {
                 doc = nlp(text)
                 for ent in doc.ents:
                     print(ent.text, ent.label_)
-                """
+                '''
         },
         "Neuron": {
             "significado": "Célula do sistema nervoso que transmite informações na forma de impulsos elétricos e químicos.",
             "uso": "É utilizado no contexto de redes neurais artificiais e na biologia para entender como os sinais são transmitidos no cérebro.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de representação de um neurônio em uma rede neural simples
                 import numpy as np
 
@@ -7205,12 +7205,12 @@ diccionario_por = {
 
                 neuron = Neuron(input_size=3)
                 print(neuron.activate([1, 2, 3]))
-                """
+                '''
         },
         "Node_classification": {
             "significado": "Tarefa de aprendizado de máquina na qual se atribui uma etiqueta a cada nó de um grafo com base nas características dos nós e sua conectividade.",
             "uso": "É utilizado em redes sociais, análise de grafos e recomendações de produtos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de classificação de nós em um grafo com `networkx` em Python
                 import networkx as nx
                 import numpy as np
@@ -7226,12 +7226,12 @@ diccionario_por = {
                 X = np.array([list(G.neighbors(node)) for node in G.nodes()])
                 y = encoded_labels
                 X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.3, random_state=42)
-                """
+                '''
         },
         "Natural_language_processing": {
             "significado": "Campo da inteligência artificial que foca na interação entre computadores e a linguagem humana.",
             "uso": "É utilizado em tradução automática, análise de sentimentos, chatbots e assistentes virtuais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de processamento de linguagem natural com `spaCy` em Python
                 import spacy
 
@@ -7241,12 +7241,12 @@ diccionario_por = {
 
                 for token in doc:
                     print(token.text, token.pos_, token.dep_)
-                """
+                '''
         },
         "Nearest_neighbors_algorithm": {
             "significado": "Algoritmo de busca que encontra os pontos de dados mais próximos em um conjunto de dados utilizando uma métrica de distância, como a distância euclidiana.",
             "uso": "É utilizado em classificação, regressão e sistemas de recomendação.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do algoritmo de vizinhos mais próximos com `scikit-learn` em Python
                 from sklearn.neighbors import NearestNeighbors
                 import numpy as np
@@ -7257,12 +7257,12 @@ diccionario_por = {
                 distances, indices = model.kneighbors([[3, 3]])
                 print("Distâncias:", distances)
                 print("Índices:", indices)
-                """
+                '''
         },
         "Null_hypothesis": {
             "significado": "Hipótese estatística que sugere que não há efeito ou relação em um experimento e é usada como ponto de partida para testes estatísticos.",
             "uso": "É usada em testes de hipóteses para determinar se há evidências suficientes para rejeitar uma afirmação de ausência de efeito.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de teste de hipótese com `scipy` em Python
                 from scipy import stats
 
@@ -7274,12 +7274,12 @@ diccionario_por = {
                     print("Rejeitamos a hipótese nula")
                 else:
                     print("Não há evidências suficientes para rejeitar a hipótese nula")
-                """
+                '''
         },
         "Neural_network_training": {
             "significado": "Processo de otimização dos pesos e vieses de uma rede neural para minimizar a função de perda em um conjunto de dados.",
             "uso": "É usado na criação de modelos de aprendizado profundo para resolver tarefas como classificação, regressão e reconhecimento de padrões.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de treinamento de uma rede neural com `TensorFlow` em Python
                 import tensorflow as tf
                 from tensorflow.keras import layers
@@ -7295,36 +7295,36 @@ diccionario_por = {
                 y_train = np.random.randint(0, 2, 100)
 
                 model.fit(X_train, y_train, epochs=10, batch_size=32)
-                """
+                '''
         },
         "Norm": {
             "significado": "Valor que indica a magnitude de um vetor em um espaço vetorial, usado na normalização e análise de dados.",
             "uso": "É usado em álgebra linear e estatísticas para medir o comprimento de um vetor e em algoritmos de aprendizado de máquina para normalizar dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de cálculo da norma de um vetor com `numpy` em Python
                 import numpy as np
 
                 vector = np.array([3, 4])
                 norm = np.linalg.norm(vector)
                 print(norm)  # Saída: 5.0 (norma euclidiana)
-                """
+                '''
         },
         "Natural_gradient": {
             "significado": "Técnica de otimização que utiliza a matriz de Fisher para ajustar os parâmetros de um modelo de forma mais eficiente em comparação com o gradiente padrão.",
             "uso": "É usado em modelos de aprendizado profundo e redes neurais para melhorar a convergência e a estabilidade no treinamento.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de cálculo do gradiente natural (conceitual)
                 import numpy as np
 
                 def natural_gradient(X, y, theta):
                     # Cálculo do gradiente natural, pode incluir operações específicas
                     pass
-                """
+                '''
         },
         "Negative_log_likelihood": {
             "significado": "Função de perda comumente usada em modelos de classificação e regressão para estimar a probabilidade de observações dadas um conjunto de parâmetros.",
             "uso": "É usada na otimização de modelos estatísticos e de aprendizado de máquina, especialmente em modelos de classificação como redes neurais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de implementação da função de perda de log-verossimilhança negativa em Python
                 import numpy as np
 
@@ -7335,12 +7335,12 @@ diccionario_por = {
                 y_pred = np.array([0.8, 0.2, 0.9])
                 loss = negative_log_likelihood(y_true, y_pred)
                 print(loss)
-                """
+                '''
         },
         "Nearest_neighbor_search": {
             "significado": "Método de busca que encontra o ponto mais próximo a um ponto de consulta em um conjunto de dados, geralmente usado na busca de padrões e em sistemas de recomendação.",
             "uso": "É usado na busca de imagens semelhantes, recomendações de produtos e motores de busca.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de busca de vizinho mais próximo com `scikit-learn` em Python
                 from sklearn.neighbors import NearestNeighbors
                 import numpy as np
@@ -7352,12 +7352,12 @@ diccionario_por = {
                 distances, indices = model.kneighbors(query_point)
                 print("Distâncias:", distances)
                 print("Índices:", indices)
-                """
+                '''
         },
         "Neural_network_model": {
             "significado": "Modelo de inteligência artificial composto por camadas de neurônios interconectados usados para realizar tarefas de aprendizado profundo.",
             "uso": "É usado para resolver problemas complexos como classificação de imagens, reconhecimento de voz e processamento de linguagem natural.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de criação de um modelo de rede neural com `TensorFlow` em Python
                 import tensorflow as tf
                 from tensorflow.keras import Sequential
@@ -7368,12 +7368,12 @@ diccionario_por = {
                     Dense(10, activation='softmax')
                 ])
                 model.compile(optimizer='adam', loss='categorical_crossentropy', metrics=['accuracy'])
-                """
+                '''
         },
         "Natural_language_understanding": {
             "significado": "Subcampo do processamento de linguagem natural (NLP) que se concentra na compreensão e interpretação do significado dos textos.",
             "uso": "É usado em chatbots, assistentes virtuais, análise de sentimentos e sistemas de tradução automática.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de processamento de linguagem natural com `spaCy` em Python
                 import spacy
 
@@ -7383,12 +7383,12 @@ diccionario_por = {
 
                 for ent in doc.ents:
                     print(ent.text, ent.label_)
-                """
+                '''
         },
         "Naive_bayes_theorem": {
             "significado": "Teorema de probabilidade que descreve a probabilidade de um evento dado um conjunto de características, sob a suposição de independência condicional.",
             "uso": "É usado na classificação de textos, como na detecção de spam em e-mails ou classificação de opiniões.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de classificação com o teorema de Bayes usando `scikit-learn` em Python
                 from sklearn.naive_bayes import GaussianNB
                 import numpy as np
@@ -7399,12 +7399,12 @@ diccionario_por = {
                 model.fit(X, y)
                 predictions = model.predict([[3, 4]])
                 print(predictions)
-                """
+                '''
         },
         "Non_linear_regression": {
             "significado": "Tipo de análise de regressão usada para modelar a relação entre variáveis por meio de funções não lineares.",
             "uso": "É usado em problemas onde a relação entre a variável independente e a dependente não segue uma linha reta, como em modelos de crescimento populacional.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de regressão não linear usando `scipy` em Python
                 from scipy.optimize import curve_fit
                 import numpy as np
@@ -7417,23 +7417,23 @@ diccionario_por = {
 
                 popt, pcov = curve_fit(func, x, y)
                 print("Parâmetros ótimos:", popt)
-                """
+                '''
         },
         "Neural_network_layer": {
             "significado": "Componente de uma rede neural que contém um conjunto de nós (ou neurônios) e realiza transformações matemáticas nas entradas.",
             "uso": "É usado para criar redes neuronais profundas e definir a arquitetura de um modelo de aprendizado profundo.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uma camada de rede neural em `Keras`
                 from tensorflow.keras import layers
 
                 layer = layers.Dense(64, activation='relu', input_shape=(10,))
                 print(layer)
-                """
+                '''
         },
         "Numeric_integration": {
             "significado": "Método numérico usado para calcular a integral de uma função em um intervalo dado, especialmente quando não é possível integrar analiticamente.",
             "uso": "É usado em simulações científicas, processamento de sinais e análise de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de integração numérica com `scipy` em Python
                 from scipy.integrate import quad
                 import numpy as np
@@ -7443,12 +7443,12 @@ diccionario_por = {
 
                 result, error = quad(f, 0, 1)
                 print("Resultado da integral:", result)
-                """
+                '''
         },
         "Network_security": {
             "significado": "Práticas e tecnologias implementadas para proteger redes de computadores contra acessos não autorizados, ataques e danos.",
             "uso": "É usado para proteger a confidencialidade, integridade e disponibilidade de dados e recursos em redes de computadores.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de implementação de um firewall em Python
                 import socket
 
@@ -7459,12 +7459,12 @@ diccionario_por = {
                     return True  # Permitido
 
                 print(simple_firewall('192.168.1.1'))  # Saída: False
-                """
+                '''
         },
         "Neural_network_weights": {
             "significado": "Parâmetros ajustáveis de uma rede neural que determinam a força da conexão entre neurônios.",
             "uso": "São usados no processo de treinamento da rede para otimizar o desempenho em uma tarefa específica.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de acesso e ajuste de pesos em uma rede neural com `TensorFlow` em Python
                 import tensorflow as tf
 
@@ -7480,12 +7480,12 @@ diccionario_por = {
                 # Ajustar pesos manualmente (exemplo conceitual)
                 new_weights = [w * 0.5 for w in weights]
                 model.set_weights(new_weights)
-                """
+                '''
         },
         "Normal_distribution": {
             "significado": "Distribuição de probabilidade contínua que é simétrica em relação à sua média e segue uma curva em forma de sino.",
             "uso": "É usada em estatística para modelar dados que tendem a se concentrar em torno de um valor médio.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de geração de dados com distribuição normal em Python
                 import numpy as np
                 import matplotlib.pyplot as plt
@@ -7494,55 +7494,55 @@ diccionario_por = {
                 plt.hist(data, bins=30, density=True)
                 plt.title("Distribuição Normal")
                 plt.show()
-                """
+                '''
         },
         "Nested_loops": {
             "significado": "Estrutura de controle de fluxo que inclui um loop dentro de outro, permitindo realizar operações mais complexas com múltiplas iterações.",
             "uso": "É usado em programação para percorrer matrizes, realizar cálculos complexos e trabalhar com estruturas de dados multidimensionais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de loops aninhados em Python
                 for i in range(3):
                     for j in range(3):
                         print(f'Linha {i}, Coluna {j}')
-                """
+                '''
         },
         "Null_pointer": {
             "significado": "Referência em um programa que não aponta para nenhum objeto válido ou endereço de memória, e é usada para indicar a ausência de um valor.",
             "uso": "É usado em programação para lidar com erros e evitar acessos a objetos não inicializados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de manejo de ponteiros nulos em Python (simulação)
                 pointer = None
                 if pointer is None:
                     print("O ponteiro é nulo")
                 else:
                     print("O ponteiro aponta para um objeto")
-                """
+                '''
         },
         "Nested_function": {
             "significado": "Função que está definida dentro de outra função e pode acessar as variáveis da função externa.",
             "uso": "É usada em programação para criar funções auxiliares e facilitar a modularidade e a reutilização do código.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de função aninhada em Python
                 def outer_function():
                     def inner_function():
                         print("Esta é uma função aninhada")
                     inner_function()
                 outer_function()
-                """
+                '''
         },
         "Null_termination": {
             "significado": "Prática de adicionar um caractere nulo (\\0) no final de uma string para indicar o fim da string.",
             "uso": "É usada em linguagens de programação como C e C++ para gerenciar strings de forma segura e evitar a leitura de dados além do final da string.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de string terminada com nulo em C
                 char str[] = "Hello";
                 printf("%s", str);  // A string é impressa até o caractere nulo
-                """
+                '''
         },
         "Network_latency": {
             "significado": "Tempo de atraso que ocorre na transmissão de dados de um ponto a outro em uma rede.",
             "uso": "É usada para avaliar a qualidade de conexões de rede e otimizar a comunicação em sistemas distribuídos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de medição de latência de rede com `ping` em Python
                 import os
 
@@ -7551,12 +7551,12 @@ diccionario_por = {
                     print("Conexão com a rede está OK")
                 else:
                     print("Erro na conexão com a rede")
-                """
+                '''
         },
         "Newton_method": {
             "significado": "Método iterativo para encontrar raízes de uma função, usando aproximações sucessivas e a derivada da função.",
             "uso": "É usado em cálculos numéricos para encontrar soluções de equações não lineares de forma eficiente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de método de Newton em Python
                 def f(x):
                     return x**2 - 2
@@ -7569,12 +7569,12 @@ diccionario_por = {
                 while abs(f(x0)) > tol:
                     x0 -= f(x0) / df(x0)
                 print("Raiz encontrada:", x0)
-                """
+                '''
         },
         "Nondeterministic_algorithm": {
             "significado": "Algoritmo que, em sua execução, pode produzir resultados diferentes em execuções repetidas com as mesmas entradas.",
             "uso": "É usado em problemas que envolvem incertezas, como algoritmos de otimização e simulações estocásticas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de um algoritmo não determinístico (com comportamento aleatório)
                 import random
 
@@ -7582,12 +7582,12 @@ diccionario_por = {
                     return random.choice([1, 2, 3, 4, 5])
 
                 print(random_choice())
-                """
+                '''
         },
         "Negative_feedback": {
             "significado": "Mecanismo de controle onde a saída de um sistema é realimentada de forma a reduzir a diferença entre a saída e a entrada desejada.",
             "uso": "É usado em sistemas de controle para estabilizar e manter o comportamento de um sistema próximo a um valor de referência.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de feedback negativo em sistemas de controle
                 def system_output(input_signal):
                     output_signal = input_signal * 0.9  # Simulando um feedback negativo
@@ -7595,12 +7595,12 @@ diccionario_por = {
 
                 input_signal = 10
                 print("Saída do sistema:", system_output(input_signal))
-                """
+                '''
         },
         "Non_parametric_statistic": {
             "significado": "Estatística que não assume uma forma específica para a distribuição dos dados e é usada quando não se conhece ou não se deseja fazer suposições sobre os parâmetros da população.",
             "uso": "É usada para análises em que os dados não seguem distribuições paramétricas, como no teste de Mann-Whitney e no teste de Kruskal-Wallis.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de teste não paramétrico com `scipy` em Python
                 from scipy import stats
 
@@ -7609,12 +7609,12 @@ diccionario_por = {
                 stat, p_value = stats.mannwhitneyu(data1, data2)
                 print("Estatística do teste:", stat)
                 print("Valor p:", p_value)
-                """
+                '''
         },
         "Non_stationary_signal": {
             "significado": "Sinal cuja estatística muda ao longo do tempo, ou seja, suas propriedades como média e variância não são constantes.",
             "uso": "É usado em processamento de sinais para analisar fenômenos que variam ao longo do tempo, como a fala e certos tipos de ruído.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de sinal não estacionário
                 import numpy as np
                 import matplotlib.pyplot as plt
@@ -7624,12 +7624,12 @@ diccionario_por = {
                 plt.plot(t, signal)
                 plt.title("Sinal Não Estacionário")
                 plt.show()
-                """
+                '''
         },
         "Numba": {
             "significado": "Biblioteca de Python que permite la compilação Just-In-Time (JIT) para acelerar a execução de código numérico.",
             "uso": "É usada para otimizar funções em Python, especialmente aquelas que realizam operações matemáticas intensivas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de Numba em Python
                 from numba import jit
                 import numpy as np
@@ -7640,12 +7640,12 @@ diccionario_por = {
 
                 matriz = np.array([[1, 2], [3, 4]])
                 print("Soma da matriz:", soma_matriz(matriz))
-                """
+                '''
         },
         "Naive_bayes_model": {
             "significado": "Modelo estatístico baseado no teorema de Bayes e na suposição de independência condicional entre as características.",
             "uso": "É usado em classificação de dados, como na análise de sentimentos e detecção de spam.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de modelo de Naive Bayes com `scikit-learn` em Python
                 from sklearn.naive_bayes import GaussianNB
                 import numpy as np
@@ -7656,12 +7656,12 @@ diccionario_por = {
                 modelo.fit(X, y)
                 previsao = modelo.predict([[2, 3]])
                 print("Previsão:", previsao)
-                """
+                '''
         },
         "Neuron_network_weights": {
             "significado": "Parâmetros ajustáveis de uma rede neural que controlam a força das conexões entre os neurônios.",
             "uso": "São usados durante o treinamento da rede para ajustar a aprendizagem e otimizar o desempenho em tarefas específicas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de acesso e ajuste de pesos em uma rede neural com `TensorFlow` em Python
                 import tensorflow as tf
 
@@ -7677,75 +7677,75 @@ diccionario_por = {
                 # Ajustar pesos manualmente (exemplo conceitual)
                 novos_pesos = [w * 0.5 for w in pesos]
                 modelo.set_weights(novos_pesos)
-                """
+                '''
         },
         "Nested_list": {
             "significado": "Lista que contém outras listas como elementos, permitindo a criação de estruturas de dados multidimensionais.",
             "uso": "É usada para representar dados em forma de tabelas, matrizes e outras formas complexas de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de lista aninhada em Python
                 matriz = [[1, 2, 3], [4, 5, 6], [7, 8, 9]]
                 for i in range(len(matriz)):
                     for j in range(len(matriz[i])):
                         print(f'Elemento na posição [{i}][{j}]:', matriz[i][j])
-                """
+                '''
         },
         "Notebook": {
             "significado": "Ferramenta interativa usada para escrever e executar código, geralmente com suporte para visualização de dados e anotações.",
             "uso": "É usada para documentação e execução de código em Python e outras linguagens, muito comum em ambientes de ciência de dados como Jupyter.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do Jupyter Notebook (conceitual)
                 # Inicie o Jupyter Notebook em um terminal com o comando:
                 # jupyter notebook
-                """
+                '''
         },
         "Name_scope": {
             "significado": "Função usada em bibliotecas de aprendizado de máquina, como TensorFlow, para agrupar operações e variáveis sob um nome específico.",
             "uso": "É usada para organizar o código e facilitar a visualização e depuração de modelos de aprendizado de máquina.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de name_scope em TensorFlow
                 import tensorflow as tf
 
                 with tf.name_scope('camada_densa'):
                     camada = tf.keras.layers.Dense(10)
                     print("Camada criada dentro do name_scope")
-                """
+                '''
         },
         "Named_tuple": {
             "significado": "Tipo de dado em Python que cria tuplas com campos nomeados, facilitando o acesso aos elementos por nome em vez de índice.",
             "uso": "É usado para criar estruturas de dados imutáveis, acessíveis de forma mais legível e organizada.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de namedtuple em Python
                 from collections import namedtuple
 
                 Pessoa = namedtuple('Pessoa', ['nome', 'idade'])
                 pessoa1 = Pessoa(nome='João', idade=30)
                 print(f'Nome: {pessoa1.nome}, Idade: {pessoa1.idade}')
-                """
+                '''
         },
         "Netstat": {
             "significado": "Ferramenta de linha de comando usada para exibir informações sobre conexões de rede e estatísticas de rede em um sistema.",
             "uso": "É usada para monitorar e diagnosticar problemas de rede e verificar as portas de rede abertas em um computador.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do comando netstat em um terminal
                 # Para listar todas as conexões de rede ativas
                 netstat -an
-                """
+                '''
         },
         "Null": {
             "significado": "Valor que representa a ausência de um valor ou objeto em uma variável ou estrutura de dados.",
             "uso": "É usado para indicar que uma variável ou referência não possui um valor válido.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de null (None) em Python
                 variavel = None
                 if variavel is None:
                     print("A variável está nula")
-                """
+                '''
         },
         "Normalize": {
             "significado": "Processo de ajustar ou transformar dados para uma escala ou formato padrão.",
             "uso": "É usado em processamento de dados para garantir que as variáveis tenham uma distribuição semelhante ou sejam comparáveis.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de normalização de dados com `sklearn` em Python
                 from sklearn.preprocessing import MinMaxScaler
                 import numpy as np
@@ -7754,76 +7754,76 @@ diccionario_por = {
                 scaler = MinMaxScaler()
                 dados_normalizados = scaler.fit_transform(dados)
                 print("Dados normalizados:", dados_normalizados)
-                """
+                '''
         },
         "Next": {
             "significado": "Palavra-chave usada em linguagens de programação para indicar a próxima iteração de um loop.",
             "uso": "É usada para pular a execução do restante de uma iteração e passar para a próxima.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `next` em Python
                 for i in range(5):
                     if i == 3:
                         continue  # Pula a iteração atual e vai para a próxima
                     print(i)
-                """
+                '''
         },
         "New": {
             "significado": "Palavra usada para criar uma nova instância de um objeto ou variável em linguagens de programação.",
             "uso": "É usada para alocar espaço de memória para um novo objeto ou variável.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de criação de uma nova lista em Python
                 lista = [1, 2, 3]
                 nova_lista = list(lista)
                 print("Nova lista:", nova_lista)
-                """
+                '''
         },
         "Negation": {
             "significado": "Operação lógica que inverte o valor de verdade de uma expressão ou proposição.",
             "uso": "É usada em programação para criar expressões lógicas negativas, como em condições de controle de fluxo.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de negação em Python
                 x = True
                 if not x:
                     print("x é falso")
                 else:
                     print("x é verdadeiro")
-                """
+                '''
         },
         "Numpy_array": {
             "significado": "Estrutura de dados bidimensional de alto desempenho usada para armazenar e manipular dados numéricos em Python.",
             "uso": "É usada para cálculos matemáticos e operações de álgebra linear, estatísticas, entre outros.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de criação de um array Numpy em Python
                 import numpy as np
 
                 array = np.array([[1, 2, 3], [4, 5, 6]])
                 print("Array Numpy:", array)
-                """
+                '''
         },
         "Not": {
             "significado": "Operador lógico usado para inverter o valor de uma expressão booleana.",
             "uso": "É usado em expressões condicionais para verificar a negação de uma condição.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do operador `not` em Python
                 a = False
                 if not a:
                     print("A variável a é falsa")
-                """
+                '''
         },
         "None": {
             "significado": "Objeto especial em Python que representa a ausência de valor ou um valor nulo.",
             "uso": "É usado para inicializar variáveis que ainda não possuem um valor definido ou para representar uma ausência de valor.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `None` em Python
                 variavel = None
                 if variavel is None:
                     print("A variável é nula")
-                """
+                '''
         },
         "Numpy_dot": {
             "significado": "Função da biblioteca Numpy que calcula o produto interno de dois arrays.",
             "uso": "É usada para multiplicar matrizes ou vetores, sendo fundamental em operações de álgebra linear.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `numpy.dot` em Python
                 import numpy as np
 
@@ -7831,44 +7831,44 @@ diccionario_por = {
                 vetor2 = np.array([4, 5, 6])
                 produto_interno = np.dot(vetor1, vetor2)
                 print("Produto interno:", produto_interno)
-                """
+                '''
         },
         "Nmap": {
             "significado": "Ferramenta de código aberto usada para escanear redes e detectar dispositivos e serviços em uma rede.",
             "uso": "É usada em auditorias de segurança de redes para identificar portas abertas, serviços em execução e potenciais vulnerabilidades.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do comando nmap em um terminal
                 # Para escanear uma rede específica
                 nmap 192.168.1.0/24
-                """
+                '''
         },
         "Namedtuple": {
             "significado": "Tipo de tupla en Python que permite definir campos con nombres para acceder a sus valores de manera más legible.",
             "uso": "Se utiliza para crear estructuras de datos inmutables y nombradas, facilitando el acceso a los elementos de una tupla.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de namedtuple em Python
                 from collections import namedtuple
 
                 Pessoa = namedtuple('Pessoa', ['nome', 'idade'])
                 pessoa1 = Pessoa(nome='João', idade=30)
                 print("Nome:", pessoa1.nome, ", Idade:", pessoa1.idade)
-                """
+                '''
         },
         "Numpy_random": {
             "significado": "Submódulo da biblioteca Numpy que fornece funções para gerar números aleatórios e amostras de distribuições estatísticas.",
             "uso": "É usado para criar dados aleatórios para simulações, amostras estatísticas e testes.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `numpy.random` em Python
                 import numpy as np
 
                 aleatorio = np.random.rand(3, 3)
                 print("Matriz aleatória:", aleatorio)
-                """
+                '''
         },
         "Networkx": {
             "significado": "Biblioteca de Python para a criação, manipulação e estudo de estruturas de grafos e redes complexas.",
             "uso": "É usada para modelar e analisar redes sociais, estruturas de transporte e outras aplicações baseadas em grafos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de criação de um grafo em `networkx`
                 import networkx as nx
                 import matplotlib.pyplot as plt
@@ -7877,12 +7877,12 @@ diccionario_por = {
                 G.add_edges_from([(1, 2), (2, 3), (3, 4)])
                 nx.draw(G, with_labels=True)
                 plt.show()
-                """
+                '''
         },
         "Numexpr": {
             "significado": "Biblioteca de Python usada para avaliar expressões matemáticas de forma rápida e eficiente, utilizando processamento paralelo.",
             "uso": "É usada para acelerar cálculos numéricos em grandes conjuntos de dados e operações complexas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `numexpr` em Python
                 import numexpr as ne
                 import numpy as np
@@ -7891,12 +7891,12 @@ diccionario_por = {
                 b = np.array([4, 5, 6])
                 resultado = ne.evaluate('a * b + 2')
                 print("Resultado:", resultado)
-                """
+                '''
         },
         "Nonlocal": {
             "significado": "Palavra-chave em Python usada para declarar variáveis que existem em um escopo de nível superior ao do bloco de código atual, mas não no escopo global.",
             "uso": "É usada em funções aninhadas para modificar variáveis de um escopo externo que não é o global.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `nonlocal` em Python
                 def contador():
                     x = 0
@@ -7909,71 +7909,71 @@ diccionario_por = {
                 conta = contador()
                 print(conta())  # Saída: 1
                 print(conta())  # Saída: 2
-                """
+                '''
         },
         "Numpy_shape": {
             "significado": "Atributo de um array Numpy que retorna as dimensões do array, indicando o número de elementos em cada eixo.",
             "uso": "É usado para verificar a estrutura de um array e realizar operações de redimensionamento e manipulação.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do atributo `shape` em um array Numpy
                 import numpy as np
 
                 array = np.array([[1, 2, 3], [4, 5, 6]])
                 print("Forma do array:", array.shape)
-                """
+                '''
         },
         "Numpy_sort": {
             "significado": "Função da biblioteca Numpy usada para ordenar os elementos de um array.",
             "uso": "É usada para organizar os elementos de um array em ordem crescente ou decrescente, facilitando a análise de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `numpy.sort` em Python
                 import numpy as np
 
                 array = np.array([3, 1, 2])
                 array_ordenado = np.sort(array)
                 print("Array ordenado:", array_ordenado)
-                """
+                '''
         },
         "Numpy_std": {
             "significado": "Função da biblioteca Numpy que calcula o desvio padrão dos elementos de um array, medindo a dispersão dos dados em relação à média.",
             "uso": "É usada para avaliar a variabilidade ou dispersão de um conjunto de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `numpy.std` em Python
                 import numpy as np
 
                 array = np.array([1, 2, 3, 4, 5])
                 desvio_padrao = np.std(array)
                 print("Desvio padrão:", desvio_padrao)
-                """
+                '''
         },
         "Numpy_sum": {
             "significado": "Função da biblioteca Numpy que retorna a soma dos elementos ao longo de um eixo especificado ou de todo o array.",
             "uso": "É usada para calcular a soma de elementos em arrays multidimensionais e realizar operações de agregação de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `numpy.sum` em Python
                 import numpy as np
 
                 array = np.array([[1, 2, 3], [4, 5, 6]])
                 soma = np.sum(array)
                 print("Soma de todos os elementos:", soma)
-                """
+                '''
         },
         "Numpy_t": {
             "significado": "Atributo de um array Numpy que retorna a transposta do array, trocando suas linhas e colunas.",
             "uso": "É usado para inverter a orientação dos dados em um array, facilitando operações matemáticas e álgebra linear.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `.T` para transpor um array Numpy
                 import numpy as np
 
                 array = np.array([[1, 2, 3], [4, 5, 6]])
                 transposta = array.T
                 print("Array transposto:\n", transposta)
-                """
+                '''
         },
         "Nltk": {
             "significado": "Biblioteca de Python para processamento de linguagem natural, que fornece ferramentas para trabalhar com texto, análise de linguagem e linguística computacional.",
             "uso": "É usada para analisar texto, realizar tokenização, análise de sentimentos, e criar aplicações de processamento de linguagem natural.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `nltk` em Python
                 import nltk
                 from nltk.tokenize import word_tokenize
@@ -7982,12 +7982,12 @@ diccionario_por = {
                 texto = "Olá, como você está?"
                 palavras = word_tokenize(texto)
                 print("Palavras tokenizadas:", palavras)
-                """
+                '''
         },
         "Numpy_inner": {
             "significado": "Função da biblioteca Numpy que calcula o produto interno de dois arrays, também conhecido como produto escalar.",
             "uso": "É usado para realizar operações de multiplicação de vetores e é fundamental em álgebra linear e análise de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `numpy.inner` em Python
                 import numpy as np
 
@@ -7995,12 +7995,12 @@ diccionario_por = {
                 b = np.array([4, 5, 6])
                 produto_interno = np.inner(a, b)
                 print("Produto interno:", produto_interno)
-                """
+                '''
         },
         "Network_configuration": {
             "significado": "Processo de definição e ajuste dos parâmetros e componentes de uma rede de computadores para garantir seu funcionamento adequado.",
             "uso": "É utilizado para configurar dispositivos de rede, como roteadores e switches, e para gerenciar endereçamento IP, sub-redes e políticas de segurança.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de configuração de rede em Python usando `socket`
                 import socket
 
@@ -8009,23 +8009,23 @@ diccionario_por = {
                     print("Endereço IP:", host)
                 
                 configuracao_rede()
-                """
+                '''
         },
         "Namespace": {
             "significado": "Conceito de programação que se refere a um espaço de nomes onde variáveis, funções e objetos são armazenados e identificados de forma única.",
             "uso": "É usado para organizar e evitar conflitos de nomes em projetos de software, especialmente em programação orientada a objetos e linguagens como Python.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `namespace` em Python com classes
                 class MeuNamespace:
                     variavel = 'Olá'
 
                 print(MeuNamespace.variavel)
-                """
+                '''
         },
         "Neg_log_likelihood": {
             "significado": "Função de perda usada em estatísticas e aprendizado de máquina para medir a discrepância entre a distribuição de probabilidade estimada e os dados observados.",
             "uso": "É usada para treinar modelos de aprendizado de máquina, como modelos de regressão e classificadores probabilísticos, para otimizar suas previsões.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de cálculo de log-verossimilhança negativa em Python
                 import numpy as np
 
@@ -8036,26 +8036,1363 @@ diccionario_por = {
                 y_pred = np.array([0.9, 0.1, 0.8])
                 resultado = neg_log_likelihood(y_true, y_pred)
                 print("Log-verossimilhança negativa:", resultado)
-                """
+                '''
         },
         "Numpy_mean": {
             "significado": "Função da biblioteca Numpy que calcula a média dos elementos de um array ao longo de um eixo especificado.",
             "uso": "É usada para calcular a média de um conjunto de dados, ajudando a entender a tendência central de um array.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de `numpy.mean` em Python
                 import numpy as np
 
                 array = np.array([1, 2, 3, 4, 5])
                 media = np.mean(array)
                 print("Média dos elementos:", media)
-                """
+                '''
         },
     },
     "o": {
         # Aquí puedes agregar funciones que comiencen con la letra O
+        "Open": {
+            "significado": "Função ou comando usado para abrir arquivos, portas de rede ou outros recursos em um sistema de computador.",
+            "uso": "É utilizado em programação para acessar arquivos e permitir operações como leitura e escrita.",
+            "ejemplo": '''
+                # Exemplo de uso de `open` em Python para ler um arquivo
+                with open('exemplo.txt', 'r') as arquivo:
+                    conteudo = arquivo.read()
+                    print(conteudo)
+                '''
+        },
+        "Ord": {
+            "significado": "Função em Python que retorna o código numérico de um caractere.",
+            "uso": "É usada para obter o valor inteiro correspondente a um caractere, útil em operações de manipulação de strings e codificação.",
+            "ejemplo": '''
+                # Exemplo de uso de `ord` em Python
+                caractere = 'A'
+                codigo = ord(caractere)
+                print("Código numérico do caractere:", codigo)
+                '''
+        },
+        "Oct": {
+            "significado": "Função que converte um número inteiro em sua representação octal (base 8).",
+            "uso": "É usada para representar números em diferentes bases, como na programação de sistemas e cálculos de baixo nível.",
+            "ejemplo": '''
+                # Exemplo de uso de `oct` em Python
+                numero = 10
+                representacao_octal = oct(numero)
+                print("Representação octal:", representacao_octal)
+                '''
+        },
+        "Os": {
+            "significado": "Módulo em Python que fornece uma interface para interagir com o sistema operacional.",
+            "uso": "É utilizado para acessar funcionalidades do sistema, como manipulação de arquivos, diretórios e variáveis de ambiente.",
+            "ejemplo": '''
+                # Exemplo de uso do módulo `os` em Python
+                import os
+
+                caminho = os.getcwd()
+                print("Caminho do diretório atual:", caminho)
+                '''
+        },
+        "Object": {
+            "significado": "Instância de uma classe em programação orientada a objetos, que contém atributos e métodos.",
+            "uso": "É usado para representar dados e comportamentos em linguagens de programação orientadas a objetos, como Python, Java e C++.",
+            "ejemplo": '''
+                # Exemplo de criação de um objeto em Python
+                class Carro:
+                    def __init__(self, modelo, ano):
+                        self.modelo = modelo
+                        self.ano = ano
+
+                meu_carro = Carro('Fusca', 1974)
+                print("Modelo do carro:", meu_carro.modelo)
+                '''
+        },
+        "Output": {
+            "significado": "Resultado ou saída gerada por um programa ou função após a execução.",
+            "uso": "É utilizado para exibir resultados na tela, salvar em arquivos ou transmitir dados para outros sistemas.",
+            "ejemplo": '''
+                # Exemplo de saída em Python
+                print("Este é um exemplo de saída de um programa")
+                '''
+        },
+        "Operator": {
+            "significado": "Símbolo ou palavra-chave que representa uma operação em um programa, como adição, subtração, etc.",
+            "uso": "É utilizado para realizar operações aritméticas, lógicas e de comparação entre variáveis.",
+            "ejemplo": '''
+                # Exemplo de uso de operadores em Python
+                a = 5
+                b = 3
+                soma = a + b
+                print("Resultado da soma:", soma)
+                '''
+        },
+        "Options": {
+            "significado": "Parâmetros configuráveis que determinam o comportamento de uma função ou programa.",
+            "uso": "É utilizado para customizar funções, scripts ou programas de acordo com as preferências do usuário.",
+            "ejemplo": '''
+                # Exemplo de uso de opções em uma função em Python
+                def saudacao(nome, saudacao="Olá"):
+                    print(f"{saudacao}, {nome}!")
+
+                saudacao("Maria", saudacao="Bom dia")
+                '''
+        },
+        "Optimize": {
+            "significado": "Melhorar o desempenho de um programa ou sistema para torná-lo mais eficiente.",
+            "uso": "É utilizado para reduzir o tempo de execução, uso de memória e outros recursos em algoritmos e programas.",
+            "ejemplo": '''
+                # Exemplo de otimização de um loop em Python
+                import time
+
+                # Código não otimizado
+                start = time.time()
+                for i in range(1000000):
+                    pass
+                print("Tempo de execução:", time.time() - start)
+
+                # Código otimizado
+                start = time.time()
+                range(1000000)  # Usar a função `range` diretamente
+                print("Tempo de execução otimizado:", time.time() - start)
+                '''
+        },
+        "Overflow": {
+            "significado": "Ocorrência quando um valor excede o limite máximo representável em uma variável ou tipo de dado.",
+            "uso": "É utilizado para descrever problemas em cálculos que resultam em números maiores que a capacidade de armazenamento de um tipo de dado.",
+            "ejemplo": '''
+                # Exemplo de overflow em Python
+                import numpy as np
+
+                max_int = np.iinfo(np.int32).max
+                print("Máximo valor inteiro:", max_int)
+                overflow = max_int + 1
+                print("Overflow:", overflow)
+                '''
+        },
+        "Offset": {
+            "significado": "Deslocamento ou diferença entre a posição de um elemento em uma estrutura de dados e a posição base.",
+            "uso": "É usado para referenciar uma posição específica em um array, lista ou memória.",
+            "ejemplo": '''
+                # Exemplo de uso de offset em Python
+                lista = [10, 20, 30, 40, 50]
+                offset = 2  # Deslocamento de 2 posições
+                print("Elemento com offset:", lista[offset])
+                '''
+        },
+        "Outer": {
+            "significado": "Relativo à parte externa de um objeto ou à operação que envolve elementos de diferentes conjuntos, como em álgebra linear e operações de produtos.",
+            "uso": "É usado para descrever operações que combinam elementos de diferentes conjuntos, como a multiplicação de matrizes externas.",
+            "ejemplo": '''
+                # Exemplo de produto externo de vetores em Python com `numpy`
+                import numpy as np
+
+                a = np.array([1, 2])
+                b = np.array([3, 4])
+                resultado = np.outer(a, b)
+                print("Produto externo:", resultado)
+                '''
+        },
+        "Or": {
+            "significado": "Operador lógico usado para combinar expressões e retornar `True` se pelo menos uma das expressões for verdadeira.",
+            "uso": "É utilizado em programação para criar condições compostas em instruções `if`, loops e outros blocos de controle de fluxo.",
+            "ejemplo": '''
+                # Exemplo de uso do operador `or` em Python
+                a = True
+                b = False
+                resultado = a or b
+                print("Resultado do operador `or`:", resultado)
+                '''
+        },
+        "Openpyxl": {
+            "significado": "Biblioteca Python usada para ler, escrever e manipular arquivos do Excel (.xlsx).",
+            "uso": "É utilizada para criar e modificar planilhas do Excel em programas Python, facilitando a automação de tarefas de processamento de dados.",
+            "ejemplo": '''
+                # Exemplo de uso do `openpyxl` para criar uma planilha em Python
+                from openpyxl import Workbook
+
+                wb = Workbook()
+                ws = wb.active
+                ws['A1'] = "Olá, mundo!"
+                wb.save("exemplo.xlsx")
+                '''
+        },
+        "Overload": {
+            "significado": "Conceito de programação onde uma função ou método pode ter diferentes definições ou implementações dependendo do número e tipo de argumentos.",
+            "uso": "É utilizado para criar funções que podem realizar tarefas diferentes com base nos argumentos recebidos, facilitando a leitura do código e a reutilização de funções.",
+            "ejemplo": '''
+                # Exemplo de sobrecarga de função (em Python, a sobrecarga é simulada com funções diferentes)
+                def saudacao(nome):
+                    print(f"Olá, {nome}!")
+
+                def saudacao(nome, saudacao_especial):
+                    print(f"{saudacao_especial}, {nome}!")
+
+                saudacao("Maria")
+                saudacao("João", "Bom dia")
+                '''
+        },
+        "Object_id": {
+            "significado": "Identificador único associado a um objeto em um sistema de banco de dados ou estrutura de dados.",
+            "uso": "É usado para identificar de forma única registros ou instâncias de objetos, como em bancos de dados NoSQL ou em programação orientada a objetos.",
+            "ejemplo": '''
+                # Exemplo de uso de `ObjectId` em Python com `pymongo` para MongoDB
+                from bson import ObjectId
+
+                id_objeto = ObjectId()
+                print("ID do objeto:", id_objeto)
+                '''
+        },
+        "On_click": {
+            "significado": "Ação ou evento que ocorre quando um elemento é clicado em uma interface de usuário.",
+            "uso": "É usado em desenvolvimento web e de aplicativos para definir o comportamento de elementos interativos, como botões e links.",
+            "ejemplo": '''
+                # Exemplo de uso de `on_click` em Python com `tkinter` para interfaces gráficas
+                import tkinter as tk
+
+                def acao():
+                    print("Botão clicado!")
+
+                root = tk.Tk()
+                botao = tk.Button(root, text="Clique aqui", command=acao)
+                botao.pack()
+                root.mainloop()
+                '''
+        },
+        "Openai": {
+            "significado": "Organização de pesquisa em inteligência artificial (IA) que desenvolve tecnologias para promover e desenvolver IA amigável.",
+            "uso": "É usada para implementar soluções de IA como modelos de linguagem e algoritmos avançados em diversas aplicações.",
+            "ejemplo": '''
+                # Exemplo de uso da biblioteca `openai` em Python para acessar a API da OpenAI
+                import openai
+
+                openai.api_key = "sua_chave_api"
+                resposta = openai.Completion.create(
+                    engine="text-davinci-003",
+                    prompt="Olá, como você está?",
+                    max_tokens=5
+                )
+                print("Resposta da OpenAI:", resposta.choices[0].text.strip())
+                '''
+        },
+        "Os_path": {
+            "significado": "Submódulo do módulo `os` em Python usado para manipular caminhos de arquivos e diretórios de forma independente do sistema operacional.",
+            "uso": "É utilizado para criar, manipular e navegar por caminhos de arquivos e diretórios de maneira portável entre diferentes sistemas operacionais.",
+            "ejemplo": '''
+                # Exemplo de uso de `os.path` em Python
+                import os
+
+                caminho_completo = os.path.join('pasta', 'subpasta', 'arquivo.txt')
+                print("Caminho completo:", caminho_completo)
+                '''
+        },
+        "Overflow_error": {
+            "significado": "Erro que ocorre quando um valor excede o limite máximo representável por um tipo de dado.",
+            "uso": "É usado para indicar que uma operação causou um valor que ultrapassou a capacidade do tipo de dado, podendo causar falhas em cálculos e programas.",
+            "ejemplo": '''
+                # Exemplo de erro de overflow em Python com tipo `int`
+                import numpy as np
+
+                max_int = np.iinfo(np.int32).max
+                try:
+                    resultado = max_int + 1
+                except OverflowError as e:
+                    print("Erro de overflow:", e)
+                '''
+        },
+        "Ordered_dict": {
+            "significado": "Tipo de estrutura de dados em Python que mantém a ordem de inserção dos elementos em um dicionário.",
+            "uso": "É utilizado para manter a ordem dos itens em um dicionário, útil em aplicações que requerem consistência na ordem de elementos.",
+            "ejemplo": '''
+                # Exemplo de uso de `OrderedDict` em Python
+                from collections import OrderedDict
+
+                d = OrderedDict()
+                d['a'] = 1
+                d['b'] = 2
+                d['c'] = 3
+                print("Dicionário ordenado:", d)
+                '''
+        },
+        "Override": {
+            "significado": "Prática de substituir um método de uma classe pai em uma classe filha, fornecendo uma nova implementação.",
+            "uso": "É utilizado em programação orientada a objetos para modificar o comportamento de um método herdado.",
+            "ejemplo": '''
+                # Exemplo de sobrescrita de método em Python
+                class Animal:
+                    def falar(self):
+                        print("Som de animal")
+
+                class Cachorro(Animal):
+                    def falar(self):
+                        print("Latido")
+
+                cachorro = Cachorro()
+                cachorro.falar()  # Saída: Latido
+                '''
+        },
+        "Output_stream": {
+            "significado": "Fluxo de saída utilizado para enviar dados de um programa para um destino, como a tela, arquivos ou outros dispositivos.",
+            "uso": "É utilizado para exibir informações na tela ou gravar dados em arquivos em programação.",
+            "ejemplo": '''
+                # Exemplo de uso de fluxo de saída em Python
+                import sys
+
+                sys.stdout.write("Mensagem para saída padrão\n")
+                '''
+        },
+        "Os_walk": {
+            "significado": "Função do módulo `os` em Python que permite percorrer diretórios e subdiretórios de forma recursiva.",
+            "uso": "É utilizado para iterar sobre a estrutura de diretórios e listar arquivos e subpastas.",
+            "ejemplo": '''
+                # Exemplo de uso de `os.walk` para percorrer um diretório
+                import os
+
+                for pasta, subpastas, arquivos in os.walk('/caminho/do/diretorio'):
+                    print('Pasta:', pasta)
+                    for arquivo in arquivos:
+                        print('Arquivo:', arquivo)
+                '''
+        },
+        "Os_remove": {
+            "significado": "Função do módulo `os` em Python que remove (deleta) um arquivo especificado.",
+            "uso": "É utilizado para deletar arquivos de um sistema de arquivos em programação.",
+            "ejemplo": '''
+                # Exemplo de uso de `os.remove` para remover um arquivo
+                import os
+
+                os.remove('arquivo.txt')
+                print('Arquivo removido')
+                '''
+        },
+        "Option_parser": {
+            "significado": "Módulo em Python para analisar e manipular argumentos de linha de comando passados para um script.",
+            "uso": "É utilizado para criar scripts que aceitam parâmetros de entrada de forma estruturada.",
+            "ejemplo": '''
+                # Exemplo de uso de `optparse` em Python
+                from optparse import OptionParser
+
+                parser = OptionParser()
+                parser.add_option("-f", "--file", dest="filename", help="nome do arquivo")
+                (options, args) = parser.parse_args()
+
+                if options.filename:
+                    print("Arquivo especificado:", options.filename)
+                '''
+        },
+        "Os_error": {
+            "significado": "Erro gerado em Python quando uma operação do sistema operacional falha, como a tentativa de abrir um arquivo inexistente.",
+            "uso": "É utilizado para capturar e lidar com erros relacionados a operações de arquivos e manipulação de sistemas em Python.",
+            "ejemplo": '''
+                # Exemplo de tratamento de erro de sistema com `os.error`
+                import os
+
+                try:
+                    os.remove('arquivo_inexistente.txt')
+                except OSError as e:
+                    print("Erro do sistema:", e)
+                '''
+        },
+        "One_hot_encoding": {
+            "significado": "Método de codificação de variáveis categóricas em vetores binários, onde cada classe é representada por uma coluna.",
+            "uso": "É utilizado em aprendizado de máquina para converter variáveis categóricas em uma forma que pode ser usada por algoritmos de aprendizado.",
+            "ejemplo": '''
+                # Exemplo de codificação one-hot em Python com `pandas`
+                import pandas as pd
+
+                data = pd.DataFrame({'categoria': ['A', 'B', 'C', 'A']})
+                encoded_data = pd.get_dummies(data, columns=['categoria'])
+                print("Dados codificados:", encoded_data)
+                '''
+        },
+        "Ordered_set": {
+            "significado": "Estrutura de dados que mantém a ordem de inserção dos elementos em um conjunto, sem permitir duplicatas.",
+            "uso": "É utilizado para armazenar elementos únicos em uma ordem específica, útil quando a ordem é relevante.",
+            "ejemplo": '''
+                # Exemplo de uso de `OrderedSet` com a biblioteca `ordered-set` em Python
+                from ordered_set import OrderedSet
+
+                conjunto = OrderedSet(['a', 'b', 'c', 'a'])
+                print("Conjunto ordenado:", conjunto)
+                '''
+        },
+        "On_error": {
+            "significado": "Expressão usada para definir o comportamento de um programa em caso de erro ou exceção.",
+            "uso": "É utilizado em programação para capturar e tratar exceções, garantindo que o programa continue executando de forma controlada.",
+            "ejemplo": '''
+                # Exemplo de uso de `try-except` para tratamento de erros em Python
+                try:
+                    resultado = 10 / 0
+                except ZeroDivisionError:
+                    print("Erro: divisão por zero")
+                '''
+        },
+        "Os_stat": {
+            "significado": "Função do módulo `os` em Python que retorna informações sobre um arquivo ou diretório, como tamanho, permissões e data de modificação.",
+            "uso": "É utilizado para obter metadados sobre arquivos e diretórios em Python.",
+            "ejemplo": '''
+                # Exemplo de uso de `os.stat` para obter informações de um arquivo
+                import os
+
+                info = os.stat('arquivo.txt')
+                print("Tamanho do arquivo:", info.st_size, "bytes")
+                '''
+        },
+        "Os_mkdir": {
+            "significado": "Função do módulo `os` em Python que cria um novo diretório no sistema de arquivos.",
+            "uso": "É utilizado para criar pastas programaticamente em um diretório especificado.",
+            "ejemplo": '''
+                # Exemplo de criação de diretório com `os.mkdir`
+                import os
+
+                os.mkdir('novo_diretorio')
+                print('Diretório criado')
+                '''
+        },
+        "Operator_overloading": {
+            "significado": "Habilidade de redefinir o comportamento de operadores padrão (como +, -, *, etc.) em classes definidas pelo usuário.",
+            "uso": "É utilizado em programação orientada a objetos para personalizar o comportamento de operadores para objetos de uma classe.",
+            "ejemplo": '''
+                # Exemplo de sobrecarga de operador em Python
+                class Ponto:
+                    def __init__(self, x, y):
+                        self.x = x
+                        self.y = y
+
+                    def __add__(self, outro):
+                        return Ponto(self.x + outro.x, self.y + outro.y)
+
+                p1 = Ponto(1, 2)
+                p2 = Ponto(3, 4)
+                resultado = p1 + p2
+                print(f"Resultado: ({resultado.x}, {resultado.y})")
+                '''
+        },
+        "Offset_mapping": {
+            "significado": "Relação entre os índices de uma estrutura de dados e suas posições reais ou virtuais.",
+            "uso": "É utilizado em processamento de dados e linguagens para alinhar dados ou converter índices.",
+            "ejemplo": '''
+                # Exemplo de mapeamento de offset
+                dados = ['a', 'b', 'c', 'd']
+                offset = 2
+                mapeados = [(i + offset, valor) for i, valor in enumerate(dados)]
+                print('Mapeamento de offset:', mapeados)
+                '''
+        },
+        "Os_path_exists": {
+            "significado": "Função do módulo `os.path` em Python que verifica se um caminho de arquivo ou diretório existe.",
+            "uso": "É utilizado para evitar erros ao acessar arquivos ou diretórios inexistentes.",
+            "ejemplo": '''
+                # Exemplo de uso de `os.path.exists`
+                import os
+
+                if os.path.exists('arquivo.txt'):
+                    print('O arquivo existe')
+                else:
+                    print('O arquivo não existe')
+                '''
+        },
+        "Output_file": {
+            "significado": "Arquivo usado para armazenar os dados gerados ou processados por um programa.",
+            "uso": "É utilizado para salvar resultados de programas em arquivos para uso posterior.",
+            "ejemplo": '''
+                # Exemplo de criação e escrita em um arquivo de saída
+                with open('saida.txt', 'w') as arquivo:
+                    arquivo.write('Este é o conteúdo do arquivo de saída.')
+                print('Arquivo de saída criado')
+                '''
+        },
+        "Optimization": {
+            "significado": "Processo de melhorar o desempenho ou a eficiência de um algoritmo, sistema ou aplicação.",
+            "uso": "É utilizado em ciência da computação, aprendizado de máquina e engenharia para resolver problemas de forma mais eficiente.",
+            "ejemplo": '''
+                # Exemplo de otimização de função com `scipy`
+                from scipy.optimize import minimize
+
+                def funcao(x):
+                    return x**2 + 3*x + 2
+
+                resultado = minimize(funcao, x0=0)
+                print("Valor otimizado:", resultado.x)
+                '''
+        },
+        "Os_getcwd": {
+            "significado": "Função do módulo `os` em Python que retorna o diretório de trabalho atual.",
+            "uso": "É utilizado para determinar o diretório onde o script está sendo executado.",
+            "ejemplo": '''
+                # Exemplo de uso de `os.getcwd`
+                import os
+
+                diretorio_atual = os.getcwd()
+                print('Diretório atual:', diretorio_atual)
+                '''
+        },
+        "Os_rename": {
+            "significado": "Função do módulo `os` em Python que renomeia ou move um arquivo ou diretório.",
+            "uso": "É utilizado para modificar nomes de arquivos ou diretórios ou movê-los para novos locais.",
+            "ejemplo": '''
+                # Exemplo de renomeação de arquivo com `os.rename`
+                import os
+
+                os.rename('arquivo_antigo.txt', 'arquivo_novo.txt')
+                print('Arquivo renomeado')
+                '''
+        },
+        "Os_chmod": {
+            "significado": "Função do módulo `os` em Python que altera as permissões de um arquivo ou diretório.",
+            "uso": "É utilizado para modificar permissões de leitura, escrita ou execução em arquivos e diretórios.",
+            "ejemplo": '''
+                # Exemplo de uso de `os.chmod` para alterar permissões
+                import os
+                import stat
+
+                os.chmod('arquivo.txt', stat.S_IRUSR | stat.S_IWUSR)  # Permissão de leitura e escrita para o dono
+                print('Permissões alteradas')
+                '''
+        },
+        "Open_file_mode": {
+            "significado": "Parâmetro da função `open` em Python que especifica o modo de abertura do arquivo (leitura, escrita, etc.).",
+            "uso": "É utilizado para definir como o arquivo será manipulado (por exemplo, apenas leitura ou leitura e escrita).",
+            "ejemplo": '''
+                # Exemplo de abertura de arquivo no modo 'r+' (leitura e escrita)
+                with open('arquivo.txt', 'r+') as arquivo:
+                    conteudo = arquivo.read()
+                    print('Conteúdo:', conteudo)
+                    arquivo.write('Adicionando mais conteúdo.')
+                '''
+        },
+        "Open_source": {
+            "significado": "Termo que se refere a software cujo código-fonte está disponível publicamente para uso, modificação e distribuição.",
+            "uso": "É utilizado para promover a colaboração e a transparência no desenvolvimento de software.",
+            "ejemplo": '''
+                # Exemplo de projeto open source: Python
+                print('O Python é uma linguagem de programação open source.')
+                '''
+        },
+        "Output_format": {
+            "significado": "Especificação de como os dados ou resultados de um programa devem ser apresentados ou armazenados.",
+            "uso": "É utilizado para ajustar o formato de saída em relatórios, gráficos ou arquivos de dados.",
+            "ejemplo": '''
+                # Exemplo de formatar saída com string formatada
+                valor = 123.456
+                print(f"Valor formatado: {valor:.2f}")  # Saída: Valor formatado: 123.46
+                '''
+        },
+        "One_time_pad": {
+            "significado": "Método de criptografia que utiliza uma chave aleatória única para criptografar e descriptografar mensagens.",
+            "uso": "É utilizado em comunicações altamente seguras devido à sua invulnerabilidade matemática, se aplicado corretamente.",
+            "ejemplo": '''
+                # Exemplo conceitual de um One-Time Pad em Python
+                mensagem = "HELLO"
+                chave = "XMCKL"  # Chave aleatória
+                criptografada = ''.join(chr((ord(m) ^ ord(k))) for m, k in zip(mensagem, chave))
+                print("Mensagem criptografada:", criptografada)
+                '''
+        },
+        "Override_property": {
+            "significado": "Prática em programação orientada a objetos de redefinir o comportamento de uma propriedade herdada em uma classe derivada.",
+            "uso": "É utilizado para modificar ou estender o comportamento padrão de classes base.",
+            "ejemplo": '''
+                # Exemplo de sobrescrita de propriedade em Python
+                class Base:
+                    @property
+                    def valor(self):
+                        return "Valor da classe base"
+
+                class Derivada(Base):
+                    @property
+                    def valor(self):
+                        return "Valor sobrescrito na classe derivada"
+
+                obj = Derivada()
+                print(obj.valor)  # Saída: Valor sobrescrito na classe derivada
+                '''
+        },
     },
-    "p": {
+    "p": { 
         # Aquí puedes agregar funciones que comiencen con la letra P
+        "Print": {
+            "significado": "Função embutida em Python usada para exibir mensagens ou valores no console.",
+            "uso": "É utilizada para debugar código ou mostrar informações ao usuário.",
+            "ejemplo": '''
+                # Exemplo de uso da função print
+                nome = "Python"
+                print(f"Bem-vindo ao {nome}!")  # Saída: Bem-vindo ao Python!
+                '''
+        },
+        "Pop": {
+            "significado": "Método de listas ou dicionários em Python que remove e retorna um elemento.",
+            "uso": "É utilizado para manipular estruturas de dados, especialmente ao trabalhar com pilhas ou remoções específicas.",
+            "ejemplo": '''
+                # Exemplo de pop em uma lista
+                lista = [1, 2, 3, 4]
+                elemento = lista.pop()  # Remove o último elemento
+                print(elemento)  # Saída: 4
+                '''
+        },
+        "Property": {
+            "significado": "Decorador em Python que define métodos como atributos, permitindo acesso controlado a variáveis de instância.",
+            "uso": "É utilizado para encapsular a lógica de acesso e evitar mudanças diretas nos atributos.",
+            "ejemplo": '''
+                # Exemplo de uso de @property
+                class Pessoa:
+                    def __init__(self, nome):
+                        self._nome = nome
+
+                    @property
+                    def nome(self):
+                        return self._nome.upper()
+
+                pessoa = Pessoa("João")
+                print(pessoa.nome)  # Saída: JOÃO
+                '''
+        },
+        "Pow": {
+            "significado": "Função embutida que calcula a potência de um número, incluindo suporte para módulo.",
+            "uso": "É utilizada para operações matemáticas que envolvem exponenciação.",
+            "ejemplo": '''
+                # Exemplo de uso da função pow
+                resultado = pow(2, 3)  # 2 elevado à 3
+                print(resultado)  # Saída: 8
+                '''
+        },
+        "Pprint": {
+            "significado": "Módulo ou função em Python para imprimir dados estruturados de forma mais legível.",
+            "uso": "É utilizado para depuração ou visualização de estruturas de dados complexas.",
+            "ejemplo": '''
+                # Exemplo de uso do pprint
+                import pprint
+                dados = {'nome': 'Ana', 'idade': 25, 'habilidades': ['Python', 'Data Science']}
+                pprint.pprint(dados)
+                '''
+        },
+        "Pass": {
+            "significado": "Declaração em Python que não executa nenhuma ação, usada como um marcador ou preenchimento.",
+            "uso": "É utilizada para criar blocos de código que ainda não foram implementados.",
+            "ejemplo": '''
+                # Exemplo de uso de pass
+                def funcao():
+                    pass  # Placeholder para lógica futura
+                '''
+        },
+        "Pip": {
+            "significado": "Ferramenta de gerenciamento de pacotes para instalar e gerenciar bibliotecas em Python.",
+            "uso": "É utilizada para adicionar dependências ao projeto de forma prática.",
+            "ejemplo": '''
+                # Instalar um pacote usando pip
+                # Comando no terminal:
+                pip install numpy
+                '''
+        },
+        "Pickle": {
+            "significado": "Módulo em Python para serializar e desserializar objetos Python.",
+            "uso": "É utilizado para armazenar objetos complexos em arquivos ou transferi-los entre programas.",
+            "ejemplo": '''
+                # Exemplo de serialização com pickle
+                import pickle
+                dados = {"nome": "Maria", "idade": 30}
+
+                with open("dados.pkl", "wb") as arquivo:
+                    pickle.dump(dados, arquivo)
+
+                # Desserializar
+                with open("dados.pkl", "rb") as arquivo:
+                    carregado = pickle.load(arquivo)
+                    print(carregado)  # Saída: {'nome': 'Maria', 'idade': 30}
+                '''
+        },
+        "Partition": {
+            "significado": "Método de strings em Python que divide a string em três partes com base no delimitador especificado.",
+            "uso": "É utilizado para separar partes de uma string para processamento adicional.",
+            "ejemplo": '''
+                # Exemplo de uso de partition
+                texto = "Python é incrível"
+                partes = texto.partition("é")
+                print(partes)  # Saída: ('Python ', 'é', ' incrível')
+                '''
+        },
+        "Pathlib": {
+            "significado": "Módulo em Python que fornece uma interface orientada a objetos para manipulação de caminhos de arquivos e diretórios.",
+            "uso": "É utilizado para trabalhar com arquivos e diretórios de forma mais intuitiva e cross-platform.",
+            "ejemplo": '''
+                from pathlib import Path
+
+                caminho = Path("meu_arquivo.txt")
+                if not caminho.exists():
+                    caminho.touch()  # Cria o arquivo
+                print(f"Arquivo criado: {caminho.resolve()}")
+                '''
+        },
+        "Partial": {
+            "significado": "Função do módulo `functools` que permite fixar alguns argumentos de uma função, criando uma nova função com menos argumentos necessários.",
+            "uso": "É utilizada para simplificar chamadas de funções com argumentos frequentemente reutilizados.",
+            "ejemplo": '''
+                from functools import partial
+
+                def potencia(base, expoente):
+                    return base ** expoente
+
+                quadrado = partial(potencia, expoente=2)
+                print(quadrado(4))  # Saída: 16
+                '''
+        },
+        "Popitem": {
+            "significado": "Método de dicionários em Python que remove e retorna o último par chave-valor inserido.",
+            "uso": "É utilizado para manipular dicionários que seguem a ordem de inserção de itens (Python 3.7+).",
+            "ejemplo": '''
+                dicionario = {'a': 1, 'b': 2, 'c': 3}
+                ultimo_item = dicionario.popitem()
+                print(ultimo_item)  # Saída: ('c', 3)
+                '''
+        },
+        "Permutations": {
+            "significado": "Função do módulo `itertools` que gera todas as permutações possíveis de um iterável.",
+            "uso": "É utilizada em problemas de combinação e probabilidade.",
+            "ejemplo": '''
+                from itertools import permutations
+
+                itens = ['a', 'b', 'c']
+                todas_permutacoes = list(permutations(itens))
+                print(todas_permutacoes)  # Saída: [('a', 'b', 'c'), ('a', 'c', 'b'), ...]
+                '''
+        },
+        "Plt_plot": {
+            "significado": "Função do módulo `matplotlib.pyplot` usada para criar gráficos de linhas.",
+            "uso": "É utilizada para visualização de dados em gráficos simples.",
+            "ejemplo": '''
+                import matplotlib.pyplot as plt
+
+                x = [1, 2, 3, 4]
+                y = [10, 20, 30, 40]
+                plt.plot(x, y)
+                plt.title("Gráfico de Linha")
+                plt.show()
+                '''
+        },
+        "Paramiko": {
+            "significado": "Módulo Python para implementação de SSH2, permitindo comunicação segura com servidores remotos.",
+            "uso": "É utilizado para executar comandos remotos, transferir arquivos ou gerenciar servidores.",
+            "ejemplo": '''
+                import paramiko
+
+                ssh = paramiko.SSHClient()
+                ssh.set_missing_host_key_policy(paramiko.AutoAddPolicy())
+                ssh.connect('servidor.com', username='usuario', password='senha')
+                stdin, stdout, stderr = ssh.exec_command('ls')
+                print(stdout.read().decode())
+                ssh.close()
+                '''
+        },
+        "Path": {
+            "significado": "Classe principal do módulo `pathlib` para representar e manipular caminhos de arquivos ou diretórios.",
+            "uso": "É utilizada para criar, verificar ou alterar arquivos e diretórios.",
+            "ejemplo": '''
+                from pathlib import Path
+
+                pasta = Path("nova_pasta")
+                if not pasta.exists():
+                    pasta.mkdir()
+                    print("Pasta criada!")
+                '''
+        },
+        "Pdf_merger": {
+            "significado": "Classe do módulo `PyPDF2` usada para combinar vários arquivos PDF em um único documento.",
+            "uso": "É utilizada em aplicações que exigem manipulação de arquivos PDF.",
+            "ejemplo": '''
+                from PyPDF2 import PdfMerger
+
+                merger = PdfMerger()
+                merger.append("arquivo1.pdf")
+                merger.append("arquivo2.pdf")
+                merger.write("combinado.pdf")
+                merger.close()
+                '''
+        },
+        "Pandas": {
+            "significado": "Biblioteca de Python para manipulação e análise de dados, especialmente com estruturas como DataFrames.",
+            "uso": "É utilizada para lidar com grandes conjuntos de dados, realizar cálculos e transformar dados.",
+            "ejemplo": '''
+                import pandas as pd
+
+                dados = {'Nome': ['Ana', 'João'], 'Idade': [25, 30]}
+                df = pd.DataFrame(dados)
+                print(df)
+                '''
+        },
+        "Parse": {
+            "significado": "Processo de analisar e interpretar uma string ou dados de entrada de acordo com uma estrutura ou formato específico.",
+            "uso": "É utilizado em linguagens de programação, processamento de arquivos e análise de dados.",
+            "ejemplo": '''
+                from xml.etree import ElementTree as ET
+
+                xml_data = '<data><item>123</item></data>'
+                root = ET.fromstring(xml_data)
+                print(root.find('item').text)  # Saída: 123
+                '''
+        },
+        "Pipe": {
+            "significado": "Método ou conceito usado para encadear comandos ou processos, frequentemente em sistemas baseados em Unix.",
+            "uso": "É utilizado para transmitir saída de um programa como entrada de outro.",
+            "ejemplo": '''
+                # Em Python, o subprocess pode ser usado para simular pipes
+                import subprocess
+
+                proc1 = subprocess.Popen(['echo', 'Hello, World!'], stdout=subprocess.PIPE)
+                proc2 = subprocess.Popen(['grep', 'World'], stdin=proc1.stdout, stdout=subprocess.PIPE)
+                output = proc2.communicate()[0]
+                print(output.decode())  # Saída: Hello, World!
+                '''
+        },
+        "Print_function": {
+            "significado": "Função embutida em Python usada para imprimir texto ou dados no console.",
+            "uso": "É utilizada para depuração, mensagens ou exibição de resultados.",
+            "ejemplo": '''
+                print("Olá, Mundo!")
+                print("O resultado é:", 42)
+                '''
+        },
+        "Proxy": {
+            "significado": "Intermediário que atua entre um cliente e um servidor, geralmente para controlar, filtrar ou otimizar as comunicações.",
+            "uso": "É utilizado para anonimato, balanceamento de carga ou segurança em redes.",
+            "ejemplo": '''
+                # Exemplo simples com um servidor proxy em Python
+                import requests
+
+                proxies = {
+                    "http": "http://proxy.example.com:8080",
+                    "https": "http://proxy.example.com:8080"
+                }
+                response = requests.get("http://example.com", proxies=proxies)
+                print(response.status_code)
+                '''
+        },
+        "Profile": {
+            "significado": "Ferramenta ou módulo usado para medir o desempenho de um código, incluindo o tempo de execução de funções.",
+            "uso": "É utilizado para otimizar o código identificando gargalos de desempenho.",
+            "ejemplo": '''
+                import cProfile
+
+                def calcular():
+                    resultado = sum(range(1_000_000))
+                    print(resultado)
+
+                cProfile.run('calcular()')
+                '''
+        },
+        "Pool": {
+            "significado": "Classe do módulo `multiprocessing` que gerencia um grupo de processos para execução paralela de tarefas.",
+            "uso": "É utilizada para distribuir trabalho entre vários processos em sistemas multi-core.",
+            "ejemplo": '''
+                from multiprocessing import Pool
+
+                def quadrado(x):
+                    return x * x
+
+                with Pool(4) as p:
+                    resultados = p.map(quadrado, [1, 2, 3, 4])
+                print(resultados)  # Saída: [1, 4, 9, 16]
+                '''
+        },
+        "Pow_function": {
+            "significado": "Função embutida em Python que calcula a potência de um número.",
+            "uso": "É utilizada para cálculos matemáticos.",
+            "ejemplo": '''
+                resultado = pow(2, 3)  # 2 elevado a 3
+                print(resultado)  # Saída: 8
+                '''
+        },
+        "Proxy_server": {
+            "significado": "Servidor que atua como intermediário para solicitações entre clientes e servidores, oferecendo controle e segurança.",
+            "uso": "É utilizado em redes corporativas e pessoais para melhorar a segurança ou gerenciar o acesso à internet.",
+            "ejemplo": '''
+                # Configuração de um proxy em Python com `http.server`
+                from http.server import SimpleHTTPRequestHandler
+                from socketserver import TCPServer
+
+                class ProxyHandler(SimpleHTTPRequestHandler):
+                    def do_GET(self):
+                        print(f"Requisição para: {self.path}")
+                        super().do_GET()
+
+                with TCPServer(("localhost", 8080), ProxyHandler) as httpd:
+                    print("Proxy rodando na porta 8080")
+                    httpd.serve_forever()
+                '''
+        },
+        "Plotly": {
+            "significado": "Biblioteca Python para criar visualizações interativas como gráficos de linhas, barras e mapas.",
+            "uso": "É utilizada para análise e apresentação de dados.",
+            "ejemplo": '''
+                import plotly.express as px
+
+                df = px.data.iris()
+                fig = px.scatter(df, x="sepal_width", y="sepal_length", color="species")
+                fig.show()
+                '''
+        },
+        "Pipeline": {
+            "significado": "Estrutura que permite encadear etapas de processamento de dados ou aprendizado de máquina de forma sequencial.",
+            "uso": "É utilizada em projetos de machine learning para organizar fluxos de trabalho.",
+            "ejemplo": '''
+                from sklearn.pipeline import Pipeline
+                from sklearn.preprocessing import StandardScaler
+                from sklearn.linear_model import LogisticRegression
+
+                pipeline = Pipeline([
+                    ('scaler', StandardScaler()),
+                    ('classifier', LogisticRegression())
+                ])
+                print(pipeline)
+                '''
+        },
+        "Partial_fit": {
+            "significado": "Método utilizado em modelos de aprendizado de máquina para treinar incrementadamente, permitindo lidar com grandes volumes de dados.",
+            "uso": "É utilizado em situações onde o conjunto de dados completo não pode ser carregado na memória de uma só vez.",
+            "ejemplo": '''
+                from sklearn.linear_model import SGDClassifier
+                import numpy as np
+
+                X = np.random.rand(100, 10)
+                y = np.random.randint(0, 2, 100)
+
+                modelo = SGDClassifier()
+                modelo.partial_fit(X[:50], y[:50], classes=[0, 1])
+                modelo.partial_fit(X[50:], y[50:])
+                print("Modelo treinado incrementadamente.")
+                '''
+        },
+        "Parquet": {
+            "significado": "Formato de armazenamento eficiente e orientado a colunas usado para análise de dados de alto desempenho.",
+            "uso": "É utilizado em ferramentas como Apache Spark e pandas para armazenar grandes volumes de dados.",
+            "exemplo": """
+                import pandas as pd
+
+                df = pd.DataFrame({'col1': [1, 2, 3], 'col2': [4, 5, 6]})
+                df.to_parquet('arquivo.parquet')
+                df_carregado = pd.read_parquet('arquivo.parquet')
+                print(df_carregado)
+                """
+        },
+        "Pkg_resources": {
+            "significado": "Módulo da biblioteca `setuptools` que lida com pacotes e dependências em Python.",
+            "uso": "É utilizado para consultar e gerenciar recursos de pacotes Python instalados.",
+            "exemplo": """
+                import pkg_resources
+
+                distribs = pkg_resources.working_set
+                for dist in distribs:
+                    print(dist.project_name, dist.version)
+                """
+        },
+        "Plot": {
+            "significado": "Função básica de visualização de gráficos em bibliotecas como Matplotlib.",
+            "uso": "É utilizada para criar gráficos de linhas, dispersão ou visualizações simples.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                x = [1, 2, 3, 4]
+                y = [10, 20, 25, 30]
+                plt.plot(x, y)
+                plt.title("Gráfico Simples")
+                plt.show()
+                """
+        },
+        "Path_exists": {
+            "significado": "Função para verificar se um arquivo ou diretório existe em um caminho especificado.",
+            "uso": "É utilizada para validação de caminhos antes de realizar operações de leitura ou escrita.",
+            "exemplo": """
+                import os
+
+                if os.path.exists('arquivo.txt'):
+                    print('O arquivo existe.')
+                else:
+                    print('O arquivo não foi encontrado.')
+                """
+        },
+        "Preprocess": {
+            "significado": "Etapa de preparação de dados antes de serem usados em análises ou modelos de aprendizado de máquina.",
+            "uso": "É utilizada para normalizar, limpar ou transformar dados brutos.",
+            "exemplo": """
+                from sklearn.preprocessing import StandardScaler
+                import numpy as np
+
+                dados = np.array([[1, 2], [3, 4], [5, 6]])
+                scaler = StandardScaler()
+                dados_normalizados = scaler.fit_transform(dados)
+                print(dados_normalizados)
+                """
+        },
+        "Push": {
+            "significado": "Operação que adiciona um elemento ao topo de uma pilha (stack).",
+            "uso": "É utilizada em estruturas de dados baseadas em LIFO (último a entrar, primeiro a sair).",
+            "exemplo": """
+                stack = []
+
+                # Adicionando elementos à pilha
+                stack.append(10)
+                stack.append(20)
+                print(stack)  # Saída: [10, 20]
+                """
+        },
+        "Pop_stack": {
+            "significado": "Operação que remove e retorna o elemento do topo de uma pilha.",
+            "uso": "É utilizada para recuperar elementos em estruturas LIFO.",
+            "exemplo": """
+                stack = [10, 20, 30]
+
+                topo = stack.pop()
+                print(topo)  # Saída: 30
+                print(stack)  # Saída: [10, 20]
+                """
+        },
+        "Polynomial_features": {
+            "significado": "Transformação usada para criar combinações de recursos em termos polinomiais para aprendizado de máquina.",
+            "uso": "É utilizada para aumentar a capacidade de modelos simples, como a regressão linear.",
+            "exemplo": """
+                from sklearn.preprocessing import PolynomialFeatures
+                import numpy as np
+
+                X = np.array([[1, 2], [3, 4]])
+                poly = PolynomialFeatures(degree=2)
+                X_poly = poly.fit_transform(X)
+                print(X_poly)
+                """
+        },
+        "Plt_legend": {
+            "significado": "Função em Matplotlib para adicionar legendas a gráficos.",
+            "uso": "É utilizada para identificar diferentes séries de dados em gráficos.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                plt.plot([1, 2, 3], label='Linha 1')
+                plt.plot([3, 2, 1], label='Linha 2')
+                plt.legend()
+                plt.show()
+                """
+        },
+        "Precision_score": {
+            "significado": "Métrica de avaliação usada para medir a precisão de um modelo, calculada como a proporção de predições positivas corretas.",
+            "uso": "É utilizada em problemas de classificação para avaliar o desempenho do modelo.",
+            "exemplo": """
+                from sklearn.metrics import precision_score
+
+                y_true = [0, 1, 1, 1]
+                y_pred = [0, 1, 0, 1]
+                precision = precision_score(y_true, y_pred)
+                print('Precisão:', precision)  # Saída: 1.0
+                """
+        },
+        "Pipe_operation": {
+            "significado": "Método para conectar a saída de um comando ou processo diretamente à entrada de outro, geralmente em sistemas baseados em Unix.",
+            "uso": "Utilizado para criar fluxos de dados eficientes entre comandos ou funções.",
+            "exemplo": """
+                # Exemplo em Bash (uso de pipe)
+                ls -l | grep '.py'
+                """
+        },
+        "Plt_bar": {
+            "significado": "Função em Matplotlib para criar gráficos de barras.",
+            "uso": "Utilizada para representar dados categóricos visualmente.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                categorias = ['A', 'B', 'C']
+                valores = [10, 20, 15]
+                plt.bar(categorias, valores)
+                plt.title('Gráfico de Barras')
+                plt.show()
+                """
+        },
+        "Proxy_handler": {
+            "significado": "Componente ou função que gerencia solicitações enviadas por meio de um proxy em redes ou em aplicativos.",
+            "uso": "Utilizado para configurar proxies em conexões HTTP ou HTTPS.",
+            "exemplo": """
+                from urllib.request import ProxyHandler, build_opener
+
+                proxy = ProxyHandler({'http': 'http://proxy.com:8080'})
+                opener = build_opener(proxy)
+                response = opener.open('http://example.com')
+                print(response.read())
+                """
+        },
+        "Print_exception": {
+            "significado": "Método para exibir informações detalhadas sobre uma exceção durante a execução de um programa.",
+            "uso": "Utilizado em depuração e análise de erros.",
+            "exemplo": """
+                try:
+                    x = 1 / 0
+                except Exception as e:
+                    print('Erro:', e)
+                """
+        },
+        "Post_request": {
+            "significado": "Solicitação HTTP usada para enviar dados ao servidor, geralmente para criar ou atualizar recursos.",
+            "uso": "Utilizada em APIs e formulários web para enviar informações.",
+            "exemplo": """
+                import requests
+
+                dados = {'nome': 'João', 'idade': 30}
+                response = requests.post('http://api.exemplo.com/dados', json=dados)
+                print(response.status_code)
+                """
+        },
+        "Plt_pie": {
+            "significado": "Função em Matplotlib para criar gráficos de pizza.",
+            "uso": "Utilizada para representar proporções entre categorias.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                labels = ['A', 'B', 'C']
+                valores = [30, 50, 20]
+                plt.pie(valores, labels=labels, autopct='%1.1f%%')
+                plt.title('Gráfico de Pizza')
+                plt.show()
+                """
+        },
+        "Proxy_object": {
+            "significado": "Objeto que atua como intermediário para controlar o acesso a outro objeto ou recurso.",
+            "uso": "Utilizado para implementar padrões de design como Proxy, Cache e Lazy Initialization.",
+            "exemplo": """
+                class Proxy:
+                    def __init__(self, obj):
+                        self._obj = obj
+                    
+                    def __getattr__(self, name):
+                        print(f'Acessando {name}')
+                        return getattr(self._obj, name)
+
+                obj = Proxy([1, 2, 3])
+                obj.append(4)
+                print(obj)
+                """
+        },
+        "Pandas_series": {
+            "significado": "Estrutura unidimensional em pandas para armazenar e manipular dados.",
+            "uso": "Utilizada para representar dados de uma coluna em um DataFrame ou listas indexadas.",
+            "exemplo": """
+                import pandas as pd
+
+                serie = pd.Series([10, 20, 30], index=['A', 'B', 'C'])
+                print(serie)
+                """
+        },
+        "Plt_scatter": {
+            "significado": "Função em Matplotlib para criar gráficos de dispersão.",
+            "uso": "Utilizada para visualizar a relação entre duas variáveis.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                x = [1, 2, 3, 4]
+                y = [10, 20, 25, 30]
+                plt.scatter(x, y)
+                plt.title('Gráfico de Dispersão')
+                plt.show()
+                """
+        },
+        "Plt_grid": {
+            "significado": "Função em Matplotlib para adicionar grades aos gráficos.",
+            "uso": "Utilizada para melhorar a legibilidade dos gráficos.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                x = [1, 2, 3, 4]
+                y = [10, 20, 25, 30]
+                plt.plot(x, y)
+                plt.grid(True)
+                plt.title('Gráfico com Grade')
+                plt.show()
+                """
+        },
+        "Plt_hist": {
+            "significado": "Função em Matplotlib para criar histogramas.",
+            "uso": "Utilizada para visualizar a distribuição de uma variável.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+                import numpy as np
+
+                dados = np.random.randn(1000)
+                plt.hist(dados, bins=30, alpha=0.7)
+                plt.title('Histograma')
+                plt.show()
+                """
+        },
+        "Plt_savefig": {
+            "significado": "Função em Matplotlib usada para salvar o gráfico gerado em um arquivo.",
+            "uso": "Utilizada para exportar gráficos em formatos como PNG, PDF ou SVG.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                x = [1, 2, 3, 4]
+                y = [10, 20, 25, 30]
+                plt.plot(x, y)
+                plt.title('Gráfico Exemplo')
+                plt.savefig('grafico.png')
+                """
+        },
+        "Plt_title": {
+            "significado": "Função em Matplotlib para adicionar um título ao gráfico.",
+            "uso": "Utilizada para descrever brevemente o conteúdo ou objetivo do gráfico.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                plt.plot([1, 2, 3], [4, 5, 6])
+                plt.title('Meu Gráfico')
+                plt.show()
+                """
+        },
+        "Plt_xlabel": {
+            "significado": "Função em Matplotlib para definir o rótulo do eixo X no gráfico.",
+            "uso": "Utilizada para identificar o significado dos dados no eixo X.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                plt.plot([1, 2, 3], [4, 5, 6])
+                plt.xlabel('Eixo X')
+                plt.show()
+                """
+        },
+        "Plt_ylabel": {
+            "significado": "Função em Matplotlib para definir o rótulo do eixo Y no gráfico.",
+            "uso": "Utilizada para identificar o significado dos dados no eixo Y.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                plt.plot([1, 2, 3], [4, 5, 6])
+                plt.ylabel('Eixo Y')
+                plt.show()
+                """
+        },
+        "Plt_show": {
+            "significado": "Função em Matplotlib usada para exibir o gráfico gerado em uma janela ou interface interativa.",
+            "uso": "Utilizada para mostrar os gráficos após serem configurados.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                plt.plot([1, 2, 3], [4, 5, 6])
+                plt.show()
+                """
+        },
+        "Plt_colorbar": {
+            "significado": "Função em Matplotlib para adicionar uma barra de cores a um gráfico, representando a escala de valores.",
+            "uso": "Utilizada em gráficos como mapas de calor ou contornos para indicar o significado das cores.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+                import numpy as np
+
+                data = np.random.rand(10, 10)
+                plt.imshow(data, cmap='viridis')
+                plt.colorbar()
+                plt.show()
+                """
+        },
+        "Plt_contour": {
+            "significado": "Função em Matplotlib para criar gráficos de contorno baseados em dados tridimensionais ou bidimensionais.",
+            "uso": "Utilizada para representar linhas de igual valor em mapas ou superfícies.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+                import numpy as np
+
+                x = np.linspace(-5, 5, 100)
+                y = np.linspace(-5, 5, 100)
+                X, Y = np.meshgrid(x, y)
+                Z = np.sin(np.sqrt(X**2 + Y**2))
+
+                plt.contour(X, Y, Z, levels=10, cmap='coolwarm')
+                plt.colorbar()
+                plt.title('Gráfico de Contornos')
+                plt.show()
+                """
+        },
+        "Plt_fill_between": {
+            "significado": "Função em Matplotlib para preencher a área entre duas curvas ou uma curva e um eixo.",
+            "uso": "Utilizada para destacar regiões em gráficos, como intervalos de confiança ou áreas específicas.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+                import numpy as np
+
+                x = np.linspace(0, 10, 100)
+                y1 = np.sin(x)
+                y2 = np.cos(x)
+
+                plt.fill_between(x, y1, y2, color='lightblue', alpha=0.5)
+                plt.plot(x, y1, label='Seno')
+                plt.plot(x, y2, label='Cosseno')
+                plt.legend()
+                plt.show()
+                """
+        },
+        "Plt_annotate": {
+            "significado": "Função em Matplotlib para adicionar anotações a um gráfico, como textos ou setas apontando para pontos específicos.",
+            "uso": "Utilizada para destacar ou explicar pontos de interesse no gráfico.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                x = [1, 2, 3, 4]
+                y = [10, 20, 15, 25]
+                plt.plot(x, y)
+
+                plt.annotate('Ponto Máximo', xy=(4, 25), xytext=(3, 22),
+                            arrowprops=dict(facecolor='black', arrowstyle='->'))
+                plt.show()
+                """
+        },
+        "Plt_boxplot": {
+            "significado": "Função em Matplotlib para criar gráficos de caixa (boxplots) que representam a distribuição de um conjunto de dados.",
+            "uso": "Utilizada para visualizar a mediana, quartis e valores atípicos em dados.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                data = [7, 8, 5, 6, 9, 4, 7, 8, 5, 6]
+                plt.boxplot(data)
+                plt.title('Boxplot dos Dados')
+                plt.show()
+                """
+        },
+        "Plt_stackplot": {
+            "significado": "Função em Matplotlib para criar gráficos de área empilhados, representando várias séries de dados como áreas preenchidas.",
+            "uso": "Utilizada para visualizar a composição de dados ao longo de um eixo.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                x = [1, 2, 3, 4, 5]
+                y1 = [1, 2, 3, 4, 5]
+                y2 = [2, 3, 4, 5, 6]
+                y3 = [3, 4, 5, 6, 7]
+
+                plt.stackplot(x, y1, y2, y3, labels=['A', 'B', 'C'], alpha=0.5)
+                plt.legend(loc='upper left')
+                plt.title('Gráfico de Áreas Empilhadas')
+                plt.show()
+                """
+        },
+        "Plt_quiver": {
+            "significado": "Função em Matplotlib para criar gráficos de vetores, representando magnitude e direção em coordenadas bidimensionais.",
+            "uso": "Utilizada para visualização de campos vetoriais, como fluxos de vento ou gradientes.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+                import numpy as np
+
+                x, y = np.meshgrid(np.arange(-2, 2, 0.5), np.arange(-2, 2, 0.5))
+                u = -y
+                v = x
+
+                plt.quiver(x, y, u, v)
+                plt.title('Gráfico de Vetores (Quiver)')
+                plt.show()
+                """
+        },
+        "Plt_arrow": {
+            "significado": "Função em Matplotlib para desenhar uma única seta em um gráfico.",
+            "uso": "Utilizada para destacar direções ou movimentos em um gráfico.",
+            "exemplo": """
+                import matplotlib.pyplot as plt
+
+                plt.plot([0, 10], [0, 10])
+                plt.arrow(2, 2, 5, 5, head_width=0.5, head_length=0.7, fc='red', ec='red')
+                plt.title('Gráfico com Seta')
+                plt.show()
+                """
+        },
     },
     "q": {
         # Aquí puedes agregar funciones que comiencen con la letra Q
