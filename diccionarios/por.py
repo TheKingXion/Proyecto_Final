@@ -4461,7 +4461,353 @@ diccionario_por = {
 
     },
     "j": {
-       
+            
+        "join": {
+            "significado": "Método ou função que combina elementos de uma lista ou sequência em uma única string, separada por um delimitador.",
+            "uso": "É utilizado para unir elementos de uma lista em uma string, com um separador especificado.",
+            "exemplo": """
+                lista = ["Olá", "mundo"]
+                resultado = " ".join(lista)
+                print(resultado)  # Saída: "Olá mundo"
+            """
+        },
+        "json": {
+            "significado": "Formato de dados leve usado para armazenar e transportar dados em formato de texto.",
+            "uso": "É utilizado para trocar informações entre sistemas, especialmente em APIs.",
+            "exemplo": """
+                import json
+                dados = {"nome": "João", "idade": 30}
+                json_str = json.dumps(dados)
+                print(json_str)  # Saída: {"nome": "João", "idade": 30}
+            """
+        },
+        "jupyter_notebook": {
+            "significado": "Ferramenta interativa que permite criar e compartilhar documentos contendo código, texto, gráficos e outros elementos.",
+            "uso": "É utilizado principalmente para análise de dados, aprendizado de máquina e visualização de resultados.",
+            "exemplo": """
+                # Para iniciar o Jupyter Notebook:
+                jupyter notebook
+                # Ele abrirá no navegador e permitirá criar novos notebooks.
+            """
+        },
+        "jump_table": {
+            "significado": "Estrutura de dados que armazena endereços de instruções, usada para transferir controle rapidamente em programas.",
+            "uso": "É utilizada para implementar switch cases ou tabelas de despachadores em linguagens de programação.",
+            "exemplo": """
+                jump_table = {
+                    "op1": funcao1,
+                    "op2": funcao2
+                }
+                opcao = "op1"
+                jump_table[opcao]()  # Executa funcao1
+            """
+        },
+        "jvm": {
+            "significado": "Java Virtual Machine, componente que executa bytecode Java em qualquer sistema operacional.",
+            "uso": "É utilizado para executar programas Java, garantindo portabilidade entre diferentes sistemas.",
+            "exemplo": """
+                # Código Java compilado em bytecode
+                javac MeuPrograma.java
+                # Executado pela JVM
+                java MeuPrograma
+            """
+        },
+        "jshell": {
+            "significado": "Ferramenta interativa de linha de comando para executar código Java em tempo real.",
+            "uso": "É utilizada para prototipar, testar e aprender Java de maneira interativa.",
+            "exemplo": """
+                # Iniciar o JShell:
+                jshell
+                # Dentro do JShell:
+                System.out.println("Olá Mundo");
+            """
+        },
+        "jupyter": {
+            "significado": "Plataforma que suporta notebooks interativos para diferentes linguagens de programação.",
+            "uso": "É utilizada para executar código, visualizar resultados e documentar análises.",
+            "exemplo": """
+                # Para iniciar o Jupyter:
+                jupyter notebook
+                """
+        },
+        "jupyter_lab": {
+            "significado": "Interface avançada para o Jupyter, oferecendo mais funcionalidades que o Jupyter Notebook.",
+            "uso": "É utilizado para organizar notebooks, arquivos de dados e visualizações de maneira integrada.",
+            "exemplo": """
+                # Para iniciar o Jupyter Lab:
+                jupyter lab
+            """
+        },
+        "jupyter_widgets": {
+            "significado": "Componentes interativos usados em notebooks Jupyter para criar controles de interface de usuário.",
+            "uso": "É utilizado para adicionar sliders, botões e gráficos interativos em notebooks.",
+            "exemplo": """
+                from ipywidgets import IntSlider
+                slider = IntSlider(value=5, min=0, max=10)
+                slider
+            """
+        },
+        "jsonschema": {
+            "significado": "Biblioteca usada para validar documentos JSON contra um esquema definido.",
+            "uso": "É utilizada para garantir que dados JSON atendam a uma estrutura predefinida.",
+            "exemplo": """
+                from jsonschema import validate
+                schema = {"type": "object", "properties": {"idade": {"type": "integer"}}}
+                dados = {"idade": 25}
+                validate(instance=dados, schema=schema)
+            """
+        },
+        "jwt": {
+            "significado": "JSON Web Token, formato usado para transmitir informações de maneira segura entre partes.",
+            "uso": "É utilizado para autenticação e troca segura de informações em APIs.",
+            "exemplo": """
+                import jwt
+                token = jwt.encode({"usuario": "admin"}, "segredo", algorithm="HS256")
+                print(token)
+            """
+        },
+        "jupyterhub": {
+            "significado": "Versão multiusuário do Jupyter, projetada para organizações e equipes.",
+            "uso": "É utilizada para fornecer notebooks Jupyter a vários usuários em um ambiente compartilhado.",
+            "exemplo": """
+                # Para iniciar o JupyterHub:
+                jupyterhub
+            """
+        },
+        "jython": {
+            "significado": "Implementação da linguagem Python que roda em cima da JVM.",
+            "uso": "É utilizado para integrar código Python em projetos Java.",
+            "exemplo": """
+                # Executar código Python com Jython:
+                jython MeuScript.py
+            """
+        },
+        "jalview": {
+            "significado": "Software de visualização para múltiplos alinhamentos de sequência biológica.",
+            "uso": "É utilizado em bioinformática para analisar e editar alinhamentos de sequências.",
+            "exemplo": """
+                # Importar um arquivo de alinhamento no Jalview para análise
+            """
+        },
+        "jupyter_console": {
+            "significado": "Interface de linha de comando interativa para o kernel do Jupyter.",
+            "uso": "É utilizada para executar comandos em um ambiente de terminal, sem interface gráfica.",
+            "exemplo": """
+                # Para iniciar:
+                jupyter console
+            """
+        },
+        "jsonpickle": {
+            "significado": "Biblioteca para serializar objetos Python em formato JSON e restaurá-los.",
+            "uso": "É utilizada para salvar e carregar objetos complexos como JSON.",
+            "exemplo": """
+                import jsonpickle
+                obj = {"nome": "Maria"}
+                json_str = jsonpickle.encode(obj)
+                print(json_str)
+            """
+        },
+        "jose": {
+            "significado": "Biblioteca para trabalhar com JSON Object Signing and Encryption (JOSE).",
+            "uso": "É utilizada para assinar, criptografar e autenticar dados JSON.",
+            "exemplo": """
+                from jose import jwt
+                token = jwt.encode({"dados": "seguro"}, "segredo", algorithm="HS256")
+                print(token)
+            """
+        },
+        "jupyter_client": {
+            "significado": "Biblioteca para comunicação entre clientes e kernels Jupyter.",
+            "uso": "É utilizada para executar e controlar kernels de notebooks remotamente.",
+            "exemplo": """
+                from jupyter_client import KernelManager
+                km = KernelManager()
+                km.start_kernel()
+            """
+        },
+        "joblib": {
+            "significado": "Biblioteca Python para salvar e carregar objetos, além de realizar paralelismo leve.",
+            "uso": "É utilizada para serializar objetos e distribuir tarefas computacionais de forma eficiente.",
+            "exemplo": """
+                from joblib import dump, load
+                modelo = {"peso": [0.1, 0.5, 0.3]}
+                dump(modelo, 'modelo.joblib')
+                carregado = load('modelo.joblib')
+                print(carregado)
+            """
+        },
+        "jupyter_notebook_extension": {
+            "significado": "Extensão para notebooks Jupyter que adiciona funcionalidades extras.",
+            "uso": "É utilizada para expandir as capacidades dos notebooks Jupyter, como melhorias de interface e ferramentas adicionais.",
+            "exemplo": """
+                # Instalar extensões:
+                pip install jupyter_contrib_nbextensions
+                # Ativar extensões:
+                jupyter nbextension enable <nome_da_extensão>
+            """
+        },
+        "json_response": {
+            "significado": "Resposta de uma API em formato JSON.",
+            "uso": "É utilizada para transmitir dados estruturados de um servidor para um cliente.",
+            "exemplo": """
+                from flask import Flask, jsonify
+                app = Flask(__name__)
+                @app.route('/dados')
+                def dados():
+                    return jsonify({"status": "sucesso", "mensagem": "Olá"})
+            """
+        },
+        "jupyter_contrib_nbextensions": {
+            "significado": "Conjunto de extensões comunitárias para Jupyter Notebook.",
+            "uso": "É utilizado para adicionar funcionalidades personalizadas aos notebooks.",
+            "exemplo": """
+                # Instalar extensões comunitárias:
+                pip install jupyter_contrib_nbextensions
+            """
+        },
+        "jupyter_novice": {
+            "significado": "Termo usado para indicar usuários iniciantes no ecossistema Jupyter.",
+            "uso": "Refere-se a tutoriais ou materiais voltados para pessoas que estão começando com o Jupyter.",
+            "exemplo": """
+                # Exemplos de tutoriais para iniciantes podem ser encontrados no site oficial:
+                https://jupyter.org
+            """
+        },
+        "jenkins": {
+            "significado": "Ferramenta de integração contínua para automação de tarefas em desenvolvimento de software.",
+            "uso": "É utilizada para construir, testar e implantar software de forma automatizada.",
+            "exemplo": """
+                # Para instalar Jenkins:
+                sudo apt install jenkins
+                # Acesse o painel:
+                http://localhost:8080
+            """
+        },
+        "jupyter_terminal": {
+            "significado": "Terminal integrado ao Jupyter que permite execução de comandos do sistema operacional.",
+            "uso": "É utilizado para executar comandos diretamente em um ambiente Jupyter.",
+            "exemplo": """
+                # No Jupyter, abra o terminal clicando em "New > Terminal"
+            """
+        },
+        "jupyter_lab_extension": {
+            "significado": "Extensões para JupyterLab que adicionam funcionalidades ou melhoram a experiência do usuário.",
+            "uso": "É utilizada para personalizar o JupyterLab com ferramentas adicionais.",
+            "exemplo": """
+                # Instalar uma extensão:
+                jupyter labextension install <nome_da_extensão>
+            """
+        },
+        "jupyter_kernel": {
+            "significado": "Processo que executa o código em notebooks Jupyter.",
+            "uso": "É utilizado para processar comandos enviados pelos notebooks.",
+            "exemplo": """
+                # Listar kernels disponíveis:
+                jupyter kernelspec list
+            """
+        },
+        "jump_start": {
+            "significado": "Início rápido ou guia introdutório para uma ferramenta ou tecnologia.",
+            "uso": "É utilizado para começar rapidamente com uma nova tecnologia.",
+            "exemplo": """
+                # Um guia de jump start para Jupyter pode ser encontrado em:
+                https://jupyter.org/install
+            """
+        },
+        "jupyter_tutorial": {
+            "significado": "Material educativo que ensina a usar Jupyter Notebook ou JupyterLab.",
+            "uso": "É utilizado para aprender as funcionalidades e aplicações do Jupyter.",
+            "exemplo": """
+                # Um exemplo de tutorial:
+                https://realpython.com/jupyter-notebook-introduction/
+            """
+        },
+        "jupyter_quickstart": {
+            "significado": "Guia rápido para configurar e começar a usar o Jupyter.",
+            "uso": "É utilizado para facilitar a instalação e os primeiros passos com o Jupyter.",
+            "exemplo": """
+                # Guia oficial:
+                https://jupyter.org/install
+            """
+        },
+        "jupyter_magic": {
+            "significado": "Comandos especiais que estendem as funcionalidades dos notebooks Jupyter.",
+            "uso": "É utilizado para realizar tarefas específicas, como carregar extensões ou controlar execução de código.",
+            "exemplo": """
+                # Comando mágico para verificar o tempo de execução:
+                %timeit x = 2 + 2
+            """
+        },
+        "jinja2": {
+            "significado": "Biblioteca de templates usada para criar HTML dinâmico com Python.",
+            "uso": "É utilizada para renderizar páginas web com dados dinâmicos.",
+            "exemplo": """
+                from jinja2 import Template
+                template = Template("Olá, {{ nome }}!")
+                renderizado = template.render(nome="João")
+                print(renderizado)  # Saída: Olá, João!
+            """
+        },
+        "jax": {
+            "significado": "Biblioteca para computação numérica que combina autograd e paralelismo.",
+            "uso": "É utilizada para acelerar cálculos científicos e aprendizado de máquina.",
+            "exemplo": """
+                import jax.numpy as jnp
+                x = jnp.array([1.0, 2.0, 3.0])
+                y = jnp.sin(x)
+                print(y)
+            """
+        },
+        "jupyter_config": {
+            "significado": "Arquivo ou ferramenta de configuração para o ambiente Jupyter.",
+            "uso": "É utilizado para personalizar o comportamento de notebooks ou servidores Jupyter.",
+            "exemplo": """
+                # Para editar o arquivo de configuração do Jupyter:
+                jupyter notebook --generate-config
+                # Editar o arquivo em ~/.jupyter/jupyter_notebook_config.py
+            """
+        },
+        "job_queue": {
+            "significado": "Estrutura que gerencia e organiza tarefas em fila para execução.",
+            "uso": "É utilizada em sistemas de processamento paralelo ou distribuído para gerenciar tarefas pendentes.",
+            "exemplo": """
+                from queue import Queue
+                fila = Queue()
+                fila.put('Tarefa 1')
+                fila.put('Tarefa 2')
+                print(fila.get())  # Saída: Tarefa 1
+            """
+        },
+        "jinja2_templates": {
+            "significado": "Modelos de template utilizados com o motor de templates Jinja2 para criar HTML dinâmico.",
+            "uso": "É utilizado para renderizar páginas HTML com dados dinâmicos em aplicações web.",
+            "exemplo": """
+                from flask import Flask, render_template
+                app = Flask(__name__)
+                @app.route('/')
+                def home():
+                    return render_template('index.html', nome='João')
+            """
+        },
+        "jupyter_dashboard": {
+            "significado": "Ferramenta para criar dashboards interativos no Jupyter Notebook.",
+            "uso": "É utilizada para apresentar visualizações e dados de maneira interativa e organizada.",
+            "exemplo": """
+                # Instalar o pacote:
+                pip install jupyter_dashboards
+                # Configurar e exibir um dashboard no notebook.
+            """
+        },
+        "jq": {
+            "significado": "Ferramenta de linha de comando para processar e manipular dados em formato JSON.",
+            "uso": "É utilizada para filtrar, transformar e analisar dados JSON diretamente no terminal.",
+            "exemplo": """
+                # Exemplo de uso:
+                echo '{ "nome": "João", "idade": 30 }' | jq '.nome'
+                # Saída: "João"
+            """
+        },
+
     },
     "k": {
         "kwargs": {
@@ -4477,6 +4823,1043 @@ diccionario_por = {
                 # nombre: Juan
                 # edad: 30
                 '''
+        },
+        "kde": {
+            "significado": "Estimativa de Densidade Kernel (Kernel Density Estimation), um método para estimar a densidade de probabilidade de uma variável.",
+            "uso": "É utilizado em estatística e machine learning para modelar a distribuição de dados de maneira não-paramétrica.",
+            "exemplo": """
+                import seaborn as sns
+                import numpy as np
+                dados = np.random.randn(100)
+                sns.kdeplot(dados)
+            """
+        },
+        "kmeans": {
+            "significado": "Algoritmo de agrupamento baseado na minimização da soma das distâncias ao centróide mais próximo.",
+            "uso": "É utilizado em machine learning para dividir dados em grupos ou clusters.",
+            "exemplo": """
+                from sklearn.cluster import KMeans
+                import numpy as np
+                dados = np.array([[1, 2], [1, 4], [1, 0], [10, 2], [10, 4], [10, 0]])
+                kmeans = KMeans(n_clusters=2, random_state=0).fit(dados)
+                print(kmeans.labels_)
+            """
+        },
+        "knn": {
+            "significado": "K-Nearest Neighbors, um algoritmo de classificação baseado na proximidade dos dados no espaço.",
+            "uso": "É utilizado em machine learning para classificação ou regressão com base nos vizinhos mais próximos.",
+            "exemplo": """
+                from sklearn.neighbors import KNeighborsClassifier
+                X = [[0], [1], [2], [3]]
+                y = [0, 0, 1, 1]
+                knn = KNeighborsClassifier(n_neighbors=2)
+                knn.fit(X, y)
+                print(knn.predict([[1.5]]))  # Saída: [0]
+            """
+        },
+        "key": {
+            "significado": "Um identificador ou índice utilizado em coleções como dicionários para acessar valores.",
+            "uso": "É utilizado para armazenar e acessar pares de chave-valor em estruturas de dados como dicionários.",
+            "exemplo": """
+                dicionario = {'nome': 'João', 'idade': 30}
+                print(dicionario['nome'])  # Saída: João
+            """
+        },
+        "kivy": {
+            "significado": "Biblioteca de Python para desenvolvimento de aplicações com interfaces gráficas multi-touch.",
+            "uso": "É utilizada para criar aplicativos multiplataforma com interface gráfica.",
+            "exemplo": """
+                from kivy.app import App
+                from kivy.uix.label import Label
+                class MeuApp(App):
+                    def build(self):
+                        return Label(text='Olá, Mundo!')
+                MeuApp().run()
+            """
+        },
+        "kiwisolver": {
+            "significado": "Biblioteca de resolução de restrições para layout de interfaces.",
+            "uso": "É utilizada em frameworks como Kivy para resolver equações de layout.",
+            "exemplo": """
+                from kiwisolver import Variable, Solver
+                x = Variable('x')
+                solver = Solver()
+                solver.add_constraint(x >= 10)
+                solver.update_variables()
+                print(x.value())  # Saída: 10
+            """
+        },
+        "keras": {
+            "significado": "Biblioteca de alto nível para construir e treinar redes neurais.",
+            "uso": "É utilizada para implementar modelos de deep learning de forma simples e eficiente.",
+            "exemplo": """
+                from keras.models import Sequential
+                from keras.layers import Dense
+                modelo = Sequential([Dense(10, activation='relu', input_shape=(8,))])
+                modelo.compile(optimizer='adam', loss='mse')
+            """
+        },
+        "kdb": {
+            "significado": "Banco de dados em memória, frequentemente utilizado em aplicações financeiras para análise de grandes volumes de dados.",
+            "uso": "É utilizado para armazenar e consultar dados rapidamente.",
+            "exemplo": """
+                # Consultas são feitas com q, a linguagem do KDB:
+                q) tabela: ([] col1: 1 2 3; col2: `a`b`c)
+                q) select from tabela where col1 > 1
+            """
+        },
+        "kivy_garden": {
+            "significado": "Conjunto de pacotes comunitários para Kivy.",
+            "uso": "É utilizado para expandir a funcionalidade do Kivy com widgets e componentes adicionais.",
+            "exemplo": """
+                # Instalar um pacote:
+                garden install graph
+                # Usar o pacote no aplicativo Kivy
+            """
+        },
+        "knapsack": {
+            "significado": "Problema da mochila, um problema de otimização combinatória.",
+            "uso": "É utilizado para encontrar a melhor combinação de itens que maximizam um valor dentro de uma capacidade limitada.",
+            "exemplo": """
+                def mochila(capacidade, valores, pesos):
+                    n = len(valores)
+                    tabela = [[0] * (capacidade + 1) for _ in range(n + 1)]
+                    for i in range(1, n + 1):
+                        for w in range(1, capacidade + 1):
+                            if pesos[i - 1] <= w:
+                                tabela[i][w] = max(tabela[i - 1][w], tabela[i - 1][w - pesos[i - 1]] + valores[i - 1])
+                            else:
+                                tabela[i][w] = tabela[i - 1][w]
+                    return tabela[n][capacidade]
+                print(mochila(50, [60, 100, 120], [10, 20, 30]))  # Saída: 220
+            """
+        },
+        "kalman_filter": {
+            "significado": "Algoritmo que utiliza uma série de medições ao longo do tempo para estimar valores desconhecidos.",
+            "uso": "É utilizado em aplicações de rastreamento e previsão, como em navegação e controle.",
+            "exemplo": """
+                from pykalman import KalmanFilter
+                filtro = KalmanFilter(initial_state_mean=0, n_dim_obs=1)
+                medidas = [1, 2, 3]
+                estimativas = filtro.em(measures).smooth(measures)
+                print(estimativas)
+            """
+        },
+        "kruskal": {
+            "significado": "Algoritmo para encontrar a árvore geradora mínima de um grafo.",
+            "uso": "É utilizado em grafos ponderados para encontrar o conjunto de arestas que conecta todos os vértices com o menor custo total.",
+            "exemplo": """
+                class Grafo:
+                    def __init__(self, vertices):
+                        self.V = vertices
+                        self.grafo = []
+                    def adicionar_aresta(self, u, v, w):
+                        self.grafo.append([u, v, w])
+                    def kruskal(self):
+                        self.grafo = sorted(self.grafo, key=lambda item: item[2])
+                        # Implementação do algoritmo continua...
+                """
+        },
+        "kmer": {
+            "significado": "Subsequências de comprimento k em uma sequência biológica.",
+            "uso": "É utilizado em bioinformática para análise de sequências de DNA e RNA.",
+            "exemplo": """
+                def gerar_kmers(sequencia, k):
+                    return [sequencia[i:i+k] for i in range(len(sequencia) - k + 1)]
+                print(gerar_kmers('ATCG', 2))  # Saída: ['AT', 'TC', 'CG']
+            """
+        },
+        "kivy_uix": {
+            "significado": "Módulo de widgets de interface de usuário no Kivy.",
+            "uso": "É utilizado para criar elementos de interface como botões, caixas de texto, etc.",
+            "exemplo": """
+                from kivy.uix.button import Button
+                btn = Button(text='Clique Aqui')
+            """
+        },
+        "kalman_smooth": {
+            "significado": "Processo de suavizar uma série temporal usando o filtro de Kalman.",
+            "uso": "É utilizado para melhorar estimativas em sistemas dinâmicos.",
+            "exemplo": """
+                from pykalman import KalmanFilter
+                filtro = KalmanFilter(initial_state_mean=0, n_dim_obs=1)
+                medidas = [1, 2, 3]
+                estimativas = filtro.smooth(medidas)[0]
+                print(estimativas)
+            """
+        },
+        "kurtosis": {
+            "significado": "Métrica estatística que descreve a forma da cauda de uma distribuição.",
+            "uso": "É utilizado para entender a forma de uma distribuição em relação a sua cauda e centralidade.",
+            "exemplo": """
+                from scipy.stats import kurtosis
+                dados = [1, 2, 3, 4, 5]
+                print(kurtosis(dados))  # Saída: valor de curtose
+            """
+        },
+        "knn_classifier": {
+            "significado": "Uma implementação do algoritmo K-Nearest Neighbors para classificação.",
+            "uso": "Utilizado para prever a classe de uma amostra com base nas classes dos vizinhos mais próximos.",
+            "exemplo": """
+                from sklearn.neighbors import KNeighborsClassifier
+                X = [[0], [1], [2], [3]]
+                y = [0, 0, 1, 1]
+                knn = KNeighborsClassifier(n_neighbors=3)
+                knn.fit(X, y)
+                print(knn.predict([[1.5]]))  # Saída: [0]
+            """
+        },
+        "keylogger": {
+            "significado": "Software ou script que registra todas as teclas pressionadas em um teclado.",
+            "uso": "Frequentemente usado para segurança ou monitoramento (com consentimento) e, em casos maliciosos, para espionagem.",
+            "exemplo": """
+                # Código de exemplo não fornecido por questões éticas.
+            """
+        },
+        "kron": {
+            "significado": "Operação de produto de Kronecker entre dois arrays ou matrizes.",
+            "uso": "Utilizado em álgebra linear para operações matriciais específicas.",
+            "exemplo": """
+                import numpy as np
+                A = np.array([[1, 2], [3, 4]])
+                B = np.array([[0, 5], [6, 7]])
+                resultado = np.kron(A, B)
+                print(resultado)
+            """
+        },
+        "k-means++": {
+            "significado": "Uma variante do algoritmo K-Means que melhora a inicialização dos centróides.",
+            "uso": "Utilizado para melhorar a eficiência e precisão do algoritmo K-Means.",
+            "exemplo": """
+                from sklearn.cluster import KMeans
+                X = [[1, 2], [1, 4], [1, 0], [10, 2], [10, 4], [10, 0]]
+                kmeans = KMeans(n_clusters=2, init='k-means++', random_state=0).fit(X)
+                print(kmeans.cluster_centers_)
+            """
+        },
+        "kingfisher": {
+            "significado": "Um nome usado em tecnologia para ferramentas, bibliotecas ou projetos específicos.",
+            "uso": "Variante contextual; pode se referir a um banco de dados ou ferramenta de análise.",
+            "exemplo": "Depende do contexto do projeto 'Kingfisher' em uso."
+        },
+        "ksplit": {
+            "significado": "Operação de divisão de dados ou strings em partes específicas.",
+            "uso": "Utilizado em particionamento de conjuntos de dados ou manipulação de strings.",
+            "exemplo": """
+                string = "a,b,c,d"
+                partes = string.split(',')
+                print(partes)  # Saída: ['a', 'b', 'c', 'd']
+            """
+        },
+        "key_value_pair": {
+            "significado": "Estrutura de dados composta por uma chave e um valor associado.",
+            "uso": "Utilizada em dicionários ou mapas para armazenar informações organizadas.",
+            "exemplo": """
+                dicionario = {"nome": "Alice", "idade": 25}
+                print(dicionario["nome"])  # Saída: Alice
+            """
+        },
+        "knn_regressor": {
+            "significado": "Uma implementação do algoritmo K-Nearest Neighbors para regressão.",
+            "uso": "Utilizado para prever valores numéricos com base nos vizinhos mais próximos.",
+            "exemplo": """
+                from sklearn.neighbors import KNeighborsRegressor
+                X = [[0], [1], [2], [3]]
+                y = [0, 0.5, 2.5, 3]
+                knn = KNeighborsRegressor(n_neighbors=2)
+                knn.fit(X, y)
+                print(knn.predict([[1.5]]))  # Saída: [1.5]
+            """
+        },
+        "kerberos": {
+            "significado": "Protocolo de autenticação para redes de computadores.",
+            "uso": "Utilizado para garantir comunicações seguras em redes não confiáveis.",
+            "exemplo": """
+                # Configuração de exemplo feita no ambiente do servidor, geralmente com comandos CLI.
+            """
+        },
+        "keras_tuner": {
+            "significado": "Biblioteca para ajuste de hiperparâmetros em modelos Keras.",
+            "uso": "Utilizado para encontrar automaticamente os melhores hiperparâmetros para um modelo de aprendizado profundo.",
+            "exemplo": """
+                from keras_tuner import RandomSearch
+                def modelo_builder(hp):
+                    modelo = Sequential()
+                    hp_units = hp.Int('units', min_value=32, max_value=512, step=32)
+                    modelo.add(Dense(units=hp_units, activation='relu'))
+                    return modelo
+            """
+        },
+        "keystone": {
+            "significado": "Módulo de autenticação e gerenciamento de identidade na nuvem OpenStack.",
+            "uso": "Utilizado para fornecer autenticação centralizada em ambientes OpenStack.",
+            "exemplo": """
+                # Exemplos dependem da CLI ou API Keystone para integração.
+            """
+        },
+        "kotlin": {
+            "significado": "Linguagem de programação moderna e tipada, usada para desenvolvimento Android e multiplataforma.",
+            "uso": "Utilizada para construir aplicativos móveis, web e backend.",
+            "exemplo": """
+                fun main() {
+                    println("Olá, Mundo!")
+                }
+            """
+        },
+        "kivymd": {
+            "significado": "Biblioteca que adiciona componentes Material Design ao Kivy.",
+            "uso": "Utilizada para criar interfaces baseadas no Material Design em aplicativos Kivy.",
+            "exemplo": """
+                from kivymd.app import MDApp
+                from kivymd.uix.button import MDRaisedButton
+                class MeuApp(MDApp):
+                    def build(self):
+                        return MDRaisedButton(text="Clique Aqui")
+                MeuApp().run()
+            """
+        },
+        "kmerscan": {
+            "significado": "Ferramenta de bioinformática para análise de k-mers em sequências genéticas.",
+            "uso": "Utilizado para detectar padrões em sequências de DNA ou RNA.",
+            "exemplo": """
+                # Ferramenta geralmente executada via terminal para analisar dados biológicos.
+            """
+        },
+        "knockoff": {
+            "significado": "Método estatístico para seleção de variáveis usando falsificações controladas.",
+            "uso": "Utilizado em análises estatísticas para reduzir falsos positivos em seleções de variáveis.",
+            "exemplo": """
+                # Requer bibliotecas específicas como knockoff.py, usadas para experimentos estatísticos.
+            """
+        },
+        "keycloak": {
+            "significado": "Uma ferramenta de gerenciamento de identidade e acesso (IAM) de código aberto.",
+            "uso": "Utilizada para autenticação, autorização e gerenciamento de usuários em aplicativos e serviços.",
+            "exemplo": """
+                # Exemplo de uso: configurar um cliente OAuth2 para um aplicativo web
+                # Configurações realizadas via interface Keycloak ou API REST.
+            """
+        },
+        "kudl": {
+            "significado": "Ferramenta para manipulação de dados ou estruturas específicas.",
+            "uso": "Depende do contexto; pode ser uma biblioteca ou ferramenta personalizada em um projeto.",
+            "exemplo": "Descrição detalhada necessária para um exemplo aplicável."
+        },
+        "katib": {
+            "significado": "Plataforma de ajuste de hiperparâmetros em aprendizado de máquina, parte do Kubeflow.",
+            "uso": "Utilizada para realizar buscas automatizadas por hiperparâmetros ideais em modelos de aprendizado.",
+            "exemplo": """
+                # Configuração YAML para um experimento Katib:
+                apiVersion: kubeflow.org/v1
+                kind: Experiment
+                metadata:
+                name: exemplo-katib
+                """
+        },
+        "kwarg": {
+            "significado": "Argumento de palavra-chave (keyword argument) em funções Python.",
+            "uso": "Utilizado para passar argumentos nomeados em uma função, com flexibilidade para aceitar parâmetros adicionais.",
+            "exemplo": """
+                def funcao_exemplo(**kwargs):
+                    for chave, valor in kwargs.items():
+                        print(f"{chave}: {valor}")
+                funcao_exemplo(nome="Alice", idade=25)
+            """
+        },
+        "kwlist": {
+            "significado": "Lista de palavras reservadas em Python.",
+            "uso": "Utilizada para verificar palavras reservadas que não podem ser usadas como identificadores em Python.",
+            "exemplo": """
+                import keyword
+                print(keyword.kwlist)  # Saída: lista de palavras reservadas em Python
+            """
+        },
+        "kdb+": {
+            "significado": "Banco de dados em memória e mecanismo de processamento orientado a colunas.",
+            "uso": "Utilizado principalmente em análises financeiras e científicas para lidar com grandes volumes de dados em alta velocidade.",
+            "exemplo": """
+                // Exemplo em q, a linguagem de consulta do kdb+:
+                t:([] time:09:00+til 5; price:100+til 5)
+                select from t where price>102
+            """
+        },
+        "kexi": {
+            "significado": "Ferramenta de gerenciamento de banco de dados gráfico, parte da suíte Calligra.",
+            "uso": "Utilizada para criar e gerenciar bancos de dados sem a necessidade de escrever código SQL.",
+            "exemplo": """
+                # Exemplos de uso geralmente são interativos na interface do Kexi.
+            """
+        },
+        "kaffeine": {
+            "significado": "Um reprodutor multimídia leve para o ambiente KDE.",
+            "uso": "Utilizado para reproduzir vídeos, arquivos de áudio e streaming online.",
+            "exemplo": """
+                # Instalação no Linux:
+                sudo apt install kaffeine
+            """
+        },
+        "kerosene": {
+            "significado": "Uma biblioteca para aprendizado de máquina em PyTorch que facilita o treinamento de modelos.",
+            "uso": "Utilizada para abstrair e simplificar tarefas comuns, como treinamento, validação e registro de métricas.",
+            "exemplo": """
+                from kerosene.trainers import Trainer
+                trainer = Trainer(model, optimizer, loss_function)
+                trainer.train(data_loader)
+            """
+        },
+        "kotlinx": {
+            "significado": "Conjunto de bibliotecas complementares ao Kotlin, como kotlinx.coroutines ou kotlinx.serialization.",
+            "uso": "Facilita tarefas como concorrência, serialização e manipulação de dados em Kotlin.",
+            "exemplo": """
+                import kotlinx.coroutines.*
+                fun main() = runBlocking {
+                    launch { println("Tarefa concorrente!") }
+                }
+            """
+        },
+        "k3s": {
+            "significado": "Versão leve e simplificada do Kubernetes para ambientes com recursos limitados.",
+            "uso": "Utilizada para implantar e gerenciar clusters Kubernetes de maneira eficiente.",
+            "exemplo": """
+                # Instalação de k3s:
+                curl -sfL https://get.k3s.io | sh -
+            """
+        },
+        "kerb": {
+            "significado": "Abreviação de Kerberos, um protocolo de autenticação segura.",
+            "uso": "Utilizado para autenticar usuários e serviços em redes seguras.",
+            "exemplo": """
+                # Configuração de autenticação Kerberos:
+                kinit username@DOMAIN.COM
+            """
+        },
+        "k3d": {
+            "significado": "Ferramenta para executar clusters k3s em contêineres Docker.",
+            "uso": "Facilita a configuração e o gerenciamento de clusters Kubernetes leves em ambientes locais.",
+            "exemplo": """
+                # Criação de um cluster com k3d:
+                k3d cluster create meu-cluster
+            """
+        },
+        "kali": {
+            "significado": "Distribuição Linux projetada para testes de segurança e análise forense.",
+            "uso": "Utilizada por profissionais de segurança para testes de penetração e auditorias de segurança.",
+            "exemplo": """
+                # Executar um escaneamento com Nmap no Kali Linux:
+                nmap -sV 192.168.0.1
+            """
+        },
+        "kd-tree": {
+            "significado": "Estrutura de dados para particionar espaço multidimensional em árvores binárias.",
+            "uso": "Utilizada em busca de vizinhos próximos (k-NN) e outras operações espaciais.",
+            "exemplo": """
+                from scipy.spatial import KDTree
+                points = [(1, 2), (3, 4), (5, 6)]
+                tree = KDTree(points)
+                print(tree.query((2, 3)))
+            """
+        },
+        "kmeans_clustering": {
+            "significado": "Algoritmo de agrupamento que divide dados em k grupos baseados em seus atributos.",
+            "uso": "Utilizado em aprendizado não supervisionado para identificar padrões em dados.",
+            "exemplo": """
+                from sklearn.cluster import KMeans
+                kmeans = KMeans(n_clusters=3)
+                kmeans.fit(dados)
+                print(kmeans.labels_)
+            """
+        },
+        "kmeans_init": {
+            "significado": "Método de inicialização de centroides no algoritmo k-means.",
+            "uso": "Determina a posição inicial dos centroides para melhorar a eficiência do algoritmo.",
+            "exemplo": """
+                kmeans = KMeans(n_clusters=3, init='k-means++')
+                kmeans.fit(dados)
+            """
+        },
+        "kafka": {
+            "significado": "Plataforma de streaming de eventos distribuída de código aberto.",
+            "uso": "Utilizada para construir pipelines de dados em tempo real e sistemas de mensageria.",
+            "exemplo": """
+                # Produzir uma mensagem Kafka usando a biblioteca confluent-kafka:
+                from confluent_kafka import Producer
+                p = Producer({'bootstrap.servers': 'localhost:9092'})
+                p.produce('meu-topico', key='chave', value='mensagem')
+            """
+        },
+        "kubectl": {
+            "significado": "Ferramenta de linha de comando para gerenciar clusters Kubernetes.",
+            "uso": "Utilizada para executar comandos e interagir com recursos no Kubernetes.",
+            "exemplo": """
+                # Listar todos os pods no Kubernetes:
+                kubectl get pods
+            """
+        },
+        "k8s": {
+            "significado": "Abreviação de Kubernetes, um sistema para automação de implantação, escala e gerenciamento de contêineres.",
+            "uso": "Utilizado para orquestrar aplicações baseadas em contêineres.",
+            "exemplo": """
+                # Criar um deployment no Kubernetes:
+                kubectl create deployment nginx --image=nginx
+            """
+        },
+        "k-nearest_neighbors": {
+            "significado": "Algoritmo k-vizinhos mais próximos, utilizado para classificação ou regressão.",
+            "uso": "Baseia-se na proximidade dos dados em um espaço dimensional.",
+            "exemplo": """
+                from sklearn.neighbors import KNeighborsClassifier
+                modelo = KNeighborsClassifier(n_neighbors=3)
+                modelo.fit(X_train, y_train)
+            """
+        },
+        "k-nn_regressor": {
+            "significado": "Versão do algoritmo k-NN utilizada para regressão em vez de classificação.",
+            "uso": "Prevê valores baseando-se na média dos k vizinhos mais próximos.",
+            "exemplo": """
+                from sklearn.neighbors import KNeighborsRegressor
+                regressor = KNeighborsRegressor(n_neighbors=3)
+                regressor.fit(X_train, y_train)
+            """
+        },
+        "keras_layers": {
+            "significado": "Camadas disponíveis na biblioteca Keras para construir redes neurais.",
+            "uso": "Utilizadas para definir a arquitetura de uma rede neural em aprendizado profundo.",
+            "exemplo": """
+                from keras.models import Sequential
+                from keras.layers import Dense
+                modelo = Sequential()
+                modelo.add(Dense(32, activation='relu', input_dim=100))
+            """
+        },
+        "kivy_app": {
+            "significado": "Aplicação desenvolvida usando o framework Kivy para interfaces gráficas em Python.",
+            "uso": "Utilizada para criar aplicativos com suporte a touch em várias plataformas.",
+            "exemplo": """
+                from kivy.app import App
+                from kivy.uix.label import Label
+                class MeuApp(App):
+                    def build(self):
+                        return Label(text='Olá Mundo!')
+                MeuApp().run()
+            """
+        },
+        "key_error": {
+            "significado": "Erro em Python que ocorre ao acessar uma chave inexistente em um dicionário.",
+            "uso": "Indica que a chave solicitada não está presente no dicionário.",
+            "exemplo": """
+                dicionario = {'a': 1}
+                print(dicionario['b'])  # Gera um KeyError
+            """
+        },
+        "kde_plot": {
+            "significado": "Gráfico de estimativa de densidade kernel, utilizado para visualizar distribuições de dados.",
+            "uso": "Comumente usado em análise de dados para representar distribuições contínuas de forma suave.",
+            "exemplo": """
+                import seaborn as sns
+                import matplotlib.pyplot as plt
+                dados = [1, 2, 2, 3, 3, 3, 4, 5]
+                sns.kdeplot(dados)
+                plt.show()
+            """
+        },
+        "kerberos_authentication": {
+            "significado": "Processo de autenticação segura usando o protocolo Kerberos.",
+            "uso": "Utilizado em redes seguras para autenticar usuários e serviços de forma confiável.",
+            "exemplo": """
+                # Inicializar uma sessão Kerberos:
+                kinit username@DOMAIN.COM
+            """
+        },
+        "kivy_garden_widgets": {
+            "significado": "Conjunto de widgets adicionais desenvolvidos pela comunidade Kivy.",
+            "uso": "Facilita a criação de interfaces gráficas avançadas em aplicativos Kivy.",
+            "exemplo": """
+                # Instalar um widget do Kivy Garden:
+                garden install graph
+            """
+        },
+        "kafka_consumer": {
+            "significado": "Componente do Apache Kafka utilizado para consumir mensagens de um tópico.",
+            "uso": "Processa dados transmitidos em tempo real no sistema Kafka.",
+            "exemplo": """
+                from kafka import KafkaConsumer
+                consumer = KafkaConsumer('meu-topico', bootstrap_servers='localhost:9092')
+                for mensagem in consumer:
+                    print(mensagem.value)
+            """
+        },
+        "kafka_producer": {
+            "significado": "Componente do Apache Kafka usado para enviar mensagens para um tópico.",
+            "uso": "Utilizado para transmitir dados para sistemas baseados em Kafka.",
+            "exemplo": """
+                from kafka import KafkaProducer
+                producer = KafkaProducer(bootstrap_servers='localhost:9092')
+                producer.send('meu-topico', b'Mensagem Kafka')
+            """
+        },
+        "keras_optimizer": {
+            "significado": "Otimizador usado em modelos Keras para ajustar pesos durante o treinamento.",
+            "uso": "Determina como os pesos do modelo são ajustados com base na função de perda.",
+            "exemplo": """
+                from keras.optimizers import Adam
+                otimizador = Adam(learning_rate=0.001)
+            """
+        },
+        "kubernetes_deployment": {
+            "significado": "Objeto no Kubernetes usado para gerenciar a implantação de aplicativos.",
+            "uso": "Facilita o gerenciamento de pods e a implantação de aplicativos escaláveis.",
+            "exemplo": """
+                # Arquivo YAML para um deployment:
+                apiVersion: apps/v1
+                kind: Deployment
+                metadata:
+                name: nginx-deployment
+                spec:
+                replicas: 2
+                template:
+                    spec:
+                    containers:
+                    - name: nginx
+                        image: nginx:1.17.10
+                """
+        },
+        "kubernetes_cluster": {
+            "significado": "Conjunto de máquinas (nós) que executam contêineres gerenciados pelo Kubernetes.",
+            "uso": "Permite o gerenciamento de aplicações em contêiner em um ambiente distribuído.",
+            "exemplo": """
+                # Configurar um cluster com Minikube:
+                minikube start
+            """
+        },
+        "k8s_pod": {
+            "significado": "Menor unidade executável em Kubernetes que contém um ou mais contêineres.",
+            "uso": "Executa aplicativos em contêiner em um cluster Kubernetes.",
+            "exemplo": """
+                # Criar um pod simples:
+                apiVersion: v1
+                kind: Pod
+                metadata:
+                name: meu-pod
+                spec:
+                containers:
+                - name: meu-container
+                    image: nginx
+                """
+        },
+        "kalman_filtering": {
+            "significado": "Método estatístico para estimar o estado de um sistema dinâmico em tempo real.",
+            "uso": "Amplamente utilizado em controle e rastreamento, como navegação e visão computacional.",
+            "exemplo": """
+                import pykalman
+                filtro = pykalman.KalmanFilter(initial_state_mean=0, n_dim_obs=1)
+                estimativas = filtro.em(dados).smooth(dados)[0]
+            """
+        },
+        "kafka_streams": {
+            "significado": "Biblioteca do Kafka para processar dados em tempo real diretamente de tópicos Kafka.",
+            "uso": "Permite criar aplicativos de processamento de dados baseados em fluxo.",
+            "exemplo": """
+                # Exemplo básico com Kafka Streams (Java):
+                StreamsBuilder builder = new StreamsBuilder();
+                KStream<String, String> stream = builder.stream("meu-topico");
+                stream.to("topico-destino");
+                """
+        },
+        "kotlin_coroutines": {
+            "significado": "Conceito de concorrência leve em Kotlin para código assíncrono e não bloqueante.",
+            "uso": "Facilita a escrita de programas concorrentes com alta performance.",
+            "exemplo": """
+                import kotlinx.coroutines.*
+                fun main() = runBlocking {
+                    launch { println("Executando em paralelo!") }
+                }
+            """
+        },
+        "kivy_screen_manager": {
+            "significado": "Componente do Kivy para gerenciar e alternar entre várias telas em um aplicativo.",
+            "uso": "Utilizado para criar aplicativos com múltiplas interfaces gráficas.",
+            "exemplo": """
+                from kivy.uix.screenmanager import ScreenManager, Screen
+                class Tela1(Screen): pass
+                class Tela2(Screen): pass
+                gerenciador = ScreenManager()
+                gerenciador.add_widget(Tela1(name='tela1'))
+                gerenciador.add_widget(Tela2(name='tela2'))
+            """
+        },
+        "kafka_connect": {
+            "significado": "Componente do Kafka para integrar diferentes sistemas com Kafka usando conectores.",
+            "uso": "Facilita a movimentação de dados entre Kafka e sistemas externos.",
+            "exemplo": """
+                # Configurar um conector de origem no Kafka Connect:
+                {
+                "name": "meu-conector",
+                "config": {
+                    "connector.class": "FileStreamSource",
+                    "tasks.max": "1",
+                    "file": "/caminho/para/o/arquivo.txt",
+                    "topic": "meu-topico"
+                }
+                }
+            """
+        },
+        "kerberos_ticket": {
+            "significado": "Credencial gerada pelo Kerberos para autenticação segura de usuários ou serviços.",
+            "uso": "Permite acesso seguro a recursos protegidos em redes baseadas em Kerberos.",
+            "exemplo": """
+                # Verificar tickets Kerberos:
+                klist
+            """
+        },
+        "knapsack_problem": {
+            "significado": "Problema de optimización combinatoria que busca maximizar el valor en una mochila limitada por su peso.",
+            "uso": "Se utiliza en problemas de programación dinámica para asignación de recursos.",
+            "ejemplo": """
+                def knapsack(values, weights, capacity):
+                    n = len(values)
+                    dp = [[0] * (capacity + 1) for _ in range(n + 1)]
+                    for i in range(1, n + 1):
+                        for w in range(capacity + 1):
+                            if weights[i-1] <= w:
+                                dp[i][w] = max(dp[i-1][w], dp[i-1][w-weights[i-1]] + values[i-1])
+                            else:
+                                dp[i][w] = dp[i-1][w]
+                    return dp[n][capacity]
+                """
+        },
+        "kivy_listview": {
+            "significado": "Componente de la biblioteca Kivy para mostrar listas en aplicaciones.",
+            "uso": "Se utiliza para crear interfaces gráficas con listas de elementos interactivos.",
+            "ejemplo": """
+                from kivy.app import App
+                from kivy.uix.listview import ListView, ListItemButton
+
+                class MyApp(App):
+                    def build(self):
+                        return ListView()
+                
+                MyApp().run()
+                """
+        },
+        "kubernetes_service": {
+            "significado": "Recurso de Kubernetes que define una forma lógica de acceder a un grupo de pods.",
+            "uso": "Se utiliza para balanceo de carga y comunicación entre pods en un clúster.",
+            "ejemplo": """
+                apiVersion: v1
+                kind: Service
+                metadata:
+                name: my-service
+                spec:
+                selector:
+                    app: MyApp
+                ports:
+                    - protocol: TCP
+                    port: 80
+                    targetPort: 8080
+                """
+        },
+        "kfold": {
+            "significado": "Método de validación cruzada que divide los datos en k subconjuntos.",
+            "uso": "Se utiliza para evaluar modelos de machine learning con diferentes particiones de datos.",
+            "ejemplo": """
+                from sklearn.model_selection import KFold
+                import numpy as np
+
+                X = np.array([1, 2, 3, 4, 5])
+                kf = KFold(n_splits=2)
+                for train, test in kf.split(X):
+                    print('train:', train, 'test:', test)
+                """
+        },
+        "kernel": {
+            "significado": "Función que mide la similitud en machine learning o el núcleo de un sistema operativo.",
+            "uso": "En machine learning, se utiliza en algoritmos como SVM. En sistemas, es el componente que interactúa con el hardware.",
+            "ejemplo": """
+                # Kernel en SVM
+                from sklearn.svm import SVC
+                model = SVC(kernel='linear')
+                """
+        },
+        "knapsack_algorithm": {
+            "significado": "Algoritmo que resuelve el problema de la mochila, optimizando la selección de elementos.",
+            "uso": "Se utiliza para optimización en programación dinámica y problemas combinatorios.",
+            "ejemplo": """
+                # Ejemplo en programación dinámica
+                def knapsack(values, weights, capacity):
+                    n = len(values)
+                    dp = [[0] * (capacity + 1) for _ in range(n + 1)]
+                    for i in range(1, n + 1):
+                        for w in range(capacity + 1):
+                            if weights[i-1] <= w:
+                                dp[i][w] = max(dp[i-1][w], dp[i-1][w-weights[i-1]] + values[i-1])
+                            else:
+                                dp[i][w] = dp[i-1][w]
+                    return dp[n][capacity]
+                """
+        },
+        "k8s_namespace": {
+            "significado": "Recurso lógico en Kubernetes para aislar recursos dentro de un clúster.",
+            "uso": "Se utiliza para organizar y separar entornos como desarrollo, prueba y producción.",
+            "ejemplo": """
+                apiVersion: v1
+                kind: Namespace
+                metadata:
+                name: dev-environment
+                """
+        },
+        "keras_model": {
+            "significado": "Modelo creado con la biblioteca Keras para deep learning.",
+            "uso": "Se utiliza para construir y entrenar redes neuronales.",
+            "ejemplo": """
+                from keras.models import Sequential
+                from keras.layers import Dense
+
+                model = Sequential([
+                    Dense(10, activation='relu', input_shape=(20,)),
+                    Dense(1, activation='sigmoid')
+                ])
+                """
+        },
+        "knn_search": {
+            "significado": "Búsqueda de los vecinos más cercanos en un espacio multidimensional.",
+            "uso": "Se utiliza en machine learning para clasificar datos según proximidad.",
+            "ejemplo": """
+                from sklearn.neighbors import NearestNeighbors
+                import numpy as np
+
+                data = np.array([[1, 2], [3, 4], [5, 6]])
+                neigh = NearestNeighbors(n_neighbors=2)
+                neigh.fit(data)
+                print(neigh.kneighbors([[2, 3]]))
+                """
+        },
+        "kaggle_kernel": {
+            "significado": "Entorno de ejecución proporcionado por Kaggle para experimentos de machine learning.",
+            "uso": "Se utiliza para ejecutar scripts de análisis y modelos directamente en la plataforma Kaggle.",
+            "ejemplo": """
+                # Subir datos a un kernel en Kaggle y ejecutarlos
+                import pandas as pd
+                df = pd.read_csv('/kaggle/input/data.csv')
+                print(df.head())
+                """
+        },
+        "keylogger": {
+            "significado": "Programa o dispositivo que registra pulsaciones de teclas.",
+            "uso": "Se utiliza con fines de auditoría o para monitorización del sistema (aunque puede ser malicioso).",
+            "ejemplo": """
+                # Ejemplo básico (educativo, úselo éticamente)
+                from pynput import keyboard
+
+                def on_press(key):
+                    print(f"Tecla presionada: {key}")
+
+                with keyboard.Listener(on_press=on_press) as listener:
+                    listener.join()
+                """
+        },
+        "kotlin_script": {
+            "significado": "Script escrito en el lenguaje de programación Kotlin.",
+            "uso": "Se utiliza para tareas automatizadas, desarrollo de aplicaciones y scripting.",
+            "ejemplo": """
+                println("Hola desde un script de Kotlin")
+                """
+        },
+        "keyboard_interrupt": {
+            "significado": "Excepción que ocurre al interrumpir la ejecución de un programa, usualmente con Ctrl+C.",
+            "uso": "Se utiliza para detener un programa en ejecución de manera controlada.",
+            "ejemplo": """
+                try:
+                    while True:
+                        pass
+                except KeyboardInterrupt:
+                    print("Programa interrumpido")
+                """
+        },
+        "kriging_interpolation": {
+            "significado": "Método de interpolación utilizado en geostatística basado en un modelo estadístico.",
+            "uso": "Se utiliza para predecir valores en ubicaciones no muestreadas a partir de datos geográficos.",
+            "ejemplo": """
+                from pykrige.ok import OrdinaryKriging
+
+                data = [[1, 1, 10], [2, 2, 20], [3, 3, 30]]
+                ok = OrdinaryKriging(
+                    [x[0] for x in data],
+                    [x[1] for x in data],
+                    [x[2] for x in data]
+                )
+                z, ss = ok.execute("grid", [1, 2, 3], [1, 2, 3])
+                """
+        },
+        "keypair": {
+            "significado": "Par de claves pública y privada utilizado en criptografía.",
+            "uso": "Se utiliza para encriptar y autenticar datos en sistemas seguros.",
+            "ejemplo": """
+                from cryptography.hazmat.primitives.asymmetric import rsa
+
+                key = rsa.generate_private_key(
+                    public_exponent=65537,
+                    key_size=2048
+                )
+                private_key = key.private_bytes()
+                public_key = key.public_key().public_bytes()
+                print(private_key, public_key)
+                """
+        },
+        "kinesis": {
+            "significado": "Servicio de Amazon Web Services (AWS) para procesar y analizar datos en tiempo real.",
+            "uso": "Se utiliza para capturar, procesar y analizar flujos de datos como logs, eventos de IoT, entre otros.",
+            "ejemplo": """
+                import boto3
+
+                kinesis = boto3.client('kinesis')
+                response = kinesis.put_record(
+                    StreamName='mi-stream',
+                    Data=b'Test data',
+                    PartitionKey='partition-key'
+                )
+                print(response)
+                """
+        },
+        "kdb_query": {
+            "significado": "Consulta ejecutada en bases de datos Kdb+, diseñadas para análisis de series temporales.",
+            "uso": "Se utiliza para análisis rápidos en datos de alta frecuencia.",
+            "ejemplo": """
+                // Ejemplo en Q (lenguaje de consulta de Kdb+)
+                trades: ([] time: .z.p + til 10; price: 100 + til 10)
+                select from trades where price > 105
+                """
+        },
+        "kivy_gridlayout": {
+            "significado": "Widget de la biblioteca Kivy que organiza widgets secundarios en una cuadrícula.",
+            "uso": "Se utiliza para diseñar interfaces gráficas organizadas en filas y columnas.",
+            "ejemplo": """
+                from kivy.app import App
+                from kivy.uix.gridlayout import GridLayout
+                from kivy.uix.button import Button
+
+                class MyApp(App):
+                    def build(self):
+                        layout = GridLayout(cols=2)
+                        layout.add_widget(Button(text='Button 1'))
+                        layout.add_widget(Button(text='Button 2'))
+                        return layout
+                
+                MyApp().run()
+                """
+        },
+        "kmeans_classifier": {
+            "significado": "Algoritmo de machine learning basado en agrupación para clasificación no supervisada.",
+            "uso": "Se utiliza para agrupar datos en categorías según similitud.",
+            "ejemplo": """
+                from sklearn.cluster import KMeans
+
+                X = [[1, 2], [3, 4], [1, 0], [10, 20]]
+                kmeans = KMeans(n_clusters=2, random_state=0)
+                kmeans.fit(X)
+                print(kmeans.labels_)
+                """
+        },
+        "key_error_exception": {
+            "significado": "Excepción lanzada cuando se intenta acceder a una clave inexistente en un diccionario.",
+            "uso": "Se utiliza para manejar errores relacionados con claves no encontradas.",
+            "ejemplo": """
+                try:
+                    my_dict = {'a': 1, 'b': 2}
+                    print(my_dict['c'])
+                except KeyError as e:
+                    print(f"Clave no encontrada: {e}")
+                """
+        },
+        "kafka_message": {
+            "significado": "Mensaje que se produce o consume utilizando Apache Kafka.",
+            "uso": "Se utiliza para intercambiar datos entre productores y consumidores en un sistema distribuido.",
+            "ejemplo": """
+                from kafka import KafkaProducer
+
+                producer = KafkaProducer(bootstrap_servers='localhost:9092')
+                producer.send('mi-topic', b'Mensaje de prueba')
+                producer.close()
+                """
+        },
+        "kde_estimation": {
+            "significado": "Método de estimación de densidad basado en kernels.",
+            "uso": "Se utiliza para estimar distribuciones de probabilidad a partir de datos observados.",
+            "ejemplo": """
+                import numpy as np
+                from sklearn.neighbors import KernelDensity
+
+                data = np.array([[1.0], [2.0], [3.0]])
+                kde = KernelDensity(kernel='gaussian', bandwidth=1.0).fit(data)
+                log_density = kde.score_samples(data)
+                print(np.exp(log_density))
+                """
+        },
+        "kotlin_function": {
+            "significado": "Bloque de código reutilizable en Kotlin que realiza una tarea específica.",
+            "uso": "Se utiliza para modularizar código y evitar redundancias.",
+            "ejemplo": """
+                fun saludar(nombre: String): String {
+                    return "Hola, $nombre"
+                }
+
+                println(saludar("Mundo"))
+                """
+        },
+        "k-means++": {
+            "significado": "Método de inicialización para el algoritmo K-Means que mejora la selección inicial de centroides.",
+            "uso": "Se utiliza para evitar problemas de convergencia en K-Means.",
+            "ejemplo": """
+                from sklearn.cluster import KMeans
+
+                data = [[1, 2], [3, 4], [1, 0], [10, 20]]
+                kmeans = KMeans(n_clusters=2, init='k-means++', random_state=0)
+                kmeans.fit(data)
+                print(kmeans.cluster_centers_)
+                """
+        },
+        "kubeflow": {
+            "significado": "Plataforma de código abierto para desarrollar, implementar y gestionar flujos de trabajo de machine learning en Kubernetes.",
+            "uso": "Se utiliza para automatizar y escalar procesos de machine learning.",
+            "ejemplo": """
+                # Archivo de configuración para desplegar un pipeline en Kubeflow
+                apiVersion: argoproj.io/v1alpha1
+                kind: Workflow
+                metadata:
+                generateName: mi-pipeline-
+                spec:
+                entrypoint: mi-tarea
+                templates:
+                - name: mi-tarea
+                    container:
+                    image: tensorflow/tensorflow:latest
+                    command: ["python", "mi_modelo.py"]
+                """
+        },
+        "keras_layer_dense": {
+            "significado": "Capa totalmente conectada de una red neuronal en Keras.",
+            "uso": "Se utiliza para procesar datos en redes neuronales.",
+            "ejemplo": """
+                from keras.models import Sequential
+                from keras.layers import Dense
+
+                model = Sequential([
+                    Dense(64, activation='relu', input_dim=20),
+                    Dense(1, activation='sigmoid')
+                ])
+                """
+        },
+        "knn_classifier": {
+            "significado": "Clasificador basado en los k vecinos más cercanos.",
+            "uso": "Se utiliza para clasificar instancias en función de su proximidad a puntos conocidos.",
+            "ejemplo": """
+                from sklearn.neighbors import KNeighborsClassifier
+
+                X = [[0], [1], [2], [3]]
+                y = [0, 0, 1, 1]
+                knn = KNeighborsClassifier(n_neighbors=2)
+                knn.fit(X, y)
+                print(knn.predict([[1.5]]))  # Salida: [0]
+                """
         },
     },
     "l": {
