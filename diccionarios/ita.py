@@ -2894,6 +2894,57 @@ diccionario_ita ={
         # Aquí puedes agregar funciones que comiencen con la letra Y
     },
     "z": {
-        # Aquí puedes agregar funciones que comiencen con la letra Z    }
+        # Aquí puedes agregar funciones que comiencen con la letra Z
+        "Zen_of_python": {
+            "ejemplo": "\n                # Esempio di utilizzo del Zen di Python\n                import this  # Mostra il Zen di Python nella console.\n                ",
+            "significato": "Un insieme di principi che guida il design di Python, noto come 'Il Zen di Python', scritto da Tim Peters.",
+            "uso": "È usato come guida per seguire le buone pratiche di codifica e mantenere il codice chiaro e leggibile."
+        },
+        "Zeta": {
+            "ejemplo": "\n                # Esempio di utilizzo di zeta in notazione matematica\n                zeta = 3\n                print(\"Il valore di zeta è:\", zeta)\n                ",
+            "significato": "Ultima lettera dell'alfabeto greco, spesso usata in matematica e fisica per rappresentare variabili o costanti.",
+            "uso": "È usata nella notazione matematica e in diverse aree della scienza e dell'ingegneria."
+        },
+        "Zfill": {
+            "ejemplo": "\n                # Esempio di utilizzo di zfill in Python\n                print('123'.zfill(5))  # Output: '00123'\n                ",
+            "significato": "Metodo di Python che riempie la stringa con zeri a sinistra fino a raggiungere una lunghezza specifica.",
+            "uso": "È utilizzato per formattare numeri con zeri a sinistra, specialmente in formati di file o rappresentazioni numeriche."
+        },
+        "Zipapp": {
+            "ejemplo": "\n                # Esempio di utilizzo di zipapp in Python\n                python -m zipapp mia_applicazione/ -o mia_applicazione.pyz\n                ",
+            "significato": "Strumento di Python che consente di impacchettare un'applicazione in un file .pyz per facilitarne la distribuzione.",
+            "uso": "È usato per creare applicazioni portatili che possono essere eseguite direttamente con Python."
+        },
+        "Zipfile": {
+            "ejemplo": "\n                # Esempio di utilizzo di zipfile in Python\n                from zipfile import ZipFile\n\n                with ZipFile('file.zip', 'w') as zipf:\n                    zipf.write('file.txt')\n                ",
+            "significato": "Modulo di Python che consente la creazione, lettura ed estrazione di file ZIP.",
+            "uso": "È utilizzato per gestire file compressi nel formato ZIP, sia per comprimere che per decomprimere."
+        },
+        "Zlib.compress": {
+            "ejemplo": "\n                # Esempio di utilizzo di zlib.compress in Python\n                import zlib\n\n                dati_compressi = zlib.compress(b'Ciao mondo!')\n                print(\"Dati compressi:\", dati_compressi)\n                ",
+            "significato": "Funzione della libreria zlib di Python che comprime i dati per ridurne le dimensioni.",
+            "uso": "È utilizzata per risparmiare spazio durante la memorizzazione o la trasmissione di dati."
+        },
+        "Zlib.decompress": {
+            "ejemplo": "\n                # Esempio di utilizzo di zlib.decompress in Python\n                import zlib\n\n                dati_compressi = zlib.compress(b'Ciao mondo!')\n                dati_originali = zlib.decompress(dati_compressi)\n                print(\"Dati decompressi:\", dati_originali)\n                ",
+            "significato": "Funzione della libreria zlib di Python utilizzata per decomprimere dati compressi nel formato zlib.",
+            "uso": "È utilizzata per recuperare i dati originali da una sequenza compressa."
+        },
+        "Zoneinfo": {
+            "ejemplo": "\n                # Esempio di utilizzo di zoneinfo in Python\n                from zoneinfo import ZoneInfo\n                from datetime import datetime\n\n                ora = datetime.now(ZoneInfo(\"Europe/Rome\"))\n                print(\"Ora attuale a Roma:\", ora)\n                ",
+            "significato": "Modulo di Python che fornisce supporto per i fusi orari, consentendo di gestire date e ore con zone temporali specifiche.",
+            "uso": "È utilizzato per lavorare con i dati temporali in diversi fusi orari in modo preciso."
+        },
+        "Zorder": {
+            "ejemplo": "\n                # Esempio di utilizzo di zorder in Python\n                import matplotlib.pyplot as plt\n\n                plt.plot([1, 2, 3], [4, 5, 6], zorder=1)\n                plt.scatter([1, 2, 3], [4, 5, 6], color='red', zorder=2)\n                plt.show()\n                ",
+            "significato": "Proprietà utilizzata per definire l'ordine di sovrapposizione degli elementi in un grafico o in un'interfaccia.",
+            "uso": "È utilizzata in grafici e design delle interfacce utente per controllare quali elementi sovrappongono altri."
+        },
+        "Zscore": {
+            "ejemplo": "\n                # Esempio di calcolo dello z-score in Python\n                import numpy as np\n\n                dati = [10, 20, 30, 40, 50]\n                media = np.mean(dati)\n                deviazione_standard = np.std(dati)\n                z_score = (30 - media) / deviazione_standard\n                print(\"Lo z-score di 30 è:\", z_score)\n                ",
+            "significato": "Misura statistica che indica quanti scarti quadratici un valore è distante dalla media di un insieme di dati.",
+            "uso": "È utilizzato per identificare valori anomali e confrontare dati in distribuzioni diverse."
+        },
+
     }, 
 }
