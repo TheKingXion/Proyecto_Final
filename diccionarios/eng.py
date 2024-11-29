@@ -153,9 +153,9 @@ diccionario_eng = {
                 import argparse
 
                 parser = argparse.ArgumentParser(description='ejemplo of argparse')
-                parser.add_argument('--nome', type=str, help='your name')
+                parser.add_argument('--name', type=str, help='your name')
                 args = parser.parse_args()
-                print(f'Hello, {args.nome}')
+                print(f'Hello, {args.name}')
                 '''
         },
         "array_like": {
@@ -292,8 +292,8 @@ diccionario_eng = {
                         self.name = name
                         self.age = age
 
-                p = Person('João', 30)
-                print(p.name)  # Output: João
+                p = Person('pepe', 30)
+                print(p.name)  # Output: pepe
                 p.age = 31
                 print(p.age)  # Output: 31
                 '''
@@ -892,7 +892,7 @@ diccionario_eng = {
             "ejemplo": '''
                 import pandas as pd
 
-                data = {'Name': ['pepe', 'Lala'], 'age': [28, 22]}
+                data = {'Name': ['pepe', 'age'], 'age': [28, 22]}
                 df = pd.DataFrame(data)
                 print(df)
                 '''
@@ -1562,26 +1562,584 @@ diccionario_eng = {
         },
         },
     "f": {
-         "format": {
-            "significado": "Allows values to be inserted within a text string in a more readable and flexible way",
-            "uso": "It is used to format strings dynamically, inserting values in specific places",
-            "ejemplo": '''name = "Juan"
-            age = 30
-            message = "Hi, my name is {} and i am {} years old.".format(name, age)
-            print(mensaje)  # "Hello, my name is Juan and i am 30 years old"'''
+        "filemode": {
+            "significado": "How to open a file that determines the operations that can be performed on it",
+            "uso": "It is used to specify the type of access desired for a file (read, write, etc.).",
+            "ejemplo": '''
+                file = open('file.txt', 'r')  # 'r' indicates read-only mode
+                print(file.mode)  # Output: 'r'
+                '''
         },
-        "float": {
-            "significado":"make a chain of numbers into a real numbers",
-            "uso": "work for make a chain number into a float numbers",
-            "ejemplo": '''float("10.5")  # 10.5'''
+        "frozen_set": {
+            "significado": "Immutable set in Python, similar to a standard set, but without the possibility of modifying it after its creation",
+            "uso": "It is used to create sets that should not be modified after they have been created",
+            "ejemplo": '''
+                ensemble = frozenset([1, 2, 3])
+                print(ensemble)  # Output: frozenset({1, 2, 3})
+                '''
+        },
+        "format_map": {
+            "significado": "Method that returns a string formatted using a dictionary or similar object",
+            "uso": "It is used to perform value substitutions in a string using a map (such as a dictionary)",
+            "ejemplo": '''
+                data = {'name': 'pepe', 'age': 30}
+                text = 'Name: {name}, age: {age}'.format_map(data)
+                print(text)  # Output: Name: pepe, age: 30
+                '''
         },
         "find": {
-            "significado":"refers to the definition or concept of something within the programming language",
-            "uso": " refers to how a concept is implemented or employed within a program",
-            "ejemplo": '''def plus(a, b):
-            return a + b
-            result = plus(3, 4)
-            print(result)  # This will print 7'''
+            "significado": "A method that fetches a substring within a string and returns the index from the first occurrence",
+            "uso": "It is used to find the position of one text within another",
+            "ejemplo": '''
+                text = 'Hello World'
+                print(text.find('World'))  # Output: 5
+                '''
+        },
+        "float32": {
+            "significado": "Type of data in NumPy that represents a 32-bit floating-point number",
+            "uso": "It is used to store numbers with decimals more efficiently in terms of memory",
+            "ejemplo": '''
+                import numpy as np
+                number = np.float32(3.1415)
+                print(number)  # Output: 3.1415
+                '''
+        },
+        "float64": {
+            "significado": "Type of data in NumPy that represents a 64-bit floating-point number",
+            "uso": "It is used to store numbers with decimals with greater precision than the float32 type.",
+            "ejemplo": '''
+                import numpy as np
+                number = np.float64(3.141592653589793)
+                print(number)  # Output: 3.141592653589793
+                '''
+        },
+        "formatting": {
+            "significado": "The process of applying a format to date or strings, such as alignment, widths, and date types",
+            "uso": "It is used to organize or display date in a more legible or specific way",
+            "ejemplo": '''
+                text = 'Name: {0:10}, age: {1:5}'.format('pepe', 30)
+                print(text)  # Output: Name: pepe      , age: 30
+                '''
+        },
+        "flush_output": {
+            "significado": "Method used to empty the output buffer, forcing the data to be written immediately",
+            "uso": "It is used when you want to ensure that all pending data in the output buffer is written to the destination",
+            "ejemplo": '''
+                import sys
+                sys.stdout.write('Hello World')
+                sys.stdout.flush()  # Output: 'Hello World' instanly
+                '''
+        },
+        "function_definition": {
+            "significado": "The process of creating a function in Python using the 'def' keyword",
+            "uso": "It is used to declare reusable functions that execute a specific block of code",
+            "ejemplo": '''
+                def greet(name):
+                    return f'Hello {name}'
+                print(greet('pepe'))  # Output: Hello pepe
+                '''
+        },
+        "filepath": {
+            "significado": "Path or address of a file in the file system",
+            "uso": "It is used to specify the location of a file in the file system",
+            "ejemplo": '''
+                import os
+                path = os.path.join('folder', 'file.txt')
+                print(path)  # Output: folder/file.txt
+                '''
+        },
+        "flask": {
+            "significado": "A Python micro-framework for web application development",
+            "uso": "It is used to create web applications in a simple and fast way with routes, forms, and other features",
+            "ejemplo": '''
+                from flask import Flask
+                app = Flask(__name__)
+
+                @app.route('/')
+                def hello():
+                    return 'Hello World'
+
+                app.run()  # Output: 'Hello World' in a web application
+                '''
+        },
+        "filtering": {
+            "significado": "Process of selecting elements from a collection that meet a specific condition",
+            "uso": "It is used to extract elements from a list, ensemble, or any iterable based on a condition",
+            "ejemplo": '''
+                list = [1, 2, 3, 4, 5]
+                result = filter(lambda x: x > 2, list)
+                print(list(result))  # Output: [3, 4, 5]
+                '''
+        },
+        "futures": {
+            "significado": "Module that provides an interface to perform asynchronous and parallelized tasks",
+            "uso": "It is used to execute functions concurrently using threads or processes",
+            "ejemplo": '''
+                from concurrent.futures import ThreadPoolExecutor
+
+                def task(x):
+                    return x * x
+
+                with ThreadPoolExecutor() as executor:
+                    results = executor.map(task, [1, 2, 3])
+                    print(list(results))  # Output: [1, 4, 9]
+                '''
+        },
+        "fold": {
+            "significado": "Function that applies a cumulative operation on the elements of a sequence.",
+            "uso": "It is used to reduce a sequence of elements to a single value by applying a binary operation",
+            "ejemplo": '''
+                from functools import reduce
+                list = [1, 2, 3, 4]
+                result = reduce(lambda x, y: x + y, list)
+                print(result)  # Output: 10
+                '''
+        },
+        "fromkeys": {
+            "significado": "Dictionary method that creates a new dictionary with specified keys and default values",
+            "uso": "It is used to create dictionaries from a list of keys with a default value",
+            "ejemplo": '''
+                dictionary = dict.fromkeys(['a', 'b', 'c'], 0)
+                print(dictionary)  # Output: {'a': 0, 'b': 0, 'c': 0}
+                '''
+        },
+        "flask_restful": {
+            "significado": "Extension for Flask that simplifies the creation of RESTful APIs",
+            "uso": "It is used to develop web applications that follow the REST architecture using",
+            "ejemplo": '''
+                from flask import Flask
+                from flask_restful import Api, Resource
+
+                app = Flask(__name__)
+                api = Api(app)
+
+                class HelloWorld(Resource):
+                    def get(self):
+                        return {'mensagge': 'Hello World'}
+
+                api.add_resource(HelloWorld, '/')
+                app.run()  # Output: 'Hello World' as API response
+                '''
+        },
+        "fix": {
+            "significado": "General term for correcting or adjusting something that doesn't work properly",
+            "uso": "It is used when you make an adjustment or correction to the code or configuration of something",
+            "ejemplo": '''
+                # Example in the context of code: fix a syntax error
+                def correct_error():
+                    print('This is the corrected message')
+                correct_error()
+                '''
+        },
+        "float_conversion": {
+            "significado": "Process of Converting Date from Other Types to Floating Type",
+            "uso": "It is used to convert values to floating-point numbers (decimals)",
+            "ejemplo": '''
+                number = '3.14'
+                result = float(number)
+                print(result)  # Output: 3.14
+                '''
+        },
+        "full_path": {
+            "significado": "Full path to a file or directory in the file system",
+            "uso": "It is used to specify the exact location of a file or directory from the root of the file system",
+            "ejemplo": '''
+                import os
+                path_complet = os.path.abspath('file.txt')
+                print(pah_complet)  # Output: /home/user/file.txt
+                '''
+        },
+        "filter": {
+            "significado": "Function that applies a condition to each element of an iterable and returns the elements that meet the condition",
+            "uso": "It is used to select only those elements that meet a specific condition",
+            "ejemplo": '''
+                list = [1, 2, 3, 4, 5]
+                result = filter(lambda x: x % 2 == 0, list)
+                print(list(result))  # Output: [2, 4]
+                '''
+        },
+        "float": {
+            "significado": "Data type in Python to represent floating-point numbers (numbers with decimals)",
+            "uso": "It is used to represent numbers that require decimals",
+            "ejemplo": '''
+                number = 3.14
+                print(type(number))  # Output: <class 'float'>
+                '''
+        },
+        "for": {
+            "significado": "Python keyword used to iterate over the elements of an iterable",
+            "uso": "It is used to execute a block of code repeatedly for each element of an iterable",
+            "ejemplo": '''
+                for i in range(5):
+                    print(i)
+                # Output:
+                # 0
+                # 1
+                # 2
+                # 3
+                # 4
+                '''
+        },
+        "format": {
+            "significado": "Method used to format text strings by inserting values within them",
+            "uso": "It is used to create more readable and dynamic text strings with variable values",
+            "ejemplo": '''
+                name = 'Juan'
+                age = 30
+                print('my name is {} and i am {} years old'.format(name, age))
+                # Output: my name is Juan i am 30 years old
+                '''
+        },
+        "from": {
+            "significado": "Python keyword used to import modules or module-specific functions",
+            "uso": "It is used to bring specific functionality from a module into the current namespace",
+            "ejemplo": '''
+                from math import sqrt
+                print(sqrt(16))  # Output: 4.0
+                '''
+        },
+        "function": {
+            "significado": "Block of code designed to perform a specific task and that can be reused",
+            "uso": "It is used to bundle related code that performs a common task, allowing for reusability and modularity",
+            "ejemplo": '''
+                def Greeting(name):
+                    return f'Hello, {name}'
+                
+                print(Greeting('Juan'))  # Output: Hello, Juan
+                '''
+        },
+        "fibonacci": {
+            "significado": "Mathematical sequence where each number is the sum of the previous two",
+            "uso": "It is used to generate the Fibonacci sequence, often in programming exercises or algorithms",
+            "ejemplo": '''
+                def fibonacci(n):
+                    if n <= 1:
+                        return n
+                    else:
+                        return fibonacci(n-1) + fibonacci(n-2)
+                
+                print(fibonacci(5))  # Output: 5
+                '''
+        },
+        "file": {
+            "significado": "Python object that allows you to interact with files in the file system",
+            "uso": "It is used to open, read, write, and manipulate files",
+            "ejemplo": '''
+                with open('file.txt', 'r') as f:
+                    Content = f.read()
+                print(Content)
+                '''
+        },
+        "fwrite": {
+            "significado": "Function used to write date in a file",
+            "uso": "It is used to write data binaries to an open file in write mode",
+            "ejemplo": '''
+                with open('file.bin', 'wb') as f:
+                    f.write(b'Hello, World!')
+                '''
+        },
+        "fread": {
+            "significado": "Function Used to Read Date from a File",
+            "uso": "It is used to read binary data from an open file in read mode",
+            "ejemplo": '''
+                with open('file.bin', 'rb') as f:
+                    data = f.read()
+                print(data)  # Output: b'Hello, World!'
+                '''
+        },
+        "finally": {
+            "significado": "Keyword in Python that defines a block of code that will run every time, regardless of whether an exception occurs or not",
+            "uso": "It is used in try-except structures to ensure that a final block of code is executed, even if an error occurs",
+            "ejemplo": '''
+                try:
+                    x = 1 / 0
+                except ZeroDivisionError:
+                    print('Divide by zero')
+                finally:
+                    print('This block always runs')
+                '''
+        },
+        "freeze": {
+            "significado": "Process of converting a mutable object to an immutable object",
+            "uso": "It is used to prevent an object from being modified after it has been created",
+            "ejemplo": '''
+                # There is no explicit function called freeze, but in some cases such as with 'frozenset' you can achieve the same effect
+                a = frozenset([1, 2, 3])
+                print(a)  # Output: frozenset({1, 2, 3})
+                '''
+        },
+        "flush": {
+            "significado": "Method used to empty the buffers of a file, ensuring that all data are written to disk",
+            "uso": "It is used when it is necessary to ensure that data stored in a buffer is immediately written to the file",
+            "ejemplo": '''
+                with open('file.txt', 'w') as f:
+                    f.write('Hello')
+                    f.flush()  # Ensures that the data are written to the file
+                '''
+        },
+        "fstring": {
+            "significado": "Text string that allows you to insert expressions within the string in a more readable and efficient way",
+            "uso": "It is used to create interpolated text strings, where variables can be inserted directly into the string",
+            "ejemplo": '''
+                name = 'Juan'
+                age = 30
+                print(f'My name is {name} and i am {age} years old')
+                # Output:My name is Juan and i am 30 years old
+                '''
+        },
+        "factorial": {
+            "significado": "A mathematical function that calculates the product of all positive integers up to a given number",
+            "uso": "It is used to calculate the factorial of a number, often in combinatorics and probability algorithms",
+            "ejemplo": '''
+                import math
+                print(math.factorial(5))  # Output: 120
+                '''
+        },
+        "frozen": {
+            "significado": "Immutable object that cannot be modified after its creation",
+            "uso": "It is used to create objects that cannot be changed, such as a 'frozenset' in Python",
+            "ejemplo": '''
+                a = frozenset([1, 2, 3])
+                print(a)  # Output: frozenset({1, 2, 3})
+                '''
+        },
+        "filterfalse": {
+            "significado": "Function that returns an iterator that filters the elements of an iterable, excluding those that return 'True' in the given function",
+            "uso": "It is used to get the elements of an iterable for which the function returns 'False'",
+            "ejemplo": '''
+                from itertools import filterfalse
+                result = filterfalse(lambda x: x % 2 == 0, [1, 2, 3, 4, 5])
+                print(list(result))  # Output: [1, 3, 5]
+                '''
+        },
+        "fuzzy": {
+            "significado": "Related to fuzzy logic, which allows you to deal with inaccurate or uncertain information",
+            "uso": "It is used in systems that need to process approximate or uncertain dates",
+            "ejemplo": '''
+                # Example of a fuzzy logic library like 'fuzzywuzzy' (for fuzzy text matching)
+                from fuzzywuzzy import fuzz
+                print(fuzz.ratio('hello', 'Hello'))  # Output: 100
+                '''
+        },
+        "fibonacci_sequence": {
+            "significado": "Mathematical sequence where each number is the sum of the previous two.",
+            "uso": "It is used to generate the Fibonacci sequence",
+            "ejemplo": '''
+                def fibonacci(n):
+                    Sequence = [0, 1]
+                    while len(Sequence) < n:
+                        Sequence.append(Sequence[-1] + Sequence[-2])
+                    return Sequence
+                
+                print(fibonacci(10))  # Output: [0, 1, 1, 2, 3, 5, 8, 13, 21, 34]
+                '''
+        },
+        "format_spec": {
+            "significado": "String used to define how values should be presented within a string format",
+            "uso": "It is used to specify the format of values within a string, such as decimal precision, alignment, and more",
+            "ejemplo": '''
+                pi = 3.14159
+                print(f'{pi:.2f}')  # Output: 3.14
+                '''
+        },
+        "fork": {
+            "significado": "Process of creating a new process, copied from the original process",
+            "uso": "It is used in the programming of systems to create secondary processes",
+            "ejemplo": '''
+                import os
+                pid = os.fork()
+                if pid > 0:
+                    print(f'Parent Process, PID: {pid}')
+                else:
+                    print(f'Child process, PID: {os.getpid()}')
+                '''
+        },
+        "forking": {
+            "significado": "Action of creating a new process or subprocess from a main process.",
+            "uso": "It is used in operating systems to create additional processes that perform tasks concurrently",
+            "ejemplo": '''
+                import os
+                pid = os.fork()
+                # Similar to the example of 'fork', but encompassing the concept of 'forking''
+                '''
+        },
+        "first": {
+            "significado": "Getting the first element of a sequence or iterable",
+            "uso": "It is used to access the first value of an iterable, such as a list or ensemble",
+            "ejemplo": '''
+                list = [1, 2, 3, 4]
+                print(list[0])  # Output: 1
+                '''
+        },
+        "float_format": {
+            "significado": "Format that defines how floating-point numbers should be presented in a chain",
+            "uso": "It is used to specify the number of decimal places to display in a floating-point number",
+            "ejemplo": '''
+                pi = 3.14159
+                print(f'{pi:.2f}')  # Output: 3.14
+                '''
+        },
+        "filter_none": {
+            "significado": "Function that filters elements from an iterable by excluding None values.",
+            "uso": "It is used to exclude 'None' values from a string.",
+            "ejemplo": '''
+                list = [1, None, 2, None, 3]
+                result = filter(None, list)
+                print(list(result))  # Output: [1, 2, 3]
+                '''
+        },
+        "func_code": {
+            "significado": "Attribute that contains the bytecode of the function in Python.",
+            "uso": "It is used to access function code, usually in debugging or analysis contexts",
+            "ejemplo": '''
+                def ejemplo():
+                    pass
+                
+                print(ejemplo.__code__)  # Output: <code object example at 0x...>
+                '''
+        },
+        "float_power": {
+            "significado": "Function that calculates a number raised to a floating power",
+            "uso": "It is used to perform exponentiation with floating numbers",
+            "ejemplo": '''
+                print(pow(2, 3.5))  # Output: 11.313708498984761
+                '''
+        },
+        "format_string": {
+            "significado": "String that defines the structure of a value that you want to display, using format specifiers",
+            "uso": "It is used to define how values should be displayed in a string, such as the number of decimal places or the alignment",
+            "ejemplo": '''
+                name = 'Juan'
+                age = 25
+                print(f'Name: {name}, age: {age}')  # Output: Name: Juan, age: 25
+                '''
+        },
+        "filename": {
+            "significado": "String representing the name of a file in the file system",
+            "uso": "It is used to specify the name and location of a file that is to be manipulated",
+            "ejemplo": '''
+                file = 'document.txt'
+                with open(file, 'r') as f:
+                    print(f.read())
+                '''
+        },
+        "file_object": {
+            "significado": "object that represents a file opened in Python, through which it is possible to read, write, or manipulate the file",
+            "uso": "It is used to interact with files opened in Python, accessing or modifying their contents",
+            "ejemplo": '''
+                with open('document.txt', 'r') as f:
+                    Content = f.read()
+                    print(Content)
+                '''
+        },
+        "finally_clause": {
+            "significado": "Part of a block of code that always executes after a 'try' statement, regardless of whether an exception is thrown or not.",
+            "uso": "It is used to execute cleanup or finalization code, such as closing files or releasing resources.",
+            "ejemplo": '''
+                try:
+                    file = open('document.txt', 'r')
+                    Content = file.read()
+                finally:
+                    file.close()
+                    print('File closed')
+                '''
+        },
+        "file_read": {
+            "significado": "Operation that allows you to read the contents of a file in Python.",
+            "uso": "It is used to obtain the data stored in a file for processing or display.",
+            "ejemplo": '''
+                with open('document.txt', 'r') as file:
+                    Content = file.read()
+                    print(Content)
+                '''
+        },
+        "form": {
+            "significado": "Structure or template used to organize date in a specific way.",
+            "uso": "It is used in user interfaces or web applications to capture and organize user data.",
+            "ejemplo": '''
+                form = {'name': 'Juan', 'age': 25}
+                print(form)
+                '''
+        },
+        "function_call": {
+            "significado": "Invoke a function in code, passing the parameters needed to execute your task",
+            "uso": "It is used to execute a function and obtain its result",
+            "ejemplo": '''
+                def sum(a, b):
+                    return a + b
+                result = sum(3, 4)
+                print(result)  # Output: 7
+                '''
+        },
+        "force": {
+            "significado": "The action of imposing or forcing the execution of something, usually in the context of programming or manipulating objects",
+            "uso": "It is used to force a specific behavior in a program, such as avoiding errors or performing an action regardless of the conditions",
+            "ejemplo": '''
+                # There is no direct force in Python, but you can use assert to force conditions
+                assert 1 == 1, 'condition false'
+                '''
+        },
+        "function_pointer": {
+            "significado": "Reference to a function that can be passed and executed as an argument",
+            "uso": "It is used in languages such as C or C++ to reference functions and pass them as parameters",
+            "ejemplo": '''
+                # In Python there is no direct function pointer, but functions can be passed as objects
+                def Greeting():
+                    print('Hello')
+                function = Greeting
+                function()  # Output: Hello
+                '''
+        },
+        "float_precision": {
+            "significado": "Number of digits used to accurately represent a floating number",
+            "uso": "It is used to specify the number of decimal places to consider when performing operations with floating numbers",
+            "ejemplo": '''
+                number = 3.14159265359
+                print(f'{number:.2f}')  # Output: 3.14
+                '''
+        },
+        "format_error": {
+            "significado": "Error that occurs when there is a problem formatting date, such as a poorly structured string",
+            "uso": "It is used to handle errors related to incorrect date conversion or formatting",
+            "ejemplo": '''
+                try:
+                    int('abc')
+                except ValueError as e:
+                    print(f'format error: {e}')
+                '''
+        },
+        "file_write": {
+            "significado": "Operation that allows you to write date to a file in Python.",
+            "uso": "It is used to store information in a file, overwriting it or adding new data",
+            "ejemplo": '''
+                with open('document.txt', 'w') as file:
+                    file.write('Hello, World!')
+                '''
+        },
+        "fibonacci_search": {
+            "significado": "Search method that uses Fibonacci numbers to divide the search space efficiently",
+            "uso": "It is used as an alternative to the binary search algorithm to find an element in an array",
+            "ejemplo": '''
+                # Implementation of Fibonacci Search is not standard, but can be used as an alternative to binary search
+                def fibonacci_search(arr, x):
+                    fib_m_minus_2 = 0
+                    fib_m_minus_1 = 1
+                    fib_m = fib_m_minus_1 + fib_m_minus_2
+                    while(fib_m < len(arr)):
+                        fib_m_minus_2 = fib_m_minus_1
+                        fib_m_minus_1 = fib_m
+                        fib_m = fib_m_minus_1 + fib_m_minus_2
+                '''
+        },
+        "filter_map": {
+            "significado": "Function that filters the elements of an iterable and then applies a mapping function to the remaining elements",
+            "uso": "It is used to efficiently perform transformations and filtering on date sequences",
+            "ejemplo": '''
+                from itertools import filterfalse
+                data = [1, 2, 3, 4, 5]
+                result = map(lambda x: x * 2, filter(lambda x: x % 2 == 0, data))
+                print(list(result))  # Output: [4, 8]
+                '''
         },
         },
     "g": {
