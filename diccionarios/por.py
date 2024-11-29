@@ -8964,30 +8964,30 @@ diccionario_por = {
         "Parquet": {
             "significado": "Formato de armazenamento eficiente e orientado a colunas usado para análise de dados de alto desempenho.",
             "uso": "É utilizado em ferramentas como Apache Spark e pandas para armazenar grandes volumes de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 import pandas as pd
 
                 df = pd.DataFrame({'col1': [1, 2, 3], 'col2': [4, 5, 6]})
                 df.to_parquet('arquivo.parquet')
                 df_carregado = pd.read_parquet('arquivo.parquet')
                 print(df_carregado)
-                """
+                '''
         },
         "Pkg_resources": {
             "significado": "Módulo da biblioteca `setuptools` que lida com pacotes e dependências em Python.",
             "uso": "É utilizado para consultar e gerenciar recursos de pacotes Python instalados.",
-            "exemplo": """
+            "ejemplo": '''
                 import pkg_resources
 
                 distribs = pkg_resources.working_set
                 for dist in distribs:
                     print(dist.project_name, dist.version)
-                """
+                '''
         },
         "Plot": {
             "significado": "Função básica de visualização de gráficos em bibliotecas como Matplotlib.",
             "uso": "É utilizada para criar gráficos de linhas, dispersão ou visualizações simples.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 x = [1, 2, 3, 4]
@@ -8995,24 +8995,24 @@ diccionario_por = {
                 plt.plot(x, y)
                 plt.title("Gráfico Simples")
                 plt.show()
-                """
+                '''
         },
         "Path_exists": {
             "significado": "Função para verificar se um arquivo ou diretório existe em um caminho especificado.",
             "uso": "É utilizada para validação de caminhos antes de realizar operações de leitura ou escrita.",
-            "exemplo": """
+            "ejemplo": '''
                 import os
 
                 if os.path.exists('arquivo.txt'):
                     print('O arquivo existe.')
                 else:
                     print('O arquivo não foi encontrado.')
-                """
+                '''
         },
         "Preprocess": {
             "significado": "Etapa de preparação de dados antes de serem usados em análises ou modelos de aprendizado de máquina.",
             "uso": "É utilizada para normalizar, limpar ou transformar dados brutos.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.preprocessing import StandardScaler
                 import numpy as np
 
@@ -9020,35 +9020,35 @@ diccionario_por = {
                 scaler = StandardScaler()
                 dados_normalizados = scaler.fit_transform(dados)
                 print(dados_normalizados)
-                """
+                '''
         },
         "Push": {
             "significado": "Operação que adiciona um elemento ao topo de uma pilha (stack).",
             "uso": "É utilizada em estruturas de dados baseadas em LIFO (último a entrar, primeiro a sair).",
-            "exemplo": """
+            "ejemplo": '''
                 stack = []
 
                 # Adicionando elementos à pilha
                 stack.append(10)
                 stack.append(20)
                 print(stack)  # Saída: [10, 20]
-                """
+                '''
         },
         "Pop_stack": {
             "significado": "Operação que remove e retorna o elemento do topo de uma pilha.",
             "uso": "É utilizada para recuperar elementos em estruturas LIFO.",
-            "exemplo": """
+            "ejemplo": '''
                 stack = [10, 20, 30]
 
                 topo = stack.pop()
                 print(topo)  # Saída: 30
                 print(stack)  # Saída: [10, 20]
-                """
+                '''
         },
         "Polynomial_features": {
             "significado": "Transformação usada para criar combinações de recursos em termos polinomiais para aprendizado de máquina.",
             "uso": "É utilizada para aumentar a capacidade de modelos simples, como a regressão linear.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.preprocessing import PolynomialFeatures
                 import numpy as np
 
@@ -9056,44 +9056,44 @@ diccionario_por = {
                 poly = PolynomialFeatures(degree=2)
                 X_poly = poly.fit_transform(X)
                 print(X_poly)
-                """
+                '''
         },
         "Plt_legend": {
             "significado": "Função em Matplotlib para adicionar legendas a gráficos.",
             "uso": "É utilizada para identificar diferentes séries de dados em gráficos.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 plt.plot([1, 2, 3], label='Linha 1')
                 plt.plot([3, 2, 1], label='Linha 2')
                 plt.legend()
                 plt.show()
-                """
+                '''
         },
         "Precision_score": {
             "significado": "Métrica de avaliação usada para medir a precisão de um modelo, calculada como a proporção de predições positivas corretas.",
             "uso": "É utilizada em problemas de classificação para avaliar o desempenho do modelo.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.metrics import precision_score
 
                 y_true = [0, 1, 1, 1]
                 y_pred = [0, 1, 0, 1]
                 precision = precision_score(y_true, y_pred)
                 print('Precisão:', precision)  # Saída: 1.0
-                """
+                '''
         },
         "Pipe_operation": {
             "significado": "Método para conectar a saída de um comando ou processo diretamente à entrada de outro, geralmente em sistemas baseados em Unix.",
             "uso": "Utilizado para criar fluxos de dados eficientes entre comandos ou funções.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo em Bash (uso de pipe)
                 ls -l | grep '.py'
-                """
+                '''
         },
         "Plt_bar": {
             "significado": "Função em Matplotlib para criar gráficos de barras.",
             "uso": "Utilizada para representar dados categóricos visualmente.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 categorias = ['A', 'B', 'C']
@@ -9101,45 +9101,45 @@ diccionario_por = {
                 plt.bar(categorias, valores)
                 plt.title('Gráfico de Barras')
                 plt.show()
-                """
+                '''
         },
         "Proxy_handler": {
             "significado": "Componente ou função que gerencia solicitações enviadas por meio de um proxy em redes ou em aplicativos.",
             "uso": "Utilizado para configurar proxies em conexões HTTP ou HTTPS.",
-            "exemplo": """
+            "ejemplo": '''
                 from urllib.request import ProxyHandler, build_opener
 
                 proxy = ProxyHandler({'http': 'http://proxy.com:8080'})
                 opener = build_opener(proxy)
                 response = opener.open('http://example.com')
                 print(response.read())
-                """
+                '''
         },
         "Print_exception": {
             "significado": "Método para exibir informações detalhadas sobre uma exceção durante a execução de um programa.",
             "uso": "Utilizado em depuração e análise de erros.",
-            "exemplo": """
+            "ejemplo": '''
                 try:
                     x = 1 / 0
                 except Exception as e:
                     print('Erro:', e)
-                """
+                '''
         },
         "Post_request": {
             "significado": "Solicitação HTTP usada para enviar dados ao servidor, geralmente para criar ou atualizar recursos.",
             "uso": "Utilizada em APIs e formulários web para enviar informações.",
-            "exemplo": """
+            "ejemplo": '''
                 import requests
 
                 dados = {'nome': 'João', 'idade': 30}
                 response = requests.post('http://api.exemplo.com/dados', json=dados)
                 print(response.status_code)
-                """
+                '''
         },
         "Plt_pie": {
             "significado": "Função em Matplotlib para criar gráficos de pizza.",
             "uso": "Utilizada para representar proporções entre categorias.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 labels = ['A', 'B', 'C']
@@ -9147,12 +9147,12 @@ diccionario_por = {
                 plt.pie(valores, labels=labels, autopct='%1.1f%%')
                 plt.title('Gráfico de Pizza')
                 plt.show()
-                """
+                '''
         },
         "Proxy_object": {
             "significado": "Objeto que atua como intermediário para controlar o acesso a outro objeto ou recurso.",
             "uso": "Utilizado para implementar padrões de design como Proxy, Cache e Lazy Initialization.",
-            "exemplo": """
+            "ejemplo": '''
                 class Proxy:
                     def __init__(self, obj):
                         self._obj = obj
@@ -9164,22 +9164,22 @@ diccionario_por = {
                 obj = Proxy([1, 2, 3])
                 obj.append(4)
                 print(obj)
-                """
+                '''
         },
         "Pandas_series": {
             "significado": "Estrutura unidimensional em pandas para armazenar e manipular dados.",
             "uso": "Utilizada para representar dados de uma coluna em um DataFrame ou listas indexadas.",
-            "exemplo": """
+            "ejemplo": '''
                 import pandas as pd
 
                 serie = pd.Series([10, 20, 30], index=['A', 'B', 'C'])
                 print(serie)
-                """
+                '''
         },
         "Plt_scatter": {
             "significado": "Função em Matplotlib para criar gráficos de dispersão.",
             "uso": "Utilizada para visualizar a relação entre duas variáveis.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 x = [1, 2, 3, 4]
@@ -9187,12 +9187,12 @@ diccionario_por = {
                 plt.scatter(x, y)
                 plt.title('Gráfico de Dispersão')
                 plt.show()
-                """
+                '''
         },
         "Plt_grid": {
             "significado": "Função em Matplotlib para adicionar grades aos gráficos.",
             "uso": "Utilizada para melhorar a legibilidade dos gráficos.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 x = [1, 2, 3, 4]
@@ -9201,12 +9201,12 @@ diccionario_por = {
                 plt.grid(True)
                 plt.title('Gráfico com Grade')
                 plt.show()
-                """
+                '''
         },
         "Plt_hist": {
             "significado": "Função em Matplotlib para criar histogramas.",
             "uso": "Utilizada para visualizar a distribuição de uma variável.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
                 import numpy as np
 
@@ -9214,12 +9214,12 @@ diccionario_por = {
                 plt.hist(dados, bins=30, alpha=0.7)
                 plt.title('Histograma')
                 plt.show()
-                """
+                '''
         },
         "Plt_savefig": {
             "significado": "Função em Matplotlib usada para salvar o gráfico gerado em um arquivo.",
             "uso": "Utilizada para exportar gráficos em formatos como PNG, PDF ou SVG.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 x = [1, 2, 3, 4]
@@ -9227,55 +9227,55 @@ diccionario_por = {
                 plt.plot(x, y)
                 plt.title('Gráfico Exemplo')
                 plt.savefig('grafico.png')
-                """
+                '''
         },
         "Plt_title": {
             "significado": "Função em Matplotlib para adicionar um título ao gráfico.",
             "uso": "Utilizada para descrever brevemente o conteúdo ou objetivo do gráfico.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 plt.plot([1, 2, 3], [4, 5, 6])
                 plt.title('Meu Gráfico')
                 plt.show()
-                """
+                '''
         },
         "Plt_xlabel": {
             "significado": "Função em Matplotlib para definir o rótulo do eixo X no gráfico.",
             "uso": "Utilizada para identificar o significado dos dados no eixo X.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 plt.plot([1, 2, 3], [4, 5, 6])
                 plt.xlabel('Eixo X')
                 plt.show()
-                """
+                '''
         },
         "Plt_ylabel": {
             "significado": "Função em Matplotlib para definir o rótulo do eixo Y no gráfico.",
             "uso": "Utilizada para identificar o significado dos dados no eixo Y.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 plt.plot([1, 2, 3], [4, 5, 6])
                 plt.ylabel('Eixo Y')
                 plt.show()
-                """
+                '''
         },
         "Plt_show": {
             "significado": "Função em Matplotlib usada para exibir o gráfico gerado em uma janela ou interface interativa.",
             "uso": "Utilizada para mostrar os gráficos após serem configurados.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 plt.plot([1, 2, 3], [4, 5, 6])
                 plt.show()
-                """
+                '''
         },
         "Plt_colorbar": {
             "significado": "Função em Matplotlib para adicionar uma barra de cores a um gráfico, representando a escala de valores.",
             "uso": "Utilizada em gráficos como mapas de calor ou contornos para indicar o significado das cores.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
                 import numpy as np
 
@@ -9283,12 +9283,12 @@ diccionario_por = {
                 plt.imshow(data, cmap='viridis')
                 plt.colorbar()
                 plt.show()
-                """
+                '''
         },
         "Plt_contour": {
             "significado": "Função em Matplotlib para criar gráficos de contorno baseados em dados tridimensionais ou bidimensionais.",
             "uso": "Utilizada para representar linhas de igual valor em mapas ou superfícies.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
                 import numpy as np
 
@@ -9301,12 +9301,12 @@ diccionario_por = {
                 plt.colorbar()
                 plt.title('Gráfico de Contornos')
                 plt.show()
-                """
+                '''
         },
         "Plt_fill_between": {
             "significado": "Função em Matplotlib para preencher a área entre duas curvas ou uma curva e um eixo.",
             "uso": "Utilizada para destacar regiões em gráficos, como intervalos de confiança ou áreas específicas.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
                 import numpy as np
 
@@ -9319,12 +9319,12 @@ diccionario_por = {
                 plt.plot(x, y2, label='Cosseno')
                 plt.legend()
                 plt.show()
-                """
+                '''
         },
         "Plt_annotate": {
             "significado": "Função em Matplotlib para adicionar anotações a um gráfico, como textos ou setas apontando para pontos específicos.",
             "uso": "Utilizada para destacar ou explicar pontos de interesse no gráfico.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 x = [1, 2, 3, 4]
@@ -9334,24 +9334,24 @@ diccionario_por = {
                 plt.annotate('Ponto Máximo', xy=(4, 25), xytext=(3, 22),
                             arrowprops=dict(facecolor='black', arrowstyle='->'))
                 plt.show()
-                """
+                '''
         },
         "Plt_boxplot": {
             "significado": "Função em Matplotlib para criar gráficos de caixa (boxplots) que representam a distribuição de um conjunto de dados.",
             "uso": "Utilizada para visualizar a mediana, quartis e valores atípicos em dados.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 data = [7, 8, 5, 6, 9, 4, 7, 8, 5, 6]
                 plt.boxplot(data)
                 plt.title('Boxplot dos Dados')
                 plt.show()
-                """
+                '''
         },
         "Plt_stackplot": {
             "significado": "Função em Matplotlib para criar gráficos de área empilhados, representando várias séries de dados como áreas preenchidas.",
             "uso": "Utilizada para visualizar a composição de dados ao longo de um eixo.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 x = [1, 2, 3, 4, 5]
@@ -9363,12 +9363,12 @@ diccionario_por = {
                 plt.legend(loc='upper left')
                 plt.title('Gráfico de Áreas Empilhadas')
                 plt.show()
-                """
+                '''
         },
         "Plt_quiver": {
             "significado": "Função em Matplotlib para criar gráficos de vetores, representando magnitude e direção em coordenadas bidimensionais.",
             "uso": "Utilizada para visualização de campos vetoriais, como fluxos de vento ou gradientes.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
                 import numpy as np
 
@@ -9379,19 +9379,19 @@ diccionario_por = {
                 plt.quiver(x, y, u, v)
                 plt.title('Gráfico de Vetores (Quiver)')
                 plt.show()
-                """
+                '''
         },
         "Plt_arrow": {
             "significado": "Função em Matplotlib para desenhar uma única seta em um gráfico.",
             "uso": "Utilizada para destacar direções ou movimentos em um gráfico.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
 
                 plt.plot([0, 10], [0, 10])
                 plt.arrow(2, 2, 5, 5, head_width=0.5, head_length=0.7, fc='red', ec='red')
                 plt.title('Gráfico com Seta')
                 plt.show()
-                """
+                '''
         },
     },
     "q": {
@@ -9399,7 +9399,7 @@ diccionario_por = {
         "Queue": {
             "significado": "Estrutura de dados que segue o princípio FIFO (First In, First Out), onde o primeiro elemento inserido é o primeiro a ser removido.",
             "uso": "Utilizada em sistemas de mensagens, processamento de tarefas e gerenciamento de recursos.",
-            "exemplo": """
+            "ejemplo": '''
                 from queue import Queue
 
                 q = Queue()
@@ -9407,54 +9407,54 @@ diccionario_por = {
                 q.put(2)
                 q.put(3)
                 print(q.get())  # Saída: 1
-                """
+                '''
         },
         "Queue.queue": {
             "significado": "Atributo interno de objetos da classe `Queue` que armazena os elementos da fila como uma lista.",
             "uso": "Usado para acessar diretamente os itens armazenados na fila (geralmente não recomendado).",
-            "exemplo": """
+            "ejemplo": '''
                 from queue import Queue
 
                 q = Queue()
                 q.put(10)
                 q.put(20)
                 print(list(q.queue))  # Saída: [10, 20]
-                """
+                '''
         },
         "Qsize": {
             "significado": "Método da classe `Queue` que retorna o número de itens presentes na fila.",
             "uso": "Utilizado para verificar o tamanho atual de uma fila.",
-            "exemplo": """
+            "ejemplo": '''
                 from queue import Queue
 
                 q = Queue()
                 q.put(1)
                 q.put(2)
                 print(q.qsize())  # Saída: 2
-                """
+                '''
         },
         "Quit": {
             "significado": "Função integrada do Python que encerra o programa ou script em execução.",
             "uso": "Utilizada para finalizar a execução de um programa manualmente.",
-            "exemplo": """
+            "ejemplo": '''
                 print('Este programa será encerrado agora.')
                 quit()
-                """
+                '''
         },
         "Quantile": {
             "significado": "Valor que divide os dados em partes iguais com base em uma distribuição específica.",
             "uso": "Utilizado em estatísticas para calcular percentis ou outros pontos de corte em conjuntos de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 import numpy as np
 
                 data = [1, 2, 3, 4, 5]
                 print(np.quantile(data, 0.5))  # Saída: 3 (mediana)
-                """
+                '''
         },
         "Query": {
             "significado": "Solicitação ou consulta feita a um banco de dados ou estrutura de dados para recuperar informações específicas.",
             "uso": "Utilizada para acessar ou manipular dados em sistemas de gerenciamento de banco de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 import pandas as pd
 
                 data = {'nome': ['Alice', 'Bob', 'Charlie'], 'idade': [25, 30, 35]}
@@ -9462,12 +9462,12 @@ diccionario_por = {
 
                 resultado = df.query('idade > 30')
                 print(resultado)
-                """
+                '''
         },
         "Quick_sort": {
             "significado": "Algoritmo de ordenação eficiente que utiliza o paradigma dividir para conquistar, escolhendo um pivô para dividir os dados em sublistas menores.",
             "uso": "Utilizado para ordenar grandes conjuntos de dados rapidamente.",
-            "exemplo": """
+            "ejemplo": '''
                 def quick_sort(arr):
                     if len(arr) <= 1:
                         return arr
@@ -9478,22 +9478,22 @@ diccionario_por = {
                     return quick_sort(left) + middle + quick_sort(right)
 
                 print(quick_sort([3, 6, 8, 10, 1, 2, 1]))  # Saída: [1, 1, 2, 3, 6, 8, 10]
-                """
+                '''
         },
         "Quaternion": {
             "significado": "Estrutura matemática que generaliza números complexos para representar rotações em três dimensões.",
             "uso": "Utilizada em gráficos 3D, animação e sistemas de navegação.",
-            "exemplo": """
+            "ejemplo": '''
                 from pyquaternion import Quaternion
 
                 q = Quaternion(axis=[0, 0, 1], angle=3.14159)  # Rotações no eixo Z
                 print(q)  # Saída: Quaternion(0.0, 0.0, 0.0, 1.0)
-                """
+                '''
         },
         "Qrcode": {
             "significado": "Código de barras bidimensional que armazena informações legíveis por dispositivos móveis e scanners.",
             "uso": "Utilizado para compartilhar links, informações de contato e outros dados em formato compacto.",
-            "exemplo": """
+            "ejemplo": '''
                 import qrcode
 
                 qr = qrcode.QRCode(version=1, box_size=10, border=5)
@@ -9502,23 +9502,23 @@ diccionario_por = {
                 
                 img = qr.make_image(fill='black', back_color='white')
                 img.show()
-                """
+                '''
         },
         "Quantization": {
             "significado": "Processo de mapear valores contínuos para valores discretos.",
             "uso": "Utilizado em compressão de dados, processamento de sinais e redes neurais para reduzir o tamanho de modelos.",
-            "exemplo": """
+            "ejemplo": '''
                 import numpy as np
 
                 data = np.array([0.1, 0.5, 0.9])
                 quantized_data = np.round(data * 10) / 10
                 print(quantized_data)  # Saída: [0.1, 0.5, 0.9]
-                """
+                '''
         },
         "Queue.priorityqueue": {
             "significado": "Fila de prioridade onde os elementos são retirados com base em sua prioridade (menor valor tem maior prioridade).",
             "uso": "Utilizada em algoritmos de busca, planejamento de tarefas e sistemas de simulação.",
-            "exemplo": """
+            "ejemplo": '''
                 from queue import PriorityQueue
 
                 pq = PriorityQueue()
@@ -9527,12 +9527,12 @@ diccionario_por = {
                 pq.put((3, 'terceiro'))
                 while not pq.empty():
                     print(pq.get())  # Saída: (1, 'primeiro'), (2, 'segundo'), (3, 'terceiro')
-                """
+                '''
         },
         "Queue.lifoqueue": {
             "significado": "Fila que segue o princípio LIFO (Last In, First Out), similar a uma pilha.",
             "uso": "Utilizada em algoritmos que requerem pilhas ou controle de chamadas.",
-            "exemplo": """
+            "ejemplo": '''
                 from queue import LifoQueue
 
                 stack = LifoQueue()
@@ -9540,12 +9540,12 @@ diccionario_por = {
                 stack.put(2)
                 stack.put(3)
                 print(stack.get())  # Saída: 3
-                """
+                '''
         },
         "Quad": {
             "significado": "Função ou método usado para realizar integração numérica de uma função.",
             "uso": "Utilizada em cálculo científico para resolver integrais definidas.",
-            "exemplo": """
+            "ejemplo": '''
                 from scipy.integrate import quad
 
                 def f(x):
@@ -9553,47 +9553,47 @@ diccionario_por = {
 
                 result, error = quad(f, 0, 1)
                 print(result)  # Saída: 0.3333
-                """
+                '''
         },
         "Quantize": {
             "significado": "Reduz os valores de um conjunto de dados para um número fixo de níveis discretos.",
             "uso": "Utilizado para compressão de modelos e armazenamento eficiente.",
-            "exemplo": """
+            "ejemplo": '''
                 import torch
 
                 tensor = torch.tensor([1.1, 2.5, 3.7])
                 quantized_tensor = torch.quantize_per_tensor(tensor, scale=0.1, zero_point=0, dtype=torch.qint8)
                 print(quantized_tensor)
-                """
+                '''
         },
         "Queue.empty": {
             "significado": "Método que verifica se uma fila está vazia.",
             "uso": "Utilizado para evitar exceções ao tentar remover elementos de uma fila vazia.",
-            "exemplo": """
+            "ejemplo": '''
                 from queue import Queue
 
                 q = Queue()
                 print(q.empty())  # Saída: True
                 q.put(1)
                 print(q.empty())  # Saída: False
-                """
+                '''
         },
         "Queue.full": {
             "significado": "Método que verifica se uma fila atingiu sua capacidade máxima.",
             "uso": "Utilizado para evitar adicionar elementos a uma fila já cheia.",
-            "exemplo": """
+            "ejemplo": '''
                 from queue import Queue
 
                 q = Queue(maxsize=2)
                 q.put(1)
                 q.put(2)
                 print(q.full())  # Saída: True
-                """
+                '''
         },
         "Quadprog": {
             "significado": "Biblioteca ou método usado para resolver problemas de programação quadrática.",
             "uso": "Utilizado em otimização matemática para encontrar mínimos de funções quadráticas sujeitas a restrições lineares.",
-            "exemplo": """
+            "ejemplo": '''
                 import numpy as np
                 from quadprog import solve_qp
 
@@ -9604,12 +9604,12 @@ diccionario_por = {
                 
                 result = solve_qp(G, a, C, b)
                 print(result[0])  # Solução ótima
-                """
+                '''
         },
         "Queue.simplequeue": {
             "significado": "Implementação simples de uma fila em Python para realizar operações básicas de enfileiramento e desenfileiramento.",
             "uso": "Utilizado em cenários simples de processamento de dados, onde não é necessário suporte para threads ou prioridades.",
-            "exemplo": """
+            "ejemplo": '''
                 from queue import SimpleQueue
 
                 q = SimpleQueue()
@@ -9617,24 +9617,24 @@ diccionario_por = {
                 q.put(2)
                 q.put(3)
                 print(q.get())  # Saída: 1
-                """
+                '''
         },
         "Quantum_computing": {
             "significado": "Área de computação que utiliza as leis da mecânica quântica para realizar cálculos.",
             "uso": "Aplicado em criptografia, otimização, simulações moleculares e aprendizado de máquina.",
-            "exemplo": """
+            "ejemplo": '''
                 from qiskit import QuantumCircuit
 
                 circuit = QuantumCircuit(1, 1)
                 circuit.h(0)  # Aplica uma porta Hadamard
                 circuit.measure(0, 0)
                 print(circuit)
-                """
+                '''
         },
         "Queue_handler": {
             "significado": "Mecanismo utilizado para gerenciar filas de registros ou eventos em sistemas de log ou processamento assíncrono.",
             "uso": "Utilizado em sistemas que precisam processar eventos ou mensagens em ordem.",
-            "exemplo": """
+            "ejemplo": '''
                 import logging
                 from logging.handlers import QueueHandler
                 from queue import Queue
@@ -9645,58 +9645,58 @@ diccionario_por = {
                 logger.addHandler(queue_handler)
 
                 logger.warning("Mensagem de log na fila")
-                """
+                '''
         },
         "Qcut": {
             "significado": "Função de pandas que divide dados em intervalos de quantis.",
             "uso": "Utilizado para segmentação de dados ou criação de categorias baseadas em distribuições.",
-            "exemplo": """
+            "ejemplo": '''
                 import pandas as pd
 
                 data = [1, 2, 3, 4, 5, 6, 7, 8]
                 categories = pd.qcut(data, q=4)
                 print(categories)
-                """
+                '''
         },
         "Query_parameters": {
             "significado": "Parâmetros passados em uma URL para fornecer informações adicionais em uma solicitação HTTP.",
             "uso": "Utilizado para filtrar ou personalizar os resultados de uma solicitação em APIs ou sistemas web.",
-            "exemplo": """
+            "ejemplo": '''
                 import requests
 
                 url = "https://api.example.com/data"
                 params = {"category": "books", "limit": 10}
                 response = requests.get(url, params=params)
                 print(response.url)  # Exibe a URL com parâmetros
-                """
+                '''
         },
         "Quantum_state": {
             "significado": "Descrição matemática do estado de um sistema quântico, representado como um vetor no espaço de Hilbert.",
             "uso": "Utilizado em computação quântica e física para simular comportamentos quânticos.",
-            "exemplo": """
+            "ejemplo": '''
                 from qiskit import QuantumCircuit
 
                 circuit = QuantumCircuit(1)
                 circuit.h(0)  # Cria um estado quântico de superposição
                 print(circuit)
-                """
+                '''
         },
         "Queue_module": {
             "significado": "Módulo padrão do Python que fornece implementações de filas como FIFO, LIFO e filas de prioridade.",
             "uso": "Utilizado para gerenciar dados em processamento sequencial ou paralelismo.",
-            "exemplo": """
+            "ejemplo": '''
                 from queue import Queue
 
                 q = Queue()
                 q.put('A')
                 q.put('B')
                 print(q.get())  # Saída: 'A'
-                """
+                '''
         },
         "Quadrature": {
             "significado": "Método de aproximação para calcular integrais definidas numericamente.",
             "uso": "Utilizado em análise matemática, física e engenharia para calcular áreas sob curvas.",
-            "exemplo": """
+            "ejemplo": '''
                 from scipy.integrate import quadrature
 
                 def f(x):
@@ -9704,24 +9704,24 @@ diccionario_por = {
 
                 result, error = quadrature(f, 0, 1)
                 print(result)  # Saída aproximada: 0.3333
-                """
+                '''
         },
         "Quantum_circuit": {
             "significado": "Representação de um conjunto de operações quânticas aplicadas em qubits.",
             "uso": "Utilizado em algoritmos de computação quântica, como fatoração e busca quântica.",
-            "exemplo": """
+            "ejemplo": '''
                 from qiskit import QuantumCircuit
 
                 circuit = QuantumCircuit(2)
                 circuit.h(0)  # Porta Hadamard no primeiro qubit
                 circuit.cx(0, 1)  # Porta CNOT entre qubits 0 e 1
                 print(circuit)
-                """
+                '''
         },
         "Queue_time": {
             "significado": "Tempo total gasto para que uma tarefa ou item seja processado em uma fila.",
             "uso": "Utilizado em sistemas de processamento em fila para medir o desempenho e otimizar o tempo de resposta.",
-            "exemplo": """
+            "ejemplo": '''
                 import time
                 from queue import Queue
 
@@ -9732,12 +9732,12 @@ diccionario_por = {
                 q.get()
                 queue_time = time.time() - start_time
                 print(f"Tempo na fila: {queue_time} segundos")
-                """
+                '''
         },
         "Quantile_transform": {
             "significado": "Transformação que ajusta os dados para uma distribuição uniforme ou normal com base em quantis.",
             "uso": "Utilizado em aprendizado de máquina para normalizar ou padronizar dados.",
-            "exemplo": """
+            "ejemplo": '''
                 from sklearn.preprocessing import QuantileTransformer
                 import numpy as np
 
@@ -9745,36 +9745,36 @@ diccionario_por = {
                 transformer = QuantileTransformer(n_quantiles=5, output_distribution='normal')
                 transformed_data = transformer.fit_transform(data)
                 print(transformed_data)
-                """
+                '''
         },
         "Queryset": {
             "significado": "Conjunto de dados retornados por uma consulta a um banco de dados, geralmente utilizado em frameworks como Django.",
             "uso": "Utilizado para manipular e filtrar dados em aplicações web baseadas em bancos de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Django QuerySet exemplo
                 from myapp.models import Produto
 
                 produtos = Produto.objects.filter(preco__gt=100)
                 for produto in produtos:
                     print(produto.nome)
-                """
+                '''
         },
         "Quicktest": {
             "significado": "Processo de realização rápida de testes para verificar funcionalidades básicas de um sistema ou código.",
             "uso": "Utilizado no desenvolvimento ágil para validações rápidas antes de uma entrega maior.",
-            "exemplo": """
+            "ejemplo": '''
                 def quick_test():
                     assert 1 + 1 == 2, "Erro no teste básico"
                     assert "a".upper() == "A", "Erro no teste de string"
                     print("Todos os testes passaram!")
 
                 quick_test()
-                """
+                '''
         },
         "Queue_timeout": {
             "significado": "Tempo limite para operações de inserção ou remoção em uma fila antes de lançar um erro.",
             "uso": "Utilizado em sistemas assíncronos para evitar bloqueios indefinidos.",
-            "exemplo": """
+            "ejemplo": '''
                 from queue import Queue, Empty
 
                 q = Queue()
@@ -9782,43 +9782,43 @@ diccionario_por = {
                     item = q.get(timeout=2)  # Aguarda até 2 segundos para obter um item
                 except Empty:
                     print("A fila está vazia e o tempo limite foi excedido.")
-                """
+                '''
         },
         "Quantum_noise": {
             "significado": "Ruído inerente em sistemas quânticos causado pela interação com o ambiente externo.",
             "uso": "Estudado em computação quântica para melhorar a estabilidade e precisão de algoritmos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Conceito de ruído em sistemas quânticos
                 from qiskit.providers.aer.noise import NoiseModel
 
                 noise_model = NoiseModel()
                 print("Modelo de ruído criado:", noise_model)
-                """
+                '''
         },
         "Qimage": {
             "significado": "Classe da biblioteca PyQt5 para representar e manipular imagens.",
             "uso": "Utilizado em aplicações gráficas para carregar, exibir e processar imagens.",
-            "exemplo": """
+            "ejemplo": '''
                 from PyQt5.QtGui import QImage
 
                 image = QImage("example.jpg")
                 print(f"Largura: {image.width()}, Altura: {image.height()}")
-                """
+                '''
         },
         "Qfont": {
             "significado": "Classe da biblioteca PyQt5 para representar e configurar fontes de texto.",
             "uso": "Utilizado em aplicações gráficas para estilizar textos.",
-            "exemplo": """
+            "ejemplo": '''
                 from PyQt5.QtGui import QFont
 
                 font = QFont("Arial", 12, QFont.Bold)
                 print(f"Fonte: {font.family()}, Tamanho: {font.pointSize()}")
-                """
+                '''
         },
         "Qmainwindow": {
             "significado": "Classe principal da biblioteca PyQt5 para criar janelas com uma barra de ferramentas, menu e barra de status.",
             "uso": "Utilizado para desenvolver interfaces gráficas completas em aplicações PyQt5.",
-            "exemplo": """
+            "ejemplo": '''
                 from PyQt5.QtWidgets import QMainWindow, QApplication
                 import sys
 
@@ -9832,12 +9832,12 @@ diccionario_por = {
                 window = MainWindow()
                 window.show()
                 sys.exit(app.exec_())
-                """
+                '''
         },
         "Quickstart": {
             "significado": "Guia rápido ou tutorial que fornece instruções básicas para iniciar o uso de um software ou tecnologia.",
             "uso": "Utilizado para aprender rapidamente como configurar e usar uma ferramenta ou biblioteca.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de guia rápido para criar um servidor Flask
                 from flask import Flask
 
@@ -9849,12 +9849,12 @@ diccionario_por = {
 
                 if __name__ == '__main__':
                     app.run(debug=True)
-                """
+                '''
         },
         "Quantum_computer": {
             "significado": "Dispositivo computacional que utiliza princípios da mecânica quântica, como superposição e entrelaçamento, para realizar cálculos.",
             "uso": "Utilizado para resolver problemas complexos como otimização, simulação molecular e criptografia.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de execução de circuito em um computador quântico simulado com Qiskit
                 from qiskit import QuantumCircuit, Aer, execute
 
@@ -9864,12 +9864,12 @@ diccionario_por = {
                 simulator = Aer.get_backend('statevector_simulator')
                 result = execute(circuit, simulator).result()
                 print(result.get_statevector())
-                """
+                '''
         },
         "Qos": {
             "significado": "Quality of Service (Qualidade de Serviço), refere-se à capacidade de gerenciar recursos em redes para garantir níveis específicos de desempenho.",
             "uso": "Utilizado em redes para priorizar tráfego, evitar congestionamento e melhorar a experiência do usuário.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de configuração de QoS em Python
                 class QoSConfig:
                     def __init__(self, bandwidth_limit):
@@ -9880,12 +9880,12 @@ diccionario_por = {
 
                 config = QoSConfig(100)
                 config.apply()
-                """
+                '''
         },
         "Qsplitter": {
             "significado": "Widget do PyQt5 que permite dividir a interface gráfica em áreas redimensionáveis.",
             "uso": "Utilizado para criar interfaces gráficas dinâmicas com áreas ajustáveis pelo usuário.",
-            "exemplo": """
+            "ejemplo": '''
                 from PyQt5.QtWidgets import QApplication, QMainWindow, QSplitter, QLabel
                 from PyQt5.QtCore import Qt
                 import sys
@@ -9899,12 +9899,12 @@ diccionario_por = {
                 window.setCentralWidget(splitter)
                 window.show()
                 sys.exit(app.exec_())
-                """
+                '''
         },
         "Quantile_normalization": {
             "significado": "Método de normalização que ajusta distribuições de dados para terem quantis semelhantes.",
             "uso": "Utilizado em análise de dados e bioinformática para remover variações entre amostras.",
-            "exemplo": """
+            "ejemplo": '''
                 import numpy as np
 
                 data = np.array([[1, 2, 3], [4, 5, 6], [7, 8, 9]])
@@ -9912,12 +9912,12 @@ diccionario_por = {
                 means = np.mean(np.sort(data, axis=0), axis=1)
                 normalized = means[ranks]
                 print(normalized)
-                """
+                '''
         },
         "Quad_tree": {
             "significado": "Estrutura de dados hierárquica que divide um espaço bidimensional em regiões menores.",
             "uso": "Utilizado em gráficos, compressão de imagens e jogos para particionar o espaço eficientemente.",
-            "exemplo": """
+            "ejemplo": '''
                 class QuadTree:
                     def __init__(self, x, y, width, height):
                         self.bounds = (x, y, width, height)
@@ -9935,12 +9935,12 @@ diccionario_por = {
                 tree = QuadTree(0, 0, 100, 100)
                 tree.subdivide()
                 print([child.bounds for child in tree.children])
-                """
+                '''
         },
         "Query_tool": {
             "significado": "Ferramenta ou interface usada para enviar consultas a um banco de dados ou sistema de informações.",
             "uso": "Utilizado em ambientes de análise de dados e desenvolvimento para interagir com bases de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de consulta SQL com SQLite em Python
                 import sqlite3
 
@@ -9951,12 +9951,12 @@ diccionario_por = {
                 cursor.execute("SELECT * FROM users")
                 result = cursor.fetchall()
                 print(result)
-                """
+                '''
         },
         "Qwidget": {
             "significado": "Classe base para criar interfaces gráficas no PyQt5.",
             "uso": "Utilizado para criar janelas e elementos personalizados em aplicações gráficas.",
-            "exemplo": """
+            "ejemplo": '''
                 from PyQt5.QtWidgets import QApplication, QWidget
                 import sys
 
@@ -9966,12 +9966,12 @@ diccionario_por = {
                 widget.resize(400, 300)
                 widget.show()
                 sys.exit(app.exec_())
-                """
+                '''
         },
         "Quiver": {
             "significado": "Gráfico vetorial que representa vetores como setas em um plano 2D ou 3D.",
             "uso": "Utilizado para visualizar campos vetoriais, como direção do vento ou gradientes.",
-            "exemplo": """
+            "ejemplo": '''
                 import matplotlib.pyplot as plt
                 import numpy as np
 
@@ -9981,12 +9981,12 @@ diccionario_por = {
                 plt.quiver(X, Y, U, V)
                 plt.title("Gráfico Quiver")
                 plt.show()
-                """
+                '''
         },
         "Queue_manager": {
             "significado": "Componente que controla a criação, gerenciamento e monitoramento de filas para processamento de dados ou tarefas.",
             "uso": "Utilizado em sistemas distribuídos para organizar e processar fluxos de trabalho ou mensagens.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de gerenciamento de filas com `queue.Queue` em Python
                 import queue
 
@@ -9997,12 +9997,12 @@ diccionario_por = {
                 while not q.empty():
                     tarefa = q.get()
                     print(f"Processando: {tarefa}")
-                """
+                '''
         },
         "Qapplication": {
             "significado": "Classe principal de gerenciamento de aplicativos no PyQt5, responsável pela inicialização e gerenciamento do loop de eventos.",
             "uso": "Utilizado para criar aplicações gráficas baseadas no PyQt5.",
-            "exemplo": """
+            "ejemplo": '''
                 from PyQt5.QtWidgets import QApplication, QLabel
                 import sys
 
@@ -10010,24 +10010,24 @@ diccionario_por = {
                 label = QLabel("Olá, PyQt5!")
                 label.show()
                 sys.exit(app.exec_())
-                """
+                '''
         },
         "Quantum_gate": {
             "significado": "Operação unitária em computadores quânticos que modifica o estado de qubits.",
             "uso": "Utilizado em algoritmos quânticos para manipular estados quânticos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uma porta Hadamard usando Qiskit
                 from qiskit import QuantumCircuit
 
                 circuit = QuantumCircuit(1)
                 circuit.h(0)
                 print(circuit)
-                """
+                '''
         },
         "Quickselect": {
             "significado": "Algoritmo eficiente para encontrar o k-ésimo menor elemento em uma lista desordenada.",
             "uso": "Utilizado em ordenação parcial e problemas relacionados a estatísticas, como cálculo de mediana.",
-            "exemplo": """
+            "ejemplo": '''
                 def quickselect(arr, k):
                     if len(arr) == 1:
                         return arr[0]
@@ -10045,12 +10045,12 @@ diccionario_por = {
 
                 nums = [3, 2, 1, 5, 4]
                 print(quickselect(nums, 2))  # Saída: 3
-                """
+                '''
         },
         "Query_optimizer": {
             "significado": "Componente de um sistema de banco de dados que determina a melhor forma de executar uma consulta SQL.",
             "uso": "Utilizado para melhorar o desempenho das consultas, minimizando o tempo de execução e uso de recursos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de explicação de consulta com SQLite para observar otimizações
                 import sqlite3
 
@@ -10060,24 +10060,24 @@ diccionario_por = {
                 cursor.execute("INSERT INTO produtos VALUES (1, 'Produto A', 10.0)")
                 cursor.execute("EXPLAIN QUERY PLAN SELECT * FROM produtos WHERE preco > 5")
                 print(cursor.fetchall())
-                """
+                '''
         },
         "Qubit": {
             "significado": "Unidade básica de informação em um computador quântico, que pode representar estados de superposição.",
             "uso": "Utilizado para armazenar e processar informações em algoritmos quânticos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de criação de qubits com Qiskit
                 from qiskit import QuantumCircuit
 
                 circuit = QuantumCircuit(1)
                 circuit.h(0)  # Coloca o qubit em superposição
                 print(circuit)
-                """
+                '''
         },
         "Quantum_entanglement": {
             "significado": "Fenômeno quântico onde dois ou mais qubits compartilham estados de forma que a medição de um influencia instantaneamente o outro.",
             "uso": "Utilizado em criptografia quântica, teleportação quântica e algoritmos quânticos avançados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de entrelaçamento quântico com Qiskit
                 from qiskit import QuantumCircuit
 
@@ -10085,34 +10085,34 @@ diccionario_por = {
                 circuit.h(0)
                 circuit.cx(0, 1)  # Entrelaçamento dos qubits
                 print(circuit)
-                """
+                '''
         },
         "Qpoint": {
             "significado": "Classe ou estrutura usada para representar pontos geométricos em frameworks de interface gráfica como PyQt5.",
             "uso": "Utilizado para manipulação de gráficos e cálculo de posições em interfaces gráficas.",
-            "exemplo": """
+            "ejemplo": '''
                 from PyQt5.QtCore import QPoint
 
                 ponto = QPoint(10, 20)
                 print(f"Coordenadas: x={ponto.x()}, y={ponto.y()}")
-                """
+                '''
         },
         "Quantum_tensor": {
             "significado": "Estrutura matemática usada para descrever sistemas quânticos, representando interações e estados em dimensões superiores.",
             "uso": "Utilizado em computação quântica para representar operadores e estados complexos em várias dimensões.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de manipulação de tensores quânticos usando NumPy
                 import numpy as np
 
                 tensor = np.array([[1, 0], [0, 1]])
                 print("Tensor quântico de identidade:")
                 print(tensor)
-                """
+                '''
         },
         "Query_cursor": {
             "significado": "Objeto usado em bancos de dados para executar comandos SQL e iterar sobre resultados de consultas.",
             "uso": "Utilizado em interações com bases de dados para acessar ou manipular registros.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de cursor com SQLite em Python
                 import sqlite3
 
@@ -10124,24 +10124,24 @@ diccionario_por = {
 
                 for row in cursor.fetchall():
                     print(row)
-                """
+                '''
         },
         "Quaternion_rotation": {
             "significado": "Método matemático para representar rotações tridimensionais, usado em gráficos e física computacional.",
             "uso": "Utilizado para evitar gimbal lock em animações e simulações 3D.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de manipulação de quaternions usando SciPy
                 from scipy.spatial.transform import Rotation as R
 
                 r = R.from_quat([0, 0, 0.7071, 0.7071])  # Rotação em 90 graus no eixo Z
                 print("Matriz de rotação:")
                 print(r.as_matrix())
-                """
+                '''
         },
         "Queue_size": {
             "significado": "Número atual de itens em uma fila.",
             "uso": "Utilizado em gerenciamento de filas para monitorar ou limitar o número de itens.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de obtenção do tamanho de uma fila em Python
                 import queue
 
@@ -10149,32 +10149,32 @@ diccionario_por = {
                 q.put(1)
                 q.put(2)
                 print(f"Tamanho da fila: {q.qsize()}")
-                """
+                '''
         },
         "Quantum_key_distribution": {
             "significado": "Método de criptografia quântica para distribuir chaves secretas entre partes de forma segura.",
             "uso": "Utilizado em segurança da informação para comunicação inquebrável.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo teórico: QKD usa o protocolo BB84 para compartilhar chaves de forma segura.
                 print("O protocolo BB84 usa estados de polarização de fótons para distribuir chaves.")
-                """
+                '''
         },
         "Quick_fix": {
             "significado": "Solução rápida para um problema em software ou sistemas, geralmente temporária.",
             "uso": "Utilizado para resolver erros ou falhas críticas antes de uma solução definitiva.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de 'quick fix' em código
                 # Problema: Divisão por zero
                 def divide(a, b):
                     return a / b if b != 0 else 0  # Solução rápida para evitar erro
 
                 print(divide(10, 0))  # Saída: 0
-                """
+                '''
         },
         "Queue_put": {
             "significado": "Método para adicionar itens a uma fila em estruturas de gerenciamento de filas.",
             "uso": "Utilizado em programação concorrente para adicionar tarefas ou dados para processamento.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do método put em uma fila
                 import queue
 
@@ -10182,7 +10182,7 @@ diccionario_por = {
                 q.put("Tarefa 1")
                 q.put("Tarefa 2")
                 print("Itens adicionados à fila.")
-                """
+                '''
         },
     },
     "r": {
@@ -10190,103 +10190,103 @@ diccionario_por = {
         "Range": {
             "significado": "Função embutida em Python que gera uma sequência de números, geralmente usada para iterar em loops.",
             "uso": "Utilizado para criar intervalos de números em loops `for` ou para gerar sequências.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de range
                 for i in range(1, 5):
                     print(i)
                 # Saída: 1, 2, 3, 4
-                """
+                '''
         },
         "Read": {
             "significado": "Método utilizado para ler o conteúdo completo de um arquivo em Python.",
             "uso": "É utilizado para obter dados de arquivos como texto ou binários.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de leitura de um arquivo
                 with open('arquivo.txt', 'r') as file:
                     conteudo = file.read()
                     print(conteudo)
-                """
+                '''
         },
         "Replace": {
             "significado": "Método de strings em Python que substitui substrings em um texto por outro valor.",
             "uso": "É utilizado para modificar strings de texto substituindo partes específicas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de replace
                 texto = "Olá mundo"
                 novo_texto = texto.replace("mundo", "Python")
                 print(novo_texto)
                 # Saída: Olá Python
-                """
+                '''
         },
         "Reverse": {
             "significado": "Método utilizado para inverter elementos de uma lista em Python.",
             "uso": "É utilizado para inverter a ordem dos elementos de listas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de reverse
                 numeros = [1, 2, 3, 4]
                 numeros.reverse()
                 print(numeros)
                 # Saída: [4, 3, 2, 1]
-                """
+                '''
         },
         "Readlines": {
             "significado": "Método para ler todas as linhas de um arquivo e retorná-las como uma lista.",
             "uso": "É utilizado para processar arquivos linha por linha.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de readlines
                 with open('arquivo.txt', 'r') as file:
                     linhas = file.readlines()
                     print(linhas)
-                """
+                '''
         },
         "Remove": {
             "significado": "Método para remover o primeiro elemento de uma lista que corresponde a um valor especificado.",
             "uso": "É utilizado para modificar listas removendo um elemento específico.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de remove
                 frutas = ['maçã', 'banana', 'cereja']
                 frutas.remove('banana')
                 print(frutas)
                 # Saída: ['maçã', 'cereja']
-                """
+                '''
         },
         "Random": {
             "significado": "Módulo em Python para gerar números aleatórios e realizar operações relacionadas à aleatoriedade.",
             "uso": "É utilizado em simulações, jogos e testes aleatórios.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de random
                 import random
 
                 numero = random.randint(1, 10)
                 print(f"Número aleatório entre 1 e 10: {numero}")
-                """
+                '''
         },
         "Read_csv": {
             "significado": "Função da biblioteca pandas para ler arquivos CSV e carregá-los em um DataFrame.",
             "uso": "É utilizado para processar e analisar dados estruturados em formato CSV.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de read_csv
                 import pandas as pd
 
                 dados = pd.read_csv('dados.csv')
                 print(dados.head())
-                """
+                '''
         },
         "Rename": {
             "significado": "Função para alterar o nome de um arquivo ou diretório em Python usando o módulo `os`.",
             "uso": "É utilizado para modificar nomes de arquivos ou pastas em um sistema de arquivos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de rename
                 import os
 
                 os.rename('arquivo_antigo.txt', 'arquivo_novo.txt')
                 print("Arquivo renomeado.")
-                """
+                '''
         },
         "Raise": {
             "significado": "Instrução utilizada para gerar uma exceção em Python.",
             "uso": "É utilizado para lidar com erros ou interromper a execução com uma mensagem personalizada.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de raise
                 def dividir(a, b):
                     if b == 0:
@@ -10297,22 +10297,22 @@ diccionario_por = {
                     resultado = dividir(10, 0)
                 except ValueError as e:
                     print(e)
-                """
+                '''
         },
         "Round": {
             "significado": "Função para arredondar um número para o inteiro mais próximo ou para o número de casas decimais especificado.",
             "uso": "É utilizado para arredondar valores numéricos em cálculos ou formatos de saída.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de round
                 numero = 3.14159
                 print(round(numero, 2))
                 # Saída: 3.14
-                """
+                '''
         },
         "Reduce": {
             "significado": "Função do módulo `functools` que aplica uma função acumulativa aos elementos de um iterável.",
             "uso": "É utilizado para realizar cálculos acumulativos, como soma ou produto, em uma lista.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de reduce
                 from functools import reduce
 
@@ -10320,57 +10320,57 @@ diccionario_por = {
                 resultado = reduce(lambda x, y: x + y, numeros)
                 print(resultado)
                 # Saída: 10
-                """
+                '''
         },
         "Read_excel": {
             "significado": "Função da biblioteca pandas para ler arquivos Excel e carregá-los em um DataFrame.",
             "uso": "É utilizado para processar e analisar dados estruturados em formato de planilha.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de read_excel
                 import pandas as pd
 
                 dados = pd.read_excel('dados.xlsx')
                 print(dados.head())
-                """
+                '''
         },
         "Reversed": {
             "significado": "Função embutida em Python que retorna um iterador que percorre uma sequência em ordem inversa.",
             "uso": "É utilizado para iterar ou processar elementos em ordem inversa.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de reversed
                 lista = [1, 2, 3, 4]
                 for elemento in reversed(lista):
                     print(elemento)
                 # Saída: 4, 3, 2, 1
-                """
+                '''
         },
         "Radians": {
             "significado": "Função do módulo `math` que converte um ângulo de graus para radianos.",
             "uso": "É utilizado em cálculos matemáticos ou gráficos que requerem radianos em vez de graus.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de radians
                 import math
 
                 graus = 180
                 radianos = math.radians(graus)
                 print(f"{graus} graus são {radianos} radianos.")
-                """
+                '''
         },
         "Randint": {
             "significado": "Função do módulo `random` que gera um número inteiro aleatório entre um intervalo especificado.",
             "uso": "É utilizado para gerar números aleatórios em simulações ou testes.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de randint
                 import random
 
                 numero_aleatorio = random.randint(1, 100)
                 print(f"Número aleatório entre 1 e 100: {numero_aleatorio}")
-                """
+                '''
         },
         "Regex": {
             "significado": "Expressões regulares, uma sequência de caracteres que forma um padrão de busca para coincidir e manipular strings de texto.",
             "uso": "É utilizado para realizar buscas, validações e substituições em strings de texto.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de expressões regulares em Python
                 import re
 
@@ -10381,12 +10381,12 @@ diccionario_por = {
                     print("Ano:", correspondencia.group(1))
                     print("Mês:", correspondencia.group(2))
                     print("Dia:", correspondencia.group(3))
-                """
+                '''
         },
         "Reset_index": {
             "significado": "Método da biblioteca pandas para redefinir o índice de um DataFrame.",
             "uso": "É utilizado para reorganizar o índice de um DataFrame e converter o índice atual em uma coluna ou estabelecer um novo índice.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de reset_index
                 import pandas as pd
 
@@ -10396,23 +10396,23 @@ diccionario_por = {
 
                 dados_reset = dados.reset_index()
                 print("DataFrame com índice redefinido:\n", dados_reset)
-                """
+                '''
         },
         "Read_json": {
             "significado": "Função da biblioteca pandas para ler arquivos JSON e carregá-los em um DataFrame.",
             "uso": "É utilizado para processar e analisar dados armazenados em formato JSON.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de read_json
                 import pandas as pd
 
                 dados = pd.read_json('dados.json')
                 print(dados.head())
-                """
+                '''
         },
         "Request": {
             "significado": "Método ou função utilizada para realizar solicitações HTTP em Python, geralmente através da biblioteca `requests`.",
             "uso": "É utilizado para enviar e receber dados de um servidor web, permitindo a comunicação cliente-servidor.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de request com a biblioteca requests
                 import requests
 
@@ -10421,70 +10421,70 @@ diccionario_por = {
                     print("Dados recebidos:", resposta.json())
                 else:
                     print("Erro na solicitação:", resposta.status_code)
-                """
+                '''
         },
         "Row": {
             "significado": "Elemento de uma estrutura de dados em forma de linha, comumente em um DataFrame ou matriz.",
             "uso": "É utilizado para acessar ou manipular dados no nível de linha em estruturas como DataFrames do pandas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de acesso a uma linha em um DataFrame
                 import pandas as pd
 
                 dados = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
                 linha = dados.loc[1]  # Acessa a segunda linha (índice 1)
                 print("Linha selecionada:\n", linha)
-                """
+                '''
         },
         "Resize": {
             "significado": "Função ou método utilizado para alterar as dimensões de uma imagem, matriz ou array.",
             "uso": "É utilizado em processamento de imagens e manipulação de matrizes para ajustar o tamanho de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de resize com a biblioteca numpy
                 import numpy as np
 
                 array = np.array([[1, 2], [3, 4]])
                 array_redimensionado = np.resize(array, (3, 2))
                 print("Array redimensionado:\n", array_redimensionado)
-                """
+                '''
         },
         "Randrange": {
             "significado": "Função do módulo `random` que gera um número inteiro aleatório dentro de um intervalo especificado, excluindo o limite superior.",
             "uso": "É utilizado para obter um número aleatório em um intervalo definido, útil em simulações e testes.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de randrange
                 import random
 
                 numero_aleatorio = random.randrange(1, 10)  # Número entre 1 e 9
                 print(f"Número aleatório entre 1 e 9: {numero_aleatorio}")
-                """
+                '''
         },
         "Roll": {
             "significado": "Função utilizada para rotacionar ou deslocar os elementos de um array em uma direção específica.",
             "uso": "É utilizado em manipulações de dados e em cálculos numéricos para mover elementos em matrizes.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de roll com a biblioteca numpy
                 import numpy as np
 
                 array = np.array([1, 2, 3, 4, 5])
                 array_rolado = np.roll(array, shift=2)
                 print("Array após rolagem:", array_rolado)
-                """
+                '''
         },
         "Rand": {
             "significado": "Função utilizada para gerar números aleatórios, frequentemente associada à biblioteca `numpy` para distribuir números de forma uniforme.",
             "uso": "É utilizado para criar números aleatórios em simulações e testes estatísticos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de rand com a biblioteca numpy
                 import numpy as np
 
                 numero_aleatorio = np.random.rand()
                 print(f"Número aleatório entre 0 e 1: {numero_aleatorio}")
-                """
+                '''
         },
         "Row_stack": {
             "significado": "Função do `numpy` que empilha várias matrizes ou vetores de forma vertical, criando um novo array.",
             "uso": "É utilizado para combinar matrizes ou vetores em uma única estrutura de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de row_stack com numpy
                 import numpy as np
 
@@ -10492,82 +10492,82 @@ diccionario_por = {
                 array2 = np.array([4, 5, 6])
                 array_empilhado = np.row_stack((array1, array2))
                 print("Array empilhado:\n", array_empilhado)
-                """
+                '''
         },
         "Result": {
             "significado": "Valor que se obtém após a execução de uma operação ou função.",
             "uso": "É utilizado para armazenar e representar o resultado de cálculos ou processos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de resultado em Python
                 def somar(a, b):
                     return a + b
 
                 resultado = somar(3, 5)
                 print("O resultado da soma é:", resultado)
-                """
+                '''
         },
         "Read_pickle": {
             "significado": "Função do pandas para ler arquivos pickle e carregar objetos Python serializados.",
             "uso": "Utilizado para carregar dados armazenados em formato pickle.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de read_pickle
                 import pandas as pd
                 df = pd.read_pickle('dados.pkl')
                 print(df.head())
-                """
+                '''
         },
 
         "Resolve": {
             "significado": "Método para resolver caminhos de arquivo ou URL relativos para absolutos.",
             "uso": "Utilizado para obter o caminho completo de um arquivo ou URL.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de resolve
                 from pathlib import Path
                 caminho = Path('pasta/arquivo.txt').resolve()
                 print(caminho)
-                """
+                '''
         },
 
         "Reset": {
             "significado": "Método para redefinir o índice de um DataFrame ou reiniciar um objeto iterável.",
             "uso": "Utilizado para redefinir o índice de um DataFrame ou reiniciar um iterador.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de reset
                 import pandas as pd
                 df = pd.DataFrame({'A': [1, 2, 3]})
                 df_reset = df.reset_index(drop=True)
                 print(df_reset)
-                """
+                '''
         },
 
         "Read_sql": {
             "significado": "Função do pandas para ler dados de um banco de dados SQL.",
             "uso": "Utilizado para carregar dados de uma consulta SQL em um DataFrame.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de read_sql
                 import pandas as pd
                 import sqlite3
                 conn = sqlite3.connect('banco.db')
                 df = pd.read_sql('SELECT * FROM tabela', conn)
                 print(df.head())
-                """
+                '''
         },
 
         "Root": {
             "significado": "Nó principal em uma estrutura de árvore ou diretório raiz em um sistema de arquivos.",
             "uso": "Utilizado para se referir ao nível superior de uma hierarquia.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de root
                 from pathlib import Path
                 raiz = Path('/')
                 print(list(raiz.iterdir()))
-                """
+                '''
         },
 
         "Recursion": {
             "significado": "Técnica de programação onde uma função chama a si mesma.",
             "uso": "Utilizado para resolver problemas que podem ser divididos em subproblemas menores e similares.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de recursão
                 def fatorial(n):
                     if n == 0 or n == 1:
@@ -10575,139 +10575,139 @@ diccionario_por = {
                     else:
                         return n * fatorial(n-1)
                 print(fatorial(5))
-                """
+                '''
         },
 
         "Readline": {
             "significado": "Método para ler uma linha de um arquivo ou entrada de texto.",
             "uso": "Utilizado para ler arquivos linha por linha ou obter entrada do usuário.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de readline
                 with open('arquivo.txt', 'r') as f:
                     primeira_linha = f.readline()
                 print(primeira_linha)
-                """
+                '''
         },
 
         "Rjust": {
             "significado": "Método de string para alinhar o texto à direita preenchendo com caracteres à esquerda.",
             "uso": "Utilizado para formatar strings com alinhamento à direita.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de rjust
                 texto = "Python"
                 print(texto.rjust(10, '*'))
                 # Saída: ****Python
-                """
+                '''
         },
 
         "Rowcount": {
             "significado": "Atributo que retorna o número de linhas afetadas pela última operação SQL.",
             "uso": "Utilizado para verificar quantas linhas foram modificadas em uma operação de banco de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de rowcount
                 import sqlite3
                 conn = sqlite3.connect('banco.db')
                 cursor = conn.cursor()
                 cursor.execute("UPDATE tabela SET coluna = 1")
                 print(f"Linhas afetadas: {cursor.rowcount}")
-                """
+                '''
         },
 
         "Read_table": {
             "significado": "Função do pandas para ler arquivos de texto delimitados em um DataFrame.",
             "uso": "Utilizado para carregar dados de arquivos CSV, TSV ou outros formatos delimitados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de read_table
                 import pandas as pd
                 df = pd.read_table('dados.csv', sep=',')
                 print(df.head())
-                """
+                '''
         },
 
         "Rank": {
             "significado": "Método do pandas para calcular a classificação numérica dos valores em uma Series ou DataFrame.",
             "uso": "Utilizado para atribuir ranks a valores em uma série de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de rank
                 import pandas as pd
                 s = pd.Series([1, 2, 2, 3])
                 print(s.rank())
-                """
+                '''
         },
 
         "Reshape": {
             "significado": "Método para alterar a forma de um array sem modificar seus dados.",
             "uso": "Utilizado para reorganizar os elementos de um array em uma nova forma.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de reshape
                 import numpy as np
                 arr = np.array([1, 2, 3, 4, 5, 6])
                 print(arr.reshape(2, 3))
-                """
+                '''
         },
 
         "Read_sql_table": {
             "significado": "Função do pandas para ler uma tabela SQL inteira em um DataFrame.",
             "uso": "Utilizado para carregar dados de uma tabela SQL específica.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de read_sql_table
                 import pandas as pd
                 from sqlalchemy import create_engine
                 engine = create_engine('sqlite:///banco.db')
                 df = pd.read_sql_table('nome_tabela', engine)
                 print(df.head())
-                """
+                '''
         },
 
         "Rpartition": {
             "significado": "Método de string que divide uma string em três partes usando um separador, começando pela direita.",
             "uso": "Utilizado para dividir strings em partes com base em um separador, priorizando a última ocorrência.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de rpartition
                 texto = "python:é:incrível"
                 print(texto.rpartition(':'))
                 # Saída: ('python:é', ':', 'incrível')
-                """
+                '''
         },
 
         "Random_sample": {
             "significado": "Método para selecionar uma amostra aleatória de elementos de um conjunto de dados.",
             "uso": "Utilizado para obter uma amostra aleatória de um DataFrame ou Series.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de random_sample
                 import pandas as pd
                 df = pd.DataFrame({'A': range(10)})
                 amostra = df.sample(n=3)
                 print(amostra)
-                """
+                '''
         },
 
         "Real": {
             "significado": "Propriedade que retorna a parte real de um número complexo.",
             "uso": "Utilizado para obter a parte real de números complexos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de real
                 z = 3 + 4j
                 print(z.real)
                 # Saída: 3.0
-                """
+                '''
         },
         "Reset_states": {
             "significado": "Método para redefinir os estados internos de um objeto ou modelo.",
             "uso": "Utilizado para reinicializar estados em modelos de aprendizado de máquina ou objetos stateful.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de reset_states
                 from tensorflow.keras.models import Sequential
                 model = Sequential()
                 model.reset_states()
                 print("Estados do modelo redefinidos")
-                """
+                '''
         },
 
         "Rich_comparison": {
             "significado": "Conjunto de métodos para comparação avançada entre objetos em Python.",
             "uso": "Utilizado para implementar operadores de comparação personalizados em classes.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de rich comparison
                 class Pessoa:
                     def __init__(self, idade):
@@ -10719,13 +10719,13 @@ diccionario_por = {
                 p1 = Pessoa(25)
                 p2 = Pessoa(30)
                 print(p1 < p2)  # Saída: True
-                """
+                '''
         },
 
         "Retry": {
             "significado": "Mecanismo para tentar executar uma operação novamente em caso de falha.",
             "uso": "Utilizado para implementar lógica de repetição em operações propensas a falhas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de retry
                 from tenacity import retry, stop_after_attempt
 
@@ -10739,13 +10739,13 @@ diccionario_por = {
 
                 resultado = operacao_instavel()
                 print(resultado)
-                """
+                '''
         },
 
         "Random_state": {
             "significado": "Parâmetro para controlar a geração de números aleatórios em algoritmos.",
             "uso": "Utilizado para garantir reprodutibilidade em operações que envolvem aleatoriedade.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de random_state
                 import numpy as np
                 from sklearn.model_selection import train_test_split
@@ -10754,26 +10754,26 @@ diccionario_por = {
                 y = np.array([0, 1, 0, 1])
                 X_train, X_test, y_train, y_test = train_test_split(X, y, random_state=42)
                 print("Conjunto de treinamento:", X_train)
-                """
+                '''
         },
 
         "Rotate": {
             "significado": "Função para rotacionar elementos de uma matriz ou array.",
             "uso": "Utilizado para girar elementos em arrays ou matrizes.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de rotate
                 import numpy as np
 
                 arr = np.array([1, 2, 3, 4, 5])
                 rotated = np.roll(arr, shift=2)
                 print("Array rotacionado:", rotated)
-                """
+                '''
         },
 
         "Rpc": {
             "significado": "Remote Procedure Call, um protocolo para execução de procedimentos em sistemas distribuídos.",
             "uso": "Utilizado para comunicação entre processos em diferentes máquinas ou ambientes.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de RPC (usando xmlrpc)
                 from xmlrpc.server import SimpleXMLRPCServer
                 from xmlrpc.client import ServerProxy
@@ -10789,13 +10789,13 @@ diccionario_por = {
                 cliente = ServerProxy("http://localhost:8000")
                 resultado = cliente.somar(5, 3)
                 print("Resultado da soma:", resultado)
-                """
+                '''
         },
 
         "Read_sql_query": {
             "significado": "Função do pandas para executar uma consulta SQL e retornar os resultados como um DataFrame.",
             "uso": "Utilizado para executar consultas SQL personalizadas e carregar os resultados em um DataFrame.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de read_sql_query
                 import pandas as pd
                 import sqlite3
@@ -10804,13 +10804,13 @@ diccionario_por = {
                 query = "SELECT * FROM clientes WHERE idade > 30"
                 df = pd.read_sql_query(query, conn)
                 print(df.head())
-                """
+                '''
         },
 
         "Retry_on_failure": {
             "significado": "Decorador ou mecanismo para repetir automaticamente uma função em caso de falha.",
             "uso": "Utilizado para implementar lógica de repetição em funções que podem falhar temporariamente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de retry_on_failure
                 from tenacity import retry, stop_after_attempt, wait_fixed
 
@@ -10824,25 +10824,25 @@ diccionario_por = {
 
                 resultado = funcao_instavel()
                 print(resultado)
-                """
+                '''
         },
 
         "Repeat": {
             "significado": "Função para repetir elementos de uma sequência.",
             "uso": "Utilizado para criar uma nova sequência com elementos repetidos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de repeat
                 from itertools import repeat
 
                 lista_repetida = list(repeat("Python", 3))
                 print(lista_repetida)  # Saída: ['Python', 'Python', 'Python']
-                """
+                '''
         },
 
         "Require": {
             "significado": "Função para importar módulos em algumas linguagens de programação.",
             "uso": "Utilizado para incluir e usar funcionalidades de outros arquivos ou módulos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de require (em Node.js, não em Python)
                 # const fs = require('fs');
                 # 
@@ -10856,13 +10856,13 @@ diccionario_por = {
 
                 conteudo = os.listdir('.')
                 print("Conteúdo do diretório:", conteudo)
-                """
+                '''
         },
 
         "Replace_nan": {
             "significado": "Método para substituir valores NaN (Not a Number) em um DataFrame ou Series.",
             "uso": "Utilizado para tratar valores ausentes em conjuntos de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de replace_nan
                 import pandas as pd
                 import numpy as np
@@ -10870,26 +10870,26 @@ diccionario_por = {
                 df = pd.DataFrame({'A': [1, np.nan, 3], 'B': [4, 5, np.nan]})
                 df_limpo = df.fillna(0)  # Substitui NaN por 0
                 print(df_limpo)
-                """
+                '''
         },
 
         "Record": {
             "significado": "Tipo de dado que representa uma coleção de campos nomeados.",
             "uso": "Utilizado para criar estruturas de dados personalizadas com campos nomeados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de record
                 from collections import namedtuple
 
                 Pessoa = namedtuple('Pessoa', ['nome', 'idade', 'cidade'])
                 p = Pessoa('Ana', 30, 'São Paulo')
                 print(p.nome, p.idade, p.cidade)
-                """
+                '''
         },
 
         "Randomized_search": {
             "significado": "Técnica de otimização de hiperparâmetros que seleciona combinações aleatórias.",
             "uso": "Utilizado para encontrar os melhores hiperparâmetros em modelos de machine learning.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de randomized search
                 from sklearn.model_selection import RandomizedSearchCV
                 from sklearn.ensemble import RandomForestClassifier
@@ -10902,50 +10902,50 @@ diccionario_por = {
                 random_search = RandomizedSearchCV(rf, param_distributions=param_dist, n_iter=5, cv=3)
                 # random_search.fit(X, y)  # Assumindo que X e y estão definidos
                 print("Melhores parâmetros:", random_search.best_params_)
-                """
+                '''
         },
 
         "Rollaxis": {
             "significado": "Função do NumPy para rolar um eixo de um array para uma nova posição.",
             "uso": "Utilizado para reorganizar as dimensões de um array multidimensional.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de rollaxis
                 import numpy as np
 
                 a = np.ones((3, 4, 5, 6))
                 b = np.rollaxis(a, 3, 1)  # Move o eixo 3 para a posição 1
                 print("Nova forma do array:", b.shape)
-                """
+                '''
         },
 
         "Resource": {
             "significado": "Objeto que representa um recurso externo, como um arquivo ou conexão de rede.",
             "uso": "Utilizado para gerenciar recursos que precisam ser liberados após o uso.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de resource (gerenciamento de contexto)
                 with open('arquivo.txt', 'w') as f:
                     f.write('Olá, mundo!')
                 print("Arquivo escrito e fechado automaticamente")
-                """
+                '''
         },
 
         "Return": {
             "significado": "Palavra-chave para especificar o valor de retorno de uma função.",
             "uso": "Utilizado para definir o que uma função deve retornar quando chamada.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de return
                 def quadrado(x):
                     return x ** 2
 
                 resultado = quadrado(5)
                 print("O quadrado de 5 é:", resultado)
-                """
+                '''
         },
 
         "Robust_scaler": {
             "significado": "Técnica de escalonamento de dados que é robusta a outliers.",
             "uso": "Utilizado para normalizar características em conjuntos de dados com outliers.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de robust scaler
                 from sklearn.preprocessing import RobustScaler
                 import numpy as np
@@ -10954,26 +10954,26 @@ diccionario_por = {
                 scaler = RobustScaler()
                 dados_escalados = scaler.fit_transform(dados)
                 print("Dados escalados:", dados_escalados)
-                """
+                '''
         },
 
         "Row_iter": {
             "significado": "Método para iterar sobre as linhas de um DataFrame ou matriz.",
             "uso": "Utilizado para processar dados linha por linha em estruturas de dados tabulares.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de row_iter (iterrows em pandas)
                 import pandas as pd
 
                 df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
                 for index, row in df.iterrows():
                     print(f"Índice: {index}, A: {row['A']}, B: {row['B']}")
-                """
+                '''
         },
 
         "Route": {
             "significado": "Definição de um caminho URL em frameworks web.",
             "uso": "Utilizado para mapear URLs para funções ou métodos em aplicações web.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de route (usando Flask)
                 from flask import Flask
 
@@ -10988,13 +10988,13 @@ diccionario_por = {
                     return 'Sobre nós'
 
                 # app.run()  # Inicia o servidor
-                """
+                '''
         },
 
         "Refresh": {
             "significado": "Ação de atualizar ou recarregar dados ou uma interface.",
             "uso": "Utilizado para atualizar informações em tempo real ou recarregar uma página web.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de refresh (conceitual)
                 import time
 
@@ -11009,26 +11009,26 @@ diccionario_por = {
                 time.sleep(2)
                 dados = atualizar_dados()
                 print("Dados após refresh:", dados)
-                """
+                '''
         },
 
         "Random_permutation": {
             "significado": "Função para gerar uma permutação aleatória de uma sequência.",
             "uso": "Utilizado para embaralhar elementos de uma lista ou array.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de random_permutation
                 import numpy as np
 
                 arr = np.array([1, 2, 3, 4, 5])
                 permutacao = np.random.permutation(arr)
                 print("Array permutado:", permutacao)
-                """
+                '''
         },
 
         "Register": {
             "significado": "Ação de registrar uma função, classe ou objeto em um sistema ou framework.",
             "uso": "Utilizado para adicionar funcionalidades a um sistema de forma dinâmica.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de register (com decorador)
                 comandos = {}
 
@@ -11045,7 +11045,7 @@ diccionario_por = {
                 # Usando o comando registrado
                 resultado = comandos['saudacao']('Maria')
                 print(resultado)
-                """
+                '''
         },
     },
     "s": {
@@ -11053,42 +11053,42 @@ diccionario_por = {
         "Split": {
             "significado": "Método de string que divide uma string em uma lista de substrings com base em um delimitador.",
             "uso": "Utilizado para separar uma string em partes menores, frequentemente usado para processar texto.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de split
                 frase = "Python é uma linguagem incrível"
                 palavras = frase.split()
                 print(palavras)
                 # Saída: ['Python', 'é', 'uma', 'linguagem', 'incrível']
-                """
+                '''
         },
 
         "Sort": {
             "significado": "Método de lista que ordena os elementos in-place (na própria lista).",
             "uso": "Utilizado para ordenar listas em ordem ascendente ou com uma função de chave personalizada.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de sort
                 numeros = [3, 1, 4, 1, 5, 9, 2]
                 numeros.sort()
                 print(numeros)
                 # Saída: [1, 1, 2, 3, 4, 5, 9]
-                """
+                '''
         },
 
         "Str": {
             "significado": "Função built-in que retorna uma representação de string de um objeto.",
             "uso": "Utilizado para converter outros tipos de dados em strings.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de str
                 numero = 42
                 texto = str(numero)
                 print(f"O número {texto} agora é uma string.")
-                """
+                '''
         },
 
         "Sqrt": {
             "significado": "Função do módulo math que calcula a raiz quadrada de um número.",
             "uso": "Utilizado em cálculos matemáticos que requerem raiz quadrada.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de sqrt
                 import math
 
@@ -11096,183 +11096,183 @@ diccionario_por = {
                 raiz = math.sqrt(numero)
                 print(f"A raiz quadrada de {numero} é {raiz}")
                 # Saída: A raiz quadrada de 16 é 4.0
-                """
+                '''
         },
 
         "Set": {
             "significado": "Tipo de dados que representa uma coleção não ordenada de elementos únicos.",
             "uso": "Utilizado para armazenar valores únicos e realizar operações de conjunto como união e interseção.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de set
                 numeros = {1, 2, 3, 4, 5, 5, 4, 3, 2, 1}
                 print(numeros)
                 # Saída: {1, 2, 3, 4, 5}
-                """
+                '''
         },
 
         "Slice": {
             "significado": "Operação que extrai uma parte de uma sequência (como uma lista ou string).",
             "uso": "Utilizado para obter uma subsequência de elementos de uma sequência.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de slice
                 lista = [0, 1, 2, 3, 4, 5]
                 parte = lista[2:5]
                 print(parte)
                 # Saída: [2, 3, 4]
-                """
+                '''
         },
 
         "Startswith": {
             "significado": "Método de string que verifica se uma string começa com um determinado prefixo.",
             "uso": "Utilizado para testar o início de strings, frequentemente em validações ou filtragens.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de startswith
                 texto = "Python é incrível"
                 if texto.startswith("Python"):
                     print("A frase começa com Python!")
-                """
+                '''
         },
 
         "Sum": {
             "significado": "Função built-in que retorna a soma de uma sequência de números.",
             "uso": "Utilizado para calcular a soma total de elementos em uma lista ou outro iterável.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de sum
                 numeros = [1, 2, 3, 4, 5]
                 total = sum(numeros)
                 print(f"A soma dos números é: {total}")
                 # Saída: A soma dos números é: 15
-                """
+                '''
         },
 
         "Sorted": {
             "significado": "Função built-in que retorna uma nova lista ordenada a partir de um iterável.",
             "uso": "Utilizado para obter uma versão ordenada de uma sequência sem modificar a original.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de sorted
                 numeros = [3, 1, 4, 1, 5, 9, 2]
                 ordenados = sorted(numeros)
                 print(ordenados)
                 # Saída: [1, 1, 2, 3, 4, 5, 9]
-                """
+                '''
         },
 
         "Subprocess": {
             "significado": "Módulo que permite a execução de comandos do sistema operacional e a interação com processos externos.",
             "uso": "Utilizado para executar comandos do shell, iniciar programas externos e capturar suas saídas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de subprocess
                 import subprocess
 
                 resultado = subprocess.run(["echo", "Olá, mundo!"], capture_output=True, text=True)
                 print(resultado.stdout)
                 # Saída: Olá, mundo!
-                """
+                '''
         },
 
         "Setdefault": {
             "significado": "Método de dicionário que retorna o valor de uma chave, inserindo um valor padrão se a chave não existir.",
             "uso": "Utilizado para obter valores de um dicionário com um valor padrão para chaves ausentes.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de setdefault
                 dicionario = {"a": 1, "b": 2}
                 valor = dicionario.setdefault("c", 3)
                 print(valor)  # Saída: 3
                 print(dicionario)  # Saída: {"a": 1, "b": 2, "c": 3}
-                """
+                '''
         },
 
         "Sample": {
             "significado": "Método do módulo random que retorna uma lista com uma seleção aleatória de elementos.",
             "uso": "Utilizado para obter uma amostra aleatória de elementos de uma sequência.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de sample
                 import random
 
                 lista = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
                 amostra = random.sample(lista, 3)
                 print(f"Amostra aleatória: {amostra}")
-                """
+                '''
         },
 
         "Seek": {
             "significado": "Método de objetos de arquivo que move o cursor para uma posição específica no arquivo.",
             "uso": "Utilizado para navegar em arquivos, permitindo leitura ou escrita em posições específicas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de seek
                 with open("arquivo.txt", "r") as arquivo:
                     arquivo.seek(5)  # Move o cursor para o 6º byte
                     conteudo = arquivo.read(10)
                     print(conteudo)
-                """
+                '''
         },
 
         "Symmetric_difference": {
             "significado": "Método de conjuntos que retorna um novo conjunto com elementos que estão em um conjunto ou outro, mas não em ambos.",
             "uso": "Utilizado para encontrar elementos únicos entre dois conjuntos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de symmetric_difference
                 set1 = {1, 2, 3, 4, 5}
                 set2 = {4, 5, 6, 7, 8}
                 diff = set1.symmetric_difference(set2)
                 print(diff)
                 # Saída: {1, 2, 3, 6, 7, 8}
-                """
+                '''
         },
 
         "Shutil": {
             "significado": "Módulo que fornece operações de alto nível para manipulação de arquivos e diretórios.",
             "uso": "Utilizado para copiar, mover, renomear e excluir arquivos e diretórios.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de shutil
                 import shutil
 
                 shutil.copy("arquivo_origem.txt", "arquivo_destino.txt")
                 print("Arquivo copiado com sucesso!")
-                """
+                '''
         },
 
         "Strip": {
             "significado": "Método de string que remove espaços em branco (ou outros caracteres especificados) do início e do fim da string.",
             "uso": "Utilizado para limpar strings de espaços indesejados ou caracteres específicos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de strip
                 texto = "   Python é incrível!   "
                 limpo = texto.strip()
                 print(f"'{limpo}'")
                 # Saída: 'Python é incrível!'
-                """
+                '''
         },
 
         "Splitlines": {
             "significado": "Método de string que divide uma string em uma lista de linhas.",
             "uso": "Utilizado para separar texto em linhas individuais, útil ao processar arquivos de texto.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de splitlines
                 texto = "Linha 1\\nLinha 2\\nLinha 3"
                 linhas = texto.splitlines()
                 print(linhas)
                 # Saída: ['Linha 1', 'Linha 2', 'Linha 3']
-                """
+                '''
         },
 
         "Shape": {
             "significado": "Atributo de arrays NumPy que retorna uma tupla com as dimensões do array.",
             "uso": "Utilizado para obter informações sobre a estrutura e tamanho de arrays multidimensionais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de shape
                 import numpy as np
 
                 array = np.array([[1, 2, 3], [4, 5, 6]])
                 print(f"Forma do array: {array.shape}")
                 # Saída: Forma do array: (2, 3)
-                """
+                '''
         },
 
         "Scatter": {
             "significado": "Função do matplotlib para criar gráficos de dispersão.",
             "uso": "Utilizado para visualizar a relação entre duas variáveis em um conjunto de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de scatter
                 import matplotlib.pyplot as plt
 
@@ -11283,25 +11283,25 @@ diccionario_por = {
                 plt.ylabel('Eixo Y')
                 plt.title('Gráfico de Dispersão')
                 plt.show()
-                """
+                '''
         },
 
         "Series": {
             "significado": "Estrutura de dados unidimensional do pandas, semelhante a uma coluna em uma planilha.",
             "uso": "Utilizado para armazenar e manipular dados em uma única dimensão, com índices.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de Series
                 import pandas as pd
 
                 dados = pd.Series([1, 2, 3, 4], index=['a', 'b', 'c', 'd'])
                 print(dados)
-                """
+                '''
         },
 
         "Serialize": {
             "significado": "Processo de converter um objeto em um formato que pode ser armazenado ou transmitido.",
             "uso": "Utilizado para salvar objetos em arquivos ou enviar dados através de redes.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de serialize (usando pickle)
                 import pickle
 
@@ -11309,13 +11309,13 @@ diccionario_por = {
                 with open('dados.pkl', 'wb') as arquivo:
                     pickle.dump(dados, arquivo)
                 print("Dados serializados e salvos.")
-                """
+                '''
         },
 
         "Sin": {
             "significado": "Função do módulo math que calcula o seno de um ângulo em radianos.",
             "uso": "Utilizado em cálculos trigonométricos e matemáticos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de sin
                 import math
 
@@ -11323,26 +11323,26 @@ diccionario_por = {
                 seno = math.sin(angulo)
                 print(f"O seno de 90 graus é: {seno}")
                 # Saída: O seno de 90 graus é: 1.0
-                """
+                '''
         },
 
         "Sortedcontainers": {
             "significado": "Biblioteca que fornece implementações eficientes de contêineres ordenados em Python.",
             "uso": "Utilizado para manter coleções de dados ordenados com alta performance.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de sortedcontainers
                 from sortedcontainers import SortedList
 
                 lista_ordenada = SortedList([3, 1, 4, 1, 5, 9, 2])
                 print(lista_ordenada)
                 # Saída: SortedList([1, 1, 2, 3, 4, 5, 9])
-                """
+                '''
         },
 
         "Sklearn": {
             "significado": "Abreviação de scikit-learn, uma biblioteca de aprendizado de máquina para Python.",
             "uso": "Utilizado para implementar algoritmos de machine learning, pré-processamento de dados e avaliação de modelos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de sklearn
                 from sklearn.model_selection import train_test_split
                 from sklearn.neighbors import KNeighborsClassifier
@@ -11355,13 +11355,13 @@ diccionario_por = {
                 clf = KNeighborsClassifier()
                 clf.fit(X_train, y_train)
                 print(f"Acurácia: {clf.score(X_test, y_test)}")
-                """
+                '''
         },
 
         "Style": {
             "significado": "Módulo do matplotlib que permite personalizar a aparência de gráficos e visualizações.",
             "uso": "Utilizado para ajustar cores, fontes e outros aspectos visuais de gráficos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de style
                 import matplotlib.pyplot as plt
 
@@ -11369,13 +11369,13 @@ diccionario_por = {
                 plt.plot([1, 2, 3, 4])
                 plt.title('Gráfico com Estilo Seaborn')
                 plt.show()
-                """
+                '''
         },
 
         "Savefig": {
             "significado": "Método do matplotlib para salvar uma figura em um arquivo.",
             "uso": "Utilizado para exportar gráficos e visualizações como imagens.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de savefig
                 import matplotlib.pyplot as plt
 
@@ -11383,13 +11383,13 @@ diccionario_por = {
                 plt.title('Meu Gráfico')
                 plt.savefig('meu_grafico.png')
                 print("Gráfico salvo como 'meu_grafico.png'")
-                """
+                '''
         },
 
         "Searchsorted": {
             "significado": "Método do NumPy que encontra índices onde elementos devem ser inseridos para manter a ordem em um array ordenado.",
             "uso": "Utilizado para busca binária e inserção em arrays ordenados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de searchsorted
                 import numpy as np
 
@@ -11397,13 +11397,13 @@ diccionario_por = {
                 indices = np.searchsorted(arr, [2, 6, 8])
                 print(f"Índices para inserção: {indices}")
                 # Saída: Índices para inserção: [1 3 4]
-                """
+                '''
         },
 
         "Squeeze": {
             "significado": "Método do NumPy que remove dimensões unitárias (com tamanho 1) de um array.",
             "uso": "Utilizado para simplificar a estrutura de arrays multidimensionais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de squeeze
                 import numpy as np
 
@@ -11413,13 +11413,13 @@ diccionario_por = {
                 print(f"Forma após squeeze: {squeezed.shape}")
                 # Saída: Forma original: (1, 3, 1)
                 #        Forma após squeeze: (3,)
-                """
+                '''
         },
 
         "Swapaxes": {
             "significado": "Método do NumPy que troca dois eixos de um array.",
             "uso": "Utilizado para reorganizar as dimensões de arrays multidimensionais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de swapaxes
                 import numpy as np
 
@@ -11429,13 +11429,13 @@ diccionario_por = {
                 print(arr)
                 print("Array com eixos trocados:")
                 print(trocado)
-                """
+                '''
         },
 
         "Subplot": {
             "significado": "Função do matplotlib para criar múltiplos gráficos em uma única figura.",
             "uso": "Utilizado para organizar e exibir vários gráficos juntos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de subplot
                 import matplotlib.pyplot as plt
                 import numpy as np
@@ -11452,13 +11452,13 @@ diccionario_por = {
 
                 plt.tight_layout()
                 plt.show()
-                """
+                '''
         },
 
         "Seaborn": {
             "significado": "Biblioteca de visualização de dados baseada no matplotlib, com estilos e funções estatísticas adicionais.",
             "uso": "Utilizado para criar gráficos estatísticos atraentes e informativos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de seaborn
                 import seaborn as sns
                 import matplotlib.pyplot as plt
@@ -11467,13 +11467,13 @@ diccionario_por = {
                 sns.scatterplot(x="total_bill", y="tip", data=tips)
                 plt.title('Relação entre Conta Total e Gorjeta')
                 plt.show()
-                """
+                '''
         },
 
         "Scipy": {
             "significado": "Biblioteca científica para Python que fornece módulos para otimização, álgebra linear, integração e estatísticas.",
             "uso": "Utilizado para computação científica e técnica avançada.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de scipy (otimização)
                 from scipy.optimize import minimize_scalar
 
@@ -11482,25 +11482,25 @@ diccionario_por = {
 
                 res = minimize_scalar(f)
                 print(f"Mínimo encontrado em x = {res.x}")
-                """
+                '''
         },
 
         "Sys": {
             "significado": "Módulo que fornece acesso a algumas variáveis e funções utilizadas ou mantidas pelo interpretador Python.",
             "uso": "Utilizado para interagir com o ambiente do sistema e o interpretador Python.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de sys
                 import sys
 
                 print(f"Versão do Python: {sys.version}")
                 print(f"Caminho de busca de módulos: {sys.path}")
-                """
+                '''
         },
 
         "Sympy": {
             "significado": "Biblioteca para matemática simbólica em Python.",
             "uso": "Utilizado para cálculos algébricos, cálculo e teoria dos números.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de sympy
                 import sympy as sp
 
@@ -11508,13 +11508,13 @@ diccionario_por = {
                 expr = x**2 + 2*x + 1
                 solved = sp.solve(expr, x)
                 print(f"Raízes de {expr} = 0: {solved}")
-                """
+                '''
         },
 
         "Statsmodels": {
             "significado": "Biblioteca para modelagem estatística e econométrica em Python.",
             "uso": "Utilizado para estimação de vários modelos estatísticos e realização de testes estatísticos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de statsmodels
                 import statsmodels.api as sm
                 import numpy as np
@@ -11524,13 +11524,13 @@ diccionario_por = {
                 X = sm.add_constant(X)
                 model = sm.OLS(y, X).fit()
                 print(model.summary())
-                """
+                '''
         },
 
         "Setattr": {
             "significado": "Função built-in que define o valor de um atributo de um objeto.",
             "uso": "Utilizado para adicionar ou modificar atributos de objetos dinamicamente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de setattr
                 class Pessoa:
                     pass
@@ -11538,61 +11538,61 @@ diccionario_por = {
                 p = Pessoa()
                 setattr(p, 'nome', 'Alice')
                 print(p.nome)  # Saída: Alice
-                """
+                '''
         },
 
         "Subprocess.run": {
             "significado": "Função do módulo subprocess que executa um comando como um subprocesso.",
             "uso": "Utilizado para executar comandos do sistema operacional e capturar sua saída.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de subprocess.run
                 import subprocess
 
                 resultado = subprocess.run(['echo', 'Olá, mundo!'], capture_output=True, text=True)
                 print(f"Saída: {resultado.stdout}")
-                """
+                '''
         },
         "Select": {
             "significado": "Função ou método usado para selecionar elementos específicos de uma estrutura de dados.",
             "uso": "Utilizado para filtrar ou escolher dados com base em critérios específicos, frequentemente em bancos de dados ou DataFrames.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de select com pandas
                 import pandas as pd
 
                 df = pd.DataFrame({'A': [1, 2, 3], 'B': [4, 5, 6]})
                 selecionado = df.loc[df['A'] > 1, 'B']
                 print(selecionado)
-                """
+                '''
         },
 
         "Show": {
             "significado": "Método ou função usado para exibir ou apresentar dados, geralmente em contextos de visualização.",
             "uso": "Utilizado para mostrar gráficos, imagens ou informações na tela ou em uma interface gráfica.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de show com matplotlib
                 import matplotlib.pyplot as plt
 
                 plt.plot([1, 2, 3, 4])
                 plt.title('Gráfico Simples')
                 plt.show()
-                """
+                '''
         },
 
         "Step": {
             "significado": "Parâmetro ou função que define o intervalo entre valores em uma sequência ou iteração.",
             "uso": "Utilizado para controlar o passo em loops, slices ou geração de sequências numéricas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de step em um range
                 for i in range(0, 10, 2):  # step de 2
                     print(i)
                 # Saída: 0, 2, 4, 6, 8
-                """
+                '''
         },
 
         "Save": {
             "significado": "Método ou função usado para salvar dados em um arquivo ou armazenamento persistente.",
             "uso": "Utilizado para armazenar informações, objetos ou estados para uso futuro.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de save com pickle
                 import pickle
 
@@ -11600,13 +11600,13 @@ diccionario_por = {
                 with open('dados.pkl', 'wb') as arquivo:
                     pickle.dump(dados, arquivo)
                 print("Dados salvos com sucesso.")
-                """
+                '''
         },
 
         "Shelve": {
             "significado": "Módulo Python que fornece um armazenamento persistente de objetos semelhante a um dicionário.",
             "uso": "Utilizado para armazenar e recuperar objetos Python de forma persistente em um arquivo.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de shelve
                 import shelve
 
@@ -11616,13 +11616,13 @@ diccionario_por = {
                 with shelve.open('meu_shelve') as db:
                     print(db['chave'])
                 # Saída: ['dados', 'para', 'armazenar']
-                """
+                '''
         },
 
         "Subclass": {
             "significado": "Classe que herda atributos e métodos de outra classe (superclasse).",
             "uso": "Utilizado para criar hierarquias de classes e reutilizar código em programação orientada a objetos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de subclass
                 class Animal:
                     def falar(self):
@@ -11634,13 +11634,13 @@ diccionario_por = {
 
                 rex = Cachorro()
                 print(rex.falar())  # Saída: Au au!
-                """
+                '''
         },
 
         "Super": {
             "significado": "Função usada para chamar métodos da superclasse (classe pai) em uma subclasse.",
             "uso": "Utilizado para estender ou modificar o comportamento de métodos herdados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de super
                 class Veiculo:
                     def __init__(self, rodas):
@@ -11653,26 +11653,26 @@ diccionario_por = {
 
                 meu_carro = Carro(4, "Toyota")
                 print(f"Meu {meu_carro.marca} tem {meu_carro.rodas} rodas.")
-                """
+                '''
         },
 
         "Savetxt": {
             "significado": "Função do NumPy para salvar um array em um arquivo de texto.",
             "uso": "Utilizado para armazenar dados numéricos em formato de texto legível.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de savetxt
                 import numpy as np
 
                 arr = np.array([[1, 2, 3], [4, 5, 6]])
                 np.savetxt('array.txt', arr)
                 print("Array salvo em 'array.txt'")
-                """
+                '''
         },
 
         "Subclassing": {
             "significado": "Processo de criar uma nova classe baseada em uma classe existente.",
             "uso": "Utilizado para estender ou modificar o comportamento de classes existentes em programação orientada a objetos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de subclassing
                 class Lista(list):
                     def soma(self):
@@ -11680,24 +11680,24 @@ diccionario_por = {
 
                 minha_lista = Lista([1, 2, 3, 4])
                 print(minha_lista.soma())  # Saída: 10
-                """
+                '''
         },
 
         "Scanf": {
             "significado": "Função em algumas linguagens para ler entrada formatada (não nativa em Python).",
             "uso": "Em Python, funções similares são implementadas usando input() e string parsing.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo similar ao scanf em Python
                 entrada = input("Digite dois números separados por espaço: ")
                 a, b = map(int, entrada.split())
                 print(f"Você digitou: {a} e {b}")
-                """
+                '''
         },
 
         "Search": {
             "significado": "Método ou função para procurar um padrão ou valor em uma estrutura de dados.",
             "uso": "Utilizado para encontrar ocorrências de elementos em strings, listas ou outras estruturas.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de search com regex
                 import re
 
@@ -11705,13 +11705,13 @@ diccionario_por = {
                 resultado = re.search(r"poderosa", texto)
                 if resultado:
                     print(f"Encontrado '{resultado.group()}' na posição {resultado.start()}")
-                """
+                '''
         },
 
         "Splitext": {
             "significado": "Função do módulo os.path que divide um nome de arquivo em nome e extensão.",
             "uso": "Utilizado para manipular nomes de arquivos e suas extensões.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de splitext
                 import os
 
@@ -11719,63 +11719,63 @@ diccionario_por = {
                 nome, extensao = os.path.splitext(caminho)
                 print(f"Nome: {nome}")
                 print(f"Extensão: {extensao}")
-                """
+                '''
         },
 
         "Sleep": {
             "significado": "Função que pausa a execução do programa por um número especificado de segundos.",
             "uso": "Utilizado para introduzir atrasos ou pausas na execução do código.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de sleep
                 import time
 
                 print("Iniciando...")
                 time.sleep(2)  # Pausa por 2 segundos
                 print("Continuando após 2 segundos")
-                """
+                '''
         },
 
         "Syntax": {
             "significado": "Conjunto de regras que definem como o código em uma linguagem de programação deve ser escrito.",
             "uso": "Refere-se à estrutura correta e às convenções de escrita do código.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de sintaxe Python
                 def saudacao(nome):
                     return f"Olá, {nome}!"
 
                 mensagem = saudacao("Maria")
                 print(mensagem)
-                """
+                '''
         },
 
         "Sublist": {
             "significado": "Uma parte ou segmento de uma lista maior.",
             "uso": "Utilizado para trabalhar com porções específicas de uma lista.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de criação de sublista
                 lista_completa = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
                 sublista = lista_completa[3:7]  # Elementos do índice 3 ao 6
                 print(sublista)  # Saída: [4, 5, 6, 7]
-                """
+                '''
         },
 
         "Strptime": {
             "significado": "Função do módulo datetime para analisar uma string e convertê-la em um objeto de data e hora.",
             "uso": "Utilizado para converter strings de data/hora em objetos datetime.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de strptime
                 from datetime import datetime
 
                 data_string = "21/11/2023 14:30"
                 data_objeto = datetime.strptime(data_string, "%d/%m/%Y %H:%M")
                 print(f"Data convertida: {data_objeto}")
-                """
+                '''
         },
 
         "Script": {
             "significado": "Arquivo contendo código Python que pode ser executado diretamente.",
             "uso": "Utilizado para escrever programas Python que podem ser executados como um todo.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de um script Python simples
                 # Salve como 'meu_script.py' e execute com 'python meu_script.py'
 
@@ -11786,13 +11786,13 @@ diccionario_por = {
 
                 if __name__ == "__main__":
                     main()
-                """
+                '''
         },
 
         "Self": {
             "significado": "Palavra-chave usada em métodos de classe para se referir à instância atual do objeto.",
             "uso": "Utilizado para acessar atributos e métodos da instância dentro da definição da classe.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de self
                 class Pessoa:
                     def __init__(self, nome):
@@ -11803,13 +11803,13 @@ diccionario_por = {
 
                 p = Pessoa("João")
                 p.apresentar()  # Saída: Olá, eu sou João
-                """
+                '''
         },
 
         "Static": {
             "significado": "Decorador usado para definir um método estático em uma classe.",
             "uso": "Utilizado para criar métodos que não dependem do estado da instância ou da classe.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de método estático
                 class Matematica:
                     @staticmethod
@@ -11818,26 +11818,26 @@ diccionario_por = {
 
                 resultado = Matematica.somar(5, 3)
                 print(f"5 + 3 = {resultado}")  # Saída: 5 + 3 = 8
-                """
+                '''
         },
 
         "Shuffle": {
             "significado": "Função que embaralha aleatoriamente os elementos de uma lista.",
             "uso": "Utilizado para randomizar a ordem dos elementos em uma sequência.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de shuffle
                 import random
 
                 numeros = [1, 2, 3, 4, 5]
                 random.shuffle(numeros)
                 print(f"Lista embaralhada: {numeros}")
-                """
+                '''
         },
 
         "Saveas": {
             "significado": "Método ou função para salvar dados com um novo nome ou em um novo local.",
             "uso": "Utilizado para criar uma cópia de dados ou arquivos com um nome diferente.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de 'save as' em Python
                 import shutil
 
@@ -11845,19 +11845,19 @@ diccionario_por = {
                 novo_arquivo = "copia_documento.txt"
                 shutil.copy2(arquivo_original, novo_arquivo)
                 print(f"Arquivo salvo como '{novo_arquivo}'")
-                """
+                '''
         },
 
         "Suffix": {
             "significado": "Parte final de uma string, geralmente usada em nomes de arquivos ou identificadores.",
             "uso": "Utilizado para identificar ou manipular o final de strings ou nomes de arquivos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de manipulação de sufixo
                 nome_arquivo = "documento.txt"
                 nome, sufixo = nome_arquivo.rsplit('.', 1)
                 print(f"Nome: {nome}")
                 print(f"Sufixo: .{sufixo}")
-                """
+                '''
         },
 
     },
@@ -11866,40 +11866,40 @@ diccionario_por = {
         "Try": {
             "significado": "Palavra-chave usada para iniciar um bloco de código que pode gerar uma exceção.",
             "uso": "Utilizado para lidar com possíveis erros em um bloco de código.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de try
                 try:
                     resultado = 10 / 0
                 except ZeroDivisionError:
                     print("Erro: Divisão por zero!")
-                """
+                '''
         },
 
         "Tuple": {
             "significado": "Tipo de dados imutável que armazena uma sequência ordenada de elementos.",
             "uso": "Utilizado para agrupar dados relacionados que não devem ser modificados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de tuple
                 coordenadas = (10, 20)
                 x, y = coordenadas
                 print(f"X: {x}, Y: {y}")
-                """
+                '''
         },
 
         "Text": {
             "significado": "Tipo de dado ou objeto que representa uma sequência de caracteres.",
             "uso": "Utilizado para manipular e processar dados textuais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de manipulação de texto
                 texto = "Python é incrível!"
                 print(texto.upper())  # Saída: PYTHON É INCRÍVEL!
-                """
+                '''
         },
 
         "Type": {
             "significado": "Função built-in que retorna o tipo de um objeto ou é usada para definir classes.",
             "uso": "Utilizado para verificar o tipo de dados de uma variável ou criar novos tipos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de type
                 x = 5
                 print(type(x))  # Saída: <class 'int'>
@@ -11909,13 +11909,13 @@ diccionario_por = {
 
                 obj = MinhaClasse()
                 print(type(obj))  # Saída: <class '__main__.MinhaClasse'>
-                """
+                '''
         },
 
         "Try-except": {
             "significado": "Estrutura de controle para tratamento de exceções em Python.",
             "uso": "Utilizado para capturar e lidar com erros que podem ocorrer durante a execução do código.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de try-except
                 try:
                     numero = int(input("Digite um número: "))
@@ -11925,13 +11925,13 @@ diccionario_por = {
                     print("Erro: Por favor, digite um número válido.")
                 except ZeroDivisionError:
                     print("Erro: Divisão por zero não é permitida.")
-                """
+                '''
         },
 
         "Textfile": {
             "significado": "Arquivo que contém texto legível por humanos.",
             "uso": "Utilizado para armazenar e manipular dados em formato de texto.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de escrita e leitura de arquivo de texto
                 with open('exemplo.txt', 'w') as arquivo:
                     arquivo.write("Olá, mundo!")
@@ -11939,25 +11939,25 @@ diccionario_por = {
                 with open('exemplo.txt', 'r') as arquivo:
                     conteudo = arquivo.read()
                     print(conteudo)  # Saída: Olá, mundo!
-                """
+                '''
         },
 
         "Threshold": {
             "significado": "Valor limite usado para tomar decisões ou filtrar dados.",
             "uso": "Utilizado em processamento de dados, análise de imagens e tomada de decisões baseadas em condições.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de threshold
                 numeros = [1, 5, 3, 8, 2, 7, 6]
                 threshold = 5
                 acima_do_threshold = [n for n in numeros if n > threshold]
                 print(f"Números acima do threshold: {acima_do_threshold}")
-                """
+                '''
         },
 
         "Table": {
             "significado": "Estrutura de dados que organiza informações em linhas e colunas.",
             "uso": "Utilizado para representar dados tabulares, frequentemente em bancos de dados ou análise de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de criação de tabela usando pandas
                 import pandas as pd
 
@@ -11968,13 +11968,13 @@ diccionario_por = {
                 }
                 tabela = pd.DataFrame(dados)
                 print(tabela)
-                """
+                '''
         },
 
         "Time": {
             "significado": "Módulo Python que fornece várias funções relacionadas ao tempo.",
             "uso": "Utilizado para medir tempo, criar atrasos e trabalhar com representações de tempo.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do módulo time
                 import time
 
@@ -11982,35 +11982,35 @@ diccionario_por = {
                 time.sleep(2)  # Pausa por 2 segundos
                 fim = time.time()
                 print(f"Tempo decorrido: {fim - inicio:.2f} segundos")
-                """
+                '''
         },
 
         "Trim": {
             "significado": "Operação que remove espaços em branco do início e/ou fim de uma string.",
             "uso": "Utilizado para limpar strings de espaços desnecessários.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de trim (usando strip() em Python)
                 texto = "   Python   "
                 texto_limpo = texto.strip()
                 print(f"'{texto_limpo}'")  # Saída: 'Python'
-                """
+                '''
         },
 
         "To": {
             "significado": "Palavra-chave ou parte de métodos que indicam conversão ou destino.",
             "uso": "Utilizado em nomes de métodos para indicar transformação de um tipo para outro.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de 'to' em conversão
                 numero = 42
                 texto = str(numero)  # Converte int para string
                 print(f"O número {numero} como texto: '{texto}'")
-                """
+                '''
         },
 
         "Timeout": {
             "significado": "Limite de tempo para uma operação ser concluída antes de ser interrompida.",
             "uso": "Utilizado para evitar que operações bloqueiem indefinidamente, especialmente em rede ou I/O.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de timeout com requests
                 import requests
 
@@ -12019,13 +12019,13 @@ diccionario_por = {
                     print("Resposta recebida!")
                 except requests.Timeout:
                     print("A requisição excedeu o tempo limite de 5 segundos.")
-                """
+                '''
         },
 
         "Thread": {
             "significado": "Unidade básica de execução dentro de um processo.",
             "uso": "Utilizado para executar múltiplas tarefas concorrentemente em um programa.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de thread
                 import threading
                 import time
@@ -12045,13 +12045,13 @@ diccionario_por = {
                 t2.join()
 
                 print("Todas as tarefas concluídas")
-                """
+                '''
         },
 
         "Tempfile": {
             "significado": "Módulo que fornece funções para criar arquivos e diretórios temporários.",
             "uso": "Utilizado quando é necessário armazenar dados temporariamente durante a execução de um programa.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de tempfile
                 import tempfile
 
@@ -12060,13 +12060,13 @@ diccionario_por = {
                     temp.seek(0)
                     print(temp.read())
                 # O arquivo é automaticamente deletado ao sair do contexto
-                """
+                '''
         },
 
         "Test": {
             "significado": "Processo de verificar se um programa funciona corretamente.",
             "uso": "Utilizado para garantir a qualidade e confiabilidade do código.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de teste unitário com unittest
                 import unittest
 
@@ -12079,13 +12079,13 @@ diccionario_por = {
 
                 if __name__ == '__main__':
                     unittest.main()
-                """
+                '''
         },
 
         "Try-finally": {
             "significado": "Estrutura de controle que garante a execução de um bloco de código, independentemente de exceções.",
             "uso": "Utilizado para garantir que recursos sejam liberados ou ações sejam realizadas, mesmo em caso de erro.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de try-finally
                 arquivo = open('exemplo.txt', 'w')
                 try:
@@ -12093,13 +12093,13 @@ diccionario_por = {
                 finally:
                     arquivo.close()
                     print("Arquivo fechado com sucesso")
-                """
+                '''
         },
 
         "Turtle": {
             "significado": "Módulo Python para criar gráficos simples e ensinar programação.",
             "uso": "Utilizado para desenhar formas e padrões, especialmente útil para ensinar conceitos de programação.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do módulo turtle
                 import turtle
 
@@ -12109,13 +12109,13 @@ diccionario_por = {
                     t.right(90)
 
                 turtle.done()
-                """
+                '''
         },
 
         "Target": {
             "significado": "Objetivo ou destino de uma operação ou função.",
             "uso": "Utilizado para especificar o alvo de uma ação, frequentemente em contextos de threading ou funções de ordem superior.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de target em threading
                 import threading
 
@@ -12124,35 +12124,35 @@ diccionario_por = {
 
                 thread = threading.Thread(target=tarefa)
                 thread.start()
-                """
+                '''
         },
 
         "Token": {
             "significado": "Unidade básica de significado em uma linguagem de programação ou protocolo.",
             "uso": "Utilizado em análise léxica, autenticação e processamento de linguagens.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo simplificado de tokenização
                 texto = "Python é incrível!"
                 tokens = texto.split()
                 print(f"Tokens: {tokens}")
-                """
+                '''
         },
 
         "Total": {
             "significado": "Soma ou agregação completa de um conjunto de valores.",
             "uso": "Utilizado para calcular somas ou contagens totais em coleções de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de cálculo de total
                 numeros = [1, 2, 3, 4, 5]
                 total = sum(numeros)
                 print(f"Total: {total}")  # Saída: Total: 15
-                """
+                '''
         },
 
         "Transmit": {
             "significado": "Ação de enviar dados de um ponto para outro.",
             "uso": "Utilizado em contextos de rede e comunicação de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de transmissão de dados
                 import socket
 
@@ -12160,13 +12160,13 @@ diccionario_por = {
                     s.connect(('exemplo.com', 80))
                     s.sendall(b'GET / HTTP/1.1\r\nHost: exemplo.com\r\n\r\n')
                     print("Dados transmitidos")
-                """
+                '''
         },
 
         "Terminate": {
             "significado": "Ação de encerrar ou finalizar um processo ou programa.",
             "uso": "Utilizado para parar a execução de um programa ou thread.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de terminação de programa
                 import sys
 
@@ -12177,25 +12177,25 @@ diccionario_por = {
                 # Simulação de condição para encerramento
                 if input("Deseja encerrar? (s/n): ").lower() == 's':
                     encerrar_programa()
-                """
+                '''
         },
 
         "Translate": {
             "significado": "Processo de converter texto de um idioma para outro ou mapear caracteres.",
             "uso": "Utilizado para tradução de idiomas ou substituição de caracteres em strings.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de translate para substituição de caracteres
                 tabela_traducao = str.maketrans("aeiou", "12345")
                 texto = "Hello World"
                 texto_traduzido = texto.translate(tabela_traducao)
                 print(texto_traduzido)  # Saída: H2ll4 W4rld
-                """
+                '''
         },
 
         "Testcase": {
             "significado": "Conjunto de condições ou variáveis sob as quais um teste é executado.",
             "uso": "Utilizado em testes unitários e de integração para verificar o comportamento do código.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de caso de teste com unittest
                 import unittest
 
@@ -12211,13 +12211,13 @@ diccionario_por = {
 
                 if __name__ == '__main__':
                     unittest.main()
-                """
+                '''
         },
 
         "Targeted": {
             "significado": "Direcionado ou focado em um objetivo específico.",
             "uso": "Utilizado para descrever ações ou operações que têm um alvo ou propósito específico.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de busca direcionada em uma lista
                 def busca_direcionada(lista, alvo):
                     return [x for x in lista if x > alvo]
@@ -12225,13 +12225,13 @@ diccionario_por = {
                 numeros = [1, 5, 3, 8, 2, 7, 6]
                 resultado = busca_direcionada(numeros, 5)
                 print(f"Números maiores que 5: {resultado}")
-                """
+                '''
         },
 
         "Transpose": {
             "significado": "Operação que troca as linhas por colunas em uma matriz.",
             "uso": "Utilizado em álgebra linear e manipulação de dados multidimensionais.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de transposição de matriz com NumPy
                 import numpy as np
 
@@ -12241,13 +12241,13 @@ diccionario_por = {
                 print(matriz)
                 print("Matriz transposta:")
                 print(transposta)
-                """
+                '''
         },
 
         "Trunc": {
             "significado": "Função que trunca um número, removendo sua parte decimal.",
             "uso": "Utilizado para obter a parte inteira de um número sem arredondamento.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de trunc
                 import math
 
@@ -12255,24 +12255,24 @@ diccionario_por = {
                 truncado = math.trunc(numero)
                 print(f"Número original: {numero}")
                 print(f"Número truncado: {truncado}")
-                """
+                '''
         },
 
         "Typecast": {
             "significado": "Processo de converter um tipo de dado em outro.",
             "uso": "Utilizado para mudar explicitamente o tipo de uma variável.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de typecast
                 numero_float = 5.7
                 numero_int = int(numero_float)  # Typecast de float para int
                 print(f"Float: {numero_float}, Int: {numero_int}")
-                """
+                '''
         },
 
         "Trigger": {
             "significado": "Evento ou condição que inicia uma ação ou processo específico.",
             "uso": "Utilizado em programação de eventos, automações e bancos de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de trigger
                 def acao():
                     print("Ação disparada!")
@@ -12282,37 +12282,37 @@ diccionario_por = {
                         acao()
 
                 trigger(True)  # Dispara a ação
-                """
+                '''
         },
 
         "Term": {
             "significado": "Palavra ou expressão com um significado específico em um contexto particular.",
             "uso": "Utilizado em processamento de linguagem natural, busca e indexação.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de extração de termos
                 texto = "Python é uma linguagem de programação versátil"
                 termos = texto.lower().split()
                 print(f"Termos extraídos: {termos}")
-                """
+                '''
         },
 
         "Textwrap": {
             "significado": "Módulo Python para formatar e quebrar texto em linhas.",
             "uso": "Utilizado para ajustar a largura de textos, útil para exibição em console ou formatação de documentos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de textwrap
                 import textwrap
 
                 texto = "Este é um texto longo que precisa ser formatado para caber em uma largura específica."
                 texto_formatado = textwrap.fill(texto, width=30)
                 print(texto_formatado)
-                """
+                '''
         },
 
         "Tail": {
             "significado": "Última parte de uma sequência ou arquivo.",
             "uso": "Utilizado para obter os últimos elementos de uma lista ou as últimas linhas de um arquivo.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de obtenção do tail de uma lista
                 def tail(lista, n=5):
                     return lista[-n:]
@@ -12320,13 +12320,13 @@ diccionario_por = {
                 numeros = list(range(1, 21))
                 ultimos = tail(numeros)
                 print(f"Últimos 5 números: {ultimos}")
-                """
+                '''
         },
 
         "Thresholding": {
             "significado": "Técnica de processamento que separa elementos com base em um valor limite.",
             "uso": "Utilizado em processamento de imagens e análise de dados para segmentação e classificação.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de thresholding simples
                 import numpy as np
 
@@ -12335,13 +12335,13 @@ diccionario_por = {
                 dados_binarios = dados > threshold
                 print(f"Dados originais: {dados}")
                 print(f"Dados após thresholding: {dados_binarios}")
-                """
+                '''
         },
 
         "Tune": {
             "significado": "Processo de ajustar parâmetros para otimizar o desempenho de um sistema ou algoritmo.",
             "uso": "Utilizado em machine learning para melhorar a performance de modelos.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de tuning de hiperparâmetros
                 from sklearn.model_selection import GridSearchCV
                 from sklearn.svm import SVC
@@ -12352,13 +12352,13 @@ diccionario_por = {
                 grid_search = GridSearchCV(svc, param_grid, cv=5)
                 grid_search.fit(X, y)
                 print(f"Melhores parâmetros: {grid_search.best_params_}")
-                """
+                '''
         },
 
         "Transaction": {
             "significado": "Sequência de operações tratadas como uma única unidade de trabalho.",
             "uso": "Utilizado em bancos de dados para garantir consistência e integridade dos dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de transação em SQL com SQLite
                 import sqlite3
 
@@ -12376,13 +12376,13 @@ diccionario_por = {
                     print("Erro: transação revertida")
                 finally:
                     conn.close()
-                """
+                '''
         },
 
         "Tokenize": {
             "significado": "Processo de dividir texto em unidades menores chamadas tokens.",
             "uso": "Utilizado em processamento de linguagem natural para análise e manipulação de texto.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de tokenização simples
                 from nltk.tokenize import word_tokenize
                 import nltk
@@ -12391,13 +12391,13 @@ diccionario_por = {
                 texto = "Python é uma linguagem de programação poderosa e versátil."
                 tokens = word_tokenize(texto)
                 print(f"Tokens: {tokens}")
-                """
+                '''
         },
 
         "Take": {
             "significado": "Operação que seleciona um número específico de elementos de uma sequência.",
             "uso": "Utilizado para obter uma parte limitada de uma coleção de dados.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de implementação de 'take'
                 def take(iterable, n):
                     return list(islice(iterable, n))
@@ -12405,13 +12405,13 @@ diccionario_por = {
                 numeros = range(1, 100)
                 primeiros_10 = take(numeros, 10)
                 print(f"Primeiros 10 números: {primeiros_10}")
-                """
+                '''
         },
 
         "Tag": {
             "significado": "Marcador ou rótulo usado para categorizar ou identificar elementos.",
             "uso": "Utilizado em XML, HTML, e sistemas de marcação para estruturar informações.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de tags em XML
                 from xml.etree.ElementTree import Element, SubElement, tostring
 
@@ -12423,13 +12423,13 @@ diccionario_por = {
 
                 xml_string = tostring(root, encoding='unicode')
                 print(xml_string)
-                """
+                '''
         },
 
         "Terminals": {
             "significado": "Símbolos ou elementos que não podem ser decompostos em uma gramática formal.",
             "uso": "Utilizado em teoria da computação e processamento de linguagens.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de terminais em uma gramática simples
                 gramatica = {
                     'S': ['aA', 'bB'],
@@ -12438,13 +12438,13 @@ diccionario_por = {
                 }
                 terminais = set('abcd')
                 print(f"Símbolos terminais: {terminais}")
-                """
+                '''
         },
 
         "Tool": {
             "significado": "Programa ou função que realiza uma tarefa específica.",
             "uso": "Utilizado para automatizar tarefas ou fornecer funcionalidades específicas em desenvolvimento de software.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uma ferramenta simples
                 import hashlib
 
@@ -12454,13 +12454,13 @@ diccionario_por = {
                 texto = "Exemplo de texto"
                 hash_md5 = gerar_hash(texto)
                 print(f"Hash MD5 de '{texto}': {hash_md5}")
-                """
+                '''
         },
 
         "Tolerance": {
             "significado": "Margem aceitável de erro ou diferença em cálculos ou comparações.",
             "uso": "Utilizado em cálculos numéricos e testes para lidar com imprecisões de ponto flutuante.",
-            "exemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de tolerância em comparação de números de ponto flutuante
                 def quase_igual(a, b, tolerancia=1e-9):
                     return abs(a - b) < tolerancia
@@ -12469,18 +12469,453 @@ diccionario_por = {
                 y = 0.3
                 print(f"x == y: {x == y}")
                 print(f"x quase igual a y: {quase_igual(x, y)}")
-                """
+                '''
         },
     },
     "u": {
         # Aquí puedes agregar funciones que comiencen con la letra U
+        "Update": {
+            "significado": "Ação de modificar ou melhorar um software, arquivo ou sistema para mantê-lo atual e funcional.",
+            "uso": "Usado para garantir que sistemas e programas estejam na versão mais recente com correções e melhorias.",
+            "ejemplo": """
+                # Exemplo de atualização de pacotes em Linux
+                sudo apt-get update && sudo apt-get upgrade
+                """
+        },
+        "Unique": {
+            "significado": "Algo que é distinto, exclusivo e não repetido.",
+            "uso": "Usado para descrever elementos que se destacam por sua individualidade ou para garantir que não haja duplicados em uma coleção.",
+            "ejemplo": """
+                # Exemplo de uso de unique em Python com listas
+                lista = [1, 2, 2, 3, 4, 4]
+                lista_unica = list(set(lista))
+                print(lista_unica)  # Saída: [1, 2, 3, 4]
+                """
+        },
+        "Url": {
+            "significado": "Uniform Resource Locator, um endereço usado para acessar recursos na web.",
+            "uso": "Usado para referenciar a localização de páginas web, imagens e outros recursos na internet.",
+            "ejemplo": """
+                # Exemplo de uso de URL em Python para fazer uma solicitação HTTP
+                import requests
+                resposta = requests.get('https://www.exemplo.com')
+                print(resposta.status_code)
+                """
+        },
+        "User": {
+            "significado": "Pessoa que interage com um sistema, aplicação ou dispositivo.",
+            "uso": "Usado para referir-se a quem está utilizando um software ou serviço.",
+            "ejemplo": """
+                # Exemplo de obtenção de dados do usuário em Python
+                nome_usuario = input("Digite seu nome: ")
+                print("Olá, " + nome_usuario)
+                """
+        },
+        "Use": {
+            "significado": "Ação de aplicar ou utilizar algo para um fim específico.",
+            "uso": "Usado para indicar a aplicação de uma ferramenta, recurso ou função.",
+            "ejemplo": """
+                # Exemplo de uso de uma função em Python
+                def saudar(nome):
+                    return f"Olá, {nome}!"
+                
+                print(saudar("Maria"))  # Saída: Olá, Maria!
+                """
+        },
+        "Unpack": {
+            "significado": "Descompactar ou extrair o conteúdo de um arquivo comprimido ou estrutura.",
+            "uso": "Usado para referir-se à extração de arquivos em formatos como ZIP ou TAR.",
+            "ejemplo": """
+                # Exemplo de descompactação de arquivo ZIP em Python
+                import zipfile
+                with zipfile.ZipFile('arquivo.zip', 'r') as zip_ref:
+                    zip_ref.extractall('destino')
+                """
+        },
+        "Underscore": {
+            "significado": "Caractere de sublinhado (_) usado em programação para separar palavras em identificadores ou como um caractere especial.",
+            "uso": "Usado em nomes de variáveis, funções e identificadores para melhorar a legibilidade.",
+            "ejemplo": """
+                # Exemplo de uso de underscore em Python
+                nome_completo = "João da Silva"
+                primeiro_nome, sobrenome = nome_completo.split(" ")
+                """
+        },
+        "Unit": {
+            "significado": "A menor parte de um sistema ou componente, ou uma única entidade que compõe um todo.",
+            "uso": "Usado em programação para referir-se a partes de código, como funções ou classes, que realizam tarefas específicas.",
+            "ejemplo": """
+                # Exemplo de uma classe unitária em Python
+                class Calculadora:
+                    def soma(self, a, b):
+                        return a + b
+                """
+        },
+        "Upload": {
+            "significado": "Ação de enviar dados ou arquivos de um dispositivo local para um servidor ou sistema remoto.",
+            "uso": "Usado para transferir arquivos para a internet ou sistemas de armazenamento em nuvem.",
+            "ejemplo": """
+                # Exemplo de upload de arquivo em Python com requests
+                import requests
+                arquivo = {'file': open('arquivo.txt', 'rb')}
+                resposta = requests.post('https://www.exemplo.com/upload', files=arquivo)
+                print(resposta.status_code)
+                """
+        },
+        "Utmost": {
+            "significado": "O máximo possível, o grau mais alto de algo.",
+            "uso": "Usado para expressar um esforço ou grau de importância muito elevado.",
+            "ejemplo": """
+                # Exemplo de uso de utmost em uma frase
+                print("Eu farei o meu melhor esforço para ajudar você.")
+                """
+        },
+        "Utility": {
+            "significado": "Ferramenta ou software que serve para realizar tarefas específicas e úteis.",
+            "uso": "Usado para descrever programas ou funções que ajudam em tarefas do dia a dia, como gerenciamento de arquivos e automação.",
+            "ejemplo": """
+                # Exemplo de uma função de utilidade em Python
+                def converter_para_maiusculas(texto):
+                    return texto.upper()
+                
+                print(converter_para_maiusculas("Olá"))  # Saída: OLÁ
+                """
+        },
+        "Uniform": {
+            "significado": "Algo que é consistente e tem a mesma forma, aparência ou características em todos os aspectos.",
+            "uso": "Usado para descrever padrões ou elementos que não variam entre si.",
+            "ejemplo": """
+                # Exemplo de uniformidade em uma lista em Python
+                lista = [1, 1, 1, 1, 1]
+                if all(x == 1 for x in lista):
+                    print("A lista é uniforme")
+                """
+        },
+        "Undo": {
+            "significado": "Ação de reverter ou desfazer uma operação ou alteração realizada anteriormente.",
+            "uso": "Usado para descrever a funcionalidade de desfazer ações em programas de software.",
+            "ejemplo": """
+                # Exemplo de função de desfazer em Python com pilha
+                pilha = []
+                pilha.append('Ação 1')
+                pilha.append('Ação 2')
+                print('Última ação:', pilha.pop())  # Desfaz a última ação
+                """
+        },
+        "Upsert": {
+            "significado": "Operação que insere um novo registro em um banco de dados se ele não existir, ou atualiza o registro existente.",
+            "uso": "Usado em bancos de dados e sistemas para manter dados atualizados sem duplicatas.",
+            "ejemplo": """
+                # Exemplo de upsert em Python com dicionário
+                dicionario = {'chave': 'valor'}
+                chave = 'chave'
+                valor_novo = 'novo valor'
+                
+                dicionario[chave] = valor_novo  # Insere ou atualiza o valor
+                """
+        },
+        "Usage": {
+            "significado": "Ação de usar ou a quantidade de uso de algo.",
+            "uso": "Usado para descrever a frequência ou maneira como algo é empregado.",
+            "ejemplo": """
+                # Exemplo de uso de uma variável em Python
+                contador = 5
+                while contador > 0:
+                    print('Contagem:', contador)
+                    contador -= 1
+                """
+        },
+        "Understand": {
+            "significado": "Ação de perceber o significado ou compreender a natureza de algo.",
+            "uso": "Usado para descrever a capacidade de interpretar informações corretamente.",
+            "ejemplo": """
+                # Exemplo de compreensão de uma estrutura em Python
+                def saudacao(nome):
+                    if nome == "Maria":
+                        return "Olá, Maria!"
+                    else:
+                        return "Olá, pessoa!"
+                
+                print(saudacao("Maria"))  # Saída: Olá, Maria!
+                """
+        },
+        "Unify": {
+            "significado": "Ação de unir ou combinar diferentes elementos para formar um todo coerente.",
+            "uso": "Usado para descrever a integração de diferentes partes ou sistemas.",
+            "ejemplo": """
+                # Exemplo de unificação de listas em Python
+                lista1 = [1, 2, 3]
+                lista2 = [4, 5, 6]
+                lista_unificada = lista1 + lista2
+                print(lista_unificada)  # Saída: [1, 2, 3, 4, 5, 6]
+                """
+        },
+        "Unlock": {
+            "significado": "Ação de abrir ou liberar algo que estava trancado ou inacessível.",
+            "uso": "Usado para descrever o processo de permitir o acesso a algo que estava restrito.",
+            "ejemplo": """
+                # Exemplo de desbloqueio de uma variável em Python
+                senha = "1234"
+                if senha == "1234":
+                    print("Desbloqueado!")
+                """
+        },
+        "Uniformity": {
+            "significado": "Qualidade de ser uniforme; consistência em aparência ou características.",
+            "uso": "Usado para descrever um estado em que todos os elementos são iguais ou similares.",
+            "ejemplo": """
+                # Exemplo de verificação de uniformidade em uma lista
+                lista = [5, 5, 5, 5]
+                if all(x == lista[0] for x in lista):
+                    print("A lista tem uniformidade.")
+                """
+        },
+        "Usability": {
+            "significado": "Facilidade com que um produto ou sistema pode ser usado por uma pessoa.",
+            "uso": "Usado para descrever o grau de facilidade e eficiência no uso de um sistema ou software.",
+            "ejemplo": """
+                # Exemplo de uso de um sistema amigável em Python
+                def menu():
+                    print("Escolha uma opção:")
+                    print("1. Iniciar")
+                    print("2. Sair")
+                
+                menu()
+                """
+        },
+        "User-friendly": {
+            "significado": "Design ou sistema que é fácil de usar e entender para os usuários.",
+            "uso": "Usado para descrever softwares ou interfaces que são intuitivos e acessíveis.",
+            "ejemplo": """
+                # Exemplo de interface amigável em Python
+                from tkinter import Tk, Label
+                
+                root = Tk()
+                root.title("Interface amigável")
+                
+                label = Label(root, text="Bem-vindo ao nosso programa!")
+                label.pack()
+                
+                root.mainloop()
+                """
+        },
+        "Uncommon": {
+            "significado": "Algo que não é comum ou raro.",
+            "uso": "Usado para descrever algo que não é encontrado frequentemente ou que é raro.",
+            "ejemplo": """
+                # Exemplo de uso de algo incomum em Python
+                lista = [1, 2, 3, 4, 5]
+                if 10 not in lista:
+                    print("O número 10 é incomum na lista.")
+                """
+        },
+        "Uppercase": {
+            "significado": "Letra ou caractere em formato maiúsculo.",
+            "uso": "Usado para descrever a forma de uma letra quando está em sua versão capitalizada.",
+            "ejemplo": """
+                # Exemplo de conversão de texto para maiúsculas em Python
+                texto = "olá mundo"
+                print(texto.upper())  # Saída: OLÁ MUNDO
+                """
+        },
+        "Unitary": {
+            "significado": "Relaciona-se a algo que é único ou indivisível.",
+            "uso": "Usado para descrever um sistema ou método que é integrado e não dividido em partes menores.",
+            "ejemplo": """
+                # Exemplo de uso de uma função unitária em Python
+                def funcao_unitaria(x):
+                    return x * 2
+                
+                print(funcao_unitaria(5))  # Saída: 10
+                """
+        },
+        "Uptime": {
+            "significado": "Período em que um sistema ou serviço está operacional e funcionando.",
+            "uso": "Usado para descrever a quantidade de tempo que um sistema está em funcionamento sem interrupção.",
+            "ejemplo": """
+                # Exemplo de monitoramento de tempo de atividade em Python
+                import time
+
+                tempo_atividade = time.time()  # Registra o tempo atual
+                print("Tempo de atividade:", tempo_atividade, "segundos")
+                """
+        },
+        "Unittest": {
+            "significado": "Módulo de Python usado para escrever e executar testes automatizados de código.",
+            "uso": "Usado para verificar se as unidades de código estão funcionando corretamente.",
+            "ejemplo": """
+                # Exemplo de uso do módulo unittest em Python
+                import unittest
+
+                def soma(a, b):
+                    return a + b
+
+                class TesteSoma(unittest.TestCase):
+                    def test_soma(self):
+                        self.assertEqual(soma(2, 3), 5)
+
+                if __name__ == '__main__':
+                    unittest.main()
+                """
+        },
+        "Uploading": {
+            "significado": "Ação de transferir dados de um dispositivo local para um servidor ou plataforma na internet.",
+            "uso": "Usado para descrever o processo de enviar arquivos para a nuvem ou uma plataforma online.",
+            "ejemplo": """
+                # Exemplo de upload de um arquivo em Python
+                import requests
+
+                with open('arquivo.txt', 'rb') as file:
+                    response = requests.post('https://exemplo.com/upload', files={'file': file})
+                    print(response.status_code)  # Saída: 200 se o upload foi bem-sucedido
+                """
+        },
+        "Unplug": {
+            "significado": "Ação de desconectar ou remover algo que está conectado.",
+            "uso": "Usado para descrever a remoção de dispositivos ou a desconexão de cabos.",
+            "ejemplo": """
+                # Exemplo de desconexão de um dispositivo em Python
+                print("Desconectando dispositivo...")
+                # Simulação da desconexão
+                dispositivo_conectado = False
+                if not dispositivo_conectado:
+                    print("Dispositivo desconectado com sucesso.")
+                """
+        },
+        "Unlimited": {
+            "significado": "Sem limites ou restrições.",
+            "uso": "Usado para descrever algo que pode continuar sem interrupções ou que não possui uma quantidade restrita.",
+            "ejemplo": """
+                # Exemplo de uso de um recurso ilimitado em Python
+                def recurso_ilimitado():
+                    while True:
+                        yield "Recurso disponível"
+
+                for _ in range(5):
+                    print(next(recurso_ilimitado()))
+                """
+        },
+        "Useful": {
+            "significado": "Algo que é benéfico ou tem utilidade para alcançar um objetivo.",
+            "uso": "Usado para descrever a qualidade de algo que é prático e ajuda na realização de tarefas.",
+            "ejemplo": """
+                # Exemplo de função útil em Python
+                def calcula_media(lista):
+                    if lista:
+                        return sum(lista) / len(lista)
+                    else:
+                        return "Lista vazia"
+
+                print(calcula_media([10, 20, 30]))  # Saída: 20.0
+                """
+        },
+        "Untouched": {
+            "significado": "Algo que não foi alterado ou modificado; permanece como estava originalmente.",
+            "uso": "Usado para descrever objetos, arquivos ou dados que não foram editados ou manipulados.",
+            "ejemplo": """
+                # Exemplo de verificação de arquivo intocado em Python
+                import os
+
+                caminho_arquivo = 'documento.txt'
+                if os.path.exists(caminho_arquivo):
+                    print(f'O arquivo {caminho_arquivo} está intocado.')
+                """
+        },
+        "Unified": {
+            "significado": "Juntado ou combinado em um único sistema ou entidade.",
+            "uso": "Usado para descrever a integração de componentes separados em um único sistema coerente.",
+            "ejemplo": """
+                # Exemplo de estrutura unificada de dados em Python
+                dados = {'nome': 'João', 'idade': 30, 'cidade': 'São Paulo'}
+                print(dados)  # Saída: {'nome': 'João', 'idade': 30, 'cidade': 'São Paulo'}
+                """
+        },
+        "User-input": {
+            "significado": "Dados ou informações fornecidos por um usuário em um programa ou sistema.",
+            "uso": "Usado para capturar informações de um usuário para que sejam processadas por um programa.",
+            "ejemplo": """
+                # Exemplo de captura de entrada do usuário em Python
+                nome = input("Digite seu nome: ")
+                print(f'Olá, {nome}!')
+                """
+        },
+        "Unresponsive": {
+            "significado": "Quando um sistema ou aplicação não responde às entradas ou comandos do usuário.",
+            "uso": "Usado para descrever um estado em que um programa ou sistema não está respondendo a interações.",
+            "ejemplo": """
+                # Exemplo de detecção de sistema não responsivo em Python
+                import time
+
+                def verificar_resposta():
+                    tempo_inicio = time.time()
+                    tempo_limite = 5  # segundos
+
+                    while time.time() - tempo_inicio < tempo_limite:
+                        resposta = False  # Simula a ausência de resposta
+                        if resposta:
+                            print("Sistema respondendo.")
+                            break
+                    else:
+                        print("Sistema não responsivo.")
+                
+                verificar_resposta()
+                """
+        },
+        "Underflow": {
+            "significado": "Ocorre quando uma operação ou processo resulta em um valor menor que o mínimo permitido, causando um erro ou condição anômala.",
+            "uso": "Usado em computação para descrever situações onde um cálculo ou armazenamento resulta em um número abaixo do limite suportado.",
+            "ejemplo": """
+                # Exemplo de subfluxo (underflow) em Python
+                import numpy as np
+
+                valor = np.float32(1e-50)
+                print(f'O valor é: {valor}, subfluxo pode ocorrer se o cálculo for menor que a precisão mínima.')
+                """
+        },
+        "Upgrade": {
+            "significado": "Ação de melhorar ou atualizar um sistema, software ou hardware para uma versão mais avançada.",
+            "uso": "Usado para descrever a atualização de componentes ou versões para proporcionar melhor desempenho ou novas funcionalidades.",
+            "ejemplo": """
+                # Exemplo de atualização de uma biblioteca em Python usando pip
+                # Comando para executar no terminal:
+                # pip install --upgrade nome_da_biblioteca
+                """
+        },
+        "Unavailable": {
+            "significado": "Quando algo não está acessível ou disponível para uso.",
+            "uso": "Usado para descrever recursos ou serviços que não podem ser acessados em um momento específico.",
+            "ejemplo": """
+                # Exemplo de verificação de recurso indisponível em Python
+                recurso_disponivel = False
+
+                if not recurso_disponivel:
+                    print("O recurso está indisponível no momento.")
+                """
+        },
+        "Usecase": {
+            "significado": "Cenário específico de uso de um sistema, recurso ou funcionalidade que demonstra como ele é utilizado.",
+            "uso": "Usado para descrever situações práticas em que um software ou sistema é empregado para resolver um problema.",
+            "ejemplo": """
+                # Exemplo de caso de uso de uma função em Python
+                def calcular_area(base, altura):
+                    return 0.5 * base * altura
+
+                # Caso de uso: calcular a área de um triângulo com base 10 e altura 5
+                area = calcular_area(10, 5)
+                print(f'A área do triângulo é: {area}')  # Saída: 25.0
+                """
+        },
+
+
+
+
     },
     "v": {
         # Aquí puedes agregar funciones que comiencen con la letra V
         "Validate": {
             "significado": "Verificar se algo está de acordo com as regras ou critérios estabelecidos.",
             "uso": "Usado para garantir que os dados ou entradas atendam a um conjunto de requisitos antes de serem processados.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de validação em Python
                 def validar_email(email):
                     if "@" in email:
@@ -12488,51 +12923,51 @@ diccionario_por = {
                     return False
 
                 print(validar_email("exemplo@dominio.com"))  # Saída: True
-                """
+                '''
         },
         "Variable": {
             "significado": "Elemento de um programa que armazena um valor que pode ser alterado durante a execução.",
             "uso": "Usado para guardar dados temporários que podem ser manipulados ao longo do código.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de variável em Python
                 idade = 25
                 print("A idade é:", idade)
-                """
+                '''
         },
         "Value": {
             "significado": "O dado ou informação armazenada em uma variável ou expressão.",
             "uso": "Usado para representar o conteúdo de variáveis e o resultado de operações.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de valor em Python
                 numero = 10
                 resultado = numero * 2
                 print("O valor do resultado é:", resultado)
-                """
+                '''
         },
         "Version": {
             "significado": "A edição ou forma específica de um software ou documento, que pode incluir atualizações e modificações.",
             "uso": "Usado para identificar diferentes estágios de desenvolvimento de um software ou arquivo.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de exibição da versão de uma biblioteca em Python
                 import numpy as np
                 print("Versão do NumPy:", np.__version__)
-                """
+                '''
         },
         "Vowel": {
             "significado": "Uma das letras do alfabeto que representam sons de vogais, como 'a', 'e', 'i', 'o', 'u'.",
             "uso": "Usado em linguística e fonética para indicar os sons vocálicos em palavras.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de contagem de vogais em uma palavra
                 palavra = "exemplo"
                 vogais = "aeiou"
                 contador = sum(1 for letra in palavra if letra in vogais)
                 print("Número de vogais na palavra:", contador)
-                """
+                '''
         },
         "View": {
             "significado": "A maneira como algo é percebido ou exibido em um contexto visual.",
             "uso": "Usado para representar a visualização de informações em interfaces de usuário ou gráficos.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de exibição de dados com matplotlib
                 import matplotlib.pyplot as plt
 
@@ -12542,271 +12977,271 @@ diccionario_por = {
                 plt.plot(x, y)
                 plt.title("Visualização de Dados")
                 plt.show()
-                """
+                '''
         },
         "Virtual": {
             "significado": "Relacionado a algo que existe em forma digital ou simulada, não físico.",
             "uso": "Usado para descrever recursos ou ambientes que não são tangíveis, como máquinas virtuais.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de ambiente virtual em Python
                 import venv
                 venv.create('meu_ambiente', with_pip=True)
-                """
+                '''
         },
         "Volume": {
             "significado": "A quantidade de espaço que um objeto ocupa ou a intensidade de um som.",
             "uso": "Usado para medir o espaço em três dimensões ou para ajustar o nível de áudio.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de ajuste de volume em Python com uma biblioteca de áudio
                 import simpleaudio as sa
 
                 wave_obj = sa.WaveObject.from_wave_file("arquivo.wav")
                 play_obj = wave_obj.play()
                 play_obj.wait_done()
-                """
+                '''
         },
         "Vector": {
             "significado": "Uma entidade matemática com magnitude e direção, usada em física e computação.",
             "uso": "Usado em ciência da computação para representar dados em várias dimensões ou direções.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de vetor em Python com NumPy
                 import numpy as np
 
                 vetor = np.array([1, 2, 3])
                 print("O vetor é:", vetor)
-                """
+                '''
         },
         "Verify": {
             "significado": "Confirmar ou validar a precisão ou veracidade de algo.",
             "uso": "Usado para checar a precisão de dados, entradas ou processos.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de verificação em Python
                 def verificar_par(num):
                     return num % 2 == 0
 
                 print(verificar_par(4))  # Saída: True
-                """
+                '''
         },
         "Vibrate": {
             "significado": "Oscilar rapidamente em um movimento de ida e volta.",
             "uso": "Usado para descrever a ação de um dispositivo ou objeto que vibra para alertas ou feedback.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de vibração em um contexto de programação
                 print("O dispositivo irá vibrar em breve.")
-                """
+                '''
         },
         "Virtualization": {
             "significado": "A criação de uma versão virtual de algo, como um servidor, sistema de armazenamento ou recursos de rede.",
             "uso": "Usado para melhorar a utilização de recursos e criar ambientes simulados para execução de programas.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de criação de uma máquina virtual usando um comando de linha de comando
                 print("A virtualização permite a execução de múltiplas instâncias de sistemas operacionais.")
-                """
+                '''
         },
         "Vulnerability": {
             "significado": "A falha ou fraqueza em um sistema que pode ser explorada por uma ameaça para causar dano ou acesso não autorizado.",
             "uso": "Usado em segurança de TI para descrever áreas de risco em sistemas e softwares.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de análise de vulnerabilidade em Python
                 print("As vulnerabilidades devem ser corrigidas para proteger sistemas e dados.")
-                """
+                '''
         },
         "Valueof": {
             "significado": "O valor ou a importância atribuída a algo, muitas vezes usado para descrever a avaliação de um ativo ou conceito.",
             "uso": "Usado para determinar a significância de uma variável ou de um parâmetro em um contexto específico.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de valor em Python
                 def calcular_valor(preco, desconto):
                     return preco - (preco * desconto)
 
                 print("O valor após o desconto é:", calcular_valor(100, 0.2))
-                """
+                '''
         },
         "Voltage": {
             "significado": "A diferença de potencial elétrico entre dois pontos em um circuito, medida em volts.",
             "uso": "Usado para descrever a força elétrica que impulsiona a corrente em um circuito.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de tensão em um circuito
                 print("A tensão em um circuito é medida em volts (V).")
-                """
+                '''
         },
         "Vhost": {
             "significado": "Abreviação de 'virtual host', usado em servidores para referir-se a múltiplos sites ou domínios em um único servidor físico.",
             "uso": "Usado para hospedar e gerenciar vários sites em um servidor, otimizando recursos e custos.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de configuração de virtual host em Apache
                 <VirtualHost *:80>
                     ServerName exemplo.com
                     DocumentRoot /var/www/exemplo
                 </VirtualHost>
-                """
+                '''
         },
         "Vacuum": {
             "significado": "Um estado de ausência de matéria ou um processo de remoção de ar e partículas de um espaço.",
             "uso": "Usado para descrever o espaço sem ar ou em processos de limpeza e purificação.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de vácuo em física
                 print("O vácuo é o espaço que não possui partículas de ar.")
-                """
+                '''
         },
         "Verifiable": {
             "significado": "Algo que pode ser verificado ou confirmado como verdadeiro ou autêntico.",
             "uso": "Usado para descrever informações ou processos que podem ser comprovados por evidências ou testes.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de verificação de dados em Python
                 def verificar_numero(num):
                     return num > 0
 
                 print(verificar_numero(5))  # Saída: True
-                """
+                '''
         },
         "Vigor": {
             "significado": "Força, energia ou vitalidade.",
             "uso": "Usado para descrever a intensidade de uma ação ou a força de uma pessoa ou processo.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de vigor em um contexto de programação
                 print("A implementação de código deve ser realizada com vigor para garantir qualidade.")
-                """
+                '''
         },
         "Volition": {
             "significado": "A faculdade de tomar decisões e agir por escolha própria.",
             "uso": "Usado para descrever a ação de tomar uma decisão consciente e voluntária.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de volição em Python
                 def agir_por_vontade(acao):
                     if acao == "seguir em frente":
                         return "A decisão foi tomada por volição."
                     return "A decisão foi adiada."
-                """
+                '''
         },
         "Velocity": {
             "significado": "A rapidez com que algo se move em uma direção específica.",
             "uso": "Usado para medir a taxa de variação de posição de um objeto com relação ao tempo.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de velocidade em Python
                 velocidade = 50  # km/h
                 print(f"A velocidade do objeto é de {velocidade} km/h.")
-                """
+                '''
         },
         "Vectorize": {
             "significado": "O processo de transformar uma operação de loop em uma operação que pode ser realizada em paralelo em um vetor de dados.",
             "uso": "Usado em programação para otimizar cálculos e operações em bibliotecas como NumPy.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de vetorização em Python com NumPy
                 import numpy as np
 
                 array = np.array([1, 2, 3, 4, 5])
                 resultado = array * 2
                 print("Resultado vetorizado:", resultado)
-                """
+                '''
         },
         "Virtualbox": {
             "significado": "Um software de virtualização que permite criar e gerenciar máquinas virtuais em um sistema operacional host.",
             "uso": "Usado para executar diferentes sistemas operacionais em um único computador físico.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de VirtualBox para criar uma máquina virtual
                 print("VirtualBox permite a criação de ambientes de teste e desenvolvimento.")
-                """
+                '''
         },
         "Verbosity": {
             "significado": "O grau de detalhamento ou extensão de uma comunicação.",
             "uso": "Usado para descrever o nível de detalhamento de mensagens ou de saída de um programa.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de controle de verbosidade em Python
                 import logging
 
                 logging.basicConfig(level=logging.INFO)
                 logging.debug("Este é um log de debug.")
                 logging.info("Este é um log de informação.")
-                """
+                '''
         },
         "Vectorial": {
             "significado": "Relacionado a vetores ou a representação de dados em um espaço vetorial.",
             "uso": "Usado para descrever operações, representações ou cálculos que envolvem vetores.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de representação vetorial em Python
                 import numpy as np
 
                 vetor = np.array([1, 2, 3])
                 print("O vetor é:", vetor)
-                """
+                '''
         },
         "Vault": {
             "significado": "Um cofre ou espaço seguro usado para armazenar itens de valor ou informações importantes.",
             "uso": "Usado para descrever um local protegido para guardar dados sensíveis ou físicos.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de cofre virtual para dados em Python
                 print("O cofre digital é usado para proteger informações confidenciais.")
-                """
+                '''
         },
         "Vendor": {
             "significado": "Uma pessoa ou empresa que fornece produtos ou serviços para outras empresas ou consumidores.",
             "uso": "Usado para descrever o fornecedor em transações comerciais ou na cadeia de suprimentos.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de fornecedor em Python
                 fornecedor = "Fornecedor XYZ"
                 print("O fornecedor escolhido é:", fornecedor)
-                """
+                '''
         },
         "Voluntary": {
             "significado": "Feito ou realizado por escolha ou desejo próprio, sem ser imposto.",
             "uso": "Usado para descrever ações ou processos que são realizados de forma livre e consciente.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de ação voluntária em Python
                 def acao_voluntaria(acao):
                     if acao == "ajudar":
                         return "A ação foi feita de forma voluntária."
                     return "Ação não voluntária."
-                """
+                '''
         },
         "Visibility": {
             "significado": "A qualidade de ser visto ou a facilidade com que algo pode ser percebido.",
             "uso": "Usado para descrever o nível de acessibilidade ou clareza de algo, como uma variável ou objeto em programação.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de controle de visibilidade em Python
                 variavel_visivel = "Eu sou visível"
                 print(variavel_visivel)
-                """
+                '''
         },
         "Vulnerable": {
             "significado": "Exposto a riscos ou susceptível a danos, ataques ou exploração.",
             "uso": "Usado para descrever sistemas, pessoas ou objetos que podem ser afetados por ameaças.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de vulnerabilidade em um contexto de segurança cibernética
                 print("Sistemas desatualizados podem ser vulneráveis a ataques.")
-                """
+                '''
         },
         "Vortex": {
             "significado": "Um movimento giratório de fluido ou ar que forma um redemoinho.",
             "uso": "Usado para descrever um fenômeno físico em que um fluxo se move em um padrão espiral.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de representação de um vórtice em Python
                 print("O vórtice pode ser modelado como um movimento em espiral.")
-                """
+                '''
         },
         "Vanguard": {
             "significado": "A posição ou liderança na frente de um movimento ou desenvolvimento.",
             "uso": "Usado para descrever a liderança ou inovação em áreas como tecnologia ou arte.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de vanguarda em um contexto de tecnologia
                 print("A empresa é considerada a vanguarda na inovação tecnológica.")
-                """
+                '''
         },
         "Valueerror": {
             "significado": "Um tipo de erro que ocorre quando uma operação recebe um argumento com o tipo de valor incorreto.",
             "uso": "Usado para descrever erros que ocorrem em linguagens de programação, como Python, quando valores inesperados são passados para uma função.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de tratamento de ValueError em Python
                 try:
                     int("texto")
                 except ValueError:
                     print("Ocorreu um ValueError: entrada inválida para conversão.")
-                """
+                '''
         },
         "Vigenère": {
             "significado": "Um método de cifra de substituição que usa uma palavra-chave para codificar e decodificar mensagens.",
             "uso": "Usado para criptografar informações de forma mais segura do que cifras simples, como a cifra de César.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de cifra de Vigenère em Python
                 def cifra_vigenere(texto, chave):
                     resultado = ""
@@ -12818,20 +13253,341 @@ diccionario_por = {
                     return resultado
 
                 print(cifra_vigenere("HELLOWORLD", "KEY"))
-                """
+                '''
         },
 
 
     },
     "w": {
         # Aquí puedes agregar funciones que comiencen con la letra W
+        "While": {
+            "significado": "Estrutura de controle de fluxo que executa um bloco de código repetidamente enquanto uma condição é verdadeira.",
+            "uso": "Usado em programação para criar laços de repetição que continuam a execução até que uma condição especificada seja falsa.",
+            "ejemplo": """
+                # Exemplo de uso de laço while em Python
+                contador = 0
+                while contador < 5:
+                    print(f'Contador é {contador}')
+                    contador += 1
+                """
+        },
+        "Windows": {
+            "significado": "Sistema operacional desenvolvido pela Microsoft, utilizado amplamente em computadores pessoais e empresariais.",
+            "uso": "Usado como plataforma para executar softwares e aplicações de diversas naturezas.",
+            "ejemplo": """
+                # Exemplo de comando no terminal do Windows para listar arquivos
+                dir
+                """
+        },
+        "Wget": {
+            "significado": "Ferramenta de linha de comando utilizada para download de arquivos da web.",
+            "uso": "Usado para automatizar o download de arquivos de websites em ambientes de linha de comando.",
+            "ejemplo": """
+                # Exemplo de uso do wget para baixar um arquivo em Linux ou Windows
+                wget https://example.com/arquivo.zip
+                """
+        },
+        "Width": {
+            "significado": "Dimensão horizontal de um objeto ou elemento.",
+            "uso": "Usado para descrever a extensão lateral de componentes, como janelas, imagens ou elementos gráficos.",
+            "ejemplo": """
+                # Exemplo de como obter a largura de uma imagem em Python com PIL
+                from PIL import Image
+
+                imagem = Image.open('foto.jpg')
+                largura, altura = imagem.size
+                print(f'A largura da imagem é: {largura}')
+                """
+        },
+        "Write": {
+            "significado": "Ação de gravar dados em um arquivo ou dispositivo de armazenamento.",
+            "uso": "Usado para armazenar informações em um arquivo ou em um banco de dados.",
+            "ejemplo": """
+                # Exemplo de escrita de dados em um arquivo em Python
+                with open('saida.txt', 'w') as arquivo:
+                    arquivo.write('Olá, mundo!')
+                """
+        },
+        "Wavelength": {
+            "significado": "A distância entre dois pontos consecutivos em uma onda, como em ondas de luz ou som.",
+            "uso": "Usado em física e engenharia para descrever características de ondas e suas propriedades.",
+            "ejemplo": """
+                # Exemplo de cálculo de comprimento de onda usando a fórmula em Python
+                velocidade_luz = 3e8  # m/s
+                frequencia = 5e14  # Hz
+                comprimento_onda = velocidade_luz / frequencia
+                print(f'O comprimento de onda é: {comprimento_onda} metros')
+                """
+        },
+        "Wrapper": {
+            "significado": "Funcionalidade ou componente que envolve outro componente, fornecendo uma interface ou abstração adicional.",
+            "uso": "Usado para facilitar a interação com outras bibliotecas, módulos ou APIs, escondendo a complexidade subjacente.",
+            "ejemplo": """
+                # Exemplo de função wrapper em Python
+                def decorador(func):
+                    def envoltura(*args, **kwargs):
+                        print('Antes da função')
+                        resultado = func(*args, **kwargs)
+                        print('Depois da função')
+                        return resultado
+                    return envoltura
+
+                @decorador
+                def saudacao(nome):
+                    print(f'Olá, {nome}!')
+                
+                saudacao('Maria')
+                """
+        },
+        "Watch": {
+            "significado": "Ato de observar atentamente algo ou alguém.",
+            "uso": "Usado para descrever a ação de monitorar mudanças em um sistema ou processo em tempo real.",
+            "ejemplo": """
+                # Exemplo de uso de uma ferramenta de monitoramento em Python
+                import time
+
+                while True:
+                    print('Observando alterações...')
+                    time.sleep(5)  # Espera de 5 segundos antes da próxima verificação
+                """
+        },
+        "Writable": {
+            "significado": "Capacidade de um arquivo ou dispositivo de ser modificado ou escrito.",
+            "uso": "Usado para indicar que um arquivo ou recurso pode ser alterado ou atualizado.",
+            "ejemplo": """
+                # Exemplo de verificação de permissão de escrita em Python
+                import os
+
+                if os.access('arquivo.txt', os.W_OK):
+                    print('O arquivo é gravável.')
+                else:
+                    print('O arquivo não é gravável.')
+                """
+        },
+        "Workflow": {
+            "significado": "Sequência de tarefas ou processos que são realizados para completar um trabalho ou atingir um objetivo.",
+            "uso": "Usado para descrever a automação de processos em ambientes de trabalho e sistemas.",
+            "ejemplo": """
+                # Exemplo de fluxo de trabalho simplificado em Python
+                def tarefa1():
+                    print('Executando tarefa 1')
+
+                def tarefa2():
+                    print('Executando tarefa 2')
+
+                def fluxo_trabalho():
+                    tarefa1()
+                    tarefa2()
+                
+                fluxo_trabalho()
+                """
+        },
+        "Weakness": {
+            "significado": "Característica ou ponto fraco de uma pessoa, sistema ou processo.",
+            "uso": "Usado para descrever limitações ou falhas em segurança, desempenho ou capacidade.",
+            "ejemplo": """
+                # Exemplo de verificação de fraqueza de segurança em Python
+                senha = '123456'
+                if len(senha) < 8:
+                    print('A senha é fraca.')
+                else:
+                    print('A senha é suficientemente forte.')
+                """
+        },
+        "Web": {
+            "significado": "Sistema de informações interconectadas que é acessível pela internet, incluindo sites, páginas e aplicações online.",
+            "uso": "Usado para se referir a qualquer recurso ou serviço disponível na internet.",
+            "ejemplo": """
+                # Exemplo de uso de uma solicitação web em Python
+                import requests
+
+                resposta = requests.get('https://example.com')
+                print('Código de status:', resposta.status_code)
+                """
+        },
+        "Websocket": {
+            "significado": "Protocolo de comunicação em tempo real usado para permitir a troca bidirecional de dados entre cliente e servidor.",
+            "uso": "Usado em aplicações que necessitam de atualizações em tempo real, como chats ou aplicativos de streaming.",
+            "ejemplo": """
+                # Exemplo de uso de WebSocket com a biblioteca websocket-client em Python
+                from websocket import create_connection
+
+                ws = create_connection("ws://example.com/socket")
+                ws.send("Olá, servidor!")
+                print("Resposta:", ws.recv())
+                ws.close()
+                """
+        },
+        "Widget": {
+            "significado": "Componente de interface gráfica de usuário que permite interação e exibição de informações em aplicativos.",
+            "uso": "Usado para criar elementos como botões, menus, campos de entrada e outros componentes de interface de usuário.",
+            "ejemplo": """
+                # Exemplo de criação de widget em Python com Tkinter
+                import tkinter as tk
+
+                root = tk.Tk()
+                botão = tk.Button(root, text="Clique aqui")
+                botão.pack()
+                root.mainloop()
+                """
+        },
+        "Wait": {
+            "significado": "Ato de pausar a execução de um processo ou programa por um determinado período de tempo.",
+            "uso": "Usado para introduzir uma pausa ou atraso em scripts e programas.",
+            "ejemplo": """
+                # Exemplo de uso de espera em Python
+                import time
+
+                print('Iniciando espera...')
+                time.sleep(3)
+                print('Espera concluída!')
+                """
+        },
+        "Wrap": {
+            "significado": "Ato de envolver ou embalar algo, ou criar uma camada de abstração em torno de uma funcionalidade.",
+            "uso": "Usado em programação para criar funções ou classes que envolvem outras funções para adicionar funcionalidades ou modificar comportamentos.",
+            "ejemplo": """
+                # Exemplo de função wrap em Python
+                def decorador(func):
+                    def envoltura(*args, **kwargs):
+                        print('Antes da função')
+                        resultado = func(*args, **kwargs)
+                        print('Depois da função')
+                        return resultado
+                    return envoltura
+
+                @decorador
+                def saudacao(nome):
+                    print(f'Olá, {nome}!')
+                
+                saudacao('Maria')
+                """
+        },
+        "Wifi": {
+            "significado": "Tecnologia de rede sem fio que permite a comunicação e conexão de dispositivos à internet ou a outras redes locais.",
+            "uso": "Usado para fornecer acesso à internet de forma inalámbrica em dispositivos móveis e fixos.",
+            "ejemplo": """
+                # Exemplo de verificação de conexão Wi-Fi em Python (simulado)
+                import os
+
+                resposta = os.system("ping -c 1 www.google.com")
+                if resposta == 0:
+                    print('Conectado à internet via Wi-Fi')
+                else:
+                    print('Sem conexão Wi-Fi')
+                """
+        },
+        "Word": {
+            "significado": "Unidade de linguagem composta por letras ou símbolos que forma um elemento de uma frase ou texto.",
+            "uso": "Usado para representar palavras em textos, documentos e códigos de programação.",
+            "ejemplo": """
+                # Exemplo de uso da palavra em Python
+                palavra = "Python"
+                print("A palavra é:", palavra)
+                """
+        },
+        "Win": {
+            "significado": "Ato de ganhar ou alcançar sucesso em uma competição, jogo ou tarefa.",
+            "uso": "Usado para indicar que algo foi alcançado ou para expressar a vitória em diferentes contextos.",
+            "ejemplo": """
+                # Exemplo de simulação de vitória em Python
+                jogador_pontuacao = 100
+                if jogador_pontuacao > 50:
+                    print("Você venceu!")
+                else:
+                    print("Tente novamente.")
+                """
+        },
+        "Without": {
+            "significado": "Indica a ausência de algo ou a falta de uma determinada condição.",
+            "uso": "Usado para expressar a exclusão de algo em uma frase ou contexto.",
+            "ejemplo": """
+                # Exemplo de uso da palavra 'without' em Python
+                lista = [1, 2, 3, 4, 5]
+                nova_lista = [item for item in lista if item != 3]
+                print("Lista sem o número 3:", nova_lista)
+                """
+        },
+        "Whitespace": {
+            "significado": "Espaço em branco usado para separar palavras, linhas e elementos em um texto ou código.",
+            "uso": "Usado para formatar e organizar texto ou código para melhor legibilidade.",
+            "ejemplo": """
+                # Exemplo de uso de espaços em Python
+                texto = "Olá, mundo!"
+                print(texto)
+                """
+        },
+        "Work": {
+            "significado": "Ação de realizar tarefas, atividades ou esforços para alcançar um objetivo.",
+            "uso": "Usado para indicar a execução de tarefas, seja em um trabalho formal ou em projetos pessoais.",
+            "ejemplo": """
+                # Exemplo de função de trabalho em Python
+                def trabalho(nome):
+                    print(f'{nome} está trabalhando.')
+                
+                trabalho('João')
+                """
+        },
+        "Widen": {
+            "significado": "Ato de aumentar a largura ou extensão de algo.",
+            "uso": "Usado para descrever a ação de expandir ou abrir algo em um espaço maior.",
+            "ejemplo": """
+                # Exemplo de uso de 'widen' em Python (simulado com lista)
+                lista = [1, 2, 3]
+                lista.extend([4, 5])
+                print("Lista ampliada:", lista)
+                """
+        },
+        "Warning": {
+            "significado": "Aviso ou alerta sobre um possível problema ou perigo.",
+            "uso": "Usado para informar ou alertar sobre riscos, erros ou situações que exigem atenção.",
+            "ejemplo": """
+                # Exemplo de uso de aviso em Python
+                import warnings
+
+                warnings.warn('Este é um aviso de teste!', UserWarning)
+                """
+        },
+        "Whitelist": {
+            "significado": "Lista de elementos ou indivíduos que são autorizados ou aceitos em um sistema, rede ou contexto.",
+            "uso": "Usado para permitir o acesso a determinados usuários ou recursos, restringindo outros.",
+            "ejemplo": """
+                # Exemplo de lista de permissões em Python
+                lista_permitida = ['usuario1', 'usuario2', 'usuario3']
+                usuario = 'usuario1'
+
+                if usuario in lista_permitida:
+                    print(f'{usuario} tem acesso permitido.')
+                else:
+                    print(f'{usuario} não tem acesso.')
+                """
+        },
+        "Where": {
+            "significado": "Usado para perguntar ou indicar a localização de algo.",
+            "uso": "Usado para fazer perguntas ou expressar a localização de um objeto ou evento.",
+            "ejemplo": """
+                # Exemplo de uso de 'where' em Python
+                lugar = 'biblioteca'
+                print(f'O local é: {lugar}')
+                """
+        },
+        "World": {
+            "significado": "O planeta Terra ou a totalidade das pessoas e coisas existentes.",
+            "uso": "Usado para se referir ao mundo em geral ou a uma área de conhecimento ou atividade.",
+            "ejemplo": """
+                # Exemplo de saudação ao mundo em Python
+                print("Olá, mundo!")
+                """
+        },
+
+
     },
     "x": {
         # Aquí puedes agregar funciones que comiencen con la letra X
         "X": {
             "significado": "A variável ou símbolo usado para representar uma posição ou valor em uma dimensão ou plano cartesiano.",
             "uso": "Usado para denotar a coordenada horizontal em gráficos ou a variável independente em funções matemáticas.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de 'X' como coordenada em Python
                 import matplotlib.pyplot as plt
 
@@ -12840,41 +13596,41 @@ diccionario_por = {
                 plt.plot(X, Y)
                 plt.xlabel("Eixo X")
                 plt.show()
-                """
+                '''
         },
         "Xor": {
             "significado": "Operação lógica que retorna verdadeiro se um dos operandos for verdadeiro, mas não ambos.",
             "uso": "Usado em programação e lógica digital para comparar bits e retornar um resultado verdadeiro se os bits forem diferentes.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de XOR em Python
                 a = 5  # 0101 em binário
                 b = 3  # 0011 em binário
                 resultado = a ^ b  # Operação XOR
                 print("O resultado de 5 XOR 3 é:", resultado)  # Saída: 6 (0110 em binário)
-                """
+                '''
         },
         "Xml": {
             "significado": "Linguagem de marcação usada para armazenar e transportar dados de forma estruturada e legível para humanos e máquinas.",
             "uso": "Usado para representar dados em um formato hierárquico que pode ser lido e escrito por diferentes plataformas e linguagens de programação.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de XML em Python
                 import xml.etree.ElementTree as ET
 
-                dados = """<?xml version="1.0"?>
+                dados = <?xml version="1.0"?>
                 <pessoa>
                     <nome>João</nome>
                     <idade>30</idade>
-                </pessoa>"""
+                </pessoa>
                 
                 tree = ET.ElementTree(ET.fromstring(dados))
                 for elemento in tree.iter():
                     print(elemento.tag, elemento.text)
-                """
+                '''
         },
         "X-axis": {
             "significado": "O eixo horizontal de um sistema de coordenadas em gráficos, usado para representar variáveis independentes.",
             "uso": "Usado em gráficos para mostrar a variável independente em comparação com a variável dependente no eixo Y.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de definição de eixo X em Python com Matplotlib
                 import matplotlib.pyplot as plt
 
@@ -12883,64 +13639,64 @@ diccionario_por = {
                 plt.plot(X, Y)
                 plt.xlabel("Eixo X")
                 plt.show()
-                """
+                '''
         },
         "Xcode": {
             "significado": "Um ambiente de desenvolvimento integrado (IDE) desenvolvido pela Apple para criar aplicativos para macOS, iOS, watchOS e tvOS.",
             "uso": "Usado por desenvolvedores de aplicativos para programar e compilar software para as plataformas da Apple.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de Xcode para desenvolver aplicativos
                 # Usar o Xcode para abrir um projeto e escrever código Swift para um aplicativo iOS.
-                """
+                '''
         },
         "X11": {
             "significado": "Um sistema de janelas de código aberto que fornece uma interface gráfica para sistemas operacionais Unix e Linux.",
             "uso": "Usado para gerenciar janelas e gráficos em sistemas de computadores baseados em Unix.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de configuração do X11 em um ambiente Linux
                 # Instalar o servidor X11 e configurá-lo para suportar a execução de aplicativos gráficos.
-                """
+                '''
         },
         "Xen": {
             "significado": "Um hipervisor de código aberto que permite a criação e gerenciamento de máquinas virtuais em um sistema físico.",
             "uso": "Usado para virtualização em ambientes de servidores para executar vários sistemas operacionais isolados.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do Xen para criar uma máquina virtual
                 # Configurar uma máquina virtual no Xen com a ferramenta de linha de comando `xl`.
-                """
+                '''
         },
         "Xss": {
             "significado": "Abreviação de 'Cross-Site Scripting', um tipo de vulnerabilidade de segurança que permite a execução de scripts maliciosos em páginas web.",
             "uso": "Usado para descrever um tipo de ataque cibernético que injeta scripts maliciosos em páginas da web para roubar dados do usuário.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de prevenção de XSS em uma aplicação web em Python
                 import html
 
                 entrada_usuario = "<script>alert('Ataque XSS!')</script>"
                 entrada_sanitizada = html.escape(entrada_usuario)
                 print("Entrada sanitizada:", entrada_sanitizada)
-                """
+                '''
         },
         "Xaml": {
             "significado": "Uma linguagem de marcação usada para definir a interface do usuário em aplicativos .NET, como os desenvolvidos com WPF e Xamarin.",
             "uso": "Usado para criar interfaces de usuário em aplicações que utilizam o framework .NET.",
-            "ejemplo": """
+            "ejemplo": '''
                 <!-- Exemplo de uso de XAML para definir uma interface de usuário -->
                 <Button Content="Clique Aqui" Width="100" Height="50"/>
-                """
+                '''
         },
         "Xdebug": {
             "significado": "Uma ferramenta de depuração e análise de código para PHP que ajuda os desenvolvedores a identificar erros e problemas de desempenho.",
             "uso": "Usado para depurar scripts PHP, identificar erros e medir o desempenho do código.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do Xdebug para depuração
                 # Configurar o Xdebug no arquivo `php.ini` e usar um IDE para depurar um script PHP.
-                """
+                '''
         },
         "Xgboost": {
             "significado": "Uma biblioteca de aprendizado de máquina de código aberto usada para algoritmos de boosting de gradiente em Python e outras linguagens.",
             "uso": "Usado para construir modelos de machine learning de alta performance para problemas de classificação e regressão.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do XGBoost em Python
                 from xgboost import XGBClassifier
                 from sklearn.datasets import load_iris
@@ -12949,12 +13705,12 @@ diccionario_por = {
                 modelo = XGBClassifier()
                 modelo.fit(dados.data, dados.target)
                 print("Modelo treinado com XGBoost")
-                """
+                '''
         },
         "Xunit": {
             "significado": "Um framework de testes de unidade para aplicações .NET, usado para garantir que o código funcione como esperado.",
             "uso": "Usado para criar e executar testes de unidade em aplicações baseadas em .NET.",
-            "ejemplo": """
+            "ejemplo": '''
                 // Exemplo de um teste de unidade com xUnit em C#
                 [Fact]
                 public void TestMetodo()
@@ -12962,64 +13718,326 @@ diccionario_por = {
                     var resultado = MetodoParaTestar();
                     Assert.Equal(esperado, resultado);
                 }
-                """
+                '''
         },
         "X-input": {
             "significado": "Um tipo de entrada de dados em sistemas de software ou interfaces gráficas, como dispositivos de toque ou teclado.",
             "uso": "Usado para capturar e processar dados de entrada do usuário em aplicações interativas.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de captura de entrada de usuário em Python
                 entrada_usuario = input("Digite algo: ")
                 print("Você digitou:", entrada_usuario)
+                '''
+        },
+        "Xor_gate": {
+            "significado": "Um circuito lógico que implementa a operação lógica XOR, retornando verdadeiro se e somente se um dos dois operandos for verdadeiro.",
+            "uso": "Usado em circuitos digitais e aplicações de lógica para realizar operações de comparação de bits.",
+            "ejemplo": '''
+                # Exemplo de implementação de uma porta XOR em Python
+                def xor_gate(a, b):
+                    return (a or b) and not (a and b)
+
+                resultado = xor_gate(1, 0)
+                print("O resultado da porta XOR é:", resultado)
+                '''
+        },
+        "Xcache": {
+            "significado": "Uma solução de cache de código PHP de código aberto que acelera a execução de scripts PHP armazenando uma versão compilada em cache.",
+            "uso": "Usado para melhorar o desempenho de aplicações PHP armazenando scripts compilados em cache.",
+            "ejemplo": '''
+                # Exemplo de configuração do XCache em um servidor PHP
+                # Instalar e configurar o XCache no servidor para acelerar a execução de scripts PHP.
+                '''
+        },
+        "Xmlrpc": {
+            "significado": "Um protocolo de comunicação que utiliza XML para codificar chamadas de procedimento remoto (RPC) e HTTP como meio de transporte.",
+            "uso": "Usado para comunicação entre sistemas distribuídos, permitindo que aplicações diferentes se comuniquem via chamadas de função remotas.",
+            "ejemplo": '''
+                # Exemplo de uso do XML-RPC em Python
+                from xmlrpc.client import ServerProxy
+
+                servidor = ServerProxy('http://localhost:8000')
+                resultado = servidor.soma(5, 3)
+                print("Resultado da soma via XML-RPC:", resultado)
+                '''
+        },
+        "Xdebugger": {
+            "significado": "Uma ferramenta de depuração para PHP que permite a inspeção do código em execução, visualização de variáveis e execução passo a passo.",
+            "uso": "Usado para depurar código PHP, monitorar variáveis e identificar erros em tempo de execução.",
+            "ejemplo": '''
+                # Exemplo de uso do Xdebugger em PHP
+                # Configurar o Xdebug no arquivo `php.ini` e usar um IDE para iniciar uma sessão de depuração.
+                '''
+        },
+        "Xsd": {
+            "significado": "Um esquema de definição de XML que especifica a estrutura e os tipos de dados de um documento XML.",
+            "uso": "Usado para validar a estrutura de um arquivo XML e garantir que ele siga uma estrutura predefinida.",
+            "ejemplo": '''
+                <!-- Exemplo de arquivo XSD para validar um documento XML -->
+                <xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+                    <xs:element name="pessoa">
+                        <xs:complexType>
+                            <xs:sequence>
+                                <xs:element name="nome" type="xs:string"/>
+                                <xs:element name="idade" type="xs:int"/>
+                            </xs:sequence>
+                        </xs:complexType>
+                    </xs:element>
+                </xs:schema>
+                '''
+        },
+        "X-input-handler": {
+            "significado": "Um componente ou função que lida com a entrada do usuário em aplicações de software, processando e gerenciando os dados fornecidos.",
+            "uso": "Usado para capturar e validar a entrada do usuário em interfaces de usuário interativas.",
+            "ejemplo": '''
+                # Exemplo de um manipulador de entrada em Python
+                def tratar_entrada(entrada):
+                    if entrada.isdigit():
+                        return int(entrada)
+                    else:
+                        return "Entrada inválida"
+
+                resultado = tratar_entrada("123")
+                print("Resultado do manipulador de entrada:", resultado)
+                '''
+        },
+        "Xterm": {
+            "significado": "Um emulador de terminal para sistemas Unix e Linux que permite a execução de comandos e aplicações de terminal.",
+            "uso": "Usado para acessar a linha de comando e executar comandos de sistema em ambientes de terminal.",
+            "ejemplo": '''
+                # Exemplo de uso do Xterm para executar um comando
+                # Abra um terminal Xterm e digite um comando como `ls` para listar arquivos.
+                '''
+        },
+        "Xchange": {
+            "significado": "Um processo ou plataforma que permite a troca de informações ou ativos entre duas ou mais partes.",
+            "uso": "Usado em plataformas financeiras e de tecnologia para facilitar a troca de dados ou valores entre sistemas ou indivíduos.",
+            "ejemplo": '''
+                # Exemplo de uma plataforma de câmbio de dados
+                # Usar uma API de troca de dados para enviar e receber informações entre servidores.
+                '''
+        },
+        "Xenserver": {
+            "significado": "Uma plataforma de virtualização de código aberto baseada em Xen que permite a criação e gestão de máquinas virtuais.",
+            "uso": "Usado em ambientes corporativos para gerenciar máquinas virtuais em servidores físicos.",
+            "ejemplo": '''
+                # Exemplo de uso do XenServer para criar uma VM
+                # Usar a interface do XenCenter para configurar e gerenciar máquinas virtuais.
+                '''
+        },
+        "Xapi": {
+            "significado": "Uma API usada para gerenciar a infraestrutura de virtualização no XenServer e em ambientes relacionados.",
+            "uso": "Usado para automatizar tarefas de gerenciamento de máquinas virtuais e infraestrutura de virtualização.",
+            "ejemplo": '''
+                # Exemplo de uso da API XAPI para criar uma VM
+                # Usar scripts Python com a biblioteca `XenAPI` para interagir com o XenServer.
+                '''
+        },
+        "Xact": {
+            "significado": "Uma transação ou operação que é realizada de forma atômica, garantindo que todas as partes sejam concluídas ou nenhuma seja.",
+            "uso": "Usado em sistemas de bancos de dados e operações de software para assegurar a integridade dos dados.",
+            "ejemplo": '''
+                # Exemplo de uma transação atômica em Python com SQLAlchemy
+                from sqlalchemy import create_engine
+                from sqlalchemy.orm import sessionmaker
+
+                engine = create_engine('sqlite:///example.db')
+                Session = sessionmaker(bind=engine)
+                session = Session()
+
+                try:
+                    session.begin()
+                    # Operações de banco de dados
+                    session.commit()
+                except:
+                    session.rollback()
+                finally:
+                    session.close()
+                '''
+        },
+        "Xscale": {
+            "significado": "Um processo de escalonamento de uma aplicação ou sistema para suportar um número maior de usuários ou dados.",
+            "uso": "Usado para melhorar a capacidade de uma aplicação em lidar com maior carga de trabalho.",
+            "ejemplo": '''
+                # Exemplo de escalonamento de aplicação em Python
+                # Configurar o servidor para escalar horizontalmente usando uma plataforma como Kubernetes.
+                '''
+        },
+        "X-frame": {
+            "significado": "Uma estrutura em um sistema de software que gerencia e organiza a exibição de conteúdo em uma interface gráfica.",
+            "uso": "Usado para embutir elementos de uma aplicação ou página web de forma segura e controlada.",
+            "ejemplo": """
+                # Exemplo de uso de X-frame em HTML
+                <iframe src="https://example.com" width="600" height="400"></iframe>
                 """
         },
-
+        "Xerror": {
+            "significado": "Um tipo de erro que ocorre em sistemas Unix e Linux, frequentemente relacionado a falhas na execução de comandos gráficos ou de X11.",
+            "uso": "Usado para identificar e depurar problemas em aplicações que utilizam a biblioteca X11 para a interface gráfica.",
+            "ejemplo": """
+                # Exemplo de comando para verificar erros de X11
+                x11_errors.log
+                """
+        },
+        "Xdrive": {
+            "significado": "Um dispositivo ou unidade de armazenamento associada a sistemas de computação, como um disco rígido ou unidade SSD.",
+            "uso": "Usado para armazenar dados e arquivos em computadores e dispositivos de armazenamento externo.",
+            "ejemplo": """
+                # Exemplo de comando para verificar a unidade X em Linux
+                df -h /dev/sdX
+                """
+        },
+        "Xfer": {
+            "significado": "Abreviação de 'transfer', referindo-se à transferência de dados ou arquivos entre dispositivos ou sistemas.",
+            "uso": "Usado em redes e sistemas de arquivos para mover ou copiar dados de um lugar para outro.",
+            "ejemplo": """
+                # Exemplo de transferência de arquivo usando SCP
+                scp arquivo.txt usuario@servidor:/caminho/destino
+                """
+        },
+        "Xilinx": {
+            "significado": "Uma empresa de tecnologia conhecida por desenvolver FPGAs (Field Programmable Gate Arrays) e outras soluções de hardware programável.",
+            "uso": "Usado em design de hardware para criar circuitos digitais personalizados e dispositivos de processamento.",
+            "ejemplo": """
+                # Exemplo de desenvolvimento com Xilinx Vivado para FPGA
+                # Utilizar a interface Vivado para programar e testar um design em FPGA.
+                """
+        },
+        "X86": {
+            "significado": "Uma arquitetura de processador de 32 bits usada em computadores pessoais e servidores, baseada no conjunto de instruções x86.",
+            "uso": "Usado em PCs e servidores para processamento de dados e execução de programas.",
+            "ejemplo": """
+                # Exemplo de sistema operacional que roda em arquitetura x86
+                # Instalar uma versão de Linux em uma máquina com processador x86.
+                """
+        },
+        "Xmac": {
+            "significado": "Refere-se ao sistema de controle de interface gráfica de usuários em sistemas Macintosh, também pode se referir a extensões e aplicações específicas para Mac.",
+            "uso": "Usado para personalizar e gerenciar aspectos gráficos e funcionais do sistema operacional macOS.",
+            "ejemplo": """
+                # Exemplo de script para automação de tarefas no macOS
+                # Usar AppleScript para automatizar tarefas como abrir aplicativos.
+                """
+        },
+        "Xorg": {
+            "significado": "O servidor de exibição para sistemas Unix e Linux, responsável por gerenciar a exibição gráfica do sistema e interações com o usuário.",
+            "uso": "Usado para criar a interface gráfica do usuário e fornecer suporte a dispositivos gráficos.",
+            "ejemplo": """
+                # Exemplo de configuração de Xorg para ajuste de resolução
+                Section "Screen"
+                    Identifier "Screen0"
+                    Device "Device0"
+                    Monitor "Monitor0"
+                    DefaultDepth 24
+                    SubSection "Display"
+                        Depth 24
+                        Modes "1920x1080"
+                    EndSubSection
+                EndSection
+                """
+        },
+        "Xenial": {
+            "significado": "Nome de codinome para uma versão específica do Ubuntu, conhecido por sua estabilidade e suporte de longo prazo.",
+            "uso": "Usado como uma versão do sistema operacional Ubuntu em ambientes de desenvolvimento e produção.",
+            "ejemplo": """
+                # Exemplo de instalação de um pacote em Ubuntu Xenial
+                sudo apt-get install pacote
+                """
+        },
+        "Xmlns": {
+            "significado": "Atributo de um elemento XML que define o espaço de nomes utilizado para identificar elementos e atributos de um documento XML.",
+            "uso": "Usado para evitar conflitos de nomes em documentos XML e garantir que os elementos sejam únicos.",
+            "ejemplo": """
+                <!-- Exemplo de uso de xmlns em um arquivo XML -->
+                <note xmlns="http://www.w3.org/2001/XMLSchema-instance">
+                    <to>Tove</to>
+                    <from>Jani</from>
+                    <heading>Reminder</heading>
+                    <body>Don't forget me this weekend!</body>
+                </note>
+                """
+        },
+        "Xprint": {
+            "significado": "Um comando ou função utilizada para enviar dados para a impressão em sistemas de computador.",
+            "uso": "Usado para imprimir documentos e relatórios em sistemas operacionais e aplicações.",
+            "ejemplo": """
+                # Exemplo de comando para imprimir um arquivo em Linux
+                lpr arquivo.txt
+                """
+        },
+        "Xos": {
+            "significado": "Refere-se a interfaces de programação de aplicativos (APIs) que permitem a interação com sistemas operacionais em um ambiente Unix.",
+            "uso": "Usado para acessar funcionalidades de sistema operacional, como gerenciamento de arquivos e execução de comandos.",
+            "ejemplo": """
+                # Exemplo de uso de uma API para manipular arquivos no Linux
+                import os
+                os.mkdir('/novo/diretorio')
+                """
+        },
+        "Xno": {
+            "significado": "Um prefixo ou identificador usado em comandos e scripts para negar uma condição ou ação.",
+            "uso": "Usado em scripts de shell e programação para negar condições e realizar verificações inversas.",
+            "ejemplo": """
+                # Exemplo de comando com a negação de uma condição
+                if ! [ -d "/diretorio" ]; then
+                    echo "Diretório não existe"
+                fi
+                """
+        },
+        "Xmirror": {
+            "significado": "Refere-se a uma funcionalidade de espelhamento de exibição em que a saída de vídeo de um sistema é copiada em outra tela ou dispositivo.",
+            "uso": "Usado para criar apresentações e duplicar a tela de um dispositivo em uma exibição externa.",
+            "ejemplo": """
+                # Exemplo de configuração de espelhamento de tela em um sistema Linux
+                xrandr --output HDMI-1 --same-as LVDS-1
+                """
+        },
     },
     "y": {
         # Aquí puedes agregar funciones que comiencen con la letra Y
         "Yellowback": {
             "significado": "Termo que pode se referir a uma planta específica ou a um tom de cor amarela. Em alguns contextos de programação, pode estar relacionado a cores ou temas visuais.",
             "uso": "Usado para descrever uma cor de fundo amarela ou uma característica visual em interfaces de usuário.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de uma cor amarela como fundo em Python com tkinter
                 import tkinter as tk
 
                 root = tk.Tk()
                 root.configure(bg='yellow')  # Define a cor de fundo como amarela
                 root.mainloop()
-                """
+                '''
         },
         "Youtrack": {
             "significado": "Ferramenta de rastreamento de problemas e gerenciamento de projetos da JetBrains.",
             "uso": "Usada por equipes de desenvolvimento de software para gerenciar tarefas, bugs e progresso de projetos.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de Youtrack para criar uma nova tarefa
                 # (Este é um exemplo conceitual; a integração real requer uma API ou interface específica)
                 task = 'Criar documentação para o projeto X'
                 print(f'Tarefa adicionada ao Youtrack: {task}')
-                """
+                '''
         },
         "Yarn add": {
             "significado": "Comando do gerenciador de pacotes Yarn usado para instalar uma nova dependência em um projeto.",
             "uso": "Utilizado para adicionar pacotes e bibliotecas ao projeto de forma eficiente e gerenciável.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do comando Yarn add
                 # Instala o pacote 'lodash' no projeto
                 yarn add lodash
-                """
+                '''
         },
         "Yarn init": {
             "significado": "Comando do Yarn que inicializa um novo projeto e cria um arquivo package.json.",
             "uso": "Usado para configurar e iniciar um novo projeto em um diretório, gerando o arquivo de configuração.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do comando Yarn init
                 yarn init
-                """
+                '''
         },
         "Yieldfrom": {
             "significado": "Expressão de Python usada para delegar a execução de uma função geradora para outra função geradora.",
             "uso": "Utilizado em funções geradoras para simplificar a delegação de chamada de uma subgeradora.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de yield from em Python
                 def subgerador():
                     yield 1
@@ -13031,24 +14049,24 @@ diccionario_por = {
 
                 for valor in gerador_principal():
                     print(valor)
-                """
+                '''
         },
         "Yaml.load": {
             "significado": "Função da biblioteca PyYAML em Python que carrega e analisa um arquivo YAML para criar objetos Python.",
             "uso": "É usado para ler dados de arquivos YAML e convertê-los em um formato utilizável em Python.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de yaml.load em Python
                 import yaml
 
                 with open('config.yaml', 'r') as file:
                     config = yaml.load(file, Loader=yaml.FullLoader)
                     print(config)
-                """
+                '''
         },
         "Yesod": {
             "significado": "Framework de desenvolvimento web em Haskell, conhecido por sua segurança e funcionalidade robusta.",
             "uso": "Usado para criar aplicativos web eficientes e seguros com o uso do Haskell.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de estrutura básica de uma aplicação Yesod
                 module Main where
 
@@ -13057,21 +14075,21 @@ diccionario_por = {
                 data App = App
 
                 instance Yesod App
-                """
+                '''
         },
         "Yggdrasil": {
             "significado": "Na mitologia nórdica, é a árvore que conecta os nove mundos. Também é um termo usado em alguns contextos de desenvolvimento de software para representar uma estrutura central de rede ou sistemas interconectados.",
             "uso": "Usado para descrever uma estrutura ou sistema que conecta várias partes ou entidades em um projeto complexo.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de Yggdrasil como sistema de rede
                 sistema = 'Yggdrasil conecta todos os nodos da rede'
                 print(sistema)
-                """
+                '''
         },
         "Yielding": {
             "significado": "Ato de retornar um valor de uma função geradora usando a palavra-chave 'yield'.",
             "uso": "Usado em programação para criar funções geradoras que podem pausar e retomar sua execução.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de yielding em Python
                 def contador(n):
                     for i in range(n):
@@ -13079,12 +14097,12 @@ diccionario_por = {
 
                 for numero in contador(5):
                     print(numero)
-                """
+                '''
         },
         "Yellowbrick": {
             "significado": "Biblioteca de visualização em Python para análise de dados e aprendizado de máquina.",
             "uso": "Usada para criar visualizações gráficas que ajudam na compreensão e análise de modelos de aprendizado de máquina.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de Yellowbrick com matplotlib
                 from yellowbrick.cluster import KElbowVisualizer
                 from sklearn.cluster import KMeans
@@ -13095,23 +14113,23 @@ diccionario_por = {
                 visualizer = KElbowVisualizer(model, k=(1, 10))
                 visualizer.fit(X)
                 visualizer.show()
-                """
+                '''
         },
         "Yahoo": {
             "significado": "Uma empresa de tecnologia e serviços de internet que oferece diversos produtos, incluindo e-mail e mecanismos de busca.",
             "uso": "Usado como uma referência a serviços online e ferramentas de pesquisa.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de acesso a informações de Yahoo finance usando Python
                 import yfinance as yf
 
                 ticker = yf.Ticker('AAPL')
                 print(ticker.history(period='5d'))
-                """
+                '''
         },
         "Yesno_button": {
             "significado": "Um tipo de botão de interface de usuário que permite respostas binárias (sim ou não).",
             "uso": "Usado em interfaces de usuário para capturar respostas simples do usuário.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de botão sim/não em uma interface gráfica
                 from tkinter import Tk, Button
 
@@ -13125,36 +14143,36 @@ diccionario_por = {
                 Button(root, text="Sim", command=resposta_sim).pack()
                 Button(root, text="Não", command=resposta_nao).pack()
                 root.mainloop()
-                """
+                '''
         },
         "Yellowcolor": {
             "significado": "Cor amarela, uma cor primária que é usada frequentemente em design e interfaces de usuário.",
             "uso": "Usada para destacar elementos em interfaces ou visualizações para chamar a atenção.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de cor amarela em uma interface de usuário com tkinter
                 import tkinter as tk
 
                 root = tk.Tk()
                 root.configure(bg='yellow')  # Define a cor de fundo como amarela
                 root.mainloop()
-                """
+                '''
         },
         "Yesno": {
             "significado": "Termo usado para indicar uma resposta binária de sim ou não.",
             "uso": "Usado em interfaces de usuário, pesquisas e questionários para capturar decisões simples.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de uma resposta de sim/não em Python
                 resposta = input("Você gosta de programar? (sim/não): ")
                 if resposta.lower() == 'sim':
                     print("Que ótimo!")
                 else:
                     print("Tudo bem!")
-                """
+                '''
         },
         "Youtube": {
             "significado": "Plataforma de compartilhamento de vídeos na internet, onde os usuários podem fazer upload, assistir e comentar vídeos.",
             "uso": "Usado para criar e compartilhar vídeos, bem como para consumir conteúdo em vídeo.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de interação com a API do YouTube usando Python
                 from googleapiclient.discovery import build
 
@@ -13163,20 +14181,20 @@ diccionario_por = {
                 response = request.execute()
                 for item in response['items']:
                     print(item['snippet']['title'])
-                """
+                '''
         },
         "Yarnpkg": {
             "significado": "Gerenciador de pacotes para JavaScript, desenvolvido como uma alternativa ao npm para facilitar a instalação e gerenciamento de dependências.",
             "uso": "Usado para gerenciar pacotes e dependências em projetos JavaScript de forma mais eficiente.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do comando Yarnpkg para instalar um pacote
                 yarn add express
-                """
+                '''
         },
         "Yew": {
             "significado": "Framework moderno para desenvolvimento de interfaces web em Rust, usado para criar aplicações frontend rápidas e eficientes.",
             "uso": "Usado para construir interfaces web dinâmicas e reativas em Rust.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de código básico de Yew em Rust
                 use yew::prelude::*;
 
@@ -13213,72 +14231,72 @@ diccionario_por = {
                         }
                     }
                 }
-                """
+                '''
         },
         "Yellowhat": {
             "significado": "Empresa de tecnologia que oferece soluções de código aberto e serviços relacionados a software e desenvolvimento.",
             "uso": "Usada como referência a empresas que fornecem produtos e serviços de tecnologia baseados em código aberto.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso conceitual de um serviço de código aberto
                 print("Usando soluções de código aberto fornecidas pela Yellowhat.")
-                """
+                '''
         },
         "Yarn upgrade": {
             "significado": "Comando do Yarn para atualizar todas as dependências de um projeto para a versão mais recente.",
             "uso": "Usado para manter as dependências do projeto atualizadas com suas versões mais recentes e seguras.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do comando Yarn upgrade
                 yarn upgrade
-                """
+                '''
         },
         "Yottabyte": {
             "significado": "Unidade de medida de armazenamento de dados equivalente a 1 trilhão de gigabytes (10^24 bytes).",
             "uso": "Usado para medir grandes volumes de dados em sistemas de armazenamento de alta capacidade.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de armazenamento em yottabytes
                 armazenamento_total = 1e24  # 1 yottabyte em bytes
                 print(f'O armazenamento total é de {armazenamento_total} bytes.')
-                """
+                '''
         },
         "Young": {
             "significado": "Adjetivo usado para descrever algo que é novo ou em estágio inicial de desenvolvimento.",
             "uso": "Usado para referir-se a uma pessoa, coisa ou ideia que está em um estágio inicial de crescimento ou desenvolvimento.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de 'young' em uma frase
                 pessoa = 'Uma pessoa jovem está cheia de energia e novas ideias.'
                 print(pessoa)
-                """
+                '''
         },
         "Yad": {
             "significado": "Biblioteca de GUI em Python para criar interfaces gráficas em scripts simples e rápidos.",
             "uso": "Usada para criar aplicativos com interface gráfica de forma simples e rápida.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de Yad para criar uma janela simples
                 import os
                 os.system('yad --title="Exemplo" --text="Olá, mundo!" --button=gtk-ok')
-                """
+                '''
         },
         "Yosemite": {
             "significado": "Sistema operacional macOS, versão 10.10, desenvolvido pela Apple.",
             "uso": "Referência ao sistema operacional que oferece uma interface gráfica de usuário melhorada e novas funcionalidades.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de funcionalidades de Yosemite em um aplicativo de macOS
                 print("Utilizando as APIs de Yosemite para criar um aplicativo interativo.")
-                """
+                '''
         },
         "Yoga": {
             "significado": "Prática física, mental e espiritual originada na Índia, que envolve posturas, respiração e meditação.",
             "uso": "Usada para promover saúde, bem-estar e equilíbrio mental e físico.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de yoga como prática de bem-estar
                 atividade = 'A prática de yoga ajuda a manter a mente e o corpo em equilíbrio.'
                 print(atividade)
-                """
+                '''
         },
         "Yaml": {
             "significado": "Formato de serialização de dados legível por humanos, usado para configuração de arquivos e troca de dados entre linguagens de programação.",
             "uso": "Usado para representar dados de forma hierárquica e legível em arquivos de configuração.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de arquivo YAML para configuração
                 servidor:
                 host: "localhost"
@@ -13287,12 +14305,12 @@ diccionario_por = {
                 nome: "meu_banco"
                 usuario: "admin"
                 senha: "1234"
-                """
+                '''
         },
         "Yield": {
             "significado": "Palavra-chave em Python usada em funções geradoras para retornar um valor e pausar a execução da função.",
             "uso": "Usada para criar geradores, permitindo a iteração sobre uma sequência de valores sem carregar todos na memória.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de yield em Python
                 def contador():
                     for i in range(3):
@@ -13300,20 +14318,20 @@ diccionario_por = {
 
                 for numero in contador():
                     print(numero)
-                """
+                '''
         },
         "Yarn": {
             "significado": "Gerenciador de pacotes para JavaScript, projetado para facilitar o gerenciamento de dependências de projetos.",
             "uso": "Usado para instalar, atualizar e gerenciar pacotes e dependências em projetos de JavaScript.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do comando Yarn para instalar um pacote
                 yarn add axios
-                """
+                '''
         },
         "Y-axis": {
             "significado": "Eixo vertical em um sistema de coordenadas cartesianas, geralmente usado para representar valores em gráficos.",
             "uso": "Usado para mostrar a escala de valores em gráficos e diagramas, como em gráficos de barras ou de linhas.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de Y-axis em um gráfico com matplotlib
                 import matplotlib.pyplot as plt
 
@@ -13323,59 +14341,59 @@ diccionario_por = {
                 plt.plot(x, y)
                 plt.ylabel('Valores Y')
                 plt.show()
-                """
+                '''
         },
         "Yellow": {
             "significado": "Cor que representa uma sensação de luz e calor, frequentemente associada a felicidade e energia.",
             "uso": "Usada em design e arte para transmitir uma sensação de otimismo e alegria.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso da cor amarela em Python com tkinter
                 import tkinter as tk
 
                 root = tk.Tk()
                 root.configure(bg='yellow')  # Define a cor de fundo como amarela
                 root.mainloop()
-                """
+                '''
         },
         "Y2k": {
             "significado": "Refere-se ao problema do milênio, que surgiu quando a mudança de datas de 1999 para 2000 causou preocupações em sistemas de computação.",
             "uso": "Usado para descrever questões tecnológicas e de programação relacionadas à transição de datas em sistemas informáticos.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de impacto do Y2k em sistemas de software
                 print("O problema do Y2k foi uma preocupação de compatibilidade de datas nos sistemas de software.")
-                """
+                '''
         },
         "Yes": {
             "significado": "Palavra em inglês que indica uma resposta afirmativa ou consentimento.",
             "uso": "Usada em diálogos, interfaces e programação para representar aceitação ou confirmação.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de 'Yes' em um script Python
                 resposta = input("Você gostaria de continuar? (sim/não): ")
                 if resposta.lower() == 'sim':
                     print("Você escolheu continuar.")
-                """
+                '''
         },
         "Yarn.lock": {
             "significado": "Arquivo de bloqueio usado pelo Yarn para garantir que as versões exatas das dependências sejam instaladas em cada instalação de projeto.",
             "uso": "Usado para manter a consistência das dependências em projetos e evitar discrepâncias entre diferentes ambientes.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de uso do yarn.lock
                 # O arquivo yarn.lock é gerado automaticamente e não é modificado manualmente
                 print("O arquivo 'yarn.lock' garante a integridade das dependências.")
-                """
+                '''
         },
         "Yelp": {
             "significado": "Plataforma online de avaliações e recomendações de empresas e serviços.",
             "uso": "Usada para encontrar e revisar empresas locais, como restaurantes, lojas e prestadores de serviços.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo conceitual de usar Yelp em um projeto de análise de dados
                 print("Yelp é uma fonte valiosa de opiniões e avaliações de clientes sobre empresas.")
-                """
+                '''
         },
         "Yellowbox": {
             "significado": "Termo usado para descrever uma caixa ou elemento visual de cor amarela em um design de interface de usuário.",
             "uso": "Usado em design gráfico e web design para destacar informações importantes ou elementos interativos.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de criação de uma caixa amarela em Python com tkinter
                 import tkinter as tk
 
@@ -13383,7 +14401,7 @@ diccionario_por = {
                 caixa = tk.Frame(root, bg='yellow', width=200, height=100)
                 caixa.pack()
                 root.mainloop()
-                """
+                '''
         },
 
 
@@ -13393,30 +14411,30 @@ diccionario_por = {
         "Zoneinfo": {
             "significado": "Módulo de Python que fornece suporte para fusos horários, permitindo a manipulação de datas e horas com zonas horárias específicas.",
             "uso": "É utilizado para trabalhar com dados de tempo em diferentes fusos horários de forma precisa.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de zoneinfo em Python
                 from zoneinfo import ZoneInfo
                 from datetime import datetime
 
                 now = datetime.now(ZoneInfo("America/Sao_Paulo"))
                 print("Hora atual em São Paulo:", now)
-                """
+                '''
         },
         "Zipfile": {
             "significado": "Módulo de Python que permite a criação, leitura e extração de arquivos ZIP.",
             "uso": "É utilizado para manipular arquivos comprimidos no formato ZIP, tanto para comprimir quanto para descomprimir.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de zipfile em Python
                 from zipfile import ZipFile
 
                 with ZipFile('arquivo.zip', 'w') as zipf:
                     zipf.write('arquivo.txt')
-                """
+                '''
         },
         "Zscore": {
             "significado": "Medida estatística que indica quantas desvios padrão um valor está afastado da média de um conjunto de dados.",
             "uso": "É utilizado para identificar valores atípicos e comparar dados em diferentes distribuições.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de cálculo de z-score em Python
                 import numpy as np
 
@@ -13425,75 +14443,75 @@ diccionario_por = {
                 desvio_padrao = np.std(dados)
                 z_score = (30 - media) / desvio_padrao
                 print("O z-score de 30 é:", z_score)
-                """
+                '''
         },
         "Zeta": {
             "significado": "Última letra do alfabeto grego, frequentemente usada em matemática e física para representar variáveis ou constantes.",
             "uso": "É usada na notação matemática e em diversas áreas da ciência e engenharia.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de zeta em notação matemática
                 zeta = 3
                 print("O valor de zeta é:", zeta)
-                """
+                '''
         },
         "Zorder": {
             "significado": "Propriedade usada para definir a ordem de empilhamento dos elementos em um gráfico ou interface.",
             "uso": "É utilizada em gráficos e design de interfaces de usuário para controlar quais elementos sobrepõem outros.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de zorder em Python
                 import matplotlib.pyplot as plt
 
                 plt.plot([1, 2, 3], [4, 5, 6], zorder=1)
                 plt.scatter([1, 2, 3], [4, 5, 6], color='red', zorder=2)
                 plt.show()
-                """
+                '''
         },
         "Zfill": {
             "significado": "Método de Python que preenche a cadeia de caracteres com zeros à esquerda até atingir um comprimento específico.",
             "uso": "É utilizado para formatar números com zeros à esquerda, especialmente em formatos de arquivo ou representações numéricas.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de zfill em Python
                 print('123'.zfill(5))  # Saída: '00123'
-                """
+                '''
         },
         "Zipapp": {
             "significado": "Ferramenta de Python que permite empacotar um aplicativo em um arquivo .pyz para facilitar a distribuição.",
             "uso": "É usada para criar aplicativos portáteis que podem ser executados diretamente com Python.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de zipapp em Python
                 python -m zipapp minha_aplicacao/ -o minha_aplicacao.pyz
-                """
+                '''
         },
         "Zlib.decompress": {
             "significado": "Função da biblioteca zlib de Python que é usada para descomprimir dados que foram comprimidos no formato zlib.",
             "uso": "É utilizada para recuperar os dados originais de uma sequência comprimida.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de zlib.decompress em Python
                 import zlib
 
                 dados_comprimidos = zlib.compress(b'Olá mundo!')
                 dados_originais = zlib.decompress(dados_comprimidos)
                 print("Dados descomprimidos:", dados_originais)
-                """
+                '''
         },
         "Zlib.compress": {
             "significado": "Função da biblioteca zlib de Python que comprime os dados para reduzir seu tamanho.",
             "uso": "É utilizada para economizar espaço ao armazenar ou transmitir dados.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso de zlib.compress em Python
                 import zlib
 
                 dados_comprimidos = zlib.compress(b'Olá mundo!')
                 print("Dados comprimidos:", dados_comprimidos)
-                """
+                '''
         },
         "Zen_of_python": {
             "significado": "Um conjunto de princípios que orienta o design do Python, conhecido como 'O Zen do Python', escrito por Tim Peters.",
             "uso": "É usado como um guia para seguir boas práticas de codificação e manter o código claro e legível.",
-            "ejemplo": """
+            "ejemplo": '''
                 # Exemplo de uso do Zen do Python
                 import this  # Exibe o Zen do Python no console.
-                """
+                '''
         },
 
     },
