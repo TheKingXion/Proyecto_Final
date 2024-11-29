@@ -1010,14 +1010,14 @@ diccionario_es = {
      },
     "d": {
         "def": {
-            "significado": "Palabra clave en Python utilizada para definir una función.",
-            "uso": "Se utiliza para crear una nueva función con un nombre y un bloque de código.",
-            "ejemplo": '''
-                def saludo():
-                    print('Hola Mundo')
+        "significado": "Palabra clave en Python utilizada para definir una función.",
+        "uso": "Se utiliza para crear una nueva función con un nombre y un bloque de código.",
+        "ejemplo": '''
+            def saludo():
+                print('Hola Mundo')
 
-                saludo()  # Salida: Hola Mundo
-                '''
+            saludo()  # Salida: Hola Mundo
+            '''
         },
         "delattr": {
             "significado": "Función que elimina un atributo de un objeto en Python.",
@@ -1088,8 +1088,8 @@ diccionario_es = {
                 '''
         },
         "dtype": {
-            "significado": "Propiedad de los arrays en Numpy o de las columnas en un DataFrame de Pandas que indica el tipo de datos de los elementos.",
-            "uso": "Se utiliza para obtener o especificar el tipo de datos de un array o columna.",
+            "significado": "Propiedad de los arreglos en Numpy o de las columnas en un DataFrame de Pandas que indica el tipo de dato de los elementos.",
+            "uso": "Se utiliza para obtener o especificar el tipo de datos de un arreglo o columna.",
             "ejemplo": '''
                 import numpy as np
 
@@ -1098,19 +1098,19 @@ diccionario_es = {
                 '''
         },
         "deque.appendleft": {
-            "significado": "Método del tipo de dato `deque` en el módulo `collections` que agrega un elemento al inicio de la deque.",
-            "uso": "Se utiliza para insertar un nuevo elemento en la parte izquierda de una deque.",
-            "ejemplo": '''
-                from collections import deque
+        "significado": "Método del tipo de dato `deque` en el módulo `collections` que agrega un elemento al inicio de la deque.",
+        "uso": "Se utiliza para insertar un nuevo elemento en el lado izquierdo de una deque.",
+        "ejemplo": '''
+            from collections import deque
 
-                d = deque([2, 3, 4])
-                d.appendleft(1)
-                print(d)  # Salida: deque([1, 2, 3, 4])
-                '''
+            d = deque([2, 3, 4])
+            d.appendleft(1)
+            print(d)  # Salida: deque([1, 2, 3, 4])
+            '''
         },
         "dict.update": {
-            "significado": "Método de los diccionarios en Python que actualiza un diccionario con los elementos de otro diccionario o iterable.",
-            "uso": "Se utiliza para agregar o modificar elementos en un diccionario usando otro diccionario o iterable.",
+            "significado": "Método de los diccionarios en Python que actualiza un diccionario con los elementos de otro diccionario o iterador.",
+            "uso": "Se utiliza para agregar o modificar elementos en un diccionario usando otro diccionario o iterador.",
             "ejemplo": '''
                 d1 = {'a': 1, 'b': 2}
                 d2 = {'b': 3, 'c': 4}
@@ -1120,7 +1120,7 @@ diccionario_es = {
         },
         "del": {
             "significado": "Palabra clave en Python que elimina un atributo o un elemento de una colección.",
-            "uso": "Se utiliza para eliminar elementos de una lista, atributo de un objeto o una variable.",
+            "uso": "Se utiliza para eliminar elementos de una lista, atributos de un objeto o una variable.",
             "ejemplo": '''
                 lista = [1, 2, 3]
                 del lista[1]
@@ -1145,7 +1145,7 @@ diccionario_es = {
         },
         "divmod": {
             "significado": "Función que recibe dos números y devuelve una tupla con el cociente y el resto de su división.",
-            "uso": "Se utiliza para obtener tanto el cociente como el resto de una división en una única operación.",
+            "uso": "Se utiliza para obtener tanto el cociente como el resto de una división en una sola operación.",
             "ejemplo": '''
                 resultado = divmod(9, 4)
                 print(resultado)  # Salida: (2, 1)
@@ -1153,7 +1153,7 @@ diccionario_es = {
         },
         "deque": {
             "significado": "Tipo de dato en el módulo `collections` de Python que representa una cola doblemente terminada, permitiendo agregar y eliminar elementos de ambos extremos de manera eficiente.",
-            "uso": "Se usa para implementar colas y pilas de manera eficiente.",
+            "uso": "Se utiliza para implementar colas y pilas de manera eficiente.",
             "ejemplo": '''
                 from collections import deque
 
@@ -1164,7 +1164,7 @@ diccionario_es = {
         },
         "defaultdict": {
             "significado": "Clase en el módulo `collections` que extiende el diccionario estándar y permite definir un valor por defecto para claves inexistentes.",
-            "uso": "Se usa para evitar errores al acceder a claves no existentes, proporcionando un valor por defecto.",
+            "uso": "Se utiliza para evitar errores al acceder a claves no existentes, proporcionando un valor por defecto.",
             "ejemplo": '''
                 from collections import defaultdict
 
@@ -1174,55 +1174,148 @@ diccionario_es = {
                 '''
         },
         "decode": {
-            "significado": "Método utilizado para convertir datos binarios en texto con una codificación específica.",
-            "uso": "Se usa para decodificar una secuencia de bytes en una cadena de texto con una codificación específica.",
+            "significado": "Método utilizado para convertir datos binarios en texto en una codificación específica.",
+            "uso": "Se utiliza para decodificar una secuencia de bytes en una cadena de texto en una codificación específica.",
             "ejemplo": '''
-                codificado = b'Hola Mundo'
-                decodificado = codificado.decode('utf-8')
-                print(decodificado)  # Salida: Hola Mundo
+                encoded = b'Hola Mundo'
+                decoded = encoded.decode('utf-8')
+                print(decoded)  # Salida: Hola Mundo
                 '''
         },
         "deflate": {
-            "significado": "Algoritmo de compresión de datos sin pérdida, utilizado para reducir el tamaño de los archivos.",
-            "uso": "Se usa para comprimir datos en un formato más eficiente.",
+            "significado": "Algoritmo de compresión de datos sin pérdida, utilizado para reducir el tamaño de archivos.",
+            "uso": "Se utiliza para comprimir datos en un formato más eficiente.",
             "ejemplo": '''
                 import zlib
 
-                datos = b'Hola Mundo'*100
-                comprimido = zlib.compress(datos)
-                print(comprimido)
+                data = b'Hola Mundo'*100
+                compressed = zlib.compress(data)
+                print(compressed)
                 '''
         },
         "deepcopy": {
-            "significado": "Función del módulo `copy` que crea una copia profunda de un objeto, es decir, copia todos los elementos del objeto original, incluidos los objetos dentro de objetos.",
-            "uso": "Se usa cuando es necesario hacer una copia completa e independiente de un objeto.",
+            "significado": "Función del módulo `copy` que crea una copia profunda de un objeto, es decir, copia todos los elementos del objeto original, incluidos objetos dentro de objetos.",
+            "uso": "Se utiliza cuando es necesario hacer una copia completa e independiente de un objeto.",
             "ejemplo": '''
                 import copy
 
-                lista = [1, [2, 3]]
-                copia = copy.deepcopy(lista)
-                lista[1][0] = 99
-                print(copia)  # Salida: [1, [2, 3]]
+                original = {'a': [1, 2, 3]}
+                copia = copy.deepcopy(original)
+                copia['a'][0] = 100
+                print(original)  # Salida: {'a': [1, 2, 3]}
+                print(copia)     # Salida: {'a': [100, 2, 3]}
+                '''
+        },
+        "detach": {
+            "significado": "Método utilizado en objetos en Python para desvincular un objeto de su contexto o flujo de datos.",
+            "uso": "Se utiliza para liberar recursos o desvincular un objeto de su entorno de ejecución.",
+            "ejemplo": '''
+                import torch
+
+                tensor = torch.tensor([1, 2, 3])
+                detached_tensor = tensor.detach()
+                print(detached_tensor)  # Salida: tensor([1, 2, 3])
+                '''
+        },
+        "dump": {
+            "significado": "Método de la biblioteca `pickle` que serializa un objeto y lo graba en un archivo.",
+            "uso": "Se utiliza para guardar un objeto en un archivo de manera serializada.",
+            "ejemplo": '''
+                import pickle
+
+                data = {'a': 1, 'b': 2}
+                with open('data.pkl', 'wb') as f:
+                    pickle.dump(data, f)
+                '''
+        },
+        "dumps": {
+            "significado": "Método de la biblioteca `pickle` que serializa un objeto y lo retorna como una cadena de bytes.",
+            "uso": "Se usa para convertir un objeto en un formato de cadena para almacenamiento o transmisión.",
+            "ejemplo": '''
+                import pickle
+
+                data = {'a': 1, 'b': 2}
+                serialized = pickle.dumps(data)
+                print(serialized)
+                '''
+        },
+        "difference": {
+            "significado": "Método de conjuntos en Python que retorna la diferencia entre dos o más conjuntos.",
+            "uso": "Se usa para encontrar los elementos que están en un conjunto, pero no en los otros.",
+            "ejemplo": '''
+                a = {1, 2, 3}
+                b = {2, 3, 4}
+                print(a.difference(b))  # Salida: {1}
+                '''
+        },
+        "difference_update": {
+            "significado": "Método de conjuntos en Python que elimina los elementos de un conjunto que están presentes en otro conjunto.",
+            "uso": "Se usa para modificar un conjunto, eliminando los elementos que se encuentran en otro conjunto.",
+            "ejemplo": '''
+                a = {1, 2, 3}
+                b = {2, 3, 4}
+                a.difference_update(b)
+                print(a)  # Salida: {1}
+                '''
+        },
+        "decode_header": {
+            "significado": "Función del módulo `email.header` que decodifica un encabezado de correo electrónico.",
+            "uso": "Se usa para decodificar un encabezado de correo electrónico que puede estar en diferentes codificaciones.",
+            "ejemplo": '''
+                from email.header import decode_header
+
+                header = '=?utf-8?B?SG9sYSBNdW5kbyA8MTIzNDU+?='
+                decoded, encoding = decode_header(header)[0]
+                print(decoded.decode(encoding))  # Salida: Hola Mundo <12345>
+                '''
+        },
+        "disk_usage": {
+            "significado": "Función del módulo `shutil` que retorna el uso del disco de un camino o directorio.",
+            "uso": "Se usa para obtener información sobre el espacio usado y disponible en un sistema de archivos.",
+            "ejemplo": '''
+                import shutil
+
+                usage = shutil.disk_usage('/')
+                print(usage)  # Salida: usage(total=500000000, used=200000000, free=300000000)
+                '''
+        },
+        "datetime": {
+            "significado": "Módulo de Python que proporciona clases para trabajar con fechas y horas.",
+            "uso": "Se usa para manipular y trabajar con fechas, horas y tiempos en general.",
+            "ejemplo": '''
+                import datetime
+
+                ahora = datetime.datetime.now()
+                print(ahora)  # Salida: 2024-11-22 12:00:00.123456
+                '''
+        },
+        "disk_cache": {
+            "significado": "Almacenamiento en caché en el disco para mejorar la velocidad de acceso a datos o resultados computacionales.",
+            "uso": "Se usa para almacenar temporalmente resultados o datos en el disco para evitar la necesidad de recalcular o obtener nuevamente los datos.",
+            "ejemplo": '''
+                import joblib
+
+                result = joblib.Memory('cache_dir').cache(some_function)
                 '''
         },
     },
     "e": {
-        "enumerate": {
-            "significado": "Función incorporada de Python que agrega un contador a un iterable y lo devuelve como un objeto iterable de tuplas.",
-            "uso": "Se usa para obtener tanto el índice como el valor de los elementos en un iterable.",
-            "ejemplo": '''
-                lista = ['a', 'b', 'c']
-                for indice, valor in enumerate(lista):
-                    print(indice, valor)
-                # Salida:
-                # 0 a
-                # 1 b
-                # 2 c
-                '''
+            "enumerate": {
+        "significado": "Función incorporada de Python que añade un contador a un iterable y lo retorna como un objeto iterable de tuplas.",
+        "uso": "Se usa para obtener tanto el índice como el valor de los elementos en un iterable.",
+        "ejemplo": '''
+            lista = ['a', 'b', 'c']
+            for indice, valor in enumerate(lista):
+                print(indice, valor)
+            # Salida:
+            # 0 a
+            # 1 b
+            # 2 c
+            '''
         },
         "eval": {
             "significado": "Función incorporada de Python que evalúa una cadena de código como una expresión Python.",
-            "uso": "Se usa para ejecutar expresiones Python contenidas en una cadena y devolver el resultado.",
+            "uso": "Se usa para ejecutar expresiones Python contenidas en una cadena y retornar el resultado.",
             "ejemplo": '''
                 x = 2
                 resultado = eval('x + 1')
@@ -1230,7 +1323,7 @@ diccionario_es = {
                 '''
         },
         "exec": {
-            "significado": "Función incorporada de Python que ejecuta una cadena de código como un bloque de código completo.",
+            "significado": "Función incorporada de Python que ejecuta una cadena de código como un bloque completo de código.",
             "uso": "Se usa para ejecutar código Python dinámicamente.",
             "ejemplo": '''
                 codigo = 'for i in range(3): print(i)'
@@ -1264,7 +1357,7 @@ diccionario_es = {
                 '''
         },
         "elif": {
-            "significado": "Palabra clave en Python usada en estructuras condicionales para verificar una condición adicional si las anteriores no se cumplen.",
+            "significado": "Palabra clave en Python usada en estructuras condicionales para verificar una condición adicional en caso de que las anteriores no se cumplan.",
             "uso": "Se usa para manejar múltiples condiciones en una estructura if-elif-else.",
             "ejemplo": '''
                 x = 3
@@ -1287,7 +1380,7 @@ diccionario_es = {
                 '''
         },
         "end": {
-            "significado": "Palabra clave utilizada en Python para especificar el final de un bloque o la terminación de una cadena.",
+            "significado": "Palabra clave usada en Python para especificar el final de un bloque o la terminación de una cadena.",
             "uso": "Se usa principalmente en las funciones de impresión para controlar el final de la salida.",
             "ejemplo": '''
                 print('Hola', end=' ')
@@ -1305,7 +1398,7 @@ diccionario_es = {
                 '''
         },
         "encode": {
-            "significado": "Método de cadenas en Python que codifica una cadena en una secuencia de bytes usando un codificador específico.",
+            "significado": "Método de cadenas en Python que codifica una cadena en una secuencia de bytes utilizando un codificador específico.",
             "uso": "Se usa para convertir una cadena en una secuencia de bytes para ser almacenada o transmitida en formatos específicos.",
             "ejemplo": '''
                 texto = 'Hola Mundo'
@@ -1376,7 +1469,7 @@ diccionario_es = {
                 '''
         },
         "enumerations": {
-            "significado": "Una lista o conjunto de elementos, muchas veces con un valor asociado o un identificador.",
+            "significado": "Una lista o conjunto de elementos, a menudo con un valor asociado o un identificador.",
             "uso": "Se usa para representar un conjunto de valores posibles de una variable.",
             "ejemplo": '''
                 from enum import Enum
@@ -1390,7 +1483,7 @@ diccionario_es = {
                 '''
         },
         "encode_utf8": {
-            "significado": "Método de codificación que convierte una cadena de caracteres en una secuencia de bytes usando el formato UTF-8.",
+            "significado": "Método de codificación que convierte una cadena de caracteres en una secuencia de bytes utilizando el formato UTF-8.",
             "uso": "Se usa para convertir texto en una representación binaria usando UTF-8.",
             "ejemplo": '''
                 texto = 'Hola Mundo'
@@ -1407,7 +1500,7 @@ diccionario_es = {
                 '''
         },
         "edit_distance": {
-            "significado": "Medida que calcula la diferencia entre dos cadenas basándose en las operaciones necesarias para convertir una en la otra.",
+            "significado": "Medida que calcula la diferencia entre dos cadenas en función de las operaciones necesarias para convertir una en la otra.",
             "uso": "Se usa para comparar cuán similares son dos cadenas y determinar cuántos cambios son necesarios para hacerlas idénticas.",
             "ejemplo": '''
                 from nltk.metrics import edit_distance
@@ -1426,126 +1519,389 @@ diccionario_es = {
                 '''
         },
         "xceed": {
-            "significado": "Término usado para describir algo que supera o excede un límite.",
-            "uso": "Se usa para describir el acto de ir más allá de un límite o expectativa.",
+            "significado": "Término usado para describir algo que supera o excede un límite o expectativa.",
+            "uso": "Se usa para indicar que algo ha superado un estándar o límite.",
+            "ejemplo": "La nueva actualización excede nuestras expectativas en términos de rendimiento."
+        },
+        "expected": {
+            "significado": "Algo anticipado o previsto, basado en expectativas o predicciones.",
+            "uso": "Se usa para describir lo que se espera que ocurra en una situación.",
+            "ejemplo": "El resultado esperado era un aumento en la velocidad de procesamiento."
+        },
+        "encode_base64": {
+            "significado": "Método de codificación que convierte datos binarios en una representación de texto en base 64.",
+            "uso": "Se usa para codificar datos binarios en una cadena de texto legible en base 64.",
             "ejemplo": '''
-                x = 10
-                if x > 5:
-                    print('Excedió el límite')
+                import base64
+                encoded = base64.b64encode(b'ola')
+                print(encoded)  # Salida: b'b2xh'
+                '''
+        },
+        "execute": {
+            "significado": "Realizar o ejecutar un conjunto de instrucciones o un programa.",
+            "uso": "Se usa para llevar a cabo una acción o ejecutar código.",
+            "ejemplo": '''
+                def funcion():
+                    print('Ejecutando...')
+                funcion()  # Salida: Ejecutando...
+                '''
+        },
+        "exit_code": {
+            "significado": "Valor retornado por un programa o script al finalizar, indicando si se ejecutó correctamente o si ocurrió un error.",
+            "uso": "Se usa para verificar si un programa se completó con éxito o si ocurrió un error.",
+            "ejemplo": '''
+                import sys
+                sys.exit(0)  # Salida: 0 indica éxito, otro número indica error.
+                '''
+        },
+        "evaluate_expression": {
+            "significado": "Evaluar una expresión para obtener su resultado.",
+            "uso": "Se usa para calcular o obtener el valor de una expresión matemática o lógica.",
+            "ejemplo": '''
+                resultado = eval('3 + 5')
+                print(resultado)  # Salida: 8
+                '''
+        },
+        "environment": {
+            "significado": "El contexto o conjunto de condiciones en las que un programa o aplicación se ejecuta.",
+            "uso": "Se usa para referirse al conjunto de variables, configuraciones y recursos disponibles para un programa.",
+            "ejemplo": '''
+                import os
+                print(os.environ)  # Salida: Muestra las variables de entorno del sistema.
+                '''
+        },
+        "environment_variable": {
+            "significado": "Variable que almacena información sobre el entorno del sistema o aplicación.",
+            "uso": "Se usa para almacenar configuraciones específicas que afectan el comportamiento de los programas.",
+            "ejemplo": '''
+                import os
+                print(os.getenv('PATH'))  # Salida: Muestra la variable de entorno PATH.
+                '''
+        },
+        "exp": {
+            "significado": "Función matemática que calcula la exponencial de un número, es decir, e elevado a la potencia de ese número.",
+            "uso": "Se usa para realizar cálculos exponenciales.",
+            "ejemplo": '''
+                import math
+                resultado = math.exp(1)
+                print(resultado)  # Salida: 2.718281828459045
+                '''
+        },
+        "exception_handling": {
+            "significado": "Proceso de gestionar y responder a errores o excepciones que ocurren durante la ejecución de un programa.",
+            "uso": "Se usa para capturar y gestionar errores, asegurando que el programa no se detenga inesperadamente.",
+            "ejemplo": '''
+                try:
+                    valor = 1 / 0
+                except ZeroDivisionError as e:
+                    print(f'Error: {e}')  # Salida: Error: division by zero
+                '''
+        },
+        "expand": {
+            "significado": "Ampliar o aumentar el tamaño o el alcance de algo.",
+            "uso": "Se usa para hacer algo más grande o incluir más información.",
+            "ejemplo": '''
+                texto = "Hola"
+                print(texto.expandtabs(4))  # Salida: 'Hola' con tabulaciones ampliadas
+                '''
+        },
+        "environment_config": {
+            "significado": "Configuración relacionada con el entorno de ejecución de un programa o sistema.",
+            "uso": "Se usa para especificar o ajustar parámetros que afectan el funcionamiento de un programa o aplicación.",
+            "ejemplo": '''
+                config = {
+                    'host': 'localhost',
+                    'port': 8080
+                }
+                print(config)  # Salida: {'host': 'localhost', 'port': 8080}
+                '''
+        },
+        "equal": {
+            "significado": "Indica que dos elementos son idénticos en valor.",
+            "uso": "Se usa para comparar dos valores o expresiones para verificar si son iguales.",
+            "ejemplo": '''
+                a = 5
+                b = 5
+                print(a == b)  # Salida: True
+                '''
+        },
+        "error_handling": {
+            "significado": "Proceso de gestionar errores y excepciones que ocurren durante la ejecución de un programa.",
+            "uso": "Se usa para capturar y gestionar errores de manera controlada para evitar que el programa termine inesperadamente.",
+            "ejemplo": '''
+                try:
+                    valor = 10 / 0
+                except ZeroDivisionError:
+                    print('Error de división por cero')  # Salida: Error de división por cero
+                '''
+        },
+        "event": {
+            "significado": "Acción o evento que puede ser detectado y gestionado en un programa.",
+            "uso": "Se usa para gestionar y responder a actividades o cambios en un sistema o programa.",
+            "ejemplo": '''
+                import tkinter as tk
+                def click():
+                    print('Botón presionado')
+                root = tk.Tk()
+                button = tk.Button(root, text="Haz clic en mí", command=click)
+                button.pack()
+                root.mainloop()  # Salida: Muestra un botón que, al ser presionado, ejecuta el evento click
+                '''
+        },
+        "event_loop": {
+            "significado": "Ciclo continuo que espera y gestiona eventos o tareas asincrónicas en un programa.",
+            "uso": "Se usa para ejecutar tareas o responder a eventos en orden, sin bloquear el flujo principal de ejecución.",
+            "ejemplo": '''
+                import asyncio
+                async def hello():
+                    print("Hola")
+                asyncio.run(hello())  # Salida: Hola
+                '''
+        },
+        "exception_type": {
+            "significado": "El tipo específico de una excepción o error que ocurre en un programa.",
+            "uso": "Se usa para identificar qué tipo de error ocurrió y tomar acciones adecuadas.",
+            "ejemplo": '''
+                try:
+                    valor = 10 / 0
+                except ZeroDivisionError as e:
+                    print(f"Tipo de error: {type(e)}")  # Salida: Tipo de error: <class 'ZeroDivisionError'>
+                '''
+        },
+        "error_message": {
+            "significado": "Mensaje que describe el error o problema ocurrido durante la ejecución de un programa.",
+            "uso": "Se usa para proporcionar detalles sobre lo que falló o causó una excepción.",
+            "ejemplo": '''
+                try:
+                    x = int("abc")
+                except ValueError as e:
+                    print(f"Mensaje de error: {e}")  # Salida: Mensaje de error: invalid literal for int() with base 10: 'abc'
+                '''
+        },
+        "extract": {
+            "significado": "Obtener una parte específica de un conjunto de datos o información.",
+            "uso": "Se usa para retirar o extraer un componente específico de un conjunto mayor de datos.",
+            "ejemplo": '''
+                texto = 'Hola Mundo'
+                print(texto[0:4])  # Salida: Hola
+                '''
+        },
+        "exit_status": {
+            "significado": "Código de salida que indica si un programa o proceso terminó correctamente o con error.",
+            "uso": "Se usa para verificar si un proceso o comando terminó con éxito o si ocurrió algún error.",
+            "ejemplo": '''
+                import sys
+                sys.exit(0)  # Salida: 0 indica éxito, cualquier otro número indica error.
                 '''
         },
     },
     "f": {
-            "filemode": {
-            "significado": "Modo de apertura de un archivo que determina las operaciones que se pueden realizar en él.",
-            "uso": "Se utiliza para especificar el tipo de acceso deseado para un archivo (lectura, escritura, etc.).",
-            "ejemplo": "archivo = open('archivo.txt', 'r')  # 'r' indica modo de solo lectura\nprint(archivo.mode)  # Salida: 'r'"
+        "filemode": {
+            "significado": "Modo de apertura de un archivo que determina las operaciones que pueden realizarse en él.",
+            "uso": "Se usa para especificar el tipo de acceso deseado para un archivo (lectura, escritura, etc.).",
+            "ejemplo": '''
+                archivo = open('archivo.txt', 'r')  # 'r' indica modo de solo lectura
+                print(archivo.mode)  # Salida: 'r'
+                '''
         },
         "frozen_set": {
             "significado": "Conjunto inmutable en Python, similar a un conjunto estándar, pero sin la posibilidad de modificarlo después de su creación.",
-            "uso": "Se utiliza para crear conjuntos que no deben ser modificados después de su creación.",
-            "ejemplo": "conjunto = frozenset([1, 2, 3])\nprint(conjunto)  # Salida: frozenset({1, 2, 3})"
+            "uso": "Se usa para crear conjuntos que no deben ser modificados después de su creación.",
+            "ejemplo": '''
+                conjunto = frozenset([1, 2, 3])
+                print(conjunto)  # Salida: frozenset({1, 2, 3})
+                '''
         },
         "format_map": {
-            "significado": "Método que devuelve una cadena formateada usando un diccionario u objeto similar.",
-            "uso": "Se utiliza para realizar sustituciones de valores en una cadena usando un mapa (como un diccionario).",
-            "ejemplo": "datos = {'nombre': 'Juan', 'edad': 30}\ntexto = 'Nombre: {nombre}, Edad: {edad}'.format_map(datos)\nprint(texto)  # Salida: Nombre: Juan, Edad: 30"
+            "significado": "Método que retorna una cadena formateada usando un diccionario u objeto similar.",
+            "uso": "Se usa para realizar sustituciones de valores en una cadena usando un mapa (como un diccionario).",
+            "ejemplo": '''
+                datos = {'nombre': 'Juan', 'edad': 30}
+                texto = 'Nombre: {nombre}, Edad: {edad}'.format_map(datos)
+                print(texto)  # Salida: Nombre: Juan, Edad: 30
+                '''
         },
         "find": {
-            "significado": "Método que busca una subcadena dentro de una cadena y devuelve el índice de la primera ocurrencia.",
-            "uso": "Se utiliza para encontrar la posición de un texto dentro de otro.",
-            "ejemplo": "texto = 'Hola Mundo'\nprint(texto.find('Mundo'))  # Salida: 5"
+            "significado": "Método que busca una subcadena dentro de una cadena y retorna el índice de la primera ocurrencia.",
+            "uso": "Se usa para encontrar la posición de un texto dentro de otro.",
+            "ejemplo": '''
+                texto = 'Hola Mundo'
+                print(texto.find('Mundo'))  # Salida: 5
+                '''
         },
         "float32": {
             "significado": "Tipo de dato en NumPy que representa un número de punto flotante de 32 bits.",
-            "uso": "Se utiliza para almacenar números con decimales de manera más eficiente en términos de memoria.",
-            "ejemplo": "import numpy as np\nnumero = np.float32(3.1415)\nprint(numero)  # Salida: 3.1415"
+            "uso": "Se usa para almacenar números con decimales de forma más eficiente en términos de memoria.",
+            "ejemplo": '''
+                import numpy as np
+                numero = np.float32(3.1415)
+                print(numero)  # Salida: 3.1415
+                '''
         },
         "float64": {
             "significado": "Tipo de dato en NumPy que representa un número de punto flotante de 64 bits.",
-            "uso": "Se utiliza para almacenar números con decimales con mayor precisión que el tipo float32.",
-            "ejemplo": "import numpy as np\nnumero = np.float64(3.141592653589793)\nprint(numero)  # Salida: 3.141592653589793"
+            "uso": "Se usa para almacenar números con decimales con mayor precisión que el tipo float32.",
+            "ejemplo": '''
+                import numpy as np
+                numero = np.float64(3.141592653589793)
+                print(numero)  # Salida: 3.141592653589793
+                '''
         },
         "formatting": {
-            "significado": "El proceso de aplicar un formato a datos o cadenas, como alineación, anchos y tipos de datos.",
-            "uso": "Se utiliza para organizar o mostrar datos de forma más legible o específica.",
-            "ejemplo": "texto = 'Nombre: {0:10}, Edad: {1:5}'.format('Juan', 30)\nprint(texto)  # Salida: Nombre: Juan      , Edad: 30"
+            "significado": "El proceso de aplicar un formato a datos o cadenas, como alineación, anchuras y tipos de datos.",
+            "uso": "Se usa para organizar o mostrar datos de forma más legible o específica.",
+            "ejemplo": '''
+                texto = 'Nombre: {0:10}, Edad: {1:5}'.format('Juan', 30)
+                print(texto)  # Salida: Nombre: Juan      , Edad: 30
+                '''
         },
         "flush_output": {
-            "significado": "Método utilizado para vaciar el búfer de salida, forzando que los datos se escriban inmediatamente.",
-            "uso": "Se utiliza cuando se quiere garantizar que todos los datos pendientes en el búfer de salida se escriban en el destino.",
-            "ejemplo": "import sys\nsys.stdout.write('Hola Mundo')\nsys.stdout.flush()  # Salida: 'Hola Mundo' inmediatamente"
+            "significado": "Método utilizado para vaciar el búfer de salida, forzando a que los datos se escriban inmediatamente.",
+            "uso": "Se usa cuando se quiere garantizar que todos los datos pendientes en el búfer de salida se escriban en el destino.",
+            "ejemplo": '''
+                import sys
+                sys.stdout.write('Hola Mundo')
+                sys.stdout.flush()  # Salida: 'Hola Mundo' inmediatamente
+                '''
         },
         "function_definition": {
             "significado": "El proceso de crear una función en Python usando la palabra clave 'def'.",
-            "uso": "Se utiliza para declarar funciones reutilizables que ejecutan un bloque de código específico.",
-            "ejemplo": "def saludar(nombre):\n    return f'Hola {nombre}'\nprint(saludar('Juan'))  # Salida: Hola Juan"
+            "uso": "Se usa para declarar funciones reutilizables que ejecutan un bloque de código específico.",
+            "ejemplo": '''
+                def saludar(nombre):
+                    return f'Hola {nombre}'
+                print(saludar('Juan'))  # Salida: Hola Juan
+                '''
         },
         "filepath": {
             "significado": "Ruta o dirección de un archivo en el sistema de archivos.",
-            "uso": "Se utiliza para especificar la ubicación de un archivo en el sistema de archivos.",
-            "ejemplo": "import os\ncamino = os.path.join('carpeta', 'archivo.txt')\nprint(camino)  # Salida: carpeta/archivo.txt"
+            "uso": "Se usa para especificar la ubicación de un archivo en el sistema de archivos.",
+            "ejemplo": '''
+                import os
+                camino = os.path.join('carpeta', 'archivo.txt')
+                print(camino)  # Salida: carpeta/archivo.txt
+                '''
         },
         "flask": {
             "significado": "Un micro-framework en Python para el desarrollo de aplicaciones web.",
-            "uso": "Se utiliza para crear aplicaciones web de manera sencilla y rápida con rutas, formularios y otras funcionalidades.",
-            "ejemplo": "from flask import Flask\napp = Flask(__name__)\n\n@app.route('/')\ndef hola():\n    return 'Hola Mundo'\n\napp.run()  # Salida: 'Hola Mundo' en una aplicación web"
+            "uso": "Se usa para crear aplicaciones web de manera simple y rápida con rutas, formularios y otras funcionalidades.",
+            "ejemplo": '''
+                from flask import Flask
+                app = Flask(__name__)
+
+                @app.route('/')
+                def hello():
+                    return 'Hola Mundo'
+
+                app.run()  # Salida: 'Hola Mundo' en una aplicación web
+                '''
         },
         "filtering": {
             "significado": "Proceso de seleccionar elementos de una colección que cumplen con una condición específica.",
-            "uso": "Se utiliza para extraer elementos de una lista, conjunto o cualquier iterable basándose en una condición.",
-            "ejemplo": "lista = [1, 2, 3, 4, 5]\nresultado = filter(lambda x: x > 2, lista)\nprint(list(resultado))  # Salida: [3, 4, 5]"
+            "uso": "Se usa para extraer elementos de una lista, conjunto o cualquier iterable basado en una condición.",
+            "ejemplo": '''
+                lista = [1, 2, 3, 4, 5]
+                resultado = filter(lambda x: x > 2, lista)
+                print(list(resultado))  # Salida: [3, 4, 5]
+                '''
         },
         "futures": {
             "significado": "Módulo que proporciona una interfaz para ejecutar tareas asincrónicas y paralelizadas.",
-            "uso": "Se utiliza para ejecutar funciones de manera concurrente usando hilos o procesos.",
-            "ejemplo": "from concurrent.futures import ThreadPoolExecutor\n\ndef tarea(x):\n    return x * x\n\nwith ThreadPoolExecutor() as executor:\n    resultados = executor.map(tarea, [1, 2, 3])\n    print(list(resultados))  # Salida: [1, 4, 9]"
+            "uso": "Se usa para ejecutar funciones de manera concurrente usando hilos o procesos.",
+            "ejemplo": '''
+                from concurrent.futures import ThreadPoolExecutor
+
+                def tarea(x):
+                    return x * x
+
+                with ThreadPoolExecutor() as executor:
+                    resultados = executor.map(tarea, [1, 2, 3])
+                    print(list(resultados))  # Salida: [1, 4, 9]
+                '''
         },
         "fold": {
             "significado": "Función que aplica una operación acumulativa sobre los elementos de una secuencia.",
-            "uso": "Se utiliza para reducir una secuencia de elementos a un único valor aplicando una operación binaria.",
-            "ejemplo": "from functools import reduce\nlista = [1, 2, 3, 4]\nresultado = reduce(lambda x, y: x + y, lista)\nprint(resultado)  # Salida: 10"
+            "uso": "Se usa para reducir una secuencia de elementos a un único valor aplicando una operación binaria.",
+            "ejemplo": '''
+                from functools import reduce
+                lista = [1, 2, 3, 4]
+                resultado = reduce(lambda x, y: x + y, lista)
+                print(resultado)  # Salida: 10
+                '''
         },
         "fromkeys": {
             "significado": "Método de diccionario que crea un nuevo diccionario con claves especificadas y valores predeterminados.",
-            "uso": "Se utiliza para crear diccionarios a partir de una lista de claves con un valor predeterminado.",
-            "ejemplo": "diccionario = dict.fromkeys(['a', 'b', 'c'], 0)\nprint(diccionario)  # Salida: {'a': 0, 'b': 0, 'c': 0}"
+            "uso": "Se usa para crear diccionarios a partir de una lista de claves con un valor predeterminado.",
+            "ejemplo": '''
+                diccionario = dict.fromkeys(['a', 'b', 'c'], 0)
+                print(diccionario)  # Salida: {'a': 0, 'b': 0, 'c': 0}
+                '''
         },
         "flask_restful": {
             "significado": "Extensión para Flask que simplifica la creación de APIs RESTful.",
-            "uso": "Se utiliza para desarrollar aplicaciones web que siguen la arquitectura REST usando recursos.",
-            "ejemplo": "from flask import Flask\nfrom flask_restful import Api, Resource\n\napp = Flask(__name__)\napi = Api(app)\n\nclass HelloWorld(Resource):\n    def get(self):\n        return {'mensaje': 'Hola Mundo'}\n\napi.add_resource(HelloWorld, '/')\napp.run()  # Salida: 'Hola Mundo' como respuesta de la API"
+            "uso": "Se usa para desarrollar aplicaciones web que siguen la arquitectura REST usando recursos.",
+            "ejemplo": '''
+                from flask import Flask
+                from flask_restful import Api, Resource
+
+                app = Flask(__name__)
+                api = Api(app)
+
+                class HelloWorld(Resource):
+                    def get(self):
+                        return {'mensaje': 'Hola Mundo'}
+
+                api.add_resource(HelloWorld, '/')
+                app.run()  # Salida: 'Hola Mundo' como respuesta de la API
+                '''
         },
         "fix": {
             "significado": "Término general para corregir o ajustar algo que no funciona correctamente.",
-            "uso": "Se utiliza cuando se hace un ajuste o corrección en el código o en la configuración de algo.",
-            "ejemplo": "def corregir_error():\n    print('Esta es la mensaje corregida')\ncorregir_error()"
+            "uso": "Se usa cuando se hace un ajuste o corrección en el código o en la configuración de algo.",
+            "ejemplo": '''
+                # ejemplo no contexto de código: corrección de un error de sintaxis
+                def corregir_error():
+                    print('Este es el mensaje corregido')
+                corregir_error()
+                '''
         },
         "float_conversion": {
-            "significado": "Proceso de convertir datos de otros tipos a tipo flotante.",
-            "uso": "Se utiliza para convertir valores en números de punto flotante (decimales).",
-            "ejemplo": "numero = '3.14'\nresultado = float(numero)\nprint(resultado)  # Salida: 3.14"
+            "significado": "Proceso de convertir datos de otros tipos al tipo flotante.",
+            "uso": "Se usa para convertir valores en números de punto flotante (decimales).",
+            "ejemplo": '''
+                numero = '3.14'
+                resultado = float(numero)
+                print(resultado)  # Salida: 3.14
+                '''
         },
         "full_path": {
             "significado": "Ruta completa para un archivo o directorio en el sistema de archivos.",
-            "uso": "Se utiliza para especificar la ubicación exacta de un archivo o directorio desde la raíz del sistema de archivos.",
-            "ejemplo": "import os\ncamino_completo = os.path.abspath('archivo.txt')\nprint(camino_completo)  # Salida: /home/usuario/archivo.txt"
+            "uso": "Se usa para especificar la ubicación exacta de un archivo o directorio desde la raíz del sistema de archivos.",
+            "ejemplo": '''
+                import os
+                camino_completo = os.path.abspath('archivo.txt')
+                print(camino_completo)  # Salida: /home/usuario/archivo.txt
+                '''
         },
         "filter": {
             "significado": "Función que aplica una condición a cada elemento de un iterable y devuelve los elementos que cumplen con la condición.",
-            "uso": "Se utiliza para seleccionar solo los elementos que cumplen con una condición específica.",
-            "ejemplo": "lista = [1, 2, 3, 4, 5]\nresultado = filter(lambda x: x % 2 == 0, lista)\nprint(list(resultado))  # Salida: [2, 4]"
+            "uso": "Se usa para seleccionar solo los elementos que cumplen con una condición específica.",
+            "ejemplo": '''
+                lista = [1, 2, 3, 4, 5]
+                resultado = filter(lambda x: x % 2 == 0, lista)
+                print(list(resultado))  # Salida: [2, 4]
+                '''
         },
         "float": {
-        "significado": "Tipo de dato en Python para representar números de punto flotante (números con decimales).",
-        "uso": "Se usa para representar números que requieren decimales.",
-        "ejemplo": '''
-            numero = 3.14
-            print(type(numero))  # Salida: <class 'float'>
-            '''
+            "significado": "Tipo de dato en Python para representar números de punto flotante (números con decimales).",
+            "uso": "Se usa para representar números que requieren decimales.",
+            "ejemplo": '''
+                numero = 3.14
+                print(type(numero))  # Salida: <class 'float'>
+                '''
         },
         "for": {
-            "significado": "Palabra clave en Python usada para iterar sobre los elementos de un iterable.",
+            "significado": "Palabra clave en Python utilizada para iterar sobre los elementos de un iterable.",
             "uso": "Se usa para ejecutar un bloque de código repetidamente para cada elemento de un iterable.",
             "ejemplo": '''
                 for i in range(5):
@@ -1569,7 +1925,7 @@ diccionario_es = {
                 '''
         },
         "from": {
-            "significado": "Palabra clave en Python usada para importar módulos o funciones específicas de módulos.",
+            "significado": "Palabra clave en Python utilizada para importar módulos o funciones específicas de módulos.",
             "uso": "Se usa para traer funcionalidades específicas de un módulo al espacio de nombres actual.",
             "ejemplo": '''
                 from math import sqrt
@@ -1578,7 +1934,7 @@ diccionario_es = {
         },
         "function": {
             "significado": "Bloque de código diseñado para realizar una tarea específica y que puede ser reutilizado.",
-            "uso": "Se usa para agrupar código relacionado que realiza una tarea común, permitiendo reutilización y modularidad.",
+            "uso": "Se usa para agrupar código relacionado que realiza una tarea común, permitiendo la reutilización y modularidad.",
             "ejemplo": '''
                 def saludo(nombre):
                     return f'Hola, {nombre}'
@@ -1626,8 +1982,8 @@ diccionario_es = {
                 '''
         },
         "finally": {
-            "significado": "Palabra clave en Python que define un bloque de código que siempre se ejecutará, independientemente de si ocurre una excepción o no.",
-            "uso": "Se usa en estructuras try-except para garantizar que un bloque de código final sea ejecutado, incluso si ocurre un error.",
+            "significado": "Palabra clave en Python que define un bloque de código que siempre se ejecuta, independientemente de si ocurre una excepción o no.",
+            "uso": "Se usa en estructuras try-except para garantizar que un bloque de código final se ejecute, aunque ocurra un error.",
             "ejemplo": '''
                 try:
                     x = 1 / 0
@@ -1641,23 +1997,23 @@ diccionario_es = {
             "significado": "Proceso de convertir un objeto mutable en un objeto inmutable.",
             "uso": "Se usa para evitar que un objeto sea modificado después de haber sido creado.",
             "ejemplo": '''
-                # No hay una función explícita llamada freeze, pero en algunos casos como con `frozenset` se puede lograr el mismo efecto
+                # No existe una función explícita llamada freeze, pero en algunos casos como con `frozenset` se puede lograr el mismo efecto
                 a = frozenset([1, 2, 3])
                 print(a)  # Salida: frozenset({1, 2, 3})
                 '''
         },
         "flush": {
-            "significado": "Método usado para vaciar los buffers de un archivo, garantizando que todos los datos sean escritos en el disco.",
-            "uso": "Se usa cuando es necesario garantizar que los datos almacenados en un buffer sean inmediatamente escritos en el archivo.",
+            "significado": "Método usado para vaciar los buffers de un archivo, asegurando que todos los datos sean escritos en el disco.",
+            "uso": "Se usa cuando es necesario asegurar que los datos almacenados en un buffer sean inmediatamente escritos en el archivo.",
             "ejemplo": '''
                 with open('archivo.txt', 'w') as f:
                     f.write('Hola')
-                    f.flush()  # Garantiza que los datos sean escritos en el archivo
+                    f.flush()  # Asegura que los datos se escriban en el archivo
                 '''
         },
         "fstring": {
             "significado": "Cadena de texto que permite insertar expresiones dentro de la cadena de forma más legible y eficiente.",
-            "uso": "Se usa para crear cadenas de texto interpoladas, donde las variables pueden ser insertadas directamente dentro de la cadena.",
+            "uso": "Se usa para crear cadenas de texto interpoladas, donde las variables pueden ser insertadas directamente en la cadena.",
             "ejemplo": '''
                 nombre = 'Juan'
                 edad = 30
@@ -1690,7 +2046,7 @@ diccionario_es = {
                 '''
         },
         "fuzzy": {
-            "significado": "Relacionado con la lógica difusa, que permite lidiar con información imprecisa o incierta.",
+            "significado": "Relacionado con la lógica difusa, que permite manejar información imprecisa o incierta.",
             "uso": "Se usa en sistemas que necesitan procesar datos aproximados o inciertos.",
             "ejemplo": '''
                 # ejemplo de una biblioteca de lógica difusa como `fuzzywuzzy` (para coincidencia difusa de texto)
@@ -1712,7 +2068,7 @@ diccionario_es = {
                 '''
         },
         "format_spec": {
-            "significado": "Cadena usada para definir cómo deben presentarse los valores dentro de un formato de cadena.",
+            "significado": "Cadena usada para definir cómo los valores deben ser presentados dentro de un formato de cadena.",
             "uso": "Se usa para especificar el formato de los valores dentro de una cadena, como precisión decimal, alineación, entre otros.",
             "ejemplo": '''
                 pi = 3.14159
@@ -1731,37 +2087,34 @@ diccionario_es = {
                     print(f'Proceso hijo, PID: {os.getpid()}')
                 '''
         },
-        "function_annotation": {
-            "significado": "Anotaciones en funciones que se usan para indicar el tipo de los parámetros y el valor de retorno.",
-            "uso": "Se usa para mejorar la legibilidad y el análisis estático de código, sin afectar su ejecución.",
+        "forking": {
+            "significado": "Acción de crear un nuevo proceso o subproceso a partir de un proceso principal.",
+            "uso": "Se usa en sistemas operativos para crear procesos adicionales que ejecutan tareas de forma concurrente.",
             "ejemplo": '''
-                def suma(a: int, b: int) -> int:
-                    return a + b
-                
-                print(suma(2, 3))  # Salida: 5
+                import os
+                pid = os.fork()
+                # Similar al ejemplo de 'fork', pero abarcando el concepto de 'forking'
                 '''
         },
-        "freeze_support": {
-            "significado": "Función que se usa en programas que usan el módulo `multiprocessing` para habilitar el soporte de procesos en Windows.",
-            "uso": "Se usa para permitir que los programas que usan `multiprocessing` funcionen correctamente en sistemas Windows.",
+        "first": {
+            "significado": "Acción de obtener el primer elemento de una secuencia o iterable.",
+            "uso": "Se usa para acceder al primer valor de un iterable, como una lista o conjunto.",
             "ejemplo": '''
-                from multiprocessing import freeze_support
-                if __name__ == '__main__':
-                    freeze_support()
-                    # Código adicional aquí
+                lista = [1, 2, 3, 4]
+                print(lista[0])  # Salida: 1
                 '''
         },
         "float_format": {
-            "significado": "Formato que define cómo se deben presentar los números de punto flotante en una cadena.",
-            "uso": "Se utiliza para especificar la cantidad de decimales a mostrar en un número de punto flotante.",
+            "significado": "Formato que define cómo los números de punto flotante deben ser presentados en una cadena.",
+            "uso": "Se usa para especificar la cantidad de decimales a ser mostrados en un número de punto flotante.",
             "ejemplo": '''
                 pi = 3.14159
                 print(f'{pi:.2f}')  # Salida: 3.14
                 '''
         },
         "filter_none": {
-            "significado": "Función que filtra elementos de un iterable, excluyendo los valores None.",
-            "uso": "Se usa para excluir los valores None de una secuencia.",
+            "significado": "Función que filtra elementos de un iterable, excluyendo los valores `None`.",
+            "uso": "Se usa para excluir valores `None` de una secuencia.",
             "ejemplo": '''
                 lista = [1, None, 2, None, 3]
                 resultado = filter(None, lista)
@@ -1785,9 +2138,9 @@ diccionario_es = {
                 print(pow(2, 3.5))  # Salida: 11.313708498984761
                 '''
         },
-        "format_string": {
+       "format_string": {
             "significado": "Cadena que define la estructura de un valor que se desea mostrar, utilizando especificadores de formato.",
-            "uso": "Se usa para definir cómo deben mostrarse los valores en una cadena, como el número de decimales o la alineación.",
+            "uso": "Se usa para definir cómo los valores deben ser exhibidos en una cadena, como el número de decimales o la alineación.",
             "ejemplo": '''
                 nombre = 'Juan'
                 edad = 25
@@ -1804,7 +2157,7 @@ diccionario_es = {
                 '''
         },
         "file_object": {
-            "significado": "Objeto que representa un archivo abierto en Python, mediante el cual es posible leer, escribir o manipular el archivo.",
+            "significado": "Objeto que representa un archivo abierto en Python, a través del cual es posible leer, escribir o manipular el archivo.",
             "uso": "Se usa para interactuar con archivos abiertos en Python, accediendo o modificando su contenido.",
             "ejemplo": '''
                 with open('documento.txt', 'r') as f:
@@ -1813,8 +2166,8 @@ diccionario_es = {
                 '''
         },
         "finally_clause": {
-            "significado": "Parte de un bloque de código que siempre se ejecuta después de una instrucción try, independientemente de si se genera una excepción o no.",
-            "uso": "Se usa para ejecutar código de limpieza o finalización, como el cierre de archivos o la liberación de recursos.",
+            "significado": "Parte de un bloque de código que siempre se ejecuta después de una instrucción `try`, independientemente de si se genera una excepción o no.",
+            "uso": "Se usa para ejecutar código de limpieza o finalización, como el cierre de archivos o liberación de recursos.",
             "ejemplo": '''
                 try:
                     archivo = open('documento.txt', 'r')
@@ -1826,7 +2179,7 @@ diccionario_es = {
         },
         "file_read": {
             "significado": "Operación que permite leer el contenido de un archivo en Python.",
-            "uso": "Se usa para obtener los datos almacenados en un archivo para su procesamiento o visualización.",
+            "uso": "Se usa para obtener los datos almacenados en un archivo para su procesamiento o exhibición.",
             "ejemplo": '''
                 with open('documento.txt', 'r') as archivo:
                     contenido = archivo.read()
@@ -1835,7 +2188,7 @@ diccionario_es = {
         },
         "form": {
             "significado": "Estructura o modelo utilizado para organizar datos de manera específica.",
-            "uso": "Se usa en interfaces de usuario o aplicaciones web para capturar y organizar datos del usuario.",
+            "uso": "Se usa en interfaces de usuario o aplicaciones web para capturar y organizar los datos del usuario.",
             "ejemplo": '''
                 formulario = {'nombre': 'Juan', 'edad': 25}
                 print(formulario)
@@ -1872,7 +2225,7 @@ diccionario_es = {
         },
         "float_precision": {
             "significado": "Número de dígitos usados para representar un número flotante con precisión.",
-            "uso": "Se usa para especificar la cantidad de decimales a considerar al realizar operaciones con números flotantes.",
+            "uso": "Se usa para especificar la cantidad de decimales a ser considerados al realizar operaciones con números flotantes.",
             "ejemplo": '''
                 numero = 3.14159265359
                 print(f'{numero:.2f}')  # Salida: 3.14
@@ -1880,7 +2233,7 @@ diccionario_es = {
         },
         "format_error": {
             "significado": "Error que ocurre cuando hay un problema al formatear datos, como una cadena mal estructurada.",
-            "uso": "Se usa para manejar errores relacionados con la conversión o el formateo incorrecto de datos.",
+            "uso": "Se usa para tratar errores relacionados con la conversión o formateo incorrecto de datos.",
             "ejemplo": '''
                 try:
                     int('abc')
@@ -1897,10 +2250,10 @@ diccionario_es = {
                 '''
         },
         "fibonacci_search": {
-            "significado": "Método de búsqueda que utiliza los números de Fibonacci para dividir el espacio de búsqueda de manera eficiente.",
+            "significado": "Método de búsqueda que utiliza los números de Fibonacci para dividir el espacio de búsqueda de forma eficiente.",
             "uso": "Se usa como una alternativa al algoritmo de búsqueda binaria para encontrar un elemento en un arreglo.",
             "ejemplo": '''
-                # Implementación de Fibonacci Search no estándar, pero puede usarse como alternativa a la búsqueda binaria
+                # Implementación de Fibonacci Search no estándar, pero puede ser usado como alternativa a la búsqueda binaria
                 def fibonacci_search(arr, x):
                     fib_m_minus_2 = 0
                     fib_m_minus_1 = 1
@@ -1913,7 +2266,7 @@ diccionario_es = {
         },
         "filter_map": {
             "significado": "Función que filtra los elementos de un iterable y luego aplica una función de mapeo a los elementos restantes.",
-            "uso": "Se usa para realizar transformaciones y filtrados de manera eficiente en secuencias de datos.",
+            "uso": "Se usa para realizar transformaciones y filtrados de forma eficiente en secuencias de datos.",
             "ejemplo": '''
                 from itertools import filterfalse
                 datos = [1, 2, 3, 4, 5]
