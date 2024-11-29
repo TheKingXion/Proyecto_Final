@@ -55,7 +55,6 @@ function updateTextContent(language) {
         }
     };
 
-    // Actualizar los textos de la página
     document.title = textContent[language].title;
     document.getElementById('header1').textContent = textContent[language].header1;
     document.getElementById('header3').textContent = textContent[language].header3;

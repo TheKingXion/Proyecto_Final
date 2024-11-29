@@ -39,7 +39,6 @@ function changeLanguage() {
     var selectedLanguage = document.getElementById('input-language').value;
     updateTextContent(selectedLanguage);
 
-    // Cambiar las partículas a la nueva lengua
     currentLanguage = selectedLanguage;
     document.querySelectorAll('.particle').forEach(particle => {
         particle.textContent = words[currentLanguage][Math.floor(Math.random() * words[currentLanguage].length)];
@@ -48,15 +47,15 @@ function changeLanguage() {
 
 document.addEventListener('DOMContentLoaded', function() {
     initParticles();
-    updateTextContent('{{ idioma }}'); // Inicializa los textos según el idioma cargado
+    updateTextContent('{{ idioma }}');
 });
 
 function initParticles() {
     for (let i = 0; i < 20; i++) {
         createParticle();
     }
-    setInterval(changeLanguage, 50000);
+    setInterval(changeLanguage, 500000);
 }
 
-// Call initParticles immediately
+
 initParticles();

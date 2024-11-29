@@ -22,3 +22,4 @@ with open('diccionario_ordenado.json', 'w', encoding='utf-8') as archivo:
     json.dump(diccionario_ordenado, archivo, ensure_ascii=False, indent=4)
 
 print("Diccionario ordenado escrito en 'diccionario_ordenado.json'")
+
