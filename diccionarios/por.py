@@ -6274,6 +6274,6 @@ diccionario_por = {
             "ejemplo": "\n                # Exemplo de cálculo de z-score em Python\n                import numpy as np\n\n                dados = [10, 20, 30, 40, 50]\n                media = np.mean(dados)\n                desvio_padrao = np.std(dados)\n                z_score = (30 - media) / desvio_padrao\n                print(\"O z-score de 30 é:\", z_score)\n                ",
             "significado": "Medida estatística que indica quantas desvios padrão um valor está afastado da média de um conjunto de dados.",
             "uso": "É utilizado para identificar valores atípicos e comparar dados em diferentes distribuições."
-        }
+        },
     }
 }
