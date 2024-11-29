@@ -2796,20 +2796,6 @@ diccionario_ita ={
             "significado": "Servidor intermediário que encaminha requisições HTTP entre o cliente e o servidor.",
             "uso": "É usado para controlar e monitorar o tráfego de rede, permitindo filtros, cache e anonimato."
         },
-        },
-
-    }
-
-    }
-
-    }
-
-    }
-
-    }
-
-    }
-
     },
     "i": {
         "if": {
