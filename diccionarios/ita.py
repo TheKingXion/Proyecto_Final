@@ -1526,7 +1526,7 @@ diccionario_ita ={
         "significato": "Termine usato per descrivere qualcosa che supera o eccede un limite o una aspettativa.",
         "uso": "Viene utilizzato per indicare che qualcosa ha superato uno standard o limite.",
         "esempio": "Il nuovo aggiornamento supera le nostre aspettative in termini di prestazioni."
-    }
+    },
 
       "expected": {
         "significato": "Qualcosa che è stato anticipato o previsto, basato su aspettative o previsioni.",            "uso": "Viene utilizzato per descrivere ciò che ci si aspetta che accada in una situazione.",
@@ -1590,7 +1590,7 @@ diccionario_ita ={
                 risultato = math.exp(1)
                 print(risultato)  # Output: 2.718281828459045
                 '''
-        }
+        },
         "exception_handling": {
             "significato": "Processo di gestione e risposta agli errori o eccezioni che si verificano durante l'esecuzione di un programma.",
             "uso": "Viene utilizzato per catturare e gestire gli errori, garantendo che il programma non si fermi in modo imprevisto.",
@@ -1661,7 +1661,7 @@ diccionario_ita ={
                     print("Ciao")
                 asyncio.run(ciao())  # Output: Ciao
                 '''
-        }
+        },
         "exception_type": {
             "significato": "Il tipo specifico di un'eccezione o errore che si verifica in un programma.",
             "uso": "Viene utilizzato per identificare il tipo di errore che si è verificato e prendere le azioni appropriate.",
@@ -1833,7 +1833,7 @@ diccionario_ita ={
                 risultato = reduce(lambda x, y: x + y, lista)
                 print(risultato)  # Output: 10
                 '''
-        }
+        },
         "fromkeys": {
             "significato": "Metodo del dizionario che crea un nuovo dizionario con chiavi specificate e valori predefiniti.",
             "uso": "Viene utilizzato per creare dizionari a partire da una lista di chiavi con un valore predefinito.",
@@ -2116,7 +2116,7 @@ diccionario_ita ={
                 pi = 3.14159
                 print(f'{pi:.2f}')  # Output: 3.14
                 '''
-        }
+        },
         
         "filter_none": {
             "significato": "Funzione che filtra gli elementi di un iterabile, escludendo i valori `None`.",
@@ -2191,7 +2191,7 @@ diccionario_ita ={
                     contenuto = file.read()
                     print(contenuto)
                 '''
-        }
+        },
         "form": {
             "significato": "Struttura o modello utilizzato per organizzare i dati in modo specifico.",
             "uso": "Viene utilizzato in interfacce utente o applicazioni web per acquisire e organizzare i dati dell'utente.",
@@ -2255,10 +2255,6 @@ diccionario_ita ={
                     file.write('Ciao, mondo!')
                 '''
         }
-    }
-
-
-
 
     },
     "g": {
