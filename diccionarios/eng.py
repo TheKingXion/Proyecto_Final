@@ -269,7 +269,7 @@ diccionario_eng = {
             "significado": "Returns a human-readable representation of an object using ASCII characters",
             "uso": "It is used to represent strings or characters in an ASCII-safe format by replacing non-ASCII characters with escape sequences",
             "ejemplo": '''
-                texto = "Hi, how are you?"
+                text = "Hi, how are you?"
                 print(ascii(text))  # Output: 'Hi\\xe1, how are\\xea you\\xe1?'
             '''
         },
@@ -1167,18 +1167,398 @@ diccionario_eng = {
     },
     "e": {
        "enumerate": {
-            "significado":" Returns an enumerated object, i.e., an index and its value",
-            "uso": "It is used to obtain both the index and the value of an iterable in a loop",
-            "ejemplo": '''for idx, val in enumerate(["a", "b", "c"]):
-            print(idx, val)'''
-            },
+            "significado": "Built-in Python function that adds a counter to an iterable and returns it as an iterable tuple object",
+            "uso": "It is used to obtain both the index and the value of elements in an iterable",
+            "ejemplo": '''
+                list = ['a', 'b', 'c']
+                for index, value in enumerate(list):
+                    print(index, value)
+                # Output:
+                # 0 a
+                # 1 b
+                # 2 c
+                '''
+        },
+        "eval": {
+            "significado": "Built-in Python function that evaluates a code string as a Python expression",
+            "uso": "It is used to execute Python expressions contained in a string and return the result",
+            "ejemplo": '''
+                x = 2
+                result = eval('x + 1')
+                print(result)  # Output: 3
+                '''
+        },
+        "exec": {
+            "significado": "Built-in Python function that executes a code string as a complete code block",
+            "uso": "It is used to execute Python code dynamically",
+            "ejemplo": '''
+                code = 'for i in range(3): print(i)'
+                exec(code)
+                # Output:
+                # 0
+                # 1
+                # 2
+                '''
+        },
         "except": {
-            "significado": "Error or unexpected event that interrupts the normal flow of the program",
-            "uso": " Handling errors and unforeseen situations",
-            "ejemplo": '''try:
-            result = 10 / 0
-            except ZeroDivisionError:
-            print("cannot be divided by zero")'''
+            "significado": "Python keyword used to handle exceptions within a try-except block",
+            "uso": "It is used to catch and handle exceptions that occur in the try block",
+            "ejemplo": '''
+                try:
+                    x = 1 / 0
+                except ZeroDivisionError:
+                    print('Error: divide by zero')
+                # Output: Error: divide by zero
+                '''
+        },
+        "else": {
+            "significado": "Keyword in Python used in conditional control frameworks (if, try) to execute a block of code if the condition is not met or no exception occurs",
+            "uso": "It is used to execute a block of code when the condition is not met or no exception occurs",
+            "ejemplo": '''
+                if 3 > 1:
+                    print('Condition True')
+                else:
+                    print('Condition False')
+                # Output: Condition True
+                '''
+        },
+        "elif": {
+            "significado": "Keyword in Python used in conditional structures to check for an additional condition if the previous ones are not met",
+            "uso": "It is used to handle multiple conditions in an if-elif-else structure",
+            "ejemplo": '''
+                x = 3
+                if x > 5:
+                    print('Greater than 5')
+                elif x == 3:
+                    print('Same a 3')
+                else:
+                    print('Less than 3')
+                # Output: Same a 3
+                '''
+        },
+        "exit": {
+            "significado": "Built-in Python function that terminates program execution",
+            "uso": "It is used to exit a program or close an execution environment",
+            "ejemplo": '''
+                import sys
+                sys.exit('Finishing the program')
+                # The program ends with the message 'Ending the program'
+                '''
+        },
+        "end": {
+            "significado": "Keyword used in Python to specify the end of a block or the termination of a string",
+            "uso": "It is mainly used in printing functions to control the output end",
+            "ejemplo": '''
+                print('Hello', end=' ')
+                print('World')
+                # Output: Hello World
+                '''
+        },
+        "expandtabs": {
+            "significado": "Strings method in Python that replaces tab characters with spaces",
+            "uso": "It is used to align text by replacing tabs with a certain number of spaces",
+            "ejemplo": '''
+                text = 'Hello\tWorld'
+                print(text.expandtabs(4))
+                # Output: World   Hello
+                '''
+        },
+        "encode": {
+            "significado": "Strings method in Python that encodes a string into a byte sequence using a specific encoder",
+            "uso": "It is used to convert a string into a sequence of bytes to be stored or transmitted in specific formats",
+            "ejemplo": '''
+                text = 'Hello World'
+                encoded = text.encode('utf-8')
+                print(encoded)
+                # Output: b'Hello World'
+                '''
+        },
+        "element": {
+            "significado": "An individual item within a collection or data structure",
+            "uso": "It is used to refer to an object within a list, set, dictionary, etc",
+            "ejemplo": '''
+                list = [1, 2, 3]
+                print(list[0])  # Output: 1
+                '''
+        },
+        "error": {
+            "significado": "Anomalous condition in the execution of a program that interrupts its normal flow",
+            "uso": "It is used to indicate that something has gone wrong during code execution",
+            "ejemplo": '''
+                try:
+                    1 / 0
+                except ZeroDivisionError as e:
+                    print(f'Error: {e}')
+                # Output: Error: divided by zero
+                '''
+        },
+        "exception": {
+            "significado": "Event that alters the normal flow of program execution, usually due to an error",
+            "uso": "It is used to handle errors in code and perform specific actions when they occur",
+            "ejemplo": '''
+                try:
+                    int('a')
+                except ValueError:
+                    print('Error: Cannot convert to integer')
+                # Output: Error: Cannot convert to integer
+                '''
+        },
+        "evaluate": {
+            "significado": "Execute or calculate the value of an expression or function",
+            "uso": "It is used to obtain the result of an expression",
+            "ejemplo": '''
+                x = 5
+                result = eval('x + 2')
+                print(result)  # Output: 7
+                '''
+        },
+        "elements": {
+            "significado": "Individual items or components within a set or collection",
+            "uso": "It is used to refer to the parts of a data structure",
+            "ejemplo": '''
+                ensemble = {1, 2, 3}
+                for element in ensemble:
+                    print(element)
+                # Output:
+                # 1
+                # 2
+                # 3
+                '''
+        },
+        "exponential": {
+            "significado": "Related to the mathematical operation of exponentiation, which calculates the value of a base raised to an exponent",
+            "uso": "It is used to perform exponential calculations",
+            "ejemplo": '''
+                import math
+                result = math.exp(2)
+                print(result)  # Output: 7.3890560989306495
+                '''
+        },
+        "enumerations": {
+            "significado": "A list or set of elements, often with an associated value or identifier",
+            "uso": "It is used to represent a set of possible values of a variable",
+            "ejemplo": '''
+                from enum import Enum
+
+                class Cor(Enum):
+                    RED = 1
+                    GREEN = 2
+                    BLUE = 3
+
+                print(Cor.RED)  # Output: Cor.RED
+                '''
+        },
+        "encode_utf8": {
+            "significado": "Encoding method that converts a string of characters into a sequence of bytes using the UTF-8 format",
+            "uso": "It is used to convert text into a binary representation using UTF-8",
+            "ejemplo": '''
+                text = 'Hello World'
+                encoded = text.encode('utf-8')
+                print(encoded)  # Output: b'Hello World'
+                '''
+        },
+        "execfile": {
+            "significado": "Function that executes a Python file as if it were a script",
+            "uso": "It is used to execute an external Python file",
+            "ejemplo": '''
+                # This command is only available in Python 2
+                execfile('script.py')
+                '''
+        },
+        "edit_distance": {
+            "significado": "Measure that calculates the difference between two strings based on the operations required to convert one to the other",
+            "uso": "It is used to compare how similar two strings are and to determine how many changes are needed to make them identical",
+            "ejemplo": '''
+                from nltk.metrics import edit_distance
+
+                distance = edit_distance('kitten', 'sitting')
+                print(distance)  # Output: 3
+                '''
+        },
+        "eval_input": {
+            "significado": "A function that evaluates user input, typically via the input() function",
+            "uso": "It is used to obtain and evaluate a user-provided input",
+            "ejemplo": '''
+                entry = input('Enter a number: ')
+                result = eval(entry)
+                print(result)
+                '''
+        },
+        "xceed": {
+            "significado": "A term used to describe something that exceeds or exceeds a limit or expectation",
+            "uso": "It is used to indicate that something has crossed a standard or threshold",
+            "ejemplo": "The XCEED function is part of a set of functions that are used in data analysis or signal processing, but its name is not associated with a widely recognized standard function such as in common programming languages (such as Python, R, JavaScript, etc.). However, in some contexts, XCEED could refer to a custom function, some library, or even a function in some specific software"
+        },
+        "expected": {
+            "significado": "Something anticipated or anticipated, based on expectations or forecasts",
+            "uso": "It is used to describe what is expected to happen in a situation",
+            "ejemplo": "The expected result was an increase in processing speed"
+        },
+        "encode_base64": {
+            "significado": "Encoding method that converts binary data into a base-64 text representation",
+            "uso": "It is used to encode binary data into a readable base-64 text string",
+            "ejemplo": '''
+                import base64
+                encoded = base64.b64encode(b'Hello')
+                print(encoded)  # Output: b'b2xh'
+                '''
+        },
+        "execute": {
+            "significado": "Perform or execute a set of instructions or a program",
+            "uso": "It is used to put into practice an action or execute code",
+            "ejemplo": '''
+                def funtion():
+                    print('Running...')
+                funtion()  # Output: Running...
+                '''
+        },
+        "exit_code": {
+            "significado": "Value returned by a program or script when it is finished, indicating whether it was executed correctly or if an error occurred",
+            "uso": "It is used to check if a program has completed successfully or if an error has occurred",
+            "ejemplo": '''
+                import sys
+                sys.exit(0)  # Output: 0 indicates success, another number indicates error.
+                '''
+        },
+        "evaluate_expression": {
+            "significado": "Evaluate an expression to get its result",
+            "uso": "It is used to calculate or obtain the value of a mathematical or logical expression",
+            "ejemplo": '''
+                result = eval('3 + 5')
+                print(result)  # Output: 8
+                '''
+        },
+        "environment": {
+            "significado": "The context or set of conditions under which a program or application runs",
+            "uso": "It is used to refer to the set of variables, settings, and features available to a program",
+            "ejemplo": '''
+                import os
+                print(os.environ)  # Output: Shows system environment variables.
+                '''
+        },
+        "environment_variable": {
+            "significado": "Variable that stores information about the system or application environment",
+            "uso": "It is used to store specific settings that affect the behavior of programs",
+            "ejemplo": '''
+                import os
+                print(os.getenv('PATH'))  # Output: Shows the PATH environment variable.
+                '''
+        },
+        "exp": {
+            "significado": "A mathematical function that calculates the exponential of a number, that is, and raised to the power of that number",
+            "uso": "It is used to perform exponential calculations",
+            "ejemplo": '''
+                import math
+                result = math.exp(1)
+                print(result)  # Output: 2.718281828459045
+                '''
+        },
+        "exception_handling": {
+            "significado": "Process of managing and responding to errors or exceptions that occur during the execution of a program",
+            "uso": "It is used to catch and manage errors, ensuring that the program does not stop unexpectedly",
+            "ejemplo": '''
+                try:
+                    value = 1 / 0
+                except ZeroDivisionError as e:
+                    print(f'Error: {e}')  # Output: Error: divided by zero
+                '''
+        },
+        "expand": {
+            "significado": "Enlarge or increase the size or reach of something",
+            "uso": "It is used to do something bigger or include more information",
+            "ejemplo": '''
+                text = "Hello"
+                print(text.expandtabs(4))  # Output: 'Hello' with enlarged tabs
+                '''
+        },
+        "environment_config": {
+            "significado": "Configuration related to the runtime of a program or system",
+            "uso": "It is used to specify or adjust parameters that affect the operation of a program or application",
+            "ejemplo": '''
+                config = {
+                    'host': 'localhost',
+                    'port': 8080
+                }
+                print(config)  # Output: {'host': 'localhost', 'port': 8080}
+                '''
+        },
+        "equal": {
+            "significado": "Indicates that two elements are identical in value",
+            "uso": "It is used to compare two values or expressions to see if they are the same",
+            "ejemplo": '''
+                a = 5
+                b = 5
+                print(a == b)  # Output: True
+                '''
+        },
+        "error_handling": {
+            "significado": "Process of managing errors and exceptions that occur during the execution of a program",
+            "uso": "It is used to catch and manage errors in a controlled manner to prevent the program from terminating unexpectedly",
+            "ejemplo": '''
+                try:
+                    value = 10 / 0
+                except ZeroDivisionError:
+                    print('Error de divide by zero')  # Output: Error divide by zero
+                '''
+        },
+        "event": {
+            "significado": "Action or event that can be detected and managed in a program",
+            "uso": "It is used to manage and respond to activities or changes in a system or program",
+            "ejemplo": '''
+                import tkinter as tk
+                def click():
+                    print('Button pressed')
+                root = tk.Tk()
+                button = tk.Button(root, text="Click on me", command=click)
+                button.pack()
+                root.mainloop()  # Output: Shows a button that, when pressed, executes the click event
+                '''
+        },
+        "event_loop": {
+            "significado": "Continuous cycle that expects and manages asynchronous events or tasks in a program.",
+            "uso": "It is used to execute tasks or respond to events in order, without blocking the main flow of execution.",
+            "ejemplo": '''
+                import asyncio
+                async def hello():
+                    print("Hello")
+                asyncio.run(hello())  # Output: Hello
+                '''
+        },
+        "exception_type": {
+            "significado": "The specific type of an exception or error that occurs in a program",
+            "uso": "It is used to identify what type of error has occurred and take appropriate action",
+            "ejemplo": '''
+                try:
+                    value = 10 / 0
+                except ZeroDivideError as e:
+                    print(f"Error Type: {type(e)}")  # Output: Error Type: <class 'ZeroDivideError'>
+                '''
+        },
+        "error_message": {
+            "significado": "Message that describes the error or problem that occurred during the execution of a program",
+            "uso": "It is used to provide details about what failed or caused an exception",
+            "ejemplo": '''
+                try:
+                    x = int("abc")
+                except ValueError as e:
+                    print(f"Error message: {e}")  # Output: Error message: invalid literal for int() with base 10: 'abc'
+                '''
+        },
+        "extract": {
+            "significado": "Get a specific part of a dataset or insights",
+            "uso": "It is used to extract or extract a specific component from a larger set of data",
+            "ejemplo": '''
+                text = 'Hello World'
+                print(text[0:4])  # Output: Hello
+                '''
+        },
+        "exit_status": {
+            "significado": "Exit code that indicates whether a program or process has terminated correctly or in error",
+            "uso": "It is used to check if a process or command has ended successfully or if an error has occurred",
+            "ejemplo": '''
+                import sys
+                sys.exit(0)  # Output: 0 indicates success, any other number indicates error.
+                '''
         },
         },
     "f": {
