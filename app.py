@@ -1,4 +1,5 @@
-from flask import Flask, render_template, request
+from flask import Flask, render_template, request, jsonify
+import json
 from diccionarios import es, eng, ita, por
 
 app = Flask(__name__)
@@ -31,6 +32,21 @@ def terms(letter):
     letter = letter.lower()
     terms = diccionario.get(letter, {})
     return render_template('terms.html', terms=terms, letter=letter.upper())
+
+@app.route('/suggest-term')
+def suggest_term_page():
+    return render_template('suggest-term.html')
+
+@app.route('/api/suggest-term', methods=['POST'])
+def suggest_term():
+    data = request.json
+    
+    # Guardar la sugerencia en un archivo
+    with open('sugerencias.json', 'a') as f:
+        json.dump(data, f)
+        f.write('\n')
+    
+    return jsonify({"message": "Sugerencia guardada con éxito"}), 200
 
 if __name__ == '__main__':
     app.run(debug=True, host='0.0.0.0', port=5000)

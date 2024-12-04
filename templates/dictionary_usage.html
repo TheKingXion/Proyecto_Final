@@ -22,6 +22,14 @@
                     <img src="{{ url_for('static', filename='images/home_ico.png') }}" alt="Home" class="home-icon">
                 </button>
             </div>
+
+            <div class="suggest-term-container">
+                <a href="/suggest-term" class="suggest-term-button">
+                    <span>Sugerir Término</span>
+                    <div class="liquid"></div>
+                </a>
+            </div>
+              
             <div class="search-container">
                 <button class="search-button" onclick="toggleSearch()">
                     <img src="{{ url_for('static', filename='images/search_ico.png') }}" alt="Buscar" class="search-icon">

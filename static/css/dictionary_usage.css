@@ -266,6 +266,80 @@ h2 {
     color: #F2B705;
 }
 
+.suggest-term-container {
+    margin-right: 10px;
+}
+
+.suggest-term-button {
+    position: fixed;
+    left: 400px;
+    top: 7px;
+    display: inline-block;
+    padding: 20px 20px;
+    background-color: #D92534;
+    color: #F2F2F2;
+    text-decoration: none;
+    border-radius: 20px;
+    font-size: 0.9rem;
+    font-weight: bold;
+    border: none;
+    cursor: pointer;
+    overflow: hidden;
+    transition: all 0.3s ease;
+}
+
+.suggest-term-button span {
+    position: relative;
+    z-index: 1;
+}
+
+.suggest-term-button .liquid {
+    position: absolute;
+    top: -80px;
+    left: 0;
+    width: 100%;
+    height: 200px;
+    background: #F2B705;
+    box-shadow: inset 0 0 50px rgba(0, 0, 0, .5);
+    transition: 0.5s;
+}
+
+.suggest-term-button .liquid::after,
+.suggest-term-button .liquid::before {
+    content: '';
+    width: 200%;
+    height: 200%;
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translate(-50%, -75%);
+    background: #F2F2F2;
+}
+
+.suggest-term-button .liquid::before {
+    border-radius: 45%;
+    background: #1B1259;
+    animation: animate 5s linear infinite;
+}
+
+.suggest-term-button .liquid::after {
+    border-radius: 40%;
+    background: rgba(242, 183, 5, .5);
+    animation: animate 10s linear infinite;
+}
+
+.suggest-term-button:hover .liquid {
+    top: -120px;
+}
+
+@keyframes animate {
+    0% {
+        transform: translate(-50%, -75%) rotate(0deg);
+    }
+    100% {
+        transform: translate(-50%, -75%) rotate(360deg);
+    }
+}
 
 @media (max-width: 768px) {
     
