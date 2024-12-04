@@ -1,4 +1,3 @@
-#pablo
 diccionario_es = {
     "a": {
         "abs": {
@@ -170,7 +169,7 @@ diccionario_es = {
             "ejemplo": "\n                import asyncio\n\n                async def tarea():\n                    await asyncio.sleep(1)\n                    return 'Tarea concluida'\n\n                async def principal():\n                    resultado = await tarea()\n                    print(resultado)\n\n                asyncio.run(principal())\n                ",
             "significado": "Se usa para esperar el resultado de una función asincrónica.",
             "uso": "Se utiliza dentro de funciones definidas con `async` para pausar su ejecución hasta que se complete una tarea asincrónica."
-        },
+        }
     },
     "b": {
         "base64": {
@@ -297,7 +296,7 @@ diccionario_es = {
             "ejemplo": "\n                import bz2\n\n                with bz2.open('archivo.bz2', 'rb') as archivo:\n                    contenido = archivo.read()\n                    print(contenido)\n                ",
             "significado": "Módulo que proporciona compresión y descompresión utilizando el algoritmo bzip2.",
             "uso": "Se utiliza para manipular archivos comprimidos en formato bzip2."
-        },
+        }
     },
     "c": {
         "cProfile": {
@@ -385,7 +384,6 @@ diccionario_es = {
             "significado": "Módulo que proporciona funciones matemáticas para trabajar con números complejos.",
             "uso": "Se utiliza para realizar operaciones matemáticas en números complejos."
         },
-        
         "coerce": {
             "ejemplo": "\n                # La función coerce ha sido eliminada en versiones modernas de Python.\n                ",
             "significado": "Función que intentaba convertir un valor en un tipo compatible.",
@@ -480,10 +478,10 @@ diccionario_es = {
             "ejemplo": "\n                import itertools\n\n                ciclo = itertools.cycle([1, 2, 3])\n                for i in range(6):\n                    print(next(ciclo))  # Salida: 1, 2, 3, 1, 2, 3\n                ",
             "significado": "Función en el módulo `itertools` que crea un iterador que repite indefinidamente una secuencia.",
             "uso": "Se utiliza para recorrer un iterador en un bucle infinito."
-        },
-     },
+        }
+    },
     "d": {
-       "dataframe": {
+        "dataframe": {
             "ejemplo": "\n                import pandas as pd\n\n                datos = {'Nombre': ['Juan', 'Ana'], 'Edad': [28, 22]}\n                df = pd.DataFrame(datos)\n                print(df)\n                ",
             "significado": "Estructura de datos bidimensional en la biblioteca Pandas, similar a una tabla, que permite almacenar datos de diferentes tipos.",
             "uso": "Se utiliza para manipular grandes volúmenes de datos tabulares en Python."
@@ -622,7 +620,7 @@ diccionario_es = {
             "ejemplo": "\n                import pickle\n\n                data = {'a': 1, 'b': 2}\n                serialized = pickle.dumps(data)\n                print(serialized)\n                ",
             "significado": "Método de la biblioteca `pickle` que serializa un objeto y lo devuelve como una cadena de bytes.",
             "uso": "Se usa para convertir un objeto en un formato de cadena para almacenamiento o transmisión."
-        },
+        }
     },
     "e": {
         "edit_distance": {
@@ -829,7 +827,7 @@ diccionario_es = {
             "ejemplo": "La nueva actualización excede nuestras expectativas en términos de rendimiento.",
             "significado": "Término utilizado para describir algo que supera o excede un límite o expectativa.",
             "uso": "Se utiliza para indicar que algo ha superado un estándar o límite."
-        },
+        }
     },
     "f": {
         "factorial": {
@@ -1131,7 +1129,7 @@ diccionario_es = {
             "ejemplo": "\n                with open('archivo.bin', 'wb') as f:\n                    f.write(b'Hello, World!')\n                ",
             "significado": "Función usada para escribir datos en un archivo.",
             "uso": "Se utiliza para escribir datos binarios en un archivo abierto en modo de escritura."
-        },
+        }
     },
     "g": {
         "gather": {
@@ -1295,9 +1293,9 @@ diccionario_es = {
             "uso": "Se usa en diversas aplicaciones para obtener la puntuación de un sistema, juego, examen, etc."
         },
         "get_statistics": {
-        "ejemplo": "\n                import statistics\n                datos = [1, 2, 3, 4, 5]\n                media = statistics.mean(datos)\n                print(media)  # Salida: 3\n                ",
-        "significado": "Método que obtiene las estadísticas de un conjunto de datos.",
-        "uso": "Se usa para calcular y recuperar métricas estadísticas como media, mediana, desviación estándar, etc."
+            "ejemplo": "\n                import statistics\n                datos = [1, 2, 3, 4, 5]\n                media = statistics.mean(datos)\n                print(media)  # Salida: 3\n                ",
+            "significado": "Método que obtiene las estadísticas de un conjunto de datos.",
+            "uso": "Se usa para calcular y recuperar métricas estadísticas como media, mediana, desviación estándar, etc."
         },
         "get_status": {
             "ejemplo": "\n                def get_status(operacion):\n                    return operacion['estado']\n                operacion = {'estado': 'concluida'}\n                print(get_status(operacion))  # Salida: concluida\n                ",
@@ -1400,9 +1398,9 @@ diccionario_es = {
             "uso": "Se usa para manejar tareas concurrentes de manera eficiente sin la necesidad de múltiples hilos."
         },
         "git": {
-        "ejemplo": "\n                # Usando Git en la terminal\n                git clone https://github.com/usuario/repositorio.git\n                ",
-        "significado": "Sistema de control de versiones distribuido para gestionar el código fuente.",
-        "uso": "Se utiliza para manejar versiones de código, facilitando el trabajo en equipo y el control de cambios."
+            "ejemplo": "\n                # Usando Git en la terminal\n                git clone https://github.com/usuario/repositorio.git\n                ",
+            "significado": "Sistema de control de versiones distribuido para gestionar el código fuente.",
+            "uso": "Se utiliza para manejar versiones de código, facilitando el trabajo en equipo y el control de cambios."
         },
         "git_branch": {
             "ejemplo": "\n                git branch  # Muestra las ramas existentes\n                git checkout -b nueva_rama  # Crea y cambia a la nueva rama\n                ",
@@ -1475,9 +1473,9 @@ diccionario_es = {
             "uso": "Se usa ampliamente en aprendizaje automático para encontrar los valores óptimos de los parámetros de un modelo."
         },
         "gradients": {
-        "ejemplo": "\n                # ejemplo de gradiente en optimización\n                def funcion(x):\n                    return x**2\n                gradiente = 2 * 3  # Gradiente de x^2 en x = 3\n                print(gradiente)  # Salida: 6\n                ",
-        "significado": "Cambio en el valor de una variable en relación con otra, comúnmente utilizado en cálculo y aprendizaje automático.",
-        "uso": "Se utiliza para calcular la dirección y la tasa de variación de una función con respecto a sus variables."
+            "ejemplo": "\n                # ejemplo de gradiente en optimización\n                def funcion(x):\n                    return x**2\n                gradiente = 2 * 3  # Gradiente de x^2 en x = 3\n                print(gradiente)  # Salida: 6\n                ",
+            "significado": "Cambio en el valor de una variable en relación con otra, comúnmente utilizado en cálculo y aprendizaje automático.",
+            "uso": "Se utiliza para calcular la dirección y la tasa de variación de una función con respecto a sus variables."
         },
         "grammar": {
             "ejemplo": "\n                # ejemplo de gramática en programación\n                def sumar(a, b):\n                    return a + b\n                # La sintaxis es la gramática de la función sumar\n                ",
@@ -1548,7 +1546,7 @@ diccionario_es = {
             "ejemplo": "\n                import gzip\n                with gzip.open('archivo.txt.gz', 'rb') as f:\n                    contenido = f.read()\n                    print(contenido)\n                ",
             "significado": "Módulo que permite comprimir y descomprimir archivos en formato gzip.",
             "uso": "Se usa para trabajar con archivos comprimidos en el formato gzip, reduciendo su tamaño para almacenamiento o transmisión."
-        },
+        }
     },
     "h": {
         "half_width": {
@@ -2075,7 +2073,7 @@ diccionario_es = {
             "ejemplo": "\n                # ejemplo simplificado de histéresis\n                def histeresis(valor, limite_superior, limite_inferior):\n                    if valor > limite_superior:\n                        return \"Encendido\"\n                    elif valor < limite_inferior:\n                        return \"Apagado\"\n                    else:\n                        return \"Indeterminado\"\n                ",
             "significado": "Fenómeno donde la respuesta de un sistema depende no solo de la entrada actual, sino también del historial reciente.",
             "uso": "Se usa para describir sistemas con dependencia temporal, como en circuitos electrónicos y procesos de decisión."
-        },
+        }
     },
     "i": {
         "IP_address": {
@@ -2237,7 +2235,7 @@ diccionario_es = {
             "ejemplo": "\n                    lista = [1, 2, 3]\n                    for item in lista:\n                        print(item)\n                    ",
             "significado": "Proceso de recorrer una secuencia o estructura de datos, como una lista o tupla, para acceder a sus elementos uno a uno.",
             "uso": "Se utiliza para realizar operaciones en cada elemento de una secuencia, generalmente con el uso de un bucle de repetición."
-        },
+        }
     },
     "j": {
         "jalview": {
@@ -2429,7 +2427,7 @@ diccionario_es = {
             "ejemplo": "\n                # Ejecutar código Python con Jython:\n                jython MeuScript.py\n            ",
             "significado": "Implementación del lenguaje Python que corre sobre la JVM.",
             "uso": "Se utiliza para integrar código Python en proyectos Java."
-        },
+        }
     },
     "k": {
         "k-means++": {
@@ -2911,7 +2909,7 @@ diccionario_es = {
             "ejemplo": "\n                import keyword\n                print(keyword.kwlist)  # Salida: lista de palabras reservadas en Python\n            ",
             "significado": "Lista de palabras reservadas en Python.",
             "uso": "Se utiliza para verificar palabras reservadas que no pueden ser usadas como identificadores en Python."
-        },
+        }
     },
     "l": {
         "lambda_expression": {
@@ -3008,8 +3006,7 @@ diccionario_es = {
             "ejemplo": "\n                from keras.losses import MeanSquaredError\n\n                funcion_perdida = MeanSquaredError()\n                y_verdadero = [1, 2, 3]\n                y_predicho = [1.1, 1.9, 3.2]\n                perdida = funcion_perdida(y_verdadero, y_predicho)\n                print(perdida.numpy())\n                ",
             "significado": "Función utilizada para medir la diferencia entre la predicción del modelo y el valor real en machine learning.",
             "uso": "Se utiliza para optimizar y ajustar el desempeño del modelo."
-        },
-
+        }
     },
     "m": {
         "machine_learning": {
@@ -3311,10 +3308,10 @@ diccionario_es = {
             "ejemplo": "\n                # Ejemplo de estructura MVP en una aplicación de Python\n                class Model:\n                    def get_data(self):\n                        return \"Datos del Modelo\"\n\n                class View:\n                    def display(self, data):\n                        print(f\"Mostrando: {data}\")\n\n                class Presenter:\n                    def __init__(self, model, view):\n                        self.model = model\n                        self.view = view\n\n                    def update_view(self):\n                        data = self.model.get_data()\n                        self.view.display(data)\n\n                model = Model()\n                view = View()\n                presenter = Presenter(model, view)\n                presenter.update_view()  # Salida: Mostrando: Datos del Modelo\n                ",
             "significado": "Modelo de diseño de software que separa la lógica de presentación, la lógica de negocios y la entrada del usuario para promover la prueba y el mantenimiento de aplicaciones.",
             "uso": "Se utiliza en el desarrollo de aplicaciones para mejorar la separación de responsabilidades y facilitar la prueba y la escalabilidad."
-        },
+        }
     },
     "n": {
-       "Naive_bayes": {
+        "Naive_bayes": {
             "ejemplo": "\n                # Ejemplo de uso de un clasificador Naive Bayes con `scikit-learn` en Python\n                from sklearn.naive_bayes import GaussianNB\n                from sklearn.model_selection import train_test_split\n                from sklearn.metrics import accuracy_score\n\n                X = [[1, 2], [1, 3], [2, 3], [3, 4]]\n                y = [0, 0, 1, 1]\n                X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)\n\n                model = GaussianNB()\n                model.fit(X_train, y_train)\n                predictions = model.predict(X_test)\n                print(accuracy_score(y_test, predictions))\n                ",
             "significado": "Clasificador probabilístico basado en el teorema de Bayes con la suposición de independencia entre las características.",
             "uso": "Se utiliza para problemas de clasificación, como la clasificación de correos electrónicos como spam o no spam."
@@ -3683,9 +3680,9 @@ diccionario_es = {
             "ejemplo": "\n                # Ejemplo de uso de `.T` para transponer un array Numpy\n                import numpy as np\n\n                array = np.array([[1, 2, 3], [4, 5, 6]])\n                transpuesta = array.T\n                print(\"Array transpuesto:\n\", transpuesta)\n                ",
             "significado": "Atributo de un array Numpy que retorna la transpuesta del array, intercambiando sus filas y columnas.",
             "uso": "Se usa para invertir la orientación de los datos en un array, facilitando operaciones matemáticas y álgebra lineal."
-        },
+        }
     },
-    "o": { 
+    "o": {
         "Object": {
             "ejemplo": "\n                # Ejemplo de creación de un objeto en Python\n                class Carro:\n                    def __init__(self, modelo, ano):\n                        self.modelo = modelo\n                        self.ano = ano\n\n                mi_carro = Carro('Fusca', 1974)\n                print(\"Modelo del carro:\", mi_carro.modelo)\n                ",
             "significado": "Instancia de una clase en programación orientada a objetos, que contiene atributos y métodos.",
@@ -3910,7 +3907,7 @@ diccionario_es = {
             "ejemplo": "\n                # Ejemplo de sobrescritura de propiedad en Python\n                class Base:\n                    @property\n                    def valor(self):\n                        return \"Valor de la clase base\"\n\n                class Derivada(Base):\n                    @property\n                    def valor(self):\n                        return \"Valor sobrescrito en la clase derivada\"\n\n                obj = Derivada()\n                print(obj.valor)  # Salida: Valor sobrescrito en la clase derivada\n                ",
             "significado": "Práctica en programación orientada a objetos de redefinir el comportamiento de una propiedad heredada en una clase derivada.",
             "uso": "Se utiliza para modificar o extender el comportamiento estándar de clases base."
-        },
+        }
     },
     "p": {
         "Pandas": {
@@ -4227,7 +4224,7 @@ diccionario_es = {
             "ejemplo": "\n                pila = []\n\n                # Añadiendo elementos a la pila\n                pila.append(10)\n                pila.append(20)\n                print(pila)  # Salida: [10, 20]\n                ",
             "significado": "Operación que añade un elemento a la cima de una pila (stack).",
             "uso": "Se utiliza en estructuras de datos basadas en LIFO (último en entrar, primero en salir)."
-        },
+        }
     },
     "q": {
         "Qapplication": {
@@ -4524,7 +4521,7 @@ diccionario_es = {
             "ejemplo": "\n                from PyQt5.QtWidgets import QApplication, QWidget\n                import sys\n\n                app = QApplication(sys.argv)\n                widget = QWidget()\n                widget.setWindowTitle(\"Ejemplo de QWidget\")\n                widget.resize(400, 300)\n                widget.show()\n                sys.exit(app.exec_())\n                ",
             "significado": "Clase base para crear interfaces gráficas en PyQt5.",
             "uso": "Utilizado para crear ventanas y elementos personalizados en aplicaciones gráficas."
-        },
+        }
     },
     "r": {
         "Radians": {
@@ -4851,7 +4848,7 @@ diccionario_es = {
             "ejemplo": "\n                # Ejemplo de uso de RPC (usando xmlrpc)\n                from xmlrpc.server import SimpleXMLRPCServer\n                from xmlrpc.client import ServerProxy\n\n                # Servidor\n                def sumar(x, y):\n                    return x + y\n\n                server = SimpleXMLRPCServer((\"localhost\", 8000))\n                server.register_function(sumar, \"sumar\")\n\n                # Cliente\n                cliente = ServerProxy(\"http://localhost:8000\")\n                resultado = cliente.sumar(5, 3)\n                print(\"Resultado de la suma:\", resultado)\n                ",
             "significado": "Remote Procedure Call, un protocolo para la ejecución de procedimientos en sistemas distribuidos.",
             "uso": "Utilizado para la comunicación entre procesos en diferentes máquinas o entornos."
-        },
+        }
     },
     "s": {
         "Sample": {
@@ -5148,10 +5145,10 @@ diccionario_es = {
             "ejemplo": "\n                # Ejemplo de uso de sys\n                import sys\n\n                print(f\"Versión de Python: {sys.version}\")\n                print(f\"Ruta de búsqueda de módulos: {sys.path}\")\n                ",
             "significado": "Módulo que proporciona acceso a algunas variables y funciones utilizadas o mantenidas por el intérprete Python.",
             "uso": "Utilizado para interactuar con el entorno del sistema y el intérprete Python."
-        },    
+        }
     },
     "t": {
-       "Table": {
+        "Table": {
             "ejemplo": "\n                # Ejemplo de creación de tabla usando pandas\n                import pandas as pd\n\n                datos = {\n                    'Nombre': ['Alice', 'Bob', 'Charlie'],\n                    'Edad': [25, 30, 35],\n                    'Ciudad': ['São Paulo', 'Río de Janeiro', 'Belo Horizonte']\n                }\n                tabla = pd.DataFrame(datos)\n                print(tabla)\n                ",
             "significado": "Estructura de datos que organiza la información en filas y columnas.",
             "uso": "Utilizado para representar datos tabulares, frecuentemente en bases de datos o análisis de datos."
@@ -5355,7 +5352,7 @@ diccionario_es = {
             "ejemplo": "\n                # Ejemplo de typecast\n                numero_float = 5.7\n                numero_int = int(numero_float)  # Typecast de float a int\n                print(f\"Float: {numero_float}, Int: {numero_int}\")\n                ",
             "significado": "Proceso de convertir un tipo de dato en otro.",
             "uso": "Utilizado para cambiar explícitamente el tipo de una variable."
-        },
+        }
     },
     "u": {
         "Unavailable": {
@@ -5458,10 +5455,10 @@ diccionario_es = {
             "significado": "Acción de modificar algo para reflejar los últimos cambios o datos.",
             "uso": "Usado para describir el proceso de hacer más actual la información o estado de algo."
         },
-         "Upgrade": {
-        "ejemplo": "\n                # Ejemplo de actualización de una biblioteca en Python usando pip\n                # Comando para ejecutar en la terminal:\n                # pip install --upgrade nombre_de_la_biblioteca\n                ",
-        "significado": "Acción de mejorar o actualizar un sistema, software o hardware a una versión más avanzada.",
-        "uso": "Usado para describir la actualización de componentes o versiones para proporcionar un mejor rendimiento o nuevas funcionalidades."
+        "Upgrade": {
+            "ejemplo": "\n                # Ejemplo de actualización de una biblioteca en Python usando pip\n                # Comando para ejecutar en la terminal:\n                # pip install --upgrade nombre_de_la_biblioteca\n                ",
+            "significado": "Acción de mejorar o actualizar un sistema, software o hardware a una versión más avanzada.",
+            "uso": "Usado para describir la actualización de componentes o versiones para proporcionar un mejor rendimiento o nuevas funcionalidades."
         },
         "Upload": {
             "ejemplo": "\n                # Ejemplo de subida de archivo en Python con requests\n                import requests\n                archivo = {'file': open('archivo.txt', 'rb')}\n                respuesta = requests.post('https://www.ejemplo.com/upload', files=archivo)\n                print(respuesta.status_code)\n                ",
@@ -5542,7 +5539,7 @@ diccionario_es = {
             "ejemplo": "\n                # Ejemplo de uso de utmost en una frase\n                print(\"Haré mi máximo esfuerzo para ayudarte.\")\n                ",
             "significado": "Lo máximo posible, el grado más alto de algo.",
             "uso": "Usado para expresar un esfuerzo o grado de importancia muy elevado."
-        },
+        }
     },
     "v": {
         "Vacuum": {
@@ -5714,10 +5711,10 @@ diccionario_es = {
             "ejemplo": "\n                # Ejemplo de vulnerabilidad en un contexto de seguridad cibernética\n                print(\"Sistemas desactualizados pueden ser vulnerables a ataques.\")\n                ",
             "significado": "Expuesto a riesgos o susceptible a daños, ataques o explotación.",
             "uso": "Usado para describir sistemas, personas u objetos que pueden ser afectados por amenazas."
-        },
+        }
     },
     "w": {
-       "Wait": {
+        "Wait": {
             "ejemplo": "\n                # Ejemplo de uso de espera en Python\n                import time\n\n                print('Iniciando espera...')\n                time.sleep(3)\n                print('¡Espera concluida!')\n                ",
             "significado": "Acción de pausar la ejecución de un proceso o programa por un período de tiempo determinado.",
             "uso": "Usado para introducir una pausa o retraso en scripts y programas."
@@ -5851,10 +5848,10 @@ diccionario_es = {
             "ejemplo": "\n                # Ejemplo de escritura de datos en un archivo en Python\n                with open('salida.txt', 'w') as archivo:\n                    archivo.write('¡Hola, mundo!')\n                ",
             "significado": "Acción de grabar datos en un archivo o dispositivo de almacenamiento.",
             "uso": "Usado para almacenar información en un archivo o en una base de datos."
-        },
+        }
     },
     "x": {
-       "X": {
+        "X": {
             "ejemplo": "\n                # Ejemplo de uso de 'X' como coordenada en Python\n                import matplotlib.pyplot as plt\n\n                X = [1, 2, 3, 4, 5]\n                Y = [2, 3, 4, 5, 6]\n                plt.plot(X, Y)\n                plt.xlabel(\"Eje X\")\n                plt.show()\n                ",
             "significado": "La variable o símbolo utilizado para representar una posición o valor en una dimensión o plano cartesiano.",
             "uso": "Usado para denotar la coordenada horizontal en gráficos o la variable independiente en funciones matemáticas."
@@ -6048,7 +6045,7 @@ diccionario_es = {
             "ejemplo": "\n                // Ejemplo de una prueba unitaria con xUnit en C#\n                [Fact]\n                public void TestMetodo()\n                {\n                    var resultado = MetodoParaProbar();\n                    Assert.Equal(esperado, resultado);\n                }\n                ",
             "significado": "Un framework de pruebas unitarias para aplicaciones .NET, usado para garantizar que el código funcione como se espera.",
             "uso": "Usado para crear y ejecutar pruebas unitarias en aplicaciones basadas en .NET."
-        },
+        }
     },
     "y": {
         "Y-axis": {
@@ -6220,7 +6217,7 @@ diccionario_es = {
             "ejemplo": "\n                # Ejemplo conceptual de interacción con la API de YouTube usando Python\n                from googleapiclient.discovery import build\n\n                youtube = build('youtube', 'v3', developerKey='API_KEY')\n                request = youtube.search().list(part='snippet', q='programación en Python', type='video')\n                response = request.execute()\n                for item in response['items']:\n                    print(item['snippet']['title'])\n                ",
             "significado": "Plataforma de intercambio de videos en internet, donde los usuarios pueden subir, ver y comentar videos.",
             "uso": "Usada para crear y compartir videos, así como para consumir contenido en video."
-        },
+        }
     },
     "z": {
         "Zen_of_python": {
@@ -6272,6 +6269,6 @@ diccionario_es = {
             "ejemplo": "\n                # Ejemplo de cálculo de z-score en Python\n                import numpy as np\n\n                datos = [10, 20, 30, 40, 50]\n                media = np.mean(datos)\n                desviacion_estandar = np.std(datos)\n                z_score = (30 - media) / desviacion_estandar\n                print(\"El z-score de 30 es:\", z_score)\n                ",
             "significado": "Medida estadística que indica cuántas desviaciones estándar un valor está alejado de la media de un conjunto de datos.",
             "uso": "Se utiliza para identificar valores atípicos y comparar datos en diferentes distribuciones."
-        },
-    }, 
+        }
+    }
 }

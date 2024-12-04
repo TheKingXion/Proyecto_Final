@@ -9,7 +9,7 @@ diccionario_por = {
             "ejemplo": "\n                from __future__ import absolute_import\n\n                # Sempre importa o módulo global, não um local com o mesmo nome\n                import math\n                ",
             "significado": "Diretiva usada para habilitar importações absolutas no Python 2.x e versões posteriores.",
             "uso": "É usado para evitar conflitos entre módulos locais e globais."
-        },
+        }, 
         "add": {
             "ejemplo": "\n                # Conjuntos\n                conjunto = {1, 2, 3}\n                conjunto.add(4)\n                print(conjunto)  # Saída: {1, 2, 3, 4}\n\n                # NumPy\n                import numpy as np\n                resultado = np.add(2, 3)\n                print(resultado)  # Saída: 5\n                ",
             "significado": "Método usado para adicionar um elemento a um conjunto ou realizar uma soma entre matrizes (dependendo do contexto).",
