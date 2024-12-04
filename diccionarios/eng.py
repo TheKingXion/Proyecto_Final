@@ -2143,14 +2143,97 @@ diccionario_eng = {
         },
         },
     "g": {
-       "global": {
-            "significado":" a Variable away from all funtions and classes",
-            "uso": " Make a variable accessible from anywhere in your code",
-            "ejemplo": '''x = 10
-            def funtion():
-            global x
-            x = 20'''
-        },
+       "gather": {
+    "example": "\n                import asyncio\n                async def task():\n                    return 1\n                async def main():\n                    results = await asyncio.gather(task(), task())\n                    print(results)\n                asyncio.run(main())\n                ",
+    "meaning": "Function used to collect or group elements or results into a structure.",
+    "usage": "It is used to gather results from parallel operations or multiple sources."
+},
+"gc": {
+    "example": "\n                import gc\n                gc.collect()  # Force garbage collection\n                ",
+    "meaning": "Garbage collection module that allows interaction with Python's garbage collector.",
+    "usage": "It is used to manage memory and free unreferenced objects."
+},
+"gcd": {
+    "example": "\n                import math\n                print(math.gcd(24, 36))  # Output: 12\n                ",
+    "meaning": "Function that calculates the greatest common divisor (GCD) of two numbers.",
+    "usage": "It is used to find the largest number that divides two numbers without leaving a remainder."
+},
+"gcd_algorithm": {
+    "example": "\n                import math\n                gcd = math.gcd(24, 36)\n                print(gcd)  # Output: 12\n                ",
+    "meaning": "Algorithm to calculate the greatest common divisor (GCD) of two numbers.",
+    "usage": "It is used to find the largest number that divides two numbers exactly."
+},
+"generate_tokens": {
+    "example": "\n                import token\n                import tokenize\n                code = 'print(\"Hello World\")'\n                tokens = tokenize.generate_tokens(iter(code).__next__)\n                for t in tokens:\n                    print(t)\n                ",
+    "meaning": "Function that generates a sequence of tokens from a text object, used to analyze and process source code.",
+    "usage": "It is used in creating lexical analyzers to split a text into meaningful units."
+},
+"generator": {
+    "example": "\n                def count_to_three():\n                    yield 1\n                    yield 2\n                    yield 3\n                for num in count_to_three():\n                    print(num)  # Output: 1, 2, 3\n                ",
+    "meaning": "Function that returns an iterator, allowing the generation of elements one by one during execution.",
+    "usage": "It is used to create sequences of elements lazily (lazy evaluation), without having to store them all in memory."
+},
+"generator_expression": {
+    "example": "\n                numbers = (x * 2 for x in range(5))\n                for num in numbers:\n                    print(num)  # Output: 0, 2, 4, 6, 8\n                ",
+    "meaning": "Expression that allows generating a generator in a compact way, similar to a list comprehension.",
+    "usage": "It is used to create generators efficiently without storing all elements."
+},
+"generator_function": {
+    "example": "\n                def count():\n                    yield 1\n                    yield 2\n                    yield 3\n                for num in count():\n                    print(num)  # Output: 1, 2, 3\n                ",
+    "meaning": "Function that uses `yield` to return a generator.",
+    "usage": "It is used to create functions that return a generator and allow lazy iteration."
+},
+"generator_instance": {
+    "example": "\n                def counter():\n                    yield 1\n                    yield 2\n                    yield 3\n                generator = counter()\n                for num in generator:\n                    print(num)  # Output: 1, 2, 3\n                ",
+    "meaning": "Instance of a generator, which is an object that allows iteration over a sequence of elements.",
+    "usage": "It is used to manage iterations efficiently using the `yield` keyword."
+},
+"genericpath": {
+    "example": "\n                import genericpath\n                file = \"/path/to/file.txt\"\n                print(genericpath.exists(file))  # Output: True or False\n                ",
+    "meaning": "Module that provides functions for working with file and directory paths in a generic way.",
+    "usage": "It is used for manipulating file and directory paths."
+},
+"geocode": {
+    "example": "\n                from geopy.geocoders import Nominatim\n                geolocator = Nominatim(user_agent=\"my_app\")\n                location = geolocator.geocode(\"1600 Pennsylvania Ave NW, Washington, DC 20500\")\n                print(location.latitude, location.longitude)\n                ",
+    "meaning": "Process of converting an address into geographic coordinates (latitude and longitude).",
+    "usage": "It is used to obtain the geographic location of a textual address."
+},
+"geolocation": {
+    "example": "\n                # example using geopy\n                from geopy.geocoders import Nominatim\n                geolocator = Nominatim(user_agent=\"my_app\")\n                location = geolocator.geocode(\"1600 Pennsylvania Ave NW, Washington, DC 20500\")\n                print(location.address)\n                ",
+    "meaning": "Process of determining the geographic location of a device.",
+    "usage": "It is used to obtain the latitude, longitude, and other details about a device's location."
+},
+"geometry": {
+    "example": "\n                # example of geometry in programming\n                import math\n                circle_area = math.pi * (5**2)  # Area of a circle with radius 5\n                print(circle_area)  # Output: 78.53981633974483\n                ",
+    "meaning": "Area of mathematics that deals with the properties and relations of points, lines, surfaces, and solids.",
+    "usage": "It is used in fields such as computer graphics, engineering, and architecture to describe shapes and structures."
+},
+"geometry_manager": {
+    "example": "\n                import tkinter as tk\n                root = tk.Tk()\n                label = tk.Label(root, text=\"Hello World\")\n                label.pack()  # Uses the 'pack' geometry manager\n                root.mainloop()\n                ",
+    "meaning": "Method used to manage the size and location of widgets in graphical user interfaces.",
+    "usage": "It is used in GUI libraries like Tkinter to organize the layout of elements."
+},
+"geopandas": {
+    "example": "\n                import geopandas as gpd\n                gdf = gpd.read_file('map.shp')\n                gdf.plot()\n                ",
+    "meaning": "Python library for the manipulation and analysis of geospatial data.",
+    "usage": "It is used for working with spatial data such as maps and geographic coordinates."
+},
+"get": {
+    "example": "\n                dictionary = {'a': 1, 'b': 2}\n                print(dictionary.get('a'))  # Output: 1\n                print(dictionary.get('c', 'Not found'))  # Output: Not found\n                ",
+    "meaning": "Method that retrieves the value of a key in a dictionary. If the key does not exist, it returns a default value.",
+    "usage": "It is used to safely get the value associated with a key in a dictionary."
+},
+"get_active_connections": {
+    "example": "\n                import psutil\n                connections = psutil.net_connections()\n                for connection in connections:\n                    print(connection)\n                ",
+    "meaning": "Method that retrieves active connections in a system or network.",
+    "usage": "It is used to get the active connections in an application or operating system."
+},
+"get_cached_properties": {
+    "example": "\n                class MyClass:\n                    @property\n                    def property(self):\n                        if not hasattr(self, '_cached_property'):\n                            self._cached_property = 42  # Example calculation\n                        return self._cached_property\n                obj = MyClass()\n                print(obj.property)  # Output: 42\n                ",
+    "meaning": "Method to retrieve properties that have been stored in cache.",
+    "usage": "It is used to access properties that were previously calculated and stored in memory for efficiency."
+}
+
     },
     "h": {
         # Aquí puedes agregar funciones que comiencen con la letra H
