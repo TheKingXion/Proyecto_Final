@@ -1,4 +1,4 @@
-from es import diccionario_es
+from eng import diccionario_eng
 import json
 
 # Función recursiva para ordenar el diccionario alfabéticamente
@@ -15,7 +15,7 @@ def ordenar_diccionario(diccionario):
     return diccionario_ordenado
 
 # Ordenar el diccionario
-diccionario_ordenado = ordenar_diccionario(diccionario_es)
+diccionario_ordenado = ordenar_diccionario(diccionario_eng)
 
 # Escribir el diccionario ordenado en un archivo JSON
 with open('diccionario_ordenado.json', 'w', encoding='utf-8') as archivo:
